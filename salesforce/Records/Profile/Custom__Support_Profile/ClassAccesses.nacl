@@ -1104,5 +1104,9 @@ salesforce.Profile Custom_3A_Support_Profile@pss {
       apexClass = "th_con_app__WelcomeFinderTests"
       enabled = false
     }
+    MaxInteger = {
+      apexClass = salesforce.ApexClass.instance.MaxInteger
+      enabled = false
+    }
   }
 }

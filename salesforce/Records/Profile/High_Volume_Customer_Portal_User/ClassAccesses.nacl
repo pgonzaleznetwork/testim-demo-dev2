@@ -1104,5 +1104,9 @@ salesforce.Profile High_Volume_Customer_Portal_User@s {
       apexClass = "th_con_app__WelcomeFinderTests"
       enabled = false
     }
+    MaxInteger = {
+      apexClass = salesforce.ApexClass.instance.MaxInteger
+      enabled = false
+    }
   }
 }

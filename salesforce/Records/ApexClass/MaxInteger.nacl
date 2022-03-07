@@ -1,0 +1,6 @@
+salesforce.ApexClass MaxInteger {
+  apiVersion = 54
+  status = "Active"
+  fullName = "MaxInteger"
+  content = file("salesforce/Records/ApexClass/MaxInteger.cls")
+}

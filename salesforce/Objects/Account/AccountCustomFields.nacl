@@ -293,6 +293,7 @@ type salesforce.Account {
     queryable = true
     externalId = false
     trackFeedHistory = false
+    description = "New description"
   }
   salesforce.FormulaText Used_Field__c {
     apiName = "Account.Used_Field__c"

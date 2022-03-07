@@ -1104,5 +1104,9 @@ salesforce.Profile Force_2Ecom___App_Subscription_User@psbsss {
       apexClass = "th_con_app__WelcomeFinderTests"
       enabled = false
     }
+    MaxInteger = {
+      apexClass = salesforce.ApexClass.instance.MaxInteger
+      enabled = false
+    }
   }
 }

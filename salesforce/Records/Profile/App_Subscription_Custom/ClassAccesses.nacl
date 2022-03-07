@@ -1104,5 +1104,9 @@ salesforce.Profile App_Subscription_Custom@s {
       apexClass = "th_con_app__WelcomeFinderTests"
       enabled = false
     }
+    MaxInteger = {
+      apexClass = salesforce.ApexClass.instance.MaxInteger
+      enabled = false
+    }
   }
 }

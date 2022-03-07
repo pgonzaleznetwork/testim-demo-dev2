@@ -1104,5 +1104,9 @@ salesforce.Profile Admin {
       apexClass = "th_con_app__WelcomeFinderTests"
       enabled = true
     }
+    MaxInteger = {
+      apexClass = salesforce.ApexClass.instance.MaxInteger
+      enabled = true
+    }
   }
 }
