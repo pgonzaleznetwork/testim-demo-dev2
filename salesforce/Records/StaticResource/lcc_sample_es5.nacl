@@ -1,0 +1,6 @@
+salesforce.StaticResource lcc_sample_es5 {
+  cacheControl = "Private"
+  contentType = "application/zip"
+  fullName = "lcc_sample_es5"
+  content = file("salesforce/Records/StaticResource/lcc_sample_es5.zip")
+}

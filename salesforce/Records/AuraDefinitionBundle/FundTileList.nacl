@@ -1,0 +1,42 @@
+salesforce.AuraDefinitionBundle FundTileList {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "FundTileList"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/FundTileList/FundTileListHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/FundTileList/FundTileList.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/FundTileList/FundTileList.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/FundTileList/FundTileListController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.FundController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundFilterChange
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundInfoPopup
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundTile
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundTileList
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.Paginator
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.PaginatorEvent
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.RangeChange
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.Rating
+    },
+    {
+      reference = salesforce.Fund__c
+    },
+  ]
+}

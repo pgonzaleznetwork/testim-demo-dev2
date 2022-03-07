@@ -1,0 +1,16 @@
+salesforce.ListView Show__c_All {
+  fullName = "Show__c.All"
+  columns = [
+    "NAME",
+    "Host__c",
+    "Format__c",
+    "Active_Syndications__c",
+    "All_Syndications__c",
+    "CREATED_DATE",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Show__c,
+  ]
+}

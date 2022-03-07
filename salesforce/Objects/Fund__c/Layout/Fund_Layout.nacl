@@ -1,0 +1,118 @@
+salesforce.Layout Fund__c_Fund_Layout@uubs {
+  fullName = "Fund__c-Fund Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Fund__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.Rating__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.YTD_Return__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.One_Year_Return__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.Five_Year_Return__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.Two_Year_Return__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.Asset_Class__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Fund__c.field.Abbreviation__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Fund__c.field.Sector__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Fund__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Fund__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Fund__c,
+  ]
+}

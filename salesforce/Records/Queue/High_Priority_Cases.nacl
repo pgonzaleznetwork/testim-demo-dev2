@@ -1,0 +1,14 @@
+salesforce.Queue High_Priority_Cases {
+  fullName = "High_Priority_Cases"
+  doesSendEmailToMembers = false
+  name = "High-Priority Cases"
+  queueMembers = {
+    publicGroups = {
+      publicGroup = "AllInternalUsers"
+    }
+  }
+  queueRoutingConfig = salesforce.QueueRoutingConfig.instance.High_Priority_Cases
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

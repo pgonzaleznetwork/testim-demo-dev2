@@ -1,0 +1,15 @@
+salesforce.WorkflowRule Case_update_case@vs {
+  fullName = "Case.update case"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Case_update_anything@vu
+      type = "FieldUpdate"
+    },
+  ]
+  active = true
+  formula = "true"
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Case,
+  ]
+}

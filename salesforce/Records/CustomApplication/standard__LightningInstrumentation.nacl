@@ -1,0 +1,33 @@
+salesforce.CustomApplication standard__LightningInstrumentation {
+  fullName = "standard__LightningInstrumentation"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "LightningInstrumentation"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    "standard-LightningInstrumentation",
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+}

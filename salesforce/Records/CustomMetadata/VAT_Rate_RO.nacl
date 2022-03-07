@@ -1,0 +1,17 @@
+salesforce.CustomMetadata VAT_Rate_RO@uv {
+  fullName = "VAT_Rate.RO"
+  label = "RO"
+  protected = false
+  values = [
+    {
+      field = "Default__c"
+      value = "true"
+      type = "xsd:boolean"
+    },
+    {
+      field = "Rate__c"
+      value = "2"
+      type = "xsd:double"
+    },
+  ]
+}

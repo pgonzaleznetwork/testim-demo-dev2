@@ -1,0 +1,14 @@
+salesforce.ApexClass QuickContactController {
+  apiVersion = 38
+  status = "Active"
+  fullName = "QuickContactController"
+  content = file("salesforce/Records/ApexClass/QuickContactController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

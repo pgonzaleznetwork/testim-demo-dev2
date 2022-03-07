@@ -1,0 +1,14 @@
+salesforce.ValidationRule Account_Validation_using_field {
+  fullName = "Account.Validation_using_field"
+  active = true
+  errorConditionFormula = "BEGINS(Field_being_used__c, \"fail\")"
+  errorMessage = "fail"
+  _parent = [
+    salesforce.Account,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account.field.Field_being_used__c
+    },
+  ]
+}

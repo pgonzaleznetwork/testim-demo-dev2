@@ -1,0 +1,21 @@
+salesforce.WorkflowRule Account_update_website@vs {
+  fullName = "Account.update website"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Account_update_website_field@vuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = true
+  criteriaItems = [
+    {
+      field = salesforce.Account.field.Name
+      operation = "equals"
+      value = "website"
+    },
+  ]
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Account,
+  ]
+}

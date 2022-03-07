@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle UtilityBarTrailhead {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "UtilityBarTrailhead"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/UtilityBarTrailhead/UtilityBarTrailhead.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/UtilityBarTrailhead/UtilityBarTrailheadController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.UtilityBarTrailhead
+    },
+  ]
+}

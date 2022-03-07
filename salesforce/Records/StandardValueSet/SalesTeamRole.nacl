@@ -1,0 +1,41 @@
+salesforce.StandardValueSet SalesTeamRole {
+  fullName = "SalesTeamRole"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Account Manager"
+      default = false
+      label = "Account Manager"
+    },
+    {
+      fullName = "Channel Manager"
+      default = false
+      label = "Channel Manager"
+    },
+    {
+      fullName = "Executive Sponsor"
+      default = false
+      label = "Executive Sponsor"
+    },
+    {
+      fullName = "Lead Qualifier"
+      default = false
+      label = "Lead Qualifier"
+    },
+    {
+      fullName = "Pre-Sales Consultant"
+      default = false
+      label = "Pre-Sales Consultant"
+    },
+    {
+      fullName = "Sales Manager"
+      default = false
+      label = "Sales Manager"
+    },
+    {
+      fullName = "Sales Rep"
+      default = false
+      label = "Sales Rep"
+    },
+  ]
+}

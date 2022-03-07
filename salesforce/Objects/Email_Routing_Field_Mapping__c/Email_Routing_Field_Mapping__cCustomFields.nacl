@@ -1,0 +1,75 @@
+type salesforce.Email_Routing_Field_Mapping__c {
+  salesforce.MasterDetail Email_Routing_Rule__c {
+    apiName = "Email_Routing_Field_Mapping__c.Email_Routing_Rule__c"
+    label = "Email Routing Rule"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Email_Routing_Rule__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Email_Routing_Field_Mappings"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Email Routing Field Mappings"
+    trackTrending = false
+  }
+  salesforce.Picklist Business_Unit__c {
+    apiName = "Email_Routing_Field_Mapping__c.Business_Unit__c"
+    label = "Business Unit"
+    valueSet = [
+      {
+        fullName = "Benelux"
+        default = false
+        label = "Benelux"
+      },
+      {
+        fullName = "UK"
+        default = false
+        label = "UK"
+      },
+      {
+        fullName = "Spain"
+        default = false
+        label = "Spain"
+      },
+      {
+        fullName = "Germany Advantage"
+        default = false
+        label = "Germany Advantage"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Case_Type__c {
+    apiName = "Email_Routing_Field_Mapping__c.Case_Type__c"
+    label = "Case Type"
+    valueSet = [
+      {
+        fullName = "Order"
+        default = false
+        label = "Order"
+      },
+      {
+        fullName = "Complaint"
+        default = false
+        label = "Complaint"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+}

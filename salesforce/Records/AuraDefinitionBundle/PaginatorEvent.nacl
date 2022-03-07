@@ -1,0 +1,7 @@
+salesforce.AuraDefinitionBundle PaginatorEvent {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "PaginatorEvent"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/PaginatorEvent/PaginatorEvent.evt")
+}

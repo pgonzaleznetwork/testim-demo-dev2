@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle AccountLocatorApp {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "AccountLocatorApp"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/AccountLocatorApp/AccountLocatorApp.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AccountLocator
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AccountLocatorApp
+    },
+  ]
+}

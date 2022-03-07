@@ -1,0 +1,8 @@
+salesforce.AccountSettings {
+  fullName = "Account"
+  enableAccountHistoryTracking = false
+  enableAccountTeams = true
+  enableContactHistoryTracking = false
+  enableRelateContactToMultipleAccounts = true
+  showViewHierarchyLink = true
+}

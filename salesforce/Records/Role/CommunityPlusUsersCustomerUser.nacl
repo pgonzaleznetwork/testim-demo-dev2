@@ -1,0 +1,10 @@
+salesforce.Role CommunityPlusUsersCustomerUser {
+  fullName = "CommunityPlusUsersCustomerUser"
+  caseAccessLevel = "None"
+  contactAccessLevel = "Edit"
+  description = "Community Plus Users Customer User"
+  mayForecastManagerShare = false
+  name = "Community Plus Users Customer User"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.CommunityPlusUsersCustomerManager
+}

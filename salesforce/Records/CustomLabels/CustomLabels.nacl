@@ -1,0 +1,33 @@
+salesforce.CustomLabels CustomLabels {
+  fullName = "CustomLabels"
+  labels = [
+    {
+      fullName = "LightningURL"
+      language = "en_US"
+      protected = true
+      shortDescription = "LightningURL"
+      value = "https://resourceful-moose-448750-dev-ed.lightning.force.com/auradocs/reference.app#reference?descriptor={0}&defType=component"
+    },
+    {
+      fullName = "Lightning_Success_Message"
+      language = "en_US"
+      protected = true
+      shortDescription = "Lightning Success Message"
+      value = "Saved!"
+    },
+    {
+      fullName = "Tell_us_your_name"
+      language = "en_US"
+      protected = true
+      shortDescription = "Tell us your name"
+      value = "Tell us your name"
+    },
+    {
+      fullName = "Thank_you_for_the_feedback"
+      language = "en_US"
+      protected = true
+      shortDescription = "Thank you for the feedback"
+      value = "Thank you for your feedback, {0}!"
+    },
+  ]
+}

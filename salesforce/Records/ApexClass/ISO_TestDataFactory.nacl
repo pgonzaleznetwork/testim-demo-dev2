@@ -1,0 +1,6 @@
+salesforce.ApexClass ISO_TestDataFactory {
+  apiVersion = 42
+  status = "Active"
+  fullName = "ISO_TestDataFactory"
+  content = file("salesforce/Records/ApexClass/ISO_TestDataFactory.cls")
+}

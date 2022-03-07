@@ -1,0 +1,8 @@
+salesforce.CustomTab Email_Routing_Rule__c {
+  fullName = "Email_Routing_Rule__c"
+  customObject = true
+  motif = "Custom50: Big top"
+  _parent = [
+    salesforce.Email_Routing_Rule__c,
+  ]
+}

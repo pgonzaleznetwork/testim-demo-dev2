@@ -1,0 +1,21 @@
+salesforce.ApexPage AnswersHome {
+  apiVersion = 42
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Lightning Platform home page for Answers sites"
+  label = "AnswersHome"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "AnswersHome"
+  content = file("salesforce/Records/ApexPage/AnswersHome.page")
+}

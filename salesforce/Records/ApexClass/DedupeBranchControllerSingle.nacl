@@ -1,0 +1,50 @@
+salesforce.ApexClass DedupeBranchControllerSingle {
+  apiVersion = 44
+  status = "Active"
+  fullName = "DedupeBranchControllerSingle"
+  content = file("salesforce/Records/ApexClass/DedupeBranchControllerSingle.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.DedupeBranchConfigurationChecker
+    },
+    {
+      reference = salesforce.ApexClass.instance.DedupeConfigurationCache
+    },
+    {
+      reference = salesforce.ApexClass.instance.MatchingRuleControllerSingle
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_Next_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_Set_This_Field__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_To_This_Value__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.Matching_Rule_To_Evaluate__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_Next_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_Set_This_Field__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_To_This_Value__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.Use_Context_from_Calling_Branch__c
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Matching_Rule__c
+    },
+  ]
+}

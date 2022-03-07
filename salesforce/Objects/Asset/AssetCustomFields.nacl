@@ -1,0 +1,30 @@
+type salesforce.Asset {
+  salesforce.Picklist Support_Group__c {
+    apiName = "Asset.Support_Group__c"
+    label = "Support Group"
+    valueSet = [
+      {
+        fullName = "one"
+        default = false
+        label = "one"
+      },
+      {
+        fullName = "two"
+        default = false
+        label = "two"
+      },
+      {
+        fullName = "three"
+        default = false
+        label = "three"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackHistory = false
+    sorted = false
+  }
+}

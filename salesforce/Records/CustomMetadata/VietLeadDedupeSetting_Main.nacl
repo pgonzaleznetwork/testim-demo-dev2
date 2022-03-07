@@ -1,0 +1,17 @@
+salesforce.CustomMetadata VietLeadDedupeSetting_Main@v {
+  fullName = "VietLeadDedupeSetting.Main"
+  label = "Main"
+  protected = false
+  values = [
+    {
+      field = "Field1ApiName__c"
+      value = "LastName"
+      type = "xsd:string"
+    },
+    {
+      field = "Field2ApiName__c"
+      value = "MobilePhone"
+      type = "xsd:string"
+    },
+  ]
+}

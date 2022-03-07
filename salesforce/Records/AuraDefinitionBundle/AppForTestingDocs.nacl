@@ -1,0 +1,16 @@
+salesforce.AuraDefinitionBundle AppForTestingDocs {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "AppForTestingDocs"
+  type = "Application"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/AppForTestingDocs/AppForTestingDocs.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/AppForTestingDocs/AppForTestingDocs.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AppForTestingDocs
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.GridTest
+    },
+  ]
+}

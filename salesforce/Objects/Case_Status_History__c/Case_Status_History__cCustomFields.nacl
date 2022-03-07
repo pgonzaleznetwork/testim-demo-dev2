@@ -1,0 +1,267 @@
+type salesforce.Case_Status_History__c {
+  salesforce.MasterDetail Case__c {
+    apiName = "Case_Status_History__c.Case__c"
+    label = "Case"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Case,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Case_Status_History"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Case Status History"
+    trackTrending = false
+  }
+  salesforce.FormulaNumber Autonumber__c {
+    apiName = "Case_Status_History__c.Autonumber__c"
+    label = "Autonumber"
+    precision = 18
+    scale = 0
+    formula = "VALUE( SUBSTITUTE(Name, 'CSH-', '') )"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Number CaseAge_Business_Hours__c {
+    apiName = "Case_Status_History__c.CaseAge_Business_Hours__c"
+    label = "Business Hours"
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number CaseAge_Calendar_Hours__c {
+    apiName = "Case_Status_History__c.CaseAge_Calendar_Hours__c"
+    label = "Calendar Hours"
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Change_Type__c {
+    apiName = "Case_Status_History__c.Change_Type__c"
+    label = "Change Type"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Picklist Changed_Field__c {
+    apiName = "Case_Status_History__c.Changed_Field__c"
+    label = "Changed Field"
+    valueSet = [
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+      },
+      {
+        fullName = "Created"
+        default = false
+        label = "Created"
+      },
+      {
+        fullName = "Feed event"
+        default = false
+        label = "Feed event"
+      },
+      {
+        fullName = "Owner (Accepted)"
+        default = false
+        label = "Owner (Accepted)"
+      },
+      {
+        fullName = "Owner (Assignment)"
+        default = false
+        label = "Owner (Assignment)"
+      },
+      {
+        fullName = "Owner (Escalation)"
+        default = false
+        label = "Owner (Escalation)"
+      },
+      {
+        fullName = "Record locked"
+        default = false
+        label = "Record locked"
+      },
+      {
+        fullName = "Record unlocked"
+        default = false
+        label = "Record unlocked"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Current_Time_Bucket__c {
+    apiName = "Case_Status_History__c.Current_Time_Bucket__c"
+    label = "Current Time Bucket"
+    valueSet = [
+      {
+        fullName = "Vendor Time Bucket"
+        default = false
+        label = "Vendor Time Bucket"
+      },
+      {
+        fullName = "Resolution Time Bucket"
+        default = false
+        label = "Resolution Time Bucket"
+      },
+      {
+        fullName = "Finance Time Bucket"
+        default = false
+        label = "Finance Time Bucket"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    description = '''
+Here you must describe the different time buckets you want to track. 
+In order to map the Status values to the time buckets, use the custom setting: Case Status Bucket.  The Time Buckets in the custom setting must match the values here.
+'''
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.DateTime End_time__c {
+    apiName = "Case_Status_History__c.End_time__c"
+    label = "End time"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text New_Status__c {
+    apiName = "Case_Status_History__c.New_Status__c"
+    label = "New Status"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text New_Value__c {
+    apiName = "Case_Status_History__c.New_Value__c"
+    label = "New Value"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Old_Status__c {
+    apiName = "Case_Status_History__c.Old_Status__c"
+    label = "Old Status"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Owner_Type__c {
+    apiName = "Case_Status_History__c.Owner_Type__c"
+    label = "Owner Type"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Owner_id__c {
+    apiName = "Case_Status_History__c.Owner_id__c"
+    label = "Owner id"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Owner_name__c {
+    apiName = "Case_Status_History__c.Owner_name__c"
+    label = "Owner name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.DateTime Start_time__c {
+    apiName = "Case_Status_History__c.Start_time__c"
+    label = "Start time"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Users_Primary_Queue__c {
+    apiName = "Case_Status_History__c.Users_Primary_Queue__c"
+    label = "Users Primary Queue"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

@@ -1,0 +1,15 @@
+salesforce.FieldServiceSettings {
+  fullName = "FieldService"
+  doesAllowEditSaForCrew = false
+  doesShareSaParentWoWithAr = false
+  doesShareSaWithAr = false
+  enableWorkOrders = false
+  enableWorkPlansAutoGeneration = "false"
+  fieldServiceNotificationsOrgPref = true
+  fieldServiceOrgPref = true
+  isGeoCodeSyncEnabled = false
+  isLocationHistoryEnabled = false
+  serviceAppointmentsDueDateOffsetOrgValue = 3
+  workOrderLineItemSearchFields = "Subject"
+  workOrderSearchFields = "Subject"
+}

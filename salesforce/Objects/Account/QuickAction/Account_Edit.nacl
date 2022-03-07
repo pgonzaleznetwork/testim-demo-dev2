@@ -1,0 +1,50 @@
+salesforce.QuickAction Account_Edit@v {
+  fullName = "Account.Edit"
+  label = "Edit"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Name
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Phone
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Industry
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Type
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Website
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  targetObject = salesforce.Account
+  targetParentField = "Parent"
+  targetRecordType = salesforce.RecordType.instance.Account_Local
+  type = "Create"
+  _parent = [
+    salesforce.Account,
+  ]
+}

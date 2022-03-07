@@ -1,0 +1,12 @@
+salesforce.ListView Case_Germany_Advantage_Case {
+  fullName = "Case.Germany_Advantage_Case"
+  filterScope = "Queue"
+  label = "Germany Advantage"
+  queue = "Germany_Advantage"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

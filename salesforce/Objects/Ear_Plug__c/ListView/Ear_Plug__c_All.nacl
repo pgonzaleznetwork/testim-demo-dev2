@@ -1,0 +1,8 @@
+salesforce.ListView Ear_Plug__c_All {
+  fullName = "Ear_Plug__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Ear_Plug__c,
+  ]
+}

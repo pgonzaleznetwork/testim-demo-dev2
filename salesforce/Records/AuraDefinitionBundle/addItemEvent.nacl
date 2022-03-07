@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle addItemEvent {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "addItemEvent"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/addItemEvent/addItemEvent.evt")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.addItemEvent
+    },
+    {
+      reference = salesforce.Camping_Item__c
+    },
+  ]
+}

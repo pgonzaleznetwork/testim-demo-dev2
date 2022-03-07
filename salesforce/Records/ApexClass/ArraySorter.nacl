@@ -1,0 +1,6 @@
+salesforce.ApexClass ArraySorter {
+  apiVersion = 42
+  status = "Active"
+  fullName = "ArraySorter"
+  content = file("salesforce/Records/ApexClass/ArraySorter.cls")
+}

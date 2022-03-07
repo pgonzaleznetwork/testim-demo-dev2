@@ -1,0 +1,10 @@
+salesforce.Role PartnerCommunityUsersPartnerManager {
+  fullName = "PartnerCommunityUsersPartnerManager"
+  caseAccessLevel = "None"
+  contactAccessLevel = "Edit"
+  description = "Partner Community Users Partner Manager"
+  mayForecastManagerShare = false
+  name = "Partner Community Users Partner Manager"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.PartnerCommunityUsersPartnerExecutive
+}

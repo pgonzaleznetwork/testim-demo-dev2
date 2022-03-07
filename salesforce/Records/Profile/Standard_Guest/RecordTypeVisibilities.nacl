@@ -1,0 +1,37 @@
+salesforce.Profile Guest {
+  recordTypeVisibilities = {
+    Account = {
+      Local = {
+        default = false
+        recordType = salesforce.RecordType.instance.Account_Local
+        visible = false
+      }
+    }
+    Case = {
+      Case_Time_Tracking = {
+        default = false
+        recordType = salesforce.RecordType.instance.Case_Case_Time_Tracking
+        visible = false
+      }
+    }
+    Contact = {
+      Child = {
+        default = false
+        recordType = salesforce.RecordType.instance.Contact_Child
+        visible = false
+      }
+      Parent = {
+        default = false
+        recordType = salesforce.RecordType.instance.Contact_Parent
+        visible = false
+      }
+    }
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = salesforce.RecordType.instance.Idea_InternalIdeasIdeaRecordType
+        visible = false
+      }
+    }
+  }
+}

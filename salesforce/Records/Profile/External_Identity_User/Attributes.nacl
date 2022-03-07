@@ -1,0 +1,5 @@
+salesforce.Profile External_Identity_User@s {
+  fullName = "External Identity User"
+  custom = false
+  userLicense = "External Identity"
+}

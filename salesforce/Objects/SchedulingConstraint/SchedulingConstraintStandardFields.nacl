@@ -1,0 +1,158 @@
+type salesforce.SchedulingConstraint {
+  serviceid Id {
+    apiName = "SchedulingConstraint.Id"
+    label = "Constraint ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "SchedulingConstraint.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SchedulingConstraint.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "SchedulingConstraint.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SchedulingConstraint.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SchedulingConstraint.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SchedulingConstraint.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SchedulingConstraint.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SchedulingConstraint.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number MaxWorkingHoursPerDay {
+    apiName = "SchedulingConstraint.MaxWorkingHoursPerDay"
+    label = "Maximum Working Hours Per Day"
+    precision = 10
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Number MaxWorkingHoursPerWeek {
+    apiName = "SchedulingConstraint.MaxWorkingHoursPerWeek"
+    label = "Maximum Working Hours Per Week"
+    precision = 10
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Number MaxWorkingHoursPerMonth {
+    apiName = "SchedulingConstraint.MaxWorkingHoursPerMonth"
+    label = "Maximum Working Hours Per Month"
+    precision = 10
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Number MaxShiftsPerDay {
+    apiName = "SchedulingConstraint.MaxShiftsPerDay"
+    label = "Maximum Shifts Per Day"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number MaxShiftsPerWeek {
+    apiName = "SchedulingConstraint.MaxShiftsPerWeek"
+    label = "Maximum Shifts Per Week"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Number MaxShiftsPerMonth {
+    apiName = "SchedulingConstraint.MaxShiftsPerMonth"
+    label = "Maximum Shifts Per Month"
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Unknown MaxNonstandardShiftsPerMonth {
+    apiName = "SchedulingConstraint.MaxNonstandardShiftsPerMonth"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,33 @@
+type salesforce.Syndication_Event__e {
+  salesforce.Text ReplayId {
+    apiName = "Syndication_Event__e.ReplayId"
+    label = "Replay ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1000
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Syndication_Event__e.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Syndication_Event__e.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+}

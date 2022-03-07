@@ -1,0 +1,17 @@
+salesforce.ApexClass CampaignTriggerHandler {
+  apiVersion = 44
+  status = "Active"
+  fullName = "CampaignTriggerHandler"
+  content = file("salesforce/Records/ApexClass/CampaignTriggerHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CampaignTriggerActions
+    },
+    {
+      reference = salesforce.ApexClass.instance.SObjectTriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

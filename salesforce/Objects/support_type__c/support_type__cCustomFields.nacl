@@ -1,0 +1,15 @@
+type salesforce.support_type__c {
+  salesforce.Text Class_Name__c {
+    apiName = "support_type__c.Class_Name__c"
+    label = "Class Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

@@ -1,0 +1,164 @@
+salesforce.Profile Force_2Ecom___App_Subscription_User@psbsss {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    AllowUniversalSearch = {
+      enabled = true
+      name = "AllowUniversalSearch"
+    }
+    AllowViewKnowledge = {
+      enabled = true
+      name = "AllowViewKnowledge"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    CreateCustomizeFilters = {
+      enabled = true
+      name = "CreateCustomizeFilters"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    CustomMobileAppsAccess = {
+      enabled = true
+      name = "CustomMobileAppsAccess"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditEvent = {
+      enabled = true
+      name = "EditEvent"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EmailMass = {
+      enabled = true
+      name = "EmailMass"
+    }
+    EmailSingle = {
+      enabled = true
+      name = "EmailSingle"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    ExportReport = {
+      enabled = true
+      name = "ExportReport"
+    }
+    ImportPersonal = {
+      enabled = true
+      name = "ImportPersonal"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    ListEmailSend = {
+      enabled = true
+      name = "ListEmailSend"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    SubscribeToLightningDashboards = {
+      enabled = true
+      name = "SubscribeToLightningDashboards"
+    }
+    SubscribeToLightningReports = {
+      enabled = true
+      name = "SubscribeToLightningReports"
+    }
+    TransactionalEmailSend = {
+      enabled = true
+      name = "TransactionalEmailSend"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewDeveloperName = {
+      enabled = true
+      name = "ViewDeveloperName"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<aura:component >
+    
+    <!-- This component displays a campaign item record, so it needs
+	an attribute of that type, that will be passed by a parent component -->
+    <aura:attribute name="item" type="Camping_Item__c" required="false"/>
+    
+    <!-- Then we can reference the field values using the v value provider -->
+    <p>Name: {!v.item.Name}</p>
+    <p>Price: <lightning:formattedNumber value="{!v.item.Price__c}" style="currency"/></p>
+    <p>Quantity: <lightning:formattedNumber value="{!v.item.Quantity__c}"/></p>
+    <p>Packed: 
+    	<lightning:input type="toggle" label="Packed?" name="packed"
+                         checked="{!v.item.Packed__c}"/>
+    </p>
+    <lightning:button onclick="{!c.packItem}" label="Packed!"/>
+    
+</aura:component>

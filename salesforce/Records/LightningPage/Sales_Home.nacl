@@ -1,0 +1,59 @@
+salesforce.LightningPage Sales_Home {
+  fullName = "Sales_Home"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:heroChart"
+          }
+        },
+      ]
+      name = "top"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:eventContainer"
+          }
+        },
+      ]
+      name = "bottomLeft"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:topDealsContainer"
+          }
+        },
+      ]
+      name = "bottomRight"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:todayTaskContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "home:assistant"
+          }
+        },
+      ]
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Sales Home"
+  template = {
+    name = "home:desktopTemplate"
+  }
+  type = "HomePage"
+}

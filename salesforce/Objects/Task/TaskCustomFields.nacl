@@ -1,0 +1,14 @@
+type salesforce.Task {
+  salesforce.FormulaText DB_Activity_Type__c {
+    apiName = "Task.DB_Activity_Type__c"
+    label = "DB Activity Type"
+    formula = "IF(CONTAINS( Subject , \"Email\"), \"Email\", IF(CONTAINS( Subject , \"Cold Call\"), \"Cold Call\", IF(CONTAINS( Subject , \"Call\"), \"Call\", IF(CONTAINS( Subject , \"Meeting\"), \"Meeting\", IF(CONTAINS( Subject , \"On Site Visit\"), \"Site Visit\", IF(CONTAINS( Subject , \"Quote\"), \"Send Letter/Quote\", \"Other\"))))))"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    _hidden_value = true
+  }
+}

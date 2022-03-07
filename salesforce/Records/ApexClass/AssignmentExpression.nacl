@@ -1,0 +1,14 @@
+salesforce.ApexClass AssignmentExpression {
+  apiVersion = 49
+  status = "Active"
+  fullName = "AssignmentExpression"
+  content = file("salesforce/Records/ApexClass/AssignmentExpression.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Expense__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+  ]
+}

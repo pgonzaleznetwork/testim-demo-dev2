@@ -1,0 +1,6 @@
+salesforce.ApexClass MongoDBAPI {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MongoDBAPI"
+  content = file("salesforce/Records/ApexClass/MongoDBAPI.cls")
+}

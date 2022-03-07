@@ -1,0 +1,6 @@
+salesforce.ApexClass CommunitiesSelfRegConfirmController {
+  apiVersion = 42
+  status = "Active"
+  fullName = "CommunitiesSelfRegConfirmController"
+  content = file("salesforce/Records/ApexClass/CommunitiesSelfRegConfirmController.cls")
+}

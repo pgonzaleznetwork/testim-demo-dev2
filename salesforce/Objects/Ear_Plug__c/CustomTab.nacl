@@ -1,0 +1,8 @@
+salesforce.CustomTab Ear_Plug__c {
+  fullName = "Ear_Plug__c"
+  customObject = true
+  motif = "Custom57: Building Block"
+  _parent = [
+    salesforce.Ear_Plug__c,
+  ]
+}

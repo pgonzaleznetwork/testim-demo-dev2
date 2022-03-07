@@ -1,0 +1,8 @@
+salesforce.ListView Fund__c_All {
+  fullName = "Fund__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Fund__c,
+  ]
+}

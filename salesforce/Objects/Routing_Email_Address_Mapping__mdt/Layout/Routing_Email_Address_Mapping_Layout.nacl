@@ -1,0 +1,96 @@
+salesforce.Layout Routing_Email_Address_Mapping__mdt_Routing_Email_Address_Mapping_Layout@uuuuubssss {
+  fullName = "Routing_Email_Address_Mapping__mdt-Routing Email Address Mapping Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Routing_Email_Address_Mapping__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Routing_Email_Address_Mapping__mdt.field.DeveloperName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Routing_Email_Address_Mapping__mdt.field.Country__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Routing_Email_Address_Mapping__mdt.field.Actual_Email_Address__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Routing_Email_Address_Mapping__mdt.field.Routing_Email_Address__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Routing_Email_Address_Mapping__mdt.field.NamespacePrefix
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMm43"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Routing_Email_Address_Mapping__mdt,
+  ]
+}

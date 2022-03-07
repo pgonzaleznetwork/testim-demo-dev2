@@ -1,0 +1,17 @@
+salesforce.ApexClass EnhancedLeadConversion_Tests {
+  apiVersion = 50
+  status = "Active"
+  fullName = "EnhancedLeadConversion_Tests"
+  content = file("salesforce/Records/ApexClass/EnhancedLeadConversion_Tests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Instance
+    },
+    {
+      reference = salesforce.ApexClass.instance.EnhancedLeadConversion
+    },
+    {
+      reference = salesforce.ApexClass.instance.LeadConversionConfig
+    },
+  ]
+}

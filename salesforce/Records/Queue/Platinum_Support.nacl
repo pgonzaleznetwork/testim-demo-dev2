@@ -1,0 +1,15 @@
+salesforce.Queue Platinum_Support {
+  fullName = "Platinum_Support"
+  doesSendEmailToMembers = false
+  name = "Platinum Support"
+  queueMembers = {
+    users = {
+      user = [
+        "jcando@fslappiriopablo.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

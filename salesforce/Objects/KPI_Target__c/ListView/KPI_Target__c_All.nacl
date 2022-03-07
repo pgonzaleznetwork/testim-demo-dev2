@@ -1,0 +1,8 @@
+salesforce.ListView KPI_Target__c_All {
+  fullName = "KPI_Target__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.KPI_Target__c,
+  ]
+}

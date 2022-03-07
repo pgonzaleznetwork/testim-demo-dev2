@@ -1,0 +1,6 @@
+salesforce.ApexClass BinarySearch {
+  apiVersion = 42
+  status = "Active"
+  fullName = "BinarySearch"
+  content = file("salesforce/Records/ApexClass/BinarySearch.cls")
+}

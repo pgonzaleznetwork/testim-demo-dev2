@@ -1,0 +1,8 @@
+salesforce.Profile Force_2Ecom___Free_User@psbss {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

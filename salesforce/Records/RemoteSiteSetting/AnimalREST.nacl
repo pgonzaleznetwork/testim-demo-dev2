@@ -1,0 +1,6 @@
+salesforce.RemoteSiteSetting AnimalREST {
+  fullName = "AnimalREST"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://th-apex-http-callout.herokuapp.com"
+}

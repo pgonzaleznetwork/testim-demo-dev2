@@ -1,0 +1,11 @@
+salesforce.ApexClass BatchLeadConvert {
+  apiVersion = 46
+  status = "Active"
+  fullName = "BatchLeadConvert"
+  content = file("salesforce/Records/ApexClass/BatchLeadConvert.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

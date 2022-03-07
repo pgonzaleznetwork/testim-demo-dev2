@@ -1,0 +1,364 @@
+type salesforce.Apex_Log__c {
+  salesforce.FormulaText Access_Key__c {
+    apiName = "Apex_Log__c.Access_Key__c"
+    label = "Access Key"
+    formula = '''
+IF( 
+  AND ( NOT(ISBLANK(class_name__c)), NOT(ISBLANK( method_name__c ))),
+  class_name__c + '::' + method_name__c,
+  ''   
+  )
+'''
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Apex_Log__c.field.class_name__c
+      },
+      {
+        reference = salesforce.Apex_Log__c.field.method_name__c
+      },
+    ]
+  }
+  salesforce.TextArea Exception_Cause__c {
+    apiName = "Apex_Log__c.Exception_Cause__c"
+    label = "Exception Cause"
+    inlineHelpText = "Exception Cause from the SF Exception Object that was caught."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Exception Cause from the SF Exception Object that was caught."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Exception_Line_Number__c {
+    apiName = "Apex_Log__c.Exception_Line_Number__c"
+    label = "Exception Line Number"
+    inlineHelpText = "Exception Line Number from the SF Exception Object that was caught."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 9
+    queryable = true
+    description = "Exception Line Number from the SF Exception Object that was caught."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.LongTextArea Exception_Stack_Trace_String__c {
+    apiName = "Apex_Log__c.Exception_Stack_Trace_String__c"
+    label = "Exception Stack Trace String"
+    inlineHelpText = "Exception Stack Trace String from the SF Exception Object that was caught."
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    description = "Exception Stack Trace String from the SF Exception Object that was caught."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.TextArea Exception_Type__c {
+    apiName = "Apex_Log__c.Exception_Type__c"
+    label = "Exception Type"
+    inlineHelpText = "Exception Type Name from the SF Exception Object that was caught."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Exception Type Name from the SF Exception Object that was caught."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Lookup Lead__c {
+    apiName = "Apex_Log__c.Lead__c"
+    label = "Lead"
+    referenceTo = [
+      salesforce.Lead,
+    ]
+    inlineHelpText = "Lookup to the Lead record this log is associated with."
+    createable = true
+    updateable = true
+    relationshipName = "Apex_Audit_Log1"
+    queryable = true
+    deleteConstraint = "SetNull"
+    description = "Lookup to the Lead record this log is associated with."
+    externalId = false
+    relationshipLabel = "Apex Log"
+    trackTrending = false
+  }
+  salesforce.Picklist Log_Type__c {
+    apiName = "Apex_Log__c.Log_Type__c"
+    label = "Log Type"
+    valueSet = [
+      {
+        fullName = "ERROR"
+        default = false
+        label = "ERROR"
+      },
+      {
+        fullName = "WARN"
+        default = false
+        label = "WARN"
+      },
+      {
+        fullName = "INFO"
+        default = false
+        label = "INFO"
+      },
+      {
+        fullName = "DEBUG"
+        default = false
+        label = "DEBUG"
+      },
+      {
+        fullName = "FINE"
+        default = false
+        label = "FINE"
+      },
+      {
+        fullName = "FINER"
+        default = false
+        label = "FINER"
+      },
+      {
+        fullName = "FINEST"
+        default = false
+        label = "FINEST"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.LongTextArea Message__c {
+    apiName = "Apex_Log__c.Message__c"
+    label = "Message"
+    inlineHelpText = "This is the primary field to contain the error, audit or exception messages we wish to log."
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    description = "This is the primary field to contain the error, audit or exception messages we wish to log."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.Text Reference_ID__c {
+    apiName = "Apex_Log__c.Reference_ID__c"
+    label = "Reference ID"
+    inlineHelpText = "Optional Unique ID used to identify this transaction.  This is an External ID."
+    createable = true
+    updateable = true
+    externalId = true
+    unique = true
+    caseSensitive = true
+    length = 60
+    queryable = true
+    description = "Optional Unique ID used to identify this transaction.  This is an External ID."
+    encryptionScheme = "None"
+    trackTrending = false
+  }
+  salesforce.Number Status_Code__c {
+    apiName = "Apex_Log__c.Status_Code__c"
+    label = "Status Code"
+    precision = 18
+    scale = 0
+    inlineHelpText = "Optional status code for adding an additional level of detail or segmentation to a log record."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Optional status code for adding an additional level of detail or segmentation to a log record."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.TextArea Status_Message__c {
+    apiName = "Apex_Log__c.Status_Message__c"
+    label = "Status Message"
+    inlineHelpText = "Optional status message for adding an additional level of detail or segmentation to a log record."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Optional status message for adding an additional level of detail or segmentation to a log record."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text class_name__c {
+    apiName = "Apex_Log__c.class_name__c"
+    label = "Class Name"
+    inlineHelpText = "Class (or Trigger) name of relevant apex code the log record is generated from."
+    createable = true
+    updateable = true
+    externalId = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Class (or Trigger) name of relevant apex code the log record is generated from."
+    encryptionScheme = "None"
+    trackTrending = false
+  }
+  salesforce.Text method_name__c {
+    apiName = "Apex_Log__c.method_name__c"
+    label = "Method Name"
+    inlineHelpText = "The name of the Apex method creating the audit object."
+    createable = true
+    updateable = true
+    externalId = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "The name of the Apex method creating the audit object."
+    encryptionScheme = "None"
+    trackTrending = false
+  }
+  salesforce.LongTextArea request_info__c {
+    apiName = "Apex_Log__c.request_info__c"
+    label = "Request Info"
+    inlineHelpText = "This is the request information from web services and callouts."
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+    description = "This is the request information from web services and callouts."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 5
+  }
+  salesforce.LongTextArea response_info__c {
+    apiName = "Apex_Log__c.response_info__c"
+    label = "Response Info"
+    inlineHelpText = "This is the response information from web services and callouts."
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+    description = "This is the response information from web services and callouts."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 5
+  }
+  salesforce.DateTime start_dtm__c {
+    apiName = "Apex_Log__c.start_dtm__c"
+    label = "Start DTM"
+    inlineHelpText = "DateTime stamp at which the logging process began."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "DateTime stamp at which the logging process began."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number start_ms__c {
+    apiName = "Apex_Log__c.start_ms__c"
+    label = "Start MS"
+    precision = 15
+    scale = 0
+    inlineHelpText = "Millisecond clock value when logging started."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Millisecond clock value when logging started."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.DateTime stop_dtm__c {
+    apiName = "Apex_Log__c.stop_dtm__c"
+    label = "Stop DTM"
+    inlineHelpText = "DateTime stamp at which logging process was ended."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "DateTime stamp at which logging process was ended."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number stop_ms__c {
+    apiName = "Apex_Log__c.stop_ms__c"
+    label = "Stop MS"
+    precision = 15
+    scale = 0
+    inlineHelpText = "Millisecond clock value when logging was stopped."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Millisecond clock value when logging was stopped."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Picklist Province__c {
+    apiName = "Apex_Log__c.Province__c"
+    label = "Province"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.Province
+  }
+  salesforce.Picklist District__c {
+    apiName = "Apex_Log__c.District__c"
+    label = "District"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.District
+    fieldDependency = {
+      controllingField = "Province__c"
+      valueSettings = [
+        {
+          valueName = "District4"
+          controllingFieldValue = [
+            "Province1",
+          ]
+        },
+        {
+          valueName = "District3"
+          controllingFieldValue = [
+            "Province2",
+          ]
+        },
+        {
+          valueName = "District2"
+          controllingFieldValue = [
+            "Province3",
+          ]
+        },
+        {
+          valueName = "District1"
+          controllingFieldValue = [
+            "Province4",
+          ]
+        },
+      ]
+    }
+  }
+}

@@ -1,0 +1,124 @@
+type salesforce.ServiceCrewMember {
+  serviceid Id {
+    apiName = "ServiceCrewMember.Id"
+    label = "Service Crew Member ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ServiceCrewMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ServiceCrewMemberNumber {
+    apiName = "ServiceCrewMember.ServiceCrewMemberNumber"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ServiceCrewMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ServiceCrewMember.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ServiceCrewMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ServiceCrewMember.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ServiceCrewMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceCrewId {
+    apiName = "ServiceCrewMember.ServiceCrewId"
+    label = "Service Crew ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceCrew,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ServiceCrew"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup ServiceResourceId {
+    apiName = "ServiceCrewMember.ServiceResourceId"
+    label = "Resource ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceResource,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceResource"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.DateTime StartDate {
+    apiName = "ServiceCrewMember.StartDate"
+    label = "Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EndDate {
+    apiName = "ServiceCrewMember.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsLeader {
+    apiName = "ServiceCrewMember.IsLeader"
+    label = "Leader"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

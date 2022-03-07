@@ -1,0 +1,112 @@
+salesforce.Layout Speaker__c_Speaker_Layout@uubs {
+  fullName = "Speaker__c-Speaker Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Speaker__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Speaker__c.field.First_Name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Speaker__c.field.Last_Name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Speaker__c.field.Email__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Speaker__c.field.Bio__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Speaker__c.field.Picture_Path__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Speaker__c.field.Picture__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Speaker__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Speaker__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Speaker__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Session__c.NAME",
+        "Session__c.Session_Date__c",
+      ]
+      relatedList = salesforce.Session_Speaker__c.field.Speaker__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000iSPz7"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Speaker__c,
+  ]
+}

@@ -1,0 +1,173 @@
+type salesforce.ProductItem {
+  serviceid Id {
+    apiName = "ProductItem.Id"
+    label = "Product Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ProductItem.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ProductItemNumber {
+    apiName = "ProductItem.ProductItemNumber"
+    label = "Product Item Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LocationId {
+    apiName = "ProductItem.LocationId"
+    label = "Location ID"
+    _required = true
+    referenceTo = [
+      salesforce.Location,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Location"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "ProductItem.Product2Id"
+    label = "Product ID"
+    _required = true
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Product2"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Text ProductName {
+    apiName = "ProductItem.ProductName"
+    label = "Product Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SerialNumber {
+    apiName = "ProductItem.SerialNumber"
+    label = "Serial Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+  }
+  salesforce.Number QuantityOnHand {
+    apiName = "ProductItem.QuantityOnHand"
+    label = "Quantity On Hand"
+    _required = true
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist QuantityUnitOfMeasure {
+    apiName = "ProductItem.QuantityUnitOfMeasure"
+    label = "Quantity Unit Of Measure"
+    valueSet = [
+      {
+        fullName = "Each"
+        default = false
+        label = "Each"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsProduct2Serialized {
+    apiName = "ProductItem.IsProduct2Serialized"
+    label = "Serialized"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

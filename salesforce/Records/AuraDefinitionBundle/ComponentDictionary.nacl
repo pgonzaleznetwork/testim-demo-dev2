@@ -1,0 +1,38 @@
+salesforce.AuraDefinitionBundle ComponentDictionary {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "ComponentDictionary"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/ComponentDictionary/ComponentDictionary.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/ComponentDictionary/ComponentDictionaryController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/ComponentDictionary/ComponentDictionary.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ComponentDictionary
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningAccordion
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButton
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonGroup
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonIcon
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningCard
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningLayout
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTab
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTile
+    },
+  ]
+}

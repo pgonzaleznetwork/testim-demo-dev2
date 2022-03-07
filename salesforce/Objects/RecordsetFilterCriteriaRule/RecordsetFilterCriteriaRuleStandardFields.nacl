@@ -1,0 +1,311 @@
+type salesforce.RecordsetFilterCriteriaRule {
+  serviceid Id {
+    apiName = "RecordsetFilterCriteriaRule.Id"
+    label = "Recordset Filter Criteria Rule ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "RecordsetFilterCriteriaRule.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber RecordsetFilterCriteriaRuleNumber {
+    apiName = "RecordsetFilterCriteriaRule.RecordsetFilterCriteriaRuleNumber"
+    label = "Recordset Filter Criteria Rule Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "RecordsetFilterCriteriaRule.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "RecordsetFilterCriteriaRule.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "RecordsetFilterCriteriaRule.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "RecordsetFilterCriteriaRule.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "RecordsetFilterCriteriaRule.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RecordsetFilterCriteriaId {
+    apiName = "RecordsetFilterCriteriaRule.RecordsetFilterCriteriaId"
+    label = "Recordset Filter Criteria ID"
+    _required = true
+    referenceTo = [
+      salesforce.RecordsetFilterCriteria,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "RecordsetFilterCriteria"
+    queryable = true
+  }
+  salesforce.Picklist CriteriaField {
+    apiName = "RecordsetFilterCriteriaRule.CriteriaField"
+    label = "Criteria Field"
+    _required = true
+    valueSet = [
+      {
+        fullName = "ServiceAppointment.AccountId"
+        default = false
+        label = "Account ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ActualDuration"
+        default = false
+        label = "Actual Duration (Minutes)"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ActualEndTime"
+        default = false
+        label = "Actual End"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ActualStartTime"
+        default = false
+        label = "Actual Start"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.AppointmentNumber"
+        default = false
+        label = "Appointment Number"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ArrivalWindowEndTime"
+        default = false
+        label = "Arrival Window End"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ArrivalWindowStartTime"
+        default = false
+        label = "Arrival Window Start"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.City"
+        default = false
+        label = "City"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ContactId"
+        default = false
+        label = "Contact ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Country"
+        default = false
+        label = "Country"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.CreatedById"
+        default = false
+        label = "Created By ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.CreatedDate"
+        default = false
+        label = "Created Date"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.DueDate"
+        default = false
+        label = "Due Date"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Duration"
+        default = false
+        label = "Duration"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.DurationInMinutes"
+        default = false
+        label = "Duration in Minutes"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.DurationType"
+        default = false
+        label = "Duration Type"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.EarliestStartTime"
+        default = false
+        label = "Earliest Start Permitted"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.GeocodeAccuracy"
+        default = false
+        label = "Geocode Accuracy"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.LastModifiedById"
+        default = false
+        label = "Last Modified By ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.LastModifiedDate"
+        default = false
+        label = "Last Modified Date"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Latitude"
+        default = false
+        label = "Latitude"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Longitude"
+        default = false
+        label = "Longitude"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.SchedEndTime"
+        default = false
+        label = "Scheduled End"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.SchedStartTime"
+        default = false
+        label = "Scheduled Start"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Id"
+        default = false
+        label = "Service Appointment ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.State"
+        default = false
+        label = "State/Province"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Status"
+        default = false
+        label = "Status"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.StatusCategory"
+        default = false
+        label = "Status Category"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Street"
+        default = false
+        label = "Street"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.Subject"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.ServiceTerritoryId"
+        default = false
+        label = "Territory ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.WorkTypeId"
+        default = false
+        label = "Work Type ID"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment.PostalCode"
+        default = false
+        label = "Zip/Postal Code"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Value {
+    apiName = "RecordsetFilterCriteriaRule.Value"
+    label = "Value"
+    createable = true
+    updateable = true
+    length = 256
+    queryable = true
+  }
+  salesforce.Unknown Operator {
+    apiName = "RecordsetFilterCriteriaRule.Operator"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

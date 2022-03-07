@@ -1,0 +1,11 @@
+salesforce.ApexClass LightningSelfRegisterController {
+  apiVersion = 42
+  status = "Active"
+  fullName = "LightningSelfRegisterController"
+  content = file("salesforce/Records/ApexClass/LightningSelfRegisterController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.User
+    },
+  ]
+}

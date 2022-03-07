@@ -1,0 +1,24 @@
+salesforce.AuraDefinitionBundle AssetClassSelector {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "AssetClassSelector"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/AssetClassSelector/AssetClassSelectorHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/AssetClassSelector/AssetClassSelector.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/AssetClassSelector/AssetClassSelector.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/AssetClassSelector/AssetClassSelectorController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.FundController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AssetClassSelector
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ValueChange
+    },
+    {
+      reference = salesforce.StaticResource.instance.DataCache
+    },
+  ]
+}

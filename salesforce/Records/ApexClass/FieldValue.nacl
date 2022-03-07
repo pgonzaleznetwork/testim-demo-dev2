@@ -1,0 +1,6 @@
+salesforce.ApexClass FieldValue {
+  apiVersion = 44
+  status = "Active"
+  fullName = "FieldValue"
+  content = file("salesforce/Records/ApexClass/FieldValue.cls")
+}

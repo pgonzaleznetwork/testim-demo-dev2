@@ -1,0 +1,288 @@
+type salesforce.ProductRequestLineItem {
+  serviceid Id {
+    apiName = "ProductRequestLineItem.Id"
+    label = "Product Request Line Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductRequestLineItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ProductRequestLineItemNumber {
+    apiName = "ProductRequestLineItem.ProductRequestLineItemNumber"
+    label = "Product Request Line Item Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductRequestLineItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductRequestLineItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductRequestLineItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductRequestLineItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductRequestLineItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "ProductRequestLineItem.ParentId"
+    label = "Product Request ID"
+    _required = true
+    referenceTo = [
+      salesforce.ProductRequest,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Parent"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "ProductRequestLineItem.Product2Id"
+    label = "Product ID"
+    _required = true
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Product2"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Number QuantityRequested {
+    apiName = "ProductRequestLineItem.QuantityRequested"
+    label = "Quantity Requested"
+    _required = true
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist QuantityUnitOfMeasure {
+    apiName = "ProductRequestLineItem.QuantityUnitOfMeasure"
+    label = "Quantity Unit Of Measure"
+    valueSet = [
+      {
+        fullName = "Each"
+        default = false
+        label = "Each"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup WorkOrderId {
+    apiName = "ProductRequestLineItem.WorkOrderId"
+    label = "Work Order ID"
+    referenceTo = [
+      salesforce.WorkOrder,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkOrder"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup WorkOrderLineItemId {
+    apiName = "ProductRequestLineItem.WorkOrderLineItemId"
+    label = "Line Item ID"
+    referenceTo = [
+      salesforce.WorkOrderLineItem,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkOrderLineItem"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.DateTime NeedByDate {
+    apiName = "ProductRequestLineItem.NeedByDate"
+    label = "Need By Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ProductRequestLineItem.Status"
+    label = "Status"
+    valueSet = [
+      {
+        fullName = "Draft"
+        default = true
+        label = "Draft"
+        isActive = true
+      },
+      {
+        fullName = "Submitted"
+        default = false
+        label = "Submitted"
+        isActive = true
+      },
+      {
+        fullName = "Received"
+        default = false
+        label = "Received"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist ShipmentType {
+    apiName = "ProductRequestLineItem.ShipmentType"
+    label = "Shipment Type "
+    valueSet = [
+      {
+        fullName = "Rush"
+        default = true
+        label = "Rush"
+        isActive = true
+      },
+      {
+        fullName = "Overnight"
+        default = false
+        label = "Overnight"
+        isActive = true
+      },
+      {
+        fullName = "Next Business Day"
+        default = false
+        label = "Next Business Day"
+        isActive = true
+      },
+      {
+        fullName = "Pick Up"
+        default = false
+        label = "Pick Up"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Address ShipToAddress {
+    apiName = "ProductRequestLineItem.ShipToAddress"
+    label = "Ship To Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ProductRequestLineItem.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Lookup DestinationLocationId {
+    apiName = "ProductRequestLineItem.DestinationLocationId"
+    label = "Destination Location ID"
+    referenceTo = [
+      salesforce.Location,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "DestinationLocation"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup SourceLocationId {
+    apiName = "ProductRequestLineItem.SourceLocationId"
+    label = "Source Location ID"
+    referenceTo = [
+      salesforce.Location,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "SourceLocation"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup CaseId {
+    apiName = "ProductRequestLineItem.CaseId"
+    label = "Case ID"
+    referenceTo = [
+      salesforce.Case,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Case"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup AccountId {
+    apiName = "ProductRequestLineItem.AccountId"
+    label = "Account ID"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Account"
+    queryable = true
+    trackHistory = false
+  }
+}

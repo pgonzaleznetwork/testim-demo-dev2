@@ -1,0 +1,25 @@
+type salesforce.TriggerStatus2__c {
+  salesforce.Checkbox Disabled__c {
+    apiName = "TriggerStatus2__c.Disabled__c"
+    label = "Disabled"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Trigger__c {
+    apiName = "TriggerStatus2__c.Trigger__c"
+    label = "Trigger"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

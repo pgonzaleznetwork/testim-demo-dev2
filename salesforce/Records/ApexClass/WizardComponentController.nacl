@@ -1,0 +1,17 @@
+salesforce.ApexClass WizardComponentController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "WizardComponentController"
+  content = file("salesforce/Records/ApexClass/WizardComponentController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+}

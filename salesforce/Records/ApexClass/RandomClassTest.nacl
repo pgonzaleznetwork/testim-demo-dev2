@@ -1,0 +1,17 @@
+salesforce.ApexClass RandomClassTest {
+  apiVersion = 43
+  status = "Active"
+  fullName = "RandomClassTest"
+  content = file("salesforce/Records/ApexClass/RandomClassTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadata
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadataFactory
+    },
+  ]
+}

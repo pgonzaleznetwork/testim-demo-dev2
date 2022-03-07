@@ -1,0 +1,56 @@
+salesforce.Profile External_Identity_User@s {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    AllowUniversalSearch = {
+      enabled = true
+      name = "AllowUniversalSearch"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    IdentityEnabled = {
+      enabled = true
+      name = "IdentityEnabled"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    WorkDotComUserPerm = {
+      enabled = true
+      name = "WorkDotComUserPerm"
+    }
+  }
+}

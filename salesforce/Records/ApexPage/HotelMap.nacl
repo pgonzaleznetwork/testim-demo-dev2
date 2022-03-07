@@ -1,0 +1,25 @@
+salesforce.ApexPage HotelMap {
+  apiVersion = 41
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "HotelMap"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "HotelMap"
+  content = file("salesforce/Records/ApexPage/HotelMap.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.HotelRemoter
+    },
+  ]
+}

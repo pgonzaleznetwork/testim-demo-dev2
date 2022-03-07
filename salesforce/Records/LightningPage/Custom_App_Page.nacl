@@ -1,0 +1,102 @@
+salesforce.LightningPage Custom_App_Page {
+  fullName = "Custom_App_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityName"
+                value = "Account"
+              },
+              {
+                name = "filterName"
+                value = "AllAccounts"
+              },
+              {
+                name = "hideActionBar"
+                value = "false"
+              },
+              {
+                name = "pageSize"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:filterListCard"
+          }
+        },
+      ]
+      name = "region1"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "camping"
+          }
+        },
+      ]
+      name = "region2"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "context"
+                value = "BOOKMARKS"
+              },
+            ]
+            componentName = "forceChatter:exposedFeed"
+          }
+        },
+      ]
+      name = "region3"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityNames"
+                valueList = {
+                  valueListItems = [
+                    {
+                      value = "Account"
+                    },
+                  ]
+                }
+              },
+              {
+                name = "maxRecords"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:recentItems"
+          }
+        },
+      ]
+      name = "region4"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Custom App Page"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderThreeColumns"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.camping
+    },
+    {
+      reference = salesforce.ListView.instance.Account_AllAccounts
+    },
+  ]
+}

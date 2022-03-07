@@ -1,0 +1,17 @@
+salesforce.CustomMetadata VAT_Rate_UK@uv {
+  fullName = "VAT_Rate.UK"
+  label = "UK"
+  protected = false
+  values = [
+    {
+      field = "Default__c"
+      value = "true"
+      type = "xsd:boolean"
+    },
+    {
+      field = "Rate__c"
+      value = "2"
+      type = "xsd:double"
+    },
+  ]
+}

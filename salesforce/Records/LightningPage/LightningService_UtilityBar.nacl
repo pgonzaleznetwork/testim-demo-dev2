@@ -1,0 +1,151 @@
+salesforce.LightningPage LightningService_UtilityBar {
+  fullName = "LightningService_UtilityBar"
+  description = "The default utility bar for the Service Console application."
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_service_omnichannel:omniWidget"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "eager"
+                type = "decorator"
+                value = "false"
+              },
+              {
+                name = "height"
+                type = "decorator"
+                value = "480"
+              },
+              {
+                name = "icon"
+                type = "decorator"
+                value = "fallback"
+              },
+              {
+                name = "label"
+                type = "decorator"
+                value = "UtilityBarTrailhead"
+              },
+              {
+                name = "scrollable"
+                type = "decorator"
+                value = "true"
+              },
+              {
+                name = "width"
+                type = "decorator"
+                value = "340"
+              },
+            ]
+            componentName = "UtilityBarTrailhead"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "eager"
+                type = "decorator"
+                value = "true"
+              },
+              {
+                name = "height"
+                type = "decorator"
+                value = "480"
+              },
+              {
+                name = "icon"
+                type = "decorator"
+                value = "call"
+              },
+              {
+                name = "label"
+                type = "decorator"
+                value = "Telefono"
+              },
+              {
+                name = "scrollable"
+                type = "decorator"
+                value = "true"
+              },
+              {
+                name = "width"
+                type = "decorator"
+                value = "340"
+              },
+            ]
+            componentName = "opencti:softPhone"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "eager"
+                type = "decorator"
+                value = "false"
+              },
+              {
+                name = "height"
+                type = "decorator"
+                value = "480"
+              },
+              {
+                name = "icon"
+                type = "decorator"
+                value = "fallback"
+              },
+              {
+                name = "label"
+                type = "decorator"
+                value = "GridTest"
+              },
+              {
+                name = "scrollable"
+                type = "decorator"
+                value = "true"
+              },
+              {
+                name = "width"
+                type = "decorator"
+                value = "340"
+              },
+            ]
+            componentName = "GridTest"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "console:history"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "notes:utilityBarNoteList"
+          }
+        },
+      ]
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Service Console App Utility Bar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.GridTest
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.UtilityBarTrailhead
+    },
+  ]
+}

@@ -1,0 +1,233 @@
+salesforce.CustomApplication Classic_Console_By_Pablo {
+  fullName = "Classic_Console_By_Pablo"
+  consoleConfig = {
+    componentList = {
+      alignment = "right"
+      components = [
+        "Console.BuiltInComponent.mostRecentlyUsed",
+      ]
+    }
+    detailPageRefreshMethod = "none"
+    keyboardShortcuts = {
+      defaultShortcuts = [
+        {
+          action = "FOCUS_CONSOLE"
+          active = true
+          keyCommand = "ESC"
+        },
+        {
+          action = "FOCUS_NAVIGATOR_TAB"
+          active = true
+          keyCommand = "V"
+        },
+        {
+          action = "FOCUS_DETAIL_VIEW"
+          active = true
+          keyCommand = "SHIFT+S"
+        },
+        {
+          action = "FOCUS_PRIMARY_TAB_PANEL"
+          active = true
+          keyCommand = "P"
+        },
+        {
+          action = "FOCUS_SUBTAB_PANEL"
+          active = true
+          keyCommand = "S"
+        },
+        {
+          action = "FOCUS_LIST_VIEW"
+          active = true
+          keyCommand = "N"
+        },
+        {
+          action = "FOCUS_FIRST_LIST_VIEW"
+          active = true
+          keyCommand = "SHIFT+F"
+        },
+        {
+          action = "FOCUS_SEARCH_INPUT"
+          active = true
+          keyCommand = "R"
+        },
+        {
+          action = "MOVE_LEFT"
+          active = true
+          keyCommand = "LEFT ARROW"
+        },
+        {
+          action = "MOVE_RIGHT"
+          active = true
+          keyCommand = "RIGHT ARROW"
+        },
+        {
+          action = "UP_ARROW"
+          active = true
+          keyCommand = "UP ARROW"
+        },
+        {
+          action = "DOWN_ARROW"
+          active = true
+          keyCommand = "DOWN ARROW"
+        },
+        {
+          action = "OPEN_TAB_SCROLLER_MENU"
+          active = true
+          keyCommand = "D"
+        },
+        {
+          action = "OPEN_TAB"
+          active = true
+          keyCommand = "T"
+        },
+        {
+          action = "CLOSE_TAB"
+          active = true
+          keyCommand = "C"
+        },
+        {
+          action = "REFRESH_TAB"
+          active = true
+          keyCommand = "SHIFT+R"
+        },
+        {
+          action = "ENTER"
+          active = true
+          keyCommand = "ENTER"
+        },
+        {
+          action = "EDIT"
+          active = true
+          keyCommand = "E"
+        },
+        {
+          action = "SAVE"
+          active = true
+          keyCommand = "CTRL+S"
+        },
+        {
+          action = "CONSOLE_LINK_DIALOG"
+          active = true
+          keyCommand = "U"
+        },
+        {
+          action = "HOTKEYS_PANEL"
+          active = true
+          keyCommand = "SHIFT+K"
+        },
+        {
+          action = "FOCUS_MACRO"
+          active = false
+          keyCommand = "M"
+        },
+        {
+          action = "FOCUS_FOOTER_PANEL"
+          active = true
+          keyCommand = "F"
+        },
+        {
+          action = "TOGGLE_LIST_VIEW"
+          active = true
+          keyCommand = "SHIFT+N"
+        },
+        {
+          action = "TOGGLE_LEFT_SIDEBAR"
+          active = true
+          keyCommand = "SHIFT+LEFT ARROW"
+        },
+        {
+          action = "TOGGLE_RIGHT_SIDEBAR"
+          active = true
+          keyCommand = "SHIFT+RIGHT ARROW"
+        },
+        {
+          action = "TOGGLE_TOP_SIDEBAR"
+          active = true
+          keyCommand = "SHIFT+UP ARROW"
+        },
+        {
+          action = "TOGGLE_BOTTOM_SIDEBAR"
+          active = true
+          keyCommand = "SHIFT+DOWN ARROW"
+        },
+        {
+          action = "TOGGLE_APP_LEVEL_COMPONENTS"
+          active = true
+          keyCommand = "Z"
+        },
+        {
+          action = "REOPEN_LAST_TAB"
+          active = true
+          keyCommand = "SHIFT+C"
+        },
+      ]
+    }
+    listPlacement = {
+      location = "full"
+    }
+    listRefreshMethod = "none"
+    tabLimitConfig = {
+      maxNumberOfPrimaryTabs = "20"
+      maxNumberOfSubTabs = "10"
+    }
+  }
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isServiceCloudConsole = true
+  label = "Classic Console By Pablo"
+  preferences = {
+    enableCustomizeMyTabs = true
+    enableKeyboardShortcuts = true
+    enableListViewHover = true
+    enableListViewReskin = true
+    enableMultiMonitorComponents = true
+    enablePinTabs = true
+    enableTabHover = true
+    enableTabLimits = true
+    saveUserSessions = true
+  }
+  tabs = [
+    "standard-Case",
+    "standard-Account",
+    "standard-Contact",
+    "standard-report",
+    "standard-Dashboard",
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = salesforce.CustomTab.instance.Dedupe_Scenario__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Delivery_Agency__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.KPI_Target__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Matching_Rule__c
+      },
+      {
+        tab = "standard-Account"
+      },
+      {
+        fieldName = "AccountId"
+        tab = "standard-Case"
+      },
+      {
+        tab = "standard-Contact"
+      },
+      {
+        tab = "standard-Dashboard"
+      },
+      {
+        tab = "standard-report"
+      },
+    ]
+  }
+}

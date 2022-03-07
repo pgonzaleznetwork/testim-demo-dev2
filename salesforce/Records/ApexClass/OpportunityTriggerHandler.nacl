@@ -1,0 +1,20 @@
+salesforce.ApexClass OpportunityTriggerHandler {
+  apiVersion = 41
+  status = "Active"
+  fullName = "OpportunityTriggerHandler"
+  content = file("salesforce/Records/ApexClass/OpportunityTriggerHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AllObjectsTriggerMonitor
+    },
+    {
+      reference = salesforce.ApexClass.instance.ITriggerHandler
+    },
+    {
+      reference = salesforce.TriggerStatus__mdt
+    },
+    {
+      reference = salesforce.TriggerStatus__mdt.field.Disabled__c
+    },
+  ]
+}

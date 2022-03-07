@@ -1,0 +1,70 @@
+type salesforce.Field_Translation_Name__c {
+  salesforce.MasterDetail Layout_Translation_Info__c {
+    apiName = "Field_Translation_Name__c.Layout_Translation_Info__c"
+    label = "Layout Translation Info"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Layout_Translation_Info__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Field_Translation_Names"
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Master_Label__c {
+    apiName = "Field_Translation_Name__c.Master_Label__c"
+    label = "Master Label"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Master_Help_Text__c {
+    apiName = "Field_Translation_Name__c.Master_Help_Text__c"
+    label = "Master Help Text"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Label_Key__c {
+    apiName = "Field_Translation_Name__c.Label_Key__c"
+    label = "Label Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Help_Text_Key__c {
+    apiName = "Field_Translation_Name__c.Help_Text_Key__c"
+    label = "Help Text Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

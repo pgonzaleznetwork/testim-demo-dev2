@@ -1,0 +1,9 @@
+salesforce.ValidationRule Account_if_its_true22 {
+  fullName = "Account.if_its_true22"
+  active = true
+  errorConditionFormula = "false"
+  errorMessage = "where it's not really true22"
+  _parent = [
+    salesforce.Account,
+  ]
+}

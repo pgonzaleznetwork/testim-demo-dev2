@@ -1,0 +1,20 @@
+salesforce.ApexClass CaseTriggerHandler2 {
+  apiVersion = 41
+  status = "Active"
+  fullName = "CaseTriggerHandler2"
+  content = file("salesforce/Records/ApexClass/CaseTriggerHandler2.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ITriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.RecursiveTriggerHandler2
+    },
+    {
+      reference = salesforce.TriggerSettings__c
+    },
+    {
+      reference = salesforce.TriggerSettings__c.field.Disabled__c
+    },
+  ]
+}

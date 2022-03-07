@@ -1,0 +1,13 @@
+salesforce.Profile Guest {
+  objectPermissions = {
+    Idea = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Idea
+      viewAllRecords = false
+    }
+  }
+}

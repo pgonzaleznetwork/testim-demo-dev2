@@ -1,0 +1,35 @@
+salesforce.CustomMetadata Indicator_Badge_Active_Syndication@uvu {
+  fullName = "Indicator_Badge.Active_Syndication"
+  label = "Active Syndication"
+  protected = false
+  values = [
+    {
+      field = "Badge_Color__c"
+      value = "YellowGreen"
+      type = "xsd:string"
+    },
+    {
+      field = "Badge_Icon_Name__c"
+      value = "custom:custom68"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Type__c"
+      value = "Use Boolean Value of Field"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Value__c"
+    },
+    {
+      field = "Object__c"
+      value = "Syndication__c"
+      type = "xsd:string"
+    },
+    {
+      field = "Related_Field__c"
+      value = "IsActive__c"
+      type = "xsd:string"
+    },
+  ]
+}

@@ -1,0 +1,29 @@
+salesforce.AuraDefinitionBundle FundFilter {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "FundFilter"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/FundFilter/FundFilter.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/FundFilter/FundFilter.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/FundFilter/FundFilterController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AssetClassSelector
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundFilter
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundFilterChange
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SearchBar
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SectorSelector
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ValueChange
+    },
+  ]
+}

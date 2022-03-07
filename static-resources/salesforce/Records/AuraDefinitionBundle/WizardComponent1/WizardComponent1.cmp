@@ -1,0 +1,47 @@
+<aura:component >
+    
+     <aura:attribute name="data" type="Object"/>
+
+    
+    <aura:registerEvent name="showComponent" type="c:showComponent"/>
+    <aura:registerEvent name="passData" type="c:passData"/>
+    
+    
+    <lightning:card >
+        <aura:set attribute="title">
+            Account Details
+        </aura:set>
+        <div class="slds-form slds-form_stacked slds-m-around_small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="accountName" type="text" name="firstName" label="Account Name"/>
+                </div>
+            </div>
+        </div>
+    </lightning:card>
+    
+    <lightning:card >
+        <aura:set attribute="title">
+            Contact Details
+        </aura:set>
+        
+        <div class="slds-form slds-form_stacked slds-m-around_small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="firstName" type="text" name="firstName" label="First Name"/>
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="lastName" type="text" name="lastName" label="Last Name"/>
+                </div>
+            </div>
+            <div class="slds-m-top_small">
+                <lightning:button variant="neutral" label="Next" onclick="{!c.handleNext}" />
+            </div>
+        </div>
+        
+        
+    </lightning:card>
+    
+</aura:component>

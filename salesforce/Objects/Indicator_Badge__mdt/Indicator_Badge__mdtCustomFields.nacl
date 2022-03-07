@@ -1,0 +1,167 @@
+type salesforce.Indicator_Badge__mdt {
+  salesforce.Picklist Badge_Color__c {
+    apiName = "Indicator_Badge__mdt.Badge_Color__c"
+    label = "Badge Color"
+    valueSet = [
+      {
+        fullName = "DeepPink"
+        default = true
+        label = "DeepPink"
+      },
+      {
+        fullName = "DeepSkyBlue"
+        default = false
+        label = "DeepSkyBlue"
+      },
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "LimeGreen"
+        default = false
+        label = "LimeGreen"
+      },
+      {
+        fullName = "Red"
+        default = false
+        label = "Red"
+      },
+      {
+        fullName = "Tomato"
+        default = false
+        label = "Tomato"
+      },
+      {
+        fullName = "Turquoise"
+        default = false
+        label = "Turquoise"
+      },
+      {
+        fullName = "Violet"
+        default = false
+        label = "Violet"
+      },
+      {
+        fullName = "YellowGreen"
+        default = false
+        label = "YellowGreen"
+      },
+      {
+        fullName = "RosyBrown"
+        default = false
+        label = "RosyBrown"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "HTML Color name for badge background color"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Text Badge_Icon_Name__c {
+    apiName = "Indicator_Badge__mdt.Badge_Icon_Name__c"
+    label = "Badge Icon Name"
+    _required = true
+    defaultValueFormula = "'standard:announcement'"
+    inlineHelpText = "Should follow <lightning:icon /> naming convention (ex: standard:user, action:freeze_user)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 55
+    queryable = true
+    description = "SLDS name of icon to display."
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Comparison_Type__c {
+    apiName = "Indicator_Badge__mdt.Comparison_Type__c"
+    label = "Comparison Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Contains"
+        default = true
+        label = "Contains"
+      },
+      {
+        fullName = "Greater or Equal"
+        default = false
+        label = "Greater or Equal"
+      },
+      {
+        fullName = "Less or Equal"
+        default = false
+        label = "Less or Equal"
+      },
+      {
+        fullName = "Blank or Null"
+        default = false
+        label = "Blank or Null"
+      },
+      {
+        fullName = "Not Blank or Null"
+        default = false
+        label = "Not Blank or Null"
+      },
+      {
+        fullName = "Use Boolean Value of Field"
+        default = false
+        label = "Use Boolean Value of Field"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Decides kind of logic to be used when evaluating whether or not a badge should be displayed on a record. For more information about comparison types, see Formula Operators and Functions: 'Logical Operators' documentation."
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Text Comparison_Value__c {
+    apiName = "Indicator_Badge__mdt.Comparison_Value__c"
+    label = "Comparison Value"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 75
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Text Object__c {
+    apiName = "Indicator_Badge__mdt.Object__c"
+    label = "Object"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Related_Field__c {
+    apiName = "Indicator_Badge__mdt.Related_Field__c"
+    label = "Related Field"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+}

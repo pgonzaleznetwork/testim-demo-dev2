@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadDefaultValues {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadDefaultValues"
+  content = file("salesforce/Records/ApexClass/LeadDefaultValues.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

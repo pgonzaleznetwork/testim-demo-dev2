@@ -1,0 +1,30 @@
+<aura:component controller="WizardComponentController">
+    
+    <aura:attribute name="data" type="Object"/>
+    
+    <aura:registerEvent name="showComponent" type="c:showComponent"/>
+    <aura:registerEvent name="passData" type="c:passData"/>
+    <aura:handler event="c:passData" action="{!c.handlePassData}"/>
+    
+    <lightning:card >
+        <aura:set attribute="title">
+            Review Details
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            Review the details you've entered before saving:
+        </p>
+        <div class="slds-m-around_medium">
+            <p><b>Account Name: </b>{!v.data.AccountName}</p>
+            <p><b>Contact First Name: </b>{!v.data.FirstName}</p>
+            <p><b>Contact Last Name: </b>{!v.data.LastName}</p>
+            <p><b>Opportunity Name: </b>{!v.data.opptyName}</p>
+            <p><b>Opportunity Stage: </b>{!v.data.stageName}</p>
+            <p><b>Opportunity Close Date: </b>{!v.data.closeDate}</p>
+            <p><b>Opportunity Amount: </b>{!v.data.amount}</p>
+        </div>
+        <div class="slds-m-top_small">
+            <lightning:button variant="neutral" label="Previous" onclick="{!c.handlePrevious}" />
+            <lightning:button variant="brand" label="Save" onclick="{!c.handleSave}" />
+        </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,9 @@
+salesforce.Role Subordinate_of_CEO {
+  fullName = "Subordinate_of_CEO"
+  caseAccessLevel = "None"
+  contactAccessLevel = "Edit"
+  mayForecastManagerShare = false
+  name = "Subordinate of CEO"
+  opportunityAccessLevel = "Read"
+  parentRole = salesforce.Role.instance.CFO
+}

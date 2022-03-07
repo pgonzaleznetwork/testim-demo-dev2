@@ -1,0 +1,15 @@
+salesforce.Queue Mission_Critical_Support {
+  fullName = "Mission_Critical_Support"
+  doesSendEmailToMembers = false
+  name = "Mission Critical Support"
+  queueMembers = {
+    users = {
+      user = [
+        "jcando@fslappiriopablo.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

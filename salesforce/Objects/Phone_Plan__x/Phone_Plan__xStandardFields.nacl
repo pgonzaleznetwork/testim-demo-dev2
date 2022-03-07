@@ -1,0 +1,29 @@
+type salesforce.Phone_Plan__x {
+  serviceid Id {
+    apiName = "Phone_Plan__x.Id"
+    label = "ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Text ExternalId {
+    apiName = "Phone_Plan__x.ExternalId"
+    label = "External ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1000
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url DisplayUrl {
+    apiName = "Phone_Plan__x.DisplayUrl"
+    label = "Display URL"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

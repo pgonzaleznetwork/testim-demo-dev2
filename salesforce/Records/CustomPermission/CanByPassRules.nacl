@@ -1,0 +1,5 @@
+salesforce.CustomPermission CanByPassRules {
+  fullName = "CanByPassRules"
+  isLicensed = false
+  label = "CanByPassRules"
+}

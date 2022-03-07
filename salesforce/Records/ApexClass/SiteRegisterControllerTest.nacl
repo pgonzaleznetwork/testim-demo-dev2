@@ -1,0 +1,11 @@
+salesforce.ApexClass SiteRegisterControllerTest {
+  apiVersion = 42
+  status = "Active"
+  fullName = "SiteRegisterControllerTest"
+  content = file("salesforce/Records/ApexClass/SiteRegisterControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SiteRegisterController
+    },
+  ]
+}

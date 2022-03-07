@@ -1,0 +1,14 @@
+salesforce.ApexClass AccountCreatorTest {
+  apiVersion = 43
+  status = "Active"
+  fullName = "AccountCreatorTest"
+  content = file("salesforce/Records/ApexClass/AccountCreatorTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AccountCreator
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+}

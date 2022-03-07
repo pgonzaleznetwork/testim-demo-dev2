@@ -1,0 +1,164 @@
+type salesforce.OpportunityTeamMember {
+  serviceid Id {
+    apiName = "OpportunityTeamMember.Id"
+    label = "Opportunity Team Member ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OpportunityId {
+    apiName = "OpportunityTeamMember.OpportunityId"
+    label = "Opportunity ID"
+    _required = true
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Opportunity"
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "OpportunityTeamMember.UserId"
+    label = "User ID"
+    _required = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "User"
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "OpportunityTeamMember.Name"
+    label = "Opportunity Team Member Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 361
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url PhotoUrl {
+    apiName = "OpportunityTeamMember.PhotoUrl"
+    label = "Url for thumbnail sized photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "OpportunityTeamMember.Title"
+    label = "Title"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist TeamMemberRole {
+    apiName = "OpportunityTeamMember.TeamMemberRole"
+    label = "Team Role"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.SalesTeamRole
+  }
+  salesforce.Picklist OpportunityAccessLevel {
+    apiName = "OpportunityTeamMember.OpportunityAccessLevel"
+    label = "Opportunity Access"
+    valueSet = [
+      {
+        fullName = "None"
+        default = false
+        label = "Private"
+        isActive = true
+      },
+      {
+        fullName = "Read"
+        default = false
+        label = "Read Only"
+        isActive = true
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Read/Write"
+        isActive = true
+      },
+      {
+        fullName = "All"
+        default = false
+        label = "Owner"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OpportunityTeamMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OpportunityTeamMember.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OpportunityTeamMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OpportunityTeamMember.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OpportunityTeamMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OpportunityTeamMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

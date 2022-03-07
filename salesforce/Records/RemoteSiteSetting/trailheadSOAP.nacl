@@ -1,0 +1,6 @@
+salesforce.RemoteSiteSetting trailheadSOAP {
+  fullName = "trailheadSOAP"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://th-apex-soap-service.herokuapp.com"
+}

@@ -1,0 +1,35 @@
+type salesforce.TriggerSettings__c {
+  salesforce.Text TriggerHandler__c {
+    apiName = "TriggerSettings__c.TriggerHandler__c"
+    label = "TriggerHandler"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox Disabled__c {
+    apiName = "TriggerSettings__c.Disabled__c"
+    label = "Disabled"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Url okta__c {
+    apiName = "TriggerSettings__c.okta__c"
+    label = "okta"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

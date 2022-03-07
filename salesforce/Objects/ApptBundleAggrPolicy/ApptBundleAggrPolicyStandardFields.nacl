@@ -1,0 +1,50 @@
+type salesforce.ApptBundleAggrPolicy {
+  string AggregationAction {
+    _hidden_value = true
+  }
+  string AggregationFieldType {
+    _hidden_value = true
+  }
+  string AggregationOrder {
+    _hidden_value = true
+  }
+  string BundleFieldName {
+    _hidden_value = true
+  }
+  string BundleMemberAddiFieldName {
+    _hidden_value = true
+  }
+  string BundleMemberFieldName {
+    _hidden_value = true
+  }
+  salesforce.MasterDetail BundlePolicyId {
+    apiName = "ApptBundleAggrPolicy.BundlePolicyId"
+    _hidden_value = true
+  }
+  string ConstantValue {
+    _hidden_value = true
+  }
+  string DateValue {
+    _hidden_value = true
+  }
+  string DoesAllowDuplicateStrings {
+    _hidden_value = true
+  }
+  string DownscaleSortDirection {
+    _hidden_value = true
+  }
+  salesforce.Lookup FilterCriteriaId {
+    apiName = "ApptBundleAggrPolicy.FilterCriteriaId"
+    inlineHelpText = "Enter the recordset filter criteria used to aggregate the bundle members. You can aggregate only service appointments that meet this criteria."
+    _hidden_value = true
+  }
+  string MaxBundleDuration {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  string ShouldUpdateOnCreationOnly {
+    _hidden_value = true
+  }
+}

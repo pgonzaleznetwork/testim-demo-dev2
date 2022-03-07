@@ -1,0 +1,8 @@
+salesforce.ListView WorkStepTemplate_All_WorkStepTemplates {
+  fullName = "WorkStepTemplate.All_WorkStepTemplates"
+  filterScope = "Everything"
+  label = "All Work Step Templates"
+  _parent = [
+    salesforce.WorkStepTemplate,
+  ]
+}

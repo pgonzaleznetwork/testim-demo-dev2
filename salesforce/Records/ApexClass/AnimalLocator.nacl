@@ -1,0 +1,6 @@
+salesforce.ApexClass AnimalLocator {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AnimalLocator"
+  content = file("salesforce/Records/ApexClass/AnimalLocator.cls")
+}

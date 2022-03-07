@@ -1,0 +1,5 @@
+salesforce.Profile Customer_Portal_Manager_Standard@s {
+  fullName = "Customer Portal Manager Standard"
+  custom = false
+  userLicense = "Customer Portal Manager Standard"
+}

@@ -1,0 +1,12 @@
+salesforce.CustomTab Lightning_Components_Dictionary {
+  fullName = "Lightning_Components_Dictionary"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Lightning_Components_Dictionary"
+  label = "Lightning Components Dictionary"
+  motif = "Custom43: Jewel"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Lightning_Components_Dictionary
+    },
+  ]
+}

@@ -1,0 +1,10 @@
+salesforce.Role AnachoBulkCompanyPartnerExecutive {
+  fullName = "AnachoBulkCompanyPartnerExecutive"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Anacho Bulk Company Partner Executive"
+  mayForecastManagerShare = false
+  name = "Anacho Bulk Company Partner Executive"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.CEO
+}

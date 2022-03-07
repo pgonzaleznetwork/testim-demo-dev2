@@ -1,0 +1,34 @@
+salesforce.CallCenter DemoAdapterOpenCTI {
+  fullName = "DemoAdapterOpenCTI"
+  adapterUrl = "https://local/softphone"
+  customSettings = "{\"reqSoftphoneHeight\":\"300\",\"reqUseApi\":\"true\",\"reqSoftphoneWidth\":\"500\"}"
+  displayName = "Demo Call Center Adapter OPEN CTI"
+  displayNameLabel = "Display Name"
+  internalNameLabel = "InternalName"
+  sections = {
+    items = [
+      {
+        label = "CTI Adapter URL"
+        name = "reqAdapterUrl"
+        value = "https://local/softphone"
+      },
+      {
+        label = "Use CTI API"
+        name = "reqUseApi"
+        value = "true"
+      },
+      {
+        label = "Softphone Height"
+        name = "reqSoftphoneHeight"
+        value = "300"
+      },
+      {
+        label = "Softphone Width"
+        name = "reqSoftphoneWidth"
+        value = "500"
+      },
+    ]
+    label = "General Information"
+    name = "reqGeneralInfo"
+  }
+}

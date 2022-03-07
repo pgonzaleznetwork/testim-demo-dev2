@@ -1,0 +1,6 @@
+salesforce.RemoteSiteSetting HerokuDocs {
+  fullName = "HerokuDocs"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://docsample.herokuapp.com"
+}

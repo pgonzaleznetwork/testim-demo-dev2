@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="childCompAttribute" type="String"/>
+    
+    <img src="{!$Resource.myLogoHe}"/>
+    
+    <aura:handler name="change" value="{!v.childCompAttribute}" action="{!c.onChildCompAttributeChange}"/>
+    
+    <p>childExpr childCompAttribute: {!v.childCompAttribute}</p>
+    
+    <p>
+        <lightning:button label="Update childCompAttribute" onclick="{!c.updateChildCompAttribute}" name="Update childCompAttribute"/>
+    </p>
+</aura:component>

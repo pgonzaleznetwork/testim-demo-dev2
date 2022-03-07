@@ -1,0 +1,31 @@
+type salesforce.FlowScreenTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string backButtonLabel {
+  }
+  "List<salesforce.FlowScreenFieldTranslation>" fields {
+  }
+  string helpText {
+  }
+  string name {
+  }
+  string nextOrFinishButtonLabel {
+  }
+  string pauseButtonLabel {
+  }
+  string pausedText {
+  }
+  metadataType = "FlowScreenTranslation"
+}

@@ -1,0 +1,44 @@
+type salesforce.ApptBundlePolicy {
+  string BundleEndTimeFieldName {
+    _hidden_value = true
+  }
+  string BundleStartTimeFieldName {
+    _hidden_value = true
+  }
+  string CanAllowSchleDepndInBundle {
+    _hidden_value = true
+  }
+  string ConstantTimeValue {
+    _hidden_value = true
+  }
+  salesforce.Lookup FilterCriteriaId {
+    apiName = "ApptBundlePolicy.FilterCriteriaId"
+    inlineHelpText = "Select the filter criteria used for the bundle members. Only service appointments that meet the criteria can be bundled."
+    _hidden_value = true
+  }
+  string IsAutomaticBundling {
+    _hidden_value = true
+  }
+  string IsManualBundling {
+    _hidden_value = true
+  }
+  string IsTimeCalcByBundleDurationFld {
+    _hidden_value = true
+  }
+  string LimitAmountOfBundleMembers {
+    _hidden_value = true
+  }
+  string LimitDurationOfBundle {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ApptBundlePolicy.OwnerId"
+    _hidden_value = true
+  }
+  string Priority {
+    _hidden_value = true
+  }
+}

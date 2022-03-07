@@ -1,0 +1,11 @@
+salesforce.ApexClass TranslatableMetadataFactory_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslatableMetadataFactory_Test"
+  content = file("salesforce/Records/ApexClass/TranslatableMetadataFactory_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadataFactory
+    },
+  ]
+}

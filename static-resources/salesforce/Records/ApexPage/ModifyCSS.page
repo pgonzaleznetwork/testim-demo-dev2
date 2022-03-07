@@ -1,0 +1,5 @@
+<apex:page >
+    <style>
+        .oneUtilityBarPanel.panel {margin-left: 1500px !important;}
+    </style>
+</apex:page>

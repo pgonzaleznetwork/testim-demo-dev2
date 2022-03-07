@@ -1,0 +1,6 @@
+salesforce.ApexClass Apex_SObjects {
+  apiVersion = 46
+  status = "Active"
+  fullName = "Apex_SObjects"
+  content = file("salesforce/Records/ApexClass/Apex_SObjects.cls")
+}

@@ -1,0 +1,20 @@
+salesforce.ApexClass TranslationsMerger_LEX_Controller {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslationsMerger_LEX_Controller"
+  content = file("salesforce/Records/ApexClass/TranslationsMerger_LEX_Controller.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TranslationFileBuilder
+    },
+    {
+      reference = salesforce.Translation_Context__c
+    },
+    {
+      reference = salesforce.Translation_Context__c.field.Context_Type__c
+    },
+    {
+      reference = salesforce.Translation_Context__c.field.Record_Link__c
+    },
+  ]
+}

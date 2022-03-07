@@ -1,0 +1,4 @@
+salesforce.Skill Cable_Install {
+  fullName = "Cable_Install"
+  label = "Cable Install"
+}

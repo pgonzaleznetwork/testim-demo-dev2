@@ -1,0 +1,43 @@
+salesforce.CustomApplication Translation_Workbench_Assistant {
+  fullName = "Translation_Workbench_Assistant"
+  brand = {
+    headerColor = "#2DE1C6"
+    shouldOverrideOrgTheme = false
+  }
+  description = "This app helps you download page layout-based translations in a format that the Translation Workbench understands."
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Page Layout Translation Manager"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    salesforce.CustomTab.instance.Translation_Manager,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+  utilityBar = "Translation_Workbench_Assistant_UtilityBar"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Translation_Workbench_Assistant_UtilityBar
+    },
+  ]
+}

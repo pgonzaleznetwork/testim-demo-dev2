@@ -1,0 +1,45 @@
+salesforce.Flow Flow_using_field {
+  fullName = "Flow_using_field"
+  apiVersion = 49
+  interviewLabel = "Flow using field {!$Flow.CurrentDateTime}"
+  label = "Flow using field"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "Flow"
+  recordLookups = [
+    {
+      name = "Account_query_using_field"
+      label = "Account query using field"
+      locationX = 176
+      locationY = 276
+      assignNullValuesIfNoRecordsFound = false
+      getFirstRecordOnly = true
+      object = salesforce.Account
+      queriedFields = [
+        salesforce.Account.field.Id,
+        salesforce.Account.field.Field_being_used__c,
+      ]
+      storeOutputAutomatically = true
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 50
+    connector = {
+      targetReference = "Account_query_using_field"
+    }
+  }
+  status = "Active"
+}

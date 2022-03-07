@@ -1,0 +1,8 @@
+salesforce.CustomTab Speaker__c {
+  fullName = "Speaker__c"
+  customObject = true
+  motif = "Custom84: Presenter"
+  _parent = [
+    salesforce.Speaker__c,
+  ]
+}

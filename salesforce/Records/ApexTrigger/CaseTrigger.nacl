@@ -1,0 +1,14 @@
+salesforce.ApexTrigger CaseTrigger {
+  apiVersion = 33
+  status = "Active"
+  fullName = "CaseTrigger"
+  content = file("salesforce/Records/ApexTrigger/CaseTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CaseTriggerHandler
+    },
+    {
+      reference = salesforce.Case
+    },
+  ]
+}

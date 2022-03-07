@@ -1,0 +1,17 @@
+salesforce.ApexClass AccountTriggerActions {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AccountTriggerActions"
+  content = file("salesforce/Records/ApexClass/AccountTriggerActions.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountService
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

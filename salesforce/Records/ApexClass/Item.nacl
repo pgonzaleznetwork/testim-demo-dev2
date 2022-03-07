@@ -1,0 +1,6 @@
+salesforce.ApexClass Item {
+  apiVersion = 41
+  status = "Active"
+  fullName = "Item"
+  content = file("salesforce/Records/ApexClass/Item.cls")
+}

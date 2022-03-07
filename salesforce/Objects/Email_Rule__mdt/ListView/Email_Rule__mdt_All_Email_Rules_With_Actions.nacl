@@ -1,0 +1,25 @@
+salesforce.ListView Email_Rule__mdt_All_Email_Rules_With_Actions {
+  fullName = "Email_Rule__mdt.All_Email_Rules_With_Actions"
+  columns = [
+    "MasterLabel",
+    "Email_Address__c",
+    "From_Address_Operator__c",
+    "Keywords_Operator__c",
+    "Keywords_Type__c",
+    "Keywords__c",
+    "From_Address__c",
+    "Actions__c",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "Actions__c"
+      operation = "notEqual"
+    },
+  ]
+  label = "All Email Rules with Actions"
+  language = "en_US"
+  _parent = [
+    salesforce.Email_Rule__mdt,
+  ]
+}

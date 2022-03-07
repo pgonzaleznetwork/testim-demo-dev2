@@ -1,0 +1,6 @@
+salesforce.ApexClass UpdatePageLayout {
+  apiVersion = 39
+  status = "Active"
+  fullName = "UpdatePageLayout"
+  content = file("salesforce/Records/ApexClass/UpdatePageLayout.cls")
+}

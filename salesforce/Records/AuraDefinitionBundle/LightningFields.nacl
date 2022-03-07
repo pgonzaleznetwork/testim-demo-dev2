@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle LightningFields {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningFields"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningFields/LightningFields.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningDualListBox
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningFields
+    },
+  ]
+}

@@ -1,0 +1,17 @@
+<aura:component controller="LtnOpportunityListController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="opptys" type="Opportunity"/>
+    <aura:attribute name="myColumns" type="List"/>
+    
+    <force:recordData aura:id="accountLoader"
+                    recordId="{!v.recordId}"
+                    layoutType="FULL"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.populateOpptys}"/>
+    
+    <lightning:card iconName="standard:opportunity" title="Opportunities">
+        <lightning:datatable data="{!v.opptys}" columns="{!v.myColumns}" hideCheckboxColumn="true"/>
+    </lightning:card>
+    
+</aura:component>

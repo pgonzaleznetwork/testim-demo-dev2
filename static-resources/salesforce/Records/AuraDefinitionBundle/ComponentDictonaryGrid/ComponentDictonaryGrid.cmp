@@ -1,0 +1,74 @@
+<aura:component >
+    
+    <aura:attribute type="String" name="LightningAccordion" default="c:LightningAccordion"/>
+    <aura:attribute type="String" name="LightningCard" default="c:LightningCard"/>
+    <aura:attribute type="String" name="LightningLayout" default="c:LightningLayout"/>
+    <aura:attribute type="String" name="LightningTab" default="c:LightningTab"/>
+    <aura:attribute type="String" name="LightningTile" default="c:LightningTile"/>
+    
+    <section class="slds-p-around_small">
+        
+        <header class="slds-m-bottom_xx-large">
+        <h1 class="slds-text-heading_large">Lightning Components Dictionary</h1>
+        <p class="slds-text-heading_small slds-m-top_small">This page displays mulitple base lightning components to give you
+            and idea of what they look NOT like and inspire you to create your own lightning pages.</p>
+        </header>
+        
+        <!--Grid Start -->
+        <div class="slds-grid slds-gutters slds-m-around_medium">
+            <!--Column 1 Start -->
+            <div class="slds-col">
+                <section>
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Accordion</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningAccordion)}" target="_blank">View Source</a></p>
+                    <div class="slds-m-around_small custom-box">
+                        <c:LightningAccordion />
+                        <c:UnscapedHTML />
+                    </div>
+                </section>
+                <section>
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Layout</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningLayout)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningLayout />
+                    </div>
+                </section>
+            </div>
+            <!--Column 1 End -->
+            
+            <!--Column 2 Start -->
+            <div class="slds-col">
+                <section>
+                <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Card</h1>
+                <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningCard)}" target="_blank">View Source</a></p>
+                <div class="slds-m-around_small custom-box">
+                    <c:LightningCard />
+                </div>
+                </section>
+                                <section>
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Layout</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningLayout)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningLayout />
+                    </div>
+                </section>
+            </div>
+            <!--Column 2 End -->
+            
+            <div class="slds-col">
+                <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Tile</h1>
+                <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningTile)}" target="_blank">View Source</a></p>
+                <div class="slds-m-around_small custom-box">
+                    <c:LightningTile />
+                </div>
+            </div>
+            <div class="slds-col">
+                <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Tab</h1>
+                <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningTab)}" target="_blank">View Source</a></p>
+                <div class="slds-m-around_small custom-box">
+                    <c:LightningTab />
+                </div>
+            </div>
+        </div>
+    </section>
+</aura:component>

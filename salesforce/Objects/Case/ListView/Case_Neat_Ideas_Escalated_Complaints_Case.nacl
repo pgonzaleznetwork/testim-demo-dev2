@@ -1,0 +1,12 @@
+salesforce.ListView Case_Neat_Ideas_Escalated_Complaints_Case {
+  fullName = "Case.Neat_Ideas_Escalated_Complaints_Case"
+  filterScope = "Queue"
+  label = "Neat Ideas Escalated Complaints"
+  queue = "Neat_Ideas_Escalated_Complaints"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

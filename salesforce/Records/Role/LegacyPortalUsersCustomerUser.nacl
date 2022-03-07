@@ -1,0 +1,10 @@
+salesforce.Role LegacyPortalUsersCustomerUser {
+  fullName = "LegacyPortalUsersCustomerUser"
+  caseAccessLevel = "None"
+  contactAccessLevel = "Edit"
+  description = "Legacy Portal Users Customer User"
+  mayForecastManagerShare = false
+  name = "Legacy Portal Users Customer User"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.LegacyPortalUsersCustomerManager
+}

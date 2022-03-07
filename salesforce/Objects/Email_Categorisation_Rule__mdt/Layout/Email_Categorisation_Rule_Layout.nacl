@@ -1,0 +1,157 @@
+salesforce.Layout Email_Categorisation_Rule__mdt_Email_Categorisation_Rule_Layout@uuuubsss {
+  fullName = "Email_Categorisation_Rule__mdt-Email Categorisation Rule Layout"
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Rule Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Business_Unit__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Channel__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Evaluation_Order__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Case Attributes"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Company_Name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Case_Status__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.From_Email_Address__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Language__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.Auto_Forward_To__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "System Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.DeveloperName
+            },
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Email_Categorisation_Rule__mdt.field.NamespacePrefix
+            },
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "MasterLabel",
+        "DeveloperName",
+        "NamespacePrefix",
+      ]
+      relatedList = salesforce.Email_Categorisation_Filter__mdt.field.Email_Categorisation_Rule__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMnTe"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Email_Categorisation_Rule__mdt,
+  ]
+}

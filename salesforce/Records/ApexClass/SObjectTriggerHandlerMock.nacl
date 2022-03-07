@@ -1,0 +1,17 @@
+salesforce.ApexClass SObjectTriggerHandlerMock {
+  apiVersion = 44
+  status = "Active"
+  fullName = "SObjectTriggerHandlerMock"
+  content = file("salesforce/Records/ApexClass/SObjectTriggerHandlerMock.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SObjectTriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerActionsMock
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

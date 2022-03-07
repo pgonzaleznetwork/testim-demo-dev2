@@ -1,0 +1,37 @@
+salesforce.ApexPage SpeakerForm {
+  apiVersion = 41
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "SpeakerForm"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "SpeakerForm"
+  content = file("salesforce/Records/ApexPage/SpeakerForm.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SpeakerControllerExtension
+    },
+    {
+      reference = salesforce.Speaker__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.Email__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.First_Name__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.Last_Name__c
+    },
+  ]
+}

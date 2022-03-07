@@ -1,0 +1,34 @@
+salesforce.PathAssistant EnergyAudit {
+  fullName = "EnergyAudit"
+  active = true
+  entityName = "Energy_Audit__c"
+  fieldName = "Type_of_Installation__c"
+  masterLabel = "EnergyAudit"
+  pathAssistantSteps = [
+    {
+      fieldNames = [
+        "Audit_Notes__c",
+        "CreatedById",
+      ]
+      info = "<p>This is the second stage!</p>"
+      picklistValueName = "Carport"
+    },
+    {
+      fieldNames = [
+        "Annual_Energy_Usage_kWh__c",
+        "Name",
+      ]
+      info = "<p>and the third stage! <b>and some bold text!</b></p>"
+      picklistValueName = "Ground mounted"
+    },
+    {
+      fieldNames = [
+        "Account__c",
+        "Audit_Notes__c",
+      ]
+      info = "<p>This is the first stage!</p>"
+      picklistValueName = "Rooftop"
+    },
+  ]
+  recordTypeName = "__MASTER__"
+}

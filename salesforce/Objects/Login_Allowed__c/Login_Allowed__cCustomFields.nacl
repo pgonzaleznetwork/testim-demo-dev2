@@ -1,0 +1,12 @@
+type salesforce.Login_Allowed__c {
+  salesforce.Checkbox Allow_User_To_Log_In__c {
+    apiName = "Login_Allowed__c.Allow_User_To_Log_In__c"
+    label = "Allow User To Log In"
+    defaultValue = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

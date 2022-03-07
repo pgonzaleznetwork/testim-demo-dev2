@@ -1,0 +1,8 @@
+salesforce.ListView Camping_Item__c_All {
+  fullName = "Camping_Item__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Camping_Item__c,
+  ]
+}

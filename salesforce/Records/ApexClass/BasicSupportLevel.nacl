@@ -1,0 +1,11 @@
+salesforce.ApexClass BasicSupportLevel {
+  apiVersion = 41
+  status = "Active"
+  fullName = "BasicSupportLevel"
+  content = file("salesforce/Records/ApexClass/BasicSupportLevel.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ISupportLevel
+    },
+  ]
+}

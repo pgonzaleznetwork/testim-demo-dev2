@@ -1,0 +1,105 @@
+type salesforce.Fund__c {
+  salesforce.MasterDetail Sector__c {
+    apiName = "Fund__c.Sector__c"
+    label = "Sector"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Sector__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Funds"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Funds"
+    trackTrending = false
+  }
+  salesforce.Text Abbreviation__c {
+    apiName = "Fund__c.Abbreviation__c"
+    encryptionScheme = "None"
+    externalId = false
+    label = "Abbreviation"
+    length = 3
+    trackTrending = false
+    unique = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Asset_Class__c {
+    apiName = "Fund__c.Asset_Class__c"
+    externalId = false
+    label = "Asset Class"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.Asset_Class
+    restricted = true
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Percent Five_Year_Return__c {
+    apiName = "Fund__c.Five_Year_Return__c"
+    externalId = false
+    label = "Five Year Return"
+    precision = 8
+    scale = 2
+    trackTrending = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Percent One_Year_Return__c {
+    apiName = "Fund__c.One_Year_Return__c"
+    externalId = false
+    label = "One Year Return"
+    precision = 8
+    scale = 2
+    trackTrending = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Number Rating__c {
+    apiName = "Fund__c.Rating__c"
+    externalId = false
+    label = "Rating"
+    precision = 1
+    scale = 0
+    trackTrending = false
+    unique = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Percent Two_Year_Return__c {
+    apiName = "Fund__c.Two_Year_Return__c"
+    externalId = false
+    label = "Two Year Return"
+    precision = 8
+    scale = 2
+    trackTrending = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Percent YTD_Return__c {
+    apiName = "Fund__c.YTD_Return__c"
+    externalId = false
+    label = "YTD Return"
+    precision = 8
+    scale = 2
+    trackTrending = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

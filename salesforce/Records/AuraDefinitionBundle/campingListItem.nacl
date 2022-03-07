@@ -1,0 +1,25 @@
+salesforce.AuraDefinitionBundle campingListItem {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "campingListItem"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/campingListItem/campingListItemController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/campingListItem/campingListItem.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingListItem
+    },
+    {
+      reference = salesforce.Camping_Item__c
+    },
+    {
+      reference = salesforce.Camping_Item__c.field.Packed__c
+    },
+    {
+      reference = salesforce.Camping_Item__c.field.Price__c
+    },
+    {
+      reference = salesforce.Camping_Item__c.field.Quantity__c
+    },
+  ]
+}

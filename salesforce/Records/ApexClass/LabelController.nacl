@@ -1,0 +1,6 @@
+salesforce.ApexClass LabelController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "LabelController"
+  content = file("salesforce/Records/ApexClass/LabelController.cls")
+}

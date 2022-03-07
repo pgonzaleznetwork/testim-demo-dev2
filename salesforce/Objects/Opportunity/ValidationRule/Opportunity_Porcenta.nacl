@@ -1,0 +1,9 @@
+salesforce.ValidationRule Opportunity_Porcenta {
+  fullName = "Opportunity.Porcenta"
+  active = true
+  errorConditionFormula = "Amount  > 100"
+  errorMessage = "Necesitas la aprobacion de tu manager."
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

@@ -1,0 +1,13 @@
+<aura:component >
+	
+        
+            <lightning:buttonIcon iconName="utility:settings" variant="bare" onclick="{! c.handleClick }" alternativeText="Settings" />
+
+           <lightning:buttonIcon iconName="utility:settings"  variant="border-filled" alternativeText="Settings" />
+   
+            <lightning:buttonIcon iconName="utility:down"  size="small" alternativeText="View More" />
+    
+           <lightning:buttonIcon iconName="utility:settings" variant="bare" alternativeText="Settings" iconClass="dark"/>
+ 
+    
+</aura:component>

@@ -1,0 +1,5 @@
+salesforce.Profile External_Apps_Login_User@s {
+  fullName = "External Apps Login User"
+  custom = false
+  userLicense = "External Apps Login"
+}

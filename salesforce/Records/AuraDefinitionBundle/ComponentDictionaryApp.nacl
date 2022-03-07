@@ -1,0 +1,21 @@
+salesforce.AuraDefinitionBundle ComponentDictionaryApp {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "ComponentDictionaryApp"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/ComponentDictionaryApp/ComponentDictionaryApp.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ComponentDictionaryApp
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningHelpText
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningPath
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningPathPerformance
+    },
+  ]
+}

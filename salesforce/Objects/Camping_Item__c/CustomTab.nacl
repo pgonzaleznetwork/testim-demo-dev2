@@ -1,0 +1,8 @@
+salesforce.CustomTab Camping_Item__c {
+  fullName = "Camping_Item__c"
+  customObject = true
+  motif = "Custom28: Cell phone"
+  _parent = [
+    salesforce.Camping_Item__c,
+  ]
+}

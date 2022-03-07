@@ -1,0 +1,52 @@
+type salesforce.Syndication_Event__e {
+  salesforce.Date End_Date__c {
+    apiName = "Syndication_Event__e.End_Date__c"
+    label = "End Date"
+    createable = true
+    updateable = false
+    queryable = true
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+  salesforce.Text Show__c {
+    apiName = "Syndication_Event__e.Show__c"
+    label = "Show"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+  salesforce.Date Start_Date__c {
+    apiName = "Syndication_Event__e.Start_Date__c"
+    label = "Start Date"
+    createable = true
+    updateable = false
+    queryable = true
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+  salesforce.Text Subscriber_Station_Network__c {
+    apiName = "Syndication_Event__e.Subscriber_Station_Network__c"
+    label = "Subscriber Station/Network"
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+  }
+}

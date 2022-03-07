@@ -1,0 +1,11 @@
+salesforce.ApexClass AlgorithmsTests {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AlgorithmsTests"
+  content = file("salesforce/Records/ApexClass/AlgorithmsTests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Algorithms
+    },
+  ]
+}

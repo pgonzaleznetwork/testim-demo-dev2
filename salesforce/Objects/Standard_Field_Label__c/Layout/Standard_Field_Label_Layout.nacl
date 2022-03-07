@@ -1,0 +1,69 @@
+salesforce.Layout Standard_Field_Label__c_Standard_Field_Label_Layout@uuuubsss {
+  fullName = "Standard_Field_Label__c-Standard Field Label Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Standard_Field_Label__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Standard_Field_Label__c.field.Key__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Standard_Field_Label__c.field.Layout_Translation_Info__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Standard_Field_Label__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Standard_Field_Label__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Standard_Field_Label__c,
+  ]
+}

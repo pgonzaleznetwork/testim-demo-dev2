@@ -1,0 +1,14 @@
+salesforce.ApexClass PageLayoutTranslationSettings {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutTranslationSettings"
+  content = file("salesforce/Records/ApexClass/PageLayoutTranslationSettings.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Page_Layout_Translation_Manager_Setting__mdt
+    },
+    {
+      reference = salesforce.Page_Layout_Translation_Manager_Setting__mdt.field.Page_Layout_Name_in_Tests__c
+    },
+  ]
+}

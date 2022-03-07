@@ -1,0 +1,11 @@
+salesforce.ApexClass Order {
+  apiVersion = 41
+  status = "Active"
+  fullName = "Order"
+  content = file("salesforce/Records/ApexClass/Order.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Item
+    },
+  ]
+}

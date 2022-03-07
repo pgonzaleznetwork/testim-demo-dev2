@@ -1,0 +1,17 @@
+salesforce.ApexClass AnimalLocatorTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AnimalLocatorTest"
+  content = file("salesforce/Records/ApexClass/AnimalLocatorTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AnimalLocator
+    },
+    {
+      reference = salesforce.ApexClass.instance.AnimalLocatorMock
+    },
+    {
+      reference = salesforce.ApexClass.instance.AnimalLocatorMockNegative
+    },
+  ]
+}

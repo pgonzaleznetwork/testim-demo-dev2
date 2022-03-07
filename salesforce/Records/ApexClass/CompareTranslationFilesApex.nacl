@@ -1,0 +1,6 @@
+salesforce.ApexClass CompareTranslationFilesApex {
+  apiVersion = 43
+  status = "Active"
+  fullName = "CompareTranslationFilesApex"
+  content = file("salesforce/Records/ApexClass/CompareTranslationFilesApex.cls")
+}

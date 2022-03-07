@@ -1,0 +1,14 @@
+salesforce.ApexClass AccountAddressTriggerClass {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountAddressTriggerClass"
+  content = file("salesforce/Records/ApexClass/AccountAddressTriggerClass.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Match_Billing_Address__c
+    },
+  ]
+}

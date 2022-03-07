@@ -1,0 +1,14 @@
+salesforce.CompactLayout Energy_Audit__c_Energy_Audit_Compact_Layout {
+  fullName = "Energy_Audit__c.Energy_Audit_Compact_Layout"
+  fields = [
+    "Name",
+    "Account__c",
+    "Annual_Energy_Usage_kWh__c",
+    "Average_Annual_Electric_Cost__c",
+    "Type_of_Installation__c",
+  ]
+  label = "Energy Audit Compact Layout."
+  _parent = [
+    salesforce.Energy_Audit__c,
+  ]
+}

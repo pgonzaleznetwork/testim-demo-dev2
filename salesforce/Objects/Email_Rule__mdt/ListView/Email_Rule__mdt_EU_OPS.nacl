@@ -1,0 +1,19 @@
+salesforce.ListView Email_Rule__mdt_EU_OPS {
+  fullName = "Email_Rule__mdt.EU_OPS"
+  columns = [
+    "Country__c",
+    "Order__c",
+    "MasterLabel",
+    "DeveloperName",
+    "Email_Address__c",
+    "Keywords__c",
+    "Keywords_Type__c",
+    "From_Address__c",
+  ]
+  filterScope = "Everything"
+  label = "EU_OPS"
+  language = "en_US"
+  _parent = [
+    salesforce.Email_Rule__mdt,
+  ]
+}

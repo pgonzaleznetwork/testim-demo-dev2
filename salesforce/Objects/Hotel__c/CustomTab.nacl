@@ -1,0 +1,8 @@
+salesforce.CustomTab Hotel__c {
+  fullName = "Hotel__c"
+  customObject = true
+  motif = "Custom24: Building"
+  _parent = [
+    salesforce.Hotel__c,
+  ]
+}

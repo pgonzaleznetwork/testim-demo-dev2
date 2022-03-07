@@ -1,0 +1,19 @@
+salesforce.EntitlementProcess ultimate_test@s {
+  fullName = "ultimate test"
+  SObjectType = salesforce.Case
+  active = false
+  entryStartDateField = salesforce.Case.field.Home_Visit_To_Happen_By__c
+  exitCriteriaFilterItems = {
+    field = salesforce.Case.field.IsClosed
+    operation = "equals"
+    value = "true"
+  }
+  milestones = [
+    {
+      milestoneCriteriaFormula = "ISPICKVAL( Status ,\"In Progress\") && Home_Visit_To_Happen_By__c = NOW()"
+      milestoneName = "Home Visit Revised"
+      minutesToComplete = 60
+      useCriteriaStartTime = false
+    },
+  ]
+}

@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle LightningPill {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningPill"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningPill/LightningPill.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/LightningPill/LightningPillController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningPill
+    },
+  ]
+}

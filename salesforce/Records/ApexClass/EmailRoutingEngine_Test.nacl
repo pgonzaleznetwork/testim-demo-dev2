@@ -1,0 +1,47 @@
+salesforce.ApexClass EmailRoutingEngine_Test {
+  apiVersion = 44
+  status = "Active"
+  fullName = "EmailRoutingEngine_Test"
+  content = file("salesforce/Records/ApexClass/EmailRoutingEngine_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.EmailMessage
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c.field.Business_Unit__c
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c.field.Case_Type__c
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c.field.Email_Routing_Rule__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Email_Attribute__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Email_Routing_Rule__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Operator__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Value__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule__c.field.Business_Unit__c
+    },
+  ]
+}

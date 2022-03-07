@@ -1,0 +1,8 @@
+salesforce.CustomTab Matching_Rule__c {
+  fullName = "Matching_Rule__c"
+  customObject = true
+  motif = "Custom63: Chip"
+  _parent = [
+    salesforce.Matching_Rule__c,
+  ]
+}

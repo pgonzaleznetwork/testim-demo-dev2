@@ -1,0 +1,339 @@
+type salesforce.Lead {
+  salesforce.Text SICCode__c {
+    apiName = "Lead.SICCode__c"
+    label = "SIC Code"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 15
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist ProductInterest__c {
+    apiName = "Lead.ProductInterest__c"
+    label = "Product Interest"
+    valueSet = [
+      {
+        fullName = "GC1000 series"
+        default = false
+        label = "GC1000 series"
+      },
+      {
+        fullName = "GC5000 series"
+        default = false
+        label = "GC5000 series"
+      },
+      {
+        fullName = "GC3000 series"
+        default = false
+        label = "GC3000 series"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist Primary__c {
+    apiName = "Lead.Primary__c"
+    label = "Primary"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Lead.CurrentGenerators__c"
+    label = "Current Generator(s)"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Lead.NumberofLocations__c"
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaDate DB_Created_Date_without_Time__c {
+    apiName = "Lead.DB_Created_Date_without_Time__c"
+    label = "DB Created Date without Time"
+    formula = "CreatedDate"
+    createable = false
+    updateable = false
+    queryable = true
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaNumber DB_Lead_Age__c {
+    apiName = "Lead.DB_Lead_Age__c"
+    label = "DB Lead Age"
+    precision = 18
+    scale = 0
+    formula = "NOW() - LastModifiedDate"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.Picklist Existing_Phone__c {
+    apiName = "Lead.Existing_Phone__c"
+    label = "Existing Phone"
+    valueSet = [
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist Existing_Email__c {
+    apiName = "Lead.Existing_Email__c"
+    label = "Existing Email"
+    valueSet = [
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Date Due_Date__c {
+    apiName = "Lead.Due_Date__c"
+    label = "Due Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist Existing_Due_Date__c {
+    apiName = "Lead.Existing_Due_Date__c"
+    label = "Existing Due Date"
+    valueSet = [
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.FormulaText Duplicate_Result__c {
+    apiName = "Lead.Duplicate_Result__c"
+    label = "Duplicate Result"
+    formula = "IF( (ISPICKVAL(Existing_Phone__c, \"Yes\") || ISPICKVAL(Existing_Email__c, \"Yes\")) && ISPICKVAL(Existing_Due_Date__c, \"No\") , \"Existing parent, new child\",  IF((ISPICKVAL(Existing_Phone__c, \"Yes\") || ISPICKVAL(Existing_Email__c, \"Yes\")) && ISPICKVAL(Existing_Due_Date__c, \"Yes\"), \"Existing parent, existing child\",  IF((ISPICKVAL(Existing_Phone__c, \"No\") || ISPICKVAL(Existing_Email__c, \"No\")), \"New parent\", \"\") ) )"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Lead.field.Existing_Due_Date__c
+      },
+      {
+        reference = salesforce.Lead.field.Existing_Email__c
+      },
+      {
+        reference = salesforce.Lead.field.Existing_Phone__c
+      },
+    ]
+  }
+  salesforce.Date Date_of_Birth__c {
+    apiName = "Lead.Date_of_Birth__c"
+    label = "Date of Birth"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist District__c {
+    apiName = "Lead.District__c"
+    label = "District"
+    valueSet = [
+      {
+        fullName = "An Phú"
+        default = false
+        label = "An Phú"
+      },
+      {
+        fullName = "Châu Đốc"
+        default = false
+        label = "Châu Đốc"
+      },
+      {
+        fullName = "Châu Phú"
+        default = false
+        label = "Châu Phú"
+      },
+      {
+        fullName = "Bà Rịa"
+        default = false
+        label = "Bà Rịa"
+      },
+      {
+        fullName = "Châu Đức"
+        default = false
+        label = "Châu Đức"
+      },
+      {
+        fullName = "Côn Đảo"
+        default = false
+        label = "Côn Đảo"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+    fieldDependency = {
+      controllingField = "Province__c"
+      valueSettings = [
+        {
+          valueName = "An Phú"
+          controllingFieldValue = [
+            "An Giang",
+          ]
+        },
+        {
+          valueName = "Châu Đốc"
+          controllingFieldValue = [
+            "An Giang",
+          ]
+        },
+        {
+          valueName = "Châu Phú"
+          controllingFieldValue = [
+            "An Giang",
+          ]
+        },
+        {
+          valueName = "Bà Rịa"
+          controllingFieldValue = [
+            "Bà Rịa - Vũng Tàu",
+          ]
+        },
+        {
+          valueName = "Châu Đức"
+          controllingFieldValue = [
+            "Bà Rịa - Vũng Tàu",
+          ]
+        },
+        {
+          valueName = "Côn Đảo"
+          controllingFieldValue = [
+            "Bà Rịa - Vũng Tàu",
+          ]
+        },
+      ]
+    }
+  }
+  salesforce.Picklist Province__c {
+    apiName = "Lead.Province__c"
+    label = "Province"
+    valueSet = [
+      {
+        fullName = "An Giang"
+        default = false
+        label = "An Giang"
+      },
+      {
+        fullName = "Bà Rịa - Vũng Tàu"
+        default = false
+        label = "Bà Rịa - Vũng Tàu"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+}

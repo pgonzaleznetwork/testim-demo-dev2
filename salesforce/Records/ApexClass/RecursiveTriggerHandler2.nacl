@@ -1,0 +1,6 @@
+salesforce.ApexClass RecursiveTriggerHandler2 {
+  apiVersion = 41
+  status = "Active"
+  fullName = "RecursiveTriggerHandler2"
+  content = file("salesforce/Records/ApexClass/RecursiveTriggerHandler2.cls")
+}

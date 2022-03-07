@@ -1,0 +1,17 @@
+type salesforce.Layout_Translation_Info__c {
+  salesforce.FormulaText Record_Link__c {
+    apiName = "Layout_Translation_Info__c.Record_Link__c"
+    label = "Record Link"
+    formula = "\"/\" & Id"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackTrending = false
+    _hidden_value = true
+  }
+}

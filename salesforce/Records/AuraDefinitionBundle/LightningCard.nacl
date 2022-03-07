@@ -1,0 +1,14 @@
+salesforce.AuraDefinitionBundle LightningCard {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningCard"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningCard/LightningCard.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/LightningCard/LightningCardController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/LightningCard/LightningCard.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningCard
+    },
+  ]
+}

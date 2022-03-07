@@ -1,0 +1,17 @@
+salesforce.CustomMetadata VAT_Data_Japan@uv {
+  fullName = "VAT_Data.Japan"
+  label = "Japan"
+  protected = false
+  values = [
+    {
+      field = "Country_Name__c"
+      value = "Japan"
+      type = "xsd:string"
+    },
+    {
+      field = "VAT_Rate__c"
+      value = "10"
+      type = "xsd:double"
+    },
+  ]
+}

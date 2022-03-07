@@ -1,0 +1,24 @@
+salesforce.Profile Minimum_Access___Salesforce@ssbs {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AllowViewKnowledge = {
+      enabled = true
+      name = "AllowViewKnowledge"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    LightningConsoleAllowedForUser = {
+      enabled = true
+      name = "LightningConsoleAllowedForUser"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+  }
+}

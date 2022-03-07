@@ -1,0 +1,11 @@
+salesforce.ApexClass ProductCollection {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ProductCollection"
+  content = file("salesforce/Records/ApexClass/ProductCollection.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Item
+    },
+  ]
+}

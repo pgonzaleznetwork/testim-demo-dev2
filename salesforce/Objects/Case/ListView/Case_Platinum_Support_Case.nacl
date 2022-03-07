@@ -1,0 +1,12 @@
+salesforce.ListView Case_Platinum_Support_Case {
+  fullName = "Case.Platinum_Support_Case"
+  filterScope = "Queue"
+  label = "Platinum Support"
+  queue = "Platinum_Support"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

@@ -1,0 +1,7 @@
+salesforce.AuraDefinitionBundle FundFilterChange {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "FundFilterChange"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/FundFilterChange/FundFilterChange.evt")
+}

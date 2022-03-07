@@ -1,0 +1,16 @@
+salesforce.CustomApplication Dedupe_Manager {
+  fullName = "Dedupe_Manager"
+  defaultLandingTab = "Dedupe_Scenario__c"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Dedupe Manager"
+  tabs = [
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    "standard-Account",
+    "standard-Contact",
+    "standard-Lead",
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+}

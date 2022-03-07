@@ -1,0 +1,17 @@
+salesforce.QuickAction Account_My_Test_Lightning_Action@vuuu {
+  fullName = "Account.My_Test_Lightning_Action"
+  height = 250
+  label = "My Test Lightning Action"
+  lightningComponent = "LDSContainer"
+  optionsCreateFeedItem = false
+  type = "LightningComponent"
+  width = -100
+  _parent = [
+    salesforce.Account,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LDSContainer
+    },
+  ]
+}

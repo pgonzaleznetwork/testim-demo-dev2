@@ -1,0 +1,18 @@
+salesforce.Queue Neat_Ideas_Newsletter {
+  fullName = "Neat_Ideas_Newsletter"
+  doesSendEmailToMembers = false
+  name = "Neat Ideas Newsletter"
+  queueMembers = {
+    users = {
+      user = [
+        "dreamforceattendee@sso.df.com",
+        "integration@00d0o000000z9abuak.com",
+        "pgonzaleznetwork@resourceful-moose-448750.com",
+        "insightssecurity@00d0o000000z9abuak.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

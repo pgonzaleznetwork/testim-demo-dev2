@@ -1,0 +1,15 @@
+salesforce.CompactLayout Opportunity_New_Oppty_Compact_Layout {
+  fullName = "Opportunity.New_Oppty_Compact_Layout"
+  fields = [
+    "Name",
+    "Probability",
+    "CloseDate",
+    "StageName",
+    "Amount",
+    "OwnerId",
+  ]
+  label = "New Oppty Compact Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

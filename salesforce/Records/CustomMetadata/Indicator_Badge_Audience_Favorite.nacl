@@ -1,0 +1,37 @@
+salesforce.CustomMetadata Indicator_Badge_Audience_Favorite@uvu {
+  fullName = "Indicator_Badge.Audience_Favorite"
+  label = "Audience Favorite"
+  protected = false
+  values = [
+    {
+      field = "Badge_Color__c"
+      value = "Tomato"
+      type = "xsd:string"
+    },
+    {
+      field = "Badge_Icon_Name__c"
+      value = "custom:custom97"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Type__c"
+      value = "Greater or Equal"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Value__c"
+      value = "3"
+      type = "xsd:string"
+    },
+    {
+      field = "Object__c"
+      value = "Show__c"
+      type = "xsd:string"
+    },
+    {
+      field = "Related_Field__c"
+      value = "Active_Syndications__c"
+      type = "xsd:string"
+    },
+  ]
+}

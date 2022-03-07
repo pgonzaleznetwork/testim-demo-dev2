@@ -1,0 +1,100 @@
+salesforce.Layout Show__c_Show_Layout@uubs {
+  fullName = "Show__c-Show Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Show__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Show__c.field.Host__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Show__c.field.Format__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Show__c.field.All_Syndications__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Show__c.field.Active_Syndications__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Show__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Show__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "Account.NAME",
+        "Start_Date__c",
+        "End_Date__c",
+      ]
+      relatedList = salesforce.Syndication__c.field.Show__c
+      sortField = "Start_Date__c"
+      sortOrder = "Desc"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hB0000000zege"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Show__c,
+  ]
+}

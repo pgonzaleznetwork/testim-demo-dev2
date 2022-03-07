@@ -1,0 +1,11 @@
+salesforce.ApexClass TriggerEngine {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerEngine"
+  content = file("salesforce/Records/ApexClass/TriggerEngine.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TriggerActions
+    },
+  ]
+}

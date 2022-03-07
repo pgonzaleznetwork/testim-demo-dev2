@@ -1,0 +1,58 @@
+type salesforce.Translation_Key__c {
+  salesforce.Text Type__c {
+    apiName = "Translation_Key__c.Type__c"
+    label = "Type"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Key__c {
+    apiName = "Translation_Key__c.Key__c"
+    label = "Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Default_Label__c {
+    apiName = "Translation_Key__c.Default_Label__c"
+    label = "Default Label"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.MasterDetail Translation_Context__c {
+    apiName = "Translation_Key__c.Translation_Context__c"
+    label = "Translation Context"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Translation_Context__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Translation_Keys"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Translation Keys"
+    trackTrending = false
+  }
+}

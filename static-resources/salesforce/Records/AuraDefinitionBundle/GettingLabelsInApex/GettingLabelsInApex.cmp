@@ -1,0 +1,6 @@
+<aura:component controller="LabelController">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" description="Code to be called during component initialization"/>
+ 
+    <aura:attribute name="myLabel" type="String" default="" description="Attribute to hold a reference to the custom Label retrieved from Apex"/>
+	<p>Label from apex: {!v.myLabel}</p>
+</aura:component>

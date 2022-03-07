@@ -1,0 +1,41 @@
+type salesforce.Order {
+  salesforce.Currency Blackfriday_Price__c {
+    apiName = "Order.Blackfriday_Price__c"
+    label = "Blackfriday Price"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+    externalId = false
+    trackHistory = false
+  }
+  salesforce.Text Child_Name__c {
+    apiName = "Order.Child_Name__c"
+    label = "Child Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackHistory = false
+  }
+  salesforce.Lookup Delivery_Agency__c {
+    apiName = "Order.Delivery_Agency__c"
+    label = "Delivery Agency"
+    referenceTo = [
+      salesforce.Delivery_Agency__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Orders"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Orders"
+    trackHistory = false
+  }
+}

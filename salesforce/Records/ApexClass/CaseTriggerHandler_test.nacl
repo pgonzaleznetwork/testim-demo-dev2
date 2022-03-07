@@ -1,0 +1,26 @@
+salesforce.ApexClass CaseTriggerHandler_test {
+  apiVersion = 33
+  status = "Active"
+  fullName = "CaseTriggerHandler_test"
+  content = file("salesforce/Records/ApexClass/CaseTriggerHandler_test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Case_Status_Bucket__c
+    },
+    {
+      reference = salesforce.Case_Status_Bucket__c.field.Time_Bucket__c
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+}

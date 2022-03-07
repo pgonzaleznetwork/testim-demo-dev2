@@ -1,0 +1,15 @@
+salesforce.ListView Routing_Email_Address_Mapping__mdt_ALL {
+  fullName = "Routing_Email_Address_Mapping__mdt.ALL"
+  columns = [
+    "Country__c",
+    "MasterLabel",
+    "Actual_Email_Address__c",
+    "Routing_Email_Address__c",
+  ]
+  filterScope = "Everything"
+  label = "ALL"
+  language = "en_US"
+  _parent = [
+    salesforce.Routing_Email_Address_Mapping__mdt,
+  ]
+}

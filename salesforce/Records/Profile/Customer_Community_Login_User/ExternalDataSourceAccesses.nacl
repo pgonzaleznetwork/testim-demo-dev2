@@ -1,0 +1,8 @@
+salesforce.Profile Customer_Community_Login_User@s {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

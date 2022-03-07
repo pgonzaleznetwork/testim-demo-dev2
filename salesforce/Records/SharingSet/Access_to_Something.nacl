@@ -1,0 +1,27 @@
+salesforce.SharingSet Access_to_Something {
+  fullName = "Access_to_Something"
+  accessMappings = [
+    {
+      accessLevel = "Edit"
+      object = "Case"
+      objectField = "Contact"
+      userField = "Contact"
+    },
+    {
+      accessLevel = "Read"
+      object = "ServiceContract"
+      objectField = "Account"
+      userField = "Account"
+    },
+  ]
+  name = "Access to Something"
+  profiles = [
+    "authenticated website",
+    "customer community login user",
+    "customer community user",
+    "external identity user",
+    "high volume customer portal user",
+    "highvolumeportal",
+    "platformportal",
+  ]
+}

@@ -1,0 +1,25 @@
+type salesforce.FlowScreenFieldTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string fieldText {
+  }
+  string helpText {
+  }
+  string name {
+  }
+  salesforce.FlowInputValidationRuleTranslation validationRule {
+  }
+  metadataType = "FlowScreenFieldTranslation"
+}

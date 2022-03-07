@@ -1,0 +1,8 @@
+salesforce.ListView Matching_Rule__c_All {
+  fullName = "Matching_Rule__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Matching_Rule__c,
+  ]
+}

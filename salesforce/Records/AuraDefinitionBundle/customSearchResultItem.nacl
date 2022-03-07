@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle customSearchResultItem {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "customSearchResultItem"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/customSearchResultItem/customSearchResultItem.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.customSearchResultItem
+    },
+  ]
+}

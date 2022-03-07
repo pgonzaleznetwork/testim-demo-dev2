@@ -1,0 +1,11 @@
+salesforce.CustomTab ModifyCSS {
+  fullName = "ModifyCSS"
+  label = "ModifyCSS"
+  motif = "Custom16: Bank"
+  page = "ModifyCSS"
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.ModifyCSS
+    },
+  ]
+}

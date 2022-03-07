@@ -1,0 +1,29 @@
+salesforce.ApexPage StdExceptionTemplate {
+  apiVersion = 42
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Lightning Platform template for standard exception pages"
+  label = "StdExceptionTemplate"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "StdExceptionTemplate"
+  content = file("salesforce/Records/ApexPage/StdExceptionTemplate.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexComponent.instance.SitePoweredBy
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+}

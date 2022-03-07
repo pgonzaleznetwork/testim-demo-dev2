@@ -1,0 +1,29 @@
+salesforce.ApexPage Exception {
+  apiVersion = 42
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Lightning Platformm page for post-authentication errors"
+  label = "Exception"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "Exception"
+  content = file("salesforce/Records/ApexPage/Exception.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexComponent.instance.SitePoweredBy
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+}

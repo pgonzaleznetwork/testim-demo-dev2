@@ -1,0 +1,27 @@
+salesforce.AuraDefinitionBundle SectorSelector {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "SectorSelector"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/SectorSelector/SectorSelectorHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/SectorSelector/SectorSelector.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/SectorSelector/SectorSelector.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/SectorSelector/SectorSelectorController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.FundController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SectorSelector
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ValueChange
+    },
+    {
+      reference = salesforce.Sector__c
+    },
+    {
+      reference = salesforce.StaticResource.instance.DataCache
+    },
+  ]
+}

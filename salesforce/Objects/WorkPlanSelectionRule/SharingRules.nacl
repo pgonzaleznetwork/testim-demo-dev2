@@ -1,0 +1,6 @@
+salesforce.SharingRules WorkPlanSelectionRule {
+  fullName = "WorkPlanSelectionRule"
+  _parent = [
+    salesforce.WorkPlanSelectionRule,
+  ]
+}

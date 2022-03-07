@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle UsingCustomLabels {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "UsingCustomLabels"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/UsingCustomLabels/UsingCustomLabelsController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/UsingCustomLabels/UsingCustomLabels.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.UsingCustomLabels
+    },
+  ]
+}

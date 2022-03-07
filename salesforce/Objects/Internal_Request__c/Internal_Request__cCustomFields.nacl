@@ -1,0 +1,45 @@
+type salesforce.Internal_Request__c {
+  salesforce.MasterDetail Account__c {
+    apiName = "Internal_Request__c.Account__c"
+    label = "Account"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Internal_Requests"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Internal Requests"
+    trackTrending = false
+  }
+  salesforce.Lookup Related_Account__c {
+    apiName = "Internal_Request__c.Related_Account__c"
+    label = "Related Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Internal_Requests1"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "Account.Field_being_used__c"
+          operation = "equals"
+          value = "lookupyes"
+        },
+      ]
+      isOptional = false
+    }
+    relationshipLabel = "Internal Requests (Related Account)"
+    trackTrending = false
+  }
+}

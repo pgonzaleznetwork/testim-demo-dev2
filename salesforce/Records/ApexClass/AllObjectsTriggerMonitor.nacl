@@ -1,0 +1,6 @@
+salesforce.ApexClass AllObjectsTriggerMonitor {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AllObjectsTriggerMonitor"
+  content = file("salesforce/Records/ApexClass/AllObjectsTriggerMonitor.cls")
+}

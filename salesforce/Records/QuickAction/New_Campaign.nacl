@@ -1,0 +1,50 @@
+salesforce.QuickAction New_Campaign {
+  fullName = "New_Campaign"
+  label = "New Campaign"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "IsActive"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "StartDate"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Type"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "EndDate"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  targetObject = salesforce.Campaign
+  type = "Create"
+}

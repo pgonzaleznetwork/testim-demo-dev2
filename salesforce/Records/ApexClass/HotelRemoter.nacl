@@ -1,0 +1,14 @@
+salesforce.ApexClass HotelRemoter {
+  apiVersion = 41
+  status = "Active"
+  fullName = "HotelRemoter"
+  content = file("salesforce/Records/ApexClass/HotelRemoter.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Hotel__c
+    },
+    {
+      reference = salesforce.Hotel__c.field.Location__c
+    },
+  ]
+}

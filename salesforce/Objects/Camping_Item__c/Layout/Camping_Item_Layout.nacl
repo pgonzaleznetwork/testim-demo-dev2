@@ -1,0 +1,81 @@
+salesforce.Layout Camping_Item__c_Camping_Item_Layout@uuubss {
+  fullName = "Camping_Item__c-Camping Item Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Camping_Item__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Camping_Item__c.field.Quantity__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Camping_Item__c.field.Price__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Camping_Item__c.field.Packed__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Camping_Item__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Camping_Item__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Camping_Item__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Camping_Item__c,
+  ]
+}

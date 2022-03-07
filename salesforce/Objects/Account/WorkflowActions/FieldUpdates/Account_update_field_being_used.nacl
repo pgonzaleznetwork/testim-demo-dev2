@@ -1,0 +1,12 @@
+salesforce.WorkflowFieldUpdate Account_update_field_being_used@vuuu {
+  fullName = "Account.update_field_being_used"
+  field = salesforce.Account.field.Field_being_used__c
+  name = "update field being used"
+  notifyAssignee = false
+  operation = "Null"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Account,
+  ]
+}

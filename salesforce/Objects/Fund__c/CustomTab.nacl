@@ -1,0 +1,8 @@
+salesforce.CustomTab Fund__c {
+  fullName = "Fund__c"
+  customObject = true
+  motif = "Custom64: Compass"
+  _parent = [
+    salesforce.Fund__c,
+  ]
+}

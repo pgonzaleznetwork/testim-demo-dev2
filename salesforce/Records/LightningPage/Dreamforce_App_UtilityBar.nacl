@@ -1,0 +1,14 @@
+salesforce.LightningPage Dreamforce_App_UtilityBar {
+  fullName = "Dreamforce_App_UtilityBar"
+  flexiPageRegions = [
+    {
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Dreamforce App UtilityBar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+}

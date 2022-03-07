@@ -1,0 +1,6 @@
+salesforce.StaticResource leaflet {
+  cacheControl = "Private"
+  contentType = "application/zip"
+  fullName = "leaflet"
+  content = file("salesforce/Records/StaticResource/leaflet.zip")
+}

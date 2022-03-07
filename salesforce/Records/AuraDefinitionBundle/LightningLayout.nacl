@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle LightningLayout {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningLayout"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningLayout/LightningLayout.cmp")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/LightningLayout/LightningLayout.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningLayout
+    },
+  ]
+}

@@ -1,0 +1,48 @@
+salesforce.Profile Authenticated_Website@s {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    WorkDotComUserPerm = {
+      enabled = true
+      name = "WorkDotComUserPerm"
+    }
+  }
+}

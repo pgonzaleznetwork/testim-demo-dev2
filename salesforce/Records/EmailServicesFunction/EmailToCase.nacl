@@ -1,0 +1,28 @@
+salesforce.EmailServicesFunction EmailToCase {
+  fullName = "EmailToCase"
+  attachmentOption = "All"
+  authenticationFailureAction = "Bounce"
+  authorizationFailureAction = "Discard"
+  emailServicesAddresses = [
+    {
+      developerName = "staplesappirio"
+      isActive = true
+      localPart = "staplesappirio"
+      runAsUser = "pgonzaleznetwork@resourceful-moose-448750.com"
+    },
+    {
+      developerName = "nicolas_dohm"
+      isActive = true
+      localPart = "nicolas.dohm"
+      runAsUser = "pgonzaleznetwork@resourceful-moose-448750.com"
+    },
+  ]
+  functionInactiveAction = "Bounce"
+  functionName = "EmailToCase"
+  isActive = true
+  isAuthenticationRequired = false
+  isErrorRoutingEnabled = false
+  isTextAttachmentsAsBinary = true
+  isTlsRequired = false
+  overLimitAction = "Bounce"
+}

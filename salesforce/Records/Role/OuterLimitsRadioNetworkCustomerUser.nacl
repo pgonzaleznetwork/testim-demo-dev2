@@ -1,0 +1,10 @@
+salesforce.Role OuterLimitsRadioNetworkCustomerUser {
+  fullName = "OuterLimitsRadioNetworkCustomerUser"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Outer Limits Radio Network Customer User"
+  mayForecastManagerShare = false
+  name = "Outer Limits Radio Network Customer User"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.CEO
+}

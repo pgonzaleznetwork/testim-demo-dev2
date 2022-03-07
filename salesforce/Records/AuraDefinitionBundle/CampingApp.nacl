@@ -1,0 +1,21 @@
+salesforce.AuraDefinitionBundle CampingApp {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "CampingApp"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/CampingApp/CampingApp.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.CampingApp
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.camping
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingHeader
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingList
+    },
+  ]
+}

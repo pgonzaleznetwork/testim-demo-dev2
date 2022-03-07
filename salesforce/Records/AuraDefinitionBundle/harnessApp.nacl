@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle harnessApp {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "harnessApp"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/harnessApp/harnessApp.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.harnessApp
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.helloWorld
+    },
+  ]
+}

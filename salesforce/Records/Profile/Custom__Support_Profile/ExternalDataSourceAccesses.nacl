@@ -1,0 +1,8 @@
+salesforce.Profile Custom_3A_Support_Profile@pss {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

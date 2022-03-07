@@ -1,0 +1,20 @@
+salesforce.ApexClass PageLayoutMetadata_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutMetadata_Test"
+  content = file("salesforce/Records/ApexClass/PageLayoutMetadata_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Instance
+    },
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutMetadata
+    },
+    {
+      reference = salesforce.Page_Layout_Translation_Manager_Setting__mdt
+    },
+    {
+      reference = salesforce.Page_Layout_Translation_Manager_Setting__mdt.field.Page_Layout_Name_in_Tests__c
+    },
+  ]
+}

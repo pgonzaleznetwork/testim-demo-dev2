@@ -1,0 +1,37 @@
+salesforce.CustomMetadata Indicator_Badge_Content_Advocate@uvu {
+  fullName = "Indicator_Badge.Content_Advocate"
+  label = "Content Advocate"
+  protected = false
+  values = [
+    {
+      field = "Badge_Color__c"
+      value = "Tomato"
+      type = "xsd:string"
+    },
+    {
+      field = "Badge_Icon_Name__c"
+      value = "custom:custom30"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Type__c"
+      value = "Greater or Equal"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Value__c"
+      value = "2"
+      type = "xsd:string"
+    },
+    {
+      field = "Object__c"
+      value = "Contact"
+      type = "xsd:string"
+    },
+    {
+      field = "Related_Field__c"
+      value = "Total_Account_Subscriptions__c"
+      type = "xsd:string"
+    },
+  ]
+}

@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle expensesItemUpdate {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "expensesItemUpdate"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/expensesItemUpdate/expensesItemUpdate.evt")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expensesItemUpdate
+    },
+    {
+      reference = salesforce.Expense__c
+    },
+  ]
+}

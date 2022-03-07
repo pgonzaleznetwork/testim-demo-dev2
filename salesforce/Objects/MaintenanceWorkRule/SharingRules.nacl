@@ -1,0 +1,6 @@
+salesforce.SharingRules MaintenanceWorkRule {
+  fullName = "MaintenanceWorkRule"
+  _parent = [
+    salesforce.MaintenanceWorkRule,
+  ]
+}

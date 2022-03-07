@@ -1,0 +1,6 @@
+salesforce.ApexClass LeadDedupeActions_Test {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadDedupeActions_Test"
+  content = file("salesforce/Records/ApexClass/LeadDedupeActions_Test.cls")
+}

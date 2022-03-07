@@ -1,0 +1,6 @@
+salesforce.StaticResource nouislider {
+  cacheControl = "Public"
+  contentType = "application/zip"
+  fullName = "nouislider"
+  content = file("salesforce/Records/StaticResource/nouislider.zip")
+}

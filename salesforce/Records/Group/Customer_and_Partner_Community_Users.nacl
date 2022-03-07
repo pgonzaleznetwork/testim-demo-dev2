@@ -1,0 +1,5 @@
+salesforce.Group Customer_and_Partner_Community_Users {
+  fullName = "Customer_and_Partner_Community_Users"
+  doesIncludeBosses = false
+  name = "Customer and Partner Community Users"
+}

@@ -1,0 +1,14 @@
+salesforce.ApexClass AccountAddressTriggerClass_Test {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountAddressTriggerClass_Test"
+  content = file("salesforce/Records/ApexClass/AccountAddressTriggerClass_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Match_Billing_Address__c
+    },
+  ]
+}

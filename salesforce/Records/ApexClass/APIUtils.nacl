@@ -1,0 +1,11 @@
+salesforce.ApexClass APIUtils {
+  apiVersion = 41
+  status = "Active"
+  fullName = "APIUtils"
+  content = file("salesforce/Records/ApexClass/APIUtils.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.User
+    },
+  ]
+}

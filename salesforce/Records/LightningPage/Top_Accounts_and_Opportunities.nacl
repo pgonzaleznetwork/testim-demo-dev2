@@ -1,0 +1,117 @@
+salesforce.LightningPage Top_Accounts_and_Opportunities {
+  fullName = "Top_Accounts_and_Opportunities"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "daysSinceLastModified"
+                value = "6"
+              },
+              {
+                name = "hasTasks"
+                value = "true"
+              },
+              {
+                name = "oppStage"
+                value = "Prospecting"
+              },
+            ]
+            componentName = "OpportunityAlert"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityName"
+                value = "Account"
+              },
+              {
+                name = "filterName"
+                value = "PlatinumandGoldSLACustomers"
+              },
+              {
+                name = "hideActionBar"
+                value = "false"
+              },
+              {
+                name = "pageSize"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:filterListCard"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "camping"
+          }
+        },
+      ]
+      name = "column1"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityNames"
+                valueList = {
+                  valueListItems = [
+                    {
+                      value = "Account"
+                    },
+                    {
+                      value = "Opportunity"
+                    },
+                  ]
+                }
+              },
+              {
+                name = "maxRecords"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:recentItems"
+          }
+        },
+      ]
+      name = "column2"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Top Accounts and Opportunities"
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = salesforce.QuickAction.instance.LogACall
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewAccount
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewOpportunity
+      },
+    ]
+  }
+  template = {
+    name = "flexipage:appHomeTemplateTwoColumns"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.OpportunityAlert
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.camping
+    },
+    {
+      reference = salesforce.ListView.instance.Account_PlatinumandGoldSLACustomers
+    },
+  ]
+}

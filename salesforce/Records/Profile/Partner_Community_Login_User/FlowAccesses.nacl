@@ -1,0 +1,44 @@
+salesforce.Profile Partner_Community_Login_User@s {
+  flowAccesses = {
+    Flow_using_field = {
+      enabled = false
+      flow = salesforce.Flow.instance.Flow_using_field
+    }
+    New_Lead = {
+      enabled = false
+      flow = salesforce.Flow.instance.New_Lead
+    }
+    New_Lead_C = {
+      enabled = false
+      flow = salesforce.Flow.instance.New_Lead_C
+    }
+    Opportunity_Management = {
+      enabled = false
+      flow = salesforce.Flow.instance.Opportunity_Management
+    }
+    Process_using_field = {
+      enabled = false
+      flow = salesforce.Flow.instance.Process_using_field
+    }
+    Publish_Subscription_Event = {
+      enabled = false
+      flow = salesforce.Flow.instance.Publish_Subscription_Event
+    }
+    Sample_Dedupe_Process = {
+      enabled = false
+      flow = salesforce.Flow.instance.Sample_Dedupe_Process
+    }
+    Under_Maintenance = {
+      enabled = false
+      flow = salesforce.Flow.instance.Under_Maintenance
+    }
+    Update_contact_address = {
+      enabled = false
+      flow = salesforce.Flow.instance.Update_contact_address
+    }
+    change_owner = {
+      enabled = false
+      flow = salesforce.Flow.instance.change_owner
+    }
+  }
+}

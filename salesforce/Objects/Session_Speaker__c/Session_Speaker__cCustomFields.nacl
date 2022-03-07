@@ -1,0 +1,36 @@
+type salesforce.Session_Speaker__c {
+  salesforce.MasterDetail Session__c {
+    apiName = "Session_Speaker__c.Session__c"
+    label = "Session"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Session__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Session_Speakers"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Session Speakers"
+    trackTrending = false
+  }
+  salesforce.MasterDetail Speaker__c {
+    apiName = "Session_Speaker__c.Speaker__c"
+    label = "Speaker"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Speaker__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 1
+    relationshipName = "Session_Speakers"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Session Speakers"
+    trackTrending = false
+  }
+}

@@ -1,0 +1,67 @@
+salesforce.QuickAction Task_Close_Task@vu {
+  fullName = "Task.Close_Task"
+  fieldOverrides = [
+    {
+      field = "Status"
+      literalValue = "Completed"
+    },
+  ]
+  label = "Close Task"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Task.field.Subject
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Task.field.ActivityDate
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Task.field.WhoId
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Task.field.Status
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Task.field.Priority
+            uiBehavior = "Required"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = true
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Task.field.OwnerId
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Task.field.WhatId
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  type = "Update"
+  _parent = [
+    salesforce.Task,
+  ]
+}

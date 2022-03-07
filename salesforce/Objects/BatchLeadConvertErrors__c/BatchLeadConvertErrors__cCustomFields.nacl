@@ -1,0 +1,39 @@
+type salesforce.BatchLeadConvertErrors__c {
+  salesforce.Text AsyncApexJobId__c {
+    apiName = "BatchLeadConvertErrors__c.AsyncApexJobId__c"
+    label = "AsyncApexJobId"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.LongTextArea Records__c {
+    apiName = "BatchLeadConvertErrors__c.Records__c"
+    label = "Records"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.LongTextArea StackTrace__c {
+    apiName = "BatchLeadConvertErrors__c.StackTrace__c"
+    label = "Stack Trace"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+}

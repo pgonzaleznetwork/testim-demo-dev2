@@ -1,0 +1,14 @@
+salesforce.ApexClass PositiveRuleResult {
+  apiVersion = 44
+  status = "Active"
+  fullName = "PositiveRuleResult"
+  content = file("salesforce/Records/ApexClass/PositiveRuleResult.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.RuleResult
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

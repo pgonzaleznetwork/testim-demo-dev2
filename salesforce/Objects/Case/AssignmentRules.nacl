@@ -1,0 +1,137 @@
+salesforce.AssignmentRules Case {
+  assignmentRule = [
+    {
+      fullName = "Assign Booyah"
+      active = true
+      ruleEntry = [
+        {
+          assignedTo = "Booyah"
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Case.field.Description
+              operation = "contains"
+              value = "Booyah"
+            },
+          ]
+        },
+        {
+          assignedTo = "Germany_Advantage"
+          assignedToType = "Queue"
+          criteriaItems = [
+            {
+              field = salesforce.Case.field.Business_Unit__c
+              operation = "equals"
+              value = "Germany Advantage"
+            },
+          ]
+        },
+      ]
+    },
+    {
+      fullName = "Standard"
+      active = false
+      ruleEntry = [
+        {
+          assignedTo = "pgonzaleznetwork@resourceful-moose-448750.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = "Account.BillingCountry"
+              operation = "equals"
+              value = "US,USA,United States,United States of America"
+            },
+            {
+              field = salesforce.Account.field.SLA__c
+              operation = "equals"
+              value = "Gold,Platinum"
+            },
+            {
+              field = salesforce.Account.field.Type
+              operation = "contains"
+              value = "Customer"
+            },
+          ]
+        },
+        {
+          assignedTo = "pgonzaleznetwork@resourceful-moose-448750.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = "Account.BillingCountry"
+              operation = "equals"
+              value = "US,USA,United States,United States of America"
+            },
+            {
+              field = salesforce.Account.field.SLA__c
+              operation = "equals"
+              value = "Silver,Bronze"
+            },
+            {
+              field = salesforce.Account.field.Type
+              operation = "contains"
+              value = "Customer"
+            },
+          ]
+        },
+        {
+          assignedTo = "pgonzaleznetwork@resourceful-moose-448750.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = "Account.BillingCountry"
+              operation = "notEqual"
+              value = "US,USA,United States,United States of America"
+            },
+            {
+              field = salesforce.Account.field.SLA__c
+              operation = "equals"
+              value = "Gold,Platinum"
+            },
+            {
+              field = salesforce.Account.field.Type
+              operation = "contains"
+              value = "Customer"
+            },
+          ]
+        },
+        {
+          assignedTo = "pgonzaleznetwork@resourceful-moose-448750.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = "Account.BillingCountry"
+              operation = "notEqual"
+              value = "US,USA,United States,United States of America"
+            },
+            {
+              field = salesforce.Account.field.SLA__c
+              operation = "equals"
+              value = "Silver,Bronze"
+            },
+            {
+              field = salesforce.Account.field.Type
+              operation = "contains"
+              value = "Customer"
+            },
+          ]
+        },
+        {
+          assignedTo = "pgonzaleznetwork@resourceful-moose-448750.com"
+          assignedToType = "User"
+          criteriaItems = [
+            {
+              field = salesforce.Account.field.Type
+              operation = "contains"
+              value = "Partner"
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  fullName = "Case"
+  _parent = [
+    salesforce.Case,
+  ]
+}

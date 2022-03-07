@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle LightningPathPerformance {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningPathPerformance"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningPathPerformance/LightningPathPerformance.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningHelpText
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningPath
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningPathPerformance
+    },
+  ]
+}

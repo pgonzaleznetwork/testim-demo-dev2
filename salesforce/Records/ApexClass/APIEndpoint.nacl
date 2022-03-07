@@ -1,0 +1,6 @@
+salesforce.ApexClass APIEndpoint {
+  apiVersion = 41
+  status = "Active"
+  fullName = "APIEndpoint"
+  content = file("salesforce/Records/ApexClass/APIEndpoint.cls")
+}

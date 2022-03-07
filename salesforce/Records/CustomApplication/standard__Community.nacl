@@ -1,0 +1,31 @@
+salesforce.CustomApplication standard__Community {
+  fullName = "standard__Community"
+  defaultLandingTab = "standard-home"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-Contact",
+    "standard-Account",
+    "standard-Idea",
+    "standard-IdeaTheme",
+    "standard-report",
+    "standard-Dashboard",
+    salesforce.CustomTab.instance.Expense__c,
+    salesforce.CustomTab.instance.Camping_Item__c,
+    salesforce.CustomTab.instance.Session__c,
+    salesforce.CustomTab.instance.ModifyCSS,
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+}

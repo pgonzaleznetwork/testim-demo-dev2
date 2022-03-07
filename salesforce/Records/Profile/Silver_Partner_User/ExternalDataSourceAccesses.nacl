@@ -1,0 +1,8 @@
+salesforce.Profile Silver_Partner_User@s {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

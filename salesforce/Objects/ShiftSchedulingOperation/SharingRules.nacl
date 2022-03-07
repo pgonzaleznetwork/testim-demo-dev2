@@ -1,0 +1,6 @@
+salesforce.SharingRules ShiftSchedulingOperation {
+  fullName = "ShiftSchedulingOperation"
+  _parent = [
+    salesforce.ShiftSchedulingOperation,
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.CustomTab Energy_Audit__c {
+  fullName = "Energy_Audit__c"
+  customObject = true
+  motif = "Custom3: Sun"
+  _parent = [
+    salesforce.Energy_Audit__c,
+  ]
+}

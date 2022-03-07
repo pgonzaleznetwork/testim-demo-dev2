@@ -1,0 +1,7 @@
+salesforce.AutoResponseRules Case {
+  fullName = "Case"
+  autoResponseRule = {
+    fullName = "1"
+    active = true
+  }
+}

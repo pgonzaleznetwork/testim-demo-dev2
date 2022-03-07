@@ -1,0 +1,13 @@
+salesforce.WorkflowFieldUpdate Account_update_website_field@vuu {
+  fullName = "Account.update_website_field"
+  field = salesforce.Account.field.Website
+  formula = "\"www.workflow.com\""
+  name = "update website field"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Account,
+  ]
+}

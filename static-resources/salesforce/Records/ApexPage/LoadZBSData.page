@@ -1,0 +1,10 @@
+<apex:page controller="ZBSDataLoadController">
+<apex:slds />
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<body>
+        <apex:image url="{!$Resource.myLogoHe}" width="50" height="50"/>
+    </body>
+       
+    </html>                 
+</apex:page>

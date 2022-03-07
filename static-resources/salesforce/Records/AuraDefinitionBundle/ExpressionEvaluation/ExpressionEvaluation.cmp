@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="liked" type="Boolean" default="false"/>
+    
+    <lightning:button aura:id="likeButton" label="{! (v.liked) ? 'Unlike' : 'Like' }"
+                      onclick="{! (v.liked) ? c.unlike : c.like }"/>
+</aura:component>

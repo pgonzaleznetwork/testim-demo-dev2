@@ -1,0 +1,25 @@
+salesforce.ApexPage MobileVF {
+  apiVersion = 43
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "MobileVF"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "MobileVF"
+  content = file("salesforce/Records/ApexPage/MobileVF.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

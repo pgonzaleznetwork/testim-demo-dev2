@@ -1,0 +1,1714 @@
+salesforce.Profile Admin {
+  objectPermissions = {
+    AIInsightReason = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AIInsightReason"
+      viewAllRecords = true
+    }
+    AIRecordInsight = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AIRecordInsight"
+      viewAllRecords = true
+    }
+    Account = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Account
+      viewAllRecords = true
+    }
+    AccountBrand = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AccountBrand
+      viewAllRecords = true
+    }
+    Action_Button__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Action_Button__c
+      viewAllRecords = true
+    }
+    ActiveScratchOrg = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ActiveScratchOrg
+      viewAllRecords = true
+    }
+    Address = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Address"
+      viewAllRecords = true
+    }
+    AlternativePaymentMethod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AlternativePaymentMethod
+      viewAllRecords = true
+    }
+    Apex_Log__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Apex_Log__c
+      viewAllRecords = true
+    }
+    ApiAnomalyEventStore = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApiAnomalyEventStore
+      viewAllRecords = true
+    }
+    AppAnalyticsQueryRequest = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AppAnalyticsQueryRequest"
+      viewAllRecords = true
+    }
+    AppUsageAssignment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AppUsageAssignment"
+      viewAllRecords = true
+    }
+    AppointmentTopicTimeSlot = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AppointmentTopicTimeSlot
+      viewAllRecords = true
+    }
+    ApptBundleAggrDurDnscale = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundleAggrDurDnscale
+      viewAllRecords = true
+    }
+    ApptBundleAggrPolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundleAggrPolicy
+      viewAllRecords = true
+    }
+    ApptBundleConfig = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundleConfig
+      viewAllRecords = true
+    }
+    ApptBundlePolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundlePolicy
+      viewAllRecords = true
+    }
+    ApptBundlePolicySvcTerr = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundlePolicySvcTerr
+      viewAllRecords = true
+    }
+    ApptBundlePropagatePolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundlePropagatePolicy
+      viewAllRecords = true
+    }
+    ApptBundleRestrictPolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundleRestrictPolicy
+      viewAllRecords = true
+    }
+    ApptBundleSortPolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ApptBundleSortPolicy
+      viewAllRecords = true
+    }
+    Asset = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Asset
+      viewAllRecords = true
+    }
+    AssetAction = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AssetAction
+      viewAllRecords = true
+    }
+    AssetActionSource = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AssetActionSource
+      viewAllRecords = true
+    }
+    AssetStatePeriod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AssetStatePeriod
+      viewAllRecords = true
+    }
+    AsyncOperationLog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AsyncOperationLog"
+      viewAllRecords = true
+    }
+    AuthorizationForm = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AuthorizationForm
+      viewAllRecords = true
+    }
+    AuthorizationFormConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AuthorizationFormConsent
+      viewAllRecords = true
+    }
+    AuthorizationFormDataUse = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AuthorizationFormDataUse
+      viewAllRecords = true
+    }
+    AuthorizationFormText = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.AuthorizationFormText
+      viewAllRecords = true
+    }
+    BackgroundOperation = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BackgroundOperation"
+      viewAllRecords = true
+    }
+    BatchLeadConvertErrors__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.BatchLeadConvertErrors__c
+      viewAllRecords = true
+    }
+    BusinessBrand = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.BusinessBrand
+      viewAllRecords = true
+    }
+    Campaign = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Campaign
+      viewAllRecords = true
+    }
+    Camping_Item__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Camping_Item__c
+      viewAllRecords = true
+    }
+    CardPaymentMethod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CardPaymentMethod
+      viewAllRecords = true
+    }
+    Case = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Case
+      viewAllRecords = true
+    }
+    Case_Status_History__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Case_Status_History__c
+      viewAllRecords = true
+    }
+    Center__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Center__c
+      viewAllRecords = true
+    }
+    ChannelProgram = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ChannelProgram
+      viewAllRecords = true
+    }
+    ChannelProgramLevel = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ChannelProgramLevel
+      viewAllRecords = true
+    }
+    ChannelProgramMember = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ChannelProgramMember
+      viewAllRecords = true
+    }
+    Child__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Child__c
+      viewAllRecords = true
+    }
+    CommSubscription = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CommSubscription
+      viewAllRecords = true
+    }
+    CommSubscriptionChannelType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CommSubscriptionChannelType
+      viewAllRecords = true
+    }
+    CommSubscriptionConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CommSubscriptionConsent
+      viewAllRecords = true
+    }
+    CommSubscriptionTiming = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CommSubscriptionTiming
+      viewAllRecords = true
+    }
+    ConsumptionSchedule = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ConsumptionSchedule
+      viewAllRecords = true
+    }
+    Contact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Contact
+      viewAllRecords = true
+    }
+    ContactPointAddress = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContactPointAddress
+      viewAllRecords = true
+    }
+    ContactPointConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContactPointConsent
+      viewAllRecords = true
+    }
+    ContactPointEmail = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContactPointEmail
+      viewAllRecords = true
+    }
+    ContactPointPhone = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContactPointPhone
+      viewAllRecords = true
+    }
+    ContactPointTypeConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContactPointTypeConsent
+      viewAllRecords = true
+    }
+    ContactRequest = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContactRequest
+      viewAllRecords = true
+    }
+    Contract = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Contract
+      viewAllRecords = true
+    }
+    ContractLineItem = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ContractLineItem
+      viewAllRecords = true
+    }
+    CredentialStuffingEventStore = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CredentialStuffingEventStore
+      viewAllRecords = true
+    }
+    CreditMemo = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CreditMemo
+      viewAllRecords = true
+    }
+    CreditMemoInvApplication = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.CreditMemoInvApplication
+      viewAllRecords = true
+    }
+    Custom_Field_Help_Text__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Custom_Field_Help_Text__c
+      viewAllRecords = true
+    }
+    Customer = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Customer
+      viewAllRecords = true
+    }
+    DMLSysException__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DMLSysException__c
+      viewAllRecords = true
+    }
+    DandBCompany = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DandBCompany
+      viewAllRecords = true
+    }
+    DataUseLegalBasis = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DataUseLegalBasis
+      viewAllRecords = true
+    }
+    DataUsePurpose = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DataUsePurpose
+      viewAllRecords = true
+    }
+    Dedupe_Branch__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Dedupe_Branch__c
+      viewAllRecords = true
+    }
+    Dedupe_Scenario_Rule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Dedupe_Scenario_Rule__c
+      viewAllRecords = true
+    }
+    Dedupe_Scenario__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Dedupe_Scenario__c
+      viewAllRecords = true
+    }
+    DelegatedAccount = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DelegatedAccount
+      viewAllRecords = true
+    }
+    Delivery_Agency__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Delivery_Agency__c
+      viewAllRecords = true
+    }
+    DigitalWallet = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DigitalWallet
+      viewAllRecords = true
+    }
+    Document = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Document"
+      viewAllRecords = true
+    }
+    DuplicateRecordSet = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.DuplicateRecordSet
+      viewAllRecords = true
+    }
+    Ear_Plug__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Ear_Plug__c
+      viewAllRecords = true
+    }
+    Email_Routing_Field_Mapping__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Email_Routing_Field_Mapping__c
+      viewAllRecords = true
+    }
+    Email_Routing_Rule_Filter__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Email_Routing_Rule_Filter__c
+      viewAllRecords = true
+    }
+    Email_Routing_Rule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Email_Routing_Rule__c
+      viewAllRecords = true
+    }
+    Energy_Audit__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Energy_Audit__c
+      viewAllRecords = true
+    }
+    EngagementChannelType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.EngagementChannelType
+      viewAllRecords = true
+    }
+    Entitlement = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Entitlement
+      viewAllRecords = true
+    }
+    EntitlementContact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.EntitlementContact
+      viewAllRecords = true
+    }
+    Expense = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Expense
+      viewAllRecords = true
+    }
+    ExpenseReport = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ExpenseReport
+      viewAllRecords = true
+    }
+    Expense__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Expense__c
+      viewAllRecords = true
+    }
+    Field_Translation_Name__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Field_Translation_Name__c
+      viewAllRecords = true
+    }
+    FinanceBalanceSnapshot = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.FinanceBalanceSnapshot
+      viewAllRecords = true
+    }
+    FinanceTransaction = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.FinanceTransaction
+      viewAllRecords = true
+    }
+    Fund__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Fund__c
+      viewAllRecords = true
+    }
+    GtwyProvPaymentMethodType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "GtwyProvPaymentMethodType"
+      viewAllRecords = true
+    }
+    Hotel__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Hotel__c
+      viewAllRecords = true
+    }
+    Idea = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Idea
+      viewAllRecords = true
+    }
+    Image = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Image
+      viewAllRecords = true
+    }
+    Individual = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Individual
+      viewAllRecords = true
+    }
+    Internal_Request__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Internal_Request__c
+      viewAllRecords = true
+    }
+    Invoice = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Invoice
+      viewAllRecords = true
+    }
+    JobProfile = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.JobProfile
+      viewAllRecords = true
+    }
+    KPI_Target__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.KPI_Target__c
+      viewAllRecords = true
+    }
+    Knowledge__ka = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Knowledge__ka"
+      viewAllRecords = true
+    }
+    Knowledge__kav = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Knowledge__kav
+      viewAllRecords = true
+    }
+    Layout_Section_Translation_Name__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Layout_Section_Translation_Name__c
+      viewAllRecords = true
+    }
+    Layout_Translation_Info__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Layout_Translation_Info__c
+      viewAllRecords = true
+    }
+    Lead = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Lead
+      viewAllRecords = true
+    }
+    LegalEntity = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.LegalEntity
+      viewAllRecords = true
+    }
+    Location = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Location
+      viewAllRecords = true
+    }
+    LocationGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.LocationGroup
+      viewAllRecords = true
+    }
+    LocationGroupAssignment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.LocationGroupAssignment
+      viewAllRecords = true
+    }
+    Macro = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Macro
+      viewAllRecords = true
+    }
+    MaintenancePlan = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.MaintenancePlan
+      viewAllRecords = true
+    }
+    MaintenanceWorkRule = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.MaintenanceWorkRule
+      viewAllRecords = true
+    }
+    Matching_Rule__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Matching_Rule__c
+      viewAllRecords = true
+    }
+    NamespaceRegistry = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.NamespaceRegistry
+      viewAllRecords = true
+    }
+    Object_in_2nd_Env__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Object_in_2nd_Env__c
+      viewAllRecords = true
+    }
+    OperatingHours = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.OperatingHours
+      viewAllRecords = true
+    }
+    Opportunity = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Opportunity
+      viewAllRecords = true
+    }
+    Order = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Order
+      viewAllRecords = true
+    }
+    Parent__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Parent__c
+      viewAllRecords = true
+    }
+    PartnerFundAllocation = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PartnerFundAllocation
+      viewAllRecords = true
+    }
+    PartnerFundClaim = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PartnerFundClaim
+      viewAllRecords = true
+    }
+    PartnerFundRequest = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PartnerFundRequest
+      viewAllRecords = true
+    }
+    PartnerMarketingBudget = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PartnerMarketingBudget
+      viewAllRecords = true
+    }
+    PartyConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PartyConsent
+      viewAllRecords = true
+    }
+    Payment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Payment
+      viewAllRecords = true
+    }
+    PaymentAuthAdjustment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PaymentAuthAdjustment
+      viewAllRecords = true
+    }
+    PaymentAuthorization = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PaymentAuthorization
+      viewAllRecords = true
+    }
+    PaymentGateway = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PaymentGateway
+      viewAllRecords = true
+    }
+    PaymentGatewayLog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PaymentGatewayLog"
+      viewAllRecords = true
+    }
+    PaymentGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PaymentGroup
+      viewAllRecords = true
+    }
+    PaymentLineInvoice = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.PaymentLineInvoice
+      viewAllRecords = true
+    }
+    Phone_Plan__x = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Phone_Plan__x
+      viewAllRecords = true
+    }
+    Phone__x = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Phone__x
+      viewAllRecords = true
+    }
+    Picklist_Value__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Picklist_Value__c
+      viewAllRecords = true
+    }
+    Pricebook2 = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Pricebook2
+      viewAllRecords = true
+    }
+    PrivacyConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PrivacyConsent"
+      viewAllRecords = true
+    }
+    ProcessException = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ProcessException
+      viewAllRecords = true
+    }
+    Product2 = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Product2
+      viewAllRecords = true
+    }
+    ProductItem = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ProductItem
+      viewAllRecords = true
+    }
+    ProductRequest = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ProductRequest
+      viewAllRecords = true
+    }
+    ProductServiceCampaign = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ProductServiceCampaign
+      viewAllRecords = true
+    }
+    ProductTransfer = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ProductTransfer
+      viewAllRecords = true
+    }
+    PushTopic = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PushTopic"
+      viewAllRecords = true
+    }
+    QuickText = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.QuickText
+      viewAllRecords = true
+    }
+    RecordsetFilterCriteria = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.RecordsetFilterCriteria
+      viewAllRecords = true
+    }
+    Refund = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Refund
+      viewAllRecords = true
+    }
+    RefundLinePayment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.RefundLinePayment
+      viewAllRecords = true
+    }
+    Related_List_Item__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Related_List_Item__c
+      viewAllRecords = true
+    }
+    ReportAnomalyEventStore = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ReportAnomalyEventStore
+      viewAllRecords = true
+    }
+    ReturnOrder = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ReturnOrder
+      viewAllRecords = true
+    }
+    SchedulingConstraint = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SchedulingConstraint
+      viewAllRecords = true
+    }
+    Scorecard = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Scorecard
+      viewAllRecords = true
+    }
+    ScorecardAssociation = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ScorecardAssociation
+      viewAllRecords = true
+    }
+    ScorecardMetric = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ScorecardMetric
+      viewAllRecords = true
+    }
+    ScratchOrgInfo = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ScratchOrgInfo
+      viewAllRecords = true
+    }
+    Sector__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Sector__c
+      viewAllRecords = true
+    }
+    Seller = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Seller
+      viewAllRecords = true
+    }
+    ServiceAppointment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ServiceAppointment
+      viewAllRecords = true
+    }
+    ServiceContract = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ServiceContract
+      viewAllRecords = true
+    }
+    ServiceCrew = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ServiceCrew
+      viewAllRecords = true
+    }
+    ServiceResource = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ServiceResource
+      viewAllRecords = true
+    }
+    ServiceResourcePreference = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ServiceResourcePreference
+      viewAllRecords = true
+    }
+    ServiceTerritory = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ServiceTerritory
+      viewAllRecords = true
+    }
+    SessionHijackingEventStore = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SessionHijackingEventStore
+      viewAllRecords = true
+    }
+    Session_Speaker__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Session_Speaker__c
+      viewAllRecords = true
+    }
+    Session__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Session__c
+      viewAllRecords = true
+    }
+    Shift = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Shift
+      viewAllRecords = true
+    }
+    ShiftPattern = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ShiftPattern
+      viewAllRecords = true
+    }
+    ShiftSchedulingOperation = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ShiftSchedulingOperation
+      viewAllRecords = true
+    }
+    ShiftTemplate = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.ShiftTemplate
+      viewAllRecords = true
+    }
+    Shipment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Shipment
+      viewAllRecords = true
+    }
+    Show__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Show__c
+      viewAllRecords = true
+    }
+    SocialPersona = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.SocialPersona
+      viewAllRecords = true
+    }
+    Solution = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Solution
+      viewAllRecords = true
+    }
+    Speaker__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Speaker__c
+      viewAllRecords = true
+    }
+    Standard_Field_Help__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Standard_Field_Help__c
+      viewAllRecords = true
+    }
+    Standard_Field_Label__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Standard_Field_Label__c
+      viewAllRecords = true
+    }
+    StreamingChannel = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.StreamingChannel
+      viewAllRecords = true
+    }
+    Syndication_Event__e = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Syndication_Event__e
+      viewAllRecords = true
+    }
+    Syndication__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Syndication__c
+      viewAllRecords = true
+    }
+    TimeSheet = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.TimeSheet
+      viewAllRecords = true
+    }
+    Translation_Context__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Translation_Context__c
+      viewAllRecords = true
+    }
+    Translation_Key__c = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.Translation_Key__c
+      viewAllRecords = true
+    }
+    TravelMode = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.TravelMode
+      viewAllRecords = true
+    }
+    WarrantyTerm = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WarrantyTerm
+      viewAllRecords = true
+    }
+    WorkOrder = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkOrder
+      viewAllRecords = true
+    }
+    WorkPlan = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkPlan
+      viewAllRecords = true
+    }
+    WorkPlanSelectionRule = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkPlanSelectionRule
+      viewAllRecords = true
+    }
+    WorkPlanTemplate = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkPlanTemplate
+      viewAllRecords = true
+    }
+    WorkStepTemplate = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkStepTemplate
+      viewAllRecords = true
+    }
+    WorkType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkType
+      viewAllRecords = true
+    }
+    WorkTypeGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = salesforce.WorkTypeGroup
+      viewAllRecords = true
+    }
+  }
+}

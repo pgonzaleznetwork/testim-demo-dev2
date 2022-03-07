@@ -1,0 +1,17 @@
+salesforce.ApexTrigger OpportunityTrigger {
+  apiVersion = 41
+  status = "Inactive"
+  fullName = "OpportunityTrigger"
+  content = file("salesforce/Records/ApexTrigger/OpportunityTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.OpportunityTriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerDispatcher
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+}

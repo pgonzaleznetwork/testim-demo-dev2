@@ -1,0 +1,95 @@
+salesforce.Layout Dedupe_Scenario_Rule__c_Dedupe_Scenario_Rule_Layout@uuuubsss {
+  fullName = "Dedupe_Scenario_Rule__c-Dedupe Scenario Rule Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.Evaluated_Field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.Evaluated_Contact_Type__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.Dedupe_Scenario__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.Match_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.Evaluation_Order__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Dedupe_Scenario_Rule__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMobe"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Dedupe_Scenario_Rule__c,
+  ]
+}

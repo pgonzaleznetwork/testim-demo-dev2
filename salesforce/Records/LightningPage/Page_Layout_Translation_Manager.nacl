@@ -1,0 +1,91 @@
+salesforce.LightningPage Page_Layout_Translation_Manager {
+  fullName = "Page_Layout_Translation_Manager"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "decorate"
+                value = "true"
+              },
+              {
+                name = "richTextValue"
+                value = '''
+<b>Instructions</b><br />
+<br />
+When working with Page Layout translations, there are 4 main challenges:<br />
+<br />
+<b>1- What are the translatable items from a page layout?</b><br />
+<br />
+You might be working with a page layout that has 300 fields, and 20 sections. How do you download the metadata specific to this layout in a format that is easy to work with and that matches the format expected by the Translation Workbench?<br />
+<br />
+<b>2- If there are 4 layouts for the same object, how do you dedupe common translatable items?</b><br />
+<br />
+For example, a custom field can be used in 4 page layouts. If you manage to download the page layout information, how do you make sure you don&#39;t send this same field 4 times to your translation vendor?<br />
+<br />
+Multiply that by many custom fields and picklist values, and the problem quickly becomes more complex.<br />
+<br />
+&nbsp;
+'''
+              },
+            ]
+            componentName = "flexipage:richText"
+          }
+        },
+      ]
+      name = "region1"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "SubmitPageLayoutInfo"
+          }
+        },
+      ]
+      name = "region2"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "TranslationsMerger"
+          }
+        },
+      ]
+      name = "region3"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "CompareTranslationFiles"
+          }
+        },
+      ]
+      name = "region4"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Page Layout Translation Manager"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderThreeColumns"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.CompareTranslationFiles
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SubmitPageLayoutInfo
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.TranslationsMerger
+    },
+  ]
+}

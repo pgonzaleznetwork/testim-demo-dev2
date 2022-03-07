@@ -1,0 +1,78 @@
+type salesforce.Syndication__c {
+  salesforce.MasterDetail Show__c {
+    apiName = "Syndication__c.Show__c"
+    label = "Show"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Show__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Syndications"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Syndications"
+    trackTrending = false
+  }
+  salesforce.MasterDetail Subscriber_Station_Network__c {
+    apiName = "Syndication__c.Subscriber_Station_Network__c"
+    label = "Subscriber Station/Network"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = true
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipOrder = 1
+    relationshipName = "Syndications"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Syndications"
+    trackTrending = false
+  }
+  salesforce.Date End_Date__c {
+    apiName = "Syndication__c.End_Date__c"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.FormulaCheckbox IsActive__c {
+    apiName = "Syndication__c.IsActive__c"
+    label = "IsActive"
+    formula = '''
+End_Date__c >=  TODAY() &&
+Start_Date__c <= TODAY()
+'''
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Syndication__c.field.End_Date__c
+      },
+      {
+        reference = salesforce.Syndication__c.field.Start_Date__c
+      },
+    ]
+  }
+  salesforce.Date Start_Date__c {
+    apiName = "Syndication__c.Start_Date__c"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

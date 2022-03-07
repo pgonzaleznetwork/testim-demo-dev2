@@ -1,0 +1,11 @@
+salesforce.ApexClass ICaseTestDataBuilder {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ICaseTestDataBuilder"
+  content = file("salesforce/Records/ApexClass/ICaseTestDataBuilder.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Case
+    },
+  ]
+}

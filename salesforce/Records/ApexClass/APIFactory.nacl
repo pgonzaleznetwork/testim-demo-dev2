@@ -1,0 +1,17 @@
+salesforce.ApexClass APIFactory {
+  apiVersion = 41
+  status = "Active"
+  fullName = "APIFactory"
+  content = file("salesforce/Records/ApexClass/APIFactory.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.APIEndpoint
+    },
+    {
+      reference = salesforce.ApexClass.instance.MarketoAPI
+    },
+    {
+      reference = salesforce.ApexClass.instance.SalesforceAPI
+    },
+  ]
+}

@@ -1,0 +1,15 @@
+salesforce.Queue Booyah {
+  fullName = "Booyah"
+  doesSendEmailToMembers = false
+  name = "Booyah"
+  queueMembers = {
+    users = {
+      user = [
+        "pgonzaleznetwork@resourceful-moose-448750.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

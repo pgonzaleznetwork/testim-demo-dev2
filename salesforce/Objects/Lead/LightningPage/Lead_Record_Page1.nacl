@@ -1,0 +1,160 @@
+salesforce.LightningPage Lead_Record_Page1 {
+  fullName = "Lead_Record_Page1"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+      ]
+      name = "Facet-ae775bbc-1d6c-4b75-8438-37c9d5040855"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "activityTabContent"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "active"
+                value = "true"
+              },
+              {
+                name = "body"
+                value = "Facet-ae775bbc-1d6c-4b75-8438-37c9d5040855"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.detail"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "active"
+                value = "false"
+              },
+              {
+                name = "body"
+                value = "activityTabContent"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.activity"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "tabs"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "tabs"
+                value = "tabs"
+              },
+            ]
+            componentName = "flexipage:tabset"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "hideUpdateButton"
+                value = "false"
+              },
+            ]
+            componentName = "runtime_sales_lead:pathAssistant"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "subheader"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "forceChatter:recordFeedContainer"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Lead Record Page"
+  parentFlexiPage = "runtime_sales_lead__Lead_rec_L"
+  sobjectType = "Lead"
+  template = {
+    name = "flexipage:recordHomeWithSubheaderTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Lead,
+  ]
+}

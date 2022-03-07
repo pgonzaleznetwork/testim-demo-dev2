@@ -1,0 +1,39 @@
+salesforce.CustomApplication Translation_Automation {
+  fullName = "Translation_Automation"
+  brand = {
+    headerColor = "#31FD3F"
+    shouldOverrideOrgTheme = false
+  }
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Translation Automation"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    salesforce.CustomTab.instance.Translation_Manager,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+  utilityBar = "Translation_Automation_UtilityBar"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Translation_Automation_UtilityBar
+    },
+  ]
+}

@@ -1,0 +1,28 @@
+salesforce.AuraDefinitionBundle camping {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "camping"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/camping/camping.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/camping/camping.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.addItemEvent
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.camping
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingHeader
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingList
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingListForm
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingListItem
+    },
+  ]
+}

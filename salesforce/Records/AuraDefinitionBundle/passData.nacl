@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle passData {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "passData"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/passData/passData.evt")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.passData
+    },
+  ]
+}

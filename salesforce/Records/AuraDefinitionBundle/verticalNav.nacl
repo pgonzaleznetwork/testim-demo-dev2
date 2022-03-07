@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle verticalNav {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "verticalNav"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/verticalNav/verticalNav.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/verticalNav/verticalNavController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.verticalNav
+    },
+  ]
+}

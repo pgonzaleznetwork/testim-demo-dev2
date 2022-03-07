@@ -1,0 +1,8 @@
+salesforce.CustomTab Dedupe_Scenario__c {
+  fullName = "Dedupe_Scenario__c"
+  customObject = true
+  motif = "Custom53: Bell"
+  _parent = [
+    salesforce.Dedupe_Scenario__c,
+  ]
+}

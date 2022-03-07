@@ -1,0 +1,32 @@
+salesforce.ApexClass TestRejectDoubleBooking {
+  apiVersion = 41
+  status = "Active"
+  fullName = "TestRejectDoubleBooking"
+  content = file("salesforce/Records/ApexClass/TestRejectDoubleBooking.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Session_Speaker__c
+    },
+    {
+      reference = salesforce.Session_Speaker__c.field.Session__c
+    },
+    {
+      reference = salesforce.Session_Speaker__c.field.Speaker__c
+    },
+    {
+      reference = salesforce.Session__c
+    },
+    {
+      reference = salesforce.Session__c.field.Session_Date__c
+    },
+    {
+      reference = salesforce.Speaker__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.First_Name__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.Last_Name__c
+    },
+  ]
+}

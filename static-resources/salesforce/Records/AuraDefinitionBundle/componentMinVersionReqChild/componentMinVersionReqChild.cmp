@@ -1,0 +1,3 @@
+<aura:component >
+	<p>Child component on version 41</p>
+</aura:component>

@@ -1,0 +1,11 @@
+salesforce.ApexClass OpportunityCreator {
+  apiVersion = 43
+  status = "Active"
+  fullName = "OpportunityCreator"
+  content = file("salesforce/Records/ApexClass/OpportunityCreator.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

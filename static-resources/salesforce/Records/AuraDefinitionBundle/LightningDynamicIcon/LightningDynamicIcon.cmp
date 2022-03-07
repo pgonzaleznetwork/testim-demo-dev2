@@ -1,0 +1,13 @@
+<aura:component >
+	<lightning:dynamicIcon type="ellie" alternativeText="Ellie intelligence"/>
+    <br></br><br></br>
+    <lightning:dynamicIcon type="eq" option="play" alternativeText="On a call"/>
+    <br></br><br></br>
+    <lightning:dynamicIcon type="score" option="negative" alternativeText="Negative score"/>
+    <br></br><br></br>
+     <lightning:dynamicIcon type="strength" option="2" alternativeText="Strength: 2"/>
+    <br></br><br></br>
+    <lightning:dynamicIcon type="trend" option="down" alternativeText="Trending down"/>
+    <br></br><br></br>
+     <lightning:dynamicIcon type="waffle" alternativeText="Application launcher"/>
+</aura:component>

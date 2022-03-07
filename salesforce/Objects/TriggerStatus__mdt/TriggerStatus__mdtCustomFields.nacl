@@ -1,0 +1,46 @@
+type salesforce.TriggerStatus__mdt {
+  salesforce.Checkbox Disabled__c {
+    apiName = "TriggerStatus__mdt.Disabled__c"
+    label = "Disabled"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Text Profile__c {
+    apiName = "TriggerStatus__mdt.Profile__c"
+    label = "Profile"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Account_Entity__c {
+    apiName = "TriggerStatus__mdt.Account_Entity__c"
+    label = "Account Entity"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Account_field_being_used__c {
+    apiName = "TriggerStatus__mdt.Account_field_being_used__c"
+    label = "Account field being used"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+}

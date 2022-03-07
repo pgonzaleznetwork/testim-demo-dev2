@@ -1,0 +1,124 @@
+type salesforce.Email_Categorisation_Filter__mdt {
+  salesforce.Picklist Email_Attribute__c {
+    apiName = "Email_Categorisation_Filter__mdt.Email_Attribute__c"
+    label = "Email Attribute"
+    valueSet = [
+      {
+        fullName = "To Address"
+        default = true
+        label = "To Address"
+      },
+      {
+        fullName = "CC Address"
+        default = false
+        label = "CC Address"
+      },
+      {
+        fullName = "BCC Address"
+        default = false
+        label = "BCC Address"
+      },
+      {
+        fullName = "From Address"
+        default = false
+        label = "From Address"
+      },
+      {
+        fullName = "Subject"
+        default = false
+        label = "Subject"
+      },
+      {
+        fullName = "Body"
+        default = false
+        label = "Body"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Operator__c {
+    apiName = "Email_Categorisation_Filter__mdt.Operator__c"
+    label = "Operator"
+    valueSet = [
+      {
+        fullName = "Equals"
+        default = true
+        label = "Equals"
+      },
+      {
+        fullName = "Does not equal"
+        default = false
+        label = "Does not equal"
+      },
+      {
+        fullName = "Contains"
+        default = false
+        label = "Contains"
+      },
+      {
+        fullName = "Does not contain"
+        default = false
+        label = "Does not contain"
+      },
+      {
+        fullName = "Starts with"
+        default = false
+        label = "Starts with"
+      },
+      {
+        fullName = "Does not start with"
+        default = false
+        label = "Does not start with"
+      },
+      {
+        fullName = "Ends with"
+        default = false
+        label = "Ends with"
+      },
+      {
+        fullName = "Does not end with"
+        default = false
+        label = "Does not end with"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Value__c {
+    apiName = "Email_Categorisation_Filter__mdt.Value__c"
+    label = "Value"
+    createable = false
+    updateable = false
+    length = 32768
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    visibleLines = 3
+    _hidden_value = true
+  }
+  salesforce.Lookup Email_Categorisation_Rule__c {
+    apiName = "Email_Categorisation_Filter__mdt.Email_Categorisation_Rule__c"
+    label = "Email Categorisation Rule"
+    referenceTo = [
+      salesforce.Email_Categorisation_Rule__mdt,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Email_Categorisation_Rule__r"
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,85 @@
+type salesforce.Energy_Audit__c {
+  salesforce.Picklist Type_of_Installation__c {
+    apiName = "Energy_Audit__c.Type_of_Installation__c"
+    label = "Type of Installation"
+    valueSet = [
+      {
+        fullName = "Rooftop"
+        default = true
+        label = "Rooftop"
+      },
+      {
+        fullName = "Carport"
+        default = false
+        label = "Carport"
+      },
+      {
+        fullName = "Ground mounted"
+        default = false
+        label = "Ground mounted"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Lookup Account__c {
+    apiName = "Energy_Audit__c.Account__c"
+    label = "Account"
+    _required = true
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Energy_Audits"
+    queryable = true
+    deleteConstraint = "Restrict"
+    externalId = false
+    relationshipLabel = "Energy Audits"
+    trackTrending = false
+  }
+  salesforce.Currency Average_Annual_Electric_Cost__c {
+    apiName = "Energy_Audit__c.Average_Annual_Electric_Cost__c"
+    label = "Average Annual Electric Cost"
+    _required = true
+    inlineHelpText = "Annual cost per square foot."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number Annual_Energy_Usage_kWh__c {
+    apiName = "Energy_Audit__c.Annual_Energy_Usage_kWh__c"
+    label = "Annual Energy Usage (kWh)"
+    _required = true
+    precision = 18
+    scale = 0
+    inlineHelpText = "Usage per square foot."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.LongTextArea Audit_Notes__c {
+    apiName = "Energy_Audit__c.Audit_Notes__c"
+    label = "Audit Notes"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 5
+  }
+}

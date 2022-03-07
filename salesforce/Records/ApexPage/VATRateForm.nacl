@@ -1,0 +1,34 @@
+salesforce.ApexPage VATRateForm {
+  apiVersion = 42
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "VATRateForm"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "VATRateForm"
+  content = file("salesforce/Records/ApexPage/VATRateForm.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.VATController
+    },
+    {
+      reference = salesforce.VAT_Rate__mdt
+    },
+    {
+      reference = salesforce.VAT_Rate__mdt.field.Default__c
+    },
+    {
+      reference = salesforce.VAT_Rate__mdt.field.Rate__c
+    },
+  ]
+}

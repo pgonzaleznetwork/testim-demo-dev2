@@ -1,0 +1,56 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.Information	Information
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.System Information	System Information
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.null	null
+Layout Section	LayoutSection.Case.Case Layout.Case Information	Case Information
+Layout Section	LayoutSection.Case.Case Layout.Web Information	Web Information
+Layout Section	LayoutSection.Case.Case Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Case.Case Layout.System Information	System Information
+Layout Section	LayoutSection.Case.Case Layout.Description Information	Description Information
+Layout Section	LayoutSection.Case.Case Layout.Custom Links	Custom Links
+Custom Field Label	CustomField.Session_Speaker__c.Session.FieldLabel	Session
+Custom Field Label	CustomField.Session_Speaker__c.Speaker.FieldLabel	Speaker
+Custom Field Label	CustomField.Case.Escalated_to_Management.FieldLabel	Escalated to Management
+Custom Field Label	CustomField.Case.Escalation_Owner.FieldLabel	Escalation Owner
+Custom Field Label	CustomField.Case.Days_Since_Last_Update.FieldLabel	Days Since Last Update
+Custom Field Label	CustomField.Case.Product.FieldLabel	Product
+Custom Field Label	CustomField.Case.PotentialLiability.FieldLabel	Potential Liability
+Custom Field Label	CustomField.Case.EngineeringReqNumber.FieldLabel	Engineering Req Number
+Custom Field Label	CustomField.Case.SLAViolation.FieldLabel	SLA Violation
+Standard Field Help Text	StandardFieldHelp.Case.Status.HelpText	The status of this case in the support lifecycle.
+Custom Field Help Text	CustomField.Case.PotentialLiability.HelpText	Is this product liable?
+Picklist Value	PicklistValue.Standard.Type.Mechanical	Mechanical
+Picklist Value	PicklistValue.Standard.Type.Electrical	Electrical
+Picklist Value	PicklistValue.Standard.Type.Electronic	Electronic
+Picklist Value	PicklistValue.Standard.Type.Structural	Structural
+Picklist Value	PicklistValue.Standard.Type.Other	Other
+Picklist Value	PicklistValue.Standard.Reason.Installation	Installation
+Picklist Value	PicklistValue.Standard.Reason.Equipment Complexity	Equipment Complexity
+Picklist Value	PicklistValue.Standard.Reason.Performance	Performance
+Picklist Value	PicklistValue.Standard.Reason.Breakdown	Breakdown
+Picklist Value	PicklistValue.Standard.Reason.Equipment Design	Equipment Design
+Picklist Value	PicklistValue.Standard.Reason.Feedback	Feedback
+Picklist Value	PicklistValue.Standard.Reason.Other	Other
+Picklist Value	PicklistValue.Standard.Status.New	New
+Picklist Value	PicklistValue.Standard.Status.Working	Working
+Picklist Value	PicklistValue.Standard.Status.Escalated	Escalated
+Picklist Value	PicklistValue.Standard.Status.Closed	Closed
+Picklist Value	PicklistValue.Standard.Priority.High	High
+Picklist Value	PicklistValue.Standard.Priority.Medium	Medium
+Picklist Value	PicklistValue.Standard.Priority.Low	Low
+Picklist Value	PicklistValue.Standard.Origin.Phone	Phone
+Picklist Value	PicklistValue.Standard.Origin.Email	Email
+Picklist Value	PicklistValue.Standard.Origin.Web	Web
+Picklist Value	PicklistValue.Case.Product.GC1040	GC1040
+Picklist Value	PicklistValue.Case.Product.GC1060	GC1060
+Picklist Value	PicklistValue.Case.Product.GC3020	GC3020
+Picklist Value	PicklistValue.Case.Product.GC3040	GC3040
+Picklist Value	PicklistValue.Case.Product.GC3060	GC3060
+Picklist Value	PicklistValue.Case.Product.GC5020	GC5020
+Picklist Value	PicklistValue.Case.Product.GC5040	GC5040
+Picklist Value	PicklistValue.Case.Product.GC5060	GC5060
+Picklist Value	PicklistValue.Case.Product.GC1020	GC1020
+Picklist Value	PicklistValue.Case.PotentialLiability.No	No
+Picklist Value	PicklistValue.Case.PotentialLiability.Yes	Yes
+Picklist Value	PicklistValue.Case.SLAViolation.No	No
+Picklist Value	PicklistValue.Case.SLAViolation.Yes	Yes

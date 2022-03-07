@@ -1,0 +1,8 @@
+salesforce.CustomTab Delivery_Agency__c {
+  fullName = "Delivery_Agency__c"
+  customObject = true
+  motif = "Custom38: Camera"
+  _parent = [
+    salesforce.Delivery_Agency__c,
+  ]
+}

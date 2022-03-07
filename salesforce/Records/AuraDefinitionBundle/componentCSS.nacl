@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle componentCSS {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "componentCSS"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/componentCSS/componentCSS.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/componentCSS/componentCSS.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.componentCSS
+    },
+  ]
+}

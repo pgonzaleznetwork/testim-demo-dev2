@@ -1,0 +1,11 @@
+salesforce.ApexClass ClassA {
+  apiVersion = 49
+  status = "Active"
+  fullName = "ClassA"
+  content = file("salesforce/Records/ApexClass/ClassA.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ClassB
+    },
+  ]
+}

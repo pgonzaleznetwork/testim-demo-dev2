@@ -1,0 +1,13 @@
+salesforce.WorkflowFieldUpdate Account_Change_type_to_prospect@vuuu {
+  fullName = "Account.Change_type_to_prospect"
+  field = salesforce.Account.field.Type
+  literalValue = "Prospect"
+  name = "Change type to prospect"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Account,
+  ]
+}

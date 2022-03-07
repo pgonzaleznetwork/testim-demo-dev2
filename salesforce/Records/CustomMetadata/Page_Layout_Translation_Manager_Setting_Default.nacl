@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Page_Layout_Translation_Manager_Setting_Default@uuuuv {
+  fullName = "Page_Layout_Translation_Manager_Setting.Default"
+  label = "Default"
+  protected = false
+  values = [
+    {
+      field = "Page_Layout_Name_in_Tests__c"
+      value = "Account-Account Layout"
+      type = "xsd:string"
+    },
+  ]
+}

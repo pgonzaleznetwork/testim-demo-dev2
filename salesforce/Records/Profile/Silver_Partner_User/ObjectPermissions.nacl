@@ -1,0 +1,265 @@
+salesforce.Profile Silver_Partner_User@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Account
+      viewAllRecords = false
+    }
+    Address = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Address"
+      viewAllRecords = false
+    }
+    Asset = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Asset
+      viewAllRecords = false
+    }
+    Campaign = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Campaign
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Contact
+      viewAllRecords = false
+    }
+    ContractLineItem = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ContractLineItem
+      viewAllRecords = false
+    }
+    Document = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Document"
+      viewAllRecords = false
+    }
+    Entitlement = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Entitlement
+      viewAllRecords = false
+    }
+    EntitlementContact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.EntitlementContact
+      viewAllRecords = false
+    }
+    Idea = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Idea
+      viewAllRecords = false
+    }
+    Individual = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Individual
+      viewAllRecords = false
+    }
+    Lead = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Lead
+      viewAllRecords = false
+    }
+    Location = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Location
+      viewAllRecords = false
+    }
+    MaintenancePlan = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.MaintenancePlan
+      viewAllRecords = false
+    }
+    OperatingHours = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.OperatingHours
+      viewAllRecords = false
+    }
+    Product2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Product2
+      viewAllRecords = false
+    }
+    ProductItem = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ProductItem
+      viewAllRecords = false
+    }
+    ProductRequest = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ProductRequest
+      viewAllRecords = false
+    }
+    ProductTransfer = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ProductTransfer
+      viewAllRecords = false
+    }
+    ServiceAppointment = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ServiceAppointment
+      viewAllRecords = false
+    }
+    ServiceContract = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ServiceContract
+      viewAllRecords = false
+    }
+    ServiceResource = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ServiceResource
+      viewAllRecords = false
+    }
+    ServiceTerritory = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.ServiceTerritory
+      viewAllRecords = false
+    }
+    Shipment = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Shipment
+      viewAllRecords = false
+    }
+    SocialPersona = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.SocialPersona
+      viewAllRecords = false
+    }
+    Solution = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.Solution
+      viewAllRecords = false
+    }
+    TimeSheet = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.TimeSheet
+      viewAllRecords = false
+    }
+    WorkOrder = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.WorkOrder
+      viewAllRecords = false
+    }
+    WorkType = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = salesforce.WorkType
+      viewAllRecords = false
+    }
+  }
+}

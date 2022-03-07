@@ -1,0 +1,14 @@
+salesforce.LightningPage Translation_Workbench_Assistant_UtilityBar {
+  fullName = "Translation_Workbench_Assistant_UtilityBar"
+  flexiPageRegions = [
+    {
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Translation Workbench Assistant UtilityBar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+}

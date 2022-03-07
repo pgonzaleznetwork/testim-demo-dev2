@@ -1,0 +1,65 @@
+salesforce.ApexClass DedupeConfigurationCache {
+  apiVersion = 43
+  status = "Active"
+  fullName = "DedupeConfigurationCache"
+  content = file("salesforce/Records/ApexClass/DedupeConfigurationCache.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Dedupe_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.Dedupe_Scenario__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_Next_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_Set_This_Field__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_To_This_Value__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.Matching_Rule_To_Evaluate__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.Starting_Point__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_Next_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_Set_This_Field__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_To_This_Value__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.Use_Context_from_Calling_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Scenario__c
+    },
+    {
+      reference = salesforce.Dedupe_Scenario__c.field.Country__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Lead_Evaluated_Field__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Matching_Field__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Matching_Object__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Type__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Type_of_Contact_to_Match__c
+    },
+  ]
+}

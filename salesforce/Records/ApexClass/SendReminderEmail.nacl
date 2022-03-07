@@ -1,0 +1,17 @@
+salesforce.ApexClass SendReminderEmail {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SendReminderEmail"
+  content = file("salesforce/Records/ApexClass/SendReminderEmail.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.EmailManager
+    },
+    {
+      reference = salesforce.Speaker__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.Email__c
+    },
+  ]
+}

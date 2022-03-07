@@ -1,0 +1,4 @@
+salesforce.MilestoneType Home_Visit@s {
+  fullName = "Home Visit"
+  recurrenceType = "none"
+}

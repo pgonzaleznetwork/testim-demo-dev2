@@ -1,0 +1,5 @@
+salesforce.Profile Analytics_Cloud_Security_User@s {
+  fullName = "Analytics Cloud Security User"
+  custom = false
+  userLicense = "Analytics Cloud Integration User"
+}

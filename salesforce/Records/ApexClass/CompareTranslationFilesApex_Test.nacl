@@ -1,0 +1,11 @@
+salesforce.ApexClass CompareTranslationFilesApex_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "CompareTranslationFilesApex_Test"
+  content = file("salesforce/Records/ApexClass/CompareTranslationFilesApex_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CompareTranslationFilesApex
+    },
+  ]
+}

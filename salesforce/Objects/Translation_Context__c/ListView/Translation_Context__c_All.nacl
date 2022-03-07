@@ -1,0 +1,8 @@
+salesforce.ListView Translation_Context__c_All {
+  fullName = "Translation_Context__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Translation_Context__c,
+  ]
+}

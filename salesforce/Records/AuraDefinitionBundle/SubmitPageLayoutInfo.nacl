@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle SubmitPageLayoutInfo {
+  apiVersion = 43
+  description = "A Lightning Component Bundle"
+  fullName = "SubmitPageLayoutInfo"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/SubmitPageLayoutInfo/SubmitPageLayoutInfoHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/SubmitPageLayoutInfo/SubmitPageLayoutInfo.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/SubmitPageLayoutInfo/SubmitPageLayoutInfo.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/SubmitPageLayoutInfo/SubmitPageLayoutInfoController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SubmitPageLayoutInfo_LEX_Controller
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SubmitPageLayoutInfo
+    },
+  ]
+}

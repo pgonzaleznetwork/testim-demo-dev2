@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle customSearch {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "customSearch"
+  type = "Component"
+  designContent = file("salesforce/Records/AuraDefinitionBundle/customSearch/customSearch.design")
+  markup = file("salesforce/Records/AuraDefinitionBundle/customSearch/customSearch.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/customSearch/customSearchController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/customSearch/customSearch.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CustomSearchController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.customSearch
+    },
+  ]
+}

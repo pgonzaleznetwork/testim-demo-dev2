@@ -1,0 +1,11 @@
+salesforce.ApexClass TestRestrictContactByName {
+  apiVersion = 41
+  status = "Active"
+  fullName = "TestRestrictContactByName"
+  content = file("salesforce/Records/ApexClass/TestRestrictContactByName.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

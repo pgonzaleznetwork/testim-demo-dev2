@@ -1,0 +1,12 @@
+salesforce.CustomTab Custom_App_Page {
+  fullName = "Custom_App_Page"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Custom_App_Page"
+  label = "Custom App Page"
+  motif = "Custom5: Leaf"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Custom_App_Page
+    },
+  ]
+}

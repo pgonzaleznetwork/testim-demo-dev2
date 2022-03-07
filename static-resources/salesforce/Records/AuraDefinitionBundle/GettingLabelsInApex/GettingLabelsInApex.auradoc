@@ -1,0 +1,7 @@
+<aura:documentation>
+	<aura:description>Use this component to dynamically get Labels from Apex."</aura:description>
+	<aura:example name="ExampleName" ref="c:GettingLabelsInApex" label="Label">
+		<p>This examples shows a simple setup of <code>c:GettingLabelsInApex</code></p>
+        
+	</aura:example>
+</aura:documentation>

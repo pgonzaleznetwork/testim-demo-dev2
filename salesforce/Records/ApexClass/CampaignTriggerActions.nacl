@@ -1,0 +1,14 @@
+salesforce.ApexClass CampaignTriggerActions {
+  apiVersion = 44
+  status = "Active"
+  fullName = "CampaignTriggerActions"
+  content = file("salesforce/Records/ApexClass/CampaignTriggerActions.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CampaignService
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

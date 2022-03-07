@@ -1,0 +1,13 @@
+type salesforce.ApptBundlePolicySvcTerr {
+  salesforce.MasterDetail BundlePolicyId {
+    apiName = "ApptBundlePolicySvcTerr.BundlePolicyId"
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceTerritoryId {
+    apiName = "ApptBundlePolicySvcTerr.ServiceTerritoryId"
+    _hidden_value = true
+  }
+}

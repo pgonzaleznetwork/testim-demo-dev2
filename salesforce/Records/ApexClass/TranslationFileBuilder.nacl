@@ -1,0 +1,29 @@
+salesforce.ApexClass TranslationFileBuilder {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslationFileBuilder"
+  content = file("salesforce/Records/ApexClass/TranslationFileBuilder.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SFMD
+    },
+    {
+      reference = salesforce.Translation_Context__c
+    },
+    {
+      reference = salesforce.Translation_Key__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Default_Label__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Key__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Translation_Context__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Type__c
+    },
+  ]
+}

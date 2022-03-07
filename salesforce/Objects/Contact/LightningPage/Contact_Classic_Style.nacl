@@ -1,0 +1,52 @@
+salesforce.LightningPage Contact_Classic_Style {
+  fullName = "Contact_Classic_Style"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "forceChatter:recordFeedContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "context"
+                value = "RECORD"
+              },
+            ]
+            componentName = "forceChatter:publisher"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Contact Classic Style"
+  sobjectType = "Contact"
+  template = {
+    name = "flexipage:recordHomeSingleColNoHeaderTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Contact,
+  ]
+}

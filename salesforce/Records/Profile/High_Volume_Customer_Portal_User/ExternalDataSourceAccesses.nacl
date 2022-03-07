@@ -1,0 +1,8 @@
+salesforce.Profile High_Volume_Customer_Portal_User@s {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

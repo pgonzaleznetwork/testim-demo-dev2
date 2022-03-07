@@ -1,0 +1,14 @@
+salesforce.QuickAction Opportunity_Wizard {
+  fullName = "Opportunity_Wizard"
+  height = 500
+  label = "Opportunity Wizard"
+  lightningComponent = "WizardContainer"
+  optionsCreateFeedItem = false
+  type = "LightningComponent"
+  width = -100
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardContainer
+    },
+  ]
+}

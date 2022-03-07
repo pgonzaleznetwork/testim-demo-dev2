@@ -1,0 +1,91 @@
+type salesforce.DMLSysException__c {
+  salesforce.MasterDetail Apex_Log__c {
+    apiName = "DMLSysException__c.Apex_Log__c"
+    label = "Apex Log"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Apex_Log__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "DML_Exceptions"
+    queryable = true
+    externalId = false
+    relationshipLabel = "DML Exceptions"
+    trackTrending = false
+  }
+  salesforce.LongTextArea DML_Field_Names__c {
+    apiName = "DMLSysException__c.DML_Field_Names__c"
+    label = "DML Field Names"
+    inlineHelpText = "DML Field Names"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    description = "DML Field Names"
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.Text DML_ID__c {
+    apiName = "DMLSysException__c.DML_ID__c"
+    label = "DML ID"
+    inlineHelpText = "Record ID"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    description = "Record ID causing the DML Exception"
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number DML_Index__c {
+    apiName = "DMLSysException__c.DML_Index__c"
+    label = "DML Index"
+    precision = 18
+    scale = 0
+    inlineHelpText = "DML Index"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "DML Index"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.LongTextArea DML_Message__c {
+    apiName = "DMLSysException__c.DML_Message__c"
+    label = "DML Message"
+    inlineHelpText = "DML Message reported by the exception"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    description = "DML Message reported by the exception"
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.Text DML_Type__c {
+    apiName = "DMLSysException__c.DML_Type__c"
+    label = "DML Type"
+    inlineHelpText = "DML Status Type"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Type of DML Status reported by the Exception"
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

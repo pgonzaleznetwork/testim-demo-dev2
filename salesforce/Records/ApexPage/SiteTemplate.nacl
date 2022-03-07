@@ -1,0 +1,32 @@
+salesforce.ApexPage SiteTemplate {
+  apiVersion = 42
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Lightning Platform template for site pages"
+  label = "SiteTemplate"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "SiteTemplate"
+  content = file("salesforce/Records/ApexPage/SiteTemplate.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexComponent.instance.SiteFooter
+    },
+    {
+      reference = salesforce.ApexComponent.instance.SiteHeader
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+}

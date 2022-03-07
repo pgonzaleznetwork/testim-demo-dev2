@@ -1,0 +1,36 @@
+salesforce.CustomApplication standard__Sales {
+  fullName = "standard__Sales"
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  tabs = [
+    "standard-Chatter",
+    "standard-Campaign",
+    "standard-Lead",
+    "standard-Account",
+    "standard-Contact",
+    "standard-Opportunity",
+    "standard-Forecasting3",
+    "standard-Contract",
+    "standard-Order",
+    "standard-Invoice",
+    "standard-Case",
+    "standard-Solution",
+    "standard-Product2",
+    "standard-report",
+    "standard-Dashboard",
+    salesforce.CustomTab.instance.Expense__c,
+    salesforce.CustomTab.instance.Camping_Item__c,
+    salesforce.CustomTab.instance.Session__c,
+    salesforce.CustomTab.instance.ModifyCSS,
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+}

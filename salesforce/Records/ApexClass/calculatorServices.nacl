@@ -1,0 +1,6 @@
+salesforce.ApexClass calculatorServices {
+  apiVersion = 41
+  status = "Active"
+  fullName = "calculatorServices"
+  content = file("salesforce/Records/ApexClass/calculatorServices.cls")
+}

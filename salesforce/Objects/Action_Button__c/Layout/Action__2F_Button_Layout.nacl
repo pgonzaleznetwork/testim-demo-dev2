@@ -1,0 +1,73 @@
+salesforce.Layout Action_Button__c_Action__2F_Button_Layout@uuubspss {
+  fullName = "Action_Button__c-Action %2F Button Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Action_Button__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Action_Button__c.field.Layout_Translation_Info__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Action_Button__c.field.Key__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Action_Button__c.field.Master_Label__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Action_Button__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Action_Button__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Action_Button__c,
+  ]
+}

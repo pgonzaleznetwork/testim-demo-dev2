@@ -1,0 +1,17 @@
+salesforce.ApexTrigger CampaignTrigger {
+  apiVersion = 44
+  status = "Active"
+  fullName = "CampaignTrigger"
+  content = file("salesforce/Records/ApexTrigger/CampaignTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CampaignTriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerContextRouter
+    },
+    {
+      reference = salesforce.Campaign
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle LightningTab {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningTab"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningTab/LightningTab.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTab
+    },
+  ]
+}

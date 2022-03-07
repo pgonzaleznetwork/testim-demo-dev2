@@ -1,0 +1,15 @@
+salesforce.WorkflowRule Opportunity_Update@v {
+  fullName = "Opportunity.Update"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Opportunity_Update_something@vu
+      type = "FieldUpdate"
+    },
+  ]
+  active = false
+  formula = "TRUE"
+  triggerType = "onAllChanges"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

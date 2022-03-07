@@ -1,0 +1,17 @@
+salesforce.Queue Neat_Ideas_Order_Enquiry {
+  fullName = "Neat_Ideas_Order_Enquiry"
+  doesSendEmailToMembers = false
+  name = "Neat Ideas Order Enquiry"
+  queueMembers = {
+    users = {
+      user = [
+        "dreamforceattendee@sso.df.com",
+        "integration@00d0o000000z9abuak.com",
+        "pgonzaleznetwork@resourceful-moose-448750.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

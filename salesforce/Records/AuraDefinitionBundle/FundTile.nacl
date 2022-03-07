@@ -1,0 +1,30 @@
+salesforce.AuraDefinitionBundle FundTile {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "FundTile"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/FundTile/FundTileHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/FundTile/FundTile.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/FundTile/FundTile.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/FundTile/FundTileController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundTile
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.Rating
+    },
+    {
+      reference = salesforce.Fund__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Abbreviation__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Asset_Class__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Rating__c
+    },
+  ]
+}

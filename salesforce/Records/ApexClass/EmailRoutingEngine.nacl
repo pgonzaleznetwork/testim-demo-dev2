@@ -1,0 +1,50 @@
+salesforce.ApexClass EmailRoutingEngine {
+  apiVersion = 43
+  status = "Active"
+  fullName = "EmailRoutingEngine"
+  content = file("salesforce/Records/ApexClass/EmailRoutingEngine.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.EmailRoutingFilter
+    },
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Case.field.Business_Unit__c
+    },
+    {
+      reference = salesforce.EmailMessage
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c.field.Business_Unit__c
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c.field.Case_Type__c
+    },
+    {
+      reference = salesforce.Email_Routing_Field_Mapping__c.field.Email_Routing_Rule__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Email_Attribute__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Email_Routing_Rule__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Operator__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Value__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule__c
+    },
+  ]
+}

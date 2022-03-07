@@ -1,0 +1,154 @@
+salesforce.Profile Gold_Partner_User@s {
+  applicationVisibilities = {
+    Classic_Console_By_Pablo = {
+      application = salesforce.CustomApplication.instance.Classic_Console_By_Pablo
+      default = false
+      visible = false
+    }
+    Conference = {
+      application = salesforce.CustomApplication.instance.Conference
+      default = false
+      visible = false
+    }
+    Dedupe_Manager = {
+      application = salesforce.CustomApplication.instance.Dedupe_Manager
+      default = false
+      visible = true
+    }
+    Dedupe_Manager_Lightning = {
+      application = salesforce.CustomApplication.instance.Dedupe_Manager_Lightning
+      default = false
+      visible = true
+    }
+    DreamInvest = {
+      application = salesforce.CustomApplication.instance.DreamInvest
+      default = false
+      visible = false
+    }
+    Dreamforce_App = {
+      application = salesforce.CustomApplication.instance.Dreamforce_App
+      default = false
+      visible = false
+    }
+    Energy_Consultations = {
+      application = salesforce.CustomApplication.instance.Energy_Consultations
+      default = false
+      visible = false
+    }
+    External_Orders = {
+      application = salesforce.CustomApplication.instance.External_Orders
+      default = false
+      visible = false
+    }
+    Omni_Channel_Console = {
+      application = salesforce.CustomApplication.instance.Omni_Channel_Console
+      default = false
+      visible = false
+    }
+    Translation_Automation = {
+      application = salesforce.CustomApplication.instance.Translation_Automation
+      default = false
+      visible = false
+    }
+    Translation_Workbench_Assistant = {
+      application = salesforce.CustomApplication.instance.Translation_Workbench_Assistant
+      default = false
+      visible = false
+    }
+    standard__AllTabSet = {
+      application = salesforce.CustomApplication.instance.standard__AllTabSet
+      default = false
+      visible = true
+    }
+    standard__AppLauncher = {
+      application = salesforce.CustomApplication.instance.standard__AppLauncher
+      default = false
+      visible = true
+    }
+    standard__Chatter = {
+      application = salesforce.CustomApplication.instance.standard__Chatter
+      default = false
+      visible = true
+    }
+    standard__Commerce = {
+      application = salesforce.CustomApplication.instance.standard__Commerce
+      default = false
+      visible = true
+    }
+    standard__Community = {
+      application = salesforce.CustomApplication.instance.standard__Community
+      default = false
+      visible = true
+    }
+    standard__Content = {
+      application = salesforce.CustomApplication.instance.standard__Content
+      default = false
+      visible = true
+    }
+    standard__Insights = {
+      application = salesforce.CustomApplication.instance.standard__Insights
+      default = false
+      visible = true
+    }
+    standard__LightningInstrumentation = {
+      application = salesforce.CustomApplication.instance.standard__LightningInstrumentation
+      default = false
+      visible = true
+    }
+    standard__LightningSales = {
+      application = salesforce.CustomApplication.instance.standard__LightningSales
+      default = false
+      visible = true
+    }
+    standard__LightningSalesConsole = {
+      application = salesforce.CustomApplication.instance.standard__LightningSalesConsole
+      default = false
+      visible = true
+    }
+    standard__LightningService = {
+      application = salesforce.CustomApplication.instance.standard__LightningService
+      default = false
+      visible = true
+    }
+    standard__Marketing = {
+      application = salesforce.CustomApplication.instance.standard__Marketing
+      default = false
+      visible = true
+    }
+    standard__Platform = {
+      application = salesforce.CustomApplication.instance.standard__Platform
+      default = false
+      visible = false
+    }
+    standard__Sales = {
+      application = salesforce.CustomApplication.instance.standard__Sales
+      default = true
+      visible = true
+    }
+    standard__SalesforceCMS = {
+      application = salesforce.CustomApplication.instance.standard__SalesforceCMS
+      default = false
+      visible = false
+    }
+    standard__Service = {
+      application = salesforce.CustomApplication.instance.standard__Service
+      default = false
+      visible = true
+    }
+    standard__ServiceConsole = {
+      application = salesforce.CustomApplication.instance.standard__ServiceConsole
+      default = false
+      visible = false
+    }
+    standard__Sites = {
+      application = salesforce.CustomApplication.instance.standard__Sites
+      default = false
+      visible = true
+    }
+    th_con_app__Trailhead_Playground = {
+      application = "th_con_app__Trailhead_Playground"
+      default = false
+      visible = false
+    }
+  }
+}

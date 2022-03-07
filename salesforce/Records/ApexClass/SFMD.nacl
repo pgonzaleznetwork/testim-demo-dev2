@@ -1,0 +1,6 @@
+salesforce.ApexClass SFMD {
+  apiVersion = 43
+  status = "Active"
+  fullName = "SFMD"
+  content = file("salesforce/Records/ApexClass/SFMD.cls")
+}

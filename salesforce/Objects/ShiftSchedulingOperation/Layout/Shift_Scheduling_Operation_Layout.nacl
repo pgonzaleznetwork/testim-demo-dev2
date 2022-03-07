@@ -1,0 +1,128 @@
+salesforce.Layout ShiftSchedulingOperation_Shift_Scheduling_Operation_Layout@bsss {
+  fullName = "ShiftSchedulingOperation-Shift Scheduling Operation Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "ShiftSchedulingOperationInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "Name"
+            },
+            {
+              behavior = "Required"
+              field = "TotalShiftsToSchedule"
+            },
+            {
+              behavior = "Readonly"
+              field = "TotalShiftsProcessed"
+            },
+            {
+              behavior = "Required"
+              field = "TotalShiftsScheduled"
+            },
+            {
+              behavior = "Required"
+              field = "Status"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ShiftSchedulingOperation.field.CurrentShiftsStatus
+            },
+            {
+              behavior = "Required"
+              field = "ShiftsStartDateTime"
+            },
+            {
+              behavior = "Required"
+              field = "ServiceTerritories"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "JobStartTime"
+            },
+            {
+              behavior = "Required"
+              field = "JobEndTime"
+            },
+            {
+              behavior = "Readonly"
+              field = "TotalShiftsExcluded"
+            },
+            {
+              behavior = "Required"
+              field = "TotalShiftsLeftUnassigned"
+            },
+            {
+              behavior = "Required"
+              field = "SelectedAction"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ShiftSchedulingOperation.field.UpdatedShiftsStatus
+            },
+            {
+              behavior = "Required"
+              field = "ShiftsEndDateTime"
+            },
+            {
+              behavior = "Required"
+              field = "JobProfiles"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "CreatedById"
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ShiftSchedulingOperation.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ShiftSchedulingOperation,
+  ]
+}

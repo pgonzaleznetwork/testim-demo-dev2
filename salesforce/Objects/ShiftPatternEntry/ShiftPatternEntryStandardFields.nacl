@@ -1,0 +1,15 @@
+type salesforce.ShiftPatternEntry {
+  string DayOrder {
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ShiftPatternId {
+    apiName = "ShiftPatternEntry.ShiftPatternId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup ShiftTemplateId {
+    apiName = "ShiftPatternEntry.ShiftTemplateId"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,11 @@
+salesforce.ApexComponent Auto_Complete {
+  apiVersion = 41
+  label = "Auto_Complete"
+  fullName = "Auto_Complete"
+  content = file("salesforce/Records/ApexComponent/Auto_Complete.component")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.autoCompleteController
+    },
+  ]
+}

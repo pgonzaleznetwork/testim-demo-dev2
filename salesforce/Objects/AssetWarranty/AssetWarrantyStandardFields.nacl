@@ -1,0 +1,249 @@
+type salesforce.AssetWarranty {
+  serviceid Id {
+    apiName = "AssetWarranty.Id"
+    label = "Asset Warranty ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AssetWarranty.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber AssetWarrantyNumber {
+    apiName = "AssetWarranty.AssetWarrantyNumber"
+    label = "Asset Warranty Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AssetWarranty.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AssetWarranty.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AssetWarranty.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AssetWarranty.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AssetWarranty.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AssetId {
+    apiName = "AssetWarranty.AssetId"
+    label = "Asset ID"
+    _required = true
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Asset"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "AssetWarranty.Pricebook2Id"
+    label = "Price Book ID"
+    referenceTo = [
+      salesforce.Pricebook2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Pricebook2"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup WarrantyTermId {
+    apiName = "AssetWarranty.WarrantyTermId"
+    label = "Warranty Term ID"
+    referenceTo = [
+      salesforce.WarrantyTerm,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WarrantyTerm"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Date StartDate {
+    apiName = "AssetWarranty.StartDate"
+    label = "Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "AssetWarranty.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent PartsCovered {
+    apiName = "AssetWarranty.PartsCovered"
+    label = "Parts Covered"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Date PartsCoveredEndDate {
+    apiName = "AssetWarranty.PartsCoveredEndDate"
+    label = "Parts Covered End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent LaborCovered {
+    apiName = "AssetWarranty.LaborCovered"
+    label = "Labor Covered"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Date LaborCoveredEndDate {
+    apiName = "AssetWarranty.LaborCoveredEndDate"
+    label = "Labor Covered End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent ExpensesCovered {
+    apiName = "AssetWarranty.ExpensesCovered"
+    label = "Expenses Covered"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Date ExpensesCoveredEndDate {
+    apiName = "AssetWarranty.ExpensesCoveredEndDate"
+    label = "Expenses Covered End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Exclusions {
+    apiName = "AssetWarranty.Exclusions"
+    label = "Exclusions"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Picklist ExchangeType {
+    apiName = "AssetWarranty.ExchangeType"
+    label = "Exchange Type"
+    valueSet = [
+      {
+        fullName = "Advance Exchange"
+        default = false
+        label = "Advance Exchange"
+        isActive = true
+      },
+      {
+        fullName = "Loaner"
+        default = false
+        label = "Loaner"
+        isActive = true
+      },
+      {
+        fullName = "Return Exchange"
+        default = false
+        label = "Return Exchange"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsTransferable {
+    apiName = "AssetWarranty.IsTransferable"
+    label = "Transferable"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist WarrantyType {
+    apiName = "AssetWarranty.WarrantyType"
+    label = "Warranty Type"
+    valueSet = [
+      {
+        fullName = "Repair"
+        default = false
+        label = "Repair"
+        isActive = true
+      },
+      {
+        fullName = "Standard"
+        default = false
+        label = "Standard"
+        isActive = true
+      },
+      {
+        fullName = "Supplier"
+        default = false
+        label = "Supplier"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+}

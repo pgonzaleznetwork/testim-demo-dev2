@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle expensesList {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "expensesList"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/expensesList/expensesList.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expenseItem
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expensesList
+    },
+    {
+      reference = salesforce.Expense__c
+    },
+  ]
+}

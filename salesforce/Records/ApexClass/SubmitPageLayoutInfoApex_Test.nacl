@@ -1,0 +1,11 @@
+salesforce.ApexClass SubmitPageLayoutInfoApex_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "SubmitPageLayoutInfoApex_Test"
+  content = file("salesforce/Records/ApexClass/SubmitPageLayoutInfoApex_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SubmitPageLayoutInfo_LEX_Controller
+    },
+  ]
+}

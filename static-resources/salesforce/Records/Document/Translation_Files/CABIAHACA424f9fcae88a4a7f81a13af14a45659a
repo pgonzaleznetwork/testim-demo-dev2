@@ -1,0 +1,139 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Account.Account Layout.Account Information	Account Information
+Layout Section	LayoutSection.Account.Account Layout.Address Information	Address Information
+Layout Section	LayoutSection.Account.Account Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Account.Account Layout.System Information	System Information
+Layout Section	LayoutSection.Account.Account Layout.Description Information	Description Information
+Layout Section	LayoutSection.Account.Account Layout.Custom Links	Custom Links
+Layout Section	LayoutSection.Case.Case Layout.Case Information	Case Information
+Layout Section	LayoutSection.Case.Case Layout.Web Information	Web Information
+Layout Section	LayoutSection.Case.Case Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Case.Case Layout.System Information	System Information
+Layout Section	LayoutSection.Case.Case Layout.Description Information	Description Information
+Layout Section	LayoutSection.Case.Case Layout.Custom Links	Custom Links
+Custom Field Label	CustomField.Account.Match_Billing_Address.FieldLabel	Match Billing Address
+Custom Field Label	CustomField.Account.Number_of_Contacts.FieldLabel	Number of Contacts
+Custom Field Label	CustomField.Account.RequiredField.FieldLabel	RequiredField
+Custom Field Label	CustomField.Account.Location.FieldLabel	Location
+Custom Field Label	CustomField.Account.Potential_Value.FieldLabel	Potential Value
+Custom Field Label	CustomField.Account.Social_Sec_Number.FieldLabel	Social Sec Number
+Custom Field Label	CustomField.Account.CustomerPriority.FieldLabel	Customer Priority
+Custom Field Label	CustomField.Account.SLAExpirationDate.FieldLabel	SLA Expiration Date
+Custom Field Label	CustomField.Account.NumberofLocations.FieldLabel	Number of Locations
+Custom Field Label	CustomField.Account.Active.FieldLabel	Active
+Custom Field Label	CustomField.Account.SLA.FieldLabel	SLA
+Custom Field Label	CustomField.Account.SLASerialNumber.FieldLabel	SLA Serial Number
+Custom Field Label	CustomField.Account.UpsellOpportunity.FieldLabel	Upsell Opportunity
+Custom Field Label	CustomField.Case.Escalated_to_Management.FieldLabel	Escalated to Management
+Custom Field Label	CustomField.Case.Escalation_Owner.FieldLabel	Escalation Owner
+Custom Field Label	CustomField.Case.Days_Since_Last_Update.FieldLabel	Days Since Last Update
+Custom Field Label	CustomField.Case.Product.FieldLabel	Product
+Custom Field Label	CustomField.Case.PotentialLiability.FieldLabel	Potential Liability
+Custom Field Label	CustomField.Case.EngineeringReqNumber.FieldLabel	Engineering Req Number
+Custom Field Label	CustomField.Case.SLAViolation.FieldLabel	SLA Violation
+Standard Field Help Text	StandardFieldHelp.Account.AccountNumber.HelpText	This is a standard salesforce field that shows some number. No idea what for...
+Standard Field Help Text	StandardFieldHelp.Account.AccountSource.HelpText	account source help text
+Standard Field Help Text	StandardFieldHelp.Case.Status.HelpText	The status of this case in the support lifecycle.
+Custom Field Help Text	CustomField.Account.Number_of_Contacts.HelpText	How many coontacts are available
+Custom Field Help Text	CustomField.Case.PotentialLiability.HelpText	Is this product liable?
+Picklist Value	PicklistValue.Standard.LeadSource.Web	Web
+Picklist Value	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+Picklist Value	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+Picklist Value	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+Picklist Value	PicklistValue.Standard.LeadSource.Other	Other
+Picklist Value	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+Picklist Value	PicklistValue.Standard.accountType.Prospect	Prospect
+Picklist Value	PicklistValue.Standard.accountType.Customer - Direct	Customer - Direct
+Picklist Value	PicklistValue.Standard.accountType.Customer - Channel	Customer - Channel
+Picklist Value	PicklistValue.Standard.accountType.Channel Partner / Reseller	Channel Partner / Reseller
+Picklist Value	PicklistValue.Standard.accountType.Installation Partner	Installation Partner
+Picklist Value	PicklistValue.Standard.accountType.Technology Partner	Technology Partner
+Picklist Value	PicklistValue.Standard.accountType.Other	Other
+Picklist Value	PicklistValue.Standard.accountType.Customer	Customer
+Picklist Value	PicklistValue.Standard.accountType.Pending	Pending
+Picklist Value	PicklistValue.Standard.industry.Agriculture	Agriculture
+Picklist Value	PicklistValue.Standard.industry.Apparel	Apparel
+Picklist Value	PicklistValue.Standard.industry.Banking	Banking
+Picklist Value	PicklistValue.Standard.industry.Biotechnology	Biotechnology
+Picklist Value	PicklistValue.Standard.industry.Chemicals	Chemicals
+Picklist Value	PicklistValue.Standard.industry.Communications	Communications
+Picklist Value	PicklistValue.Standard.industry.Construction	Construction
+Picklist Value	PicklistValue.Standard.industry.Consulting	Consulting
+Picklist Value	PicklistValue.Standard.industry.Education	Education
+Picklist Value	PicklistValue.Standard.industry.Electronics	Electronics
+Picklist Value	PicklistValue.Standard.industry.Energy	Energy
+Picklist Value	PicklistValue.Standard.industry.Engineering	Engineering
+Picklist Value	PicklistValue.Standard.industry.Entertainment	Entertainment
+Picklist Value	PicklistValue.Standard.industry.Environmental	Environmental
+Picklist Value	PicklistValue.Standard.industry.Finance	Finance
+Picklist Value	PicklistValue.Standard.industry.Food & Beverage	Food & Beverage
+Picklist Value	PicklistValue.Standard.industry.Government	Government
+Picklist Value	PicklistValue.Standard.industry.Healthcare	Healthcare
+Picklist Value	PicklistValue.Standard.industry.Hospitality	Hospitality
+Picklist Value	PicklistValue.Standard.industry.Insurance	Insurance
+Picklist Value	PicklistValue.Standard.industry.Machinery	Machinery
+Picklist Value	PicklistValue.Standard.industry.Manufacturing	Manufacturing
+Picklist Value	PicklistValue.Standard.industry.Media	Media
+Picklist Value	PicklistValue.Standard.industry.Not For Profit	Not For Profit
+Picklist Value	PicklistValue.Standard.industry.Recreation	Recreation
+Picklist Value	PicklistValue.Standard.industry.Retail	Retail
+Picklist Value	PicklistValue.Standard.industry.Shipping	Shipping
+Picklist Value	PicklistValue.Standard.industry.Technology	Technology
+Picklist Value	PicklistValue.Standard.industry.Telecommunications	Telecommunications
+Picklist Value	PicklistValue.Standard.industry.Transportation	Transportation
+Picklist Value	PicklistValue.Standard.industry.Utilities	Utilities
+Picklist Value	PicklistValue.Standard.industry.Other	Other
+Picklist Value	PicklistValue.Standard.accountRating.Hot	Hot
+Picklist Value	PicklistValue.Standard.accountRating.Warm	Warm
+Picklist Value	PicklistValue.Standard.accountRating.Cold	Cold
+Picklist Value	PicklistValue.Standard.accountOwnership.Public	Public
+Picklist Value	PicklistValue.Standard.accountOwnership.Private	Private
+Picklist Value	PicklistValue.Standard.accountOwnership.Subsidiary	Subsidiary
+Picklist Value	PicklistValue.Standard.accountOwnership.Other	Other
+Picklist Value	PicklistValue.Account.CustomerPriority.High	High
+Picklist Value	PicklistValue.Account.CustomerPriority.Low	Low
+Picklist Value	PicklistValue.Account.CustomerPriority.Medium	Medium
+Picklist Value	PicklistValue.Account.Active.No	No
+Picklist Value	PicklistValue.Account.Active.Yes	Yes
+Picklist Value	PicklistValue.Account.SLA.Gold	Gold
+Picklist Value	PicklistValue.Account.SLA.Silver	Silver
+Picklist Value	PicklistValue.Account.SLA.Platinum	Platinum
+Picklist Value	PicklistValue.Account.SLA.Bronze	Bronze
+Picklist Value	PicklistValue.Account.UpsellOpportunity.Maybe	Maybe
+Picklist Value	PicklistValue.Account.UpsellOpportunity.No	No
+Picklist Value	PicklistValue.Account.UpsellOpportunity.Yes	Yes
+Picklist Value	PicklistValue.Standard.caseType.Mechanical	Mechanical
+Picklist Value	PicklistValue.Standard.caseType.Electrical	Electrical
+Picklist Value	PicklistValue.Standard.caseType.Electronic	Electronic
+Picklist Value	PicklistValue.Standard.caseType.Structural	Structural
+Picklist Value	PicklistValue.Standard.caseType.Other	Other
+Picklist Value	PicklistValue.Standard.caseReason.Installation	Installation
+Picklist Value	PicklistValue.Standard.caseReason.Equipment Complexity	Equipment Complexity
+Picklist Value	PicklistValue.Standard.caseReason.Performance	Performance
+Picklist Value	PicklistValue.Standard.caseReason.Breakdown	Breakdown
+Picklist Value	PicklistValue.Standard.caseReason.Equipment Design	Equipment Design
+Picklist Value	PicklistValue.Standard.caseReason.Feedback	Feedback
+Picklist Value	PicklistValue.Standard.caseReason.Other	Other
+Picklist Value	PicklistValue.Standard.caseStatus.New	New
+Picklist Value	PicklistValue.Standard.caseStatus.Working	Working
+Picklist Value	PicklistValue.Standard.caseStatus.Escalated	Escalated
+Picklist Value	PicklistValue.Standard.caseStatus.Closed	Closed
+Picklist Value	PicklistValue.Standard.casePriority.High	High
+Picklist Value	PicklistValue.Standard.casePriority.Medium	Medium
+Picklist Value	PicklistValue.Standard.casePriority.Low	Low
+Picklist Value	PicklistValue.Standard.caseOrigin.Phone	Phone
+Picklist Value	PicklistValue.Standard.caseOrigin.Email	Email
+Picklist Value	PicklistValue.Standard.caseOrigin.Web	Web
+Picklist Value	PicklistValue.Case.Product.GC1040	GC1040
+Picklist Value	PicklistValue.Case.Product.GC1060	GC1060
+Picklist Value	PicklistValue.Case.Product.GC3020	GC3020
+Picklist Value	PicklistValue.Case.Product.GC3040	GC3040
+Picklist Value	PicklistValue.Case.Product.GC3060	GC3060
+Picklist Value	PicklistValue.Case.Product.GC5020	GC5020
+Picklist Value	PicklistValue.Case.Product.GC5040	GC5040
+Picklist Value	PicklistValue.Case.Product.GC5060	GC5060
+Picklist Value	PicklistValue.Case.Product.GC1020	GC1020
+Picklist Value	PicklistValue.Case.PotentialLiability.No	No
+Picklist Value	PicklistValue.Case.PotentialLiability.Yes	Yes
+Picklist Value	PicklistValue.Case.SLAViolation.No	No
+Picklist Value	PicklistValue.Case.SLAViolation.Yes	Yes

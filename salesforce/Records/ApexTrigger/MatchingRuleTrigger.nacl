@@ -1,0 +1,14 @@
+salesforce.ApexTrigger MatchingRuleTrigger {
+  apiVersion = 44
+  status = "Active"
+  fullName = "MatchingRuleTrigger"
+  content = file("salesforce/Records/ApexTrigger/MatchingRuleTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MatchingRuleConfigurationChecker
+    },
+    {
+      reference = salesforce.Matching_Rule__c
+    },
+  ]
+}

@@ -1,0 +1,89 @@
+salesforce.Layout Contact_Parent_Layout@bs {
+  fullName = "Contact-Parent Layout"
+  excludeButtons = [
+    "RequestUseSfdc",
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Fields"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Contact.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Share__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.RecordTypeId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.AccountId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Contact.field.AccountId
+        }
+      },
+      {
+        layoutItem = {
+          component = "runtime_sales_social:socialPanel"
+        }
+      },
+    ]
+  }
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMuvk"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Contact,
+  ]
+}

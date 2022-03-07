@@ -1,0 +1,10 @@
+salesforce.Role ExpressLogisticsandTransportPartnerUser {
+  fullName = "ExpressLogisticsandTransportPartnerUser"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Express Logistics and Transport Partner User"
+  mayForecastManagerShare = false
+  name = "Express Logistics and Transport Partner User"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.CEO
+}

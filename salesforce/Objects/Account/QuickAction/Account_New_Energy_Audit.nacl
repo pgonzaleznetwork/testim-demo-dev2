@@ -1,0 +1,45 @@
+salesforce.QuickAction Account_New_Energy_Audit@vuu {
+  fullName = "Account.New_Energy_Audit"
+  label = "New Energy Audit"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Name
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Account__c"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Average_Annual_Electric_Cost__c"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Annual_Energy_Usage_kWh__c"
+            uiBehavior = "Required"
+          },
+        ]
+      },
+    ]
+  }
+  targetObject = salesforce.Energy_Audit__c
+  targetParentField = "Account__c"
+  type = "Create"
+  _parent = [
+    salesforce.Account,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Energy_Audit__c.field.Account__c
+    },
+  ]
+}

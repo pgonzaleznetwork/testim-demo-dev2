@@ -1,0 +1,18 @@
+salesforce.LightningPage Lead_Dedupe_Manager_UtilityBar {
+  fullName = "Lead_Dedupe_Manager_UtilityBar"
+  flexiPageRegions = [
+    {
+      name = "utilityItems"
+      type = "Region"
+    },
+    {
+      name = "backgroundComponents"
+      type = "Background"
+    },
+  ]
+  masterLabel = "Lead Dedupe Manager UtilityBar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+}

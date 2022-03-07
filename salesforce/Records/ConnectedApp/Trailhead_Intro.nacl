@@ -1,0 +1,21 @@
+salesforce.ConnectedApp Trailhead_Intro {
+  fullName = "Trailhead_Intro"
+  contactEmail = "pgonzalez@appirio.com"
+  label = "Trailhead Intro"
+  oauthConfig = {
+    callbackUrl = "trailheadapp://auth/success"
+    consumerKey = "3MVG9I5UQ_0k_hTmZuUMosHPf.xmA2vNphLB.o4xvYjv9SmLOAV66wJxhmEWOhPfH8j9f3NoZlsI8Sb_FkOoW"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = [
+      "Api",
+      "Web",
+      "RefreshToken",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

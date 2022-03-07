@@ -1,0 +1,386 @@
+salesforce.Flow Sample_Dedupe_Process {
+  fullName = "Sample_Dedupe_Process"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "Assign_Existing_Parent_New_Child"
+      label = "Assign Existing Parent New Child"
+      locationX = 580
+      locationY = 725
+      assignmentItems = [
+        {
+          assignToReference = "contextLead.Existing_Due_Date__c"
+          operator = "Assign"
+          value = {
+            stringValue = "No"
+          }
+        },
+        {
+          assignToReference = "contextLead.Existing_Email__c"
+          operator = "Assign"
+          value = {
+            stringValue = "No"
+          }
+        },
+        {
+          assignToReference = "contextLead.Existing_Phone__c"
+          operator = "Assign"
+          value = {
+            stringValue = "Yes"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "Update_Changes"
+      }
+    },
+    {
+      name = "assign_lead_id"
+      label = "assign lead id"
+      locationX = 322
+      locationY = 10
+      assignmentItems = [
+        {
+          assignToReference = "contextLead.Id"
+          operator = "Assign"
+          value = {
+            elementReference = "myLeadId"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "Find_Contacts_by_Mobile_Phone"
+      }
+    },
+    {
+      name = "getAccountId"
+      label = "getAccountId"
+      locationX = 601
+      locationY = 389
+      assignmentItems = [
+        {
+          assignToReference = "AccountId"
+          operator = "Assign"
+          value = {
+            elementReference = "currentContact.AccountId"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "Find_Child_Contacts_by_Due_Date"
+      }
+    },
+    {
+      name = "testAssignment"
+      label = "testAssignment"
+      locationX = 115
+      locationY = 181
+      assignmentItems = [
+        {
+          assignToReference = "AccountId"
+          operator = "Assign"
+          value = {
+            stringValue = "1"
+          }
+        },
+      ]
+    },
+    {
+      name = "Update_to_Qualified_Lead"
+      label = "Update to Qualified Lead"
+      locationX = 920
+      locationY = 408
+      assignmentItems = [
+        {
+          assignToReference = "contextLead.Existing_Email__c"
+          operator = "Assign"
+          value = {
+            stringValue = "No"
+          }
+        },
+        {
+          assignToReference = "contextLead.Existing_Phone__c"
+          operator = "Assign"
+          value = {
+            stringValue = "No"
+          }
+        },
+        {
+          assignToReference = "contextLead.Existing_Due_Date__c"
+          operator = "Assign"
+          value = {
+            stringValue = "No"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "Update_Changes"
+      }
+    },
+  ]
+  decisions = [
+    {
+      name = "Is_there_a_match"
+      label = "Is there a match?"
+      locationX = 329
+      locationY = 262
+      defaultConnector = {
+        targetReference = "Find_Contacts_by_Email"
+      }
+      defaultConnectorLabel = "No"
+      rules = [
+        {
+          name = "Yes"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "matchingContacts"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          connector = {
+            targetReference = "currentContactVar"
+          }
+          label = "Yes"
+        },
+      ]
+    },
+    {
+      name = "Is_there_a_matchDueDate"
+      label = "Is there a match?"
+      locationX = 578
+      locationY = 566
+      defaultConnector = {
+        targetReference = "Assign_Existing_Parent_New_Child"
+      }
+      defaultConnectorLabel = "No"
+      rules = [
+        {
+          name = "YesDueDate"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "matchingChildContacts"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          label = "Yes"
+        },
+      ]
+    },
+    {
+      name = "Is_there_a_matchOnEmail"
+      label = "Is there a match?"
+      locationX = 926
+      locationY = 257
+      defaultConnector = {
+        targetReference = "Update_to_Qualified_Lead"
+      }
+      defaultConnectorLabel = "No"
+      rules = [
+        {
+          name = "YesEmail"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "matchingContacts"
+              operator = "IsNull"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          label = "Yes"
+        },
+      ]
+    },
+  ]
+  interviewLabel = "Sample Dedupe Process {!$Flow.CurrentDateTime}"
+  label = "Sample Dedupe Process"
+  loops = [
+    {
+      name = "currentContactVar"
+      label = "currentContactVar"
+      locationX = 326
+      locationY = 397
+      assignNextValueToReference = "currentContact"
+      collectionReference = "matchingContacts"
+      iterationOrder = "Asc"
+      nextValueConnector = {
+        targetReference = "getAccountId"
+      }
+      noMoreValuesConnector = {
+        targetReference = "Find_Child_Contacts_by_Due_Date"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordLookups = [
+    {
+      name = "Find_Child_Contacts_by_Due_Date"
+      label = "Find Child Contacts by Due Date"
+      locationX = 324
+      locationY = 564
+      assignNullValuesIfNoRecordsFound = false
+      connector = {
+        targetReference = "Is_there_a_matchDueDate"
+      }
+      filterLogic = "and"
+      filters = [
+        {
+          field = salesforce.Contact.field.AccountId
+          operator = "EqualTo"
+          value = {
+            elementReference = "AccountId"
+          }
+        },
+        {
+          field = salesforce.Contact.field.Due_Date__c
+          operator = "EqualTo"
+          value = {
+            dateValue = "2018-12-31"
+          }
+        },
+      ]
+      object = salesforce.Contact
+      outputReference = "matchingChildContacts"
+      queriedFields = [
+        salesforce.Contact.field.Id,
+        salesforce.Contact.field.Due_Date__c,
+        salesforce.Contact.field.AccountId,
+      ]
+    },
+    {
+      name = "Find_Contacts_by_Email"
+      label = "Find Contacts by Email"
+      locationX = 622
+      locationY = 259
+      assignNullValuesIfNoRecordsFound = true
+      connector = {
+        targetReference = "Is_there_a_matchOnEmail"
+      }
+      filterLogic = "and"
+      filters = [
+        {
+          field = salesforce.Contact.field.Email
+          operator = "EqualTo"
+          value = {
+            stringValue = "leadsample@dedupe.com"
+          }
+        },
+      ]
+      object = salesforce.Contact
+      outputReference = "matchingContacts"
+      queriedFields = [
+        salesforce.Contact.field.AccountId,
+        salesforce.Contact.field.Id,
+        salesforce.Contact.field.Email,
+        salesforce.Contact.field.Due_Date__c,
+      ]
+    },
+    {
+      name = "Find_Contacts_by_Mobile_Phone"
+      label = "Find Contacts by Mobile Phone"
+      locationX = 327
+      locationY = 122
+      assignNullValuesIfNoRecordsFound = true
+      connector = {
+        targetReference = "Is_there_a_match"
+      }
+      filterLogic = "and"
+      filters = [
+        {
+          field = salesforce.Contact.field.Phone
+          operator = "EqualTo"
+          value = {
+            stringValue = "12346"
+          }
+        },
+      ]
+      object = salesforce.Contact
+      outputReference = "matchingContacts"
+      queriedFields = [
+        salesforce.Contact.field.Id,
+        salesforce.Contact.field.AccountId,
+        salesforce.Contact.field.Phone,
+        salesforce.Contact.field.Email,
+      ]
+    },
+  ]
+  recordUpdates = [
+    {
+      name = "Update_Changes"
+      label = "Update Changes"
+      locationX = 915
+      locationY = 721
+      inputReference = "contextLead"
+    },
+  ]
+  startElementReference = "assign_lead_id"
+  status = "Draft"
+  variables = [
+    {
+      name = "AccountId"
+      dataType = "String"
+      isCollection = false
+      isInput = true
+      isOutput = false
+    },
+    {
+      name = "contextLead"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.Lead
+    },
+    {
+      name = "currentContact"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Contact
+    },
+    {
+      name = "matchingChildContacts"
+      dataType = "SObject"
+      isCollection = true
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Contact
+    },
+    {
+      name = "matchingContacts"
+      dataType = "SObject"
+      isCollection = true
+      isInput = true
+      isOutput = false
+      objectType = salesforce.Contact
+    },
+    {
+      name = "myLeadId"
+      dataType = "String"
+      isCollection = false
+      isInput = true
+      isOutput = true
+    },
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead.field.Existing_Due_Date__c
+    },
+    {
+      reference = salesforce.Lead.field.Existing_Email__c
+    },
+    {
+      reference = salesforce.Lead.field.Existing_Phone__c
+    },
+  ]
+}

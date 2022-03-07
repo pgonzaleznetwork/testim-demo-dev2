@@ -1,0 +1,12 @@
+salesforce.CustomMetadata Dedupe_Setting_Vietnam@uv {
+  fullName = "Dedupe_Setting.Vietnam"
+  label = "Vietnam"
+  protected = false
+  values = [
+    {
+      field = "Dedupe_Engine__c"
+      value = "Flow"
+      type = "xsd:string"
+    },
+  ]
+}

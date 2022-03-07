@@ -1,0 +1,14 @@
+type salesforce.Hotel__c {
+  salesforce.Geolocation Location__c {
+    apiName = "Hotel__c.Location__c"
+    label = "Location"
+    displayLocationInDecimal = true
+    scale = 7
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+    _hidden_value = true
+  }
+}

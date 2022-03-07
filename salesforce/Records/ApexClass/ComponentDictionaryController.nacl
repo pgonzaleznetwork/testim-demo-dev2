@@ -1,0 +1,6 @@
+salesforce.ApexClass ComponentDictionaryController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ComponentDictionaryController"
+  content = file("salesforce/Records/ApexClass/ComponentDictionaryController.cls")
+}

@@ -1,0 +1,21 @@
+salesforce.ListView Email_Rule__mdt_Search {
+  fullName = "Email_Rule__mdt.Search"
+  columns = [
+    "MasterLabel",
+    "DeveloperName",
+    "NamespacePrefix",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "Email_Address__c"
+      operation = "equals"
+      value = "kunden@officedepot.de"
+    },
+  ]
+  label = "Search"
+  language = "en_US"
+  _parent = [
+    salesforce.Email_Rule__mdt,
+  ]
+}

@@ -1,0 +1,105 @@
+salesforce.Layout Email_Routing_Rule__c_Email_Routing_Rule_Layout@uuuubsss {
+  fullName = "Email_Routing_Rule__c-Email Routing Rule Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Rule Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Email_Routing_Rule__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule__c.field.Business_Unit__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule__c.field.Channel__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule__c.field.Sort_Order__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Categorization"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule__c.field.Case_Status__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "Email_Attribute__c",
+        "Operator__c",
+        "Value__c",
+      ]
+      relatedList = salesforce.Email_Routing_Rule_Filter__c.field.Email_Routing_Rule__c
+    },
+    {
+      fields = [
+        "NAME",
+        "Business_Unit__c",
+        "Case_Type__c",
+      ]
+      relatedList = salesforce.Email_Routing_Field_Mapping__c.field.Email_Routing_Rule__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMm7a"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Email_Routing_Rule__c,
+  ]
+}

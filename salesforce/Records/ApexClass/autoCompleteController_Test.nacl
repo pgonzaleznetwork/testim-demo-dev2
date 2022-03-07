@@ -1,0 +1,14 @@
+salesforce.ApexClass autoCompleteController_Test {
+  apiVersion = 41
+  status = "Active"
+  fullName = "autoCompleteController_Test"
+  content = file("salesforce/Records/ApexClass/autoCompleteController_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.autoCompleteController
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.ApexClass LeadServiceRouter {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadServiceRouter"
+  content = file("salesforce/Records/ApexClass/LeadServiceRouter.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LeadService
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

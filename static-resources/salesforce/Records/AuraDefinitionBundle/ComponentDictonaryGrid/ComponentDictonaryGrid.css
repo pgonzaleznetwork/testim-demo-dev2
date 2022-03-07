@@ -1,0 +1,9 @@
+.THIS {
+}
+
+.THIS .custom-box {
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border: 3px solid #d8dde6;
+}

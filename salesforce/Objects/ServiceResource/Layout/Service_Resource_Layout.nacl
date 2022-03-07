@@ -1,0 +1,173 @@
+salesforce.Layout ServiceResource_Service_Resource_Layout@bss {
+  fullName = "ServiceResource-Service Resource Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.SchedulingConstraintId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceResource.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.RelatedRecordId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ServiceResource.field.ResourceType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.IsCapacityBased
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.IsOptimizationCapable
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceResource.field.CreatedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ServiceResource.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ServiceResource.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "SchedulingConstraintId",
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "ServiceAppointment",
+      ]
+      relatedList = "ServiceAppointments"
+    },
+    {
+      fields = [
+        "SkillMasterLabel",
+        "SkillLevel",
+        "EffectiveStartDate",
+        "EffectiveEndDate",
+      ]
+      relatedList = "ServiceResourceSkills"
+    },
+    {
+      fields = [
+        "Name",
+        "ServiceTerritory",
+        "TerritoryType",
+        "EffectiveStartDate",
+        "EffectiveEndDate",
+      ]
+      relatedList = "ServiceTerritoryRelatedList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      fields = [
+        "Start",
+        "End",
+        "Type",
+      ]
+      relatedList = "ResourceAbsences"
+    },
+    {
+      fields = [
+        "StartDate",
+        "EndDate",
+        "CapacityInHours",
+        "CapacityInWorkItems",
+        "TimePeriod",
+      ]
+      relatedList = "ResourceCapacities"
+    },
+    {
+      fields = [
+        "Name",
+        "StartDate",
+        "EndDate",
+      ]
+      relatedList = "TimeSheets"
+    },
+    {
+      fields = [
+        "Name",
+        "ServiceCrew",
+        "IsLeader",
+        "StartDate",
+        "EndDate",
+      ]
+      relatedList = "ServiceCrews"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ServiceResource,
+  ]
+}

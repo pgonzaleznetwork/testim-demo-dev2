@@ -1,0 +1,23 @@
+salesforce.AuraDefinitionBundle PageLayoutTranslationContainer {
+  apiVersion = 43
+  description = "A Lightning Component Bundle"
+  fullName = "PageLayoutTranslationContainer"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/PageLayoutTranslationContainer/PageLayoutTranslationContainer.cmp")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/PageLayoutTranslationContainer/PageLayoutTranslationContainerHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/PageLayoutTranslationContainer/PageLayoutTranslationContainer.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.CompareTranslationFiles
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.PageLayoutTranslationContainer
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SubmitPageLayoutInfo
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.TranslationsMerger
+    },
+  ]
+}

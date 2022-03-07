@@ -1,0 +1,6 @@
+salesforce.SharingRules Object_in_2nd_Env__c {
+  fullName = "Object_in_2nd_Env__c"
+  _parent = [
+    salesforce.Object_in_2nd_Env__c,
+  ]
+}

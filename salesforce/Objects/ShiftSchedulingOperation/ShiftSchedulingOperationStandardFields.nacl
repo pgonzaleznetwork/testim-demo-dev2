@@ -1,0 +1,53 @@
+type salesforce.ShiftSchedulingOperation {
+  salesforce.Picklist CurrentShiftsStatus {
+    apiName = "ShiftSchedulingOperation.CurrentShiftsStatus"
+    _hidden_value = true
+  }
+  string JobEndTime {
+    _hidden_value = true
+  }
+  string JobProfiles {
+    _hidden_value = true
+  }
+  string JobStartTime {
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ShiftSchedulingOperation.OwnerId"
+    _hidden_value = true
+  }
+  string SelectedAction {
+    _hidden_value = true
+  }
+  string ServiceTerritories {
+    _hidden_value = true
+  }
+  string ShiftsEndDateTime {
+    _hidden_value = true
+  }
+  string ShiftsStartDateTime {
+    _hidden_value = true
+  }
+  string Status {
+    _hidden_value = true
+  }
+  string TotalShiftsExcluded {
+    _hidden_value = true
+  }
+  string TotalShiftsLeftUnassigned {
+    _hidden_value = true
+  }
+  string TotalShiftsProcessed {
+    _hidden_value = true
+  }
+  string TotalShiftsScheduled {
+    _hidden_value = true
+  }
+  string TotalShiftsToSchedule {
+    _hidden_value = true
+  }
+  salesforce.Picklist UpdatedShiftsStatus {
+    apiName = "ShiftSchedulingOperation.UpdatedShiftsStatus"
+    _hidden_value = true
+  }
+}

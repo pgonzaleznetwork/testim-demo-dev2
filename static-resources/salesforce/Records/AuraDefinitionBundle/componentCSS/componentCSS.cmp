@@ -1,0 +1,11 @@
+<aura:component >
+	<div class="topLevel">
+        <p>This is inside a top level element</p>
+    </div>
+    
+    <div>
+        <div class="lowerLevel">
+            This is nested
+        </div>
+    </div>
+</aura:component>

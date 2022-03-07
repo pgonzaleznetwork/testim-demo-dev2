@@ -1,0 +1,6 @@
+salesforce.RemoteSiteSetting slowly {
+  fullName = "slowly"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "http://slowwly.robertomurray.co.uk"
+}

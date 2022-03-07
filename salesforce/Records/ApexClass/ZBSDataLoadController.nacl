@@ -1,0 +1,11 @@
+salesforce.ApexClass ZBSDataLoadController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ZBSDataLoadController"
+  content = file("salesforce/Records/ApexClass/ZBSDataLoadController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

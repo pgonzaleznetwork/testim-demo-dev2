@@ -1,0 +1,148 @@
+salesforce.Profile Work_2Ecom_Only_User@pss {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    CreateCustomizeDashboards = {
+      enabled = true
+      name = "CreateCustomizeDashboards"
+    }
+    CreateCustomizeFilters = {
+      enabled = true
+      name = "CreateCustomizeFilters"
+    }
+    CreateCustomizeReports = {
+      enabled = true
+      name = "CreateCustomizeReports"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditEvent = {
+      enabled = true
+      name = "EditEvent"
+    }
+    EditMyDashboards = {
+      enabled = true
+      name = "EditMyDashboards"
+    }
+    EditMyReports = {
+      enabled = true
+      name = "EditMyReports"
+    }
+    EditPublicDocuments = {
+      enabled = true
+      name = "EditPublicDocuments"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EmailMass = {
+      enabled = true
+      name = "EmailMass"
+    }
+    EmailSingle = {
+      enabled = true
+      name = "EmailSingle"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    TransactionalEmailSend = {
+      enabled = true
+      name = "TransactionalEmailSend"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+    ViewPublicDashboards = {
+      enabled = true
+      name = "ViewPublicDashboards"
+    }
+    ViewPublicReports = {
+      enabled = true
+      name = "ViewPublicReports"
+    }
+    WorkDotComUserPerm = {
+      enabled = true
+      name = "WorkDotComUserPerm"
+    }
+  }
+}

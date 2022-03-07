@@ -1,0 +1,15 @@
+type salesforce.Case_Status_Bucket__c {
+  salesforce.Text Time_Bucket__c {
+    apiName = "Case_Status_Bucket__c.Time_Bucket__c"
+    label = "Time Bucket"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

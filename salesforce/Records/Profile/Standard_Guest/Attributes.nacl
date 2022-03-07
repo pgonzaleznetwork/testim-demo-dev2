@@ -1,0 +1,5 @@
+salesforce.Profile Guest {
+  fullName = "Guest"
+  custom = false
+  userLicense = "Guest"
+}

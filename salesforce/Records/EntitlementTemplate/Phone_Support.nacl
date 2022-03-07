@@ -1,0 +1,6 @@
+salesforce.EntitlementTemplate Phone_Support@s {
+  fullName = "Phone Support"
+  businessHours = "Default"
+  isPerIncident = false
+  term = 365
+}

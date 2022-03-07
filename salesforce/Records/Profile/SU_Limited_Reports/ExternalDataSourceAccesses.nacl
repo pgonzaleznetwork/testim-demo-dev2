@@ -1,0 +1,8 @@
+salesforce.Profile SU_Limited_Reports@s {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

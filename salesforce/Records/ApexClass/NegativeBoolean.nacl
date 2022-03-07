@@ -1,0 +1,14 @@
+salesforce.ApexClass NegativeBoolean {
+  apiVersion = 49
+  status = "Active"
+  fullName = "NegativeBoolean"
+  content = file("salesforce/Records/ApexClass/NegativeBoolean.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Expense__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+  ]
+}

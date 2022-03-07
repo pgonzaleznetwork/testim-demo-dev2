@@ -1,0 +1,41 @@
+salesforce.ApexPage Unauthorized {
+  apiVersion = 42
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Lightning Platform Authorization Required page"
+  label = "Unauthorized"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "Unauthorized"
+  content = file("salesforce/Records/ApexPage/Unauthorized.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SiteLoginController
+    },
+    {
+      reference = salesforce.ApexComponent.instance.SiteLogin
+    },
+    {
+      reference = salesforce.ApexComponent.instance.SitePoweredBy
+    },
+    {
+      reference = salesforce.ApexPage.instance.ForgotPassword
+    },
+    {
+      reference = salesforce.ApexPage.instance.SiteRegister
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+}

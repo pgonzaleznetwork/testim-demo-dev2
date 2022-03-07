@@ -1,0 +1,12 @@
+salesforce.Profile External_Apps_Login_User@s {
+  userPermissions = {
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+  }
+}

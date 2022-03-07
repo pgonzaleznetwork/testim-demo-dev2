@@ -1,0 +1,11 @@
+salesforce.ApexClass UpdateParentAccount {
+  apiVersion = 41
+  status = "Active"
+  fullName = "UpdateParentAccount"
+  content = file("salesforce/Records/ApexClass/UpdateParentAccount.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

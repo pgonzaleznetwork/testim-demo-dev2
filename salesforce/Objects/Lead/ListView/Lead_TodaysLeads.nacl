@@ -1,0 +1,22 @@
+salesforce.ListView Lead_TodaysLeads {
+  fullName = "Lead.TodaysLeads"
+  booleanFilter = "1"
+  columns = [
+    "FULL_NAME",
+    "LEAD.COMPANY",
+    "LEAD.MOBILE_PHONE",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "LEAD.CREATED_DATE"
+      operation = "equals"
+      value = "TOMORROW"
+    },
+  ]
+  label = "Today's Leads"
+  language = "en_US"
+  _parent = [
+    salesforce.Lead,
+  ]
+}

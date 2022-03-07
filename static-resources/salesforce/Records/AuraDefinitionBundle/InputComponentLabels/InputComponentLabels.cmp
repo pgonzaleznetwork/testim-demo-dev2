@@ -1,0 +1,4 @@
+<aura:component >
+    
+    <p><lightning:input type="text" name="yourName" label="{!$Label.c.Tell_us_your_name}"/></p>
+</aura:component>

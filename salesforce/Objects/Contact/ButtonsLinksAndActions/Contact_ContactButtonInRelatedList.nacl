@@ -1,0 +1,16 @@
+salesforce.WebLink Contact_ContactButtonInRelatedList {
+  fullName = "Contact.ContactButtonInRelatedList"
+  availability = "online"
+  displayType = "massActionButton"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "ContactButtonInRelatedList"
+  openType = "sidebar"
+  protected = false
+  requireRowSelection = true
+  url = "https://resourceful-moose-448750-dev-ed.lightning.force.com/lightning/setup/ObjectManager/Contact/ButtonsLinksActions/newButtonOrLink"
+  _parent = [
+    salesforce.Contact,
+  ]
+}

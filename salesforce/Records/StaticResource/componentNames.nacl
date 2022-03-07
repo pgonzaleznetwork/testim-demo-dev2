@@ -1,0 +1,6 @@
+salesforce.StaticResource componentNames {
+  cacheControl = "Private"
+  contentType = "text/plain"
+  fullName = "componentNames"
+  content = file("salesforce/Records/StaticResource/componentNames.txt")
+}

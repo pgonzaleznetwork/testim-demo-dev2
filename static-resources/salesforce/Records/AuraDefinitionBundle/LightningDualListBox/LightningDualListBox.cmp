@@ -1,0 +1,23 @@
+<aura:component >
+    
+    <aura:attribute name="defaultOptions" type="List" default="[]"/>
+    
+    <aura:attribute name="optionsDual" type="List" default="[
+        { label: 'English', value: 'en' },
+        { label: 'German', value: 'de' },
+        { label: 'Spanish', value: 'es' },
+        { label: 'French', value: 'fr' },
+        { label: 'Italian', value: 'it' },
+        { label: 'Japanese', value: 'ja' }]"/>
+
+    <lightning:dualListbox aura:id="myBox" name="languages"  
+                           label="Select Languages" 
+                           sourceLabel="Available" 
+                           selectedLabel="Selected" 
+                           value="{!v.defaultOptions}"
+                           options="{!v.optionsDual}" 
+                           onchange="{!c.handleChange}"/>
+    
+    <lightning:button label="Show Selected" variant="brand" onclick="{!c.showSelected}"/>
+
+</aura:component>

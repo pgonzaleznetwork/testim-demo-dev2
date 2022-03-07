@@ -1,0 +1,15 @@
+<aura:component >
+	
+    <aura:attribute name="account" type="Account"/>
+    
+    <aura:registerEvent name="accountSelected" type="c:AccountSelected"/>
+    
+    <li>
+        
+        <lightning:card title="{!v.account.Name}">
+            <a onclick="{!c.accountSelected}">Show on map</a>
+        </lightning:card>
+        
+    </li>
+    
+</aura:component>

@@ -1,0 +1,6 @@
+salesforce.ApexClass TriggerActions {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerActions"
+  content = file("salesforce/Records/ApexClass/TriggerActions.cls")
+}

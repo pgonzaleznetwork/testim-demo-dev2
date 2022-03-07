@@ -1,0 +1,11 @@
+salesforce.ApexClass CampaignService {
+  apiVersion = 44
+  status = "Active"
+  fullName = "CampaignService"
+  content = file("salesforce/Records/ApexClass/CampaignService.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Campaign
+    },
+  ]
+}

@@ -1,0 +1,23 @@
+salesforce.ListView Apex_Log__c_Yesterday {
+  fullName = "Apex_Log__c.Yesterday"
+  columns = [
+    "NAME",
+    "Reference_ID__c",
+    "class_name__c",
+    "method_name__c",
+    "Status_Code__c",
+    "Message__c",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "CREATED_DATE"
+      operation = "equals"
+      value = "YESTERDAY"
+    },
+  ]
+  label = "Yesterday"
+  _parent = [
+    salesforce.Apex_Log__c,
+  ]
+}

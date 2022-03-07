@@ -1,0 +1,8 @@
+salesforce.ListView TimeSheet_All_TimeSheets {
+  fullName = "TimeSheet.All_TimeSheets"
+  filterScope = "Everything"
+  label = "All Time Sheets"
+  _parent = [
+    salesforce.TimeSheet,
+  ]
+}

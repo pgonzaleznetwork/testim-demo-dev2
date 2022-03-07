@@ -1,0 +1,53 @@
+salesforce.ApprovalProcess Account_Approve_Case_for_Community_Users@vuuuu {
+  fullName = "Account.Approve_Case_for_Community_Users"
+  active = false
+  allowRecall = false
+  allowedSubmitters = [
+    {
+      submitter = "communityplususer@marketo.nesia"
+      type = "customerPortalUser"
+    },
+    {
+      submitter = "communityuser@user.menesia"
+      type = "customerPortalUser"
+    },
+    {
+      submitter = "legacyportal@usermark.nesia"
+      type = "customerPortalUser"
+    },
+    {
+      type = "owner"
+    },
+    {
+      submitter = "triggecounr@trigger.com"
+      type = "partnerUser"
+    },
+  ]
+  approvalPageFields = {
+    field = [
+      "Name",
+      "Owner",
+    ]
+  }
+  approvalStep = [
+    {
+      allowDelegate = false
+      assignedApprover = {
+        approver = {
+          name = "higvoul@porta.user"
+          type = "user"
+        }
+        whenMultipleApprovers = "FirstResponse"
+      }
+      label = "assign"
+      name = "assign"
+    },
+  ]
+  enableMobileDeviceAccess = false
+  finalApprovalRecordLock = true
+  finalRejectionRecordLock = false
+  label = "Approve Case for Community Users"
+  processOrder = 2
+  recordEditability = "AdminOnly"
+  showApprovalHistory = false
+}

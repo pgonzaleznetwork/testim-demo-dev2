@@ -1,0 +1,8 @@
+salesforce.ListView WarrantyTerm_All_WarrantyTerms {
+  fullName = "WarrantyTerm.All_WarrantyTerms"
+  filterScope = "Everything"
+  label = "All Warranty Terms"
+  _parent = [
+    salesforce.WarrantyTerm,
+  ]
+}

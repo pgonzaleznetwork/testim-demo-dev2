@@ -1,0 +1,95 @@
+salesforce.LightningPage Translation_Context_Record_Page {
+  fullName = "Translation_Context_Record_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Translation_Context__c.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "Translation_Keys__r"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Translation_Context__c.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "CombinedAttachments"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Translation Context Record Page"
+  parentFlexiPage = "flexipage__default_rec_L"
+  sobjectType = "Translation_Context__c"
+  template = {
+    name = "flexipage:recordHomeTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Translation_Context__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Translation_Key__c.field.Translation_Context__c
+    },
+  ]
+}

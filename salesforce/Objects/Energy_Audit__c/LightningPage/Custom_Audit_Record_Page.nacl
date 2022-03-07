@@ -1,0 +1,79 @@
+salesforce.LightningPage Custom_Audit_Record_Page {
+  fullName = "Custom_Audit_Record_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "camping"
+          }
+        },
+      ]
+      name = "rightsidebar"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+      ]
+      name = "leftsidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Custom Audit Record Page"
+  sobjectType = "Energy_Audit__c"
+  template = {
+    name = "flexipage:recordHomeThreeColHeaderTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Energy_Audit__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.camping
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass TriggerActionsOld {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerActionsOld"
+  content = file("salesforce/Records/ApexClass/TriggerActionsOld.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

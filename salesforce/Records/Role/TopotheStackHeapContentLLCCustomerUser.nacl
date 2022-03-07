@@ -1,0 +1,10 @@
+salesforce.Role TopotheStackHeapContentLLCCustomerUser {
+  fullName = "TopotheStackHeapContentLLCCustomerUser"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "Top o' the Stack Heap Content, LLC Customer User"
+  mayForecastManagerShare = false
+  name = "Top o' the Stack Heap Content, LLC Customer User"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.TopotheStackHeapContentLLCCustomerManager
+}

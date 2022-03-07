@@ -1,0 +1,22 @@
+salesforce.CustomApplication Conference {
+  fullName = "Conference"
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Conference"
+  tabs = [
+    salesforce.CustomTab.instance.Session__c,
+    salesforce.CustomTab.instance.Speaker__c,
+    salesforce.CustomTab.instance.Hotel__c,
+    salesforce.CustomTab.instance.ModifyCSS,
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+}

@@ -1,0 +1,912 @@
+type salesforce.Email_Rule__mdt {
+  salesforce.Picklist Actions__c {
+    apiName = "Email_Rule__mdt.Actions__c"
+    label = "Actions"
+    valueSet = [
+      {
+        fullName = "Auto Close"
+        default = false
+        label = "Auto Close"
+      },
+      {
+        fullName = "Spam"
+        default = false
+        label = "Spam"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "T-701472 | S-559436 | Actions to take for these types of emails"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Assignment_Category__c {
+    apiName = "Email_Rule__mdt.Assignment_Category__c"
+    label = "Assignment Category"
+    valueSet = [
+      {
+        fullName = "Order"
+        default = false
+        label = "Order"
+      },
+      {
+        fullName = "Query"
+        default = false
+        label = "Query"
+      },
+      {
+        fullName = "Priority"
+        default = false
+        label = "Priority"
+      },
+      {
+        fullName = "New Accounts"
+        default = false
+        label = "New Accounts"
+      },
+      {
+        fullName = "Pricing"
+        default = false
+        label = "Pricing"
+      },
+      {
+        fullName = "EDI"
+        default = false
+        label = "EDI"
+      },
+      {
+        fullName = "Exclusions"
+        default = false
+        label = "Exclusions"
+      },
+      {
+        fullName = "Template"
+        default = false
+        label = "Template"
+      },
+      {
+        fullName = "Catalogue Orders"
+        default = false
+        label = "Catalogue Orders"
+      },
+      {
+        fullName = "Remittance"
+        default = false
+        label = "Remittance"
+      },
+      {
+        fullName = "E-billing"
+        default = false
+        label = "E-billing"
+      },
+      {
+        fullName = "Bounced Cheques"
+        default = false
+        label = "Bounced Cheques"
+      },
+      {
+        fullName = "Status Change"
+        default = false
+        label = "Status Change"
+      },
+      {
+        fullName = "Activations"
+        default = false
+        label = "Activations"
+      },
+      {
+        fullName = "Cost Update"
+        default = false
+        label = "Cost Update"
+      },
+      {
+        fullName = "Cost Price Discrepancy"
+        default = false
+        label = "Cost Price Discrepancy"
+      },
+      {
+        fullName = "Delivery Method Change"
+        default = false
+        label = "Delivery Method Change"
+      },
+      {
+        fullName = "Vendor Switch"
+        default = false
+        label = "Vendor Switch"
+      },
+      {
+        fullName = "VPN Change"
+        default = false
+        label = "VPN Change"
+      },
+      {
+        fullName = "Relink"
+        default = false
+        label = "Relink"
+      },
+      {
+        fullName = "Item Type Change"
+        default = false
+        label = "Item Type Change"
+      },
+      {
+        fullName = "Subclass Change"
+        default = false
+        label = "Subclass Change"
+      },
+      {
+        fullName = "General Data Change"
+        default = false
+        label = "General Data Change"
+      },
+      {
+        fullName = "EAN Change"
+        default = false
+        label = "EAN Change"
+      },
+      {
+        fullName = "Local Maintenance"
+        default = false
+        label = "Local Maintenance"
+      },
+      {
+        fullName = "Content Issue"
+        default = false
+        label = "Content Issue"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Business_Channel__c {
+    apiName = "Email_Rule__mdt.Business_Channel__c"
+    label = "Business Channel"
+    valueSet = [
+      {
+        fullName = "SMB"
+        default = false
+        label = "SMB"
+      },
+      {
+        fullName = "Strategic"
+        default = false
+        label = "Strategic"
+      },
+      {
+        fullName = "TopMajor"
+        default = false
+        label = "TopMajor"
+      },
+      {
+        fullName = "Viking"
+        default = false
+        label = "Viking"
+      },
+      {
+        fullName = "Viking One"
+        default = false
+        label = "Viking One"
+      },
+      {
+        fullName = "Contract SMB"
+        default = false
+        isActive = false
+        label = "Contract SMB"
+      },
+      {
+        fullName = "Contract Strategic"
+        default = false
+        isActive = false
+        label = "Contract Strategic"
+      },
+      {
+        fullName = "Top Major"
+        default = false
+        isActive = false
+        label = "Top Major"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Text Business_Division__c {
+    apiName = "Email_Rule__mdt.Business_Division__c"
+    label = "Business Division"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Business_Type__c {
+    apiName = "Email_Rule__mdt.Business_Type__c"
+    label = "Business Type"
+    valueSet = [
+      {
+        fullName = "Contract"
+        default = false
+        label = "Contract"
+      },
+      {
+        fullName = "Direct"
+        default = false
+        label = "Direct"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Text Country__c {
+    apiName = "Email_Rule__mdt.Country__c"
+    label = "Country"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Add Keywords to the Email Rules - T-697791"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Customer_Segmentation__c {
+    apiName = "Email_Rule__mdt.Customer_Segmentation__c"
+    label = "Customer Segmentation"
+    valueSet = [
+      {
+        fullName = "Platinum / Gold"
+        default = false
+        label = "Platinum / Gold"
+      },
+      {
+        fullName = "Banking and Finance"
+        default = false
+        label = "Banking and Finance"
+      },
+      {
+        fullName = "Strategic Alliance"
+        default = false
+        label = "Strategic Alliance"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Department__c {
+    apiName = "Email_Rule__mdt.Department__c"
+    label = "Department"
+    valueSet = [
+      {
+        fullName = "Customer Service"
+        default = false
+        label = "Customer Service"
+      },
+      {
+        fullName = "Credit and Collections"
+        default = false
+        label = "Credit and Collections"
+      },
+      {
+        fullName = "Supply Chain"
+        default = false
+        label = "Supply Chain"
+      },
+      {
+        fullName = "Item Master Content"
+        default = false
+        label = "Item Master Content"
+      },
+      {
+        fullName = "Data Management Services"
+        default = false
+        label = "Data Management Services"
+      },
+      {
+        fullName = "Managing Directors Office"
+        default = false
+        label = "Managing Directors Office"
+      },
+      {
+        fullName = "Esupport"
+        default = false
+        label = "Esupport"
+      },
+      {
+        fullName = "Epoch"
+        default = false
+        label = "Epoch"
+      },
+      {
+        fullName = "Procurement"
+        default = false
+        label = "Procurement"
+      },
+      {
+        fullName = "Sales Support"
+        default = false
+        label = "Sales Support"
+      },
+      {
+        fullName = "Epoch Support"
+        default = false
+        label = "Epoch Support"
+      },
+      {
+        fullName = "Furniture Installation"
+        default = false
+        label = "Furniture Installation"
+      },
+      {
+        fullName = "Direct Delivery"
+        default = false
+        label = "Direct Delivery"
+      },
+      {
+        fullName = "Finance"
+        default = false
+        label = "Finance"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Text Email_Address__c {
+    apiName = "Email_Rule__mdt.Email_Address__c"
+    label = "Email Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Add Keywords to the Email Rules - T-697791"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist From_Address_Operator__c {
+    apiName = "Email_Rule__mdt.From_Address_Operator__c"
+    label = "From Address Operator"
+    valueSet = [
+      {
+        fullName = "Contains"
+        default = false
+        label = "Contains"
+      },
+      {
+        fullName = "Ends With"
+        default = false
+        label = "Ends With"
+      },
+      {
+        fullName = "Equals"
+        default = false
+        label = "Equals"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "T-700351 | S-550380 | Defines which part of the from address should be checked. For example ends with or equals."
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea From_Address__c {
+    apiName = "Email_Rule__mdt.From_Address__c"
+    label = "From Address"
+    createable = false
+    updateable = false
+    length = 32768
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    visibleLines = 3
+    _hidden_value = true
+  }
+  salesforce.Picklist Keywords_Operator__c {
+    apiName = "Email_Rule__mdt.Keywords_Operator__c"
+    label = "Keywords Operator"
+    valueSet = [
+      {
+        fullName = "Contains"
+        default = false
+        label = "Contains"
+      },
+      {
+        fullName = "Does Not Contain"
+        default = false
+        label = "Does Not Contain"
+      },
+      {
+        fullName = "Equals"
+        default = false
+        label = "Equals"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "T-700350 | S-550380 | Defines how should the email body or subject be checked for the keywords"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Keywords_Type__c {
+    apiName = "Email_Rule__mdt.Keywords_Type__c"
+    label = "Keywords Type"
+    valueSet = [
+      {
+        fullName = "Subject"
+        default = false
+        label = "Subject"
+      },
+      {
+        fullName = "Body"
+        default = false
+        label = "Body"
+      },
+      {
+        fullName = "Both"
+        default = false
+        label = "Both"
+      },
+      {
+        fullName = "None"
+        default = false
+        isActive = false
+        label = "None"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Add Keywords to the Email Rules - T-697791"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Keywords__c {
+    apiName = "Email_Rule__mdt.Keywords__c"
+    label = "Keywords"
+    createable = false
+    updateable = false
+    length = 32768
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    visibleLines = 3
+    _hidden_value = true
+  }
+  salesforce.Picklist Language__c {
+    apiName = "Email_Rule__mdt.Language__c"
+    label = "Language"
+    valueSet = [
+      {
+        fullName = "DE"
+        default = false
+        label = "DE"
+      },
+      {
+        fullName = "FR"
+        default = false
+        label = "FR"
+      },
+      {
+        fullName = "NL"
+        default = false
+        label = "NL"
+      },
+      {
+        fullName = "EN"
+        default = false
+        label = "EN"
+      },
+      {
+        fullName = "ES"
+        default = false
+        label = "ES"
+      },
+      {
+        fullName = "IT"
+        default = false
+        label = "IT"
+      },
+      {
+        fullName = "SP"
+        default = false
+        label = "SP"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Number Order__c {
+    apiName = "Email_Rule__mdt.Order__c"
+    label = "Order"
+    precision = 16
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Origin__c {
+    apiName = "Email_Rule__mdt.Origin__c"
+    label = "Origin"
+    valueSet = [
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Fax"
+        default = false
+        label = "Fax"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Process__c {
+    apiName = "Email_Rule__mdt.Process__c"
+    label = "Process"
+    valueSet = [
+      {
+        fullName = "Admin"
+        default = false
+        label = "Admin"
+      },
+      {
+        fullName = "Backorder"
+        default = false
+        label = "Backorder"
+      },
+      {
+        fullName = "Banking & Finance"
+        default = false
+        label = "Banking & Finance"
+      },
+      {
+        fullName = "Billing"
+        default = false
+        label = "Billing"
+      },
+      {
+        fullName = "CoreList"
+        default = false
+        label = "CoreList"
+      },
+      {
+        fullName = "Credit"
+        default = false
+        label = "Credit"
+      },
+      {
+        fullName = "Credit Auth"
+        default = false
+        label = "Credit Auth"
+      },
+      {
+        fullName = "Credit Cards"
+        default = false
+        label = "Credit Cards"
+      },
+      {
+        fullName = "Custom Catalogue"
+        default = false
+        label = "Custom Catalogue"
+      },
+      {
+        fullName = "Customers"
+        default = false
+        label = "Customers"
+      },
+      {
+        fullName = "Customer Specific"
+        default = false
+        label = "Customer Specific"
+      },
+      {
+        fullName = "Customised Items"
+        default = false
+        label = "Customised Items"
+      },
+      {
+        fullName = "Delivery"
+        default = false
+        label = "Delivery"
+      },
+      {
+        fullName = "Delivery Notes"
+        default = false
+        label = "Delivery Notes"
+      },
+      {
+        fullName = "Direct Delivery"
+        default = false
+        label = "Direct Delivery"
+      },
+      {
+        fullName = "DMS"
+        default = false
+        label = "DMS"
+      },
+      {
+        fullName = "Escalated"
+        default = false
+        label = "Escalated"
+      },
+      {
+        fullName = "Fraud"
+        default = false
+        label = "Fraud"
+      },
+      {
+        fullName = "Front Office"
+        default = false
+        label = "Front Office"
+      },
+      {
+        fullName = "Furniture"
+        default = false
+        label = "Furniture"
+      },
+      {
+        fullName = "Helpdesk"
+        default = false
+        label = "Helpdesk"
+      },
+      {
+        fullName = "Insolvency"
+        default = false
+        label = "Insolvency"
+      },
+      {
+        fullName = "Large"
+        default = false
+        label = "Large"
+      },
+      {
+        fullName = "Large Order"
+        default = false
+        label = "Large Order"
+      },
+      {
+        fullName = "Loads"
+        default = false
+        label = "Loads"
+      },
+      {
+        fullName = "Logistics"
+        default = false
+        label = "Logistics"
+      },
+      {
+        fullName = "Marketplace"
+        default = false
+        label = "Marketplace"
+      },
+      {
+        fullName = "MPS"
+        default = false
+        label = "MPS"
+      },
+      {
+        fullName = "Name Changes"
+        default = false
+        label = "Name Changes"
+      },
+      {
+        fullName = "NES"
+        default = false
+        label = "NES"
+      },
+      {
+        fullName = "New Stores"
+        default = false
+        label = "New Stores"
+      },
+      {
+        fullName = "Order Acknowledgement"
+        default = false
+        label = "Order Acknowledgement"
+      },
+      {
+        fullName = "Order Blocks"
+        default = false
+        label = "Order Blocks"
+      },
+      {
+        fullName = "PA"
+        default = false
+        label = "PA"
+      },
+      {
+        fullName = "PayPal"
+        default = false
+        label = "PayPal"
+      },
+      {
+        fullName = "Pending"
+        default = false
+        label = "Pending"
+      },
+      {
+        fullName = "Personalised Items"
+        default = false
+        label = "Personalised Items"
+      },
+      {
+        fullName = "Portal"
+        default = false
+        label = "Portal"
+      },
+      {
+        fullName = "Post Sales"
+        default = false
+        label = "Post Sales"
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+      {
+        fullName = "Project"
+        default = false
+        label = "Project"
+      },
+      {
+        fullName = "Purchase Cards"
+        default = false
+        label = "Purchase Cards"
+      },
+      {
+        fullName = "Returns"
+        default = false
+        label = "Returns"
+      },
+      {
+        fullName = "Risk Assessment"
+        default = false
+        label = "Risk Assessment"
+      },
+      {
+        fullName = "Sales Reps"
+        default = false
+        label = "Sales Reps"
+      },
+      {
+        fullName = "Seasonal"
+        default = false
+        label = "Seasonal"
+      },
+      {
+        fullName = "Self Registration"
+        default = false
+        label = "Self Registration"
+      },
+      {
+        fullName = "Social Media"
+        default = false
+        label = "Social Media"
+      },
+      {
+        fullName = "Specials"
+        default = false
+        label = "Specials"
+      },
+      {
+        fullName = "Support"
+        default = false
+        label = "Support"
+      },
+      {
+        fullName = "Web"
+        default = false
+        label = "Web"
+      },
+      {
+        fullName = "Web Content"
+        default = false
+        label = "Web Content"
+      },
+      {
+        fullName = "Z431"
+        default = false
+        label = "Z431"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Expand Case attributes for email rules - T-697960"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = true
+    _hidden_value = true
+  }
+  salesforce.Text Region__c {
+    apiName = "Email_Rule__mdt.Region__c"
+    label = "Region"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Email: UK&I Case Attributes from Email Rules - T-702592"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

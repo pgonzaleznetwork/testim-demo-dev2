@@ -1,0 +1,11 @@
+salesforce.ApexClass INDICATOR_Controller {
+  apiVersion = 42
+  status = "Active"
+  fullName = "INDICATOR_Controller"
+  content = file("salesforce/Records/ApexClass/INDICATOR_Controller.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.INDICATOR_Service
+    },
+  ]
+}

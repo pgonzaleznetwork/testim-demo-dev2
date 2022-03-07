@@ -1,0 +1,85 @@
+salesforce.Layout Expense__c_Expense_Layout@uubs {
+  fullName = "Expense__c-Expense Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Expense__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Expense__c.field.Amount__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Expense__c.field.Client__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Expense__c.field.Date__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Expense__c.field.Reimbursed__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Expense__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Expense__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Expense__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Expense__c,
+  ]
+}

@@ -1,0 +1,578 @@
+salesforce.Layout Case_Case_Time_Tracking@bss {
+  fullName = "Case-Case Time Tracking"
+  emailDefault = false
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Entitlement"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.EntitlementId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Calculated_Account_Name__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Support_Group__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Ear_plug__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.ear_plug_name__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.SlaStartDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.SlaExitDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "General"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.AssetId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.CaseNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.BusinessHoursId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Reason
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Business_Unit__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.SuppliedEmail
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.SuppliedName
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Status
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Origin
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Priority
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.ContactId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Type
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.RecordTypeId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.SuppliedCompany
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.ClosedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Home Visit Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Region__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Scheduled_Home_Visit__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Actual_Home_Visit__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.SLA_Missed__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Scheduled_vs_Actual__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Comments
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Case Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Web Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Product__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.PotentialLiability__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.EngineeringReqNumber__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.SLAViolation__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Description Information"
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Case Time Tracking Detail"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Overall_Case_Time_Business_Hrs__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Overall_Case_Time_Calendar_Hrs__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Total_Finance_Business_Hrs__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Total_Resolution_Business_Hrs__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.Total_Vendor_Business_Hrs__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              customLink = salesforce.WebLink.instance.Case_UpsellCrosssellOpportunity
+            },
+          ]
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = salesforce.QuickAction.instance.Case_Niels_Email@vu
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.New_Campaign
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = "FeedItem.TextPost"
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = "FeedItem.ContentPost"
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 5
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewContact
+        actionType = "QuickAction"
+        sortOrder = 6
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 7
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 8
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionType = "QuickAction"
+        sortOrder = 9
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewCase
+        actionType = "QuickAction"
+        sortOrder = 10
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewLead
+        actionType = "QuickAction"
+        sortOrder = 11
+      },
+      {
+        actionName = "FeedItem.LinkPost"
+        actionType = "QuickAction"
+        sortOrder = 12
+      },
+      {
+        actionName = "FeedItem.PollPost"
+        actionType = "QuickAction"
+        sortOrder = 13
+      },
+      {
+        actionName = "FeedItem.QuestionPost"
+        actionType = "QuickAction"
+        sortOrder = 14
+      },
+      {
+        actionName = "ChangeOwnerOne"
+        actionType = "StandardButton"
+        sortOrder = 15
+      },
+      {
+        actionName = "ChangeRecordType"
+        actionType = "StandardButton"
+        sortOrder = 16
+      },
+      {
+        actionName = "CloseCase"
+        actionType = "StandardButton"
+        sortOrder = 17
+      },
+      {
+        actionName = "Submit"
+        actionType = "StandardButton"
+        sortOrder = 18
+      },
+      {
+        actionName = "Share"
+        actionType = "StandardButton"
+        sortOrder = 19
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 20
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 21
+      },
+      {
+        actionName = "Clone"
+        actionType = "StandardButton"
+        sortOrder = 22
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Case.field.ContactId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Case.field.AccountId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "MILESTONETYPE.MILESTONE",
+        "CASEMILESTONE.TARGET_DATE",
+        "CASEMILESTONE.COMPLETION_DATE",
+        "CASEMILESTONE.TIME_REMAIN_MINS",
+        "CASEMILESTONE.IS_VIOLATED_IN",
+        "CASEMILESTONE.IS_COMPLETED_IN",
+      ]
+      relatedList = "RelatedCaseMilestoneList"
+    },
+    {
+      relatedList = "RelatedEmailMessageList"
+    },
+    {
+      fields = [
+        "TITLE",
+        "LAST_UPDATE",
+        "CREATEDBY_USER",
+      ]
+      relatedList = "RelatedArticleList"
+    },
+    {
+      fields = [
+        "SOLUTION.ISSUE",
+        "SOLUTION.SOLUTION_NUMBER",
+        "SOLUTION.STATUS",
+        "CORE.USERS.ALIAS",
+      ]
+      relatedList = "RelatedSolutionList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedCommentsList"
+    },
+    {
+      relatedList = "RelatedAttachmentList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "New_Status__c",
+        "Start_time__c",
+        "End_time__c",
+        "CaseAge_Business_Hours__c",
+        "CaseAge_Calendar_Hours__c",
+        "Current_Time_Bucket__c",
+      ]
+      relatedList = salesforce.Case_Status_History__c.field.Case__c
+      sortField = "Start_time__c"
+      sortOrder = "Desc"
+    },
+  ]
+  relatedObjects = [
+    "ContactId",
+    "AccountId",
+  ]
+  runAssignmentRulesDefault = false
+  showEmailCheckbox = true
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showKnowledgeComponent = false
+  showRunAssignmentRulesCheckbox = true
+  showSubmitAndAttachButton = true
+  summaryLayout = {
+    masterLabel = "00h0O00000NMmHO"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

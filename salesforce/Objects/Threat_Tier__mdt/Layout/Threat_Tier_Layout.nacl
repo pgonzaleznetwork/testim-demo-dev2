@@ -1,0 +1,85 @@
+salesforce.Layout Threat_Tier__mdt_Threat_Tier_Layout@uuubss {
+  fullName = "Threat_Tier__mdt-Threat Tier Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Threat_Tier__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Threat_Tier__mdt.field.DeveloperName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Threat_Tier__mdt.field.Account_Tier__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Threat_Tier__mdt.field.Vacation__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Threat_Tier__mdt.field.NamespacePrefix
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Threat_Tier__mdt,
+  ]
+}

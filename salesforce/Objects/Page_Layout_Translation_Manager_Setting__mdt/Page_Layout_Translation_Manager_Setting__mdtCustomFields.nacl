@@ -1,0 +1,15 @@
+type salesforce.Page_Layout_Translation_Manager_Setting__mdt {
+  salesforce.Text Page_Layout_Name_in_Tests__c {
+    apiName = "Page_Layout_Translation_Manager_Setting__mdt.Page_Layout_Name_in_Tests__c"
+    label = "Page Layout Name in Tests"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

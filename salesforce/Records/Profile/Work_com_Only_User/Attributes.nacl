@@ -1,0 +1,5 @@
+salesforce.Profile Work_2Ecom_Only_User@pss {
+  fullName = "Work%2Ecom Only User"
+  custom = false
+  userLicense = "Work.com Only"
+}

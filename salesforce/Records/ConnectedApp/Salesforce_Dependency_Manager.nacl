@@ -1,0 +1,32 @@
+salesforce.ConnectedApp Salesforce_Dependency_Manager {
+  fullName = "Salesforce_Dependency_Manager"
+  contactEmail = "pgonzaleznetwork@gmail.com"
+  description = "100% and open-source impact analysis"
+  label = "HappySoup.io"
+  oauthConfig = {
+    callbackUrl = '''
+http://localhost:3000/oauth2/callback
+https://sfdc-happy-soup.herokuapp.com/oauth2/callback
+https://happysoup.io/oauth2/callback
+https://www.happysoup.io/oauth2/callback
+https://happysoup2-beta.herokuapp.com/oauth2/callback
+'''
+    consumerKey = "3MVG9I5UQ_0k_hTmZuUMosHPf.2zqzHBqd0j.GMmnThrGhd53n4prfPpHNqSAPRrWzc7Hb0ul.s2m4VYoiWyZ"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = [
+      "Basic",
+      "Api",
+      "Web",
+      "RefreshToken",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+  sessionPolicy = {
+    sessionTimeout = 0
+  }
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass StringStack_Test {
+  apiVersion = 42
+  status = "Active"
+  fullName = "StringStack_Test"
+  content = file("salesforce/Records/ApexClass/StringStack_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.StringStack
+    },
+  ]
+}

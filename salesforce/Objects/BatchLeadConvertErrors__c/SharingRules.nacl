@@ -1,0 +1,6 @@
+salesforce.SharingRules BatchLeadConvertErrors__c {
+  fullName = "BatchLeadConvertErrors__c"
+  _parent = [
+    salesforce.BatchLeadConvertErrors__c,
+  ]
+}

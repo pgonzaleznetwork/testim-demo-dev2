@@ -1,0 +1,11 @@
+salesforce.ApexClass AmossTest_ClassToDouble {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossTest_ClassToDouble"
+  content = file("salesforce/Records/ApexClass/AmossTest_ClassToDouble.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

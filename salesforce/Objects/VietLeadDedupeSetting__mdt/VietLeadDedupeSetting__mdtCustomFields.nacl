@@ -1,0 +1,28 @@
+type salesforce.VietLeadDedupeSetting__mdt {
+  salesforce.Text Field1ApiName__c {
+    apiName = "VietLeadDedupeSetting__mdt.Field1ApiName__c"
+    label = "Field1ApiName"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Text Field2ApiName__c {
+    apiName = "VietLeadDedupeSetting__mdt.Field2ApiName__c"
+    label = "Field2ApiName"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 200
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,20 @@
+salesforce.ApexClass OpportunityTriggerHandlerTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "OpportunityTriggerHandlerTest"
+  content = file("salesforce/Records/ApexClass/OpportunityTriggerHandlerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.TriggerSettings__c
+    },
+    {
+      reference = salesforce.TriggerSettings__c.field.Disabled__c
+    },
+    {
+      reference = salesforce.TriggerStatus__mdt
+    },
+    {
+      reference = salesforce.TriggerStatus__mdt.field.Disabled__c
+    },
+  ]
+}

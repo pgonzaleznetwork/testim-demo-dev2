@@ -1,0 +1,17 @@
+salesforce.ApexClass LeadTriggerActions {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadTriggerActions"
+  content = file("salesforce/Records/ApexClass/LeadTriggerActions.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LeadObjs
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerActionsOld
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

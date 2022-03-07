@@ -1,0 +1,8 @@
+salesforce.ListView Delivery_Agency__c_All {
+  fullName = "Delivery_Agency__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Delivery_Agency__c,
+  ]
+}

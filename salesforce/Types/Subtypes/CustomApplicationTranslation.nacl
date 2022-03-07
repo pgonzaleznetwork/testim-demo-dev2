@@ -1,0 +1,21 @@
+type salesforce.CustomApplicationTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string label {
+  }
+  string name {
+  }
+  metadataType = "CustomApplicationTranslation"
+}

@@ -1,0 +1,7 @@
+salesforce.AuraDefinitionBundle ValueChange {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "ValueChange"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/ValueChange/ValueChange.evt")
+}

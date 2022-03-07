@@ -1,0 +1,37 @@
+type salesforce.Camping_Item__c {
+  salesforce.Number Quantity__c {
+    apiName = "Camping_Item__c.Quantity__c"
+    label = "Quantity"
+    _required = true
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Currency Price__c {
+    apiName = "Camping_Item__c.Price__c"
+    label = "Price"
+    _required = true
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox Packed__c {
+    apiName = "Camping_Item__c.Packed__c"
+    label = "Packed"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

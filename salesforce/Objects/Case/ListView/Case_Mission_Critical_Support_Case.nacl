@@ -1,0 +1,12 @@
+salesforce.ListView Case_Mission_Critical_Support_Case {
+  fullName = "Case.Mission_Critical_Support_Case"
+  filterScope = "Queue"
+  label = "Mission Critical Support"
+  queue = "Mission_Critical_Support"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

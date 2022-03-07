@@ -1,0 +1,104 @@
+salesforce.ApexClass apexLogHandler {
+  apiVersion = 29
+  status = "Active"
+  fullName = "apexLogHandler"
+  content = file("salesforce/Records/ApexClass/apexLogHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexLogSettings__c
+    },
+    {
+      reference = salesforce.ApexLogSettings__c.field.Activate_System_Logs__c
+    },
+    {
+      reference = salesforce.ApexLogSettings__c.field.Active__c
+    },
+    {
+      reference = salesforce.ApexLogSettings__c.field.LogDmlExceptions__c
+    },
+    {
+      reference = salesforce.ApexLogSettings__c.field.Log_Level__c
+    },
+    {
+      reference = salesforce.ApexLogSettings__c.field.Send_Email__c
+    },
+    {
+      reference = salesforce.Apex_Log__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Exception_Cause__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Exception_Line_Number__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Exception_Stack_Trace_String__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Exception_Type__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Lead__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Log_Type__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Message__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Reference_ID__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Status_Code__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.Status_Message__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.class_name__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.method_name__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.request_info__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.response_info__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.start_dtm__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.start_ms__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.stop_dtm__c
+    },
+    {
+      reference = salesforce.Apex_Log__c.field.stop_ms__c
+    },
+    {
+      reference = salesforce.DMLSysException__c
+    },
+    {
+      reference = salesforce.DMLSysException__c.field.Apex_Log__c
+    },
+    {
+      reference = salesforce.DMLSysException__c.field.DML_Field_Names__c
+    },
+    {
+      reference = salesforce.DMLSysException__c.field.DML_ID__c
+    },
+    {
+      reference = salesforce.DMLSysException__c.field.DML_Index__c
+    },
+    {
+      reference = salesforce.DMLSysException__c.field.DML_Message__c
+    },
+    {
+      reference = salesforce.DMLSysException__c.field.DML_Type__c
+    },
+  ]
+}

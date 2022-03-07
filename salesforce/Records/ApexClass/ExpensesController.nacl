@@ -1,0 +1,23 @@
+salesforce.ApexClass ExpensesController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ExpensesController"
+  content = file("salesforce/Records/ApexClass/ExpensesController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Expense__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Amount__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Date__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Reimbursed__c
+    },
+  ]
+}

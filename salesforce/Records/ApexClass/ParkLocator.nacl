@@ -1,0 +1,11 @@
+salesforce.ApexClass ParkLocator {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ParkLocator"
+  content = file("salesforce/Records/ApexClass/ParkLocator.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ParkService
+    },
+  ]
+}

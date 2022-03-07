@@ -1,0 +1,6 @@
+salesforce.UserCriteria CloudKicksTheme_Customer_Members@vu {
+  fullName = "CloudKicksTheme.Customer_Members"
+  description = "Member criteria matches customer members"
+  masterLabel = "Customer Members"
+  userTypes = "Customer"
+}

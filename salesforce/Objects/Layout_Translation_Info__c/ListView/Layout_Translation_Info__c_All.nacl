@@ -1,0 +1,8 @@
+salesforce.ListView Layout_Translation_Info__c_All {
+  fullName = "Layout_Translation_Info__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Layout_Translation_Info__c,
+  ]
+}

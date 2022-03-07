@@ -1,0 +1,6 @@
+salesforce.SharingRules RecordsetFilterCriteria {
+  fullName = "RecordsetFilterCriteria"
+  _parent = [
+    salesforce.RecordsetFilterCriteria,
+  ]
+}

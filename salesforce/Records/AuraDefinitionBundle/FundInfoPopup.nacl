@@ -1,0 +1,33 @@
+salesforce.AuraDefinitionBundle FundInfoPopup {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "FundInfoPopup"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/FundInfoPopup/FundInfoPopupHelper.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/FundInfoPopup/FundInfoPopup.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/FundInfoPopup/FundInfoPopup.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/FundInfoPopup/FundInfoPopupController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundInfoPopup
+    },
+    {
+      reference = salesforce.Fund__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Asset_Class__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Five_Year_Return__c
+    },
+    {
+      reference = salesforce.Fund__c.field.One_Year_Return__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Two_Year_Return__c
+    },
+    {
+      reference = salesforce.Fund__c.field.YTD_Return__c
+    },
+  ]
+}

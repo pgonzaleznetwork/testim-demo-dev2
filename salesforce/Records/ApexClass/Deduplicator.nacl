@@ -1,0 +1,6 @@
+salesforce.ApexClass Deduplicator {
+  apiVersion = 41
+  status = "Active"
+  fullName = "Deduplicator"
+  content = file("salesforce/Records/ApexClass/Deduplicator.cls")
+}

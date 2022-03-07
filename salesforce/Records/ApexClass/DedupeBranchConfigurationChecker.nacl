@@ -1,0 +1,20 @@
+salesforce.ApexClass DedupeBranchConfigurationChecker {
+  apiVersion = 44
+  status = "Active"
+  fullName = "DedupeBranchConfigurationChecker"
+  content = file("salesforce/Records/ApexClass/DedupeBranchConfigurationChecker.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Dedupe_Branch__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_Set_This_Field__c
+    },
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_Set_This_Field__c
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

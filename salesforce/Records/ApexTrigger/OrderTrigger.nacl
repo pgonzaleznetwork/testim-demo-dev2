@@ -1,0 +1,14 @@
+salesforce.ApexTrigger OrderTrigger {
+  apiVersion = 43
+  status = "Active"
+  fullName = "OrderTrigger"
+  content = file("salesforce/Records/ApexTrigger/OrderTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.EarPlugWithSharing
+    },
+    {
+      reference = salesforce.Order
+    },
+  ]
+}

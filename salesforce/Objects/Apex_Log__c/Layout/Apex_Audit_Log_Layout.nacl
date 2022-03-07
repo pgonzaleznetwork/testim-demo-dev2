@@ -1,0 +1,240 @@
+salesforce.Layout Apex_Log__c_Apex_Audit_Log_Layout@uuubsss {
+  fullName = "Apex_Log__c-Apex Audit Log Layout"
+  excludeButtons = [
+    "Clone",
+    "Delete",
+    "Edit",
+    "Share",
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Apex_Log__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Reference_ID__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.class_name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.method_name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Status_Code__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Status_Message__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Log_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Province__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.District__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Lead__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.start_dtm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.start_ms__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.stop_dtm__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.stop_ms__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Messages"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Message__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Callout/Webservice Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.request_info__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.response_info__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Exception Info"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Exception_Line_Number__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Exception_Type__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Exception Info2"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Exception_Cause__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Apex_Log__c.field.Exception_Stack_Trace_String__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Apex_Log__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Apex_Log__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Name",
+      "class_name__c",
+      "method_name__c",
+      "Message__c",
+      "CreatedById",
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.DMLSysException__c.field.Apex_Log__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = true
+  showInteractionLogPanel = true
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00hi00000029Wsg"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Apex_Log__c,
+  ]
+}

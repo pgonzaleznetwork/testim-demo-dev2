@@ -1,0 +1,21 @@
+salesforce.AuraDefinitionBundle PercentReturnRange {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "PercentReturnRange"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/PercentReturnRange/PercentReturnRange.css")
+  designContent = file("salesforce/Records/AuraDefinitionBundle/PercentReturnRange/PercentReturnRange.design")
+  markup = file("salesforce/Records/AuraDefinitionBundle/PercentReturnRange/PercentReturnRange.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/PercentReturnRange/PercentReturnRangeController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.PercentReturnRange
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.RangeChange
+    },
+    {
+      reference = salesforce.StaticResource.instance.nouislider
+    },
+  ]
+}

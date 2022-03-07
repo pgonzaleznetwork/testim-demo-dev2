@@ -1,0 +1,20 @@
+salesforce.ApexClass FundControllerTest {
+  apiVersion = 39
+  status = "Active"
+  fullName = "FundControllerTest"
+  content = file("salesforce/Records/ApexClass/FundControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.FundController
+    },
+    {
+      reference = salesforce.Fund__c
+    },
+    {
+      reference = salesforce.Fund__c.field.Sector__c
+    },
+    {
+      reference = salesforce.Sector__c
+    },
+  ]
+}

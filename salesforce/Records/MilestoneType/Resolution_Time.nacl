@@ -1,0 +1,5 @@
+salesforce.MilestoneType Resolution_Time@s {
+  fullName = "Resolution Time"
+  description = "The time given to resolve a customer’s issue. The countdown starts when the case is created and ends when the case Status is changed to Closed"
+  recurrenceType = "none"
+}

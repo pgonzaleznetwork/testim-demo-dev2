@@ -1,0 +1,30 @@
+salesforce.AuraDefinitionBundle WizardApplication {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "WizardApplication"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/WizardApplication/WizardApplication.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardApplication
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardComponent1
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardComponent2
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardComponent3
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardContainer
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.passData
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.showComponent
+    },
+  ]
+}

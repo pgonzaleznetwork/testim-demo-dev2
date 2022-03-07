@@ -1,0 +1,23 @@
+salesforce.ApexPage AccountPagination {
+  apiVersion = 41
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "AccountPagination"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "AccountPagination"
+  content = file("salesforce/Records/ApexPage/AccountPagination.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountPaginationController
+    },
+  ]
+}

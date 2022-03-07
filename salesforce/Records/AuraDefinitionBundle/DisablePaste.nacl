@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle DisablePaste {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "DisablePaste"
+  type = "Component"
+  rendererContent = file("salesforce/Records/AuraDefinitionBundle/DisablePaste/DisablePasteRenderer.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/DisablePaste/DisablePaste.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.DisablePaste
+    },
+  ]
+}

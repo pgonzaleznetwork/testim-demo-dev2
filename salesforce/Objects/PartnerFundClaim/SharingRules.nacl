@@ -1,0 +1,6 @@
+salesforce.SharingRules PartnerFundClaim {
+  fullName = "PartnerFundClaim"
+  _parent = [
+    salesforce.PartnerFundClaim,
+  ]
+}

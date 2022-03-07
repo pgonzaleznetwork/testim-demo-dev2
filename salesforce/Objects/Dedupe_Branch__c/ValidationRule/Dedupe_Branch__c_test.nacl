@@ -1,0 +1,15 @@
+salesforce.ValidationRule Dedupe_Branch__c_test {
+  fullName = "Dedupe_Branch__c.test"
+  active = true
+  errorConditionFormula = "ISNULL( False_Set_This_Field__c)   &&  NOT(ISNULL( False_To_This_Value__c ) )"
+  errorDisplayField = salesforce.Dedupe_Branch__c.field.False_To_This_Value__c
+  errorMessage = "test"
+  _parent = [
+    salesforce.Dedupe_Branch__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Dedupe_Branch__c.field.False_Set_This_Field__c
+    },
+  ]
+}

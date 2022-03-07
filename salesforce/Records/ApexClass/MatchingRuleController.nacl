@@ -1,0 +1,26 @@
+salesforce.ApexClass MatchingRuleController {
+  apiVersion = 43
+  status = "Active"
+  fullName = "MatchingRuleController"
+  content = file("salesforce/Records/ApexClass/MatchingRuleController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MatchingRuleConfigurationChecker
+    },
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Matching_Rule__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Lead_Evaluated_Field__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Matching_Field__c
+    },
+    {
+      reference = salesforce.Matching_Rule__c.field.Matching_Object__c
+    },
+  ]
+}

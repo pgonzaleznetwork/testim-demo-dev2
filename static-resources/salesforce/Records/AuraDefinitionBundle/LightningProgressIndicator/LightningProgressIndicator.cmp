@@ -1,0 +1,18 @@
+<aura:component >
+    
+    <aura:attribute type="Integer" name="selectedStep" default="1"/>
+    
+	<lightning:progressIndicator aura:id="indicator" type="base" variant="base" currentStep="1">
+        <lightning:progressStep label="Get lead details" value="1"/>
+        <lightning:progressStep label="Confirm Product Information" value="2"/>
+        <lightning:progressStep label="Send Email" value="3"/>
+    </lightning:progressIndicator>
+    
+    <aura:if isTrue="{!v.selectedStep >= 3}">
+        <aura:set attribute="else">
+            <lightning:button class="slds-m-top_small" variant="brand" label="Next" onclick="{!c.handleClick}"/>
+        </aura:set>
+    </aura:if>
+    
+    
+</aura:component>

@@ -1,0 +1,72 @@
+type salesforce.Dedupe_Scenario__c {
+  salesforce.Number Evaluation_Order__c {
+    apiName = "Dedupe_Scenario__c.Evaluation_Order__c"
+    label = "Evaluation Order"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Picklist Duplicate_Reason__c {
+    apiName = "Dedupe_Scenario__c.Duplicate_Reason__c"
+    label = "Duplicate Reason"
+    valueSet = [
+      {
+        fullName = "Existing mom, new child"
+        default = false
+        label = "Existing mom, new child"
+      },
+      {
+        fullName = "Existing mom, existing child"
+        default = false
+        label = "Existing mom, existing child"
+      },
+      {
+        fullName = "New mom, new baby"
+        default = false
+        label = "New mom, new baby"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Country__c {
+    apiName = "Dedupe_Scenario__c.Country__c"
+    label = "Country"
+    valueSet = [
+      {
+        fullName = "Vietnam"
+        default = false
+        label = "Vietnam"
+      },
+      {
+        fullName = "Singapore"
+        default = false
+        label = "Singapore"
+      },
+      {
+        fullName = "Malaysia"
+        default = false
+        label = "Malaysia"
+      },
+    ]
+    restricted = true
+    inlineHelpText = "The name of the Country that this scenario applies to. Only Leads with this Country will be processed through this scenario."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The name of the Country that this scenario applies to. Only Leads with this Country will be processed through this scenario."
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+}

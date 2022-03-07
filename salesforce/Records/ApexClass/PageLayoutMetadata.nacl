@@ -1,0 +1,11 @@
+salesforce.ApexClass PageLayoutMetadata {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutMetadata"
+  content = file("salesforce/Records/ApexClass/PageLayoutMetadata.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutMetadataI
+    },
+  ]
+}

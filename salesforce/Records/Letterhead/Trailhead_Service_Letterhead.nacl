@@ -1,0 +1,31 @@
+salesforce.Letterhead Trailhead_Service_Letterhead {
+  fullName = "Trailhead_Service_Letterhead"
+  available = true
+  backgroundColor = "#CCCCCC"
+  bodyColor = "#FFFFFF"
+  bottomLine = {
+    color = "#AAAAFF"
+    height = 5
+  }
+  footer = {
+    backgroundColor = "#FFFFFF"
+    height = 100
+    horizontalAlignment = "Left"
+    verticalAlignment = "Top"
+  }
+  header = {
+    backgroundColor = "#FFFFFF"
+    height = 100
+    horizontalAlignment = "Left"
+    verticalAlignment = "Top"
+  }
+  middleLine = {
+    color = "#AAAAFF"
+    height = 5
+  }
+  name = "Trailhead Service Letterhead"
+  topLine = {
+    color = "#AAAAFF"
+    height = 5
+  }
+}

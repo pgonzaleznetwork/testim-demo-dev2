@@ -1,0 +1,53 @@
+salesforce.QuickAction Account_relatedAccount@v {
+  fullName = "Account.relatedAccount"
+  label = "Account Details :)"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Name
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Phone
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Industry
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Type
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Website
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.AccountNumber
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  successMessage = "Whop whop!"
+  type = "Update"
+  _parent = [
+    salesforce.Account,
+  ]
+}

@@ -1,0 +1,83 @@
+type salesforce.Email_Routing_Rule__c {
+  salesforce.Picklist Business_Unit__c {
+    apiName = "Email_Routing_Rule__c.Business_Unit__c"
+    label = "Business Unit"
+    valueSet = [
+      {
+        fullName = "Germany"
+        default = false
+        label = "Germany"
+      },
+      {
+        fullName = "UK"
+        default = false
+        label = "UK"
+      },
+      {
+        fullName = "France"
+        default = false
+        label = "France"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Number Sort_Order__c {
+    apiName = "Email_Routing_Rule__c.Sort_Order__c"
+    label = "Sort Order"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Picklist Case_Status__c {
+    apiName = "Email_Routing_Rule__c.Case_Status__c"
+    label = "Case Status"
+    valueSet = [
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Channel__c {
+    apiName = "Email_Routing_Rule__c.Channel__c"
+    label = "Channel"
+    valueSet = [
+      {
+        fullName = "Online"
+        default = false
+        label = "Online"
+      },
+      {
+        fullName = "Advantage"
+        default = false
+        label = "Advantage"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+}

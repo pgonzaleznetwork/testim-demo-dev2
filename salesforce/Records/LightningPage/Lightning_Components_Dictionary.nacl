@@ -1,0 +1,34 @@
+salesforce.LightningPage Lightning_Components_Dictionary {
+  fullName = "Lightning_Components_Dictionary"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "ContainerSample"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "GridTest"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Lightning Components Dictionary"
+  template = {
+    name = "flexipage:defaultAppHomeTemplate"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ContainerSample
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.GridTest
+    },
+  ]
+}

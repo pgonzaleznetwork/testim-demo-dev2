@@ -1,0 +1,81 @@
+salesforce.RecordType Contact_Child {
+  fullName = "Contact.Child"
+  active = true
+  label = "Child"
+  picklistValues = [
+    {
+      picklist = salesforce.Contact.field.LeadSource
+      values = [
+        {
+          fullName = "Other"
+          default = false
+        },
+        {
+          fullName = "Partner Referral"
+          default = false
+        },
+        {
+          fullName = "Phone Inquiry"
+          default = false
+        },
+        {
+          fullName = "Purchased List"
+          default = false
+        },
+        {
+          fullName = "Web"
+          default = false
+        },
+        {
+          fullName = "Where is this shown%3F"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Contact.field.Level__c
+      values = [
+        {
+          fullName = "Primary"
+          default = false
+        },
+        {
+          fullName = "Secondary"
+          default = false
+        },
+        {
+          fullName = "Tertiary"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Contact.field.Name
+      values = [
+        {
+          fullName = "Dr%2E"
+          default = false
+        },
+        {
+          fullName = "Mr%2E"
+          default = false
+        },
+        {
+          fullName = "Mrs%2E"
+          default = false
+        },
+        {
+          fullName = "Ms%2E"
+          default = false
+        },
+        {
+          fullName = "Prof%2E"
+          default = false
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.Contact,
+  ]
+}

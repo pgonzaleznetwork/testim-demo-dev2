@@ -1,0 +1,8 @@
+salesforce.ListView JobProfile_My_JobProfiles {
+  fullName = "JobProfile.My_JobProfiles"
+  filterScope = "Mine"
+  label = "My Job Profiles"
+  _parent = [
+    salesforce.JobProfile,
+  ]
+}

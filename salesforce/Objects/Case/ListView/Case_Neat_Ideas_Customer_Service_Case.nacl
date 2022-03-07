@@ -1,0 +1,12 @@
+salesforce.ListView Case_Neat_Ideas_Customer_Service_Case {
+  fullName = "Case.Neat_Ideas_Customer_Service_Case"
+  filterScope = "Queue"
+  label = "Neat Ideas Customer Service"
+  queue = "Neat_Ideas_Customer_Service"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

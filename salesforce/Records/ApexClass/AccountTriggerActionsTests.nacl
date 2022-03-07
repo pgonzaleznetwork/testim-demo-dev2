@@ -1,0 +1,14 @@
+salesforce.ApexClass AccountTriggerActionsTests {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AccountTriggerActionsTests"
+  content = file("salesforce/Records/ApexClass/AccountTriggerActionsTests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

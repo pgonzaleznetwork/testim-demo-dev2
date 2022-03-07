@@ -1,0 +1,17 @@
+salesforce.ApexClass ClassB {
+  apiVersion = 49
+  status = "Active"
+  fullName = "ClassB"
+  content = file("salesforce/Records/ApexClass/ClassB.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Customer_ID__c
+    },
+    {
+      reference = salesforce.Account.field.Field_being_used__c
+    },
+  ]
+}

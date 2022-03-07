@@ -1,0 +1,20 @@
+salesforce.ApexClass TriggerFrameworkTests {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerFrameworkTests"
+  content = file("salesforce/Records/ApexClass/TriggerFrameworkTests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.SObjectTriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.SObjectTriggerHandlerMock
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerActionsMock
+    },
+  ]
+}

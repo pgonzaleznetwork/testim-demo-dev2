@@ -1,0 +1,35 @@
+type salesforce.ShipmentItem {
+  string Description {
+    _hidden_value = true
+  }
+  string ExpectedDeliveryDate {
+    _hidden_value = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "ShipmentItem.Product2Id"
+    trackHistory = false
+    _hidden_value = true
+  }
+  string Quantity {
+    _hidden_value = true
+  }
+  salesforce.Lookup ReturnOrderLineItemId {
+    apiName = "ShipmentItem.ReturnOrderLineItemId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ShipmentId {
+    apiName = "ShipmentItem.ShipmentId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  string ShipmentItemNumber {
+    _hidden_value = true
+  }
+  string TrackingNumber {
+    _hidden_value = true
+  }
+  string TrackingUrl {
+    _hidden_value = true
+  }
+}

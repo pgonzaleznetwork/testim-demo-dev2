@@ -1,0 +1,60 @@
+salesforce.CustomApplication Dedupe_Manager_Lightning {
+  fullName = "Dedupe_Manager_Lightning"
+  actionOverrides = [
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Dedupe_Scenario_Record_Page1"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Dedupe_Scenario__c"
+    },
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Dedupe_Branch_Record_Page"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Dedupe_Branch__c"
+    },
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Lead_Record_Page"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Lead"
+    },
+  ]
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Dedupe Manager Lightning"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    "standard-home",
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    "standard-Account",
+    "standard-Contact",
+    "standard-Lead",
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+}

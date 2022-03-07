@@ -1,0 +1,206 @@
+type salesforce.PartnerMarketingBudget {
+  serviceid Id {
+    apiName = "PartnerMarketingBudget.Id"
+    label = "Partner Marketing Budget ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartnerMarketingBudget.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartnerMarketingBudget.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "PartnerMarketingBudget.Title"
+    label = "Partner Marketing Budget Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartnerMarketingBudget.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartnerMarketingBudget.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartnerMarketingBudget.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartnerMarketingBudget.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartnerMarketingBudget.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.TextArea Description {
+    apiName = "PartnerMarketingBudget.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Currency Amount {
+    apiName = "PartnerMarketingBudget.Amount"
+    label = "Amount"
+    _required = true
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "PartnerMarketingBudget.Type"
+    label = "Budget Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Marketing Funds"
+        default = true
+        label = "Marketing Funds"
+        isActive = true
+      },
+      {
+        fullName = "Co-Operated Budget"
+        default = false
+        label = "Co-Operated Budget"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date StartDate {
+    apiName = "PartnerMarketingBudget.StartDate"
+    label = "Start Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "PartnerMarketingBudget.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsIgnoreValidation {
+    apiName = "PartnerMarketingBudget.IsIgnoreValidation"
+    label = "Ignore Validation Rules"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ChannelPartnerId {
+    apiName = "PartnerMarketingBudget.ChannelPartnerId"
+    label = "Channel Partner ID"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ChannelPartner"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Currency TotalAllocatedAmount {
+    apiName = "PartnerMarketingBudget.TotalAllocatedAmount"
+    label = "Total Allocated Amount"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalApprovedFrs {
+    apiName = "PartnerMarketingBudget.TotalApprovedFrs"
+    label = "Total Approved Fund Requests"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalApprovedFcs {
+    apiName = "PartnerMarketingBudget.TotalApprovedFcs"
+    label = "Total Approved Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalReimbursedFcs {
+    apiName = "PartnerMarketingBudget.TotalReimbursedFcs"
+    label = "Total Reimbursed Fund Claims"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+}

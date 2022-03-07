@@ -1,0 +1,14 @@
+salesforce.ApexClass TranslationFileBuilder_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslationFileBuilder_Test"
+  content = file("salesforce/Records/ApexClass/TranslationFileBuilder_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SubmitPageLayoutInfo_LEX_Controller
+    },
+    {
+      reference = salesforce.Translation_Context__c
+    },
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.CustomTab Translation_Key__c {
+  fullName = "Translation_Key__c"
+  customObject = true
+  motif = "Custom56: Bottle"
+  _parent = [
+    salesforce.Translation_Key__c,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.SharingRules SchedulingConstraint {
+  fullName = "SchedulingConstraint"
+  _parent = [
+    salesforce.SchedulingConstraint,
+  ]
+}

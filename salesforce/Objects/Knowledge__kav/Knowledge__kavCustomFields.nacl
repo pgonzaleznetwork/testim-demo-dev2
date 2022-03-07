@@ -1,0 +1,13 @@
+type salesforce.Knowledge__kav {
+  salesforce.Html ArticleBody__c {
+    apiName = "Knowledge__kav.ArticleBody__c"
+    label = "ArticleBody"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    visibleLines = 25
+  }
+}

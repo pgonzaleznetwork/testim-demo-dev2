@@ -1,0 +1,11 @@
+salesforce.ApexClass LightningPathController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "LightningPathController"
+  content = file("salesforce/Records/ApexClass/LightningPathController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Energy_Audit__c
+    },
+  ]
+}

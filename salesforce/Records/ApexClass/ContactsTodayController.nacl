@@ -1,0 +1,20 @@
+salesforce.ApexClass ContactsTodayController {
+  apiVersion = 33
+  status = "Active"
+  fullName = "ContactsTodayController"
+  content = file("salesforce/Records/ApexClass/ContactsTodayController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Event
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+}

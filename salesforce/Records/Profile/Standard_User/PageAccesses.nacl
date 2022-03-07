@@ -1,0 +1,148 @@
+salesforce.Profile Standard {
+  pageAccesses = {
+    AccountPagination = {
+      apexPage = "AccountPagination"
+      enabled = false
+    }
+    AnswersHome = {
+      apexPage = "AnswersHome"
+      enabled = false
+    }
+    BandwidthExceeded = {
+      apexPage = "BandwidthExceeded"
+      enabled = false
+    }
+    ChangePassword = {
+      apexPage = "ChangePassword"
+      enabled = false
+    }
+    CommunitiesLanding = {
+      apexPage = "CommunitiesLanding"
+      enabled = false
+    }
+    CommunitiesLogin = {
+      apexPage = "CommunitiesLogin"
+      enabled = false
+    }
+    CommunitiesSelfReg = {
+      apexPage = "CommunitiesSelfReg"
+      enabled = false
+    }
+    CommunitiesSelfRegConfirm = {
+      apexPage = "CommunitiesSelfRegConfirm"
+      enabled = false
+    }
+    CommunitiesTemplate = {
+      apexPage = "CommunitiesTemplate"
+      enabled = false
+    }
+    CustomLogoutComponent = {
+      apexPage = "CustomLogoutComponent"
+      enabled = false
+    }
+    Exception = {
+      apexPage = "Exception"
+      enabled = false
+    }
+    FileNotFound = {
+      apexPage = "FileNotFound"
+      enabled = false
+    }
+    ForgotPassword = {
+      apexPage = "ForgotPassword"
+      enabled = false
+    }
+    ForgotPasswordConfirm = {
+      apexPage = "ForgotPasswordConfirm"
+      enabled = false
+    }
+    HotelMap = {
+      apexPage = "HotelMap"
+      enabled = false
+    }
+    IdeasHome = {
+      apexPage = "IdeasHome"
+      enabled = false
+    }
+    InMaintenance = {
+      apexPage = "InMaintenance"
+      enabled = false
+    }
+    LightningConnectQuickstart = {
+      apexPage = "LightningConnectQuickstart"
+      enabled = false
+    }
+    LoadZBSData = {
+      apexPage = "LoadZBSData"
+      enabled = true
+    }
+    MicrobatchSelfReg = {
+      apexPage = "MicrobatchSelfReg"
+      enabled = false
+    }
+    MobileVF = {
+      apexPage = "MobileVF"
+      enabled = false
+    }
+    ModifyCSS = {
+      apexPage = "ModifyCSS"
+      enabled = false
+    }
+    MyProfilePage = {
+      apexPage = "MyProfilePage"
+      enabled = false
+    }
+    OpptyPagination = {
+      apexPage = "OpptyPagination"
+      enabled = false
+    }
+    PageUsingField = {
+      apexPage = "PageUsingField"
+      enabled = false
+    }
+    SLDSExample = {
+      apexPage = "SLDSExample"
+      enabled = false
+    }
+    SiteLogin = {
+      apexPage = "SiteLogin"
+      enabled = false
+    }
+    SiteRegister = {
+      apexPage = "SiteRegister"
+      enabled = false
+    }
+    SiteRegisterConfirm = {
+      apexPage = "SiteRegisterConfirm"
+      enabled = false
+    }
+    SiteTemplate = {
+      apexPage = "SiteTemplate"
+      enabled = false
+    }
+    SpeakerForm = {
+      apexPage = "SpeakerForm"
+      enabled = false
+    }
+    StdExceptionTemplate = {
+      apexPage = "StdExceptionTemplate"
+      enabled = false
+    }
+    Unauthorized = {
+      apexPage = "Unauthorized"
+      enabled = false
+    }
+    UnderConstruction = {
+      apexPage = "UnderConstruction"
+      enabled = false
+    }
+    VATRateForm = {
+      apexPage = "VATRateForm"
+      enabled = false
+    }
+    th_con_app__ThHomepage = {
+      apexPage = "th_con_app__ThHomepage"
+      enabled = false
+    }
+  }
+}

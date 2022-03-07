@@ -1,0 +1,11 @@
+salesforce.ApexClass MarketoEndpoint {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MarketoEndpoint"
+  content = file("salesforce/Records/ApexClass/MarketoEndpoint.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.APIEndpoint
+    },
+  ]
+}

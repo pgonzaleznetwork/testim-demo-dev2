@@ -1,0 +1,8 @@
+salesforce.CustomTab Show__c {
+  fullName = "Show__c"
+  customObject = true
+  motif = "Custom35: Microphone"
+  _parent = [
+    salesforce.Show__c,
+  ]
+}

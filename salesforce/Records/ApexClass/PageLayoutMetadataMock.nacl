@@ -1,0 +1,11 @@
+salesforce.ApexClass PageLayoutMetadataMock {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutMetadataMock"
+  content = file("salesforce/Records/ApexClass/PageLayoutMetadataMock.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutMetadataI
+    },
+  ]
+}

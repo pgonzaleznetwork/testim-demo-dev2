@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle IndicatorBadge {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "IndicatorBadge"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/IndicatorBadge/IndicatorBadge.cmp")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/IndicatorBadge/IndicatorBadge.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.IndicatorBadge
+    },
+  ]
+}

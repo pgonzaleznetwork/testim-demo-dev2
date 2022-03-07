@@ -1,0 +1,19 @@
+salesforce.ApexComponent SiteHeader {
+  apiVersion = 42
+  description = "Default Lightning Platform site header component"
+  label = "SiteHeader"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "SiteHeader"
+  content = file("salesforce/Records/ApexComponent/SiteHeader.component")
+}

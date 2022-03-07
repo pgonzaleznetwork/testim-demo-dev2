@@ -1,0 +1,52 @@
+salesforce.Network CloudKicksTheme {
+  fullName = "CloudKicksTheme"
+  allowInternalUserLogin = false
+  allowMembersToFlag = false
+  changePasswordTemplate = "unfiled$public/CommunityChangePasswordEmailTemplate"
+  disableReputationRecordConversations = true
+  emailSenderAddress = "pgonzaleznetwork@gmail.com"
+  emailSenderName = "CloudKicksTheme"
+  enableCustomVFErrorPageOverrides = false
+  enableDirectMessages = true
+  enableGuestChatter = false
+  enableGuestFileAccess = false
+  enableGuestMemberVisibility = false
+  enableInvitation = false
+  enableKnowledgeable = false
+  enableMemberVisibility = true
+  enableNicknameDisplay = false
+  enablePrivateMessages = false
+  enableReputation = false
+  enableShowAllNetworkSettings = false
+  enableSiteAsContainer = true
+  enableTalkingAboutStats = true
+  enableTopicAssignmentRules = true
+  enableTopicSuggestions = false
+  enableUpDownVote = true
+  forgotPasswordTemplate = "unfiled$public/CommunityForgotPasswordEmailTemplate"
+  gatherCustomerSentimentData = false
+  networkMemberGroups = {
+    profile = [
+      "admin",
+      "customer community user",
+    ]
+  }
+  networkPageOverrides = {
+    changePasswordPageOverrideSetting = "Standard"
+    forgotPasswordPageOverrideSetting = "Designer"
+    homePageOverrideSetting = "Designer"
+    loginPageOverrideSetting = "Designer"
+    selfRegProfilePageOverrideSetting = "Designer"
+  }
+  picassoSite = "CloudKicksTheme1"
+  selfRegistration = false
+  sendWelcomeEmail = true
+  site = salesforce.CustomSite.instance.CloudKicksTheme
+  status = "UnderConstruction"
+  tabs = {
+    defaultTab = "home"
+    standardTab = "Chatter"
+  }
+  urlPathPrefix = "pablo"
+  welcomeTemplate = "unfiled$public/CommunityWelcomeEmailTemplate"
+}

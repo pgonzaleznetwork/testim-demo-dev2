@@ -1,0 +1,401 @@
+type salesforce.Account {
+  salesforce.Picklist CustomerPriority__c {
+    apiName = "Account.CustomerPriority__c"
+    label = "Customer Priority"
+    valueSet = [
+      {
+        fullName = "Critical"
+        default = false
+        label = "Critical"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+      {
+        fullName = "New High"
+        default = false
+        label = "New High"
+      },
+      {
+        fullName = "Super High"
+        default = false
+        label = "Super High"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist SLA__c {
+    apiName = "Account.SLA__c"
+    label = "SLA"
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Bronze"
+        default = false
+        label = "Bronze"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist Active__c {
+    apiName = "Account.Active__c"
+    label = "Active"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+      {
+        fullName = "Naman"
+        default = false
+        label = "Naman"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Account.NumberofLocations__c"
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist UpsellOpportunity__c {
+    apiName = "Account.UpsellOpportunity__c"
+    label = "Upsell Opportunity"
+    valueSet = [
+      {
+        fullName = "Maybe"
+        default = false
+        label = "Maybe"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text SLASerialNumber__c {
+    apiName = "Account.SLASerialNumber__c"
+    label = "SLA Serial Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date SLAExpirationDate__c {
+    apiName = "Account.SLAExpirationDate__c"
+    label = "SLA Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox Match_Billing_Address__c {
+    apiName = "Account.Match_Billing_Address__c"
+    label = "Match Billing Address"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number Number_of_Contacts__c {
+    apiName = "Account.Number_of_Contacts__c"
+    label = "Number of Contacts"
+    precision = 18
+    scale = 0
+    inlineHelpText = "How many coontacts are available"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text RequiredField__c {
+    apiName = "Account.RequiredField__c"
+    label = "RequiredField"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text Customer_ID__c {
+    apiName = "Account.Customer_ID__c"
+    label = "Customer ID"
+    inlineHelpText = "This is help"
+    createable = true
+    updateable = true
+    externalId = true
+    unique = true
+    caseSensitive = false
+    length = 18
+    queryable = true
+    encryptionScheme = "None"
+    trackFeedHistory = false
+  }
+  salesforce.Geolocation Location__c {
+    apiName = "Account.Location__c"
+    label = "Location"
+    scale = 7
+    createable = false
+    updateable = false
+    queryable = true
+    displayLocationInDecimal = false
+    externalId = false
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Summary Potential_Value__c {
+    apiName = "Account.Potential_Value__c"
+    label = "Potential Value"
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Opportunity.ExpectedRevenue"
+    summaryForeignKey = "Opportunity.AccountId"
+    summaryOperation = "sum"
+    _hidden_value = true
+  }
+  salesforce.Number Active_Subscriptions__c {
+    apiName = "Account.Active_Subscriptions__c"
+    label = "Active Subscriptions"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number Active_Syndications__c {
+    apiName = "Account.Active_Syndications__c"
+    label = "Active Syndications"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Summary All_Subscriptions__c {
+    apiName = "Account.All_Subscriptions__c"
+    label = "All Subscriptions"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summaryForeignKey = "Syndication__c.Subscriber_Station_Network__c"
+    summaryOperation = "count"
+    _hidden_value = true
+  }
+  salesforce.EncryptedText Social_Sec_Number__c {
+    apiName = "Account.Social_Sec_Number__c"
+    label = "Social Sec Number"
+    createable = true
+    updateable = true
+    maskType = "ssn"
+    length = 175
+    queryable = true
+    externalId = false
+    maskChar = "asterisk"
+  }
+  salesforce.Currency Total__c {
+    apiName = "Account.Total__c"
+    label = "Total"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaText Used_Field__c {
+    apiName = "Account.Used_Field__c"
+    label = "Used Field"
+    formula = "\"Hi\""
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaText Field_calling_field__c {
+    apiName = "Account.Field_calling_field__c"
+    label = "Field calling field"
+    formula = "Field_being_used__c&\" World\""
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account.field.Field_being_used__c
+      },
+    ]
+  }
+  salesforce.Text Field_being_used__c {
+    apiName = "Account.Field_being_used__c"
+    label = "Field being used"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Lookup Ultra_Parent_Using_Field__c {
+    apiName = "Account.Ultra_Parent_Using_Field__c"
+    label = "Ultra Parent Using Field"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Accounts"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "Account.Field_being_used__c"
+          operation = "equals"
+          value = "lookupyes"
+        },
+      ]
+      isOptional = true
+    }
+    relationshipLabel = "Accounts"
+    trackFeedHistory = false
+  }
+  salesforce.Text New_field__c {
+    apiName = "Account.New_field__c"
+    label = "New field"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 20
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaText Priority_Formula__c {
+    apiName = "Account.Priority_Formula__c"
+    label = "Priority Formula"
+    formula = "TEXT( CustomerPriority__c )"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account.field.CustomerPriority__c
+      },
+    ]
+  }
+}

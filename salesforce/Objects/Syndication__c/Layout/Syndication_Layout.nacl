@@ -1,0 +1,81 @@
+salesforce.Layout Syndication__c_Syndication_Layout@uubs {
+  fullName = "Syndication__c-Syndication Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Syndication__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Syndication__c.field.Show__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Syndication__c.field.Subscriber_Station_Network__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Syndication__c.field.Start_Date__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Syndication__c.field.End_Date__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Syndication__c.field.IsActive__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Syndication__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Syndication__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Syndication__c,
+  ]
+}

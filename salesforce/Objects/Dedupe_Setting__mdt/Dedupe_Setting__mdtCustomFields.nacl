@@ -1,0 +1,26 @@
+type salesforce.Dedupe_Setting__mdt {
+  salesforce.Picklist Dedupe_Engine__c {
+    apiName = "Dedupe_Setting__mdt.Dedupe_Engine__c"
+    label = "Dedupe Engine"
+    valueSet = [
+      {
+        fullName = "Flow"
+        default = true
+        label = "Flow"
+      },
+      {
+        fullName = "Apex"
+        default = false
+        label = "Apex"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+}

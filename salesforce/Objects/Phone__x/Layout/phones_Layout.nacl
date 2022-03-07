@@ -1,0 +1,47 @@
+salesforce.Layout Phone__x_phones_Layout@uubs {
+  fullName = "Phone__x-phones Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone__x.field.Brand__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone__x.field.ID__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone__x.field.PhoneNumber__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone__x.field.UUID__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Phone__x,
+  ]
+}

@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute name="displayText" type="Aura.Component[]"/>
+    <b>{!v.displayText}</b>
+</aura:component>

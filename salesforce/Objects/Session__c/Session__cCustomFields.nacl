@@ -1,0 +1,52 @@
+type salesforce.Session__c {
+  salesforce.DateTime Session_Date__c {
+    apiName = "Session__c.Session_Date__c"
+    label = "Session Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.LongTextArea Description__c {
+    apiName = "Session__c.Description__c"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.Picklist Level__c {
+    apiName = "Session__c.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Beginner"
+        default = false
+        label = "Beginner"
+      },
+      {
+        fullName = "Intermediate"
+        default = false
+        label = "Intermediate"
+      },
+      {
+        fullName = "Advanced"
+        default = false
+        label = "Advanced"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+}

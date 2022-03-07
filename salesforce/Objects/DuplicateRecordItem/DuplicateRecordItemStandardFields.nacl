@@ -1,0 +1,149 @@
+type salesforce.DuplicateRecordItem {
+  serviceid Id {
+    apiName = "DuplicateRecordItem.Id"
+    label = "Duplicate Record Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DuplicateRecordItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "DuplicateRecordItem.Name"
+    label = "Duplicate Record Item Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DuplicateRecordItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DuplicateRecordItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DuplicateRecordItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DuplicateRecordItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DuplicateRecordItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup DuplicateRecordSetId {
+    apiName = "DuplicateRecordItem.DuplicateRecordSetId"
+    label = "Duplicate Record Set ID"
+    _required = true
+    referenceTo = [
+      salesforce.DuplicateRecordSet,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "DuplicateRecordSet"
+    queryable = true
+  }
+  salesforce.Lookup RecordId {
+    apiName = "DuplicateRecordItem.RecordId"
+    label = "Record ID"
+    _required = true
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Action_Button__c,
+      salesforce.ApexLogSettings__c,
+      salesforce.Apex_Log__c,
+      salesforce.BatchLeadConvertErrors__c,
+      salesforce.Camping_Item__c,
+      salesforce.Case_Status_Bucket__c,
+      salesforce.Case_Status_History__c,
+      salesforce.Center__c,
+      salesforce.Child__c,
+      salesforce.Contact,
+      salesforce.Custom_Field_Help_Text__c,
+      salesforce.DMLSysException__c,
+      salesforce.Dedupe_Branch__c,
+      salesforce.Dedupe_Scenario_Rule__c,
+      salesforce.Dedupe_Scenario__c,
+      salesforce.Delivery_Agency__c,
+      salesforce.Ear_Plug__c,
+      salesforce.Email_Routing_Field_Mapping__c,
+      salesforce.Email_Routing_Rule_Filter__c,
+      salesforce.Email_Routing_Rule__c,
+      salesforce.Energy_Audit__c,
+      salesforce.Expense__c,
+      salesforce.Field_Translation_Name__c,
+      salesforce.Fund__c,
+      salesforce.Hotel__c,
+      salesforce.Individual,
+      salesforce.Internal_Request__c,
+      salesforce.KPI_Target__c,
+      salesforce.Layout_Section_Translation_Name__c,
+      salesforce.Layout_Translation_Info__c,
+      salesforce.Lead,
+      salesforce.Login_Allowed__c,
+      salesforce.Matching_Rule__c,
+      salesforce.Object_in_2nd_Env__c,
+      salesforce.Parent__c,
+      salesforce.Picklist_Value__c,
+      salesforce.Related_List_Item__c,
+      salesforce.Sector__c,
+      salesforce.Session_Speaker__c,
+      salesforce.Session__c,
+      salesforce.Show__c,
+      salesforce.Speaker__c,
+      salesforce.Standard_Field_Help__c,
+      salesforce.Standard_Field_Label__c,
+      salesforce.Syndication__c,
+      salesforce.Translation_Context__c,
+      salesforce.Translation_Key__c,
+      salesforce.TriggerSettings__c,
+      salesforce.TriggerStatus2__c,
+      salesforce.support_type__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Record"
+    queryable = true
+  }
+}

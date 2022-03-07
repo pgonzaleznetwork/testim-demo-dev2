@@ -1,0 +1,11 @@
+salesforce.ApexClass EarPlugWithSharing {
+  apiVersion = 43
+  status = "Active"
+  fullName = "EarPlugWithSharing"
+  content = file("salesforce/Records/ApexClass/EarPlugWithSharing.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Ear_Plug__c
+    },
+  ]
+}

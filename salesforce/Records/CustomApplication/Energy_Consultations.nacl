@@ -1,0 +1,61 @@
+salesforce.CustomApplication Energy_Consultations {
+  fullName = "Energy_Consultations"
+  brand = {
+    headerColor = "#FA8B05"
+    shouldOverrideOrgTheme = false
+  }
+  description = "Track energy audits and product recommendations."
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Energy Consultations"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "View"
+      content = "Custom_Audit_Record_Page"
+      formFactor = "Large"
+      pageOrSobjectType = "Energy_Audit__c"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    "standard-home",
+    salesforce.CustomTab.instance.Custom_App_Page,
+    "standard-Feed",
+    "standard-CollaborationGroup",
+    salesforce.CustomTab.instance.Energy_Audit__c,
+    "standard-Account",
+    "standard-Contact",
+    "standard-Product2",
+    "standard-Task",
+    salesforce.CustomTab.instance.ModifyCSS,
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+  utilityBar = "Energy_Consultations_UtilityBar"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Energy_Consultations_UtilityBar
+    },
+  ]
+}

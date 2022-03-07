@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="myText" type="string" default="Hello there!"/>
+    <input class="slds-input" aura:id="text1" label="Enter some text" value="{!v.myText}"/>
+</aura:component>

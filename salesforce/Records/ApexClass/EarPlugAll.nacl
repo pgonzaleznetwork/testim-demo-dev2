@@ -1,0 +1,6 @@
+salesforce.ApexClass EarPlugAll {
+  apiVersion = 43
+  status = "Active"
+  fullName = "EarPlugAll"
+  content = file("salesforce/Records/ApexClass/EarPlugAll.cls")
+}

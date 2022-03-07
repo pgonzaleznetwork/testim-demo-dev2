@@ -1,0 +1,9 @@
+salesforce.CustomFeedFilter Case_See_the_whole_thing@vuuu {
+  fullName = "Case.See_the_whole_thing"
+  criteria = {
+    feedItemType = "CallLogPost"
+    relatedSObjectType = "Task"
+  }
+  description = "You'll see EVERYTHING!"
+  label = "See the whole thing"
+}

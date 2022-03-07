@@ -1,0 +1,18 @@
+salesforce.ListView Email_Rule__mdt_All_Email_Rules {
+  fullName = "Email_Rule__mdt.All_Email_Rules"
+  columns = [
+    "MasterLabel",
+    "Email_Address__c",
+    "From_Address_Operator__c",
+    "Keywords_Operator__c",
+    "Keywords_Type__c",
+    "Keywords__c",
+    "From_Address__c",
+  ]
+  filterScope = "Everything"
+  label = "All Email Rules"
+  language = "en_US"
+  _parent = [
+    salesforce.Email_Rule__mdt,
+  ]
+}

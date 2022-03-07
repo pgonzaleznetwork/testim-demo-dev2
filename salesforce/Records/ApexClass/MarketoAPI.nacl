@@ -1,0 +1,17 @@
+salesforce.ApexClass MarketoAPI {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MarketoAPI"
+  content = file("salesforce/Records/ApexClass/MarketoAPI.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.APIEndpoint
+    },
+    {
+      reference = salesforce.ApexClass.instance.APIFactory
+    },
+    {
+      reference = salesforce.ApexClass.instance.MarketoEndpoint
+    },
+  ]
+}

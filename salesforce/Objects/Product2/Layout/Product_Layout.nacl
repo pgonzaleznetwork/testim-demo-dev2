@@ -1,0 +1,140 @@
+salesforce.Layout Product2_Product_Layout@bs {
+  fullName = "Product2-Product Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Product Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Product2.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.ProductCode
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.IsActive
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Family
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Fields"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Product2.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Product2.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Product2.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "ASSET.NAME",
+        "ASSET.SERIAL_NUMBER",
+        "ASSET.INSTALL_DATE",
+        "ASSET.QUANTITY",
+        "ACCOUNT.NAME",
+        "CONTACT.NAME",
+        "ASSET.STATUS",
+      ]
+      relatedList = "RelatedAssetList"
+    },
+    {
+      fields = [
+        "LINEITEM.NAME",
+        "LINEITEM.STARTDATE",
+        "LINEITEM.ENDDATE",
+        "LINEITEM.STATUS",
+        "ASSET.NAME",
+      ]
+      relatedList = "RelatedContractLineItemList"
+    },
+    {
+      relatedList = "RelatedStandardPriceList"
+    },
+    {
+      relatedList = "RelatedPricebookEntryList"
+    },
+    {
+      fields = [
+        "PE.ENTITLEMENT_TEMPLATE",
+      ]
+      relatedList = "RelatedProductEntitlementTemplateList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000iCmQp"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Product2,
+  ]
+}

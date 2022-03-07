@@ -1,0 +1,155 @@
+salesforce.Layout Dedupe_Branch__c_Dedupe_Branch_Layout@uuubss {
+  fullName = "Dedupe_Branch__c-Dedupe Branch Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Evaluation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.Matching_Rule_To_Evaluate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.Starting_Point__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.Use_Context_from_Calling_Branch__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Dedupe_Branch__c.field.Dedupe_Scenario__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Dedupe_Branch__c.field.Name
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Behaviour If True"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.True_Set_This_Field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.True_To_This_Value__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.True_Next_Branch__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Behaviour If False"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.False_Set_This_Field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.False_To_This_Value__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Dedupe_Branch__c.field.False_Next_Branch__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMobo"
+    sizeX = 3
+    sizeY = 2
+    summaryLayoutItems = [
+      {
+        field = salesforce.Dedupe_Branch__c.field.Matching_Rule_To_Evaluate__c
+        posX = 0
+        posY = 0
+      },
+      {
+        field = salesforce.Dedupe_Branch__c.field.True_Next_Branch__c
+        posX = 1
+        posY = 0
+      },
+      {
+        field = salesforce.Dedupe_Branch__c.field.False_Next_Branch__c
+        posX = 1
+        posY = 1
+      },
+    ]
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Dedupe_Branch__c,
+  ]
+}

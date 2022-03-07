@@ -1,0 +1,38 @@
+salesforce.AuraDefinitionBundle expenses {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "expenses"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/expenses/expensesController.js")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/expenses/expensesHelper.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/expenses/expenses.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ExpensesController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expenseItem
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expenses
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expensesList
+    },
+    {
+      reference = salesforce.Expense__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Amount__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Date__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Reimbursed__c
+    },
+  ]
+}

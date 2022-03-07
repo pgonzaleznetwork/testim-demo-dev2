@@ -1,0 +1,101 @@
+salesforce.Layout Indicator_Badge__mdt_Indicator_Badge_Layout@uuubss {
+  fullName = "Indicator_Badge__mdt-Indicator Badge Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.DeveloperName
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.Object__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.Related_Field__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.Comparison_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Indicator_Badge__mdt.field.Comparison_Value__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.Badge_Icon_Name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Indicator_Badge__mdt.field.Badge_Color__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Indicator_Badge__mdt.field.NamespacePrefix
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Indicator_Badge__mdt,
+  ]
+}

@@ -1,0 +1,17 @@
+salesforce.AuraDefinitionBundle Paginator {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "Paginator"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/Paginator/Paginator.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/Paginator/PaginatorController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/Paginator/Paginator.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.Paginator
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.PaginatorEvent
+    },
+  ]
+}

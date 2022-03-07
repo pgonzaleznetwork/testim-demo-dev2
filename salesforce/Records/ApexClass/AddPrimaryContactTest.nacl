@@ -1,0 +1,20 @@
+salesforce.ApexClass AddPrimaryContactTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AddPrimaryContactTest"
+  content = file("salesforce/Records/ApexClass/AddPrimaryContactTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.RequiredField__c
+    },
+    {
+      reference = salesforce.ApexClass.instance.AddPrimaryContact
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

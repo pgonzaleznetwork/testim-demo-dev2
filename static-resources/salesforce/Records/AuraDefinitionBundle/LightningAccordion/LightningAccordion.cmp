@@ -1,0 +1,29 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    
+    <aura:attribute name="displaySOQL" type="Boolean" default="true"/>
+    
+    <lightning:button onclick="{!c.toggleSOQL}" label="Toggle SQL"/>
+    
+    <lightning:accordion aura:id="accordion" activeSectionName="Javascript">
+        <lightning:accordionSection name="Apex" label="Learn Apex">
+            <aura:set attribute="actions">
+                <lightning:buttonMenu >
+                    <lightning:menuItem value="more" label="Learn More" iconName="utility:table"/>
+                </lightning:buttonMenu>
+            </aura:set>
+            <p>Apex is a programming language.</p>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="Javascript" label="Learn Javascript">
+            <p>Javascript is used for component behaviour.</p>
+        </lightning:accordionSection>
+        
+        <aura:if isTrue="{!v.displaySOQL}">
+            <lightning:accordionSection name="soql" label="Learn SOQL">
+                <p>SOQL is used to query the salesforce db. </p>
+            </lightning:accordionSection>
+        </aura:if>
+        
+        
+    </lightning:accordion>
+    
+</aura:component>

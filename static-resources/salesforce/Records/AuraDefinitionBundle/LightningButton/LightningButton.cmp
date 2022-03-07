@@ -1,0 +1,6 @@
+<aura:component >
+
+	<lightning:button variant="success" label="Success" title="Success"/>
+    <lightning:button variant="brand" label="Brand" title="Brand"/>
+    <lightning:button variant="destructive" label="Destructive" title="Destructive"/>
+</aura:component>

@@ -1,0 +1,27 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Account.Workbench Layout.Fields	Fields
+Layout Section	LayoutSection.Account.Workbench Layout.Very Important Info	Very Important Info
+Layout Section	LayoutSection.Account.Workbench Layout.Custom Links	Custom Links
+Layout Section	LayoutSection.Contact.Contact Layout.Contact Information	Contact Information
+Layout Section	LayoutSection.Contact.Contact Layout.Address Information	Address Information
+Layout Section	LayoutSection.Contact.Contact Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Contact.Contact Layout.System Information	System Information
+Layout Section	LayoutSection.Contact.Contact Layout.Description Information	Description Information
+Layout Section	LayoutSection.Contact.Contact Layout.null	null
+Custom Field Label	CustomField.Account.Social_Sec_Number.FieldLabel	Social Sec Number
+Custom Field Label	CustomField.Contact.Languages.FieldLabel	Languages
+Custom Field Label	CustomField.Contact.Level.FieldLabel	Level
+Standard Field Help Text	StandardFieldHelp.Account.AccountNumber.HelpText	This is a standard salesforce field that shows some number. No idea what for...
+Picklist Value	PicklistValue.Standard.accountOwnership.Public	Public
+Picklist Value	PicklistValue.Standard.accountOwnership.Private	Private
+Picklist Value	PicklistValue.Standard.accountOwnership.Subsidiary	Subsidiary
+Picklist Value	PicklistValue.Standard.accountOwnership.Other	Other
+Picklist Value	PicklistValue.Standard.LeadSource.Web	Web
+Picklist Value	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+Picklist Value	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+Picklist Value	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+Picklist Value	PicklistValue.Standard.LeadSource.Other	Other
+Picklist Value	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+Picklist Value	PicklistValue.Contact.Level.Secondary	Secondary
+Picklist Value	PicklistValue.Contact.Level.Tertiary	Tertiary
+Picklist Value	PicklistValue.Contact.Level.Primary	Primary

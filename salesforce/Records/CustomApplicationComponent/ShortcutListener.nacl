@@ -1,0 +1,8 @@
+salesforce.CustomApplicationComponent ShortcutListener {
+  fullName = "ShortcutListener"
+  buttonText = "Shortcuts"
+  isHeightFixed = false
+  isHidden = true
+  isWidthFixed = false
+  visualforcePage = salesforce.ApexPage.instance.CustomLogoutComponent
+}

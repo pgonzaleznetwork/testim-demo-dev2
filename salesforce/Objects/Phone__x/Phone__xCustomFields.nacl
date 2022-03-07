@@ -1,0 +1,65 @@
+type salesforce.Phone__x {
+  salesforce.Text Brand__c {
+    apiName = "Phone__x.Brand__c"
+    label = "Brand"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 128
+    queryable = true
+    description = "Brand"
+    externalDeveloperName = "Brand"
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+    _hidden_value = true
+  }
+  salesforce.Text ID__c {
+    apiName = "Phone__x.ID__c"
+    label = "ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 128
+    queryable = true
+    description = "ID"
+    externalDeveloperName = "ID"
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+    _hidden_value = true
+  }
+  salesforce.Text PhoneNumber__c {
+    apiName = "Phone__x.PhoneNumber__c"
+    label = "PhoneNumber"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 128
+    queryable = true
+    description = "PhoneNumber"
+    externalDeveloperName = "PhoneNumber"
+    externalId = false
+    isFilteringDisabled = "false"
+    isNameField = "false"
+    isSortingDisabled = "false"
+    _hidden_value = true
+  }
+  salesforce.Lookup UUID__c {
+    apiName = "Phone__x.UUID__c"
+    label = "UUID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "UUID__r"
+    queryable = true
+    _hidden_value = true
+  }
+}

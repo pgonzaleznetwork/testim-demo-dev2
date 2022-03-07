@@ -1,0 +1,17 @@
+salesforce.QuickAction Account_Quick_Contact@vu {
+  fullName = "Account.Quick_Contact"
+  height = 250
+  label = "Quick Contact"
+  lightningComponent = "quickcontact"
+  optionsCreateFeedItem = false
+  type = "LightningComponent"
+  width = -100
+  _parent = [
+    salesforce.Account,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.quickcontact
+    },
+  ]
+}

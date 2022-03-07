@@ -1,0 +1,8 @@
+salesforce.ListView ServiceCrewMember_All_ServiceCrewMembers {
+  fullName = "ServiceCrewMember.All_ServiceCrewMembers"
+  filterScope = "Everything"
+  label = "All Service Crew Members"
+  _parent = [
+    salesforce.ServiceCrewMember,
+  ]
+}

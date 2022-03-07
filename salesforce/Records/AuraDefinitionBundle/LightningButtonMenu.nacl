@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle LightningButtonMenu {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningButtonMenu"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningButtonMenu/LightningButtonMenu.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonMenu
+    },
+  ]
+}

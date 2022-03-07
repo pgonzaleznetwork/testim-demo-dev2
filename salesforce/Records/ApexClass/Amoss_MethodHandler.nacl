@@ -1,0 +1,6 @@
+salesforce.ApexClass Amoss_MethodHandler {
+  apiVersion = 50
+  status = "Active"
+  fullName = "Amoss_MethodHandler"
+  content = file("salesforce/Records/ApexClass/Amoss_MethodHandler.cls")
+}

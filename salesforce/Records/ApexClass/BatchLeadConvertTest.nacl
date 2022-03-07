@@ -1,0 +1,23 @@
+salesforce.ApexClass BatchLeadConvertTest {
+  apiVersion = 46
+  status = "Active"
+  fullName = "BatchLeadConvertTest"
+  content = file("salesforce/Records/ApexClass/BatchLeadConvertTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.BatchLeadConvert
+    },
+    {
+      reference = salesforce.BatchLeadConvertErrors__c
+    },
+    {
+      reference = salesforce.BatchLeadConvertErrors__c.field.Records__c
+    },
+    {
+      reference = salesforce.BatchLeadConvertErrors__c.field.StackTrace__c
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

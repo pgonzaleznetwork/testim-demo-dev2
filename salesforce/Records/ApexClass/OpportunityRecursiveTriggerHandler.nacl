@@ -1,0 +1,6 @@
+salesforce.ApexClass OpportunityRecursiveTriggerHandler {
+  apiVersion = 41
+  status = "Active"
+  fullName = "OpportunityRecursiveTriggerHandler"
+  content = file("salesforce/Records/ApexClass/OpportunityRecursiveTriggerHandler.cls")
+}

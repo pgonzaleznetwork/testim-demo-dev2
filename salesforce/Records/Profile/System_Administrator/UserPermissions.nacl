@@ -1,0 +1,768 @@
+salesforce.Profile Admin {
+  userPermissions = {
+    AIViewInsightObjects = {
+      enabled = true
+      name = "AIViewInsightObjects"
+    }
+    ActivateContract = {
+      enabled = true
+      name = "ActivateContract"
+    }
+    ActivateOrder = {
+      enabled = true
+      name = "ActivateOrder"
+    }
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    AllowUniversalSearch = {
+      enabled = true
+      name = "AllowUniversalSearch"
+    }
+    AllowViewKnowledge = {
+      enabled = true
+      name = "AllowViewKnowledge"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ArchiveArticles = {
+      enabled = true
+      name = "ArchiveArticles"
+    }
+    AssignPermissionSets = {
+      enabled = true
+      name = "AssignPermissionSets"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    AuthorApex = {
+      enabled = true
+      name = "AuthorApex"
+    }
+    BulkMacrosAllowed = {
+      enabled = true
+      name = "BulkMacrosAllowed"
+    }
+    CanInsertFeedSystemFields = {
+      enabled = true
+      name = "CanInsertFeedSystemFields"
+    }
+    CanUseNewDashboardBuilder = {
+      enabled = true
+      name = "CanUseNewDashboardBuilder"
+    }
+    CanVerifyComment = {
+      enabled = true
+      name = "CanVerifyComment"
+    }
+    ChangeDashboardColors = {
+      enabled = true
+      name = "ChangeDashboardColors"
+    }
+    ChatterEditOwnPost = {
+      enabled = true
+      name = "ChatterEditOwnPost"
+    }
+    ChatterEditOwnRecordPost = {
+      enabled = true
+      name = "ChatterEditOwnRecordPost"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+    ChatterInviteExternalUsers = {
+      enabled = true
+      name = "ChatterInviteExternalUsers"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ConnectOrgToEnvironmentHub = {
+      enabled = true
+      name = "ConnectOrgToEnvironmentHub"
+    }
+    ConsentApiUpdate = {
+      enabled = true
+      name = "ConsentApiUpdate"
+    }
+    ContentAdministrator = {
+      enabled = true
+      name = "ContentAdministrator"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    ConvertLeads = {
+      enabled = true
+      name = "ConvertLeads"
+    }
+    CreateCustomizeDashboards = {
+      enabled = true
+      name = "CreateCustomizeDashboards"
+    }
+    CreateCustomizeFilters = {
+      enabled = true
+      name = "CreateCustomizeFilters"
+    }
+    CreateCustomizeReports = {
+      enabled = true
+      name = "CreateCustomizeReports"
+    }
+    CreateDashboardFolders = {
+      enabled = true
+      name = "CreateDashboardFolders"
+    }
+    CreateLtngTempFolder = {
+      enabled = true
+      name = "CreateLtngTempFolder"
+    }
+    CreatePackaging = {
+      enabled = true
+      name = "CreatePackaging"
+    }
+    CreateReportFolders = {
+      enabled = true
+      name = "CreateReportFolders"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    CreateWorkBadgeDefinition = {
+      enabled = true
+      name = "CreateWorkBadgeDefinition"
+    }
+    CreateWorkspaces = {
+      enabled = true
+      name = "CreateWorkspaces"
+    }
+    CustomizeApplication = {
+      enabled = true
+      name = "CustomizeApplication"
+    }
+    DataExport = {
+      enabled = true
+      name = "DataExport"
+    }
+    DelegatedTwoFactor = {
+      enabled = true
+      name = "DelegatedTwoFactor"
+    }
+    DeleteActivatedContract = {
+      enabled = true
+      name = "DeleteActivatedContract"
+    }
+    DeleteTopics = {
+      enabled = true
+      name = "DeleteTopics"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditActivatedOrders = {
+      enabled = true
+      name = "EditActivatedOrders"
+    }
+    EditBillingInfo = {
+      enabled = true
+      name = "EditBillingInfo"
+    }
+    EditBrandTemplates = {
+      enabled = true
+      name = "EditBrandTemplates"
+    }
+    EditCaseComments = {
+      enabled = true
+      name = "EditCaseComments"
+    }
+    EditEvent = {
+      enabled = true
+      name = "EditEvent"
+    }
+    EditHtmlTemplates = {
+      enabled = true
+      name = "EditHtmlTemplates"
+    }
+    EditKnowledge = {
+      enabled = true
+      name = "EditKnowledge"
+    }
+    EditMyDashboards = {
+      enabled = true
+      name = "EditMyDashboards"
+    }
+    EditMyReports = {
+      enabled = true
+      name = "EditMyReports"
+    }
+    EditOppLineItemUnitPrice = {
+      enabled = true
+      name = "EditOppLineItemUnitPrice"
+    }
+    EditPublicDocuments = {
+      enabled = true
+      name = "EditPublicDocuments"
+    }
+    EditPublicFilters = {
+      enabled = true
+      name = "EditPublicFilters"
+    }
+    EditPublicTemplates = {
+      enabled = true
+      name = "EditPublicTemplates"
+    }
+    EditReadonlyFields = {
+      enabled = true
+      name = "EditReadonlyFields"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EditTranslation = {
+      enabled = true
+      name = "EditTranslation"
+    }
+    EmailMass = {
+      enabled = true
+      name = "EmailMass"
+    }
+    EmailSingle = {
+      enabled = true
+      name = "EmailSingle"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    ExportReport = {
+      enabled = true
+      name = "ExportReport"
+    }
+    FieldServiceAccess = {
+      enabled = true
+      name = "FieldServiceAccess"
+    }
+    GiveRecognitionBadge = {
+      enabled = true
+      name = "GiveRecognitionBadge"
+    }
+    ImportCustomObjects = {
+      enabled = true
+      name = "ImportCustomObjects"
+    }
+    ImportLeads = {
+      enabled = true
+      name = "ImportLeads"
+    }
+    ImportPersonal = {
+      enabled = true
+      name = "ImportPersonal"
+    }
+    InstallPackaging = {
+      enabled = true
+      name = "InstallPackaging"
+    }
+    LightningConsoleAllowedForUser = {
+      enabled = true
+      name = "LightningConsoleAllowedForUser"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    ListEmailSend = {
+      enabled = true
+      name = "ListEmailSend"
+    }
+    ManageAnalyticSnapshots = {
+      enabled = true
+      name = "ManageAnalyticSnapshots"
+    }
+    ManageAuthProviders = {
+      enabled = true
+      name = "ManageAuthProviders"
+    }
+    ManageBusinessHourHolidays = {
+      enabled = true
+      name = "ManageBusinessHourHolidays"
+    }
+    ManageC360AConnections = {
+      enabled = true
+      name = "ManageC360AConnections"
+    }
+    ManageCMS = {
+      enabled = true
+      name = "ManageCMS"
+    }
+    ManageCallCenters = {
+      enabled = true
+      name = "ManageCallCenters"
+    }
+    ManageCases = {
+      enabled = true
+      name = "ManageCases"
+    }
+    ManageCategories = {
+      enabled = true
+      name = "ManageCategories"
+    }
+    ManageCertificates = {
+      enabled = true
+      name = "ManageCertificates"
+    }
+    ManageContentPermissions = {
+      enabled = true
+      name = "ManageContentPermissions"
+    }
+    ManageContentProperties = {
+      enabled = true
+      name = "ManageContentProperties"
+    }
+    ManageContentTypes = {
+      enabled = true
+      name = "ManageContentTypes"
+    }
+    ManageCustomPermissions = {
+      enabled = true
+      name = "ManageCustomPermissions"
+    }
+    ManageCustomReportTypes = {
+      enabled = true
+      name = "ManageCustomReportTypes"
+    }
+    ManageDashbdsInPubFolders = {
+      enabled = true
+      name = "ManageDashbdsInPubFolders"
+    }
+    ManageDataCategories = {
+      enabled = true
+      name = "ManageDataCategories"
+    }
+    ManageDataIntegrations = {
+      enabled = true
+      name = "ManageDataIntegrations"
+    }
+    ManageDynamicDashboards = {
+      enabled = true
+      name = "ManageDynamicDashboards"
+    }
+    ManageEmailClientConfig = {
+      enabled = true
+      name = "ManageEmailClientConfig"
+    }
+    ManageEntitlements = {
+      enabled = true
+      name = "ManageEntitlements"
+    }
+    ManageExchangeConfig = {
+      enabled = true
+      name = "ManageExchangeConfig"
+    }
+    ManageHealthCheck = {
+      enabled = true
+      name = "ManageHealthCheck"
+    }
+    ManageHubConnections = {
+      enabled = true
+      name = "ManageHubConnections"
+    }
+    ManageInteraction = {
+      enabled = true
+      name = "ManageInteraction"
+    }
+    ManageInternalUsers = {
+      enabled = true
+      name = "ManageInternalUsers"
+    }
+    ManageIpAddresses = {
+      enabled = true
+      name = "ManageIpAddresses"
+    }
+    ManageKnowledge = {
+      enabled = true
+      name = "ManageKnowledge"
+    }
+    ManageKnowledgeImportExport = {
+      enabled = true
+      name = "ManageKnowledgeImportExport"
+    }
+    ManageLeads = {
+      enabled = true
+      name = "ManageLeads"
+    }
+    ManageLoginAccessPolicies = {
+      enabled = true
+      name = "ManageLoginAccessPolicies"
+    }
+    ManageMobile = {
+      enabled = true
+      name = "ManageMobile"
+    }
+    ManageNetworks = {
+      enabled = true
+      name = "ManageNetworks"
+    }
+    ManagePackageLicenses = {
+      enabled = true
+      name = "ManagePackageLicenses"
+    }
+    ManagePartners = {
+      enabled = true
+      name = "ManagePartners"
+    }
+    ManagePasswordPolicies = {
+      enabled = true
+      name = "ManagePasswordPolicies"
+    }
+    ManageProfilesPermissionsets = {
+      enabled = true
+      name = "ManageProfilesPermissionsets"
+    }
+    ManagePropositions = {
+      enabled = true
+      name = "ManagePropositions"
+    }
+    ManagePvtRptsAndDashbds = {
+      enabled = true
+      name = "ManagePvtRptsAndDashbds"
+    }
+    ManageRecommendationStrategies = {
+      enabled = true
+      name = "ManageRecommendationStrategies"
+    }
+    ManageReleaseUpdates = {
+      enabled = true
+      name = "ManageReleaseUpdates"
+    }
+    ManageRemoteAccess = {
+      enabled = true
+      name = "ManageRemoteAccess"
+    }
+    ManageReportsInPubFolders = {
+      enabled = true
+      name = "ManageReportsInPubFolders"
+    }
+    ManageRoles = {
+      enabled = true
+      name = "ManageRoles"
+    }
+    ManageSearchPromotionRules = {
+      enabled = true
+      name = "ManageSearchPromotionRules"
+    }
+    ManageSharing = {
+      enabled = true
+      name = "ManageSharing"
+    }
+    ManageSolutions = {
+      enabled = true
+      name = "ManageSolutions"
+    }
+    ManageSubscriptions = {
+      enabled = true
+      name = "ManageSubscriptions"
+    }
+    ManageSynonyms = {
+      enabled = true
+      name = "ManageSynonyms"
+    }
+    ManageTranslation = {
+      enabled = true
+      name = "ManageTranslation"
+    }
+    ManageUnlistedGroups = {
+      enabled = true
+      name = "ManageUnlistedGroups"
+    }
+    ManageUsers = {
+      enabled = true
+      name = "ManageUsers"
+    }
+    MassInlineEdit = {
+      enabled = true
+      name = "MassInlineEdit"
+    }
+    MergeTopics = {
+      enabled = true
+      name = "MergeTopics"
+    }
+    ModerateChatter = {
+      enabled = true
+      name = "ModerateChatter"
+    }
+    ModifyAllData = {
+      enabled = true
+      name = "ModifyAllData"
+    }
+    ModifyDataClassification = {
+      enabled = true
+      name = "ModifyDataClassification"
+    }
+    ModifyMetadata = {
+      enabled = true
+      name = "ModifyMetadata"
+    }
+    NewReportBuilder = {
+      enabled = true
+      name = "NewReportBuilder"
+    }
+    OmnichannelInventorySync = {
+      enabled = true
+      name = "OmnichannelInventorySync"
+    }
+    Packaging2 = {
+      enabled = true
+      name = "Packaging2"
+    }
+    Packaging2Delete = {
+      enabled = true
+      name = "Packaging2Delete"
+    }
+    Packaging2PromoteVersion = {
+      enabled = true
+      name = "Packaging2PromoteVersion"
+    }
+    PrivacyDataAccess = {
+      enabled = true
+      name = "PrivacyDataAccess"
+    }
+    PublishArticles = {
+      enabled = true
+      name = "PublishArticles"
+    }
+    PublishPackaging = {
+      enabled = true
+      name = "PublishPackaging"
+    }
+    PublishTranslation = {
+      enabled = true
+      name = "PublishTranslation"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    ResetPasswords = {
+      enabled = true
+      name = "ResetPasswords"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    ScheduleReports = {
+      enabled = true
+      name = "ScheduleReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    SendCustomNotifications = {
+      enabled = true
+      name = "SendCustomNotifications"
+    }
+    SendSitRequests = {
+      enabled = true
+      name = "SendSitRequests"
+    }
+    ShareInternalArticles = {
+      enabled = true
+      name = "ShareInternalArticles"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    SolutionImport = {
+      enabled = true
+      name = "SolutionImport"
+    }
+    SubmitForTranslation = {
+      enabled = true
+      name = "SubmitForTranslation"
+    }
+    SubmitMacrosAllowed = {
+      enabled = true
+      name = "SubmitMacrosAllowed"
+    }
+    SubscribeDashboardRolesGrps = {
+      enabled = true
+      name = "SubscribeDashboardRolesGrps"
+    }
+    SubscribeDashboardToOtherUsers = {
+      enabled = true
+      name = "SubscribeDashboardToOtherUsers"
+    }
+    SubscribeReportRolesGrps = {
+      enabled = true
+      name = "SubscribeReportRolesGrps"
+    }
+    SubscribeReportToOtherUsers = {
+      enabled = true
+      name = "SubscribeReportToOtherUsers"
+    }
+    SubscribeReportsRunAsUser = {
+      enabled = true
+      name = "SubscribeReportsRunAsUser"
+    }
+    SubscribeToLightningDashboards = {
+      enabled = true
+      name = "SubscribeToLightningDashboards"
+    }
+    SubscribeToLightningReports = {
+      enabled = true
+      name = "SubscribeToLightningReports"
+    }
+    TraceXdsQueries = {
+      enabled = true
+      name = "TraceXdsQueries"
+    }
+    TransactionalEmailSend = {
+      enabled = true
+      name = "TransactionalEmailSend"
+    }
+    TransferAnyCase = {
+      enabled = true
+      name = "TransferAnyCase"
+    }
+    TransferAnyEntity = {
+      enabled = true
+      name = "TransferAnyEntity"
+    }
+    TransferAnyLead = {
+      enabled = true
+      name = "TransferAnyLead"
+    }
+    UseOmnichannelInventoryAPIs = {
+      enabled = true
+      name = "UseOmnichannelInventoryAPIs"
+    }
+    UseTeamReassignWizards = {
+      enabled = true
+      name = "UseTeamReassignWizards"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewAllData = {
+      enabled = true
+      name = "ViewAllData"
+    }
+    ViewAllProfiles = {
+      enabled = true
+      name = "ViewAllProfiles"
+    }
+    ViewAllUsers = {
+      enabled = true
+      name = "ViewAllUsers"
+    }
+    ViewArchivedArticles = {
+      enabled = true
+      name = "ViewArchivedArticles"
+    }
+    ViewDataAssessment = {
+      enabled = true
+      name = "ViewDataAssessment"
+    }
+    ViewDataCategories = {
+      enabled = true
+      name = "ViewDataCategories"
+    }
+    ViewDataLeakageEvents = {
+      enabled = true
+      name = "ViewDataLeakageEvents"
+    }
+    ViewDeveloperName = {
+      enabled = true
+      name = "ViewDeveloperName"
+    }
+    ViewDraftArticles = {
+      enabled = true
+      name = "ViewDraftArticles"
+    }
+    ViewEventLogFiles = {
+      enabled = true
+      name = "ViewEventLogFiles"
+    }
+    ViewFlowUsageAndFlowEventData = {
+      enabled = true
+      name = "ViewFlowUsageAndFlowEventData"
+    }
+    ViewHealthCheck = {
+      enabled = true
+      name = "ViewHealthCheck"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+    ViewMLModels = {
+      enabled = true
+      name = "ViewMLModels"
+    }
+    ViewMyTeamsDashboards = {
+      enabled = true
+      name = "ViewMyTeamsDashboards"
+    }
+    ViewPlatformEvents = {
+      enabled = true
+      name = "ViewPlatformEvents"
+    }
+    ViewPublicDashboards = {
+      enabled = true
+      name = "ViewPublicDashboards"
+    }
+    ViewPublicReports = {
+      enabled = true
+      name = "ViewPublicReports"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+    ViewUserPII = {
+      enabled = true
+      name = "ViewUserPII"
+    }
+    WorkCalibrationUser = {
+      enabled = true
+      name = "WorkCalibrationUser"
+    }
+  }
+}

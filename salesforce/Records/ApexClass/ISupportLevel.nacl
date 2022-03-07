@@ -1,0 +1,6 @@
+salesforce.ApexClass ISupportLevel {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ISupportLevel"
+  content = file("salesforce/Records/ApexClass/ISupportLevel.cls")
+}

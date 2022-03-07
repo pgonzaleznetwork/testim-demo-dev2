@@ -1,0 +1,6 @@
+salesforce.DocumentFolder Translation_Files {
+  accessType = "Public"
+  name = "Translation Files"
+  publicFolderAccess = "ReadWrite"
+  fullName = "Translation_Files"
+}

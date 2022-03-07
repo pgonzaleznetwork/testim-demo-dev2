@@ -1,0 +1,13 @@
+<aura:component >
+    <lightning:tabset variant="scoped">
+        <lightning:tab label="lightning:tab 1">
+            <p>lightning:tab 1 content</p>
+        </lightning:tab>
+        <lightning:tab label="lightning:tab 2">
+            <p>lightning:tab 2 content</p>
+        </lightning:tab>
+        <lightning:tab label="lightning:tab 3">
+            <p>lightning:tab 3 content</p>
+        </lightning:tab>
+    </lightning:tabset>
+</aura:component>

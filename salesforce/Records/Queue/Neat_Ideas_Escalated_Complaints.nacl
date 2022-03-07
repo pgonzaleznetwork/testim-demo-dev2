@@ -1,0 +1,16 @@
+salesforce.Queue Neat_Ideas_Escalated_Complaints {
+  fullName = "Neat_Ideas_Escalated_Complaints"
+  doesSendEmailToMembers = false
+  name = "Neat Ideas Escalated Complaints"
+  queueMembers = {
+    users = {
+      user = [
+        "dreamforceattendee@sso.df.com",
+        "pgonzaleznetwork@resourceful-moose-448750.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

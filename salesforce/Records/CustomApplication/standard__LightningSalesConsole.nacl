@@ -1,0 +1,133 @@
+salesforce.CustomApplication standard__LightningSalesConsole {
+  fullName = "standard__LightningSalesConsole"
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Sales Console"
+  navType = "Console"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    "standard-home",
+    "standard-Lead",
+    "standard-Account",
+    "standard-Contact",
+    "standard-Opportunity",
+    "standard-Campaign",
+    "standard-Task",
+    "standard-Event",
+    "standard-report",
+    "standard-Dashboard",
+    "standard-Feed",
+    "standard-CollaborationGroup",
+    "standard-File",
+    salesforce.CustomTab.instance.Expense__c,
+    salesforce.CustomTab.instance.Camping_Item__c,
+    salesforce.CustomTab.instance.Session__c,
+    salesforce.CustomTab.instance.ModifyCSS,
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+  utilityBar = "LightningSalesConsole_UtilityBar"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = salesforce.CustomTab.instance.Camping_Item__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Dedupe_Scenario__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Delivery_Agency__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Ear_Plug__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Email_Routing_Rule__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Expense__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.KPI_Target__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Layout_Translation_Info__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Matching_Rule__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.ModifyCSS
+      },
+      {
+        tab = salesforce.CustomTab.instance.Session__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Translation_Context__c
+      },
+      {
+        tab = salesforce.CustomTab.instance.Translation_Key__c
+      },
+      {
+        tab = "standard-Account"
+      },
+      {
+        tab = "standard-Campaign"
+      },
+      {
+        tab = "standard-CollaborationGroup"
+      },
+      {
+        tab = "standard-Contact"
+      },
+      {
+        tab = "standard-Dashboard"
+      },
+      {
+        tab = "standard-Event"
+      },
+      {
+        tab = "standard-Feed"
+      },
+      {
+        tab = "standard-File"
+      },
+      {
+        tab = "standard-Lead"
+      },
+      {
+        tab = "standard-Opportunity"
+      },
+      {
+        tab = "standard-Task"
+      },
+      {
+        tab = "standard-home"
+      },
+      {
+        tab = "standard-report"
+      },
+    ]
+  }
+}

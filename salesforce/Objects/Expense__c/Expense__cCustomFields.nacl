@@ -1,0 +1,47 @@
+type salesforce.Expense__c {
+  salesforce.Number Amount__c {
+    apiName = "Expense__c.Amount__c"
+    label = "Amount"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Client__c {
+    apiName = "Expense__c.Client__c"
+    label = "Client"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Date Date__c {
+    apiName = "Expense__c.Date__c"
+    label = "Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox Reimbursed__c {
+    apiName = "Expense__c.Reimbursed__c"
+    label = "Reimbursed"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

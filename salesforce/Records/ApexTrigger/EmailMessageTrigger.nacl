@@ -1,0 +1,11 @@
+salesforce.ApexTrigger EmailMessageTrigger {
+  apiVersion = 43
+  status = "Inactive"
+  fullName = "EmailMessageTrigger"
+  content = file("salesforce/Records/ApexTrigger/EmailMessageTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.EmailMessage
+    },
+  ]
+}

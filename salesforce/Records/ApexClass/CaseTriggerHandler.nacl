@@ -1,0 +1,17 @@
+salesforce.ApexClass CaseTriggerHandler {
+  apiVersion = 33
+  status = "Active"
+  fullName = "CaseTriggerHandler"
+  content = file("salesforce/Records/ApexClass/CaseTriggerHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Case.field.Support_Group__c
+    },
+    {
+      reference = salesforce.Case.field.ear_plug_name__c
+    },
+  ]
+}

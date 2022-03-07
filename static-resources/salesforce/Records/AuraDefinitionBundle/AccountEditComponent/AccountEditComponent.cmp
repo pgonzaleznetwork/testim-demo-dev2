@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+
+    <aura:attribute name="account" type="Object"/>
+    <aura:attribute name="simpleAccount" type="Object"/>
+    <aura:attribute name="accountError" type="String"/>
+    
+    <force:recordData aura:id="accountRecordLoader"
+        recordId="{!v.recordId}"
+        fields="Name,Website"
+        targetRecord="{!v.account}"
+        targetFields="{!v.simpleAccount}"
+        layoutType="FULL"
+        mode="EDIT"
+        targetError="{!v.accountError}"/>
+        <div class="slds-page-header" role="banner">
+            <p class="slds-text-heading_label">Edit website</p>
+    </div>
+    
+    
+        <!-- Display an editing form -->
+    <lightning:input aura:id="recordWebsite" name="recordWebsite" label="Website"
+                  value="{!v.simpleAccount.Website}" required="true"/>
+
+     <lightning:button label="Save Record" onclick="{!c.handleSaveRecord}"
+               variant="brand" class="slds-m-top_medium"/>
+
+</aura:component>

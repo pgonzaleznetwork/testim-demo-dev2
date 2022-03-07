@@ -1,0 +1,33 @@
+salesforce.BusinessProcess Case_Case_Time_Tracking@uss {
+  fullName = "Case.Case Time Tracking"
+  isActive = true
+  values = [
+    {
+      fullName = "Closed"
+      default = false
+    },
+    {
+      fullName = "In Progress"
+      default = false
+    },
+    {
+      fullName = "New"
+      default = true
+    },
+    {
+      fullName = "Pending Advisor Response"
+      default = false
+    },
+    {
+      fullName = "Pending Customer Response"
+      default = false
+    },
+    {
+      fullName = "Pending External Response"
+      default = false
+    },
+  ]
+  _parent = [
+    salesforce.Case,
+  ]
+}

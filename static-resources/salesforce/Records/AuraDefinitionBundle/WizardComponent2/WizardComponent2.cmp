@@ -1,0 +1,42 @@
+<aura:component >
+    
+    <aura:attribute name="data" type="Object"/>
+    
+    <aura:registerEvent name="showComponent" type="c:showComponent"/>
+    <aura:registerEvent name="passData" type="c:passData"/>
+    <aura:handler event="c:passData" action="{!c.handlePassData}"/>
+    
+    <lightning:card >
+        <aura:set attribute="title">
+            Opportunity Details
+        </aura:set>
+        <div class="slds-form slds-form_stacked slds-m-around_small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="opptyName" type="text" name="opptyName" label="Opportunity Name"/>
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="closeDate" type="date" label="Close Date" name="closeDate" />
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="stageName" type="text" name="opptyStage" label="Stage"/>
+                </div>
+            </div>
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <lightning:input aura:id="amount" type="number" name="amount" label="Amount" formatter="currency"/>
+                </div>
+            </div>
+            <div class="slds-m-top_small">
+                <lightning:button variant="neutral" label="Previous" onclick="{!c.handlePrevious}" />
+                <lightning:button variant="neutral" label="Next" onclick="{!c.handleNext}" />
+            </div>
+        </div>
+        
+    </lightning:card>
+    
+</aura:component>

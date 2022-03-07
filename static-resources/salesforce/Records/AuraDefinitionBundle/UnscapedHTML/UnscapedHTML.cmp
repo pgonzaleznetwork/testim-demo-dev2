@@ -1,0 +1,5 @@
+<aura:component >
+    <lightning:input aura:id="inputField" type="text" name="html" label="some html"/>
+    <lightning:button onclick="{!c.submitHTML}" label="Submit the HTML"/>
+    <aura:unescapedHtml aura:id="htmlValue"/>
+</aura:component>

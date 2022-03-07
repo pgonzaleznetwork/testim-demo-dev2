@@ -1,0 +1,6 @@
+salesforce.ApexClass PageLayoutMetadataI {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutMetadataI"
+  content = file("salesforce/Records/ApexClass/PageLayoutMetadataI.cls")
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass TriggerActionsBase {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerActionsBase"
+  content = file("salesforce/Records/ApexClass/TriggerActionsBase.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TriggerActions
+    },
+  ]
+}

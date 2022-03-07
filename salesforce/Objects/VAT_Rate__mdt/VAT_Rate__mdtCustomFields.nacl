@@ -1,0 +1,25 @@
+type salesforce.VAT_Rate__mdt {
+  salesforce.Percent Rate__c {
+    apiName = "VAT_Rate__mdt.Rate__c"
+    label = "Rate"
+    createable = false
+    updateable = false
+    scale = 0
+    precision = 18
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Checkbox Default__c {
+    apiName = "VAT_Rate__mdt.Default__c"
+    label = "Default"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

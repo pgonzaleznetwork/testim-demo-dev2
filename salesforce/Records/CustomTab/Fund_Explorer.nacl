@@ -1,0 +1,12 @@
+salesforce.CustomTab Fund_Explorer {
+  fullName = "Fund_Explorer"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Fund_Explorer"
+  label = "Fund Explorer"
+  motif = "Custom39: Telescope"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Fund_Explorer
+    },
+  ]
+}

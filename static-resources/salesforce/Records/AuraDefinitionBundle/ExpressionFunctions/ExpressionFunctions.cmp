@@ -1,0 +1,8 @@
+<aura:component >
+	<p>add function: {!add(1,2)}</p>
+    <p>concat: {!concat('Pablo ','Gonzalez')}</p>
+    
+    <aura:if isTrue="{!and(equals(1,1),greaterthan(5,1))}">
+        <p>One equals 1 and 5 is greater than 1!</p>
+    </aura:if>
+</aura:component>

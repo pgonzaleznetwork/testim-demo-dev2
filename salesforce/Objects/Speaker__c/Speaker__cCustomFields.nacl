@@ -1,0 +1,84 @@
+type salesforce.Speaker__c {
+  salesforce.Text First_Name__c {
+    apiName = "Speaker__c.First_Name__c"
+    label = "First Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Last_Name__c {
+    apiName = "Speaker__c.Last_Name__c"
+    label = "Last Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Email Email__c {
+    apiName = "Speaker__c.Email__c"
+    label = "Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.LongTextArea Bio__c {
+    apiName = "Speaker__c.Bio__c"
+    label = "Bio"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+    visibleLines = 3
+  }
+  salesforce.Text Picture_Path__c {
+    apiName = "Speaker__c.Picture_Path__c"
+    label = "Picture_Path"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.FormulaText Picture__c {
+    apiName = "Speaker__c.Picture__c"
+    label = "Picture"
+    formula = "IMAGE(Picture_Path__c, '')"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Speaker__c.field.Picture_Path__c
+      },
+    ]
+  }
+}

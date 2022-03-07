@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle CompareTranslationFiles {
+  apiVersion = 43
+  description = "A Lightning Component Bundle"
+  fullName = "CompareTranslationFiles"
+  type = "Component"
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/CompareTranslationFiles/CompareTranslationFilesHelper.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/CompareTranslationFiles/CompareTranslationFiles.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/CompareTranslationFiles/CompareTranslationFilesController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/CompareTranslationFiles/CompareTranslationFiles.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.CompareTranslationFiles
+    },
+  ]
+}

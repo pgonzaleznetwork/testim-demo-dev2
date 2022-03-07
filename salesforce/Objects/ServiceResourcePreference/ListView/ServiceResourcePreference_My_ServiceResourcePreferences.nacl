@@ -1,0 +1,8 @@
+salesforce.ListView ServiceResourcePreference_My_ServiceResourcePreferences {
+  fullName = "ServiceResourcePreference.My_ServiceResourcePreferences"
+  filterScope = "Mine"
+  label = "My Service Resource Preferences"
+  _parent = [
+    salesforce.ServiceResourcePreference,
+  ]
+}

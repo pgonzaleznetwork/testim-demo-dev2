@@ -1,0 +1,23 @@
+salesforce.ApexClass EmailRoutingFilter {
+  apiVersion = 43
+  status = "Active"
+  fullName = "EmailRoutingFilter"
+  content = file("salesforce/Records/ApexClass/EmailRoutingFilter.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.EmailMessage
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Email_Attribute__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Operator__c
+    },
+    {
+      reference = salesforce.Email_Routing_Rule_Filter__c.field.Value__c
+    },
+  ]
+}

@@ -1,0 +1,20 @@
+salesforce.ApexClass AccountBeforeInsertActions {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AccountBeforeInsertActions"
+  content = file("salesforce/Records/ApexClass/AccountBeforeInsertActions.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountService
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerActions
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerActionsBase
+    },
+  ]
+}

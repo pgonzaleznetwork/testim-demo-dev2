@@ -1,0 +1,21 @@
+type salesforce.ApptBundleAggrDurDnscale {
+  salesforce.MasterDetail BundleAggregationPolicyId {
+    apiName = "ApptBundleAggrDurDnscale.BundleAggregationPolicyId"
+    _hidden_value = true
+  }
+  string FromBundleMemberNumber {
+    _hidden_value = true
+  }
+  string MaxReduction {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  string PercentageOfReduction {
+    _hidden_value = true
+  }
+  string ToBundleMemberNumber {
+    _hidden_value = true
+  }
+}

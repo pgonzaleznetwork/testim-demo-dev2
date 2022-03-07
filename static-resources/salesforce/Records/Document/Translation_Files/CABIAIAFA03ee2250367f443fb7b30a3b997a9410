@@ -1,0 +1,58 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+QUICK_ACTION	QuickAction.Case.Change_Case_Status	Label N/A
+QUICK_ACTION	QuickAction.Case.Escalate_to_Management	Label N/A
+QUICK_ACTION	QuickAction.Case.SendEmail	Label N/A
+PLATFORM_ACTION	QuickAction.Case.Escalate_to_Management	Label N/A
+PLATFORM_ACTION	QuickAction.Case.LogACall	Label N/A
+PLATFORM_ACTION	QuickAction.Clone	Label N/A
+PLATFORM_ACTION	QuickAction.CloseCase	Label N/A
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case-Case Layout.Case Information	Case Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case-Case Layout.Web Information	Web Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case-Case Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case-Case Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case-Case Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case-Case Layout.Custom Links	Custom Links
+CUSTOM_FIELD_LABEL	CustomField.Case.Escalated_to_Management.FieldLabel	Escalated to Management
+CUSTOM_FIELD_LABEL	CustomField.Case.Escalation_Owner.FieldLabel	Escalation Owner
+CUSTOM_FIELD_LABEL	CustomField.Case.Days_Since_Last_Update.FieldLabel	Days Since Last Update
+CUSTOM_FIELD_LABEL	CustomField.Case.Product.FieldLabel	Product
+CUSTOM_FIELD_LABEL	CustomField.Case.PotentialLiability.FieldLabel	Potential Liability
+CUSTOM_FIELD_LABEL	CustomField.Case.EngineeringReqNumber.FieldLabel	Engineering Req Number
+CUSTOM_FIELD_LABEL	CustomField.Case.SLAViolation.FieldLabel	SLA Violation
+CUSTOM_FIELD_HELP_TEXT	CustomField.Case.PotentialLiability.HelpText	Is this product liable?
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Case.Status.HelpText	The status of this case in the support lifecycle.
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Mechanical	Mechanical
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Electrical	Electrical
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Electronic	Electronic
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Structural	Structural
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Installation	Installation
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Equipment Complexity	Equipment Complexity
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Performance	Performance
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Breakdown	Breakdown
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Equipment Design	Equipment Design
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Feedback	Feedback
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.New	New
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Working	Working
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Escalated	Escalated
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Closed	Closed
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.casePriority.High	High
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.casePriority.Medium	Medium
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.casePriority.Low	Low
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseOrigin.Phone	Phone
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseOrigin.Email	Email
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseOrigin.Web	Web
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC1040	GC1040
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC1060	GC1060
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC3020	GC3020
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC3040	GC3040
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC3060	GC3060
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC5020	GC5020
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC5040	GC5040
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC5060	GC5060
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC1020	GC1020
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.PotentialLiability.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.PotentialLiability.Yes	Yes
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.SLAViolation.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.SLAViolation.Yes	Yes

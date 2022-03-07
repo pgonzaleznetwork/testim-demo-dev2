@@ -1,0 +1,125 @@
+type salesforce.Contact {
+  salesforce.Picklist Level__c {
+    apiName = "Contact.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Secondary"
+        default = false
+        label = "Secondary"
+      },
+      {
+        fullName = "Tertiary"
+        default = false
+        label = "Tertiary"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text Languages__c {
+    apiName = "Contact.Languages__c"
+    label = "Languages"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaNumber Total_Account_Subscriptions__c {
+    apiName = "Contact.Total_Account_Subscriptions__c"
+    label = "Total Account Subscriptions"
+    precision = 18
+    scale = 0
+    formula = "Account.All_Subscriptions__c"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Account.field.All_Subscriptions__c
+      },
+    ]
+  }
+  salesforce.Summary Active_Syndications__c {
+    apiName = "Contact.Active_Syndications__c"
+    label = "Active Syndications"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Show__c.Active_Syndications__c"
+    summaryForeignKey = "Show__c.Host__c"
+    summaryOperation = "sum"
+    _hidden_value = true
+  }
+  salesforce.Summary Total_Shows__c {
+    apiName = "Contact.Total_Shows__c"
+    label = "Total Shows"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summaryForeignKey = "Show__c.Host__c"
+    summaryOperation = "count"
+    _hidden_value = true
+  }
+  salesforce.Lookup EU_Manager__c {
+    apiName = "Contact.EU_Manager__c"
+    label = "Manager"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Contacts"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Contacts"
+    trackFeedHistory = false
+  }
+  salesforce.Date Due_Date__c {
+    apiName = "Contact.Due_Date__c"
+    label = "Due Date"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency Share__c {
+    apiName = "Contact.Share__c"
+    label = "Share"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+}

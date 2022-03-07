@@ -1,0 +1,16 @@
+salesforce.AuraDefinitionBundle ContainerSample {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "ContainerSample"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/ContainerSample/ContainerSample.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/ContainerSample/ContainerSampleController.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ContainerSample
+    },
+    {
+      reference = salesforce.StaticResource.instance.lcc_sample_es5
+    },
+  ]
+}

@@ -1,0 +1,42 @@
+type salesforce.ShiftTemplate {
+  string BackgroundColor {
+    _hidden_value = true
+  }
+  string Description {
+    _hidden_value = true
+  }
+  string Duration {
+    _hidden_value = true
+  }
+  salesforce.Lookup Id {
+    apiName = "ShiftTemplate.Id"
+    _hidden_value = true
+  }
+  string IsActive {
+    _hidden_value = true
+  }
+  string IsNonStandard {
+    _hidden_value = true
+  }
+  salesforce.Lookup JobProfileId {
+    apiName = "ShiftTemplate.JobProfileId"
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ShiftTemplate.OwnerId"
+    _hidden_value = true
+  }
+  salesforce.Lookup RecordsetFilterCriteriaId {
+    apiName = "ShiftTemplate.RecordsetFilterCriteriaId"
+    _hidden_value = true
+  }
+  string ShiftTemplateDurationType {
+    _hidden_value = true
+  }
+  string StartTime {
+    _hidden_value = true
+  }
+}

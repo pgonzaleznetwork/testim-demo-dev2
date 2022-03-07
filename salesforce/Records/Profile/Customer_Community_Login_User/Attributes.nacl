@@ -1,0 +1,5 @@
+salesforce.Profile Customer_Community_Login_User@s {
+  fullName = "Customer Community Login User"
+  custom = false
+  userLicense = "Customer Community Login"
+}

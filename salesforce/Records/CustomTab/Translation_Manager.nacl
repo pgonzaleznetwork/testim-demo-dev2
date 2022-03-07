@@ -1,0 +1,12 @@
+salesforce.CustomTab Translation_Manager {
+  fullName = "Translation_Manager"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Translation_Manager"
+  label = "Translation Manager"
+  motif = "Custom8: Diamond"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Translation_Manager
+    },
+  ]
+}

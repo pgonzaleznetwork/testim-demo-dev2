@@ -1,0 +1,6 @@
+salesforce.ApexClass TranslatableMetadataI {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslatableMetadataI"
+  content = file("salesforce/Records/ApexClass/TranslatableMetadataI.cls")
+}

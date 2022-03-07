@@ -1,0 +1,18 @@
+<aura:component >
+    <aura:attribute name="parentCompAttribute" type="String"/>
+    
+    <aura:handler name="change" value="{!v.parentCompAttribute}" action="{!c.onParentAttrChange}"/>
+    
+    <p><b>Parent attribute</b></p>
+    
+    <p>parentExpr parentCompAttribute: {!v.parentCompAttribute}</p>
+    <p><lightning:button name="Update parentCompAttribute" label="Update parentCompAttribute"
+                         onclick="{!c.updateParentCompAttribute}"/></p>
+    
+    <br/><br/><br/><br/>
+    <p><b>Child component</b></p>
+    
+    <c:childExpr childCompAttribute="{#v.parentCompAttribute}"/>
+    
+    
+</aura:component>

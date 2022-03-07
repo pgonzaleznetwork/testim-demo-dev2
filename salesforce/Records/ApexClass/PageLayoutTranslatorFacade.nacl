@@ -1,0 +1,32 @@
+salesforce.ApexClass PageLayoutTranslatorFacade {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutTranslatorFacade"
+  content = file("salesforce/Records/ApexClass/PageLayoutTranslatorFacade.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutMetadata
+    },
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutMetadataI
+    },
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutMetadataMock
+    },
+    {
+      reference = salesforce.ApexClass.instance.SFMD
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadata
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadataFactory
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslationKey
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslationKeyFactory
+    },
+  ]
+}

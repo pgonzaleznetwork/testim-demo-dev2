@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle LDSContainer {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LDSContainer"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LDSContainer/LDSContainer.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LDSContainer
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningDataServiceEdit
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningDataServiceExample
+    },
+  ]
+}

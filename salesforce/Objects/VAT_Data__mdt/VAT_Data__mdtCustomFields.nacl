@@ -1,0 +1,27 @@
+type salesforce.VAT_Data__mdt {
+  salesforce.Text Country_Name__c {
+    apiName = "VAT_Data__mdt.Country_Name__c"
+    label = "Country Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Percent VAT_Rate__c {
+    apiName = "VAT_Data__mdt.VAT_Rate__c"
+    label = "VAT Rate"
+    createable = false
+    updateable = false
+    scale = 0
+    precision = 18
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

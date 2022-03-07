@@ -1,0 +1,168 @@
+type salesforce.Email_Categorisation_Rule__mdt {
+  salesforce.Picklist Business_Unit__c {
+    apiName = "Email_Categorisation_Rule__mdt.Business_Unit__c"
+    label = "Business Unit"
+    valueSet = [
+      {
+        fullName = "UK"
+        default = true
+        label = "UK"
+      },
+      {
+        fullName = "Benelux"
+        default = false
+        label = "Benelux"
+      },
+      {
+        fullName = "France"
+        default = false
+        label = "France"
+      },
+      {
+        fullName = "Germany"
+        default = false
+        label = "Germany"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Number Evaluation_Order__c {
+    apiName = "Email_Categorisation_Rule__mdt.Evaluation_Order__c"
+    label = "Evaluation Order"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Channel__c {
+    apiName = "Email_Categorisation_Rule__mdt.Channel__c"
+    label = "Channel"
+    valueSet = [
+      {
+        fullName = "Online"
+        default = true
+        label = "Online"
+      },
+      {
+        fullName = "Advantage"
+        default = false
+        label = "Advantage"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Text Company_Name__c {
+    apiName = "Email_Categorisation_Rule__mdt.Company_Name__c"
+    label = "Company Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Language__c {
+    apiName = "Email_Categorisation_Rule__mdt.Language__c"
+    label = "Language"
+    valueSet = [
+      {
+        fullName = "English"
+        default = true
+        label = "English"
+      },
+      {
+        fullName = "German"
+        default = false
+        label = "German"
+      },
+      {
+        fullName = "French"
+        default = false
+        label = "French"
+      },
+      {
+        fullName = "Spanish"
+        default = false
+        label = "Spanish"
+      },
+      {
+        fullName = "Dutch"
+        default = false
+        label = "Dutch"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Case_Status__c {
+    apiName = "Email_Categorisation_Rule__mdt.Case_Status__c"
+    label = "Case Status"
+    valueSet = [
+      {
+        fullName = "Closed"
+        default = true
+        label = "Closed"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Email Auto_Forward_To__c {
+    apiName = "Email_Categorisation_Rule__mdt.Auto_Forward_To__c"
+    label = "Auto-Forward To"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Text From_Email_Address__c {
+    apiName = "Email_Categorisation_Rule__mdt.From_Email_Address__c"
+    label = "From Email Address"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

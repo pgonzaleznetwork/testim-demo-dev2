@@ -1,0 +1,6 @@
+salesforce.ApexClass ToolingAPIService {
+  apiVersion = 43
+  status = "Active"
+  fullName = "ToolingAPIService"
+  content = file("salesforce/Records/ApexClass/ToolingAPIService.cls")
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass MarketoAPIRequest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MarketoAPIRequest"
+  content = file("salesforce/Records/ApexClass/MarketoAPIRequest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

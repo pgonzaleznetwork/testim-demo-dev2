@@ -1,0 +1,10 @@
+salesforce.ApexTestSuite PageLayoutTranslationManagerTestSuite {
+  fullName = "PageLayoutTranslationManagerTestSuite"
+  testClassName = [
+    "PageLayoutMetadata_Test",
+    "SubmitPageLayoutInfoApex_Test",
+    "TranslatableMetadataFactory_Test",
+    "TranslationFileBuilder_Test",
+    "TranslationsMergerApex_Test",
+  ]
+}

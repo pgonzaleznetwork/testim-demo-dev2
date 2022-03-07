@@ -1,0 +1,6 @@
+salesforce.ApexClass AfterTriggerAction {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AfterTriggerAction"
+  content = file("salesforce/Records/ApexClass/AfterTriggerAction.cls")
+}

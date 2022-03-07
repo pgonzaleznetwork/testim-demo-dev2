@@ -1,0 +1,14 @@
+salesforce.ValidationRule Expense__c_client_id {
+  fullName = "Expense__c.client_id"
+  active = true
+  errorConditionFormula = "Client__c = 'please fail'"
+  errorMessage = "fail!"
+  _parent = [
+    salesforce.Expense__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+  ]
+}

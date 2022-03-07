@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadConversionConfig {
+  apiVersion = 50
+  status = "Active"
+  fullName = "LeadConversionConfig"
+  content = file("salesforce/Records/ApexClass/LeadConversionConfig.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

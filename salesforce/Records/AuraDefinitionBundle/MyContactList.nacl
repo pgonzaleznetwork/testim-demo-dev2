@@ -1,0 +1,16 @@
+salesforce.AuraDefinitionBundle MyContactList {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "MyContactList"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/MyContactList/MyContactListController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/MyContactList/MyContactList.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MyContactListController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.MyContactList
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.AnimationRule Milestones {
+  fullName = "Milestones"
+  animationFrequency = "always"
+  developerName = "Milestones"
+  isActive = true
+  masterLabel = "Milestones"
+  recordTypeContext = "Master"
+  recordTypeName = "__MASTER__"
+  sobjectType = "Opportunity"
+  targetField = "StageName"
+  targetFieldChangeToValues = "Closed Won"
+}

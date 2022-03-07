@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadSelector {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadSelector"
+  content = file("salesforce/Records/ApexClass/LeadSelector.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

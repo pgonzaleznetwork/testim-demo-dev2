@@ -1,0 +1,6 @@
+salesforce.ApexClass Algorithms {
+  apiVersion = 44
+  status = "Active"
+  fullName = "Algorithms"
+  content = file("salesforce/Records/ApexClass/Algorithms.cls")
+}

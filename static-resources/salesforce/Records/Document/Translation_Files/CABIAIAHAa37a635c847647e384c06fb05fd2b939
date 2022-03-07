@@ -1,0 +1,61 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+PLATFORM_ACTION	QuickAction.Opportunity_Wizard	Label N/A
+PLATFORM_ACTION	QuickAction.Clone	Label N/A
+LAYOUT_SECTION_NAME	LayoutSection.Campaign.Campaign-Campaign Layout.Campaign Information	Campaign Information
+LAYOUT_SECTION_NAME	LayoutSection.Campaign.Campaign-Campaign Layout.Other Information	Other Information
+LAYOUT_SECTION_NAME	LayoutSection.Campaign.Campaign-Campaign Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Campaign.Campaign-Campaign Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Campaign.Campaign-Campaign Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Campaign.Campaign-Campaign Layout.Custom Links	Custom Links
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Opportunity Information	Opportunity Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Other Information	Other Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Custom Links	Custom Links
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+CUSTOM_FIELD_HELP_TEXT	CustomField.Opportunity.TrackingNumber.HelpText	This is the tracking number
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Opportunity.StageName.HelpText	Set this field depending on where the deal is.
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Conference	Conference
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Webinar	Webinar
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Trade Show	Trade Show
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Public Relations	Public Relations
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Partners	Partners
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Referral Program	Referral Program
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Advertisement	Advertisement
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Banner Ads	Banner Ads
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Direct Mail	Direct Mail
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Email	Email
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Telemarketing	Telemarketing
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignType.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignStatus.Planned	Planned
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignStatus.In Progress	In Progress
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignStatus.Completed	Completed
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.campaignStatus.Aborted	Aborted
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.Existing Customer - Upgrade	Existing Customer - Upgrade
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.Existing Customer - Replacement	Existing Customer - Replacement
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.Existing Customer - Downgrade	Existing Customer - Downgrade
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.New Customer	New Customer
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Web	Web
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Phone Inquiry	Phone Inquiry
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Partner Referral	Partner Referral
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Purchased List	Purchased List
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Where is this shown?	Where is this shown?
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Prospecting	Prospecting
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Qualification	Qualification
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Needs Analysis	Needs Analysis
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Value Proposition	Value Proposition
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Id. Decision Makers	Id. Decision Makers
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Perception Analysis	Perception Analysis
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Proposal/Price Quote	Proposal/Price Quote
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Negotiation/Review	Negotiation/Review
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Closed Won	Closed Won
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Closed Lost	Closed Lost
+CUSTOM_PICKLIST_VALUE	PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+CUSTOM_PICKLIST_VALUE	PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+CUSTOM_PICKLIST_VALUE	PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed

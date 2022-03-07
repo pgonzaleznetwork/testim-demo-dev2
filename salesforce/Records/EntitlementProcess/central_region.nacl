@@ -1,0 +1,29 @@
+salesforce.EntitlementProcess central_region@s {
+  fullName = "central region"
+  SObjectType = salesforce.Case
+  active = true
+  entryStartDateField = salesforce.Case.field.Home_Visit_To_Happen_By__c
+  exitCriteriaFilterItems = {
+    field = salesforce.Case.field.IsClosed
+    operation = "equals"
+    value = "true"
+  }
+  milestones = [
+    {
+      milestoneCriteriaFormula = "ISPICKVAL( Status ,\"In Progress\") &&  Home_Visit_To_Happen_By__c  =  NOW()"
+      milestoneName = "Home Visit"
+      minutesToComplete = 20
+      useCriteriaStartTime = false
+    },
+    {
+      milestoneCriteriaFilterItems = {
+        field = salesforce.Case.field.Status
+        operation = "equals"
+        value = "In Progress"
+      }
+      milestoneName = "Home Visit"
+      minutesToComplete = 120
+      useCriteriaStartTime = false
+    },
+  ]
+}

@@ -1,0 +1,4 @@
+<aura:component >
+    <lightning:helptext content="Use this field to indicate that you have confirmed via the SOW, that data migration is not needed."
+    />
+</aura:component>

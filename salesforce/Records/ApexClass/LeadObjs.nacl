@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadObjs {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadObjs"
+  content = file("salesforce/Records/ApexClass/LeadObjs.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+<aura:component >
+
+          	<div>
+        <h1>Welcome to the component body</h1>
+        <p>The component body is made up of normal-free HTML.</p>
+        <b>This is bold</b>
+        <lightning:button name="myButton" label="Show Component Body" onclick="{!c.showComponentBody}"/>
+    </div>
+
+	<p>Full explanation <a href="https://salesforce.stackexchange.com/questions/132815/component-getv-body-not-working-as-expected/147948#147948" target="_blank">here</a></p>
+</aura:component>

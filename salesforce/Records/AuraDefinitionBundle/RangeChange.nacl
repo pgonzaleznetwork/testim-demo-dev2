@@ -1,0 +1,7 @@
+salesforce.AuraDefinitionBundle RangeChange {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "RangeChange"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/RangeChange/RangeChange.evt")
+}

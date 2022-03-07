@@ -1,0 +1,34 @@
+salesforce.LightningPage Translation_Manager {
+  fullName = "Translation_Manager"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "PageLayoutTranslationContainer"
+          }
+        },
+      ]
+      name = "region1"
+      type = "Region"
+    },
+    {
+      name = "region2"
+      type = "Region"
+    },
+    {
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Translation Manager"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.PageLayoutTranslationContainer
+    },
+  ]
+}

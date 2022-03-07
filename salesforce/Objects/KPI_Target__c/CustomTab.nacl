@@ -1,0 +1,8 @@
+salesforce.CustomTab KPI_Target__c {
+  fullName = "KPI_Target__c"
+  customObject = true
+  motif = "Custom13: Box"
+  _parent = [
+    salesforce.KPI_Target__c,
+  ]
+}

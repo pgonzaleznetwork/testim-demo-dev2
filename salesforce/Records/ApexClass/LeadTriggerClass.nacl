@@ -1,0 +1,14 @@
+salesforce.ApexClass LeadTriggerClass {
+  apiVersion = 41
+  status = "Active"
+  fullName = "LeadTriggerClass"
+  content = file("salesforce/Records/ApexClass/LeadTriggerClass.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MarketoAPIRequest
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

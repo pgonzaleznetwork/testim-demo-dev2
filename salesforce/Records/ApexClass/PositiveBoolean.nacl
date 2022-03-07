@@ -1,0 +1,14 @@
+salesforce.ApexClass PositiveBoolean {
+  apiVersion = 49
+  status = "Active"
+  fullName = "PositiveBoolean"
+  content = file("salesforce/Records/ApexClass/PositiveBoolean.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Expense__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+  ]
+}

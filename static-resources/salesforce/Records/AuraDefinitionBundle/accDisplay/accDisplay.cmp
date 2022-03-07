@@ -1,0 +1,39 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId">
+    
+    <aura:attribute name="accountRec" type="Object"/>
+    <aura:attribute name="accountRecord" type="Object"/>
+    <aura:attribute name="accountError" type="String"/>
+    
+    <force:recordData aura:id="accountRecLoader"
+                      recordId="{!v.recordId}"
+                      fields="Name,Industry,Description,Phone"
+                      targetRecord="{!v.accountRec}"
+                      targetFields="{!v.accountRecord}"
+                      layoutType="FULL"
+                      
+                      targetError="{!v.accountError}"/>
+    
+    
+    <div class="Record Details"> 
+        <lightning:card iconName="standard:account" title="{!v.accountRecord.Name}" >
+            <div class="slds-p-horizontal--small">
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Industry" value="{!v.accountRecord.Industry}" /></p>
+                <p class="slds-text-heading--small">
+                    <lightning:formattedText title="Description" value="{!v.accountRecord.Description}" /></p>
+                <p class="slds-text-heading--small">
+                    <lightning:formattedPhone title="Phone" value="{!v.accountRecord.Phone}" /></p>
+            </div>
+        </lightning:card>
+    </div>
+    
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+            <ui:message title="Error" severity="error" closable="true">
+                {!v.recordError}
+            </ui:message>
+        </div>
+    </aura:if>
+    
+</aura:component>

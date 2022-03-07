@@ -1,0 +1,19 @@
+salesforce.AuraDefinitionBundle WizardComponent1 {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "WizardComponent1"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/WizardComponent1/WizardComponent1.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/WizardComponent1/WizardComponent1Controller.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.WizardComponent1
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.passData
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.showComponent
+    },
+  ]
+}

@@ -1,0 +1,59 @@
+salesforce.QuickAction Case_Niels_Email@vu {
+  fullName = "Case.Niels_Email"
+  fieldOverrides = [
+    {
+      field = "FromAddress"
+      formula = "Case.Original_To__c"
+    },
+  ]
+  label = "Niels Email"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ValidatedFromAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "ToAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "CcAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "BccAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Subject
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "HtmlBody"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  quickActionSendEmailOptions = {
+    ignoreDefaultEmailTemplateSubject = false
+  }
+  targetObject = salesforce.EmailMessage
+  targetParentField = "Parent"
+  type = "SendEmail"
+  _parent = [
+    salesforce.Case,
+  ]
+}

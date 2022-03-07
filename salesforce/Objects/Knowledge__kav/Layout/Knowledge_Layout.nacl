@@ -1,0 +1,36 @@
+salesforce.Layout Knowledge__kav_Knowledge_Layout@uubs {
+  fullName = "Knowledge__kav-Knowledge Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              field = salesforce.Knowledge__kav.field.ArticleBody__c
+            },
+            {
+              field = salesforce.Knowledge__kav.field.Title
+            },
+            {
+              field = salesforce.Knowledge__kav.field.UrlName
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  _parent = [
+    salesforce.Knowledge__kav,
+  ]
+}

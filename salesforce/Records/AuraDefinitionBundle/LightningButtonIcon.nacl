@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle LightningButtonIcon {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningButtonIcon"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningButtonIcon/LightningButtonIcon.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonIcon
+    },
+  ]
+}

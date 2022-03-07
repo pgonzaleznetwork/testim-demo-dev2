@@ -1,0 +1,62 @@
+salesforce.Layout AccountTeamMember_Account_Team_Member_Layout@bsss {
+  fullName = "AccountTeamMember-Account Team Member Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.AccountId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.TeamMemberRole
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.OpportunityAccessLevel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.ContactAccessLevel
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.UserId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.AccountAccessLevel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.AccountTeamMember.field.CaseAccessLevel
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.AccountTeamMember,
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.ApexClass ParkLocatorTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ParkLocatorTest"
+  content = file("salesforce/Records/ApexClass/ParkLocatorTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ParkLocator
+    },
+    {
+      reference = salesforce.ApexClass.instance.ParkServiceMock
+    },
+  ]
+}

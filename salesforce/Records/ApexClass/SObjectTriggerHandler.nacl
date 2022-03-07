@@ -1,0 +1,11 @@
+salesforce.ApexClass SObjectTriggerHandler {
+  apiVersion = 44
+  status = "Active"
+  fullName = "SObjectTriggerHandler"
+  content = file("salesforce/Records/ApexClass/SObjectTriggerHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

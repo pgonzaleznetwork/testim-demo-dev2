@@ -1,0 +1,11 @@
+salesforce.ApexClass OpportunitiesPaginationController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "OpportunitiesPaginationController"
+  content = file("salesforce/Records/ApexClass/OpportunitiesPaginationController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+}

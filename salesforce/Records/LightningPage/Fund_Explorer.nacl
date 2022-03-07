@@ -1,0 +1,128 @@
+salesforce.LightningPage Fund_Explorer {
+  fullName = "Fund_Explorer"
+  flexiPageRegions = [
+    {
+      name = "region1"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "FundTileList"
+          }
+        },
+      ]
+      name = "region2"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "FundFilter"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "filterName"
+                value = "ytd-return"
+              },
+              {
+                name = "label"
+                value = "ytd return"
+              },
+              {
+                name = "max"
+                value = "30"
+              },
+              {
+                name = "min"
+                value = "-30"
+              },
+              {
+                name = "step"
+                value = "1"
+              },
+            ]
+            componentName = "PercentReturnRange"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "filterName"
+                value = "1-year-return"
+              },
+              {
+                name = "label"
+                value = "1-year return"
+              },
+              {
+                name = "max"
+                value = "30"
+              },
+              {
+                name = "min"
+                value = "-30"
+              },
+              {
+                name = "step"
+                value = "1"
+              },
+            ]
+            componentName = "PercentReturnRange"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "filterName"
+                value = "5-year-return"
+              },
+              {
+                name = "label"
+                value = "5-year return"
+              },
+              {
+                name = "max"
+                value = "30"
+              },
+              {
+                name = "min"
+                value = "-30"
+              },
+              {
+                name = "step"
+                value = "1"
+              },
+            ]
+            componentName = "PercentReturnRange"
+          }
+        },
+      ]
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Fund Explorer"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumns"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundFilter
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.FundTileList
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.PercentReturnRange
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle AccountSelected {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "AccountSelected"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/AccountSelected/AccountSelected.evt")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AccountSelected
+    },
+  ]
+}

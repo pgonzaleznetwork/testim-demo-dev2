@@ -1,0 +1,11 @@
+salesforce.ApexClass AccountCustomError {
+  apiVersion = 49
+  status = "Active"
+  fullName = "AccountCustomError"
+  content = file("salesforce/Records/ApexClass/AccountCustomError.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

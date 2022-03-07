@@ -1,0 +1,8 @@
+salesforce.CustomTab Syndication__c {
+  fullName = "Syndication__c"
+  customObject = true
+  motif = "Custom30: Radar dish"
+  _parent = [
+    salesforce.Syndication__c,
+  ]
+}

@@ -1,0 +1,118 @@
+type salesforce.Email_Routing_Rule_Filter__c {
+  salesforce.MasterDetail Email_Routing_Rule__c {
+    apiName = "Email_Routing_Rule_Filter__c.Email_Routing_Rule__c"
+    label = "Email Routing Rule"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Email_Routing_Rule__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Email_Routing_Rule_Filters"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Email Routing Rule Filters"
+    trackTrending = false
+  }
+  salesforce.Picklist Email_Attribute__c {
+    apiName = "Email_Routing_Rule_Filter__c.Email_Attribute__c"
+    label = "Email Attribute"
+    valueSet = [
+      {
+        fullName = "To Address"
+        default = false
+        label = "To Address"
+      },
+      {
+        fullName = "From Address"
+        default = false
+        label = "From Address"
+      },
+      {
+        fullName = "Subject"
+        default = false
+        label = "Subject"
+      },
+      {
+        fullName = "Body"
+        default = false
+        label = "Body"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Operator__c {
+    apiName = "Email_Routing_Rule_Filter__c.Operator__c"
+    label = "Operator"
+    valueSet = [
+      {
+        fullName = "Equals"
+        default = false
+        label = "Equals"
+      },
+      {
+        fullName = "Does not equal"
+        default = false
+        label = "Does not equal"
+      },
+      {
+        fullName = "Contains"
+        default = false
+        label = "Contains"
+      },
+      {
+        fullName = "Does not contain"
+        default = false
+        label = "Does not contain"
+      },
+      {
+        fullName = "Starts With"
+        default = false
+        label = "Starts With"
+      },
+      {
+        fullName = "Does not start with"
+        default = false
+        label = "Does not start with"
+      },
+      {
+        fullName = "Ends With"
+        default = false
+        label = "Ends With"
+      },
+      {
+        fullName = "Does not end with"
+        default = false
+        label = "Does not end with"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Text Value__c {
+    apiName = "Email_Routing_Rule_Filter__c.Value__c"
+    label = "Value"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

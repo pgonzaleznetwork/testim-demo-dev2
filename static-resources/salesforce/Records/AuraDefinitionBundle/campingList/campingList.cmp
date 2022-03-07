@@ -1,0 +1,20 @@
+<aura:component controller="CampingListController">
+    <!-- List of item records to display below --> 
+    <aura:attribute name="items" type="Camping_Item__c[]"/>
+    
+    <!-- When the component is loaded, we call the controller's doInit()-->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    
+    <aura:handler name="addItem" event="c:addItemEvent"
+   action="{!c.handleAddItem}"/>
+    
+    <!-- Here's the form that will be used to create a new item-->
+    
+    <c:campingListForm />
+ 
+    <!--We then iterate through the items in the array, and put each object in a child 
+	component, which is responsible for displaying the record in question-->
+    <aura:iteration items="{!v.items}" var="item">
+        <p><c:campingListItem item="{!item}"/></p>
+    </aura:iteration>
+</aura:component>

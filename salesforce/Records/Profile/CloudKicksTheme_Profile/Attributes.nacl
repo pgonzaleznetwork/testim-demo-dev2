@@ -1,0 +1,5 @@
+salesforce.Profile CloudKicksTheme_Profile@s {
+  fullName = "CloudKicksTheme Profile"
+  custom = true
+  userLicense = "Guest"
+}

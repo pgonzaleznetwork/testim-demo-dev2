@@ -1,0 +1,6 @@
+salesforce.ApexClass AmossExample_DeliveryProvider {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossExample_DeliveryProvider"
+  content = file("salesforce/Records/ApexClass/AmossExample_DeliveryProvider.cls")
+}

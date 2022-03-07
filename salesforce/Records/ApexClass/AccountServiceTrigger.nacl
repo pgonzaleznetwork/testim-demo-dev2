@@ -1,0 +1,20 @@
+salesforce.ApexClass AccountServiceTrigger {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountServiceTrigger"
+  content = file("salesforce/Records/ApexClass/AccountServiceTrigger.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.APIUtils
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.User
+    },
+  ]
+}

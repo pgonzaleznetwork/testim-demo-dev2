@@ -1,0 +1,7 @@
+salesforce.Document Translation_Files_CABIAIAFAfd6c8e5d06d74f50aff86e0c4c6e8ed7@ud {
+  internalUseOnly = false
+  name = "Merged_Translations_2018-08-05 00:00:00"
+  public = false
+  fullName = "Translation_Files/CABIAIAFAfd6c8e5d06d74f50aff86e0c4c6e8ed7"
+  content = file("salesforce/Records/Document/Translation_Files/CABIAIAFAfd6c8e5d06d74f50aff86e0c4c6e8ed7")
+}

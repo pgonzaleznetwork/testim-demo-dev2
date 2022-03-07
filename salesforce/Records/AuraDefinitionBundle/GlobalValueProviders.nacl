@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle GlobalValueProviders {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "GlobalValueProviders"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/GlobalValueProviders/GlobalValueProvidersController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/GlobalValueProviders/GlobalValueProviders.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.GlobalValueProviders
+    },
+  ]
+}

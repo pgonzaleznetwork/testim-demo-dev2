@@ -1,0 +1,19 @@
+salesforce.SamlSsoConfig OneLogin {
+  fullName = "OneLogin"
+  identityLocation = "SubjectNameId"
+  identityMapping = "Username"
+  issuer = "https://app.onelogin.com/saml/metadata/88800179-1b98-457f-8242-193547372c02"
+  loginUrl = "https://appiriodfpablo-dev.onelogin.com/trust/saml2/http-post/sso/822319"
+  logoutUrl = "https://www.salesforce.com/dreamforce/"
+  name = "OneLogin"
+  oauthTokenEndpoint = "https://resourceful-moose-448750-dev-ed.my.salesforce.com/services/oauth2/token?so=00D0O000000Z9Ab"
+  redirectBinding = false
+  requestSignatureMethod = "0"
+  requestSigningCertId = "0P10O0000014wPp"
+  salesforceLoginUrl = "https://resourceful-moose-448750-dev-ed.my.salesforce.com?so=00D0O000000Z9Ab"
+  samlEntityId = "https://saml.salesforce.com"
+  samlVersion = "SAML2_0"
+  useConfigRequestMethod = false
+  userProvisioning = false
+  validationCert = "MIIEFzCCAv+gAwIBAgIUU9QoD7Zp0kSJ7eNApF3y1c0OwvkwDQYJKoZIhvcNAQEFBQAwWDELMAkGA1UEBhMCVVMxEDAOBgNVBAoMB0FwcGlyaW8xFTATBgNVBAsMDE9uZUxvZ2luIElkUDEgMB4GA1UEAwwXT25lTG9naW4gQWNjb3VudCAxMzIzMDkwHhcNMTgwODA4MjE0MDQxWhcNMjMwODA4MjE0MDQxWjBYMQswCQYDVQQGEwJVUzEQMA4GA1UECgwHQXBwaXJpbzEVMBMGA1UECwwMT25lTG9naW4gSWRQMSAwHgYDVQQDDBdPbmVMb2dpbiBBY2NvdW50IDEzMjMwOTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK2nWZsxXJpipVgeJmFu1wZGhxuPwG+lZD6iSt0QzMxH5zsmlMpPJH3BdJSosPzi/bUU/Rp7ni8JTRmhc2tEZIAPgo5l6H/VFNlh5mnhTe1wV1YjDpx3RIlir7t/tyExPqTde3A0OPvaijw9++NAv0SKa/v3Xy/lgNLXU0SovtlBBcI7N2TWW1yu8sKP2eGrW662SSLJC5h309SmYDVL/XI8lh+3gqU4009CINtqAkj8QoC6Unel2KWzSTsSvW+IfKkQE+4Gvucnr4k2xjRdPWNT7wESglfrIOxrrYkJghlxWKnnJd0N/xqfiVZzb3BgnnA4VP1WtjqhHRufhqclvOMCAwEAAaOB2DCB1TAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRn4JkJ3hg4RseZp5iogK/Ypo2wSzCBlQYDVR0jBIGNMIGKgBRn4JkJ3hg4RseZp5iogK/Ypo2wS6FcpFowWDELMAkGA1UEBhMCVVMxEDAOBgNVBAoMB0FwcGlyaW8xFTATBgNVBAsMDE9uZUxvZ2luIElkUDEgMB4GA1UEAwwXT25lTG9naW4gQWNjb3VudCAxMzIzMDmCFFPUKA+2adJEie3jQKRd8tXNDsL5MA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQUFAAOCAQEAoUZEx6OAmlYqdQdy21kHd6FFJlM1EJfLcBCd+ZTfwuG3NzF/biyd+jTbVHa75DYjKly9HwyCWzU3CV+w4oTlTWPF6sEl2TMHHNApcmXQsPn/4TL8Is2NAxEUiY4BTlWFO4evK3zkWHo1mjvVj91MeKVmkLjxX8u5h1ISFDECB1AS0NLrx2wvDUhoap36SgpCVzu0VhS0w3jlBr/V9bL8xt7bZmoY9bCw2BLTkpCk63TR8VvobSJusZNSJ6JIMCQeHut6AgZonwa6huF+NplhYBiCdtLvRNI/g4z1flOBxSjfDixngAMjKrO8BZU6nA+jLcVtDSWP3sXCrCWh/gIVTQ=="
+}

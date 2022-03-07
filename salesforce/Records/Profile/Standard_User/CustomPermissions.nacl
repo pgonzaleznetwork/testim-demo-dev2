@@ -1,0 +1,8 @@
+salesforce.Profile Standard {
+  customPermissions = {
+    CanByPassRules = {
+      enabled = true
+      name = "CanByPassRules"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+salesforce.ApexClass SalesforceAPI {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SalesforceAPI"
+  content = file("salesforce/Records/ApexClass/SalesforceAPI.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.APIEndpoint
+    },
+    {
+      reference = salesforce.ApexClass.instance.APIFactory
+    },
+    {
+      reference = salesforce.ApexClass.instance.SalesforceEndpoint
+    },
+  ]
+}

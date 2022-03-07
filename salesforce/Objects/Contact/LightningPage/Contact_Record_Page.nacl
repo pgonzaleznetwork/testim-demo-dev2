@@ -1,0 +1,84 @@
+salesforce.LightningPage Contact_Record_Page {
+  fullName = "Contact_Record_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "IndicatorBadges"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+          }
+        },
+      ]
+      name = "rightsidebar"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
+      name = "leftsidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Contact Record Page"
+  sobjectType = "Contact"
+  template = {
+    name = "flexipage:recordHomePinnedHeaderTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.IndicatorBadges
+    },
+  ]
+}

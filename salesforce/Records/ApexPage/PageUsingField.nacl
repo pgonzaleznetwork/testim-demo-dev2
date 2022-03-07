@@ -1,0 +1,25 @@
+salesforce.ApexPage PageUsingField {
+  apiVersion = 49
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "PageUsingField"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "PageUsingField"
+  content = file("salesforce/Records/ApexPage/PageUsingField.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account.field.Field_being_used__c
+    },
+  ]
+}

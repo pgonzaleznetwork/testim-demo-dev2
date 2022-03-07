@@ -1,0 +1,6 @@
+salesforce.StaticResource myLogoHe {
+  cacheControl = "Private"
+  contentType = "image/png"
+  fullName = "myLogoHe"
+  content = file("salesforce/Records/StaticResource/myLogoHe.png")
+}

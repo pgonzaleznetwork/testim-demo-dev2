@@ -1,0 +1,83 @@
+salesforce.LightningPage Account_Record_Page {
+  fullName = "Account_Record_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Account.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "Contacts"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Account.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "Orders"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Account Record Page"
+  sobjectType = "Account"
+  template = {
+    name = "flexipage:recordHomeTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Account,
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.CustomTab Session__c {
+  fullName = "Session__c"
+  customObject = true
+  motif = "Custom55: Books"
+  _parent = [
+    salesforce.Session__c,
+  ]
+}

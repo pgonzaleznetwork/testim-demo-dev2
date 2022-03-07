@@ -1,0 +1,6 @@
+salesforce.SharingRules PartnerFundRequest {
+  fullName = "PartnerFundRequest"
+  _parent = [
+    salesforce.PartnerFundRequest,
+  ]
+}

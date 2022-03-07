@@ -1,0 +1,53 @@
+type salesforce.User {
+  salesforce.Text Phone_UUID__c {
+    apiName = "User.Phone_UUID__c"
+    label = "Phone UUID"
+    createable = true
+    updateable = true
+    externalId = true
+    unique = true
+    caseSensitive = false
+    length = 18
+    queryable = true
+    encryptionScheme = "None"
+    trackFeedHistory = false
+  }
+  salesforce.Picklist DB_Region__c {
+    apiName = "User.DB_Region__c"
+    label = "DB Region"
+    valueSet = [
+      {
+        fullName = "NA"
+        color = "#009900"
+        default = false
+        label = "NA"
+      },
+      {
+        fullName = "EMEA"
+        color = "#3333FF"
+        default = false
+        label = "EMEA"
+      },
+      {
+        fullName = "APAC"
+        color = "#CC6600"
+        default = false
+        label = "APAC"
+      },
+      {
+        fullName = "LA"
+        color = "#990000"
+        default = false
+        label = "LA"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+}

@@ -1,0 +1,20 @@
+salesforce.ApexClass VietnamLeadDeduplicator {
+  apiVersion = 42
+  status = "Active"
+  fullName = "VietnamLeadDeduplicator"
+  content = file("salesforce/Records/ApexClass/VietnamLeadDeduplicator.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.VietLeadDedupeSetting__mdt
+    },
+    {
+      reference = salesforce.VietLeadDedupeSetting__mdt.field.Field1ApiName__c
+    },
+    {
+      reference = salesforce.VietLeadDedupeSetting__mdt.field.Field2ApiName__c
+    },
+  ]
+}

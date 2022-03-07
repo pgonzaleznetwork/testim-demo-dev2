@@ -1,0 +1,8 @@
+salesforce.Profile App_Subscription_v2@s {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

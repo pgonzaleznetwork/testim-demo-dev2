@@ -1,0 +1,6 @@
+salesforce.ApexClass FactorytestCode {
+  apiVersion = 43
+  status = "Active"
+  fullName = "FactorytestCode"
+  content = file("salesforce/Records/ApexClass/FactorytestCode.cls")
+}

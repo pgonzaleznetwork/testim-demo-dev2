@@ -1,0 +1,25 @@
+salesforce.ListView Case_AllOpenCases {
+  fullName = "Case.AllOpenCases"
+  columns = [
+    "CASES.CASE_NUMBER",
+    "NAME",
+    "CASES.SUBJECT",
+    "CASES.STATUS",
+    "CASES.PRIORITY",
+    "CASES.CREATED_DATE",
+    "CORE.USERS.ALIAS",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "CASES.RECORDTYPE"
+      operation = "equals"
+      value = "Case.Case_Time_Tracking"
+    },
+  ]
+  label = "All Open Cases"
+  language = "en_US"
+  _parent = [
+    salesforce.Case,
+  ]
+}

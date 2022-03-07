@@ -1,0 +1,6 @@
+salesforce.SharingRules Ear_Plug__c {
+  fullName = "Ear_Plug__c"
+  _parent = [
+    salesforce.Ear_Plug__c,
+  ]
+}

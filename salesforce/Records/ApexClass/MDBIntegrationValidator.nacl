@@ -1,0 +1,6 @@
+salesforce.ApexClass MDBIntegrationValidator {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MDBIntegrationValidator"
+  content = file("salesforce/Records/ApexClass/MDBIntegrationValidator.cls")
+}

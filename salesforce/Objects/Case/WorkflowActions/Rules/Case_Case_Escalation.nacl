@@ -1,0 +1,22 @@
+salesforce.WorkflowRule Case_Case_Escalation@vs {
+  fullName = "Case.Case Escalation"
+  active = false
+  criteriaItems = [
+    {
+      field = salesforce.Case.field.Origin
+      operation = "equals"
+      value = "Phone"
+    },
+  ]
+  triggerType = "onCreateOrTriggeringUpdate"
+  workflowTimeTriggers = [
+    {
+      offsetFromField = salesforce.Case.field.Home_Visit_To_Happen_By__c
+      timeLength = "-1"
+      workflowTimeTriggerUnit = "Hours"
+    },
+  ]
+  _parent = [
+    salesforce.Case,
+  ]
+}

@@ -1,0 +1,27 @@
+salesforce.ApexComponent SiteFooter {
+  apiVersion = 42
+  description = "Default Lightning Platform site footer component"
+  label = "SiteFooter"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "SiteFooter"
+  content = file("salesforce/Records/ApexComponent/SiteFooter.component")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexComponent.instance.SitePoweredBy
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+}

@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle quickcontact {
+  apiVersion = 38
+  description = "Testing the quickcontact.cmp from the LC dev guide"
+  fullName = "quickcontact"
+  type = "Component"
+  rendererContent = file("salesforce/Records/AuraDefinitionBundle/quickcontact/quickcontactRenderer.js")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/quickcontact/quickcontactHelper.js")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/quickcontact/quickcontactController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/quickcontact/quickcontact.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.QuickContactController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.quickcontact
+    },
+  ]
+}

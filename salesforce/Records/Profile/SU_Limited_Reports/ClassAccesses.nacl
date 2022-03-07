@@ -1,0 +1,1108 @@
+salesforce.Profile SU_Limited_Reports@s {
+  classAccesses = {
+    APIEndpoint = {
+      apexClass = salesforce.ApexClass.instance.APIEndpoint
+      enabled = false
+    }
+    APIFactory = {
+      apexClass = salesforce.ApexClass.instance.APIFactory
+      enabled = false
+    }
+    APIUtils = {
+      apexClass = salesforce.ApexClass.instance.APIUtils
+      enabled = false
+    }
+    AbstractFactory = {
+      apexClass = salesforce.ApexClass.instance.AbstractFactory
+      enabled = false
+    }
+    AbstractTesting = {
+      apexClass = salesforce.ApexClass.instance.AbstractTesting
+      enabled = false
+    }
+    AccountAddressTriggerClass = {
+      apexClass = salesforce.ApexClass.instance.AccountAddressTriggerClass
+      enabled = false
+    }
+    AccountAddressTriggerClass_Test = {
+      apexClass = salesforce.ApexClass.instance.AccountAddressTriggerClass_Test
+      enabled = false
+    }
+    AccountBeforeInsertActions = {
+      apexClass = salesforce.ApexClass.instance.AccountBeforeInsertActions
+      enabled = false
+    }
+    AccountController = {
+      apexClass = salesforce.ApexClass.instance.AccountController
+      enabled = false
+    }
+    AccountCreator = {
+      apexClass = salesforce.ApexClass.instance.AccountCreator
+      enabled = false
+    }
+    AccountCreatorTest = {
+      apexClass = salesforce.ApexClass.instance.AccountCreatorTest
+      enabled = false
+    }
+    AccountCustomError = {
+      apexClass = salesforce.ApexClass.instance.AccountCustomError
+      enabled = false
+    }
+    AccountManager = {
+      apexClass = salesforce.ApexClass.instance.AccountManager
+      enabled = false
+    }
+    AccountManagerTest = {
+      apexClass = salesforce.ApexClass.instance.AccountManagerTest
+      enabled = false
+    }
+    AccountOwnerChange = {
+      apexClass = salesforce.ApexClass.instance.AccountOwnerChange
+      enabled = false
+    }
+    AccountOwnerChild = {
+      apexClass = salesforce.ApexClass.instance.AccountOwnerChild
+      enabled = false
+    }
+    AccountPaginationController = {
+      apexClass = salesforce.ApexClass.instance.AccountPaginationController
+      enabled = false
+    }
+    AccountProcessor = {
+      apexClass = salesforce.ApexClass.instance.AccountProcessor
+      enabled = false
+    }
+    AccountProcessorTest = {
+      apexClass = salesforce.ApexClass.instance.AccountProcessorTest
+      enabled = false
+    }
+    AccountService = {
+      apexClass = salesforce.ApexClass.instance.AccountService
+      enabled = false
+    }
+    AccountServiceTests = {
+      apexClass = salesforce.ApexClass.instance.AccountServiceTests
+      enabled = false
+    }
+    AccountServiceTrigger = {
+      apexClass = salesforce.ApexClass.instance.AccountServiceTrigger
+      enabled = false
+    }
+    AccountTriggerActions = {
+      apexClass = salesforce.ApexClass.instance.AccountTriggerActions
+      enabled = false
+    }
+    AccountTriggerActionsTests = {
+      apexClass = salesforce.ApexClass.instance.AccountTriggerActionsTests
+      enabled = false
+    }
+    AccountTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.AccountTriggerHandler
+      enabled = false
+    }
+    AccountTriggerHandler2 = {
+      apexClass = salesforce.ApexClass.instance.AccountTriggerHandler2
+      enabled = false
+    }
+    AccountTriggerHandlerTests = {
+      apexClass = salesforce.ApexClass.instance.AccountTriggerHandlerTests
+      enabled = false
+    }
+    AccountsController = {
+      apexClass = salesforce.ApexClass.instance.AccountsController
+      enabled = false
+    }
+    AccountsService = {
+      apexClass = salesforce.ApexClass.instance.AccountsService
+      enabled = false
+    }
+    AddPrimaryContact = {
+      apexClass = salesforce.ApexClass.instance.AddPrimaryContact
+      enabled = false
+    }
+    AddPrimaryContactTest = {
+      apexClass = salesforce.ApexClass.instance.AddPrimaryContactTest
+      enabled = false
+    }
+    AfterTriggerAction = {
+      apexClass = salesforce.ApexClass.instance.AfterTriggerAction
+      enabled = false
+    }
+    Algorithms = {
+      apexClass = salesforce.ApexClass.instance.Algorithms
+      enabled = false
+    }
+    AlgorithmsTests = {
+      apexClass = salesforce.ApexClass.instance.AlgorithmsTests
+      enabled = false
+    }
+    AllObjectsTriggerMonitor = {
+      apexClass = salesforce.ApexClass.instance.AllObjectsTriggerMonitor
+      enabled = false
+    }
+    AllThree = {
+      apexClass = salesforce.ApexClass.instance.AllThree
+      enabled = false
+    }
+    AmossExample_DeliveryProvider = {
+      apexClass = salesforce.ApexClass.instance.AmossExample_DeliveryProvider
+      enabled = false
+    }
+    AmossExample_Order = {
+      apexClass = salesforce.ApexClass.instance.AmossExample_Order
+      enabled = false
+    }
+    AmossExample_OrderTest = {
+      apexClass = salesforce.ApexClass.instance.AmossExample_OrderTest
+      enabled = false
+    }
+    AmossTest_Asserts = {
+      apexClass = salesforce.ApexClass.instance.AmossTest_Asserts
+      enabled = false
+    }
+    AmossTest_ClassToDouble = {
+      apexClass = salesforce.ApexClass.instance.AmossTest_ClassToDouble
+      enabled = false
+    }
+    AmossTest_InstanceTest = {
+      apexClass = salesforce.ApexClass.instance.AmossTest_InstanceTest
+      enabled = false
+    }
+    AmossTest_InterfaceToDouble = {
+      apexClass = salesforce.ApexClass.instance.AmossTest_InterfaceToDouble
+      enabled = false
+    }
+    AmossTest_SingletonToDouble = {
+      apexClass = salesforce.ApexClass.instance.AmossTest_SingletonToDouble
+      enabled = false
+    }
+    Amoss_Asserts = {
+      apexClass = salesforce.ApexClass.instance.Amoss_Asserts
+      enabled = false
+    }
+    Amoss_Instance = {
+      apexClass = salesforce.ApexClass.instance.Amoss_Instance
+      enabled = false
+    }
+    Amoss_MethodHandler = {
+      apexClass = salesforce.ApexClass.instance.Amoss_MethodHandler
+      enabled = false
+    }
+    AnimalLocator = {
+      apexClass = salesforce.ApexClass.instance.AnimalLocator
+      enabled = false
+    }
+    AnimalLocatorAsyncRequest = {
+      apexClass = salesforce.ApexClass.instance.AnimalLocatorAsyncRequest
+      enabled = false
+    }
+    AnimalLocatorMock = {
+      apexClass = salesforce.ApexClass.instance.AnimalLocatorMock
+      enabled = false
+    }
+    AnimalLocatorMockNegative = {
+      apexClass = salesforce.ApexClass.instance.AnimalLocatorMockNegative
+      enabled = false
+    }
+    AnimalLocatorTest = {
+      apexClass = salesforce.ApexClass.instance.AnimalLocatorTest
+      enabled = false
+    }
+    Apex_SObjects = {
+      apexClass = salesforce.ApexClass.instance.Apex_SObjects
+      enabled = false
+    }
+    ArraySorter = {
+      apexClass = salesforce.ApexClass.instance.ArraySorter
+      enabled = false
+    }
+    AssignmentExpression = {
+      apexClass = salesforce.ApexClass.instance.AssignmentExpression
+      enabled = false
+    }
+    AsyncCalculatorServices = {
+      apexClass = salesforce.ApexClass.instance.AsyncCalculatorServices
+      enabled = false
+    }
+    AsyncCallBehaviour = {
+      apexClass = salesforce.ApexClass.instance.AsyncCallBehaviour
+      enabled = false
+    }
+    AsyncParkService = {
+      apexClass = salesforce.ApexClass.instance.AsyncParkService
+      enabled = false
+    }
+    BasicSupportLevel = {
+      apexClass = salesforce.ApexClass.instance.BasicSupportLevel
+      enabled = false
+    }
+    BatchLeadConvert = {
+      apexClass = salesforce.ApexClass.instance.BatchLeadConvert
+      enabled = true
+    }
+    BatchLeadConvertTest = {
+      apexClass = salesforce.ApexClass.instance.BatchLeadConvertTest
+      enabled = true
+    }
+    BinarySearch = {
+      apexClass = salesforce.ApexClass.instance.BinarySearch
+      enabled = false
+    }
+    BusScheduleCache = {
+      apexClass = salesforce.ApexClass.instance.BusScheduleCache
+      enabled = false
+    }
+    CampaignService = {
+      apexClass = salesforce.ApexClass.instance.CampaignService
+      enabled = false
+    }
+    CampaignTriggerActionTests = {
+      apexClass = salesforce.ApexClass.instance.CampaignTriggerActionTests
+      enabled = false
+    }
+    CampaignTriggerActions = {
+      apexClass = salesforce.ApexClass.instance.CampaignTriggerActions
+      enabled = false
+    }
+    CampaignTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.CampaignTriggerHandler
+      enabled = false
+    }
+    CampingListController = {
+      apexClass = salesforce.ApexClass.instance.CampingListController
+      enabled = false
+    }
+    CaseTestDataBuilderDirector = {
+      apexClass = salesforce.ApexClass.instance.CaseTestDataBuilderDirector
+      enabled = false
+    }
+    CaseTestDataBuilderImpl = {
+      apexClass = salesforce.ApexClass.instance.CaseTestDataBuilderImpl
+      enabled = false
+    }
+    CaseTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.CaseTriggerHandler
+      enabled = false
+    }
+    CaseTriggerHandler2 = {
+      apexClass = salesforce.ApexClass.instance.CaseTriggerHandler2
+      enabled = false
+    }
+    CaseTriggerHandler_test = {
+      apexClass = salesforce.ApexClass.instance.CaseTriggerHandler_test
+      enabled = false
+    }
+    ChangePasswordController = {
+      apexClass = salesforce.ApexClass.instance.ChangePasswordController
+      enabled = false
+    }
+    ChangePasswordControllerTest = {
+      apexClass = salesforce.ApexClass.instance.ChangePasswordControllerTest
+      enabled = false
+    }
+    ClassA = {
+      apexClass = salesforce.ApexClass.instance.ClassA
+      enabled = false
+    }
+    ClassB = {
+      apexClass = salesforce.ApexClass.instance.ClassB
+      enabled = false
+    }
+    ClassC = {
+      apexClass = salesforce.ApexClass.instance.ClassC
+      enabled = false
+    }
+    ClosedOpportunityTriggerClass = {
+      apexClass = salesforce.ApexClass.instance.ClosedOpportunityTriggerClass
+      enabled = false
+    }
+    CommunitiesLandingController = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesLandingController
+      enabled = false
+    }
+    CommunitiesLandingControllerTest = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesLandingControllerTest
+      enabled = false
+    }
+    CommunitiesLoginController = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesLoginController
+      enabled = false
+    }
+    CommunitiesLoginControllerTest = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesLoginControllerTest
+      enabled = false
+    }
+    CommunitiesSelfRegConfirmController = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesSelfRegConfirmController
+      enabled = false
+    }
+    CommunitiesSelfRegConfirmControllerTest = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesSelfRegConfirmControllerTest
+      enabled = false
+    }
+    CommunitiesSelfRegController = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesSelfRegController
+      enabled = false
+    }
+    CommunitiesSelfRegControllerTest = {
+      apexClass = salesforce.ApexClass.instance.CommunitiesSelfRegControllerTest
+      enabled = false
+    }
+    CompareTranslationFilesApex = {
+      apexClass = salesforce.ApexClass.instance.CompareTranslationFilesApex
+      enabled = false
+    }
+    CompareTranslationFilesApex_Test = {
+      apexClass = salesforce.ApexClass.instance.CompareTranslationFilesApex_Test
+      enabled = false
+    }
+    ComponentDictionaryController = {
+      apexClass = salesforce.ApexClass.instance.ComponentDictionaryController
+      enabled = false
+    }
+    ContactController = {
+      apexClass = salesforce.ApexClass.instance.ContactController
+      enabled = false
+    }
+    ContactsServiceTrigger = {
+      apexClass = salesforce.ApexClass.instance.ContactsServiceTrigger
+      enabled = false
+    }
+    ContactsTodayController = {
+      apexClass = salesforce.ApexClass.instance.ContactsTodayController
+      enabled = true
+    }
+    ContactsTodayController_test = {
+      apexClass = salesforce.ApexClass.instance.ContactsTodayController_test
+      enabled = true
+    }
+    CustomSearchController = {
+      apexClass = salesforce.ApexClass.instance.CustomSearchController
+      enabled = false
+    }
+    DailyLeadProcessor = {
+      apexClass = salesforce.ApexClass.instance.DailyLeadProcessor
+      enabled = false
+    }
+    DailyLeadProcessorTest = {
+      apexClass = salesforce.ApexClass.instance.DailyLeadProcessorTest
+      enabled = false
+    }
+    DataEncryptor = {
+      apexClass = salesforce.ApexClass.instance.DataEncryptor
+      enabled = false
+    }
+    DedupeBranchConfigurationChecker = {
+      apexClass = salesforce.ApexClass.instance.DedupeBranchConfigurationChecker
+      enabled = false
+    }
+    DedupeBranchController = {
+      apexClass = salesforce.ApexClass.instance.DedupeBranchController
+      enabled = false
+    }
+    DedupeBranchControllerSingle = {
+      apexClass = salesforce.ApexClass.instance.DedupeBranchControllerSingle
+      enabled = false
+    }
+    DedupeConfigurationCache = {
+      apexClass = salesforce.ApexClass.instance.DedupeConfigurationCache
+      enabled = false
+    }
+    Deduplicator = {
+      apexClass = salesforce.ApexClass.instance.Deduplicator
+      enabled = false
+    }
+    EarPlugAll = {
+      apexClass = salesforce.ApexClass.instance.EarPlugAll
+      enabled = false
+    }
+    EarPlugWithSharing = {
+      apexClass = salesforce.ApexClass.instance.EarPlugWithSharing
+      enabled = false
+    }
+    EmailManager = {
+      apexClass = salesforce.ApexClass.instance.EmailManager
+      enabled = false
+    }
+    EmailRoutingEngine = {
+      apexClass = salesforce.ApexClass.instance.EmailRoutingEngine
+      enabled = false
+    }
+    EmailRoutingEngine_Test = {
+      apexClass = salesforce.ApexClass.instance.EmailRoutingEngine_Test
+      enabled = false
+    }
+    EmailRoutingFilter = {
+      apexClass = salesforce.ApexClass.instance.EmailRoutingFilter
+      enabled = false
+    }
+    EnhancedLeadConversion = {
+      apexClass = salesforce.ApexClass.instance.EnhancedLeadConversion
+      enabled = false
+    }
+    EnhancedLeadConversion_Tests = {
+      apexClass = salesforce.ApexClass.instance.EnhancedLeadConversion_Tests
+      enabled = false
+    }
+    ExpensesController = {
+      apexClass = salesforce.ApexClass.instance.ExpensesController
+      enabled = false
+    }
+    FactorytestCode = {
+      apexClass = salesforce.ApexClass.instance.FactorytestCode
+      enabled = false
+    }
+    FieldValue = {
+      apexClass = salesforce.ApexClass.instance.FieldValue
+      enabled = false
+    }
+    ForgotPasswordController = {
+      apexClass = salesforce.ApexClass.instance.ForgotPasswordController
+      enabled = false
+    }
+    ForgotPasswordControllerTest = {
+      apexClass = salesforce.ApexClass.instance.ForgotPasswordControllerTest
+      enabled = false
+    }
+    FundController = {
+      apexClass = salesforce.ApexClass.instance.FundController
+      enabled = false
+    }
+    FundControllerTest = {
+      apexClass = salesforce.ApexClass.instance.FundControllerTest
+      enabled = false
+    }
+    HotelRemoter = {
+      apexClass = salesforce.ApexClass.instance.HotelRemoter
+      enabled = false
+    }
+    ICaseTestDataBuilder = {
+      apexClass = salesforce.ApexClass.instance.ICaseTestDataBuilder
+      enabled = false
+    }
+    INDICATOR_Controller = {
+      apexClass = salesforce.ApexClass.instance.INDICATOR_Controller
+      enabled = false
+    }
+    INDICATOR_Service = {
+      apexClass = salesforce.ApexClass.instance.INDICATOR_Service
+      enabled = false
+    }
+    ISO_TestDataFactory = {
+      apexClass = salesforce.ApexClass.instance.ISO_TestDataFactory
+      enabled = false
+    }
+    ISupportLevel = {
+      apexClass = salesforce.ApexClass.instance.ISupportLevel
+      enabled = false
+    }
+    ITriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.ITriggerHandler
+      enabled = false
+    }
+    Item = {
+      apexClass = salesforce.ApexClass.instance.Item
+      enabled = false
+    }
+    LabelController = {
+      apexClass = salesforce.ApexClass.instance.LabelController
+      enabled = false
+    }
+    LeadConversionConfig = {
+      apexClass = salesforce.ApexClass.instance.LeadConversionConfig
+      enabled = false
+    }
+    LeadConvertValidationTest = {
+      apexClass = salesforce.ApexClass.instance.LeadConvertValidationTest
+      enabled = true
+    }
+    LeadDedupeActions = {
+      apexClass = salesforce.ApexClass.instance.LeadDedupeActions
+      enabled = false
+    }
+    LeadDedupeActions_Test = {
+      apexClass = salesforce.ApexClass.instance.LeadDedupeActions_Test
+      enabled = false
+    }
+    LeadDeduper = {
+      apexClass = salesforce.ApexClass.instance.LeadDeduper
+      enabled = false
+    }
+    LeadDefaultValues = {
+      apexClass = salesforce.ApexClass.instance.LeadDefaultValues
+      enabled = false
+    }
+    LeadObjs = {
+      apexClass = salesforce.ApexClass.instance.LeadObjs
+      enabled = false
+    }
+    LeadProcessor = {
+      apexClass = salesforce.ApexClass.instance.LeadProcessor
+      enabled = false
+    }
+    LeadProcessorTest = {
+      apexClass = salesforce.ApexClass.instance.LeadProcessorTest
+      enabled = false
+    }
+    LeadSelector = {
+      apexClass = salesforce.ApexClass.instance.LeadSelector
+      enabled = false
+    }
+    LeadService = {
+      apexClass = salesforce.ApexClass.instance.LeadService
+      enabled = false
+    }
+    LeadServiceRouter = {
+      apexClass = salesforce.ApexClass.instance.LeadServiceRouter
+      enabled = false
+    }
+    LeadTriggerActions = {
+      apexClass = salesforce.ApexClass.instance.LeadTriggerActions
+      enabled = false
+    }
+    LeadTriggerClass = {
+      apexClass = salesforce.ApexClass.instance.LeadTriggerClass
+      enabled = false
+    }
+    LeadTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.LeadTriggerHandler
+      enabled = false
+    }
+    LeadValidation = {
+      apexClass = salesforce.ApexClass.instance.LeadValidation
+      enabled = false
+    }
+    LightningConnectQuickstart = {
+      apexClass = salesforce.ApexClass.instance.LightningConnectQuickstart
+      enabled = false
+    }
+    LightningController = {
+      apexClass = salesforce.ApexClass.instance.LightningController
+      enabled = false
+    }
+    LightningForgotPasswordController = {
+      apexClass = salesforce.ApexClass.instance.LightningForgotPasswordController
+      enabled = false
+    }
+    LightningForgotPasswordControllerTest = {
+      apexClass = salesforce.ApexClass.instance.LightningForgotPasswordControllerTest
+      enabled = false
+    }
+    LightningLoginFormController = {
+      apexClass = salesforce.ApexClass.instance.LightningLoginFormController
+      enabled = false
+    }
+    LightningLoginFormControllerTest = {
+      apexClass = salesforce.ApexClass.instance.LightningLoginFormControllerTest
+      enabled = false
+    }
+    LightningPathController = {
+      apexClass = salesforce.ApexClass.instance.LightningPathController
+      enabled = false
+    }
+    LightningSelfRegisterController = {
+      apexClass = salesforce.ApexClass.instance.LightningSelfRegisterController
+      enabled = false
+    }
+    LightningSelfRegisterControllerTest = {
+      apexClass = salesforce.ApexClass.instance.LightningSelfRegisterControllerTest
+      enabled = false
+    }
+    LtnOpportunityListController = {
+      apexClass = salesforce.ApexClass.instance.LtnOpportunityListController
+      enabled = false
+    }
+    MDBIntegrationValidator = {
+      apexClass = salesforce.ApexClass.instance.MDBIntegrationValidator
+      enabled = false
+    }
+    MainCaseTestClass = {
+      apexClass = salesforce.ApexClass.instance.MainCaseTestClass
+      enabled = false
+    }
+    MarketoAPI = {
+      apexClass = salesforce.ApexClass.instance.MarketoAPI
+      enabled = false
+    }
+    MarketoAPIRequest = {
+      apexClass = salesforce.ApexClass.instance.MarketoAPIRequest
+      enabled = false
+    }
+    MarketoEndpoint = {
+      apexClass = salesforce.ApexClass.instance.MarketoEndpoint
+      enabled = false
+    }
+    MatchingRuleConfigurationChecker = {
+      apexClass = salesforce.ApexClass.instance.MatchingRuleConfigurationChecker
+      enabled = false
+    }
+    MatchingRuleController = {
+      apexClass = salesforce.ApexClass.instance.MatchingRuleController
+      enabled = false
+    }
+    MatchingRuleControllerSingle = {
+      apexClass = salesforce.ApexClass.instance.MatchingRuleControllerSingle
+      enabled = false
+    }
+    MergeConflict = {
+      apexClass = salesforce.ApexClass.instance.MergeConflict
+      enabled = false
+    }
+    MicrobatchSelfRegController = {
+      apexClass = salesforce.ApexClass.instance.MicrobatchSelfRegController
+      enabled = false
+    }
+    MicrobatchSelfRegControllerTest = {
+      apexClass = salesforce.ApexClass.instance.MicrobatchSelfRegControllerTest
+      enabled = false
+    }
+    MongoDBAPI = {
+      apexClass = salesforce.ApexClass.instance.MongoDBAPI
+      enabled = false
+    }
+    MongoDBIntegrationFacade = {
+      apexClass = salesforce.ApexClass.instance.MongoDBIntegrationFacade
+      enabled = false
+    }
+    MyContactListController = {
+      apexClass = salesforce.ApexClass.instance.MyContactListController
+      enabled = false
+    }
+    MyProfilePageController = {
+      apexClass = salesforce.ApexClass.instance.MyProfilePageController
+      enabled = false
+    }
+    MyProfilePageControllerTest = {
+      apexClass = salesforce.ApexClass.instance.MyProfilePageControllerTest
+      enabled = false
+    }
+    NegativeBoolean = {
+      apexClass = salesforce.ApexClass.instance.NegativeBoolean
+      enabled = false
+    }
+    NegativeRuleResult = {
+      apexClass = salesforce.ApexClass.instance.NegativeRuleResult
+      enabled = false
+    }
+    NewClass = {
+      apexClass = salesforce.ApexClass.instance.NewClass
+      enabled = false
+    }
+    OmniaCanvasController = {
+      apexClass = salesforce.ApexClass.instance.OmniaCanvasController
+      enabled = false
+    }
+    OpporTestClass = {
+      apexClass = salesforce.ApexClass.instance.OpporTestClass
+      enabled = false
+    }
+    OpportunitiesPaginationController = {
+      apexClass = salesforce.ApexClass.instance.OpportunitiesPaginationController
+      enabled = false
+    }
+    OpportunitiesService = {
+      apexClass = salesforce.ApexClass.instance.OpportunitiesService
+      enabled = false
+    }
+    OpportunityAlertController = {
+      apexClass = salesforce.ApexClass.instance.OpportunityAlertController
+      enabled = true
+    }
+    OpportunityAlertController_test = {
+      apexClass = salesforce.ApexClass.instance.OpportunityAlertController_test
+      enabled = true
+    }
+    OpportunityCreator = {
+      apexClass = salesforce.ApexClass.instance.OpportunityCreator
+      enabled = false
+    }
+    OpportunityRecursiveTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.OpportunityRecursiveTriggerHandler
+      enabled = false
+    }
+    OpportunityTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.OpportunityTriggerHandler
+      enabled = false
+    }
+    OpportunityTriggerHandlerTest = {
+      apexClass = salesforce.ApexClass.instance.OpportunityTriggerHandlerTest
+      enabled = false
+    }
+    Order = {
+      apexClass = salesforce.ApexClass.instance.Order
+      enabled = false
+    }
+    PageLayoutMetadata = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutMetadata
+      enabled = false
+    }
+    PageLayoutMetadataI = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutMetadataI
+      enabled = false
+    }
+    PageLayoutMetadataMock = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutMetadataMock
+      enabled = false
+    }
+    PageLayoutMetadata_Test = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutMetadata_Test
+      enabled = false
+    }
+    PageLayoutTranslationInfo = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutTranslationInfo
+      enabled = false
+    }
+    PageLayoutTranslationInfoV2 = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutTranslationInfoV2
+      enabled = false
+    }
+    PageLayoutTranslationInfoV2_Test = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutTranslationInfoV2_Test
+      enabled = false
+    }
+    PageLayoutTranslationSettings = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutTranslationSettings
+      enabled = false
+    }
+    PageLayoutTranslatorFacade = {
+      apexClass = salesforce.ApexClass.instance.PageLayoutTranslatorFacade
+      enabled = false
+    }
+    Paren = {
+      apexClass = salesforce.ApexClass.instance.Paren
+      enabled = false
+    }
+    ParkLocator = {
+      apexClass = salesforce.ApexClass.instance.ParkLocator
+      enabled = false
+    }
+    ParkLocatorTest = {
+      apexClass = salesforce.ApexClass.instance.ParkLocatorTest
+      enabled = false
+    }
+    ParkService = {
+      apexClass = salesforce.ApexClass.instance.ParkService
+      enabled = false
+    }
+    ParkServiceMock = {
+      apexClass = salesforce.ApexClass.instance.ParkServiceMock
+      enabled = false
+    }
+    PositiveBoolean = {
+      apexClass = salesforce.ApexClass.instance.PositiveBoolean
+      enabled = false
+    }
+    PositiveRuleResult = {
+      apexClass = salesforce.ApexClass.instance.PositiveRuleResult
+      enabled = false
+    }
+    PremierSupportLevel = {
+      apexClass = salesforce.ApexClass.instance.PremierSupportLevel
+      enabled = false
+    }
+    ProductCollection = {
+      apexClass = salesforce.ApexClass.instance.ProductCollection
+      enabled = false
+    }
+    QuickContactController = {
+      apexClass = salesforce.ApexClass.instance.QuickContactController
+      enabled = true
+    }
+    QuickContactController_Test = {
+      apexClass = salesforce.ApexClass.instance.QuickContactController_Test
+      enabled = true
+    }
+    RandomClassTest = {
+      apexClass = salesforce.ApexClass.instance.RandomClassTest
+      enabled = false
+    }
+    RandomContactFactory = {
+      apexClass = salesforce.ApexClass.instance.RandomContactFactory
+      enabled = false
+    }
+    RecursiveTriggerHandler2 = {
+      apexClass = salesforce.ApexClass.instance.RecursiveTriggerHandler2
+      enabled = false
+    }
+    RecursiveTriggerHandler3 = {
+      apexClass = salesforce.ApexClass.instance.RecursiveTriggerHandler3
+      enabled = false
+    }
+    RuleResult = {
+      apexClass = salesforce.ApexClass.instance.RuleResult
+      enabled = false
+    }
+    SFMD = {
+      apexClass = salesforce.ApexClass.instance.SFMD
+      enabled = false
+    }
+    SObjectTriggerHandler = {
+      apexClass = salesforce.ApexClass.instance.SObjectTriggerHandler
+      enabled = false
+    }
+    SObjectTriggerHandlerMock = {
+      apexClass = salesforce.ApexClass.instance.SObjectTriggerHandlerMock
+      enabled = false
+    }
+    SalesforceAPI = {
+      apexClass = salesforce.ApexClass.instance.SalesforceAPI
+      enabled = false
+    }
+    SalesforceEndpoint = {
+      apexClass = salesforce.ApexClass.instance.SalesforceEndpoint
+      enabled = false
+    }
+    SaltoUIController = {
+      apexClass = salesforce.ApexClass.instance.SaltoUIController
+      enabled = false
+    }
+    SendReminderEmail = {
+      apexClass = salesforce.ApexClass.instance.SendReminderEmail
+      enabled = false
+    }
+    SingleProduct = {
+      apexClass = salesforce.ApexClass.instance.SingleProduct
+      enabled = false
+    }
+    SiteLoginController = {
+      apexClass = salesforce.ApexClass.instance.SiteLoginController
+      enabled = false
+    }
+    SiteLoginControllerTest = {
+      apexClass = salesforce.ApexClass.instance.SiteLoginControllerTest
+      enabled = false
+    }
+    SiteRegisterController = {
+      apexClass = salesforce.ApexClass.instance.SiteRegisterController
+      enabled = false
+    }
+    SiteRegisterControllerTest = {
+      apexClass = salesforce.ApexClass.instance.SiteRegisterControllerTest
+      enabled = false
+    }
+    SpeakerControllerExtension = {
+      apexClass = salesforce.ApexClass.instance.SpeakerControllerExtension
+      enabled = false
+    }
+    StringStack = {
+      apexClass = salesforce.ApexClass.instance.StringStack
+      enabled = false
+    }
+    StringStack_Test = {
+      apexClass = salesforce.ApexClass.instance.StringStack_Test
+      enabled = false
+    }
+    SubmitPageLayoutInfoApex_Test = {
+      apexClass = salesforce.ApexClass.instance.SubmitPageLayoutInfoApex_Test
+      enabled = false
+    }
+    SubmitPageLayoutInfo_LEX_Controller = {
+      apexClass = salesforce.ApexClass.instance.SubmitPageLayoutInfo_LEX_Controller
+      enabled = false
+    }
+    SupportLevelFactory = {
+      apexClass = salesforce.ApexClass.instance.SupportLevelFactory
+      enabled = false
+    }
+    SyndicationEventHandler = {
+      apexClass = salesforce.ApexClass.instance.SyndicationEventHandler
+      enabled = true
+    }
+    SyndicationEventHandler_Test = {
+      apexClass = salesforce.ApexClass.instance.SyndicationEventHandler_Test
+      enabled = true
+    }
+    TestLightningConnectQuickstart = {
+      apexClass = salesforce.ApexClass.instance.TestLightningConnectQuickstart
+      enabled = false
+    }
+    TestRejectDoubleBooking = {
+      apexClass = salesforce.ApexClass.instance.TestRejectDoubleBooking
+      enabled = false
+    }
+    TestRestrictContactByName = {
+      apexClass = salesforce.ApexClass.instance.TestRestrictContactByName
+      enabled = false
+    }
+    TestVerifyDate = {
+      apexClass = salesforce.ApexClass.instance.TestVerifyDate
+      enabled = false
+    }
+    ToolingAPI = {
+      apexClass = salesforce.ApexClass.instance.ToolingAPI
+      enabled = false
+    }
+    ToolingAPIService = {
+      apexClass = salesforce.ApexClass.instance.ToolingAPIService
+      enabled = false
+    }
+    TranslatableMetadata = {
+      apexClass = salesforce.ApexClass.instance.TranslatableMetadata
+      enabled = false
+    }
+    TranslatableMetadataFactory = {
+      apexClass = salesforce.ApexClass.instance.TranslatableMetadataFactory
+      enabled = false
+    }
+    TranslatableMetadataFactory_Test = {
+      apexClass = salesforce.ApexClass.instance.TranslatableMetadataFactory_Test
+      enabled = false
+    }
+    TranslatableMetadataI = {
+      apexClass = salesforce.ApexClass.instance.TranslatableMetadataI
+      enabled = false
+    }
+    TranslationFileBuilder = {
+      apexClass = salesforce.ApexClass.instance.TranslationFileBuilder
+      enabled = false
+    }
+    TranslationFileBuilder_Test = {
+      apexClass = salesforce.ApexClass.instance.TranslationFileBuilder_Test
+      enabled = false
+    }
+    TranslationKey = {
+      apexClass = salesforce.ApexClass.instance.TranslationKey
+      enabled = false
+    }
+    TranslationKeyFactory = {
+      apexClass = salesforce.ApexClass.instance.TranslationKeyFactory
+      enabled = false
+    }
+    TranslationsMergerApex_Test = {
+      apexClass = salesforce.ApexClass.instance.TranslationsMergerApex_Test
+      enabled = false
+    }
+    TranslationsMerger_LEX_Controller = {
+      apexClass = salesforce.ApexClass.instance.TranslationsMerger_LEX_Controller
+      enabled = false
+    }
+    TriggerAction = {
+      apexClass = salesforce.ApexClass.instance.TriggerAction
+      enabled = false
+    }
+    TriggerActions = {
+      apexClass = salesforce.ApexClass.instance.TriggerActions
+      enabled = false
+    }
+    TriggerActionsBase = {
+      apexClass = salesforce.ApexClass.instance.TriggerActionsBase
+      enabled = false
+    }
+    TriggerActionsMock = {
+      apexClass = salesforce.ApexClass.instance.TriggerActionsMock
+      enabled = false
+    }
+    TriggerActionsOld = {
+      apexClass = salesforce.ApexClass.instance.TriggerActionsOld
+      enabled = false
+    }
+    TriggerContextRouter = {
+      apexClass = salesforce.ApexClass.instance.TriggerContextRouter
+      enabled = false
+    }
+    TriggerDispatcher = {
+      apexClass = salesforce.ApexClass.instance.TriggerDispatcher
+      enabled = false
+    }
+    TriggerEngine = {
+      apexClass = salesforce.ApexClass.instance.TriggerEngine
+      enabled = false
+    }
+    TriggerFramework = {
+      apexClass = salesforce.ApexClass.instance.TriggerFramework
+      enabled = false
+    }
+    TriggerFrameworkTests = {
+      apexClass = salesforce.ApexClass.instance.TriggerFrameworkTests
+      enabled = false
+    }
+    UpdateCaseViewTracker = {
+      apexClass = salesforce.ApexClass.instance.UpdateCaseViewTracker
+      enabled = false
+    }
+    UpdateCaseViewTrackerTest = {
+      apexClass = salesforce.ApexClass.instance.UpdateCaseViewTrackerTest
+      enabled = false
+    }
+    UpdateContactPageLayout = {
+      apexClass = salesforce.ApexClass.instance.UpdateContactPageLayout
+      enabled = false
+    }
+    UpdatePageLayout = {
+      apexClass = salesforce.ApexClass.instance.UpdatePageLayout
+      enabled = false
+    }
+    UpdateParentAccount = {
+      apexClass = salesforce.ApexClass.instance.UpdateParentAccount
+      enabled = false
+    }
+    VATController = {
+      apexClass = salesforce.ApexClass.instance.VATController
+      enabled = false
+    }
+    VerifyDate = {
+      apexClass = salesforce.ApexClass.instance.VerifyDate
+      enabled = false
+    }
+    VietnamLeadDeduplicator = {
+      apexClass = salesforce.ApexClass.instance.VietnamLeadDeduplicator
+      enabled = false
+    }
+    WebCallout = {
+      apexClass = salesforce.ApexClass.instance.WebCallout
+      enabled = false
+    }
+    WizardComponentController = {
+      apexClass = salesforce.ApexClass.instance.WizardComponentController
+      enabled = false
+    }
+    WizardComponentControllerTest = {
+      apexClass = salesforce.ApexClass.instance.WizardComponentControllerTest
+      enabled = false
+    }
+    ZBSDataLoadController = {
+      apexClass = salesforce.ApexClass.instance.ZBSDataLoadController
+      enabled = true
+    }
+    ZBSLoadDataController_Test = {
+      apexClass = salesforce.ApexClass.instance.ZBSLoadDataController_Test
+      enabled = true
+    }
+    apexLogHandler = {
+      apexClass = salesforce.ApexClass.instance.apexLogHandler
+      enabled = false
+    }
+    apexLogHandler_Test = {
+      apexClass = salesforce.ApexClass.instance.apexLogHandler_Test
+      enabled = false
+    }
+    autoCompleteController = {
+      apexClass = salesforce.ApexClass.instance.autoCompleteController
+      enabled = false
+    }
+    autoCompleteController_Test = {
+      apexClass = salesforce.ApexClass.instance.autoCompleteController_Test
+      enabled = false
+    }
+    calculatorServices = {
+      apexClass = salesforce.ApexClass.instance.calculatorServices
+      enabled = false
+    }
+    th_con_app__PlaygroundInstaller = {
+      apexClass = "th_con_app__PlaygroundInstaller"
+      enabled = false
+    }
+    th_con_app__PlaygroundInstallerTests = {
+      apexClass = "th_con_app__PlaygroundInstallerTests"
+      enabled = false
+    }
+    th_con_app__WelcomeFinder = {
+      apexClass = "th_con_app__WelcomeFinder"
+      enabled = false
+    }
+    th_con_app__WelcomeFinderTests = {
+      apexClass = "th_con_app__WelcomeFinderTests"
+      enabled = false
+    }
+  }
+}

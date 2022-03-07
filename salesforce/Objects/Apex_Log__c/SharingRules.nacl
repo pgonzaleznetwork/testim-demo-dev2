@@ -1,0 +1,6 @@
+salesforce.SharingRules Apex_Log__c {
+  fullName = "Apex_Log__c"
+  _parent = [
+    salesforce.Apex_Log__c,
+  ]
+}

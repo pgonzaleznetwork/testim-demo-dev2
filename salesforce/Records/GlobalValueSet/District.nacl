@@ -1,0 +1,27 @@
+salesforce.GlobalValueSet District {
+  fullName = "District"
+  customValue = [
+    {
+      fullName = "District1"
+      default = false
+      label = "District1"
+    },
+    {
+      fullName = "District2"
+      default = false
+      label = "District2"
+    },
+    {
+      fullName = "District3"
+      default = false
+      label = "District3"
+    },
+    {
+      fullName = "District4"
+      default = false
+      label = "District4"
+    },
+  ]
+  masterLabel = "District"
+  sorted = false
+}

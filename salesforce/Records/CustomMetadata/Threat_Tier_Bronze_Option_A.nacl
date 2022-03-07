@@ -1,0 +1,17 @@
+salesforce.CustomMetadata Threat_Tier_Bronze_Option_A@uvuu {
+  fullName = "Threat_Tier.Bronze_Option_A"
+  label = "Bronze Option A"
+  protected = false
+  values = [
+    {
+      field = "Account_Tier__c"
+      value = "Bronze"
+      type = "xsd:string"
+    },
+    {
+      field = "Vacation__c"
+      value = "Deep Sea Beta Fishing"
+      type = "xsd:string"
+    },
+  ]
+}

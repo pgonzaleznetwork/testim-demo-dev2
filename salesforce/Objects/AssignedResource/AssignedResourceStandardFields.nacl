@@ -1,0 +1,130 @@
+type salesforce.AssignedResource {
+  serviceid Id {
+    apiName = "AssignedResource.Id"
+    label = "Assigned Resource ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AssignedResource.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber AssignedResourceNumber {
+    apiName = "AssignedResource.AssignedResourceNumber"
+    label = "Assigned Resource Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AssignedResource.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AssignedResource.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AssignedResource.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AssignedResource.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AssignedResource.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceAppointmentId {
+    apiName = "AssignedResource.ServiceAppointmentId"
+    label = "Service Appointment ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceAppointment,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ServiceAppointment"
+    queryable = true
+  }
+  salesforce.Lookup ServiceResourceId {
+    apiName = "AssignedResource.ServiceResourceId"
+    label = "Service Resource ID"
+    _required = true
+    referenceTo = [
+      salesforce.ServiceResource,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceResource"
+    queryable = true
+  }
+  salesforce.Number EstimatedTravelTime {
+    apiName = "AssignedResource.EstimatedTravelTime"
+    label = "Estimated Travel Time (Minutes)"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Number ActualTravelTime {
+    apiName = "AssignedResource.ActualTravelTime"
+    label = "Actual Travel Time (Minutes)"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup ServiceCrewId {
+    apiName = "AssignedResource.ServiceCrewId"
+    label = "Service Crew ID"
+    referenceTo = [
+      salesforce.ServiceCrew,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ServiceCrew"
+    queryable = true
+  }
+}

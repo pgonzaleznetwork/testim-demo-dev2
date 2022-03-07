@@ -1,0 +1,20 @@
+salesforce.ApexClass CaseTestDataBuilderImpl {
+  apiVersion = 41
+  status = "Active"
+  fullName = "CaseTestDataBuilderImpl"
+  content = file("salesforce/Records/ApexClass/CaseTestDataBuilderImpl.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.ICaseTestDataBuilder
+    },
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

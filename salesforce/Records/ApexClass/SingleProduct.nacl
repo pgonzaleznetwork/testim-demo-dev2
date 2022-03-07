@@ -1,0 +1,11 @@
+salesforce.ApexClass SingleProduct {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SingleProduct"
+  content = file("salesforce/Records/ApexClass/SingleProduct.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Item
+    },
+  ]
+}

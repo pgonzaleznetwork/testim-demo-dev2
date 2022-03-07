@@ -1,0 +1,57 @@
+salesforce.QuickAction Account_New_Oppty@vu {
+  fullName = "Account.New_Oppty"
+  fieldOverrides = [
+    {
+      field = "Amount"
+      formula = "100"
+    },
+  ]
+  label = "New Oppty"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Name
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "AccountId"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "CloseDate"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "StageName"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "Amount"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "NextStep"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  successMessage = "Done!"
+  targetObject = salesforce.Opportunity
+  targetParentField = "Account"
+  type = "Create"
+  _parent = [
+    salesforce.Account,
+  ]
+}

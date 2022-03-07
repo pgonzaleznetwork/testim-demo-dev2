@@ -1,0 +1,16 @@
+salesforce.WebLink AccountContactRelation_New_Contact2 {
+  fullName = "AccountContactRelation.New_Contact2"
+  availability = "online"
+  displayType = "massActionButton"
+  encodingKey = "UTF-8"
+  height = 600
+  linkType = "url"
+  masterLabel = "New Contact"
+  openType = "sidebar"
+  protected = false
+  requireRowSelection = true
+  url = "https://resourceful-moose-448750-dev-ed.my.salesforce.com/00b/e?type=AccountContactRelation&setupid=AccountContactRelationLinks&PageOrSobjectType=AccountContactRelation&retURL=%2Fp%2Fsetup%2Flink%2FActionButtonLinkList%3FpageName%3DAccountContactRelation%26type%3DAccountContactRelation%26retURL%3D%252Fui%252Fsetup%252FSetup%253Fsetupid%253DAccountContactRelation%26setupid%3DAccountContactRelationLinks"
+  _parent = [
+    salesforce.AccountContactRelation,
+  ]
+}

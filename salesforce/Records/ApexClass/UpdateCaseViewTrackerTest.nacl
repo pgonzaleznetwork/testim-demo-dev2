@@ -1,0 +1,17 @@
+salesforce.ApexClass UpdateCaseViewTrackerTest {
+  apiVersion = 43
+  status = "Active"
+  fullName = "UpdateCaseViewTrackerTest"
+  content = file("salesforce/Records/ApexClass/UpdateCaseViewTrackerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.UpdateCaseViewTracker
+    },
+    {
+      reference = salesforce.Case
+    },
+    {
+      reference = salesforce.Case.field.Owner_Active_Time_in_Seconds__c
+    },
+  ]
+}

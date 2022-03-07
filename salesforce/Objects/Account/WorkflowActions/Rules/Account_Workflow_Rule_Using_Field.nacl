@@ -1,0 +1,15 @@
+salesforce.WorkflowRule Account_Workflow_Rule_Using_Field@vsss {
+  fullName = "Account.Workflow Rule Using Field"
+  actions = [
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.Account_update_field_being_used@vuuu
+      type = "FieldUpdate"
+    },
+  ]
+  active = true
+  formula = "ISBLANK(Field_being_used__c)"
+  triggerType = "onCreateOnly"
+  _parent = [
+    salesforce.Account,
+  ]
+}

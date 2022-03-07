@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute type="String" name="personName" default="Pablo"/>
+	<p>{!format($Label.c.Thank_you_for_the_feedback,v.personName)}</p>
+</aura:component>

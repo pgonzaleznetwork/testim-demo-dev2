@@ -1,0 +1,11 @@
+salesforce.CustomTab Load_Data {
+  fullName = "Load_Data"
+  label = "Load Data"
+  motif = "Custom42: Treasure chest"
+  page = "LoadZBSData"
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.LoadZBSData
+    },
+  ]
+}

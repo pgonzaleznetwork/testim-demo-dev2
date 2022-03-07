@@ -1,0 +1,98 @@
+type salesforce.ApexLogSettings__c {
+  salesforce.Checkbox Activate_System_Logs__c {
+    apiName = "ApexLogSettings__c.Activate_System_Logs__c"
+    label = "Activate System Logs"
+    defaultValue = false
+    inlineHelpText = "Activate System Log Entries."
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox Active__c {
+    apiName = "ApexLogSettings__c.Active__c"
+    label = "Active"
+    defaultValue = false
+    inlineHelpText = "Indicates logging is active for this Class/Method combo."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Indicates logging is active for this Class/Method combo."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox LogDmlExceptions__c {
+    apiName = "ApexLogSettings__c.LogDmlExceptions__c"
+    label = "Log Dml Exceptions"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number Log_Level__c {
+    apiName = "ApexLogSettings__c.Log_Level__c"
+    label = "Log Level"
+    precision = 2
+    scale = 0
+    inlineHelpText = '''
+1 for  FINEST,
+2 for  FINER,
+3 for FINE,
+4 for DEBUG,
+5 for INFO,
+6 for WARN,
+7 for ERROR
+8 for NONE
+'''
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number MaxDays__c {
+    apiName = "ApexLogSettings__c.MaxDays__c"
+    label = "MaxDays"
+    _required = true
+    precision = 3
+    scale = 0
+    inlineHelpText = "The maximum number of days log records should be kept for this Class/Method combo"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "The maximum number of days log records should be kept for this Class/Method combo"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Number MaxRecords__c {
+    apiName = "ApexLogSettings__c.MaxRecords__c"
+    label = "MaxRecords"
+    _required = true
+    precision = 9
+    scale = 0
+    inlineHelpText = "The maximum number of log records which should be kept for this Class/Method combo."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "The maximum number of log records which should be kept for this Class/Method combo."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox Send_Email__c {
+    apiName = "ApexLogSettings__c.Send_Email__c"
+    label = "Send Email"
+    defaultValue = false
+    inlineHelpText = "Send email to the current logged in user."
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

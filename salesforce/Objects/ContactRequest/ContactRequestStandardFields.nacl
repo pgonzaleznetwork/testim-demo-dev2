@@ -1,0 +1,281 @@
+type salesforce.ContactRequest {
+  serviceid Id {
+    apiName = "ContactRequest.Id"
+    label = "Contact Request ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ContactRequest.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ContactRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ContactRequest.Name"
+    label = "Contact Request Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ContactRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ContactRequest.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ContactRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ContactRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ContactRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WhatId {
+    apiName = "ContactRequest.WhatId"
+    label = "Related To ID"
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Action_Button__c,
+      salesforce.ApexLogSettings__c,
+      salesforce.Apex_Log__c,
+      salesforce.BatchLeadConvertErrors__c,
+      salesforce.Camping_Item__c,
+      salesforce.Case,
+      salesforce.Case_Status_Bucket__c,
+      salesforce.Case_Status_History__c,
+      salesforce.Center__c,
+      salesforce.Child__c,
+      salesforce.Custom_Field_Help_Text__c,
+      salesforce.DMLSysException__c,
+      salesforce.Dedupe_Branch__c,
+      salesforce.Dedupe_Scenario_Rule__c,
+      salesforce.Dedupe_Scenario__c,
+      salesforce.Delivery_Agency__c,
+      salesforce.Ear_Plug__c,
+      salesforce.Email_Routing_Field_Mapping__c,
+      salesforce.Email_Routing_Rule_Filter__c,
+      salesforce.Email_Routing_Rule__c,
+      salesforce.Energy_Audit__c,
+      salesforce.Expense__c,
+      salesforce.Field_Translation_Name__c,
+      salesforce.Fund__c,
+      salesforce.Hotel__c,
+      salesforce.Internal_Request__c,
+      salesforce.KPI_Target__c,
+      salesforce.Layout_Section_Translation_Name__c,
+      salesforce.Layout_Translation_Info__c,
+      salesforce.Login_Allowed__c,
+      salesforce.Matching_Rule__c,
+      salesforce.Object_in_2nd_Env__c,
+      salesforce.Opportunity,
+      salesforce.Parent__c,
+      salesforce.Picklist_Value__c,
+      salesforce.Related_List_Item__c,
+      salesforce.Sector__c,
+      salesforce.Session_Speaker__c,
+      salesforce.Session__c,
+      salesforce.Show__c,
+      salesforce.Speaker__c,
+      salesforce.Standard_Field_Help__c,
+      salesforce.Standard_Field_Label__c,
+      salesforce.Syndication__c,
+      salesforce.Translation_Context__c,
+      salesforce.Translation_Key__c,
+      salesforce.TriggerSettings__c,
+      salesforce.TriggerStatus2__c,
+      salesforce.WorkOrder,
+      salesforce.support_type__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "What"
+    queryable = true
+  }
+  salesforce.Lookup WhoId {
+    apiName = "ContactRequest.WhoId"
+    label = "Requestor ID"
+    referenceTo = [
+      salesforce.Contact,
+      salesforce.Lead,
+      salesforce.User,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Who"
+    queryable = true
+  }
+  salesforce.Phone PreferredPhone {
+    apiName = "ContactRequest.PreferredPhone"
+    label = "Preferred Phone Number"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist PreferredChannel {
+    apiName = "ContactRequest.PreferredChannel"
+    label = "Preferred Channel"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Phone"
+        default = true
+        label = "Phone"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ContactRequest.Status"
+    label = "Request Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "New"
+        default = true
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "Attempted"
+        default = false
+        label = "Attempted"
+        isActive = true
+      },
+      {
+        fullName = "Contacted"
+        default = false
+        label = "Contacted"
+        isActive = true
+      },
+      {
+        fullName = "Abandoned"
+        default = false
+        label = "Abandoned"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist RequestReason {
+    apiName = "ContactRequest.RequestReason"
+    label = "Request Reason"
+    valueSet = [
+      {
+        fullName = "Account"
+        default = true
+        label = "Account"
+        isActive = true
+      },
+      {
+        fullName = "Billing"
+        default = false
+        label = "Billing"
+        isActive = true
+      },
+      {
+        fullName = "Case"
+        default = false
+        label = "Case"
+        isActive = true
+      },
+      {
+        fullName = "General"
+        default = false
+        label = "General"
+        isActive = true
+      },
+      {
+        fullName = "Order"
+        default = false
+        label = "Order"
+        isActive = true
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+        isActive = true
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea RequestDescription {
+    apiName = "ContactRequest.RequestDescription"
+    label = "Request Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+}

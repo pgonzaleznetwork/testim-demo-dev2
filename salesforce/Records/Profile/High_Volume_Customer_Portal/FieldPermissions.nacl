@@ -1,0 +1,5878 @@
+salesforce.Profile HighVolumePortal {
+  fieldPermissions = {
+    Account = {
+      AccountNumber = {
+        editable = true
+        field = salesforce.Account.field.AccountNumber
+        readable = true
+      }
+      AccountSource = {
+        editable = true
+        field = salesforce.Account.field.AccountSource
+        readable = true
+      }
+      Active_Subscriptions__c = {
+        editable = false
+        field = salesforce.Account.field.Active_Subscriptions__c
+        readable = false
+      }
+      Active_Syndications__c = {
+        editable = false
+        field = salesforce.Account.field.Active_Syndications__c
+        readable = false
+      }
+      Active__c = {
+        editable = true
+        field = salesforce.Account.field.Active__c
+        readable = true
+      }
+      All_Subscriptions__c = {
+        editable = false
+        field = salesforce.Account.field.All_Subscriptions__c
+        readable = false
+      }
+      AnnualRevenue = {
+        editable = true
+        field = salesforce.Account.field.AnnualRevenue
+        readable = true
+      }
+      BillingAddress = {
+        editable = true
+        field = salesforce.Account.field.BillingAddress
+        readable = true
+      }
+      CleanStatus = {
+        editable = false
+        field = salesforce.Account.field.CleanStatus
+        readable = true
+      }
+      CustomerPriority__c = {
+        editable = true
+        field = salesforce.Account.field.CustomerPriority__c
+        readable = true
+      }
+      Customer_ID__c = {
+        editable = false
+        field = salesforce.Account.field.Customer_ID__c
+        readable = false
+      }
+      DandbCompanyId = {
+        editable = false
+        field = salesforce.Account.field.DandbCompanyId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Account.field.Description
+        readable = true
+      }
+      DunsNumber = {
+        editable = false
+        field = salesforce.Account.field.DunsNumber
+        readable = true
+      }
+      Fax = {
+        editable = true
+        field = salesforce.Account.field.Fax
+        readable = true
+      }
+      Field_being_used__c = {
+        editable = false
+        field = salesforce.Account.field.Field_being_used__c
+        readable = false
+      }
+      Field_calling_field__c = {
+        editable = false
+        field = salesforce.Account.field.Field_calling_field__c
+        readable = false
+      }
+      Industry = {
+        editable = true
+        field = salesforce.Account.field.Industry
+        readable = true
+      }
+      Jigsaw = {
+        editable = true
+        field = salesforce.Account.field.Jigsaw
+        readable = true
+      }
+      Location__c = {
+        editable = true
+        field = salesforce.Account.field.Location__c
+        readable = true
+      }
+      Match_Billing_Address__c = {
+        editable = true
+        field = salesforce.Account.field.Match_Billing_Address__c
+        readable = true
+      }
+      NaicsCode = {
+        editable = false
+        field = salesforce.Account.field.NaicsCode
+        readable = true
+      }
+      NaicsDesc = {
+        editable = false
+        field = salesforce.Account.field.NaicsDesc
+        readable = true
+      }
+      New_field__c = {
+        editable = false
+        field = salesforce.Account.field.New_field__c
+        readable = false
+      }
+      NumberOfEmployees = {
+        editable = true
+        field = salesforce.Account.field.NumberOfEmployees
+        readable = true
+      }
+      Number_of_Contacts__c = {
+        editable = true
+        field = salesforce.Account.field.Number_of_Contacts__c
+        readable = true
+      }
+      NumberofLocations__c = {
+        editable = true
+        field = salesforce.Account.field.NumberofLocations__c
+        readable = true
+      }
+      OperatingHoursId = {
+        editable = true
+        field = salesforce.Account.field.OperatingHoursId
+        readable = true
+      }
+      Ownership = {
+        editable = true
+        field = salesforce.Account.field.Ownership
+        readable = true
+      }
+      ParentId = {
+        editable = true
+        field = salesforce.Account.field.ParentId
+        readable = true
+      }
+      Phone = {
+        editable = true
+        field = salesforce.Account.field.Phone
+        readable = true
+      }
+      Potential_Value__c = {
+        editable = false
+        field = salesforce.Account.field.Potential_Value__c
+        readable = true
+      }
+      Priority_Formula__c = {
+        editable = false
+        field = salesforce.Account.field.Priority_Formula__c
+        readable = false
+      }
+      Rating = {
+        editable = true
+        field = salesforce.Account.field.Rating
+        readable = true
+      }
+      RequiredField__c = {
+        editable = true
+        field = salesforce.Account.field.RequiredField__c
+        readable = true
+      }
+      SLAExpirationDate__c = {
+        editable = true
+        field = salesforce.Account.field.SLAExpirationDate__c
+        readable = true
+      }
+      SLASerialNumber__c = {
+        editable = true
+        field = salesforce.Account.field.SLASerialNumber__c
+        readable = true
+      }
+      SLA__c = {
+        editable = true
+        field = salesforce.Account.field.SLA__c
+        readable = true
+      }
+      ShippingAddress = {
+        editable = true
+        field = salesforce.Account.field.ShippingAddress
+        readable = true
+      }
+      Sic = {
+        editable = true
+        field = salesforce.Account.field.Sic
+        readable = true
+      }
+      SicDesc = {
+        editable = true
+        field = salesforce.Account.field.SicDesc
+        readable = true
+      }
+      Site = {
+        editable = true
+        field = salesforce.Account.field.Site
+        readable = true
+      }
+      Social_Sec_Number__c = {
+        editable = true
+        field = salesforce.Account.field.Social_Sec_Number__c
+        readable = true
+      }
+      TickerSymbol = {
+        editable = true
+        field = salesforce.Account.field.TickerSymbol
+        readable = true
+      }
+      Total__c = {
+        editable = true
+        field = salesforce.Account.field.Total__c
+        readable = true
+      }
+      Tradestyle = {
+        editable = false
+        field = salesforce.Account.field.Tradestyle
+        readable = true
+      }
+      Type = {
+        editable = true
+        field = salesforce.Account.field.Type
+        readable = true
+      }
+      Ultra_Parent_Using_Field__c = {
+        editable = false
+        field = salesforce.Account.field.Ultra_Parent_Using_Field__c
+        readable = false
+      }
+      UpsellOpportunity__c = {
+        editable = true
+        field = salesforce.Account.field.UpsellOpportunity__c
+        readable = true
+      }
+      Used_Field__c = {
+        editable = false
+        field = salesforce.Account.field.Used_Field__c
+        readable = false
+      }
+      Website = {
+        editable = true
+        field = salesforce.Account.field.Website
+        readable = true
+      }
+      YearStarted = {
+        editable = false
+        field = salesforce.Account.field.YearStarted
+        readable = true
+      }
+    }
+    AccountContactRelation = {
+      EndDate = {
+        editable = true
+        field = salesforce.AccountContactRelation.field.EndDate
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.AccountContactRelation.field.IsActive
+        readable = true
+      }
+      Roles = {
+        editable = true
+        field = salesforce.AccountContactRelation.field.Roles
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.AccountContactRelation.field.StartDate
+        readable = true
+      }
+    }
+    Action_Button__c = {
+      Key__c = {
+        editable = false
+        field = salesforce.Action_Button__c.field.Key__c
+        readable = false
+      }
+      Master_Label__c = {
+        editable = false
+        field = salesforce.Action_Button__c.field.Master_Label__c
+        readable = false
+      }
+    }
+    Apex_Log__c = {
+      Access_Key__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Access_Key__c
+        readable = false
+      }
+      District__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.District__c
+        readable = false
+      }
+      Exception_Cause__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Exception_Cause__c
+        readable = false
+      }
+      Exception_Line_Number__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Exception_Line_Number__c
+        readable = false
+      }
+      Exception_Stack_Trace_String__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Exception_Stack_Trace_String__c
+        readable = false
+      }
+      Exception_Type__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Exception_Type__c
+        readable = false
+      }
+      Lead__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Lead__c
+        readable = false
+      }
+      Log_Type__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Log_Type__c
+        readable = false
+      }
+      Message__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Message__c
+        readable = false
+      }
+      Province__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Province__c
+        readable = false
+      }
+      Reference_ID__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Reference_ID__c
+        readable = false
+      }
+      Status_Code__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Status_Code__c
+        readable = false
+      }
+      Status_Message__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.Status_Message__c
+        readable = false
+      }
+      class_name__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.class_name__c
+        readable = false
+      }
+      method_name__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.method_name__c
+        readable = false
+      }
+      request_info__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.request_info__c
+        readable = false
+      }
+      response_info__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.response_info__c
+        readable = false
+      }
+      start_dtm__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.start_dtm__c
+        readable = false
+      }
+      start_ms__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.start_ms__c
+        readable = false
+      }
+      stop_dtm__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.stop_dtm__c
+        readable = false
+      }
+      stop_ms__c = {
+        editable = false
+        field = salesforce.Apex_Log__c.field.stop_ms__c
+        readable = false
+      }
+    }
+    ApptBundleAggrDurDnscale = {
+      MaxReduction = {
+        editable = false
+        field = "ApptBundleAggrDurDnscale.MaxReduction"
+        readable = false
+      }
+      ToBundleMemberNumber = {
+        editable = false
+        field = "ApptBundleAggrDurDnscale.ToBundleMemberNumber"
+        readable = false
+      }
+    }
+    ApptBundleAggrPolicy = {
+      AggregationOrder = {
+        editable = false
+        field = "ApptBundleAggrPolicy.AggregationOrder"
+        readable = false
+      }
+      BundleMemberAddiFieldName = {
+        editable = false
+        field = "ApptBundleAggrPolicy.BundleMemberAddiFieldName"
+        readable = false
+      }
+      BundleMemberFieldName = {
+        editable = false
+        field = "ApptBundleAggrPolicy.BundleMemberFieldName"
+        readable = false
+      }
+      ConstantValue = {
+        editable = false
+        field = "ApptBundleAggrPolicy.ConstantValue"
+        readable = false
+      }
+      DateValue = {
+        editable = false
+        field = "ApptBundleAggrPolicy.DateValue"
+        readable = false
+      }
+      DoesAllowDuplicateStrings = {
+        editable = false
+        field = "ApptBundleAggrPolicy.DoesAllowDuplicateStrings"
+        readable = false
+      }
+      DownscaleSortDirection = {
+        editable = false
+        field = "ApptBundleAggrPolicy.DownscaleSortDirection"
+        readable = false
+      }
+      MaxBundleDuration = {
+        editable = false
+        field = "ApptBundleAggrPolicy.MaxBundleDuration"
+        readable = false
+      }
+      ShouldUpdateOnCreationOnly = {
+        editable = false
+        field = "ApptBundleAggrPolicy.ShouldUpdateOnCreationOnly"
+        readable = false
+      }
+    }
+    ApptBundleConfig = {
+      AddToBundleStatuses = {
+        editable = false
+        field = salesforce.ApptBundleConfig.field.AddToBundleStatuses
+        readable = false
+      }
+      BundleStatusesToPropagate = {
+        editable = false
+        field = salesforce.ApptBundleConfig.field.BundleStatusesToPropagate
+        readable = false
+      }
+      CriteriaForAutoUnbundlingId = {
+        editable = false
+        field = salesforce.ApptBundleConfig.field.CriteriaForAutoUnbundlingId
+        readable = false
+      }
+      MemberStatusesNotToPropagate = {
+        editable = false
+        field = salesforce.ApptBundleConfig.field.MemberStatusesNotToPropagate
+        readable = false
+      }
+      RemoveFromBundleStatuses = {
+        editable = false
+        field = salesforce.ApptBundleConfig.field.RemoveFromBundleStatuses
+        readable = false
+      }
+      StatusesNotToUpdateOnUnbundle = {
+        editable = false
+        field = salesforce.ApptBundleConfig.field.StatusesNotToUpdateOnUnbundle
+        readable = false
+      }
+    }
+    ApptBundlePolicy = {
+      BundleEndTimeFieldName = {
+        editable = false
+        field = "ApptBundlePolicy.BundleEndTimeFieldName"
+        readable = false
+      }
+      BundleStartTimeFieldName = {
+        editable = false
+        field = "ApptBundlePolicy.BundleStartTimeFieldName"
+        readable = false
+      }
+      CanAllowSchleDepndInBundle = {
+        editable = false
+        field = "ApptBundlePolicy.CanAllowSchleDepndInBundle"
+        readable = false
+      }
+      ConstantTimeValue = {
+        editable = false
+        field = "ApptBundlePolicy.ConstantTimeValue"
+        readable = false
+      }
+      FilterCriteriaId = {
+        editable = false
+        field = salesforce.ApptBundlePolicy.field.FilterCriteriaId
+        readable = false
+      }
+      IsAutomaticBundling = {
+        editable = false
+        field = "ApptBundlePolicy.IsAutomaticBundling"
+        readable = false
+      }
+      IsManualBundling = {
+        editable = false
+        field = "ApptBundlePolicy.IsManualBundling"
+        readable = false
+      }
+      IsTimeCalcByBundleDurationFld = {
+        editable = false
+        field = "ApptBundlePolicy.IsTimeCalcByBundleDurationFld"
+        readable = false
+      }
+      LimitAmountOfBundleMembers = {
+        editable = false
+        field = "ApptBundlePolicy.LimitAmountOfBundleMembers"
+        readable = false
+      }
+      LimitDurationOfBundle = {
+        editable = false
+        field = "ApptBundlePolicy.LimitDurationOfBundle"
+        readable = false
+      }
+    }
+    ApptBundlePropagatePolicy = {
+      AdditionalConstantValue = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.AdditionalConstantValue"
+        readable = false
+      }
+      BundleFieldName = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.BundleFieldName"
+        readable = false
+      }
+      BundleMemberFieldName = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.BundleMemberFieldName"
+        readable = false
+      }
+      ConstantValue = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.ConstantValue"
+        readable = false
+      }
+      ShouldAddConstantValue = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.ShouldAddConstantValue"
+        readable = false
+      }
+      ShouldUpdateOnAdd = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.ShouldUpdateOnAdd"
+        readable = false
+      }
+      ShouldUpdateOnRemove = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.ShouldUpdateOnRemove"
+        readable = false
+      }
+      ShouldUpdateOnUnbundle = {
+        editable = false
+        field = "ApptBundlePropagatePolicy.ShouldUpdateOnUnbundle"
+        readable = false
+      }
+    }
+    ApptBundleRestrictPolicy = {
+      DoesAllowEmpty = {
+        editable = false
+        field = "ApptBundleRestrictPolicy.DoesAllowEmpty"
+        readable = false
+      }
+      DoesRestrictAutomaticMode = {
+        editable = false
+        field = "ApptBundleRestrictPolicy.DoesRestrictAutomaticMode"
+        readable = false
+      }
+      DoesRestrictManualMode = {
+        editable = false
+        field = "ApptBundleRestrictPolicy.DoesRestrictManualMode"
+        readable = false
+      }
+      IsRestrictByDateOnly = {
+        editable = false
+        field = "ApptBundleRestrictPolicy.IsRestrictByDateOnly"
+        readable = false
+      }
+      RestrictionFieldName = {
+        editable = false
+        field = "ApptBundleRestrictPolicy.RestrictionFieldName"
+        readable = false
+      }
+    }
+    ApptBundleSortPolicy = {
+      SortFieldName = {
+        editable = false
+        field = "ApptBundleSortPolicy.SortFieldName"
+        readable = false
+      }
+    }
+    Asset = {
+      AccountId = {
+        editable = true
+        field = salesforce.Asset.field.AccountId
+        readable = true
+      }
+      AssetLevel = {
+        editable = true
+        field = salesforce.Asset.field.AssetLevel
+        readable = true
+      }
+      AssetProvidedById = {
+        editable = true
+        field = salesforce.Asset.field.AssetProvidedById
+        readable = true
+      }
+      AssetServicedById = {
+        editable = true
+        field = salesforce.Asset.field.AssetServicedById
+        readable = true
+      }
+      Availability = {
+        editable = false
+        field = salesforce.Asset.field.Availability
+        readable = false
+      }
+      AverageUptimePerDay = {
+        editable = false
+        field = salesforce.Asset.field.AverageUptimePerDay
+        readable = false
+      }
+      ConsequenceOfFailure = {
+        editable = false
+        field = salesforce.Asset.field.ConsequenceOfFailure
+        readable = false
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.Asset.field.ContactId
+        readable = true
+      }
+      CurrentAmount = {
+        editable = true
+        field = salesforce.Asset.field.CurrentAmount
+        readable = true
+      }
+      CurrentLifecycleEndDate = {
+        editable = true
+        field = salesforce.Asset.field.CurrentLifecycleEndDate
+        readable = true
+      }
+      CurrentMrr = {
+        editable = true
+        field = salesforce.Asset.field.CurrentMrr
+        readable = true
+      }
+      CurrentQuantity = {
+        editable = true
+        field = salesforce.Asset.field.CurrentQuantity
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Asset.field.Description
+        readable = true
+      }
+      DigitalAssetStatus = {
+        editable = false
+        field = salesforce.Asset.field.DigitalAssetStatus
+        readable = false
+      }
+      ExternalIdentifier = {
+        editable = false
+        field = salesforce.Asset.field.ExternalIdentifier
+        readable = false
+      }
+      HasLifecycleManagement = {
+        editable = true
+        field = salesforce.Asset.field.HasLifecycleManagement
+        readable = true
+      }
+      InstallDate = {
+        editable = true
+        field = salesforce.Asset.field.InstallDate
+        readable = true
+      }
+      IsCompetitorProduct = {
+        editable = true
+        field = salesforce.Asset.field.IsCompetitorProduct
+        readable = true
+      }
+      IsInternal = {
+        editable = true
+        field = salesforce.Asset.field.IsInternal
+        readable = true
+      }
+      LifecycleEndDate = {
+        editable = true
+        field = salesforce.Asset.field.LifecycleEndDate
+        readable = true
+      }
+      LifecycleStartDate = {
+        editable = true
+        field = salesforce.Asset.field.LifecycleStartDate
+        readable = true
+      }
+      LocationId = {
+        editable = true
+        field = salesforce.Asset.field.LocationId
+        readable = true
+      }
+      ManufactureDate = {
+        editable = false
+        field = salesforce.Asset.field.ManufactureDate
+        readable = false
+      }
+      Price = {
+        editable = true
+        field = salesforce.Asset.field.Price
+        readable = true
+      }
+      Product2Id = {
+        editable = true
+        field = salesforce.Asset.field.Product2Id
+        readable = true
+      }
+      ProductCode = {
+        editable = false
+        field = salesforce.Asset.field.ProductCode
+        readable = true
+      }
+      ProductDescription = {
+        editable = false
+        field = salesforce.Asset.field.ProductDescription
+        readable = false
+      }
+      ProductFamily = {
+        editable = false
+        field = salesforce.Asset.field.ProductFamily
+        readable = false
+      }
+      PurchaseDate = {
+        editable = true
+        field = salesforce.Asset.field.PurchaseDate
+        readable = true
+      }
+      Quantity = {
+        editable = true
+        field = salesforce.Asset.field.Quantity
+        readable = true
+      }
+      Reliability = {
+        editable = false
+        field = salesforce.Asset.field.Reliability
+        readable = false
+      }
+      SerialNumber = {
+        editable = true
+        field = salesforce.Asset.field.SerialNumber
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.Asset.field.Status
+        readable = true
+      }
+      StatusReason = {
+        editable = false
+        field = salesforce.Asset.field.StatusReason
+        readable = false
+      }
+      StockKeepingUnit = {
+        editable = true
+        field = salesforce.Asset.field.StockKeepingUnit
+        readable = true
+      }
+      SumDowntime = {
+        editable = false
+        field = salesforce.Asset.field.SumDowntime
+        readable = false
+      }
+      SumUnplannedDowntime = {
+        editable = false
+        field = salesforce.Asset.field.SumUnplannedDowntime
+        readable = false
+      }
+      Support_Group__c = {
+        editable = false
+        field = salesforce.Asset.field.Support_Group__c
+        readable = false
+      }
+      TotalLifecycleAmount = {
+        editable = true
+        field = salesforce.Asset.field.TotalLifecycleAmount
+        readable = true
+      }
+      UptimeRecordEnd = {
+        editable = false
+        field = salesforce.Asset.field.UptimeRecordEnd
+        readable = false
+      }
+      UptimeRecordStart = {
+        editable = false
+        field = salesforce.Asset.field.UptimeRecordStart
+        readable = false
+      }
+      UsageEndDate = {
+        editable = true
+        field = salesforce.Asset.field.UsageEndDate
+        readable = true
+      }
+      Uuid = {
+        editable = false
+        field = salesforce.Asset.field.Uuid
+        readable = false
+      }
+    }
+    AssetRelationship = {
+      RelationshipType = {
+        editable = true
+        field = salesforce.AssetRelationship.field.RelationshipType
+        readable = true
+      }
+    }
+    AssignedResource = {
+      ActualTravelTime = {
+        editable = true
+        field = salesforce.AssignedResource.field.ActualTravelTime
+        readable = true
+      }
+      EstimatedTravelTime = {
+        editable = true
+        field = salesforce.AssignedResource.field.EstimatedTravelTime
+        readable = true
+      }
+      ServiceCrewId = {
+        editable = true
+        field = salesforce.AssignedResource.field.ServiceCrewId
+        readable = true
+      }
+    }
+    AuthorizationForm = {
+      DefaultAuthFormTextId = {
+        editable = true
+        field = salesforce.AuthorizationForm.field.DefaultAuthFormTextId
+        readable = true
+      }
+      EffectiveFromDate = {
+        editable = true
+        field = salesforce.AuthorizationForm.field.EffectiveFromDate
+        readable = true
+      }
+      EffectiveToDate = {
+        editable = true
+        field = salesforce.AuthorizationForm.field.EffectiveToDate
+        readable = true
+      }
+      IsSignatureRequired = {
+        editable = true
+        field = salesforce.AuthorizationForm.field.IsSignatureRequired
+        readable = true
+      }
+      RevisionNumber = {
+        editable = true
+        field = salesforce.AuthorizationForm.field.RevisionNumber
+        readable = true
+      }
+    }
+    AuthorizationFormConsent = {
+      DocumentVersionId = {
+        editable = true
+        field = salesforce.AuthorizationFormConsent.field.DocumentVersionId
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.AuthorizationFormConsent.field.Status
+        readable = true
+      }
+    }
+    AuthorizationFormText = {
+      ContentDocumentId = {
+        editable = true
+        field = salesforce.AuthorizationFormText.field.ContentDocumentId
+        readable = true
+      }
+      FullAuthorizationFormUrl = {
+        editable = true
+        field = salesforce.AuthorizationFormText.field.FullAuthorizationFormUrl
+        readable = true
+      }
+      Locale = {
+        editable = true
+        field = salesforce.AuthorizationFormText.field.Locale
+        readable = true
+      }
+      SummaryAuthFormText = {
+        editable = true
+        field = salesforce.AuthorizationFormText.field.SummaryAuthFormText
+        readable = true
+      }
+    }
+    BatchLeadConvertErrors__c = {
+      AsyncApexJobId__c = {
+        editable = false
+        field = salesforce.BatchLeadConvertErrors__c.field.AsyncApexJobId__c
+        readable = false
+      }
+      Records__c = {
+        editable = false
+        field = salesforce.BatchLeadConvertErrors__c.field.Records__c
+        readable = false
+      }
+      StackTrace__c = {
+        editable = false
+        field = salesforce.BatchLeadConvertErrors__c.field.StackTrace__c
+        readable = false
+      }
+    }
+    BusinessBrand = {
+      OrgId = {
+        editable = true
+        field = "BusinessBrand.OrgId"
+        readable = true
+      }
+      ParentId = {
+        editable = true
+        field = salesforce.BusinessBrand.field.ParentId
+        readable = true
+      }
+    }
+    Campaign = {
+      ActualCost = {
+        editable = true
+        field = salesforce.Campaign.field.ActualCost
+        readable = true
+      }
+      AmountAllOpportunities = {
+        editable = true
+        field = salesforce.Campaign.field.AmountAllOpportunities
+        readable = true
+      }
+      AmountWonOpportunities = {
+        editable = true
+        field = salesforce.Campaign.field.AmountWonOpportunities
+        readable = true
+      }
+      BudgetedCost = {
+        editable = true
+        field = salesforce.Campaign.field.BudgetedCost
+        readable = true
+      }
+      CampaignImageId = {
+        editable = true
+        field = salesforce.Campaign.field.CampaignImageId
+        readable = true
+      }
+      DB_Campaign_Tactic__c = {
+        editable = false
+        field = salesforce.Campaign.field.DB_Campaign_Tactic__c
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.Campaign.field.Description
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.Campaign.field.EndDate
+        readable = true
+      }
+      ExpectedResponse = {
+        editable = true
+        field = salesforce.Campaign.field.ExpectedResponse
+        readable = true
+      }
+      ExpectedRevenue = {
+        editable = true
+        field = salesforce.Campaign.field.ExpectedRevenue
+        readable = true
+      }
+      HierarchyActualCost = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyActualCost
+        readable = false
+      }
+      HierarchyAmountAllOpportunities = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyAmountAllOpportunities
+        readable = false
+      }
+      HierarchyAmountWonOpportunities = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyAmountWonOpportunities
+        readable = false
+      }
+      HierarchyBudgetedCost = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyBudgetedCost
+        readable = false
+      }
+      HierarchyExpectedRevenue = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyExpectedRevenue
+        readable = false
+      }
+      HierarchyNumberOfContacts = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberOfContacts
+        readable = false
+      }
+      HierarchyNumberOfConvertedLeads = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberOfConvertedLeads
+        readable = false
+      }
+      HierarchyNumberOfLeads = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberOfLeads
+        readable = false
+      }
+      HierarchyNumberOfOpportunities = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberOfOpportunities
+        readable = false
+      }
+      HierarchyNumberOfResponses = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberOfResponses
+        readable = false
+      }
+      HierarchyNumberOfWonOpportunities = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberOfWonOpportunities
+        readable = false
+      }
+      HierarchyNumberSent = {
+        editable = false
+        field = salesforce.Campaign.field.HierarchyNumberSent
+        readable = false
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.Campaign.field.IsActive
+        readable = true
+      }
+      NumberOfContacts = {
+        editable = true
+        field = salesforce.Campaign.field.NumberOfContacts
+        readable = true
+      }
+      NumberOfConvertedLeads = {
+        editable = true
+        field = salesforce.Campaign.field.NumberOfConvertedLeads
+        readable = true
+      }
+      NumberOfLeads = {
+        editable = true
+        field = salesforce.Campaign.field.NumberOfLeads
+        readable = true
+      }
+      NumberOfOpportunities = {
+        editable = true
+        field = salesforce.Campaign.field.NumberOfOpportunities
+        readable = true
+      }
+      NumberOfResponses = {
+        editable = true
+        field = salesforce.Campaign.field.NumberOfResponses
+        readable = true
+      }
+      NumberOfWonOpportunities = {
+        editable = true
+        field = salesforce.Campaign.field.NumberOfWonOpportunities
+        readable = true
+      }
+      NumberSent = {
+        editable = true
+        field = salesforce.Campaign.field.NumberSent
+        readable = true
+      }
+      ParentId = {
+        editable = true
+        field = salesforce.Campaign.field.ParentId
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.Campaign.field.StartDate
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.Campaign.field.Status
+        readable = true
+      }
+      Type = {
+        editable = true
+        field = salesforce.Campaign.field.Type
+        readable = true
+      }
+    }
+    Camping_Item__c = {
+      Packed__c = {
+        editable = false
+        field = salesforce.Camping_Item__c.field.Packed__c
+        readable = false
+      }
+    }
+    Case = {
+      AccountId = {
+        editable = false
+        field = salesforce.Case.field.AccountId
+        readable = true
+      }
+      Active_Time__c = {
+        editable = false
+        field = salesforce.Case.field.Active_Time__c
+        readable = false
+      }
+      Actual_Home_Visit__c = {
+        editable = false
+        field = salesforce.Case.field.Actual_Home_Visit__c
+        readable = false
+      }
+      AssetId = {
+        editable = true
+        field = salesforce.Case.field.AssetId
+        readable = true
+      }
+      AssetWarrantyId = {
+        editable = false
+        field = salesforce.Case.field.AssetWarrantyId
+        readable = false
+      }
+      BusinessHoursId = {
+        editable = true
+        field = salesforce.Case.field.BusinessHoursId
+        readable = true
+      }
+      Business_Unit__c = {
+        editable = false
+        field = salesforce.Case.field.Business_Unit__c
+        readable = false
+      }
+      Calculated_Account_Name__c = {
+        editable = false
+        field = salesforce.Case.field.Calculated_Account_Name__c
+        readable = true
+      }
+      ClosedDate = {
+        editable = false
+        field = salesforce.Case.field.ClosedDate
+        readable = true
+      }
+      ClosedOnCreate = {
+        editable = false
+        field = "Case.ClosedOnCreate"
+        readable = false
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.Case.field.ContactId
+        readable = true
+      }
+      Days_Since_Last_Update__c = {
+        editable = false
+        field = salesforce.Case.field.Days_Since_Last_Update__c
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Case.field.Description
+        readable = true
+      }
+      Ear_plug__c = {
+        editable = false
+        field = salesforce.Case.field.Ear_plug__c
+        readable = false
+      }
+      Email_Response_SLA_Met__c = {
+        editable = true
+        field = salesforce.Case.field.Email_Response_SLA_Met__c
+        readable = true
+      }
+      EngineeringReqNumber__c = {
+        editable = true
+        field = salesforce.Case.field.EngineeringReqNumber__c
+        readable = true
+      }
+      EntitlementId = {
+        editable = true
+        field = salesforce.Case.field.EntitlementId
+        readable = true
+      }
+      Escalated_to_Management__c = {
+        editable = true
+        field = salesforce.Case.field.Escalated_to_Management__c
+        readable = true
+      }
+      Escalation_Owner__c = {
+        editable = true
+        field = salesforce.Case.field.Escalation_Owner__c
+        readable = true
+      }
+      Home_Visit_To_Happen_By__c = {
+        editable = true
+        field = salesforce.Case.field.Home_Visit_To_Happen_By__c
+        readable = true
+      }
+      Hours_In_Pending_Customer_Response__c = {
+        editable = false
+        field = salesforce.Case.field.Hours_In_Pending_Customer_Response__c
+        readable = true
+      }
+      Hours_in_In_Progress_Status__c = {
+        editable = false
+        field = salesforce.Case.field.Hours_in_In_Progress_Status__c
+        readable = true
+      }
+      Hours_in_New_Status__c = {
+        editable = false
+        field = salesforce.Case.field.Hours_in_New_Status__c
+        readable = true
+      }
+      Hours_in_Pending_Advisor_Response__c = {
+        editable = false
+        field = salesforce.Case.field.Hours_in_Pending_Advisor_Response__c
+        readable = true
+      }
+      IsClosedOnCreate = {
+        editable = false
+        field = salesforce.Case.field.IsClosedOnCreate
+        readable = false
+      }
+      IsEscalated = {
+        editable = false
+        field = salesforce.Case.field.IsEscalated
+        readable = true
+      }
+      IsStopped = {
+        editable = false
+        field = salesforce.Case.field.IsStopped
+        readable = false
+      }
+      Last_Status_Update__c = {
+        editable = true
+        field = salesforce.Case.field.Last_Status_Update__c
+        readable = true
+      }
+      MilestoneStatus = {
+        editable = false
+        field = salesforce.Case.field.MilestoneStatus
+        readable = false
+      }
+      MilestoneStatusIcon = {
+        editable = false
+        field = salesforce.Case.field.MilestoneStatusIcon
+        readable = false
+      }
+      Origin = {
+        editable = true
+        field = salesforce.Case.field.Origin
+        readable = true
+      }
+      Original_To__c = {
+        editable = true
+        field = salesforce.Case.field.Original_To__c
+        readable = true
+      }
+      Overall_Case_Time_Business_Hrs__c = {
+        editable = false
+        field = salesforce.Case.field.Overall_Case_Time_Business_Hrs__c
+        readable = false
+      }
+      Overall_Case_Time_Calendar_Hrs__c = {
+        editable = false
+        field = salesforce.Case.field.Overall_Case_Time_Calendar_Hrs__c
+        readable = false
+      }
+      Owner_Active_Time_in_Seconds__c = {
+        editable = true
+        field = salesforce.Case.field.Owner_Active_Time_in_Seconds__c
+        readable = true
+      }
+      ParentId = {
+        editable = false
+        field = salesforce.Case.field.ParentId
+        readable = false
+      }
+      PotentialLiability__c = {
+        editable = true
+        field = salesforce.Case.field.PotentialLiability__c
+        readable = true
+      }
+      Priority = {
+        editable = true
+        field = salesforce.Case.field.Priority
+        readable = true
+      }
+      ProductId = {
+        editable = false
+        field = salesforce.Case.field.ProductId
+        readable = false
+      }
+      Product__c = {
+        editable = true
+        field = salesforce.Case.field.Product__c
+        readable = true
+      }
+      Reason = {
+        editable = true
+        field = salesforce.Case.field.Reason
+        readable = true
+      }
+      Region__c = {
+        editable = true
+        field = salesforce.Case.field.Region__c
+        readable = true
+      }
+      SLAViolation__c = {
+        editable = true
+        field = salesforce.Case.field.SLAViolation__c
+        readable = true
+      }
+      SLA_Missed__c = {
+        editable = false
+        field = salesforce.Case.field.SLA_Missed__c
+        readable = false
+      }
+      Scheduled_Home_Visit__c = {
+        editable = false
+        field = salesforce.Case.field.Scheduled_Home_Visit__c
+        readable = false
+      }
+      Scheduled_vs_Actual__c = {
+        editable = false
+        field = salesforce.Case.field.Scheduled_vs_Actual__c
+        readable = false
+      }
+      ServiceContractId = {
+        editable = false
+        field = salesforce.Case.field.ServiceContractId
+        readable = false
+      }
+      SlaExitDate = {
+        editable = true
+        field = salesforce.Case.field.SlaExitDate
+        readable = true
+      }
+      SlaStartDate = {
+        editable = true
+        field = salesforce.Case.field.SlaStartDate
+        readable = true
+      }
+      SourceId = {
+        editable = true
+        field = salesforce.Case.field.SourceId
+        readable = true
+      }
+      StopStartDate = {
+        editable = false
+        field = salesforce.Case.field.StopStartDate
+        readable = false
+      }
+      Subject = {
+        editable = true
+        field = salesforce.Case.field.Subject
+        readable = true
+      }
+      SuppliedCompany = {
+        editable = false
+        field = salesforce.Case.field.SuppliedCompany
+        readable = true
+      }
+      SuppliedEmail = {
+        editable = false
+        field = salesforce.Case.field.SuppliedEmail
+        readable = true
+      }
+      SuppliedName = {
+        editable = false
+        field = salesforce.Case.field.SuppliedName
+        readable = true
+      }
+      SuppliedPhone = {
+        editable = false
+        field = salesforce.Case.field.SuppliedPhone
+        readable = true
+      }
+      Support_Group__c = {
+        editable = false
+        field = salesforce.Case.field.Support_Group__c
+        readable = false
+      }
+      Time_since_last_status_change__c = {
+        editable = false
+        field = salesforce.Case.field.Time_since_last_status_change__c
+        readable = true
+      }
+      Total_Finance_Business_Hrs__c = {
+        editable = false
+        field = salesforce.Case.field.Total_Finance_Business_Hrs__c
+        readable = false
+      }
+      Total_Resolution_Business_Hrs__c = {
+        editable = false
+        field = salesforce.Case.field.Total_Resolution_Business_Hrs__c
+        readable = false
+      }
+      Total_Vendor_Business_Hrs__c = {
+        editable = false
+        field = salesforce.Case.field.Total_Vendor_Business_Hrs__c
+        readable = false
+      }
+      Type = {
+        editable = true
+        field = salesforce.Case.field.Type
+        readable = true
+      }
+      ear_plug_name__c = {
+        editable = false
+        field = salesforce.Case.field.ear_plug_name__c
+        readable = false
+      }
+    }
+    Case_Status_History__c = {
+      Autonumber__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Autonumber__c
+        readable = false
+      }
+      CaseAge_Business_Hours__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.CaseAge_Business_Hours__c
+        readable = false
+      }
+      CaseAge_Calendar_Hours__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.CaseAge_Calendar_Hours__c
+        readable = false
+      }
+      Change_Type__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Change_Type__c
+        readable = false
+      }
+      Changed_Field__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Changed_Field__c
+        readable = false
+      }
+      Current_Time_Bucket__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Current_Time_Bucket__c
+        readable = false
+      }
+      End_time__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.End_time__c
+        readable = false
+      }
+      New_Status__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.New_Status__c
+        readable = false
+      }
+      New_Value__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.New_Value__c
+        readable = false
+      }
+      Old_Status__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Old_Status__c
+        readable = false
+      }
+      Owner_Type__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Owner_Type__c
+        readable = false
+      }
+      Owner_id__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Owner_id__c
+        readable = false
+      }
+      Owner_name__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Owner_name__c
+        readable = false
+      }
+      Start_time__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Start_time__c
+        readable = false
+      }
+      Users_Primary_Queue__c = {
+        editable = false
+        field = salesforce.Case_Status_History__c.field.Users_Primary_Queue__c
+        readable = false
+      }
+    }
+    Center__c = {
+      Lookup_Field_to_Parent_Obj__c = {
+        editable = false
+        field = salesforce.Center__c.field.Lookup_Field_to_Parent_Obj__c
+        readable = false
+      }
+      Lookup_Field_to_Self__c = {
+        editable = false
+        field = salesforce.Center__c.field.Lookup_Field_to_Self__c
+        readable = false
+      }
+      My_text_field__c = {
+        editable = false
+        field = salesforce.Center__c.field.My_text_field__c
+        readable = false
+      }
+    }
+    CommSubscription = {
+      DataUsePurposeId = {
+        editable = false
+        field = salesforce.CommSubscription.field.DataUsePurposeId
+        readable = false
+      }
+      IsDefault = {
+        editable = false
+        field = salesforce.CommSubscription.field.IsDefault
+        readable = false
+      }
+    }
+    CommSubscriptionConsent = {
+      EffectiveToDate = {
+        editable = false
+        field = salesforce.CommSubscriptionConsent.field.EffectiveToDate
+        readable = false
+      }
+    }
+    CommSubscriptionTiming = {
+      Offset = {
+        editable = false
+        field = salesforce.CommSubscriptionTiming.field.Offset
+        readable = false
+      }
+      PreferredTimeEnd = {
+        editable = false
+        field = salesforce.CommSubscriptionTiming.field.PreferredTimeEnd
+        readable = false
+      }
+      PreferredTimeStart = {
+        editable = false
+        field = salesforce.CommSubscriptionTiming.field.PreferredTimeStart
+        readable = false
+      }
+      PreferredTimeZone = {
+        editable = false
+        field = salesforce.CommSubscriptionTiming.field.PreferredTimeZone
+        readable = false
+      }
+    }
+    ConsumptionRate = {
+      Description = {
+        editable = true
+        field = salesforce.ConsumptionRate.field.Description
+        readable = true
+      }
+      UpperBound = {
+        editable = true
+        field = salesforce.ConsumptionRate.field.UpperBound
+        readable = true
+      }
+    }
+    ConsumptionSchedule = {
+      Description = {
+        editable = true
+        field = salesforce.ConsumptionSchedule.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.ConsumptionSchedule.field.IsActive
+        readable = true
+      }
+      MatchingAttribute = {
+        editable = true
+        field = salesforce.ConsumptionSchedule.field.MatchingAttribute
+        readable = true
+      }
+      UnitOfMeasure = {
+        editable = true
+        field = salesforce.ConsumptionSchedule.field.UnitOfMeasure
+        readable = true
+      }
+    }
+    Contact = {
+      AccountId = {
+        editable = true
+        field = salesforce.Contact.field.AccountId
+        readable = true
+      }
+      Active_Syndications__c = {
+        editable = false
+        field = salesforce.Contact.field.Active_Syndications__c
+        readable = false
+      }
+      AssistantName = {
+        editable = true
+        field = salesforce.Contact.field.AssistantName
+        readable = true
+      }
+      AssistantPhone = {
+        editable = true
+        field = salesforce.Contact.field.AssistantPhone
+        readable = true
+      }
+      Birthdate = {
+        editable = true
+        field = salesforce.Contact.field.Birthdate
+        readable = true
+      }
+      CleanStatus = {
+        editable = false
+        field = salesforce.Contact.field.CleanStatus
+        readable = true
+      }
+      Department = {
+        editable = true
+        field = salesforce.Contact.field.Department
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Contact.field.Description
+        readable = true
+      }
+      DoNotCall = {
+        editable = false
+        field = salesforce.Contact.field.DoNotCall
+        readable = false
+      }
+      Due_Date__c = {
+        editable = true
+        field = salesforce.Contact.field.Due_Date__c
+        readable = true
+      }
+      EU_Manager__c = {
+        editable = true
+        field = salesforce.Contact.field.EU_Manager__c
+        readable = true
+      }
+      Email = {
+        editable = true
+        field = salesforce.Contact.field.Email
+        readable = true
+      }
+      Fax = {
+        editable = true
+        field = salesforce.Contact.field.Fax
+        readable = true
+      }
+      HasOptedOutOfEmail = {
+        editable = false
+        field = salesforce.Contact.field.HasOptedOutOfEmail
+        readable = false
+      }
+      HasOptedOutOfFax = {
+        editable = false
+        field = salesforce.Contact.field.HasOptedOutOfFax
+        readable = false
+      }
+      HomePhone = {
+        editable = true
+        field = salesforce.Contact.field.HomePhone
+        readable = true
+      }
+      Jigsaw = {
+        editable = true
+        field = salesforce.Contact.field.Jigsaw
+        readable = true
+      }
+      Languages__c = {
+        editable = true
+        field = salesforce.Contact.field.Languages__c
+        readable = true
+      }
+      LeadSource = {
+        editable = true
+        field = salesforce.Contact.field.LeadSource
+        readable = true
+      }
+      Level__c = {
+        editable = true
+        field = salesforce.Contact.field.Level__c
+        readable = true
+      }
+      MailingAddress = {
+        editable = true
+        field = salesforce.Contact.field.MailingAddress
+        readable = true
+      }
+      MobilePhone = {
+        editable = true
+        field = salesforce.Contact.field.MobilePhone
+        readable = true
+      }
+      OtherAddress = {
+        editable = true
+        field = salesforce.Contact.field.OtherAddress
+        readable = true
+      }
+      OtherPhone = {
+        editable = true
+        field = salesforce.Contact.field.OtherPhone
+        readable = true
+      }
+      Phone = {
+        editable = true
+        field = salesforce.Contact.field.Phone
+        readable = true
+      }
+      ReportsToId = {
+        editable = true
+        field = salesforce.Contact.field.ReportsToId
+        readable = true
+      }
+      Share__c = {
+        editable = true
+        field = salesforce.Contact.field.Share__c
+        readable = true
+      }
+      Title = {
+        editable = true
+        field = salesforce.Contact.field.Title
+        readable = true
+      }
+      Total_Account_Subscriptions__c = {
+        editable = false
+        field = salesforce.Contact.field.Total_Account_Subscriptions__c
+        readable = false
+      }
+      Total_Shows__c = {
+        editable = false
+        field = salesforce.Contact.field.Total_Shows__c
+        readable = false
+      }
+    }
+    ContactPointAddress = {
+      ActiveFromDate = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.ActiveFromDate
+        readable = true
+      }
+      ActiveToDate = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.ActiveToDate
+        readable = true
+      }
+      Address = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.Address
+        readable = true
+      }
+      AddressType = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.AddressType
+        readable = true
+      }
+      BestTimeToContactEndTime = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.BestTimeToContactEndTime
+        readable = true
+      }
+      BestTimeToContactStartTime = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.BestTimeToContactStartTime
+        readable = true
+      }
+      BestTimeToContactTimezone = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.BestTimeToContactTimezone
+        readable = true
+      }
+      ContactPointPhoneId = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.ContactPointPhoneId
+        readable = true
+      }
+      IsDefault = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.IsDefault
+        readable = true
+      }
+      IsPrimary = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.IsPrimary
+        readable = true
+      }
+      ParentId = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.ParentId
+        readable = true
+      }
+      PreferenceRank = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.PreferenceRank
+        readable = true
+      }
+      UsageType = {
+        editable = true
+        field = salesforce.ContactPointAddress.field.UsageType
+        readable = true
+      }
+    }
+    ContactPointConsent = {
+      ContactPointTypeConsentId = {
+        editable = true
+        field = "ContactPointConsent.ContactPointTypeConsentId"
+        readable = true
+      }
+      DataUsePurposeId = {
+        editable = true
+        field = salesforce.ContactPointConsent.field.DataUsePurposeId
+        readable = true
+      }
+      DoubleConsentCaptureDate = {
+        editable = true
+        field = salesforce.ContactPointConsent.field.DoubleConsentCaptureDate
+        readable = true
+      }
+      EffectiveFrom = {
+        editable = true
+        field = salesforce.ContactPointConsent.field.EffectiveFrom
+        readable = true
+      }
+      EffectiveTo = {
+        editable = true
+        field = salesforce.ContactPointConsent.field.EffectiveTo
+        readable = true
+      }
+      EngagementChannelTypeId = {
+        editable = false
+        field = salesforce.ContactPointConsent.field.EngagementChannelTypeId
+        readable = false
+      }
+    }
+    ContactPointEmail = {
+      ActiveFromDate = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.ActiveFromDate
+        readable = true
+      }
+      ActiveToDate = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.ActiveToDate
+        readable = true
+      }
+      BestTimeToContactEndTime = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.BestTimeToContactEndTime
+        readable = true
+      }
+      BestTimeToContactStartTime = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.BestTimeToContactStartTime
+        readable = true
+      }
+      BestTimeToContactTimezone = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.BestTimeToContactTimezone
+        readable = true
+      }
+      EmailDomain = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.EmailDomain
+        readable = true
+      }
+      EmailLatestBounceDateTime = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.EmailLatestBounceDateTime
+        readable = true
+      }
+      EmailLatestBounceReasonText = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.EmailLatestBounceReasonText
+        readable = true
+      }
+      EmailMailBox = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.EmailMailBox
+        readable = true
+      }
+      IsPrimary = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.IsPrimary
+        readable = true
+      }
+      ParentId = {
+        editable = true
+        field = salesforce.ContactPointEmail.field.ParentId
+        readable = true
+      }
+      PreferenceRank = {
+        editable = false
+        field = salesforce.ContactPointEmail.field.PreferenceRank
+        readable = false
+      }
+      UsageType = {
+        editable = false
+        field = salesforce.ContactPointEmail.field.UsageType
+        readable = false
+      }
+    }
+    ContactPointPhone = {
+      ActiveFromDate = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.ActiveFromDate
+        readable = true
+      }
+      AreaCode = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.AreaCode
+        readable = true
+      }
+      BestTimeToContactEndTime = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.BestTimeToContactEndTime
+        readable = true
+      }
+      BestTimeToContactStartTime = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.BestTimeToContactStartTime
+        readable = true
+      }
+      BestTimeToContactTimezone = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.BestTimeToContactTimezone
+        readable = true
+      }
+      ExtensionNumber = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.ExtensionNumber
+        readable = true
+      }
+      FormattedInternationalPhoneNumber = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.FormattedInternationalPhoneNumber
+        readable = true
+      }
+      FormattedNationalPhoneNumber = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.FormattedNationalPhoneNumber
+        readable = true
+      }
+      IsBusinessPhone = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.IsBusinessPhone
+        readable = true
+      }
+      IsFaxCapable = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.IsFaxCapable
+        readable = true
+      }
+      IsPersonalPhone = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.IsPersonalPhone
+        readable = true
+      }
+      IsPrimary = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.IsPrimary
+        readable = true
+      }
+      IsSmsCapable = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.IsSmsCapable
+        readable = true
+      }
+      ParentId = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.ParentId
+        readable = true
+      }
+      PhoneType = {
+        editable = true
+        field = salesforce.ContactPointPhone.field.PhoneType
+        readable = true
+      }
+      PreferenceRank = {
+        editable = false
+        field = salesforce.ContactPointPhone.field.PreferenceRank
+        readable = false
+      }
+      UsageType = {
+        editable = false
+        field = salesforce.ContactPointPhone.field.UsageType
+        readable = false
+      }
+    }
+    ContactPointTypeConsent = {
+      DataUsePurposeId = {
+        editable = true
+        field = salesforce.ContactPointTypeConsent.field.DataUsePurposeId
+        readable = true
+      }
+      DoubleConsentCaptureDate = {
+        editable = true
+        field = salesforce.ContactPointTypeConsent.field.DoubleConsentCaptureDate
+        readable = true
+      }
+      EffectiveFrom = {
+        editable = true
+        field = salesforce.ContactPointTypeConsent.field.EffectiveFrom
+        readable = true
+      }
+      EffectiveTo = {
+        editable = true
+        field = salesforce.ContactPointTypeConsent.field.EffectiveTo
+        readable = true
+      }
+      EngagementChannelTypeId = {
+        editable = false
+        field = salesforce.ContactPointTypeConsent.field.EngagementChannelTypeId
+        readable = false
+      }
+    }
+    Contract = {
+      ActivatedById = {
+        editable = false
+        field = salesforce.Contract.field.ActivatedById
+        readable = true
+      }
+      ActivatedDate = {
+        editable = false
+        field = salesforce.Contract.field.ActivatedDate
+        readable = true
+      }
+      BillingAddress = {
+        editable = true
+        field = salesforce.Contract.field.BillingAddress
+        readable = true
+      }
+      CompanySignedDate = {
+        editable = true
+        field = salesforce.Contract.field.CompanySignedDate
+        readable = true
+      }
+      CompanySignedId = {
+        editable = true
+        field = salesforce.Contract.field.CompanySignedId
+        readable = true
+      }
+      ContractTerm = {
+        editable = true
+        field = salesforce.Contract.field.ContractTerm
+        readable = true
+      }
+      CustomerSignedDate = {
+        editable = true
+        field = salesforce.Contract.field.CustomerSignedDate
+        readable = true
+      }
+      CustomerSignedId = {
+        editable = true
+        field = salesforce.Contract.field.CustomerSignedId
+        readable = true
+      }
+      CustomerSignedTitle = {
+        editable = true
+        field = salesforce.Contract.field.CustomerSignedTitle
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Contract.field.Description
+        readable = true
+      }
+      EndDate = {
+        editable = false
+        field = salesforce.Contract.field.EndDate
+        readable = true
+      }
+      Name = {
+        editable = false
+        field = salesforce.Contract.field.Name
+        readable = false
+      }
+      OwnerExpirationNotice = {
+        editable = true
+        field = salesforce.Contract.field.OwnerExpirationNotice
+        readable = true
+      }
+      Pricebook2Id = {
+        editable = true
+        field = salesforce.Contract.field.Pricebook2Id
+        readable = true
+      }
+      ShippingAddress = {
+        editable = false
+        field = salesforce.Contract.field.ShippingAddress
+        readable = false
+      }
+      SpecialTerms = {
+        editable = true
+        field = salesforce.Contract.field.SpecialTerms
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.Contract.field.StartDate
+        readable = true
+      }
+    }
+    ContractLineItem = {
+      AssetId = {
+        editable = true
+        field = salesforce.ContractLineItem.field.AssetId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ContractLineItem.field.Description
+        readable = true
+      }
+      Discount = {
+        editable = true
+        field = salesforce.ContractLineItem.field.Discount
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.ContractLineItem.field.EndDate
+        readable = true
+      }
+      ListPrice = {
+        editable = true
+        field = salesforce.ContractLineItem.field.ListPrice
+        readable = true
+      }
+      LocationId = {
+        editable = false
+        field = salesforce.ContractLineItem.field.LocationId
+        readable = false
+      }
+      ParentContractLineItemId = {
+        editable = true
+        field = salesforce.ContractLineItem.field.ParentContractLineItemId
+        readable = true
+      }
+      RootContractLineItemId = {
+        editable = true
+        field = salesforce.ContractLineItem.field.RootContractLineItemId
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.ContractLineItem.field.StartDate
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.ContractLineItem.field.Status
+        readable = true
+      }
+      StatusIndicator = {
+        editable = true
+        field = salesforce.ContractLineItem.field.StatusIndicator
+        readable = true
+      }
+      Subtotal = {
+        editable = true
+        field = salesforce.ContractLineItem.field.Subtotal
+        readable = true
+      }
+      TotalPrice = {
+        editable = true
+        field = salesforce.ContractLineItem.field.TotalPrice
+        readable = true
+      }
+    }
+    Custom_Field_Help_Text__c = {
+      Help_Text_Key__c = {
+        editable = false
+        field = salesforce.Custom_Field_Help_Text__c.field.Help_Text_Key__c
+        readable = false
+      }
+      Master_Help_Text__c = {
+        editable = false
+        field = salesforce.Custom_Field_Help_Text__c.field.Master_Help_Text__c
+        readable = false
+      }
+    }
+    Customer = {
+      CustomerStatusType = {
+        editable = true
+        field = "Customer.CustomerStatusType"
+        readable = true
+      }
+      TotalLifeTimeValue = {
+        editable = true
+        field = "Customer.TotalLifeTimeValue"
+        readable = true
+      }
+    }
+    DMLSysException__c = {
+      DML_Field_Names__c = {
+        editable = false
+        field = salesforce.DMLSysException__c.field.DML_Field_Names__c
+        readable = false
+      }
+      DML_ID__c = {
+        editable = false
+        field = salesforce.DMLSysException__c.field.DML_ID__c
+        readable = false
+      }
+      DML_Index__c = {
+        editable = false
+        field = salesforce.DMLSysException__c.field.DML_Index__c
+        readable = false
+      }
+      DML_Message__c = {
+        editable = false
+        field = salesforce.DMLSysException__c.field.DML_Message__c
+        readable = false
+      }
+      DML_Type__c = {
+        editable = false
+        field = salesforce.DMLSysException__c.field.DML_Type__c
+        readable = false
+      }
+    }
+    DataUseLegalBasis = {
+      Description = {
+        editable = true
+        field = salesforce.DataUseLegalBasis.field.Description
+        readable = true
+      }
+      Source = {
+        editable = true
+        field = salesforce.DataUseLegalBasis.field.Source
+        readable = true
+      }
+    }
+    DataUsePurpose = {
+      Description = {
+        editable = true
+        field = salesforce.DataUsePurpose.field.Description
+        readable = true
+      }
+      IsMaintainablePerContactPoint = {
+        editable = true
+        field = "DataUsePurpose.IsMaintainablePerContactPoint"
+        readable = true
+      }
+      IsMaintainablePerParty = {
+        editable = true
+        field = "DataUsePurpose.IsMaintainablePerParty"
+        readable = true
+      }
+      IsMaintainablePerType = {
+        editable = true
+        field = "DataUsePurpose.IsMaintainablePerType"
+        readable = true
+      }
+      LegalBasisId = {
+        editable = true
+        field = salesforce.DataUsePurpose.field.LegalBasisId
+        readable = true
+      }
+    }
+    Dedupe_Branch__c = {
+      False_Next_Branch__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.False_Next_Branch__c
+        readable = false
+      }
+      False_Set_This_Field__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.False_Set_This_Field__c
+        readable = false
+      }
+      False_To_This_Value__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.False_To_This_Value__c
+        readable = false
+      }
+      If_False__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.If_False__c
+        readable = false
+      }
+      If_True__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.If_True__c
+        readable = false
+      }
+      Matching_Rule_To_Evaluate__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.Matching_Rule_To_Evaluate__c
+        readable = false
+      }
+      Starting_Point__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.Starting_Point__c
+        readable = false
+      }
+      True_Next_Branch__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.True_Next_Branch__c
+        readable = false
+      }
+      True_Set_This_Field__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.True_Set_This_Field__c
+        readable = false
+      }
+      True_To_This_Value__c = {
+        editable = false
+        field = salesforce.Dedupe_Branch__c.field.True_To_This_Value__c
+        readable = false
+      }
+      Use_Context_from_Calling_Branch__c = {
+        editable = true
+        field = salesforce.Dedupe_Branch__c.field.Use_Context_from_Calling_Branch__c
+        readable = true
+      }
+    }
+    Dedupe_Scenario_Rule__c = {
+      Evaluated_Contact_Type__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario_Rule__c.field.Evaluated_Contact_Type__c
+        readable = true
+      }
+      Evaluated_Field__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario_Rule__c.field.Evaluated_Field__c
+        readable = true
+      }
+      Evaluation_Order__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario_Rule__c.field.Evaluation_Order__c
+        readable = true
+      }
+      Match_Type__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario_Rule__c.field.Match_Type__c
+        readable = true
+      }
+    }
+    Dedupe_Scenario__c = {
+      Country__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario__c.field.Country__c
+        readable = true
+      }
+      Duplicate_Reason__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario__c.field.Duplicate_Reason__c
+        readable = true
+      }
+      Evaluation_Order__c = {
+        editable = true
+        field = salesforce.Dedupe_Scenario__c.field.Evaluation_Order__c
+        readable = true
+      }
+    }
+    Dedupe_Setting__mdt = {
+      Dedupe_Engine__c = {
+        editable = false
+        field = salesforce.Dedupe_Setting__mdt.field.Dedupe_Engine__c
+        readable = false
+      }
+    }
+    Delivery_Agency__c = {
+      District__c = {
+        editable = false
+        field = salesforce.Delivery_Agency__c.field.District__c
+        readable = false
+      }
+      Province__c = {
+        editable = false
+        field = salesforce.Delivery_Agency__c.field.Province__c
+        readable = false
+      }
+      Ward__c = {
+        editable = false
+        field = salesforce.Delivery_Agency__c.field.Ward__c
+        readable = false
+      }
+    }
+    Email_Categorisation_Filter__mdt = {
+      Email_Attribute__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Filter__mdt.field.Email_Attribute__c
+        readable = false
+      }
+      Email_Categorisation_Rule__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Filter__mdt.field.Email_Categorisation_Rule__c
+        readable = false
+      }
+      Operator__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Filter__mdt.field.Operator__c
+        readable = false
+      }
+      Value__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Filter__mdt.field.Value__c
+        readable = false
+      }
+    }
+    Email_Categorisation_Rule__mdt = {
+      Auto_Forward_To__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Auto_Forward_To__c
+        readable = false
+      }
+      Business_Unit__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Business_Unit__c
+        readable = false
+      }
+      Case_Status__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Case_Status__c
+        readable = false
+      }
+      Channel__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Channel__c
+        readable = false
+      }
+      Company_Name__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Company_Name__c
+        readable = false
+      }
+      Evaluation_Order__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Evaluation_Order__c
+        readable = false
+      }
+      From_Email_Address__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.From_Email_Address__c
+        readable = false
+      }
+      Language__c = {
+        editable = false
+        field = salesforce.Email_Categorisation_Rule__mdt.field.Language__c
+        readable = false
+      }
+    }
+    Email_Routing_Field_Mapping__c = {
+      Business_Unit__c = {
+        editable = false
+        field = salesforce.Email_Routing_Field_Mapping__c.field.Business_Unit__c
+        readable = false
+      }
+      Case_Type__c = {
+        editable = false
+        field = salesforce.Email_Routing_Field_Mapping__c.field.Case_Type__c
+        readable = false
+      }
+    }
+    Email_Routing_Rule_Filter__c = {
+      Email_Attribute__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule_Filter__c.field.Email_Attribute__c
+        readable = false
+      }
+      Operator__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule_Filter__c.field.Operator__c
+        readable = false
+      }
+      Value__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule_Filter__c.field.Value__c
+        readable = false
+      }
+    }
+    Email_Routing_Rule__c = {
+      Business_Unit__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule__c.field.Business_Unit__c
+        readable = false
+      }
+      Case_Status__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule__c.field.Case_Status__c
+        readable = false
+      }
+      Channel__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule__c.field.Channel__c
+        readable = false
+      }
+      Sort_Order__c = {
+        editable = false
+        field = salesforce.Email_Routing_Rule__c.field.Sort_Order__c
+        readable = false
+      }
+    }
+    Email_Rule__mdt = {
+      Actions__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Actions__c
+        readable = false
+      }
+      Assignment_Category__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Assignment_Category__c
+        readable = false
+      }
+      Business_Channel__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Business_Channel__c
+        readable = false
+      }
+      Business_Division__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Business_Division__c
+        readable = false
+      }
+      Business_Type__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Business_Type__c
+        readable = false
+      }
+      Country__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Country__c
+        readable = false
+      }
+      Customer_Segmentation__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Customer_Segmentation__c
+        readable = false
+      }
+      Department__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Department__c
+        readable = false
+      }
+      Email_Address__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Email_Address__c
+        readable = false
+      }
+      From_Address_Operator__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.From_Address_Operator__c
+        readable = false
+      }
+      From_Address__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.From_Address__c
+        readable = false
+      }
+      Keywords_Operator__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Keywords_Operator__c
+        readable = false
+      }
+      Keywords_Type__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Keywords_Type__c
+        readable = false
+      }
+      Keywords__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Keywords__c
+        readable = false
+      }
+      Language__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Language__c
+        readable = false
+      }
+      Order__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Order__c
+        readable = false
+      }
+      Origin__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Origin__c
+        readable = false
+      }
+      Process__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Process__c
+        readable = false
+      }
+      Region__c = {
+        editable = false
+        field = salesforce.Email_Rule__mdt.field.Region__c
+        readable = false
+      }
+    }
+    Energy_Audit__c = {
+      Audit_Notes__c = {
+        editable = false
+        field = salesforce.Energy_Audit__c.field.Audit_Notes__c
+        readable = false
+      }
+      Type_of_Installation__c = {
+        editable = false
+        field = salesforce.Energy_Audit__c.field.Type_of_Installation__c
+        readable = false
+      }
+    }
+    EngagementChannelType = {
+      ContactPointType = {
+        editable = false
+        field = salesforce.EngagementChannelType.field.ContactPointType
+        readable = false
+      }
+    }
+    Entitlement = {
+      AssetId = {
+        editable = true
+        field = salesforce.Entitlement.field.AssetId
+        readable = true
+      }
+      AssetWarrantyId = {
+        editable = false
+        field = salesforce.Entitlement.field.AssetWarrantyId
+        readable = false
+      }
+      BusinessHoursId = {
+        editable = true
+        field = salesforce.Entitlement.field.BusinessHoursId
+        readable = true
+      }
+      CasesPerEntitlement = {
+        editable = true
+        field = salesforce.Entitlement.field.CasesPerEntitlement
+        readable = true
+      }
+      ContractLineItemId = {
+        editable = true
+        field = salesforce.Entitlement.field.ContractLineItemId
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.Entitlement.field.EndDate
+        readable = true
+      }
+      IsPerIncident = {
+        editable = true
+        field = salesforce.Entitlement.field.IsPerIncident
+        readable = true
+      }
+      LocationId = {
+        editable = false
+        field = salesforce.Entitlement.field.LocationId
+        readable = false
+      }
+      RemainingCases = {
+        editable = true
+        field = salesforce.Entitlement.field.RemainingCases
+        readable = true
+      }
+      RemainingWorkOrders = {
+        editable = false
+        field = salesforce.Entitlement.field.RemainingWorkOrders
+        readable = false
+      }
+      ServiceContractId = {
+        editable = true
+        field = salesforce.Entitlement.field.ServiceContractId
+        readable = true
+      }
+      SlaProcessId = {
+        editable = true
+        field = salesforce.Entitlement.field.SlaProcessId
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.Entitlement.field.StartDate
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.Entitlement.field.Status
+        readable = true
+      }
+      StatusIndicator = {
+        editable = true
+        field = salesforce.Entitlement.field.StatusIndicator
+        readable = true
+      }
+      SvcApptBookingWindowsId = {
+        editable = true
+        field = salesforce.Entitlement.field.SvcApptBookingWindowsId
+        readable = true
+      }
+      Type = {
+        editable = true
+        field = salesforce.Entitlement.field.Type
+        readable = true
+      }
+      WorkOrdersPerEntitlement = {
+        editable = false
+        field = salesforce.Entitlement.field.WorkOrdersPerEntitlement
+        readable = false
+      }
+    }
+    Event = {
+      DB_Activity_Type__c = {
+        editable = false
+        field = salesforce.Event.field.DB_Activity_Type__c
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.Event.field.Description
+        readable = true
+      }
+      IsAllDayEvent = {
+        editable = true
+        field = salesforce.Event.field.IsAllDayEvent
+        readable = true
+      }
+      IsVisibleInSelfService = {
+        editable = false
+        field = salesforce.Event.field.IsVisibleInSelfService
+        readable = false
+      }
+      Location = {
+        editable = true
+        field = salesforce.Event.field.Location
+        readable = true
+      }
+      Type = {
+        editable = false
+        field = salesforce.Event.field.Type
+        readable = false
+      }
+      WhatId = {
+        editable = true
+        field = salesforce.Event.field.WhatId
+        readable = true
+      }
+      WhoId = {
+        editable = true
+        field = salesforce.Event.field.WhoId
+        readable = true
+      }
+    }
+    Expense = {
+      Description = {
+        editable = false
+        field = salesforce.Expense.field.Description
+        readable = false
+      }
+      Discount = {
+        editable = false
+        field = salesforce.Expense.field.Discount
+        readable = false
+      }
+      ExpenseType = {
+        editable = false
+        field = salesforce.Expense.field.ExpenseType
+        readable = false
+      }
+      Quantity = {
+        editable = false
+        field = salesforce.Expense.field.Quantity
+        readable = false
+      }
+      Subtotal = {
+        editable = false
+        field = salesforce.Expense.field.Subtotal
+        readable = false
+      }
+      TotalPrice = {
+        editable = false
+        field = salesforce.Expense.field.TotalPrice
+        readable = false
+      }
+      UnitPrice = {
+        editable = false
+        field = salesforce.Expense.field.UnitPrice
+        readable = false
+      }
+    }
+    ExpenseReport = {
+      TotalExpenseAmount = {
+        editable = true
+        field = salesforce.ExpenseReport.field.TotalExpenseAmount
+        readable = true
+      }
+    }
+    Expense__c = {
+      Amount__c = {
+        editable = false
+        field = salesforce.Expense__c.field.Amount__c
+        readable = false
+      }
+      Client__c = {
+        editable = false
+        field = salesforce.Expense__c.field.Client__c
+        readable = false
+      }
+      Date__c = {
+        editable = false
+        field = salesforce.Expense__c.field.Date__c
+        readable = false
+      }
+      Reimbursed__c = {
+        editable = false
+        field = salesforce.Expense__c.field.Reimbursed__c
+        readable = false
+      }
+    }
+    Field_Translation_Name__c = {
+      Help_Text_Key__c = {
+        editable = false
+        field = salesforce.Field_Translation_Name__c.field.Help_Text_Key__c
+        readable = false
+      }
+      Label_Key__c = {
+        editable = false
+        field = salesforce.Field_Translation_Name__c.field.Label_Key__c
+        readable = false
+      }
+      Master_Help_Text__c = {
+        editable = false
+        field = salesforce.Field_Translation_Name__c.field.Master_Help_Text__c
+        readable = false
+      }
+      Master_Label__c = {
+        editable = false
+        field = salesforce.Field_Translation_Name__c.field.Master_Label__c
+        readable = false
+      }
+    }
+    Fund__c = {
+      Abbreviation__c = {
+        editable = false
+        field = salesforce.Fund__c.field.Abbreviation__c
+        readable = false
+      }
+      Asset_Class__c = {
+        editable = false
+        field = salesforce.Fund__c.field.Asset_Class__c
+        readable = false
+      }
+      Five_Year_Return__c = {
+        editable = false
+        field = salesforce.Fund__c.field.Five_Year_Return__c
+        readable = false
+      }
+      One_Year_Return__c = {
+        editable = false
+        field = salesforce.Fund__c.field.One_Year_Return__c
+        readable = false
+      }
+      Rating__c = {
+        editable = false
+        field = salesforce.Fund__c.field.Rating__c
+        readable = false
+      }
+      Two_Year_Return__c = {
+        editable = false
+        field = salesforce.Fund__c.field.Two_Year_Return__c
+        readable = false
+      }
+      YTD_Return__c = {
+        editable = false
+        field = salesforce.Fund__c.field.YTD_Return__c
+        readable = false
+      }
+    }
+    Hotel__c = {
+      Location__c = {
+        editable = false
+        field = salesforce.Hotel__c.field.Location__c
+        readable = false
+      }
+    }
+    Idea = {
+      Attachment = {
+        editable = false
+        field = "Idea.Attachment"
+        readable = false
+      }
+      Status = {
+        editable = false
+        field = salesforce.Idea.field.Status
+        readable = true
+      }
+    }
+    Indicator_Badge__mdt = {
+      Badge_Color__c = {
+        editable = false
+        field = salesforce.Indicator_Badge__mdt.field.Badge_Color__c
+        readable = false
+      }
+      Comparison_Value__c = {
+        editable = false
+        field = salesforce.Indicator_Badge__mdt.field.Comparison_Value__c
+        readable = false
+      }
+    }
+    Individual = {
+      BirthDate = {
+        editable = true
+        field = salesforce.Individual.field.BirthDate
+        readable = true
+      }
+      CanStorePiiElsewhere = {
+        editable = true
+        field = salesforce.Individual.field.CanStorePiiElsewhere
+        readable = true
+      }
+      ChildrenCount = {
+        editable = true
+        field = salesforce.Individual.field.ChildrenCount
+        readable = true
+      }
+      ConsumerCreditScore = {
+        editable = true
+        field = salesforce.Individual.field.ConsumerCreditScore
+        readable = true
+      }
+      ConsumerCreditScoreProviderName = {
+        editable = true
+        field = salesforce.Individual.field.ConsumerCreditScoreProviderName
+        readable = true
+      }
+      ConvictionsCount = {
+        editable = true
+        field = salesforce.Individual.field.ConvictionsCount
+        readable = true
+      }
+      DeathDate = {
+        editable = true
+        field = salesforce.Individual.field.DeathDate
+        readable = true
+      }
+      HasOptedOutGeoTracking = {
+        editable = true
+        field = salesforce.Individual.field.HasOptedOutGeoTracking
+        readable = true
+      }
+      HasOptedOutProcessing = {
+        editable = true
+        field = salesforce.Individual.field.HasOptedOutProcessing
+        readable = true
+      }
+      HasOptedOutProfiling = {
+        editable = true
+        field = salesforce.Individual.field.HasOptedOutProfiling
+        readable = true
+      }
+      HasOptedOutSolicit = {
+        editable = true
+        field = salesforce.Individual.field.HasOptedOutSolicit
+        readable = true
+      }
+      HasOptedOutTracking = {
+        editable = true
+        field = salesforce.Individual.field.HasOptedOutTracking
+        readable = true
+      }
+      IndividualsAge = {
+        editable = true
+        field = salesforce.Individual.field.IndividualsAge
+        readable = true
+      }
+      InfluencerRating = {
+        editable = true
+        field = salesforce.Individual.field.InfluencerRating
+        readable = true
+      }
+      IsHomeOwner = {
+        editable = true
+        field = salesforce.Individual.field.IsHomeOwner
+        readable = true
+      }
+      MasterRecordId = {
+        editable = true
+        field = salesforce.Individual.field.MasterRecordId
+        readable = true
+      }
+      MilitaryService = {
+        editable = true
+        field = salesforce.Individual.field.MilitaryService
+        readable = true
+      }
+      Occupation = {
+        editable = true
+        field = salesforce.Individual.field.Occupation
+        readable = true
+      }
+      SendIndividualData = {
+        editable = true
+        field = salesforce.Individual.field.SendIndividualData
+        readable = true
+      }
+      ShouldForget = {
+        editable = true
+        field = salesforce.Individual.field.ShouldForget
+        readable = true
+      }
+      Website = {
+        editable = true
+        field = salesforce.Individual.field.Website
+        readable = true
+      }
+    }
+    Internal_Request__c = {
+      Related_Account__c = {
+        editable = false
+        field = salesforce.Internal_Request__c.field.Related_Account__c
+        readable = false
+      }
+    }
+    JobProfile = {
+      Description = {
+        editable = true
+        field = salesforce.JobProfile.field.Description
+        readable = true
+      }
+    }
+    KPI_Target__c = {
+      Actual_Call_Rate__c = {
+        editable = false
+        field = salesforce.KPI_Target__c.field.Actual_Call_Rate__c
+        readable = false
+      }
+      Target_Call_Rate__c = {
+        editable = false
+        field = salesforce.KPI_Target__c.field.Target_Call_Rate__c
+        readable = false
+      }
+      User__c = {
+        editable = false
+        field = salesforce.KPI_Target__c.field.User__c
+        readable = false
+      }
+    }
+    Knowledge__kav = {
+      ArticleBody__c = {
+        editable = true
+        field = salesforce.Knowledge__kav.field.ArticleBody__c
+        readable = true
+      }
+    }
+    Layout_Section_Translation_Name__c = {
+      Section_Key__c = {
+        editable = true
+        field = salesforce.Layout_Section_Translation_Name__c.field.Section_Key__c
+        readable = true
+      }
+    }
+    Layout_Translation_Info__c = {
+      Record_Link__c = {
+        editable = false
+        field = salesforce.Layout_Translation_Info__c.field.Record_Link__c
+        readable = true
+      }
+    }
+    Lead = {
+      Address = {
+        editable = true
+        field = salesforce.Lead.field.Address
+        readable = true
+      }
+      AnnualRevenue = {
+        editable = true
+        field = salesforce.Lead.field.AnnualRevenue
+        readable = true
+      }
+      CleanStatus = {
+        editable = false
+        field = salesforce.Lead.field.CleanStatus
+        readable = true
+      }
+      CompanyDunsNumber = {
+        editable = false
+        field = salesforce.Lead.field.CompanyDunsNumber
+        readable = true
+      }
+      CurrentGenerators__c = {
+        editable = true
+        field = salesforce.Lead.field.CurrentGenerators__c
+        readable = true
+      }
+      DB_Created_Date_without_Time__c = {
+        editable = false
+        field = salesforce.Lead.field.DB_Created_Date_without_Time__c
+        readable = false
+      }
+      DB_Lead_Age__c = {
+        editable = false
+        field = salesforce.Lead.field.DB_Lead_Age__c
+        readable = false
+      }
+      DandbCompanyId = {
+        editable = false
+        field = salesforce.Lead.field.DandbCompanyId
+        readable = true
+      }
+      Date_of_Birth__c = {
+        editable = false
+        field = salesforce.Lead.field.Date_of_Birth__c
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.Lead.field.Description
+        readable = true
+      }
+      District__c = {
+        editable = false
+        field = salesforce.Lead.field.District__c
+        readable = false
+      }
+      DoNotCall = {
+        editable = false
+        field = salesforce.Lead.field.DoNotCall
+        readable = false
+      }
+      Due_Date__c = {
+        editable = false
+        field = salesforce.Lead.field.Due_Date__c
+        readable = false
+      }
+      Duplicate_Result__c = {
+        editable = false
+        field = salesforce.Lead.field.Duplicate_Result__c
+        readable = false
+      }
+      Email = {
+        editable = true
+        field = salesforce.Lead.field.Email
+        readable = true
+      }
+      Existing_Due_Date__c = {
+        editable = false
+        field = salesforce.Lead.field.Existing_Due_Date__c
+        readable = false
+      }
+      Existing_Email__c = {
+        editable = false
+        field = salesforce.Lead.field.Existing_Email__c
+        readable = false
+      }
+      Existing_Phone__c = {
+        editable = false
+        field = salesforce.Lead.field.Existing_Phone__c
+        readable = false
+      }
+      Fax = {
+        editable = true
+        field = salesforce.Lead.field.Fax
+        readable = true
+      }
+      HasOptedOutOfEmail = {
+        editable = false
+        field = salesforce.Lead.field.HasOptedOutOfEmail
+        readable = false
+      }
+      HasOptedOutOfFax = {
+        editable = false
+        field = salesforce.Lead.field.HasOptedOutOfFax
+        readable = false
+      }
+      Industry = {
+        editable = true
+        field = salesforce.Lead.field.Industry
+        readable = true
+      }
+      Jigsaw = {
+        editable = true
+        field = salesforce.Lead.field.Jigsaw
+        readable = true
+      }
+      LastTransferDate = {
+        editable = false
+        field = salesforce.Lead.field.LastTransferDate
+        readable = false
+      }
+      LeadSource = {
+        editable = true
+        field = salesforce.Lead.field.LeadSource
+        readable = true
+      }
+      MobilePhone = {
+        editable = true
+        field = salesforce.Lead.field.MobilePhone
+        readable = true
+      }
+      NumberOfEmployees = {
+        editable = true
+        field = salesforce.Lead.field.NumberOfEmployees
+        readable = true
+      }
+      NumberofLocations__c = {
+        editable = true
+        field = salesforce.Lead.field.NumberofLocations__c
+        readable = true
+      }
+      PartnerAccountId = {
+        editable = false
+        field = salesforce.Lead.field.PartnerAccountId
+        readable = false
+      }
+      Phone = {
+        editable = true
+        field = salesforce.Lead.field.Phone
+        readable = true
+      }
+      Primary__c = {
+        editable = true
+        field = salesforce.Lead.field.Primary__c
+        readable = true
+      }
+      ProductInterest__c = {
+        editable = true
+        field = salesforce.Lead.field.ProductInterest__c
+        readable = true
+      }
+      Province__c = {
+        editable = false
+        field = salesforce.Lead.field.Province__c
+        readable = false
+      }
+      Rating = {
+        editable = true
+        field = salesforce.Lead.field.Rating
+        readable = true
+      }
+      SICCode__c = {
+        editable = true
+        field = salesforce.Lead.field.SICCode__c
+        readable = true
+      }
+      Title = {
+        editable = true
+        field = salesforce.Lead.field.Title
+        readable = true
+      }
+      Website = {
+        editable = true
+        field = salesforce.Lead.field.Website
+        readable = true
+      }
+    }
+    LegalEntity = {
+      CompanyName = {
+        editable = true
+        field = salesforce.LegalEntity.field.CompanyName
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.LegalEntity.field.Description
+        readable = true
+      }
+      LegalEntityAddress = {
+        editable = true
+        field = salesforce.LegalEntity.field.LegalEntityAddress
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.LegalEntity.field.Status
+        readable = true
+      }
+    }
+    Location = {
+      CloseDate = {
+        editable = true
+        field = salesforce.Location.field.CloseDate
+        readable = true
+      }
+      ConstructionEndDate = {
+        editable = true
+        field = salesforce.Location.field.ConstructionEndDate
+        readable = true
+      }
+      ConstructionStartDate = {
+        editable = true
+        field = salesforce.Location.field.ConstructionStartDate
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Location.field.Description
+        readable = true
+      }
+      DrivingDirections = {
+        editable = true
+        field = salesforce.Location.field.DrivingDirections
+        readable = true
+      }
+      Location = {
+        editable = true
+        field = salesforce.Location.field.Location
+        readable = true
+      }
+      LocationLevel = {
+        editable = true
+        field = salesforce.Location.field.LocationLevel
+        readable = true
+      }
+      OpenDate = {
+        editable = true
+        field = salesforce.Location.field.OpenDate
+        readable = true
+      }
+      ParentLocationId = {
+        editable = true
+        field = salesforce.Location.field.ParentLocationId
+        readable = true
+      }
+      PossessionDate = {
+        editable = true
+        field = salesforce.Location.field.PossessionDate
+        readable = true
+      }
+      RemodelEndDate = {
+        editable = true
+        field = salesforce.Location.field.RemodelEndDate
+        readable = true
+      }
+      RemodelStartDate = {
+        editable = true
+        field = salesforce.Location.field.RemodelStartDate
+        readable = true
+      }
+      TimeZone = {
+        editable = true
+        field = salesforce.Location.field.TimeZone
+        readable = true
+      }
+      VisitorAddressId = {
+        editable = true
+        field = salesforce.Location.field.VisitorAddressId
+        readable = true
+      }
+    }
+    MaintenanceAsset = {
+      NextSuggestedMaintenanceDate = {
+        editable = false
+        field = salesforce.MaintenanceAsset.field.NextSuggestedMaintenanceDate
+        readable = false
+      }
+    }
+    MaintenancePlan = {
+      AccountId = {
+        editable = true
+        field = salesforce.MaintenancePlan.field.AccountId
+        readable = true
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.MaintenancePlan.field.ContactId
+        readable = true
+      }
+      DoesAutoGenerateWorkOrders = {
+        editable = false
+        field = salesforce.MaintenancePlan.field.DoesAutoGenerateWorkOrders
+        readable = false
+      }
+      DoesGenerateUponCompletion = {
+        editable = false
+        field = salesforce.MaintenancePlan.field.DoesGenerateUponCompletion
+        readable = false
+      }
+      GenerationHorizon = {
+        editable = false
+        field = salesforce.MaintenancePlan.field.GenerationHorizon
+        readable = false
+      }
+      LocationId = {
+        editable = true
+        field = salesforce.MaintenancePlan.field.LocationId
+        readable = true
+      }
+      MaintenancePlanTitle = {
+        editable = true
+        field = salesforce.MaintenancePlan.field.MaintenancePlanTitle
+        readable = true
+      }
+      ServiceContractId = {
+        editable = true
+        field = salesforce.MaintenancePlan.field.ServiceContractId
+        readable = true
+      }
+      SvcApptGenerationMethod = {
+        editable = false
+        field = salesforce.MaintenancePlan.field.SvcApptGenerationMethod
+        readable = false
+      }
+      WorkOrderGenerationMethod = {
+        editable = false
+        field = salesforce.MaintenancePlan.field.WorkOrderGenerationMethod
+        readable = false
+      }
+      WorkTypeId = {
+        editable = true
+        field = salesforce.MaintenancePlan.field.WorkTypeId
+        readable = true
+      }
+    }
+    MaintenanceWorkRule = {
+      NextSuggestedMaintenanceDate = {
+        editable = false
+        field = salesforce.MaintenanceWorkRule.field.NextSuggestedMaintenanceDate
+        readable = false
+      }
+      ParentMaintenancePlanId = {
+        editable = false
+        field = salesforce.MaintenanceWorkRule.field.ParentMaintenancePlanId
+        readable = false
+      }
+      ParentMaintenanceRecordId = {
+        editable = false
+        field = salesforce.MaintenanceWorkRule.field.ParentMaintenanceRecordId
+        readable = false
+      }
+      RecordsetFilterCriteriaId = {
+        editable = false
+        field = salesforce.MaintenanceWorkRule.field.RecordsetFilterCriteriaId
+        readable = false
+      }
+      Type = {
+        editable = false
+        field = salesforce.MaintenanceWorkRule.field.Type
+        readable = false
+      }
+      WorkTypeId = {
+        editable = false
+        field = salesforce.MaintenanceWorkRule.field.WorkTypeId
+        readable = false
+      }
+    }
+    Matching_Rule__c = {
+      Lead_Evaluated_Field__c = {
+        editable = false
+        field = salesforce.Matching_Rule__c.field.Lead_Evaluated_Field__c
+        readable = false
+      }
+      Matching_Field__c = {
+        editable = false
+        field = salesforce.Matching_Rule__c.field.Matching_Field__c
+        readable = false
+      }
+      Matching_Object__c = {
+        editable = false
+        field = salesforce.Matching_Rule__c.field.Matching_Object__c
+        readable = false
+      }
+      Type__c = {
+        editable = true
+        field = salesforce.Matching_Rule__c.field.Type__c
+        readable = true
+      }
+      Type_of_Contact_to_Match__c = {
+        editable = false
+        field = salesforce.Matching_Rule__c.field.Type_of_Contact_to_Match__c
+        readable = false
+      }
+    }
+    Opportunity = {
+      AccountId = {
+        editable = true
+        field = salesforce.Opportunity.field.AccountId
+        readable = true
+      }
+      Amount = {
+        editable = true
+        field = salesforce.Opportunity.field.Amount
+        readable = true
+      }
+      CampaignId = {
+        editable = true
+        field = salesforce.Opportunity.field.CampaignId
+        readable = true
+      }
+      Child_obj_using_field__c = {
+        editable = false
+        field = salesforce.Opportunity.field.Child_obj_using_field__c
+        readable = false
+      }
+      ContractId = {
+        editable = false
+        field = salesforce.Opportunity.field.ContractId
+        readable = false
+      }
+      CurrentGenerators__c = {
+        editable = true
+        field = salesforce.Opportunity.field.CurrentGenerators__c
+        readable = true
+      }
+      DB_Competitor__c = {
+        editable = false
+        field = salesforce.Opportunity.field.DB_Competitor__c
+        readable = false
+      }
+      DeliveryInstallationStatus__c = {
+        editable = true
+        field = salesforce.Opportunity.field.DeliveryInstallationStatus__c
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Opportunity.field.Description
+        readable = true
+      }
+      Descuento__c = {
+        editable = false
+        field = salesforce.Opportunity.field.Descuento__c
+        readable = false
+      }
+      ExpectedRevenue = {
+        editable = true
+        field = salesforce.Opportunity.field.ExpectedRevenue
+        readable = true
+      }
+      IsPrivate = {
+        editable = true
+        field = salesforce.Opportunity.field.IsPrivate
+        readable = true
+      }
+      LeadSource = {
+        editable = true
+        field = salesforce.Opportunity.field.LeadSource
+        readable = true
+      }
+      MainCompetitors__c = {
+        editable = true
+        field = salesforce.Opportunity.field.MainCompetitors__c
+        readable = true
+      }
+      NextStep = {
+        editable = true
+        field = salesforce.Opportunity.field.NextStep
+        readable = true
+      }
+      OrderNumber__c = {
+        editable = true
+        field = salesforce.Opportunity.field.OrderNumber__c
+        readable = true
+      }
+      PartnerAccountId = {
+        editable = false
+        field = salesforce.Opportunity.field.PartnerAccountId
+        readable = false
+      }
+      Probability = {
+        editable = true
+        field = salesforce.Opportunity.field.Probability
+        readable = true
+      }
+      TotalOpportunityQuantity = {
+        editable = true
+        field = salesforce.Opportunity.field.TotalOpportunityQuantity
+        readable = true
+      }
+      TrackingNumber__c = {
+        editable = true
+        field = salesforce.Opportunity.field.TrackingNumber__c
+        readable = true
+      }
+      Type = {
+        editable = true
+        field = salesforce.Opportunity.field.Type
+        readable = true
+      }
+    }
+    OpportunityLineItem = {
+      Description = {
+        editable = true
+        field = salesforce.OpportunityLineItem.field.Description
+        readable = true
+      }
+      Discount = {
+        editable = false
+        field = salesforce.OpportunityLineItem.field.Discount
+        readable = false
+      }
+      ListPrice = {
+        editable = false
+        field = salesforce.OpportunityLineItem.field.ListPrice
+        readable = true
+      }
+      ProductCode = {
+        editable = false
+        field = salesforce.OpportunityLineItem.field.ProductCode
+        readable = true
+      }
+      ServiceDate = {
+        editable = true
+        field = salesforce.OpportunityLineItem.field.ServiceDate
+        readable = true
+      }
+      Subtotal = {
+        editable = false
+        field = salesforce.OpportunityLineItem.field.Subtotal
+        readable = false
+      }
+      TotalPrice = {
+        editable = true
+        field = salesforce.OpportunityLineItem.field.TotalPrice
+        readable = true
+      }
+    }
+    Order = {
+      ActivatedById = {
+        editable = false
+        field = salesforce.Order.field.ActivatedById
+        readable = true
+      }
+      ActivatedDate = {
+        editable = false
+        field = salesforce.Order.field.ActivatedDate
+        readable = true
+      }
+      BillToContactId = {
+        editable = true
+        field = salesforce.Order.field.BillToContactId
+        readable = true
+      }
+      BillingAddress = {
+        editable = true
+        field = salesforce.Order.field.BillingAddress
+        readable = true
+      }
+      Blackfriday_Price__c = {
+        editable = false
+        field = salesforce.Order.field.Blackfriday_Price__c
+        readable = false
+      }
+      Child_Name__c = {
+        editable = false
+        field = salesforce.Order.field.Child_Name__c
+        readable = false
+      }
+      CompanyAuthorizedById = {
+        editable = true
+        field = salesforce.Order.field.CompanyAuthorizedById
+        readable = true
+      }
+      CompanyAuthorizedDate = {
+        editable = true
+        field = salesforce.Order.field.CompanyAuthorizedDate
+        readable = true
+      }
+      ContractEndDate = {
+        editable = false
+        field = salesforce.Order.field.ContractEndDate
+        readable = true
+      }
+      ContractName = {
+        editable = false
+        field = salesforce.Order.field.ContractName
+        readable = true
+      }
+      CustomerAuthorizedById = {
+        editable = true
+        field = salesforce.Order.field.CustomerAuthorizedById
+        readable = true
+      }
+      CustomerAuthorizedDate = {
+        editable = true
+        field = salesforce.Order.field.CustomerAuthorizedDate
+        readable = true
+      }
+      Delivery_Agency__c = {
+        editable = false
+        field = salesforce.Order.field.Delivery_Agency__c
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.Order.field.Description
+        readable = true
+      }
+      Name = {
+        editable = true
+        field = salesforce.Order.field.Name
+        readable = true
+      }
+      OpportunityId = {
+        editable = false
+        field = salesforce.Order.field.OpportunityId
+        readable = false
+      }
+      OrderReferenceNumber = {
+        editable = true
+        field = salesforce.Order.field.OrderReferenceNumber
+        readable = true
+      }
+      PoDate = {
+        editable = true
+        field = salesforce.Order.field.PoDate
+        readable = true
+      }
+      PoNumber = {
+        editable = true
+        field = salesforce.Order.field.PoNumber
+        readable = true
+      }
+      ShipToContactId = {
+        editable = true
+        field = salesforce.Order.field.ShipToContactId
+        readable = true
+      }
+      ShippingAddress = {
+        editable = true
+        field = salesforce.Order.field.ShippingAddress
+        readable = true
+      }
+      TotalAmount = {
+        editable = false
+        field = salesforce.Order.field.TotalAmount
+        readable = true
+      }
+      Type = {
+        editable = true
+        field = salesforce.Order.field.Type
+        readable = true
+      }
+    }
+    OrderItem = {
+      Description = {
+        editable = true
+        field = salesforce.OrderItem.field.Description
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.OrderItem.field.EndDate
+        readable = true
+      }
+      ListPrice = {
+        editable = false
+        field = salesforce.OrderItem.field.ListPrice
+        readable = true
+      }
+      ProductCode = {
+        editable = false
+        field = salesforce.OrderItem.field.ProductCode
+        readable = true
+      }
+      ServiceDate = {
+        editable = true
+        field = salesforce.OrderItem.field.ServiceDate
+        readable = true
+      }
+    }
+    Page_Layout_Translation_Manager_Setting__mdt = {
+      Page_Layout_Name_in_Tests__c = {
+        editable = false
+        field = salesforce.Page_Layout_Translation_Manager_Setting__mdt.field.Page_Layout_Name_in_Tests__c
+        readable = false
+      }
+    }
+    PartnerFundAllocation = {
+      Description = {
+        editable = true
+        field = salesforce.PartnerFundAllocation.field.Description
+        readable = true
+      }
+    }
+    PartnerFundClaim = {
+      Description = {
+        editable = true
+        field = salesforce.PartnerFundClaim.field.Description
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.PartnerFundClaim.field.Status
+        readable = true
+      }
+    }
+    PartnerFundRequest = {
+      Activity = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.Activity
+        readable = true
+      }
+      AllocationId = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.AllocationId
+        readable = true
+      }
+      Amount = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.Amount
+        readable = true
+      }
+      BudgetId = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.BudgetId
+        readable = true
+      }
+      CampaignId = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.CampaignId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.Description
+        readable = true
+      }
+      DesiredOutcome = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.DesiredOutcome
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.PartnerFundRequest.field.Status
+        readable = true
+      }
+    }
+    PartnerMarketingBudget = {
+      Description = {
+        editable = true
+        field = salesforce.PartnerMarketingBudget.field.Description
+        readable = true
+      }
+      ParentMdfBudgetId = {
+        editable = false
+        field = "PartnerMarketingBudget.ParentMdfBudgetId"
+        readable = false
+      }
+    }
+    PartyConsent = {
+      DoubleConsentCaptureDate = {
+        editable = false
+        field = salesforce.PartyConsent.field.DoubleConsentCaptureDate
+        readable = false
+      }
+      EffectiveFrom = {
+        editable = false
+        field = salesforce.PartyConsent.field.EffectiveFrom
+        readable = false
+      }
+      EffectiveTo = {
+        editable = false
+        field = salesforce.PartyConsent.field.EffectiveTo
+        readable = false
+      }
+    }
+    Phone_Plan__x = {
+      Cost__c = {
+        editable = false
+        field = salesforce.Phone_Plan__x.field.Cost__c
+        readable = false
+      }
+      Data_Limit__c = {
+        editable = false
+        field = salesforce.Phone_Plan__x.field.Data_Limit__c
+        readable = false
+      }
+      Id__c = {
+        editable = false
+        field = salesforce.Phone_Plan__x.field.Id__c
+        readable = false
+      }
+      Name__c = {
+        editable = false
+        field = salesforce.Phone_Plan__x.field.Name__c
+        readable = false
+      }
+      Text_Limit__c = {
+        editable = false
+        field = salesforce.Phone_Plan__x.field.Text_Limit__c
+        readable = false
+      }
+    }
+    Phone__x = {
+      Brand__c = {
+        editable = false
+        field = salesforce.Phone__x.field.Brand__c
+        readable = false
+      }
+      ID__c = {
+        editable = false
+        field = salesforce.Phone__x.field.ID__c
+        readable = false
+      }
+      PhoneNumber__c = {
+        editable = false
+        field = salesforce.Phone__x.field.PhoneNumber__c
+        readable = false
+      }
+      UUID__c = {
+        editable = false
+        field = salesforce.Phone__x.field.UUID__c
+        readable = false
+      }
+    }
+    Picklist_Value__c = {
+      Value_Key__c = {
+        editable = true
+        field = salesforce.Picklist_Value__c.field.Value_Key__c
+        readable = true
+      }
+    }
+    Product2 = {
+      Description = {
+        editable = true
+        field = salesforce.Product2.field.Description
+        readable = true
+      }
+      DisplayUrl = {
+        editable = true
+        field = salesforce.Product2.field.DisplayUrl
+        readable = true
+      }
+      ExternalDataSourceId = {
+        editable = true
+        field = salesforce.Product2.field.ExternalDataSourceId
+        readable = true
+      }
+      ExternalId = {
+        editable = true
+        field = salesforce.Product2.field.ExternalId
+        readable = true
+      }
+      Family = {
+        editable = true
+        field = salesforce.Product2.field.Family
+        readable = true
+      }
+      ProductCode = {
+        editable = true
+        field = salesforce.Product2.field.ProductCode
+        readable = true
+      }
+      QuantityUnitOfMeasure = {
+        editable = true
+        field = salesforce.Product2.field.QuantityUnitOfMeasure
+        readable = true
+      }
+      StockKeepingUnit = {
+        editable = true
+        field = salesforce.Product2.field.StockKeepingUnit
+        readable = true
+      }
+    }
+    ProductConsumed = {
+      Discount = {
+        editable = false
+        field = salesforce.ProductConsumed.field.Discount
+        readable = false
+      }
+      ListPrice = {
+        editable = false
+        field = salesforce.ProductConsumed.field.ListPrice
+        readable = false
+      }
+      Subtotal = {
+        editable = false
+        field = salesforce.ProductConsumed.field.Subtotal
+        readable = false
+      }
+      TotalPrice = {
+        editable = false
+        field = salesforce.ProductConsumed.field.TotalPrice
+        readable = false
+      }
+      UnitPrice = {
+        editable = true
+        field = salesforce.ProductConsumed.field.UnitPrice
+        readable = true
+      }
+    }
+    ProductRequest = {
+      ShipToAddress = {
+        editable = true
+        field = salesforce.ProductRequest.field.ShipToAddress
+        readable = true
+      }
+      ShipmentType = {
+        editable = true
+        field = salesforce.ProductRequest.field.ShipmentType
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.ProductRequest.field.Status
+        readable = true
+      }
+    }
+    ProductRequestLineItem = {
+      Description = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.Description
+        readable = true
+      }
+      DestinationLocationId = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.DestinationLocationId
+        readable = true
+      }
+      NeedByDate = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.NeedByDate
+        readable = true
+      }
+      QuantityUnitOfMeasure = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.QuantityUnitOfMeasure
+        readable = true
+      }
+      ShipToAddress = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.ShipToAddress
+        readable = true
+      }
+      ShipmentType = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.ShipmentType
+        readable = true
+      }
+      SourceLocationId = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.SourceLocationId
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.Status
+        readable = true
+      }
+      WorkOrderId = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.WorkOrderId
+        readable = true
+      }
+      WorkOrderLineItemId = {
+        editable = true
+        field = salesforce.ProductRequestLineItem.field.WorkOrderLineItemId
+        readable = true
+      }
+    }
+    ProductServiceCampaign = {
+      Description = {
+        editable = true
+        field = salesforce.ProductServiceCampaign.field.Description
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.ProductServiceCampaign.field.EndDate
+        readable = true
+      }
+      Priority = {
+        editable = true
+        field = salesforce.ProductServiceCampaign.field.Priority
+        readable = true
+      }
+      Product2Id = {
+        editable = true
+        field = salesforce.ProductServiceCampaign.field.Product2Id
+        readable = true
+      }
+      StatusCategory = {
+        editable = true
+        field = salesforce.ProductServiceCampaign.field.StatusCategory
+        readable = true
+      }
+      WorkTypeId = {
+        editable = true
+        field = salesforce.ProductServiceCampaign.field.WorkTypeId
+        readable = true
+      }
+    }
+    ProductServiceCampaignItem = {
+      AssetId = {
+        editable = true
+        field = salesforce.ProductServiceCampaignItem.field.AssetId
+        readable = true
+      }
+      Product2Id = {
+        editable = true
+        field = salesforce.ProductServiceCampaignItem.field.Product2Id
+        readable = true
+      }
+      StatusCategory = {
+        editable = true
+        field = "ProductServiceCampaignItem.StatusCategory"
+        readable = true
+      }
+    }
+    ProductTransfer = {
+      CanUpdateIsReceived = {
+        editable = false
+        field = "ProductTransfer.CanUpdateIsReceived"
+        readable = false
+      }
+      ExpectedPickupDate = {
+        editable = true
+        field = salesforce.ProductTransfer.field.ExpectedPickupDate
+        readable = true
+      }
+      IsReceived = {
+        editable = true
+        field = salesforce.ProductTransfer.field.IsReceived
+        readable = true
+      }
+      ReturnOrderId = {
+        editable = true
+        field = salesforce.ProductTransfer.field.ReturnOrderId
+        readable = true
+      }
+      ReturnOrderLineItemId = {
+        editable = true
+        field = salesforce.ProductTransfer.field.ReturnOrderLineItemId
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.ProductTransfer.field.Status
+        readable = true
+      }
+    }
+    RecordsetFilterCriteria = {
+      Description = {
+        editable = false
+        field = salesforce.RecordsetFilterCriteria.field.Description
+        readable = false
+      }
+      IsActive = {
+        editable = false
+        field = salesforce.RecordsetFilterCriteria.field.IsActive
+        readable = false
+      }
+    }
+    Related_List_Item__c = {
+      Key__c = {
+        editable = false
+        field = salesforce.Related_List_Item__c.field.Key__c
+        readable = false
+      }
+      Master_Label__c = {
+        editable = false
+        field = salesforce.Related_List_Item__c.field.Master_Label__c
+        readable = false
+      }
+    }
+    ResourceAbsence = {
+      Address = {
+        editable = true
+        field = salesforce.ResourceAbsence.field.Address
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ResourceAbsence.field.Description
+        readable = true
+      }
+    }
+    ReturnOrder = {
+      AccountId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.AccountId
+        readable = true
+      }
+      CaseId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.CaseId
+        readable = true
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.ContactId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ReturnOrder.field.Description
+        readable = true
+      }
+      DestinationLocationId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.DestinationLocationId
+        readable = true
+      }
+      ExpectedArrivalDate = {
+        editable = true
+        field = salesforce.ReturnOrder.field.ExpectedArrivalDate
+        readable = true
+      }
+      OrderId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.OrderId
+        readable = true
+      }
+      ProductRequestId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.ProductRequestId
+        readable = true
+      }
+      ProductServiceCampaignId = {
+        editable = false
+        field = salesforce.ReturnOrder.field.ProductServiceCampaignId
+        readable = false
+      }
+      ReturnedById = {
+        editable = true
+        field = salesforce.ReturnOrder.field.ReturnedById
+        readable = true
+      }
+      ShipFromAddress = {
+        editable = true
+        field = salesforce.ReturnOrder.field.ShipFromAddress
+        readable = true
+      }
+      ShipmentType = {
+        editable = true
+        field = salesforce.ReturnOrder.field.ShipmentType
+        readable = true
+      }
+      SourceLocationId = {
+        editable = true
+        field = salesforce.ReturnOrder.field.SourceLocationId
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.ReturnOrder.field.Status
+        readable = true
+      }
+    }
+    ReturnOrderLineItem = {
+      AssetId = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.AssetId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.Description
+        readable = true
+      }
+      DestinationLocationId = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.DestinationLocationId
+        readable = true
+      }
+      OrderItemId = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.OrderItemId
+        readable = true
+      }
+      ProcessingPlan = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.ProcessingPlan
+        readable = true
+      }
+      ProductItemId = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.ProductItemId
+        readable = true
+      }
+      ProductRequestLineItemId = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.ProductRequestLineItemId
+        readable = true
+      }
+      ProductServiceCampaignId = {
+        editable = false
+        field = salesforce.ReturnOrderLineItem.field.ProductServiceCampaignId
+        readable = false
+      }
+      ProductServiceCampaignItemId = {
+        editable = false
+        field = salesforce.ReturnOrderLineItem.field.ProductServiceCampaignItemId
+        readable = false
+      }
+      QuantityUnitOfMeasure = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.QuantityUnitOfMeasure
+        readable = true
+      }
+      ReasonForReturn = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.ReasonForReturn
+        readable = true
+      }
+      RepaymentMethod = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.RepaymentMethod
+        readable = true
+      }
+      SourceLocationId = {
+        editable = true
+        field = salesforce.ReturnOrderLineItem.field.SourceLocationId
+        readable = true
+      }
+    }
+    Routing_Email_Address_Mapping__mdt = {
+      Actual_Email_Address__c = {
+        editable = false
+        field = salesforce.Routing_Email_Address_Mapping__mdt.field.Actual_Email_Address__c
+        readable = false
+      }
+      Country__c = {
+        editable = false
+        field = salesforce.Routing_Email_Address_Mapping__mdt.field.Country__c
+        readable = false
+      }
+      Routing_Email_Address__c = {
+        editable = false
+        field = salesforce.Routing_Email_Address_Mapping__mdt.field.Routing_Email_Address__c
+        readable = false
+      }
+    }
+    Sector__c = {
+      Sector_Id__c = {
+        editable = false
+        field = salesforce.Sector__c.field.Sector_Id__c
+        readable = false
+      }
+    }
+    Seller = {
+      ActiveFromDate = {
+        editable = true
+        field = "Seller.ActiveFromDate"
+        readable = true
+      }
+      ActiveToDate = {
+        editable = true
+        field = "Seller.ActiveToDate"
+        readable = true
+      }
+      SalesAmount = {
+        editable = true
+        field = "Seller.SalesAmount"
+        readable = true
+      }
+      SellerTier = {
+        editable = true
+        field = "Seller.SellerTier"
+        readable = true
+      }
+      SellerType = {
+        editable = true
+        field = "Seller.SellerType"
+        readable = true
+      }
+    }
+    ServiceAppointment = {
+      AccountId = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.AccountId
+        readable = true
+      }
+      ActualDuration = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ActualDuration
+        readable = true
+      }
+      ActualEndTime = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ActualEndTime
+        readable = true
+      }
+      ActualStartTime = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ActualStartTime
+        readable = true
+      }
+      Address = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.Address
+        readable = true
+      }
+      ApptBookingInfoUrl = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.ApptBookingInfoUrl
+        readable = false
+      }
+      ArrivalWindowEndTime = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ArrivalWindowEndTime
+        readable = true
+      }
+      ArrivalWindowStartTime = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ArrivalWindowStartTime
+        readable = true
+      }
+      BundlePolicyId = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.BundlePolicyId
+        readable = false
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ContactId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.Description
+        readable = true
+      }
+      IsBundle = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.IsBundle
+        readable = false
+      }
+      IsBundleMember = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.IsBundleMember
+        readable = false
+      }
+      IsManuallyBundled = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.IsManuallyBundled
+        readable = false
+      }
+      IsOffsiteAppointment = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.IsOffsiteAppointment
+        readable = false
+      }
+      RelatedBundleId = {
+        editable = false
+        field = salesforce.ServiceAppointment.field.RelatedBundleId
+        readable = false
+      }
+      SchedEndTime = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.SchedEndTime
+        readable = true
+      }
+      SchedStartTime = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.SchedStartTime
+        readable = true
+      }
+      ServiceNote = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ServiceNote
+        readable = true
+      }
+      ServiceTerritoryId = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.ServiceTerritoryId
+        readable = true
+      }
+      StatusCategory = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.StatusCategory
+        readable = true
+      }
+      Subject = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.Subject
+        readable = true
+      }
+      WorkTypeId = {
+        editable = true
+        field = salesforce.ServiceAppointment.field.WorkTypeId
+        readable = true
+      }
+    }
+    ServiceContract = {
+      AccountId = {
+        editable = true
+        field = salesforce.ServiceContract.field.AccountId
+        readable = true
+      }
+      ActivationDate = {
+        editable = true
+        field = salesforce.ServiceContract.field.ActivationDate
+        readable = true
+      }
+      ApprovalStatus = {
+        editable = true
+        field = salesforce.ServiceContract.field.ApprovalStatus
+        readable = true
+      }
+      BillingAddress = {
+        editable = true
+        field = salesforce.ServiceContract.field.BillingAddress
+        readable = true
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.ServiceContract.field.ContactId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ServiceContract.field.Description
+        readable = true
+      }
+      Discount = {
+        editable = true
+        field = salesforce.ServiceContract.field.Discount
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.ServiceContract.field.EndDate
+        readable = true
+      }
+      GrandTotal = {
+        editable = true
+        field = salesforce.ServiceContract.field.GrandTotal
+        readable = true
+      }
+      ParentServiceContractId = {
+        editable = true
+        field = salesforce.ServiceContract.field.ParentServiceContractId
+        readable = true
+      }
+      RootServiceContractId = {
+        editable = true
+        field = salesforce.ServiceContract.field.RootServiceContractId
+        readable = true
+      }
+      ShippingAddress = {
+        editable = true
+        field = salesforce.ServiceContract.field.ShippingAddress
+        readable = true
+      }
+      ShippingHandling = {
+        editable = true
+        field = salesforce.ServiceContract.field.ShippingHandling
+        readable = true
+      }
+      SpecialTerms = {
+        editable = true
+        field = salesforce.ServiceContract.field.SpecialTerms
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.ServiceContract.field.StartDate
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.ServiceContract.field.Status
+        readable = true
+      }
+      StatusIndicator = {
+        editable = true
+        field = salesforce.ServiceContract.field.StatusIndicator
+        readable = true
+      }
+      Subtotal = {
+        editable = true
+        field = salesforce.ServiceContract.field.Subtotal
+        readable = true
+      }
+      Tax = {
+        editable = true
+        field = salesforce.ServiceContract.field.Tax
+        readable = true
+      }
+      Term = {
+        editable = true
+        field = salesforce.ServiceContract.field.Term
+        readable = true
+      }
+      TotalPrice = {
+        editable = true
+        field = salesforce.ServiceContract.field.TotalPrice
+        readable = true
+      }
+    }
+    ServiceCrewMember = {
+      EndDate = {
+        editable = true
+        field = salesforce.ServiceCrewMember.field.EndDate
+        readable = true
+      }
+      IsLeader = {
+        editable = true
+        field = salesforce.ServiceCrewMember.field.IsLeader
+        readable = true
+      }
+    }
+    ServiceResource = {
+      AccountId = {
+        editable = false
+        field = salesforce.ServiceResource.field.AccountId
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.ServiceResource.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.ServiceResource.field.IsActive
+        readable = true
+      }
+      IsCapacityBased = {
+        editable = true
+        field = salesforce.ServiceResource.field.IsCapacityBased
+        readable = true
+      }
+      IsOptimizationCapable = {
+        editable = true
+        field = salesforce.ServiceResource.field.IsOptimizationCapable
+        readable = true
+      }
+      LastKnownLocation = {
+        editable = true
+        field = salesforce.ServiceResource.field.LastKnownLocation
+        readable = true
+      }
+      LastKnownLocationDate = {
+        editable = true
+        field = salesforce.ServiceResource.field.LastKnownLocationDate
+        readable = true
+      }
+      LocationId = {
+        editable = true
+        field = salesforce.ServiceResource.field.LocationId
+        readable = true
+      }
+      ServiceCrewId = {
+        editable = true
+        field = salesforce.ServiceResource.field.ServiceCrewId
+        readable = true
+      }
+    }
+    ServiceResourceCapacity = {
+      CapacityInHours = {
+        editable = true
+        field = salesforce.ServiceResourceCapacity.field.CapacityInHours
+        readable = true
+      }
+      CapacityInWorkItems = {
+        editable = true
+        field = salesforce.ServiceResourceCapacity.field.CapacityInWorkItems
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.ServiceResourceCapacity.field.EndDate
+        readable = true
+      }
+      TimePeriod = {
+        editable = true
+        field = salesforce.ServiceResourceCapacity.field.TimePeriod
+        readable = true
+      }
+    }
+    ServiceResourceSkill = {
+      EffectiveEndDate = {
+        editable = true
+        field = salesforce.ServiceResourceSkill.field.EffectiveEndDate
+        readable = true
+      }
+      SkillLevel = {
+        editable = true
+        field = salesforce.ServiceResourceSkill.field.SkillLevel
+        readable = true
+      }
+    }
+    ServiceTerritory = {
+      Address = {
+        editable = true
+        field = salesforce.ServiceTerritory.field.Address
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.ServiceTerritory.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.ServiceTerritory.field.IsActive
+        readable = true
+      }
+      TopLevelTerritoryId = {
+        editable = true
+        field = salesforce.ServiceTerritory.field.TopLevelTerritoryId
+        readable = true
+      }
+      TravelModeId = {
+        editable = false
+        field = salesforce.ServiceTerritory.field.TravelModeId
+        readable = false
+      }
+      TypicalInTerritoryTravelTime = {
+        editable = false
+        field = salesforce.ServiceTerritory.field.TypicalInTerritoryTravelTime
+        readable = false
+      }
+    }
+    ServiceTerritoryMember = {
+      Address = {
+        editable = true
+        field = salesforce.ServiceTerritoryMember.field.Address
+        readable = true
+      }
+      EffectiveEndDate = {
+        editable = true
+        field = salesforce.ServiceTerritoryMember.field.EffectiveEndDate
+        readable = true
+      }
+      OperatingHoursId = {
+        editable = true
+        field = salesforce.ServiceTerritoryMember.field.OperatingHoursId
+        readable = true
+      }
+      TravelModeId = {
+        editable = false
+        field = salesforce.ServiceTerritoryMember.field.TravelModeId
+        readable = false
+      }
+    }
+    Session__c = {
+      Description__c = {
+        editable = false
+        field = salesforce.Session__c.field.Description__c
+        readable = false
+      }
+      Level__c = {
+        editable = false
+        field = salesforce.Session__c.field.Level__c
+        readable = false
+      }
+      Session_Date__c = {
+        editable = false
+        field = salesforce.Session__c.field.Session_Date__c
+        readable = false
+      }
+    }
+    Shift = {
+      BackgroundColor = {
+        editable = false
+        field = salesforce.Shift.field.BackgroundColor
+        readable = false
+      }
+      JobProfileId = {
+        editable = false
+        field = salesforce.Shift.field.JobProfileId
+        readable = false
+      }
+      Label = {
+        editable = true
+        field = salesforce.Shift.field.Label
+        readable = true
+      }
+      RecordsetFilterCriteriaId = {
+        editable = false
+        field = salesforce.Shift.field.RecordsetFilterCriteriaId
+        readable = false
+      }
+      ServiceResourceId = {
+        editable = true
+        field = salesforce.Shift.field.ServiceResourceId
+        readable = true
+      }
+      ServiceTerritoryId = {
+        editable = true
+        field = salesforce.Shift.field.ServiceTerritoryId
+        readable = true
+      }
+    }
+    ShiftPattern = {
+      Description = {
+        editable = true
+        field = salesforce.ShiftPattern.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.ShiftPattern.field.IsActive
+        readable = true
+      }
+    }
+    ShiftTemplate = {
+      BackgroundColor = {
+        editable = false
+        field = "ShiftTemplate.BackgroundColor"
+        readable = false
+      }
+      RecordsetFilterCriteriaId = {
+        editable = false
+        field = salesforce.ShiftTemplate.field.RecordsetFilterCriteriaId
+        readable = false
+      }
+    }
+    Shipment = {
+      ActualDeliveryDate = {
+        editable = true
+        field = salesforce.Shipment.field.ActualDeliveryDate
+        readable = true
+      }
+      DeliveredToId = {
+        editable = true
+        field = salesforce.Shipment.field.DeliveredToId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.Shipment.field.Description
+        readable = true
+      }
+      ExpectedDeliveryDate = {
+        editable = true
+        field = salesforce.Shipment.field.ExpectedDeliveryDate
+        readable = true
+      }
+      Provider = {
+        editable = true
+        field = salesforce.Shipment.field.Provider
+        readable = true
+      }
+      ReturnOrderId = {
+        editable = false
+        field = salesforce.Shipment.field.ReturnOrderId
+        readable = false
+      }
+      ShipFromAddress = {
+        editable = true
+        field = salesforce.Shipment.field.ShipFromAddress
+        readable = true
+      }
+      ShipToAddress = {
+        editable = true
+        field = salesforce.Shipment.field.ShipToAddress
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.Shipment.field.Status
+        readable = true
+      }
+      TrackingNumber = {
+        editable = true
+        field = salesforce.Shipment.field.TrackingNumber
+        readable = true
+      }
+      TrackingUrl = {
+        editable = true
+        field = salesforce.Shipment.field.TrackingUrl
+        readable = true
+      }
+    }
+    ShipmentItem = {
+      ReturnOrderLineItemId = {
+        editable = false
+        field = salesforce.ShipmentItem.field.ReturnOrderLineItemId
+        readable = false
+      }
+    }
+    Show__c = {
+      Active_Syndications__c = {
+        editable = false
+        field = salesforce.Show__c.field.Active_Syndications__c
+        readable = false
+      }
+      All_Syndications__c = {
+        editable = false
+        field = salesforce.Show__c.field.All_Syndications__c
+        readable = false
+      }
+      Format__c = {
+        editable = false
+        field = salesforce.Show__c.field.Format__c
+        readable = false
+      }
+    }
+    SkillRequirement = {
+      SkillLevel = {
+        editable = true
+        field = salesforce.SkillRequirement.field.SkillLevel
+        readable = true
+      }
+    }
+    SocialPersona = {
+      SourceApp = {
+        editable = true
+        field = "SocialPersona.SourceApp"
+        readable = true
+      }
+    }
+    Solution = {
+      IsPublished = {
+        editable = true
+        field = salesforce.Solution.field.IsPublished
+        readable = true
+      }
+      IsPublishedInPublicKb = {
+        editable = true
+        field = salesforce.Solution.field.IsPublishedInPublicKb
+        readable = true
+      }
+      SolutionNote = {
+        editable = true
+        field = salesforce.Solution.field.SolutionNote
+        readable = true
+      }
+    }
+    Speaker__c = {
+      Bio__c = {
+        editable = false
+        field = salesforce.Speaker__c.field.Bio__c
+        readable = false
+      }
+      Email__c = {
+        editable = false
+        field = salesforce.Speaker__c.field.Email__c
+        readable = false
+      }
+      First_Name__c = {
+        editable = false
+        field = salesforce.Speaker__c.field.First_Name__c
+        readable = false
+      }
+      Last_Name__c = {
+        editable = false
+        field = salesforce.Speaker__c.field.Last_Name__c
+        readable = false
+      }
+      Picture_Path__c = {
+        editable = false
+        field = salesforce.Speaker__c.field.Picture_Path__c
+        readable = false
+      }
+      Picture__c = {
+        editable = false
+        field = salesforce.Speaker__c.field.Picture__c
+        readable = false
+      }
+    }
+    Standard_Field_Help__c = {
+      Help_Text_Key__c = {
+        editable = false
+        field = salesforce.Standard_Field_Help__c.field.Help_Text_Key__c
+        readable = false
+      }
+      Master_Help_Text__c = {
+        editable = false
+        field = salesforce.Standard_Field_Help__c.field.Master_Help_Text__c
+        readable = false
+      }
+    }
+    Standard_Field_Label__c = {
+      Key__c = {
+        editable = true
+        field = salesforce.Standard_Field_Label__c.field.Key__c
+        readable = true
+      }
+    }
+    Syndication_Event__e = {
+      End_Date__c = {
+        editable = false
+        field = salesforce.Syndication_Event__e.field.End_Date__c
+        readable = false
+      }
+      Show__c = {
+        editable = false
+        field = salesforce.Syndication_Event__e.field.Show__c
+        readable = false
+      }
+      Start_Date__c = {
+        editable = false
+        field = salesforce.Syndication_Event__e.field.Start_Date__c
+        readable = false
+      }
+      Subscriber_Station_Network__c = {
+        editable = false
+        field = salesforce.Syndication_Event__e.field.Subscriber_Station_Network__c
+        readable = false
+      }
+    }
+    Syndication__c = {
+      End_Date__c = {
+        editable = false
+        field = salesforce.Syndication__c.field.End_Date__c
+        readable = false
+      }
+      IsActive__c = {
+        editable = false
+        field = salesforce.Syndication__c.field.IsActive__c
+        readable = false
+      }
+      Start_Date__c = {
+        editable = false
+        field = salesforce.Syndication__c.field.Start_Date__c
+        readable = false
+      }
+    }
+    Task = {
+      ActivityDate = {
+        editable = true
+        field = salesforce.Task.field.ActivityDate
+        readable = true
+      }
+      DB_Activity_Type__c = {
+        editable = false
+        field = salesforce.Task.field.DB_Activity_Type__c
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.Task.field.Description
+        readable = true
+      }
+      IsVisibleInSelfService = {
+        editable = false
+        field = salesforce.Task.field.IsVisibleInSelfService
+        readable = false
+      }
+      Type = {
+        editable = false
+        field = salesforce.Task.field.Type
+        readable = false
+      }
+      WhatId = {
+        editable = true
+        field = salesforce.Task.field.WhatId
+        readable = true
+      }
+      WhoId = {
+        editable = true
+        field = salesforce.Task.field.WhoId
+        readable = true
+      }
+    }
+    Threat_Tier__mdt = {
+      Account_Tier__c = {
+        editable = false
+        field = salesforce.Threat_Tier__mdt.field.Account_Tier__c
+        readable = false
+      }
+      Vacation__c = {
+        editable = false
+        field = salesforce.Threat_Tier__mdt.field.Vacation__c
+        readable = false
+      }
+    }
+    TimeSheet = {
+      Status = {
+        editable = true
+        field = salesforce.TimeSheet.field.Status
+        readable = true
+      }
+      TimeSheetEntryCount = {
+        editable = false
+        field = salesforce.TimeSheet.field.TimeSheetEntryCount
+        readable = true
+      }
+      TotalDurationInHours = {
+        editable = false
+        field = salesforce.TimeSheet.field.TotalDurationInHours
+        readable = false
+      }
+      TotalDurationInMinutes = {
+        editable = false
+        field = "TimeSheet.TotalDurationInMinutes"
+        readable = false
+      }
+    }
+    TimeSheetEntry = {
+      Description = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.Description
+        readable = true
+      }
+      DurationInMinutes = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.DurationInMinutes
+        readable = true
+      }
+      EndTime = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.EndTime
+        readable = true
+      }
+      LocationTimeZone = {
+        editable = false
+        field = salesforce.TimeSheetEntry.field.LocationTimeZone
+        readable = false
+      }
+      StartTime = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.StartTime
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.Status
+        readable = true
+      }
+      Subject = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.Subject
+        readable = true
+      }
+      Type = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.Type
+        readable = true
+      }
+      WorkOrderId = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.WorkOrderId
+        readable = true
+      }
+      WorkOrderLineItemId = {
+        editable = true
+        field = salesforce.TimeSheetEntry.field.WorkOrderLineItemId
+        readable = true
+      }
+    }
+    Translation_Context__c = {
+      Context_Type__c = {
+        editable = false
+        field = salesforce.Translation_Context__c.field.Context_Type__c
+        readable = false
+      }
+      Record_Link__c = {
+        editable = false
+        field = salesforce.Translation_Context__c.field.Record_Link__c
+        readable = false
+      }
+    }
+    Translation_Key__c = {
+      Default_Label__c = {
+        editable = false
+        field = salesforce.Translation_Key__c.field.Default_Label__c
+        readable = false
+      }
+      Key__c = {
+        editable = false
+        field = salesforce.Translation_Key__c.field.Key__c
+        readable = false
+      }
+      Type__c = {
+        editable = false
+        field = salesforce.Translation_Key__c.field.Type__c
+        readable = false
+      }
+    }
+    TravelMode = {
+      CanUseTollRoads = {
+        editable = false
+        field = "TravelMode.CanUseTollRoads"
+        readable = false
+      }
+      IsTransportingHazmat = {
+        editable = false
+        field = "TravelMode.IsTransportingHazmat"
+        readable = false
+      }
+    }
+    TriggerStatus__mdt = {
+      Account_Entity__c = {
+        editable = false
+        field = salesforce.TriggerStatus__mdt.field.Account_Entity__c
+        readable = false
+      }
+      Account_field_being_used__c = {
+        editable = false
+        field = salesforce.TriggerStatus__mdt.field.Account_field_being_used__c
+        readable = false
+      }
+      Disabled__c = {
+        editable = false
+        field = salesforce.TriggerStatus__mdt.field.Disabled__c
+        readable = false
+      }
+      Profile__c = {
+        editable = false
+        field = salesforce.TriggerStatus__mdt.field.Profile__c
+        readable = false
+      }
+    }
+    User = {
+      DB_Region__c = {
+        editable = false
+        field = salesforce.User.field.DB_Region__c
+        readable = false
+      }
+      Phone_UUID__c = {
+        editable = true
+        field = salesforce.User.field.Phone_UUID__c
+        readable = true
+      }
+    }
+    VAT_Data__mdt = {
+      Country_Name__c = {
+        editable = false
+        field = salesforce.VAT_Data__mdt.field.Country_Name__c
+        readable = false
+      }
+      VAT_Rate__c = {
+        editable = false
+        field = salesforce.VAT_Data__mdt.field.VAT_Rate__c
+        readable = false
+      }
+    }
+    VAT_Rate__mdt = {
+      Default__c = {
+        editable = false
+        field = salesforce.VAT_Rate__mdt.field.Default__c
+        readable = false
+      }
+      Rate__c = {
+        editable = false
+        field = salesforce.VAT_Rate__mdt.field.Rate__c
+        readable = false
+      }
+    }
+    VietLeadDedupeSetting__mdt = {
+      Field1ApiName__c = {
+        editable = false
+        field = salesforce.VietLeadDedupeSetting__mdt.field.Field1ApiName__c
+        readable = false
+      }
+      Field2ApiName__c = {
+        editable = false
+        field = salesforce.VietLeadDedupeSetting__mdt.field.Field2ApiName__c
+        readable = false
+      }
+    }
+    WorkOrder = {
+      AccountId = {
+        editable = true
+        field = salesforce.WorkOrder.field.AccountId
+        readable = true
+      }
+      Address = {
+        editable = true
+        field = salesforce.WorkOrder.field.Address
+        readable = true
+      }
+      AssetId = {
+        editable = true
+        field = salesforce.WorkOrder.field.AssetId
+        readable = true
+      }
+      AssetWarrantyId = {
+        editable = false
+        field = salesforce.WorkOrder.field.AssetWarrantyId
+        readable = false
+      }
+      BusinessHoursId = {
+        editable = true
+        field = salesforce.WorkOrder.field.BusinessHoursId
+        readable = true
+      }
+      CaseId = {
+        editable = true
+        field = salesforce.WorkOrder.field.CaseId
+        readable = true
+      }
+      ContactId = {
+        editable = true
+        field = salesforce.WorkOrder.field.ContactId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.WorkOrder.field.Description
+        readable = true
+      }
+      Discount = {
+        editable = true
+        field = salesforce.WorkOrder.field.Discount
+        readable = true
+      }
+      Duration = {
+        editable = true
+        field = salesforce.WorkOrder.field.Duration
+        readable = true
+      }
+      DurationInMinutes = {
+        editable = true
+        field = salesforce.WorkOrder.field.DurationInMinutes
+        readable = true
+      }
+      DurationType = {
+        editable = true
+        field = salesforce.WorkOrder.field.DurationType
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.WorkOrder.field.EndDate
+        readable = true
+      }
+      EntitlementId = {
+        editable = true
+        field = salesforce.WorkOrder.field.EntitlementId
+        readable = true
+      }
+      GrandTotal = {
+        editable = true
+        field = salesforce.WorkOrder.field.GrandTotal
+        readable = true
+      }
+      IsClosed = {
+        editable = true
+        field = salesforce.WorkOrder.field.IsClosed
+        readable = true
+      }
+      IsGeneratedFromMaintenancePlan = {
+        editable = false
+        field = salesforce.WorkOrder.field.IsGeneratedFromMaintenancePlan
+        readable = false
+      }
+      IsStopped = {
+        editable = true
+        field = salesforce.WorkOrder.field.IsStopped
+        readable = true
+      }
+      LineItemCount = {
+        editable = true
+        field = salesforce.WorkOrder.field.LineItemCount
+        readable = true
+      }
+      LocationId = {
+        editable = true
+        field = salesforce.WorkOrder.field.LocationId
+        readable = true
+      }
+      MaintenancePlanId = {
+        editable = true
+        field = salesforce.WorkOrder.field.MaintenancePlanId
+        readable = true
+      }
+      MaintenanceWorkRuleId = {
+        editable = false
+        field = salesforce.WorkOrder.field.MaintenanceWorkRuleId
+        readable = false
+      }
+      MilestoneStatus = {
+        editable = true
+        field = salesforce.WorkOrder.field.MilestoneStatus
+        readable = true
+      }
+      MilestoneStatusIcon = {
+        editable = true
+        field = salesforce.WorkOrder.field.MilestoneStatusIcon
+        readable = true
+      }
+      MinimumCrewSize = {
+        editable = true
+        field = salesforce.WorkOrder.field.MinimumCrewSize
+        readable = true
+      }
+      ParentWorkOrderId = {
+        editable = true
+        field = salesforce.WorkOrder.field.ParentWorkOrderId
+        readable = true
+      }
+      Pricebook2Id = {
+        editable = true
+        field = salesforce.WorkOrder.field.Pricebook2Id
+        readable = true
+      }
+      Priority = {
+        editable = true
+        field = salesforce.WorkOrder.field.Priority
+        readable = true
+      }
+      ProductServiceCampaignId = {
+        editable = false
+        field = salesforce.WorkOrder.field.ProductServiceCampaignId
+        readable = false
+      }
+      ProductServiceCampaignItemId = {
+        editable = false
+        field = salesforce.WorkOrder.field.ProductServiceCampaignItemId
+        readable = false
+      }
+      RecommendedCrewSize = {
+        editable = true
+        field = salesforce.WorkOrder.field.RecommendedCrewSize
+        readable = true
+      }
+      ReturnOrderId = {
+        editable = true
+        field = salesforce.WorkOrder.field.ReturnOrderId
+        readable = true
+      }
+      ReturnOrderLineItemId = {
+        editable = true
+        field = salesforce.WorkOrder.field.ReturnOrderLineItemId
+        readable = true
+      }
+      RootWorkOrderId = {
+        editable = true
+        field = salesforce.WorkOrder.field.RootWorkOrderId
+        readable = true
+      }
+      ServiceAppointmentCount = {
+        editable = true
+        field = salesforce.WorkOrder.field.ServiceAppointmentCount
+        readable = true
+      }
+      ServiceContractId = {
+        editable = true
+        field = salesforce.WorkOrder.field.ServiceContractId
+        readable = true
+      }
+      ServiceReportLanguage = {
+        editable = false
+        field = salesforce.WorkOrder.field.ServiceReportLanguage
+        readable = false
+      }
+      ServiceTerritoryId = {
+        editable = true
+        field = salesforce.WorkOrder.field.ServiceTerritoryId
+        readable = true
+      }
+      SlaExitDate = {
+        editable = true
+        field = salesforce.WorkOrder.field.SlaExitDate
+        readable = true
+      }
+      SlaStartDate = {
+        editable = true
+        field = salesforce.WorkOrder.field.SlaStartDate
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.WorkOrder.field.StartDate
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.WorkOrder.field.Status
+        readable = true
+      }
+      StatusCategory = {
+        editable = true
+        field = salesforce.WorkOrder.field.StatusCategory
+        readable = true
+      }
+      StopStartDate = {
+        editable = true
+        field = salesforce.WorkOrder.field.StopStartDate
+        readable = true
+      }
+      Subject = {
+        editable = true
+        field = salesforce.WorkOrder.field.Subject
+        readable = true
+      }
+      Subtotal = {
+        editable = true
+        field = salesforce.WorkOrder.field.Subtotal
+        readable = true
+      }
+      SuggestedMaintenanceDate = {
+        editable = true
+        field = salesforce.WorkOrder.field.SuggestedMaintenanceDate
+        readable = true
+      }
+      Tax = {
+        editable = true
+        field = salesforce.WorkOrder.field.Tax
+        readable = true
+      }
+      TotalPrice = {
+        editable = true
+        field = salesforce.WorkOrder.field.TotalPrice
+        readable = true
+      }
+      WorkTypeId = {
+        editable = true
+        field = salesforce.WorkOrder.field.WorkTypeId
+        readable = true
+      }
+    }
+    WorkOrderLineItem = {
+      Address = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Address
+        readable = true
+      }
+      AssetId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.AssetId
+        readable = true
+      }
+      AssetWarrantyId = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.AssetWarrantyId
+        readable = false
+      }
+      Description = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Description
+        readable = true
+      }
+      Discount = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Discount
+        readable = true
+      }
+      EndDate = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.EndDate
+        readable = true
+      }
+      IsClosed = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.IsClosed
+        readable = true
+      }
+      IsGeneratedFromMaintenancePlan = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.IsGeneratedFromMaintenancePlan
+        readable = false
+      }
+      ListPrice = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.ListPrice
+        readable = true
+      }
+      LocationId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.LocationId
+        readable = true
+      }
+      MaintenancePlanId = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.MaintenancePlanId
+        readable = false
+      }
+      MaintenanceWorkRuleId = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.MaintenanceWorkRuleId
+        readable = false
+      }
+      MinimumCrewSize = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.MinimumCrewSize
+        readable = true
+      }
+      OrderId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.OrderId
+        readable = true
+      }
+      ParentWorkOrderLineItemId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.ParentWorkOrderLineItemId
+        readable = true
+      }
+      PricebookEntryId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.PricebookEntryId
+        readable = true
+      }
+      Priority = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Priority
+        readable = true
+      }
+      Product2Id = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Product2Id
+        readable = true
+      }
+      ProductServiceCampaignId = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.ProductServiceCampaignId
+        readable = false
+      }
+      ProductServiceCampaignItemId = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.ProductServiceCampaignItemId
+        readable = false
+      }
+      Quantity = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Quantity
+        readable = true
+      }
+      RecommendedCrewSize = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.RecommendedCrewSize
+        readable = true
+      }
+      ReturnOrderId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.ReturnOrderId
+        readable = true
+      }
+      ReturnOrderLineItemId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.ReturnOrderLineItemId
+        readable = true
+      }
+      RootWorkOrderLineItemId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.RootWorkOrderLineItemId
+        readable = true
+      }
+      ServiceAppointmentCount = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.ServiceAppointmentCount
+        readable = true
+      }
+      ServiceTerritoryId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.ServiceTerritoryId
+        readable = true
+      }
+      StartDate = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.StartDate
+        readable = true
+      }
+      Status = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Status
+        readable = true
+      }
+      StatusCategory = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.StatusCategory
+        readable = true
+      }
+      Subject = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Subject
+        readable = true
+      }
+      Subtotal = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.Subtotal
+        readable = true
+      }
+      SuggestedMaintenanceDate = {
+        editable = false
+        field = salesforce.WorkOrderLineItem.field.SuggestedMaintenanceDate
+        readable = false
+      }
+      TotalPrice = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.TotalPrice
+        readable = true
+      }
+      UnitPrice = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.UnitPrice
+        readable = true
+      }
+      WorkTypeId = {
+        editable = true
+        field = salesforce.WorkOrderLineItem.field.WorkTypeId
+        readable = true
+      }
+    }
+    WorkPlan = {
+      Description = {
+        editable = true
+        field = salesforce.WorkPlan.field.Description
+        readable = true
+      }
+      WorkOrderLineItemId = {
+        editable = true
+        field = salesforce.WorkPlan.field.WorkOrderLineItemId
+        readable = true
+      }
+      WorkPlanTemplateId = {
+        editable = true
+        field = salesforce.WorkPlan.field.WorkPlanTemplateId
+        readable = true
+      }
+    }
+    WorkPlanSelectionRule = {
+      AccountId = {
+        editable = false
+        field = salesforce.WorkPlanSelectionRule.field.AccountId
+        readable = false
+      }
+      AssetId = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.AssetId
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.IsActive
+        readable = true
+      }
+      LocationId = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.LocationId
+        readable = true
+      }
+      Product2Id = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.Product2Id
+        readable = true
+      }
+      ServiceContractId = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.ServiceContractId
+        readable = true
+      }
+      ServiceTerritoryId = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.ServiceTerritoryId
+        readable = true
+      }
+      WorkTypeId = {
+        editable = true
+        field = salesforce.WorkPlanSelectionRule.field.WorkTypeId
+        readable = true
+      }
+    }
+    WorkPlanTemplate = {
+      Description = {
+        editable = true
+        field = salesforce.WorkPlanTemplate.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.WorkPlanTemplate.field.IsActive
+        readable = true
+      }
+      RelativeExecutionOrder = {
+        editable = true
+        field = salesforce.WorkPlanTemplate.field.RelativeExecutionOrder
+        readable = true
+      }
+    }
+    WorkPlanTemplateEntry = {
+      ExecutionOrder = {
+        editable = true
+        field = salesforce.WorkPlanTemplateEntry.field.ExecutionOrder
+        readable = true
+      }
+    }
+    WorkStep = {
+      ActionDefinition = {
+        editable = true
+        field = salesforce.WorkStep.field.ActionDefinition
+        readable = true
+      }
+      ActionType = {
+        editable = true
+        field = salesforce.WorkStep.field.ActionType
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.WorkStep.field.Description
+        readable = true
+      }
+      EndTime = {
+        editable = true
+        field = salesforce.WorkStep.field.EndTime
+        readable = true
+      }
+      PausedFlowInterviewId = {
+        editable = true
+        field = salesforce.WorkStep.field.PausedFlowInterviewId
+        readable = true
+      }
+      StartTime = {
+        editable = true
+        field = salesforce.WorkStep.field.StartTime
+        readable = true
+      }
+      WorkOrderLineItemId = {
+        editable = true
+        field = salesforce.WorkStep.field.WorkOrderLineItemId
+        readable = true
+      }
+      WorkPlanExecutionOrder = {
+        editable = true
+        field = salesforce.WorkStep.field.WorkPlanExecutionOrder
+        readable = true
+      }
+    }
+    WorkStepTemplate = {
+      ActionDefinition = {
+        editable = true
+        field = salesforce.WorkStepTemplate.field.ActionDefinition
+        readable = true
+      }
+      ActionType = {
+        editable = true
+        field = salesforce.WorkStepTemplate.field.ActionType
+        readable = true
+      }
+      Description = {
+        editable = true
+        field = salesforce.WorkStepTemplate.field.Description
+        readable = true
+      }
+      IsActive = {
+        editable = true
+        field = salesforce.WorkStepTemplate.field.IsActive
+        readable = true
+      }
+    }
+    WorkType = {
+      MinimumCrewSize = {
+        editable = true
+        field = salesforce.WorkType.field.MinimumCrewSize
+        readable = true
+      }
+      RecommendedCrewSize = {
+        editable = true
+        field = salesforce.WorkType.field.RecommendedCrewSize
+        readable = true
+      }
+      ServiceReportTemplateId = {
+        editable = true
+        field = salesforce.WorkType.field.ServiceReportTemplateId
+        readable = true
+      }
+    }
+    WorkTypeGroup = {
+      IsActive = {
+        editable = false
+        field = salesforce.WorkTypeGroup.field.IsActive
+        readable = false
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+salesforce.ApexClass TriggerAction {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerAction"
+  content = file("salesforce/Records/ApexClass/TriggerAction.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountService
+    },
+  ]
+}

@@ -1,0 +1,50 @@
+salesforce.LightningPage Dedupe_Branch_Record_Page {
+  fullName = "Dedupe_Branch_Record_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "main"
+      type = "Region"
+    },
+    {
+      mode = "Replace"
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Dedupe Branch Record Page"
+  parentFlexiPage = "flexipage__default_rec_L"
+  sobjectType = "Dedupe_Branch__c"
+  template = {
+    name = "flexipage:recordHomeTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Dedupe_Branch__c,
+  ]
+}

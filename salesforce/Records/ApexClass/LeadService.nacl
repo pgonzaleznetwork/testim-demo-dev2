@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadService {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadService"
+  content = file("salesforce/Records/ApexClass/LeadService.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

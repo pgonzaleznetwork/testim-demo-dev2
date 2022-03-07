@@ -1,0 +1,73 @@
+salesforce.Layout Standard_Field_Help__c_Standard_Field_Help_Layout@uuuubsss {
+  fullName = "Standard_Field_Help__c-Standard Field Help Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Standard_Field_Help__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Standard_Field_Help__c.field.Layout_Translation_Info__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Standard_Field_Help__c.field.Master_Help_Text__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Standard_Field_Help__c.field.Help_Text_Key__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Standard_Field_Help__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Standard_Field_Help__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Standard_Field_Help__c,
+  ]
+}

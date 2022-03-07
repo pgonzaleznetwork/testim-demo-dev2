@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle setExpId {
+  apiVersion = 42
+  description = "Sample Event for setExpId"
+  fullName = "setExpId"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/setExpId/setExpId.evt")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.setExpId
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass ParkServiceMock {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ParkServiceMock"
+  content = file("salesforce/Records/ApexClass/ParkServiceMock.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ParkService
+    },
+  ]
+}

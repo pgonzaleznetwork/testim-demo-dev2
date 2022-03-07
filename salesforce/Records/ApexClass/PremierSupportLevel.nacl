@@ -1,0 +1,11 @@
+salesforce.ApexClass PremierSupportLevel {
+  apiVersion = 41
+  status = "Active"
+  fullName = "PremierSupportLevel"
+  content = file("salesforce/Records/ApexClass/PremierSupportLevel.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ISupportLevel
+    },
+  ]
+}

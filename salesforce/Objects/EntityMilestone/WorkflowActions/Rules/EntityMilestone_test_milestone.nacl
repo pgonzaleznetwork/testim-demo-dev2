@@ -1,0 +1,15 @@
+salesforce.WorkflowRule EntityMilestone_test_milestone@vs {
+  fullName = "EntityMilestone.test milestone"
+  active = false
+  criteriaItems = [
+    {
+      field = salesforce.EntityMilestone.field.IsCompleted
+      operation = "equals"
+      value = "True"
+    },
+  ]
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.EntityMilestone,
+  ]
+}

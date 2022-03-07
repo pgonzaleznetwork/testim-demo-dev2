@@ -1,0 +1,13 @@
+salesforce.WorkflowFieldUpdate Case_update_anything@vu {
+  fullName = "Case.update_anything"
+  field = salesforce.Case.field.Subject
+  formula = "\"updated by wf\""
+  name = "update anything"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Case,
+  ]
+}

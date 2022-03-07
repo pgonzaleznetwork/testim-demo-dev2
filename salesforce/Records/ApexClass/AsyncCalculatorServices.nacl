@@ -1,0 +1,11 @@
+salesforce.ApexClass AsyncCalculatorServices {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AsyncCalculatorServices"
+  content = file("salesforce/Records/ApexClass/AsyncCalculatorServices.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.calculatorServices
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass TestVerifyDate {
+  apiVersion = 41
+  status = "Active"
+  fullName = "TestVerifyDate"
+  content = file("salesforce/Records/ApexClass/TestVerifyDate.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.VerifyDate
+    },
+  ]
+}

@@ -1,0 +1,38 @@
+type salesforce.KPI_Target__c {
+  salesforce.Lookup User__c {
+    apiName = "KPI_Target__c.User__c"
+    label = "User"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "KPI_Targets"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Percent Target_Call_Rate__c {
+    apiName = "KPI_Target__c.Target_Call_Rate__c"
+    label = "Target Call Rate"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Percent Actual_Call_Rate__c {
+    apiName = "KPI_Target__c.Actual_Call_Rate__c"
+    label = "Actual Call Rate"
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+}

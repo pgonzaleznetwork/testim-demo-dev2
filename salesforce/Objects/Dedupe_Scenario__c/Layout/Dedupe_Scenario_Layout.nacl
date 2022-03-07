@@ -1,0 +1,75 @@
+salesforce.Layout Dedupe_Scenario__c_Dedupe_Scenario_Layout@uuubss {
+  fullName = "Dedupe_Scenario__c-Dedupe Scenario Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Dedupe_Scenario__c.field.Name
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Dedupe_Scenario__c.field.Country__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "Matching_Rule_To_Evaluate__c",
+        "True_Next_Branch__c",
+        "False_Next_Branch__c",
+        "Starting_Point__c",
+      ]
+      relatedList = salesforce.Dedupe_Branch__c.field.Dedupe_Scenario__c
+      sortField = "Starting_Point__c"
+      sortOrder = "Desc"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMobZ"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Dedupe_Scenario__c,
+  ]
+}

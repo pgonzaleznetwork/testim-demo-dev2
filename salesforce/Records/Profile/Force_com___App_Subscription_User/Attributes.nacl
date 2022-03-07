@@ -1,0 +1,5 @@
+salesforce.Profile Force_2Ecom___App_Subscription_User@psbsss {
+  fullName = "Force%2Ecom - App Subscription User"
+  custom = false
+  userLicense = "Force.com - App Subscription"
+}

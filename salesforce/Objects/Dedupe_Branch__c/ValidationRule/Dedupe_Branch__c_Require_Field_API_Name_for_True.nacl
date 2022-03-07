@@ -1,0 +1,16 @@
+salesforce.ValidationRule Dedupe_Branch__c_Require_Field_API_Name_for_True {
+  fullName = "Dedupe_Branch__c.Require_Field_API_Name_for_True"
+  active = true
+  description = "This rule prevents a value from being specified if no Field API name is provided."
+  errorConditionFormula = "ISNULL( True_Set_This_Field__c)   &&  NOT(ISNULL( True_To_This_Value__c ) )"
+  errorDisplayField = salesforce.Dedupe_Branch__c.field.True_Set_This_Field__c
+  errorMessage = "You must specify the field API name before you can specify the value to be set."
+  _parent = [
+    salesforce.Dedupe_Branch__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Dedupe_Branch__c.field.True_To_This_Value__c
+    },
+  ]
+}

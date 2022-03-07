@@ -1,0 +1,17 @@
+salesforce.ApexClass VATController {
+  apiVersion = 39
+  status = "Active"
+  fullName = "VATController"
+  content = file("salesforce/Records/ApexClass/VATController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.VAT_Rate__mdt
+    },
+    {
+      reference = salesforce.VAT_Rate__mdt.field.Default__c
+    },
+    {
+      reference = salesforce.VAT_Rate__mdt.field.Rate__c
+    },
+  ]
+}

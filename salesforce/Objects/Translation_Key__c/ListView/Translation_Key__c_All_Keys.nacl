@@ -1,0 +1,14 @@
+salesforce.ListView Translation_Key__c_All_Keys {
+  fullName = "Translation_Key__c.All_Keys"
+  columns = [
+    "NAME",
+    "Type__c",
+    "Key__c",
+    "Default_Label__c",
+  ]
+  filterScope = "Mine"
+  label = "All Keys"
+  _parent = [
+    salesforce.Translation_Key__c,
+  ]
+}

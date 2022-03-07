@@ -1,0 +1,18 @@
+salesforce.ApexComponent VFComponentUsingField {
+  apiVersion = 49
+  label = "VFComponentUsingField"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "VFComponentUsingField"
+  content = file("salesforce/Records/ApexComponent/VFComponentUsingField.component")
+}

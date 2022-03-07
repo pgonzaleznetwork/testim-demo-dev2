@@ -1,0 +1,88 @@
+salesforce.Profile Partner_Community_Login_User@s {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    AllowUniversalSearch = {
+      enabled = true
+      name = "AllowUniversalSearch"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    ChatterOwnGroups = {
+      enabled = true
+      name = "ChatterOwnGroups"
+    }
+    ContentWorkspaces = {
+      enabled = true
+      name = "ContentWorkspaces"
+    }
+    ConvertLeads = {
+      enabled = true
+      name = "ConvertLeads"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    EditOppLineItemUnitPrice = {
+      enabled = true
+      name = "EditOppLineItemUnitPrice"
+    }
+    EditTask = {
+      enabled = true
+      name = "EditTask"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    FieldServiceAccess = {
+      enabled = true
+      name = "FieldServiceAccess"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    RunFlow = {
+      enabled = true
+      name = "RunFlow"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    WorkDotComUserPerm = {
+      enabled = true
+      name = "WorkDotComUserPerm"
+    }
+  }
+}

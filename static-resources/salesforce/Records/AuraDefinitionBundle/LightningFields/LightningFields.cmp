@@ -1,0 +1,74 @@
+<aura:component >
+    
+     <aura:attribute name="options" type="List" default="[
+    {'label': 'Ross', 'value': 'option1'},
+    {'label': 'Rachel', 'value': 'option2'}
+    ]"/>
+    <aura:attribute name="value" type="List" default="option1"/>
+
+    
+    
+    <div class="slds-form slds-form_stacked slds-text-align_left">
+        <div class="slds-form-element">
+            <lightning:checkboxGroup name="Checkbox Group"
+                             label="Checkbox Group"
+                             options="{! v.options }"
+                             value="{! v.value }"
+                             onchange="{! c.handleChange }"/>
+        </div>
+        <div class="slds-form-element">
+            <lightning:input label="lightning:input - date" type="date"/>
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="checkbox" label="lightning:input - checkbox" name="red" checked="true"/>
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="color" label="lightning:input - color" name="color" value="#EEEEEE"/>
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="datetime-local" label="lightning:input - datetime" name="datetime" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="email" label="lightning:input - email" name="email" value="abc@domain.com" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="file" label="lightning:input - file" name="file" multiple="true" accept="image/png, .zip" onchange="{! c.handleFilesChange }"/>
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="month" label="lightning:input - month" name="month" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="password" label="lightning:input - password" name="password" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="radio" label="lightning:input - radio" name="red" value="red" checked="false" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="range" label="lightning:input - range" name="number" min="0" max="10" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="search" label="lightning:input - search" name="search" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="tel" label="lightning:input - tel" name="tel" value="343-343-3434" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="time" label="lightning:input - time" name="time" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="toggle" label="lightning:input - toggle" name="togglevalue" checked="false" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="url" label="lightning:input - url" name="website" />
+        </div>
+        <div class="slds-form-element">
+            <lightning:input type="week" label="lightning:input - week" name="week" />
+        </div>
+        <div class="slds-form-element">
+            <c:LightningDualListBox />
+        </div>
+        
+        
+        
+    </div>
+</aura:component>

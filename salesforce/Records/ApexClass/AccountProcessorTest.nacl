@@ -1,0 +1,23 @@
+salesforce.ApexClass AccountProcessorTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountProcessorTest"
+  content = file("salesforce/Records/ApexClass/AccountProcessorTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Number_of_Contacts__c
+    },
+    {
+      reference = salesforce.Account.field.RequiredField__c
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountProcessor
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

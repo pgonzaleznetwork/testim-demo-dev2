@@ -1,0 +1,14 @@
+salesforce.ApexClass Amoss_Instance {
+  apiVersion = 50
+  status = "Active"
+  fullName = "Amoss_Instance"
+  content = file("salesforce/Records/ApexClass/Amoss_Instance.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Asserts
+    },
+    {
+      reference = salesforce.ApexClass.instance.Amoss_MethodHandler
+    },
+  ]
+}

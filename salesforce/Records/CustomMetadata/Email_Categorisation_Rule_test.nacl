@@ -1,0 +1,39 @@
+salesforce.CustomMetadata Email_Categorisation_Rule_test@uuv {
+  fullName = "Email_Categorisation_Rule.test"
+  label = "test"
+  protected = false
+  values = [
+    {
+      field = "Auto_Forward_To__c"
+    },
+    {
+      field = "Business_Unit__c"
+      value = "UK"
+      type = "xsd:string"
+    },
+    {
+      field = "Case_Status__c"
+      value = "Closed"
+      type = "xsd:string"
+    },
+    {
+      field = "Channel__c"
+      value = "Online"
+      type = "xsd:string"
+    },
+    {
+      field = "Company_Name__c"
+    },
+    {
+      field = "Evaluation_Order__c"
+    },
+    {
+      field = "From_Email_Address__c"
+    },
+    {
+      field = "Language__c"
+      value = "English"
+      type = "xsd:string"
+    },
+  ]
+}

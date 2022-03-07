@@ -1,0 +1,6 @@
+salesforce.ApexClass PageLayoutTranslationInfoV2_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "PageLayoutTranslationInfoV2_Test"
+  content = file("salesforce/Records/ApexClass/PageLayoutTranslationInfoV2_Test.cls")
+}

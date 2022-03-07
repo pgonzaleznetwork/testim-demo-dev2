@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle LightningAvatar {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningAvatar"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningAvatar/LightningAvatar.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningAvatar
+    },
+  ]
+}

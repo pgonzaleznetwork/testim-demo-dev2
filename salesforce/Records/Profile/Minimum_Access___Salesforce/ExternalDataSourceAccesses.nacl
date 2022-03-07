@@ -1,0 +1,8 @@
+salesforce.Profile Minimum_Access___Salesforce@ssbs {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

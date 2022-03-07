@@ -1,0 +1,42 @@
+salesforce.LightningPage Layout_Info_Lightning_Page {
+  fullName = "Layout_Info_Lightning_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Layout Info Lightning Page"
+  sobjectType = "Layout_Translation_Info__c"
+  template = {
+    name = "flexipage:recordHomeSingleColTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Layout_Translation_Info__c,
+  ]
+}

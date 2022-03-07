@@ -1,0 +1,6 @@
+salesforce.ApexClass AbstractFactory {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AbstractFactory"
+  content = file("salesforce/Records/ApexClass/AbstractFactory.cls")
+}

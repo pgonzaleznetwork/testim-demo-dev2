@@ -1,0 +1,179 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+DETAIL_BUTTON	ButtonOrLink.Account.BhartiButton	Label N/A
+QUICK_ACTION	QuickAction.Account.NewCase	Label N/A
+QUICK_ACTION	QuickAction.Case.Change_Case_Status	Label N/A
+QUICK_ACTION	QuickAction.Case.Escalate_to_Management	Label N/A
+QUICK_ACTION	QuickAction.Case.SendEmail	Label N/A
+PLATFORM_ACTION	QuickAction.Account.New_Energy_Audit	Label N/A
+PLATFORM_ACTION	QuickAction.Account.Can_I_be_translated	Label N/A
+PLATFORM_ACTION	QuickAction.Account.My_Test_Lightning_Action	Label N/A
+PLATFORM_ACTION	QuickAction.Account.Quick_Contact	Label N/A
+PLATFORM_ACTION	QuickAction.Account.New_Oppty	Label N/A
+PLATFORM_ACTION	QuickAction.Clone	Label N/A
+PLATFORM_ACTION	QuickAction.CloseCase	Label N/A
+PLATFORM_ACTION	QuickAction.Case.Escalate_to_Management	Label N/A
+PLATFORM_ACTION	QuickAction.Case.LogACall	Label N/A
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account Layout.Account Information	Account Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account Layout.Address Information	Address Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account Layout.Custom Links	Custom Links
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case Layout.Case Information	Case Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case Layout.Web Information	Web Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Case.Case Layout.Custom Links	Custom Links
+CUSTOM_FIELD_LABEL	CustomField.Account.Match_Billing_Address.FieldLabel	Match Billing Address
+CUSTOM_FIELD_LABEL	CustomField.Account.Number_of_Contacts.FieldLabel	Number of Contacts
+CUSTOM_FIELD_LABEL	CustomField.Account.RequiredField.FieldLabel	RequiredField
+CUSTOM_FIELD_LABEL	CustomField.Account.Location.FieldLabel	Location
+CUSTOM_FIELD_LABEL	CustomField.Account.Potential_Value.FieldLabel	Potential Value
+CUSTOM_FIELD_LABEL	CustomField.Account.Social_Sec_Number.FieldLabel	Social Sec Number
+CUSTOM_FIELD_LABEL	CustomField.Account.CustomerPriority.FieldLabel	Customer Priority
+CUSTOM_FIELD_LABEL	CustomField.Account.SLAExpirationDate.FieldLabel	SLA Expiration Date
+CUSTOM_FIELD_LABEL	CustomField.Account.NumberofLocations.FieldLabel	Number of Locations
+CUSTOM_FIELD_LABEL	CustomField.Account.Active.FieldLabel	Active
+CUSTOM_FIELD_LABEL	CustomField.Account.SLA.FieldLabel	SLA
+CUSTOM_FIELD_LABEL	CustomField.Account.SLASerialNumber.FieldLabel	SLA Serial Number
+CUSTOM_FIELD_LABEL	CustomField.Account.UpsellOpportunity.FieldLabel	Upsell Opportunity
+CUSTOM_FIELD_LABEL	CustomField.Case.Escalated_to_Management.FieldLabel	Escalated to Management
+CUSTOM_FIELD_LABEL	CustomField.Case.Escalation_Owner.FieldLabel	Escalation Owner
+CUSTOM_FIELD_LABEL	CustomField.Case.Days_Since_Last_Update.FieldLabel	Days Since Last Update
+CUSTOM_FIELD_LABEL	CustomField.Case.Business_Unit.FieldLabel	Business Unit
+CUSTOM_FIELD_LABEL	CustomField.Case.Active_Time.FieldLabel	Active Time
+CUSTOM_FIELD_LABEL	CustomField.Case.Email_Response_SLA_Met.FieldLabel	Email Response SLA Met
+CUSTOM_FIELD_LABEL	CustomField.Case.Hours_in_New_Status.FieldLabel	Hours in "New Status"
+CUSTOM_FIELD_LABEL	CustomField.Case.Hours_in_In_Progress_Status.FieldLabel	Hours in "In Progress" Status
+CUSTOM_FIELD_LABEL	CustomField.Case.Hours_In_Pending_Customer_Response.FieldLabel	Hours In "Pending Customer Response"
+CUSTOM_FIELD_LABEL	CustomField.Case.Hours_in_Pending_Advisor_Response.FieldLabel	Hours in "Pending Advisor Response"
+CUSTOM_FIELD_LABEL	CustomField.Case.Last_Status_Update.FieldLabel	Last Status Update
+CUSTOM_FIELD_LABEL	CustomField.Case.Time_since_last_status_change.FieldLabel	Minutes since last status change
+CUSTOM_FIELD_LABEL	CustomField.Case.Owner_Active_Time_in_Seconds.FieldLabel	Owner Active Time in Seconds
+CUSTOM_FIELD_LABEL	CustomField.Case.Original_To.FieldLabel	Original To
+CUSTOM_FIELD_LABEL	CustomField.Case.Product.FieldLabel	Product
+CUSTOM_FIELD_LABEL	CustomField.Case.PotentialLiability.FieldLabel	Potential Liability
+CUSTOM_FIELD_LABEL	CustomField.Case.EngineeringReqNumber.FieldLabel	Engineering Req Number
+CUSTOM_FIELD_LABEL	CustomField.Case.SLAViolation.FieldLabel	SLA Violation
+CUSTOM_FIELD_HELP_TEXT	CustomField.Account.Number_of_Contacts.HelpText	How many coontacts are available
+CUSTOM_FIELD_HELP_TEXT	CustomField.Case.PotentialLiability.HelpText	Is this product liable?
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Account.AccountNumber.HelpText	This is a standard salesforce field that shows some number. No idea what for...
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Account.AccountSource.HelpText	account source help text
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Case.Status.HelpText	The status of this case in the support lifecycle.
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Web	Web
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Prospect	Prospect
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Customer - Direct	Customer - Direct
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Customer - Channel	Customer - Channel
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Channel Partner / Reseller	Channel Partner / Reseller
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Installation Partner	Installation Partner
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Technology Partner	Technology Partner
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Customer	Customer
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Pending	Pending
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Agriculture	Agriculture
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Apparel	Apparel
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Banking	Banking
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Biotechnology	Biotechnology
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Chemicals	Chemicals
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Communications	Communications
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Construction	Construction
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Consulting	Consulting
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Education	Education
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Electronics	Electronics
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Energy	Energy
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Engineering	Engineering
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Entertainment	Entertainment
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Environmental	Environmental
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Finance	Finance
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Food & Beverage	Food & Beverage
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Government	Government
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Healthcare	Healthcare
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Hospitality	Hospitality
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Insurance	Insurance
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Machinery	Machinery
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Manufacturing	Manufacturing
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Media	Media
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Not For Profit	Not For Profit
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Recreation	Recreation
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Retail	Retail
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Shipping	Shipping
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Technology	Technology
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Telecommunications	Telecommunications
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Transportation	Transportation
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Utilities	Utilities
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountRating.Hot	Hot
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountRating.Warm	Warm
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountRating.Cold	Cold
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Public	Public
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Private	Private
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Subsidiary	Subsidiary
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Mechanical	Mechanical
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Electrical	Electrical
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Electronic	Electronic
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Structural	Structural
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseType.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Installation	Installation
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Equipment Complexity	Equipment Complexity
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Performance	Performance
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Breakdown	Breakdown
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Equipment Design	Equipment Design
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Feedback	Feedback
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseReason.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.New	New
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Working	Working
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Escalated	Escalated
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Closed	Closed
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.In Progress	In Progress
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Pending Customer Response	Pending Customer Response
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Pending Advisor Response	Pending Advisor Response
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseStatus.Pending External Response	Pending External Response
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.casePriority.High	High
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.casePriority.Medium	Medium
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.casePriority.Low	Low
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseOrigin.Phone	Phone
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseOrigin.Email	Email
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.caseOrigin.Web	Web
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.CustomerPriority.High	High
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.CustomerPriority.Low	Low
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.CustomerPriority.Medium	Medium
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.Active.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.Active.Yes	Yes
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.Active.Naman	Naman
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Gold	Gold
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Silver	Silver
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Platinum	Platinum
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Bronze	Bronze
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.UpsellOpportunity.Maybe	Maybe
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.UpsellOpportunity.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.UpsellOpportunity.Yes	Yes
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC1040	GC1040
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC1060	GC1060
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC3020	GC3020
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC3040	GC3040
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC3060	GC3060
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC5020	GC5020
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC5040	GC5040
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC5060	GC5060
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.Product.GC1020	GC1020
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.PotentialLiability.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.PotentialLiability.Yes	Yes
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.SLAViolation.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Case.SLAViolation.Yes	Yes
+RELATED_LIST_BUTTON	ButtonOrLink.Contact.ContactButtonInRelatedList	Label N/A
+RELATED_LIST_BUTTON	ButtonOrLink.Opportunity.Close_all_my_oppts243	Label N/A
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Average_Annual_Electric_Cost.FieldLabel	Average Annual Electric Cost
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Annual_Energy_Usage_kWh.FieldLabel	Annual Energy Usage (kWh)
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Audit_Notes.FieldLabel	Audit Notes
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Type_of_Installation.FieldLabel	Type of Installation
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Average_Annual_Electric_Cost.Average Annual Electric Cost	Average Annual Electric Cost
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Annual_Energy_Usage_kWh.Annual Energy Usage (kWh)	Annual Energy Usage (kWh)
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Audit_Notes.Audit Notes	Audit Notes
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Type_of_Installation.Type of Installation	Type of Installation

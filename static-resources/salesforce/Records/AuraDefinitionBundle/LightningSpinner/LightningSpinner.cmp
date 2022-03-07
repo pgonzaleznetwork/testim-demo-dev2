@@ -1,0 +1,16 @@
+<aura:component >
+	
+    <aura:attribute name="loaded" type="Boolean" default="false"/>
+    
+    <lightning:button label="Toggle" variant="brand" onclick="{!c.handleClick}"/>
+    
+    <section class="exampleHolder">
+        <aura:if isTrue="{!v.loaded}">
+            Loaded content here
+            <aura:set attribute="else">
+                <lightning:spinner />
+            </aura:set>
+        </aura:if>
+    </section>
+    
+</aura:component>

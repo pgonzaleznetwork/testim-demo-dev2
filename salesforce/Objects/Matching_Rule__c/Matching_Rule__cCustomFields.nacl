@@ -1,0 +1,147 @@
+type salesforce.Matching_Rule__c {
+  salesforce.Picklist Lead_Evaluated_Field__c {
+    apiName = "Matching_Rule__c.Lead_Evaluated_Field__c"
+    label = "Lead Evaluated Field"
+    valueSet = [
+      {
+        fullName = "MobilePhone"
+        default = false
+        label = "MobilePhone"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Due_Date__c"
+        default = false
+        label = "Due_Date__c"
+      },
+    ]
+    restricted = true
+    inlineHelpText = "The API name of the field to match records on. This field must exist in the Lead object."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The API name of the field to match records on. This field must exist in the Lead object."
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Type__c {
+    apiName = "Matching_Rule__c.Type__c"
+    label = "Type"
+    valueSet = [
+      {
+        fullName = "Check Mobile Phone"
+        default = false
+        label = "Check Mobile Phone"
+      },
+      {
+        fullName = "Check Email"
+        default = false
+        label = "Check Email"
+      },
+      {
+        fullName = "Check Due Date"
+        default = false
+        label = "Check Due Date"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Type_of_Contact_to_Match__c {
+    apiName = "Matching_Rule__c.Type_of_Contact_to_Match__c"
+    label = "Type of Contact to Match"
+    valueSet = [
+      {
+        fullName = "Parent"
+        default = false
+        label = "Parent"
+      },
+      {
+        fullName = "Child"
+        default = false
+        label = "Child"
+      },
+    ]
+    restricted = true
+    inlineHelpText = "If matching to Contacts, select the Record Type to match."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "If matching to Contacts, select the Record Type to match."
+    externalId = false
+    trackTrending = false
+    sorted = false
+    fieldDependency = {
+      controllingField = "Matching_Object__c"
+      valueSettings = [
+        {
+          valueName = "Parent"
+          controllingFieldValue = [
+            "Contact",
+          ]
+        },
+        {
+          valueName = "Child"
+          controllingFieldValue = [
+            "Contact",
+          ]
+        },
+      ]
+    }
+  }
+  salesforce.Picklist Matching_Object__c {
+    apiName = "Matching_Rule__c.Matching_Object__c"
+    label = "Matching Object"
+    valueSet = [
+      {
+        fullName = "Lead"
+        default = false
+        label = "Lead"
+      },
+      {
+        fullName = "Contact"
+        default = false
+        label = "Contact"
+      },
+      {
+        fullName = "Account"
+        default = false
+        label = "Account"
+      },
+    ]
+    restricted = true
+    inlineHelpText = "The API name of the Object to match records from."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The API name of the Object to match records from."
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Text Matching_Field__c {
+    apiName = "Matching_Rule__c.Matching_Field__c"
+    label = "Matching Field"
+    inlineHelpText = "The API name of the field in the Matching Object to match records by."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    description = "The API name of the field in the Matching Object to match records by."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

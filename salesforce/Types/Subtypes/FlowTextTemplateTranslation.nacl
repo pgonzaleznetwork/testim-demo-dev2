@@ -1,0 +1,21 @@
+type salesforce.FlowTextTemplateTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string name {
+  }
+  string text {
+  }
+  metadataType = "FlowTextTemplateTranslation"
+}

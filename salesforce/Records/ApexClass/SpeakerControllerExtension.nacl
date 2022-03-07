@@ -1,0 +1,14 @@
+salesforce.ApexClass SpeakerControllerExtension {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SpeakerControllerExtension"
+  content = file("salesforce/Records/ApexClass/SpeakerControllerExtension.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Speaker__c
+    },
+    {
+      reference = salesforce.Speaker__c.field.Picture_Path__c
+    },
+  ]
+}

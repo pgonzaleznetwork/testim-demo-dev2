@@ -1,0 +1,14 @@
+salesforce.ApexTrigger ClosedOpportunityTrigger {
+  apiVersion = 41
+  status = "Inactive"
+  fullName = "ClosedOpportunityTrigger"
+  content = file("salesforce/Records/ApexTrigger/ClosedOpportunityTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ClosedOpportunityTriggerClass
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+}

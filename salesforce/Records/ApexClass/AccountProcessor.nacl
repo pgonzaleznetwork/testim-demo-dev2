@@ -1,0 +1,17 @@
+salesforce.ApexClass AccountProcessor {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountProcessor"
+  content = file("salesforce/Records/ApexClass/AccountProcessor.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Number_of_Contacts__c
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

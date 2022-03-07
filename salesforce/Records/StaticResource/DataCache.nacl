@@ -1,0 +1,6 @@
+salesforce.StaticResource DataCache {
+  cacheControl = "Private"
+  contentType = "application/javascript"
+  fullName = "DataCache"
+  content = file("salesforce/Records/StaticResource/DataCache.js")
+}

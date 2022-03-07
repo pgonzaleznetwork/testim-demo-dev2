@@ -1,0 +1,720 @@
+type salesforce.Case {
+  salesforce.Text EngineeringReqNumber__c {
+    apiName = "Case.EngineeringReqNumber__c"
+    label = "Engineering Req Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 12
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.Picklist SLAViolation__c {
+    apiName = "Case.SLAViolation__c"
+    label = "SLA Violation"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Product__c {
+    apiName = "Case.Product__c"
+    label = "Product"
+    valueSet = [
+      {
+        fullName = "GC1040"
+        default = false
+        label = "GC1040"
+      },
+      {
+        fullName = "GC1060"
+        default = false
+        label = "GC1060"
+      },
+      {
+        fullName = "GC3020"
+        default = false
+        label = "GC3020"
+      },
+      {
+        fullName = "GC3040"
+        default = false
+        label = "GC3040"
+      },
+      {
+        fullName = "GC3060"
+        default = false
+        label = "GC3060"
+      },
+      {
+        fullName = "GC5020"
+        default = false
+        label = "GC5020"
+      },
+      {
+        fullName = "GC5040"
+        default = false
+        label = "GC5040"
+      },
+      {
+        fullName = "GC5060"
+        default = false
+        label = "GC5060"
+      },
+      {
+        fullName = "GC1020"
+        default = false
+        label = "GC1020"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist PotentialLiability__c {
+    apiName = "Case.PotentialLiability__c"
+    label = "Potential Liability"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Is this product liable?"
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Checkbox Escalated_to_Management__c {
+    apiName = "Case.Escalated_to_Management__c"
+    label = "Escalated to Management"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.Lookup Escalation_Owner__c {
+    apiName = "Case.Escalation_Owner__c"
+    label = "Escalation Owner"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Cases"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.FormulaNumber Days_Since_Last_Update__c {
+    apiName = "Case.Days_Since_Last_Update__c"
+    label = "Days Since Last Update"
+    precision = 18
+    scale = 0
+    formula = "TODAY()   -  Account.LastActivityDate"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Text Business_Unit__c {
+    apiName = "Case.Business_Unit__c"
+    label = "Business Unit"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.Summary Overall_Case_Time_Business_Hrs__c {
+    apiName = "Case.Overall_Case_Time_Business_Hrs__c"
+    label = "Overall Case Time (Business Hrs)"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    description = "calculates the overall case time in business hours during which the case was in a not closed status.  The business hours used will depend on the various status changes and the business hour configuration for each status value."
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Business_Hours__c"
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Summary Overall_Case_Time_Calendar_Hrs__c {
+    apiName = "Case.Overall_Case_Time_Calendar_Hrs__c"
+    label = "Overall Case Time (Calendar Hrs)"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    description = "sum of the time a case spends in a non-closed status based on the calendar time."
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Calendar_Hours__c"
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Summary Total_Finance_Business_Hrs__c {
+    apiName = "Case.Total_Finance_Business_Hrs__c"
+    label = "Total Finance Business Hrs"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    description = "sum of business time a case was in a non-closed status based on the time buckets specified in the Case Status History field 'Current Time Bucket'."
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Business_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.Current_Time_Bucket__c"
+        operation = "equals"
+        value = "Finance Time Bucket"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.Current_Time_Bucket__c
+      },
+    ]
+  }
+  salesforce.Summary Total_Resolution_Business_Hrs__c {
+    apiName = "Case.Total_Resolution_Business_Hrs__c"
+    label = "Total Resolution Business Hrs"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Business_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.Current_Time_Bucket__c"
+        operation = "equals"
+        value = "Resolution Time Bucket"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.Current_Time_Bucket__c
+      },
+    ]
+  }
+  salesforce.Summary Total_Vendor_Business_Hrs__c {
+    apiName = "Case.Total_Vendor_Business_Hrs__c"
+    label = "Total Vendor Business Hrs"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Business_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.Current_Time_Bucket__c"
+        operation = "equals"
+        value = "Vendor Time Bucket"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.Current_Time_Bucket__c
+      },
+    ]
+  }
+  salesforce.Summary Active_Time__c {
+    apiName = "Case.Active_Time__c"
+    label = "Active Time"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Business_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.Current_Time_Bucket__c"
+        operation = "equals"
+        value = "Active"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.Current_Time_Bucket__c
+      },
+    ]
+  }
+  salesforce.Checkbox Email_Response_SLA_Met__c {
+    apiName = "Case.Email_Response_SLA_Met__c"
+    label = "Email Response SLA Met"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.Summary Hours_in_New_Status__c {
+    apiName = "Case.Hours_in_New_Status__c"
+    label = "Hours in \"New Status\""
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Calendar_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.New_Status__c"
+        operation = "equals"
+        value = "New"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.New_Status__c
+      },
+    ]
+  }
+  salesforce.Summary Hours_in_In_Progress_Status__c {
+    apiName = "Case.Hours_in_In_Progress_Status__c"
+    label = "Hours in \"In Progress\" Status"
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Calendar_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.New_Status__c"
+        operation = "equals"
+        value = "In Progress"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.New_Status__c
+      },
+    ]
+  }
+  salesforce.Summary Hours_In_Pending_Customer_Response__c {
+    apiName = "Case.Hours_In_Pending_Customer_Response__c"
+    label = "Hours In \"Pending Customer Response\""
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Calendar_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.New_Status__c"
+        operation = "equals"
+        value = "Pending Customer Response"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.New_Status__c
+      },
+    ]
+  }
+  salesforce.Summary Hours_in_Pending_Advisor_Response__c {
+    apiName = "Case.Hours_in_Pending_Advisor_Response__c"
+    label = "Hours in \"Pending Advisor Response\""
+    precision = 12
+    scale = 2
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summarizedField = "Case_Status_History__c.CaseAge_Calendar_Hours__c"
+    summaryFilterItems = [
+      {
+        field = "Case_Status_History__c.New_Status__c"
+        operation = "equals"
+        value = "Pending Advisor Response"
+      },
+    ]
+    summaryForeignKey = "Case_Status_History__c.Case__c"
+    summaryOperation = "sum"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case_Status_History__c.field.New_Status__c
+      },
+    ]
+  }
+  salesforce.DateTime Last_Status_Update__c {
+    apiName = "Case.Last_Status_Update__c"
+    label = "Last Status Update"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.FormulaNumber Time_since_last_status_change__c {
+    apiName = "Case.Time_since_last_status_change__c"
+    label = "Minutes since last status change"
+    precision = 18
+    scale = 0
+    formula = "(NOW() -  Last_Status_Update__c) * 1440"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case.field.Last_Status_Update__c
+      },
+    ]
+  }
+  salesforce.Number Owner_Active_Time_in_Seconds__c {
+    apiName = "Case.Owner_Active_Time_in_Seconds__c"
+    label = "Owner Active Time in Seconds"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.Email Original_To__c {
+    apiName = "Case.Original_To__c"
+    label = "Original To"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.DateTime Home_Visit_To_Happen_By__c {
+    apiName = "Case.Home_Visit_To_Happen_By__c"
+    label = "Home Visit To Happen By"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.DateTime Scheduled_Home_Visit__c {
+    apiName = "Case.Scheduled_Home_Visit__c"
+    label = "Scheduled Home Visit"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.DateTime Actual_Home_Visit__c {
+    apiName = "Case.Actual_Home_Visit__c"
+    label = "Actual Home Visit"
+    createable = true
+    updateable = true
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.Picklist Region__c {
+    apiName = "Case.Region__c"
+    label = "Region"
+    valueSet = [
+      {
+        fullName = "One"
+        default = false
+        label = "One"
+      },
+      {
+        fullName = "Two"
+        default = false
+        label = "Two"
+      },
+      {
+        fullName = "Three"
+        default = false
+        label = "Three"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.FormulaCheckbox SLA_Missed__c {
+    apiName = "Case.SLA_Missed__c"
+    label = "SLA Missed"
+    formula = '''
+IF(
+  Actual_Home_Visit__c - Scheduled_Home_Visit__c > 2 ,
+  TRUE,
+  FALSE
+
+  )
+'''
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case.field.Actual_Home_Visit__c
+      },
+      {
+        reference = salesforce.Case.field.Scheduled_Home_Visit__c
+      },
+    ]
+  }
+  salesforce.FormulaText Scheduled_vs_Actual__c {
+    apiName = "Case.Scheduled_vs_Actual__c"
+    label = "Scheduled vs Actual"
+    formula = '''
+IF(
+  Actual_Home_Visit__c - Scheduled_Home_Visit__c > 0 ,
+  TEXT( FLOOR( Actual_Home_Visit__c - Scheduled_Home_Visit__c ) ) & " days "
+  & TEXT( FLOOR( MOD( (Actual_Home_Visit__c - Scheduled_Home_Visit__c ) * 24, 24 ) ) ) & " hours "
+  & TEXT( ROUND( MOD( (Actual_Home_Visit__c - Scheduled_Home_Visit__c ) * 24 * 60, 60 ), 0 ) ) & " minutes",
+  ""
+)
+'''
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case.field.Actual_Home_Visit__c
+      },
+      {
+        reference = salesforce.Case.field.Scheduled_Home_Visit__c
+      },
+    ]
+  }
+  salesforce.FormulaText Calculated_Account_Name__c {
+    apiName = "Case.Calculated_Account_Name__c"
+    label = "Calculated Account Name"
+    formula = "Account.Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.FormulaText Support_Group__c {
+    apiName = "Case.Support_Group__c"
+    label = "Support Group"
+    formula = "TEXT(Asset.Support_Group__c )"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Asset.field.Support_Group__c
+      },
+    ]
+  }
+  salesforce.Lookup Ear_plug__c {
+    apiName = "Case.Ear_plug__c"
+    label = "Ear Plug"
+    referenceTo = [
+      salesforce.Ear_Plug__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Cases"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Cases"
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
+  }
+  salesforce.FormulaText ear_plug_name__c {
+    apiName = "Case.ear_plug_name__c"
+    label = "ear plug name"
+    formula = "Ear_plug__r.Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackHistory = false
+    trackTrending = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Case.field.Ear_plug__c
+      },
+    ]
+  }
+}

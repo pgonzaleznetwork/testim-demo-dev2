@@ -1,0 +1,156 @@
+type salesforce.ProductItemTransaction {
+  serviceid Id {
+    apiName = "ProductItemTransaction.Id"
+    label = "Product Item Transaction ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductItemTransaction.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ProductItemTransactionNumber {
+    apiName = "ProductItemTransaction.ProductItemTransactionNumber"
+    label = "Product Item Transaction Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductItemTransaction.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductItemTransaction.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductItemTransaction.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductItemTransaction.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductItemTransaction.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ProductItemId {
+    apiName = "ProductItemTransaction.ProductItemId"
+    label = "Product Item ID"
+    _required = true
+    referenceTo = [
+      salesforce.ProductItem,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ProductItem"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "ProductItemTransaction.RelatedRecordId"
+    label = "Related Record ID"
+    referenceTo = [
+      salesforce.ProductConsumed,
+      salesforce.ProductTransfer,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "RelatedRecord"
+    queryable = true
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist TransactionType {
+    apiName = "ProductItemTransaction.TransactionType"
+    label = "Transaction Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Consumed"
+        default = false
+        label = "Consumed"
+        isActive = true
+      },
+      {
+        fullName = "Adjusted"
+        default = false
+        label = "Adjusted"
+        isActive = true
+      },
+      {
+        fullName = "Replenished"
+        default = false
+        label = "Replenished"
+        isActive = true
+      },
+      {
+        fullName = "Transferred"
+        default = false
+        label = "Transferred"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ProductItemTransaction.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Number Quantity {
+    apiName = "ProductItemTransaction.Quantity"
+    label = "Quantity"
+    _required = true
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = false
+    unique = false
+    queryable = true
+  }
+}

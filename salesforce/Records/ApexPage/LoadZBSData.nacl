@@ -1,0 +1,28 @@
+salesforce.ApexPage LoadZBSData {
+  apiVersion = 41
+  availableInTouch = true
+  confirmationTokenRequired = false
+  label = "LoadZBSData"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "LoadZBSData"
+  content = file("salesforce/Records/ApexPage/LoadZBSData.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ZBSDataLoadController
+    },
+    {
+      reference = salesforce.StaticResource.instance.myLogoHe
+    },
+  ]
+}

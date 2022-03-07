@@ -1,0 +1,23 @@
+salesforce.ApexPage OpptyPagination {
+  apiVersion = 41
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "OpptyPagination"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "OpptyPagination"
+  content = file("salesforce/Records/ApexPage/OpptyPagination.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.OpportunitiesPaginationController
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+}

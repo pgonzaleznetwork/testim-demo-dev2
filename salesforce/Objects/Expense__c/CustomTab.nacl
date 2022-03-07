@@ -1,0 +1,8 @@
+salesforce.CustomTab Expense__c {
+  fullName = "Expense__c"
+  customObject = true
+  motif = "Custom16: Bank"
+  _parent = [
+    salesforce.Expense__c,
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass TriggerContextRouter {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerContextRouter"
+  content = file("salesforce/Records/ApexClass/TriggerContextRouter.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SObjectTriggerHandler
+    },
+  ]
+}

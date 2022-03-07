@@ -1,0 +1,33 @@
+type salesforce.ApptBundlePropagatePolicy {
+  string AdditionalConstantValue {
+    _hidden_value = true
+  }
+  string BundleFieldName {
+    _hidden_value = true
+  }
+  string BundleMemberFieldName {
+    _hidden_value = true
+  }
+  salesforce.MasterDetail BundlePolicyId {
+    apiName = "ApptBundlePropagatePolicy.BundlePolicyId"
+    _hidden_value = true
+  }
+  string ConstantValue {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  string ShouldAddConstantValue {
+    _hidden_value = true
+  }
+  string ShouldUpdateOnAdd {
+    _hidden_value = true
+  }
+  string ShouldUpdateOnRemove {
+    _hidden_value = true
+  }
+  string ShouldUpdateOnUnbundle {
+    _hidden_value = true
+  }
+}

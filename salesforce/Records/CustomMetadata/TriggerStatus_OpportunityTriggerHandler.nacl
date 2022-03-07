@@ -1,0 +1,27 @@
+salesforce.CustomMetadata TriggerStatus_OpportunityTriggerHandler@v {
+  fullName = "TriggerStatus.OpportunityTriggerHandler"
+  label = "OpportunityTriggerHandler"
+  protected = false
+  values = [
+    {
+      field = "Account_Entity__c"
+      value = "Account"
+      type = "xsd:string"
+    },
+    {
+      field = "Account_field_being_used__c"
+      value = "Field_being_used__c"
+      type = "xsd:string"
+    },
+    {
+      field = "Disabled__c"
+      value = "true"
+      type = "xsd:boolean"
+    },
+    {
+      field = "Profile__c"
+      value = "Account"
+      type = "xsd:string"
+    },
+  ]
+}

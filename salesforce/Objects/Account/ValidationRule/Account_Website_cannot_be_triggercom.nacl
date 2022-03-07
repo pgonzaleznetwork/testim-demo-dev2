@@ -1,0 +1,9 @@
+salesforce.ValidationRule Account_Website_cannot_be_triggercom {
+  fullName = "Account.Website_cannot_be_triggercom"
+  active = false
+  errorConditionFormula = "Website  = \"www.awesometrigger.com\""
+  errorMessage = "www.awesometrigger.com is not a nice name for a website!"
+  _parent = [
+    salesforce.Account,
+  ]
+}

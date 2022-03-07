@@ -1,0 +1,123 @@
+salesforce.Layout Account_FrieslandCampina@b {
+  fullName = "Account-FrieslandCampina"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Fields"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Account.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Total__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.Used_Field__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Account.field.Field_calling_field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Field_being_used__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Ultra_Parent_Using_Field__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.Website
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ParentId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          component = "runtime_sales_social:socialPanel"
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "FULL_NAME",
+        "Share__c",
+      ]
+      relatedList = "RelatedContactList"
+    },
+    {
+      fields = [
+        "ORDERS.ORDER_NUMBER",
+        "Child_Name__c",
+        "ORDERS.STATUS",
+        "ORDERS.EFFECTIVE_DATE",
+        "ORDERS.TOTAL_AMOUNT",
+      ]
+      relatedList = "RelatedOrderList"
+    },
+    {
+      fields = [
+        "ACCOUNT.NAME",
+        "ACCOUNT.ADDRESS1_CITY",
+        "ACCOUNT.PHONE1",
+      ]
+      relatedList = salesforce.Account.field.Ultra_Parent_Using_Field__c
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.Internal_Request__c.field.Related_Account__c
+    },
+  ]
+  relatedObjects = [
+    "ParentId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NMoOz"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Account,
+  ]
+}

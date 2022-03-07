@@ -1,0 +1,17 @@
+salesforce.ApexClass TranslationKeyFactory {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslationKeyFactory"
+  content = file("salesforce/Records/ApexClass/TranslationKeyFactory.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SFMD
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadata
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslationKey
+    },
+  ]
+}

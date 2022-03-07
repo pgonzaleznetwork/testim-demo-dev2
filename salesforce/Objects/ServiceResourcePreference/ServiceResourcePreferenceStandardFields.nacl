@@ -1,0 +1,23 @@
+type salesforce.ServiceResourcePreference {
+  string EndDate {
+    _hidden_value = true
+  }
+  salesforce.Lookup OperatingHoursId {
+    apiName = "ServiceResourcePreference.OperatingHoursId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ServiceResourcePreference.OwnerId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup ServiceResourceId {
+    apiName = "ServiceResourcePreference.ServiceResourceId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  string StartDate {
+    _hidden_value = true
+  }
+}

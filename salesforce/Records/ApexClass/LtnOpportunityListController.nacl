@@ -1,0 +1,11 @@
+salesforce.ApexClass LtnOpportunityListController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "LtnOpportunityListController"
+  content = file("salesforce/Records/ApexClass/LtnOpportunityListController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+}

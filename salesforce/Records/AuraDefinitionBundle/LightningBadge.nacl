@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle LightningBadge {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningBadge"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningBadge/LightningBadge.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningBadge
+    },
+  ]
+}

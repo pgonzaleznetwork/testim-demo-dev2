@@ -1,0 +1,22 @@
+salesforce.CustomMetadata Routing_Email_Address_Mapping_de_orders5_1368@uuuvuu {
+  fullName = "Routing_Email_Address_Mapping.de_orders5_1368"
+  label = "de_orders5_1368"
+  protected = false
+  values = [
+    {
+      field = "Actual_Email_Address__c"
+      value = "de.orders@officedepot.com"
+      type = "xsd:string"
+    },
+    {
+      field = "Country__c"
+      value = "DE"
+      type = "xsd:string"
+    },
+    {
+      field = "Routing_Email_Address__c"
+      value = "kontakt@viking.de"
+      type = "xsd:string"
+    },
+  ]
+}

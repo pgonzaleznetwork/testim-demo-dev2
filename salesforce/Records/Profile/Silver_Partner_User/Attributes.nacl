@@ -1,0 +1,5 @@
+salesforce.Profile Silver_Partner_User@s {
+  fullName = "Silver Partner User"
+  custom = false
+  userLicense = "Silver Partner"
+}

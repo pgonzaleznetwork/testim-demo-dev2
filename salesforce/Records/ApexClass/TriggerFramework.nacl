@@ -1,0 +1,6 @@
+salesforce.ApexClass TriggerFramework {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerFramework"
+  content = file("salesforce/Records/ApexClass/TriggerFramework.cls")
+}

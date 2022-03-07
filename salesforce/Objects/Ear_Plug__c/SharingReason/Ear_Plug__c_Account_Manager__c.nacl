@@ -1,0 +1,7 @@
+salesforce.SharingReason Ear_Plug__c_Account_Manager__c {
+  fullName = "Ear_Plug__c.Account_Manager__c"
+  label = "Account Manager"
+  _parent = [
+    salesforce.Ear_Plug__c,
+  ]
+}

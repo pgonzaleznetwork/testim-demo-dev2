@@ -1,0 +1,14 @@
+salesforce.ApexClass AbstractTesting {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AbstractTesting"
+  content = file("salesforce/Records/ApexClass/AbstractTesting.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TriggerActionsOld
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

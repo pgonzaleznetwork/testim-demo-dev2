@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadConvertValidationTest {
+  apiVersion = 46
+  status = "Active"
+  fullName = "LeadConvertValidationTest"
+  content = file("salesforce/Records/ApexClass/LeadConvertValidationTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

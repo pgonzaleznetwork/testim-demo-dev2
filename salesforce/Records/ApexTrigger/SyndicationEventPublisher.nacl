@@ -1,0 +1,14 @@
+salesforce.ApexTrigger SyndicationEventPublisher {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SyndicationEventPublisher"
+  content = file("salesforce/Records/ApexTrigger/SyndicationEventPublisher.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SyndicationEventHandler
+    },
+    {
+      reference = salesforce.Syndication_Event__e
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle defaultTokens {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "defaultTokens"
+  type = "Tokens"
+  markup = file("salesforce/Records/AuraDefinitionBundle/defaultTokens/defaultTokens.tokens")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.defaultTokens
+    },
+  ]
+}

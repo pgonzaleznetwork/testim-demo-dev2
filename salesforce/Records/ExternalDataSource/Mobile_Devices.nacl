@@ -1,0 +1,10 @@
+salesforce.ExternalDataSource Mobile_Devices {
+  fullName = "Mobile_Devices"
+  customConfiguration = "{\"inlineCountEnabled\":\"true\",\"requestCompression\":\"false\",\"pagination\":\"CLIENT\",\"noIdMapping\":\"false\",\"format\":\"ATOM\",\"searchFunc\":\"\",\"compatibility\":\"DEFAULT\",\"timeout\":\"120\",\"searchEnabled\":\"true\"}"
+  endpoint = "https://phone-odata-demo.herokuapp.com/devices.svc/"
+  isWritable = false
+  label = "Mobile Devices"
+  principalType = "Anonymous"
+  protocol = "NoAuthentication"
+  type = "OData"
+}

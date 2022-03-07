@@ -1,0 +1,100 @@
+salesforce.Layout ProductItem_Product_Item_Layout@bss {
+  fullName = "ProductItem-Product Item Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ProductItem.field.Product2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ProductItem.field.QuantityOnHand
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProductItem.field.SerialNumber
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.ProductItem.field.LocationId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ProductItem.field.QuantityUnitOfMeasure
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ProductItem.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.ProductItem.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      fields = [
+        "Name",
+        "RelatedRecord",
+        "TransactionType",
+        "Quantity",
+      ]
+      relatedList = "ProductItemTransaction"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.ProductItem,
+  ]
+}

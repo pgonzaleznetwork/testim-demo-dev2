@@ -1,0 +1,21 @@
+salesforce.PlatformCachePartition BusSchedule {
+  fullName = "BusSchedule"
+  isDefaultPartition = false
+  masterLabel = "BusSchedule"
+  platformCachePartitionTypes = [
+    {
+      allocatedCapacity = 0
+      allocatedPartnerCapacity = 0
+      allocatedPurchasedCapacity = 0
+      allocatedTrialCapacity = 0
+      cacheType = "Organization"
+    },
+    {
+      allocatedCapacity = 0
+      allocatedPartnerCapacity = 0
+      allocatedPurchasedCapacity = 0
+      allocatedTrialCapacity = 0
+      cacheType = "Session"
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.ApexClass OpportunitiesService {
+  apiVersion = 41
+  status = "Active"
+  fullName = "OpportunitiesService"
+  content = file("salesforce/Records/ApexClass/OpportunitiesService.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity
+    },
+    {
+      reference = salesforce.OpportunityLineItem
+    },
+  ]
+}

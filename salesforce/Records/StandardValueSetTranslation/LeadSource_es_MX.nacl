@@ -1,0 +1,29 @@
+salesforce.StandardValueSetTranslation LeadSource_es_MX@bu {
+  fullName = "LeadSource-es_MX"
+  valueTranslation = [
+    {
+      masterLabel = "Other"
+      translation = ""
+    },
+    {
+      masterLabel = "Partner Referral"
+      translation = ""
+    },
+    {
+      masterLabel = "Phone Inquiry"
+      translation = ""
+    },
+    {
+      masterLabel = "Purchased List"
+      translation = ""
+    },
+    {
+      masterLabel = "Web"
+      translation = ""
+    },
+    {
+      masterLabel = "Where is this shown?"
+      translation = "Donde esta esto? lead"
+    },
+  ]
+}

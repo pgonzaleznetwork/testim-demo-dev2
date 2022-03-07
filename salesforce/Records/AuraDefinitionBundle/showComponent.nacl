@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle showComponent {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "showComponent"
+  type = "Event"
+  markup = file("salesforce/Records/AuraDefinitionBundle/showComponent/showComponent.evt")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.showComponent
+    },
+  ]
+}

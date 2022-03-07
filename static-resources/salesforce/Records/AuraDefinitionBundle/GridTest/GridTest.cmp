@@ -1,0 +1,271 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute type="String" name="LightningAccordion" default="c:LightningAccordion"/>
+    <aura:attribute type="String" name="LightningCard" default="c:LightningCard"/>
+    <aura:attribute type="String" name="LightningLayout" default="c:LightningLayout"/>
+    <aura:attribute type="String" name="LightningTab" default="c:LightningTab"/>
+    <aura:attribute type="String" name="LightningTile" default="c:LightningTile"/>
+    <aura:attribute type="String" name="LightningButton" default="c:LightningButton"/>
+    <aura:attribute type="String" name="LightningButtonIcon" default="c:LightningButtonIcon"/>
+    <aura:attribute type="String" name="LightningButtonGroup" default="c:LightningButtonGroup"/>
+    <aura:attribute type="String" name="LightningButtonMenu" default="c:LightningButtonMenu"/>
+    <aura:attribute type="String" name="LightningButtonStateful" default="c:LightningButtonStateful"/>
+    <aura:attribute type="String" name="LightningBreadcrumb" default="c:LightningBreadcrumb"/>
+    <aura:attribute type="String" name="LightningTree" default="c:LightningTree"/>
+    <aura:attribute type="String" name="LightningVerticalNavigation" default="c:LightningVerticalNavigation"/>
+    <aura:attribute type="String" name="LightningBadge" default="c:LightningBadge"/>
+    <aura:attribute type="String" name="LightningDataTable" default="c:LightningDataTable"/>
+    <aura:attribute type="String" name="LightningDynamicIcon" default="c:LightningDynamicIcon"/>
+    <aura:attribute type="String" name="LightningHelpText" default="c:LightningHelpText"/>
+    <aura:attribute type="String" name="LightningPill" default="c:LightningPill"/>
+    <aura:attribute type="String" name="LightningProgressBar" default="c:LightningProgressBar"/>
+    <aura:attribute type="String" name="LightningProgressIndicator" default="c:LightningProgressIndicator"/>
+    <aura:attribute type="String" name="LightningSpinner" default="c:LightningSpinner"/>
+   <aura:attribute type="String" name="LightningFields" default="c:LightningFields"/>
+    
+    
+    
+    <section id="pageContainer" class="slds-p-around_small">
+        <header>
+            <h1 class="slds-text-heading_large">Lightning Components Dictionary</h1>
+            <p class="slds-text-heading_small slds-m-top_small">This page displays mulitple base lightning components to give you
+                and idea of what they look like and inspire you to create your own lightning pages.</p>
+        </header>
+        
+        <div class="c-container slds-m-top_large">
+            <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Accordion</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningAccordion)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningAccordion />
+                        <c:UnscapedHTML />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Card</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningCard)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningCard />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+            <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Layout</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningLayout)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningLayout />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Tab</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningTab)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningTab />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+            <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Tile</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningTile)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningTile />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Button</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningButton)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningButton />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+            <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Button Icon</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningButtonIcon)}" target="_blank">View Source</a></p>
+                    
+                    <div class="custom-box">
+                        <c:LightningButtonIcon />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Button Group</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningButtonGroup)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningButtonGroup />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+            <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Button Menu</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningButtonMenu)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningButtonMenu />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Button Stateful</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningButtonStateful)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningButtonStateful />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Breadcrumb</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningBreadcrumb)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningBreadcrumb />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Tree</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningTree)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningTree />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+            <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Vertical Navigation</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningVerticalNavigation)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningVerticalNavigation />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Avatar</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningAvatar)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningAvatar />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Badge</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningBadge)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningBadge />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Data Table</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningDataTable)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningDataTable />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Dynamic Icon</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningDynamicIcon)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningDynamicIcon />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Help Text</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningHelpText)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningHelpText />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Pill</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningPill)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningPill />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Progress Bar</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningProgressBar)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningProgressBar />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Progress Indicator</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningProgressIndicator)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningProgressIndicator />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Spinner</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningSpinner)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningSpinner />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Fields</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningFields)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningFields />
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Spinner</h1>
+                    <p class="slds-text-align_center"><a href="{!format($Label.c.LightningURL,v.LightningSpinner)}" target="_blank">View Source</a></p>
+                    <div class="custom-box">
+                        <c:LightningSpinner />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+            
+        </div>
+    </section>
+    
+</aura:component>

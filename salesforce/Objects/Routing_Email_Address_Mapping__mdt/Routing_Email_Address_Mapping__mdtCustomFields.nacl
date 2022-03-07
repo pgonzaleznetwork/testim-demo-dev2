@@ -1,0 +1,156 @@
+type salesforce.Routing_Email_Address_Mapping__mdt {
+  salesforce.Email Actual_Email_Address__c {
+    apiName = "Routing_Email_Address_Mapping__mdt.Actual_Email_Address__c"
+    label = "Actual Email Address"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    description = "Map To and CC Email Addresses - T-697611"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Picklist Country__c {
+    apiName = "Routing_Email_Address_Mapping__mdt.Country__c"
+    label = "Country"
+    valueSet = [
+      {
+        fullName = "AT"
+        default = true
+        label = "AT"
+      },
+      {
+        fullName = "BLG"
+        default = false
+        label = "BLG"
+      },
+      {
+        fullName = "CH"
+        default = false
+        label = "CH"
+      },
+      {
+        fullName = "DE"
+        default = false
+        label = "DE"
+      },
+      {
+        fullName = "ES"
+        default = false
+        label = "ES"
+      },
+      {
+        fullName = "IR"
+        default = false
+        label = "IR"
+      },
+      {
+        fullName = "IT"
+        default = false
+        label = "IT"
+      },
+      {
+        fullName = "NL"
+        default = false
+        label = "NL"
+      },
+      {
+        fullName = "UK"
+        default = false
+        label = "UK"
+      },
+      {
+        fullName = "FR"
+        default = false
+        label = "FR"
+      },
+      {
+        fullName = "PL"
+        default = false
+        label = "PL"
+      },
+      {
+        fullName = "EU"
+        default = false
+        label = "EU"
+      },
+      {
+        fullName = "Esupport"
+        default = false
+        label = "Esupport"
+      },
+      {
+        fullName = "DMS"
+        default = false
+        label = "DMS"
+      },
+      {
+        fullName = "BENL"
+        default = false
+        label = "BENL"
+      },
+      {
+        fullName = "EPOCH"
+        default = false
+        label = "EPOCH"
+      },
+      {
+        fullName = "Procurement Italy"
+        default = false
+        label = "Procurement Italy"
+      },
+      {
+        fullName = "Furniture Installation"
+        default = false
+        label = "Furniture Installation"
+      },
+      {
+        fullName = "Direct Delivery"
+        default = false
+        label = "Direct Delivery"
+      },
+      {
+        fullName = "Managing Director Office"
+        default = false
+        label = "Managing Director Office"
+      },
+      {
+        fullName = "Finance RO UK"
+        default = false
+        label = "Finance RO UK"
+      },
+      {
+        fullName = "Finance RO DACH-BNLX"
+        default = false
+        label = "Finance RO DACH-BNLX"
+      },
+      {
+        fullName = "Item Master Content"
+        default = false
+        label = "Item Master Content"
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    description = "Upload Spain and Italy Email Mappings - T-701738"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    sorted = false
+    _hidden_value = true
+  }
+  salesforce.Email Routing_Email_Address__c {
+    apiName = "Routing_Email_Address_Mapping__mdt.Routing_Email_Address__c"
+    label = "Routing Email Address"
+    createable = false
+    updateable = false
+    unique = false
+    queryable = true
+    description = "Map To and CC Email Addresses - T-697611"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

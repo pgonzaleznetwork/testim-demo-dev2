@@ -1,0 +1,91 @@
+salesforce.Flow Under_Maintenance {
+  fullName = "Under_Maintenance"
+  apiVersion = 49
+  assignments = [
+    {
+      name = "Set_Logout_To_True"
+      label = "Set Logout To True"
+      locationX = 381
+      locationY = 395
+      assignmentItems = [
+        {
+          assignToReference = "LoginFlow_ForceLogout"
+          operator = "Assign"
+          value = {
+            booleanValue = true
+          }
+        },
+      ]
+    },
+  ]
+  decisions = [
+    {
+      name = "Check_If_Login_Is_Allowed"
+      label = "Check If Login Is Allowed"
+      locationX = 375
+      locationY = 77
+      defaultConnectorLabel = "[Default Outcome]"
+      rules = [
+        {
+          name = "Login_Not_Allowed"
+          conditionLogic = "and"
+          conditions = [
+            {
+              leftValueReference = "IsLoginAllowed"
+              operator = "EqualTo"
+              rightValue = {
+                booleanValue = false
+              }
+            },
+          ]
+          connector = {
+            targetReference = "Login_Not_Allowed_Message"
+          }
+          label = "Login Not Allowed"
+        },
+      ]
+    },
+  ]
+  formulas = [
+    {
+      name = "IsLoginAllowed"
+      dataType = "Boolean"
+      expression = "{!$Setup.Login_Allowed__c.Allow_User_To_Log_In__c}"
+    },
+  ]
+  interviewLabel = "Under Maintenance {!$Flow.CurrentDateTime}"
+  label = "Under Maintenance"
+  processType = "Flow"
+  screens = {
+    name = "Login_Not_Allowed_Message"
+    label = "Login Not Allowed Message"
+    locationX = 377
+    locationY = 245
+    allowBack = true
+    allowFinish = true
+    allowPause = true
+    connector = {
+      targetReference = "Set_Logout_To_True"
+    }
+    fields = [
+      {
+        name = "MessageWarning"
+        fieldText = "The system is being destroyed via the metadata API. Get out!"
+        fieldType = "DisplayText"
+      },
+    ]
+    showFooter = true
+    showHeader = true
+  }
+  startElementReference = "Check_If_Login_Is_Allowed"
+  status = "Active"
+  variables = [
+    {
+      name = "LoginFlow_ForceLogout"
+      dataType = "Boolean"
+      isCollection = false
+      isInput = false
+      isOutput = true
+    },
+  ]
+}

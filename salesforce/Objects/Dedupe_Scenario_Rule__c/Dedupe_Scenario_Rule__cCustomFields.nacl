@@ -1,0 +1,105 @@
+type salesforce.Dedupe_Scenario_Rule__c {
+  salesforce.MasterDetail Dedupe_Scenario__c {
+    apiName = "Dedupe_Scenario_Rule__c.Dedupe_Scenario__c"
+    label = "Dedupe Scenario"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Dedupe_Scenario__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Dedupe_Scenario_Rules"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Dedupe Scenario Rules"
+    trackTrending = false
+  }
+  salesforce.Picklist Evaluated_Field__c {
+    apiName = "Dedupe_Scenario_Rule__c.Evaluated_Field__c"
+    label = "Evaluated Field"
+    valueSet = [
+      {
+        fullName = "MobilePhone"
+        default = false
+        label = "MobilePhone"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Due Date"
+        default = false
+        label = "Due Date__c"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Picklist Evaluated_Contact_Type__c {
+    apiName = "Dedupe_Scenario_Rule__c.Evaluated_Contact_Type__c"
+    label = "Evaluated Contact Type"
+    valueSet = [
+      {
+        fullName = "Parent"
+        default = false
+        label = "Parent"
+      },
+      {
+        fullName = "Child"
+        default = false
+        label = "Child"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Number Evaluation_Order__c {
+    apiName = "Dedupe_Scenario_Rule__c.Evaluation_Order__c"
+    label = "Evaluation Order"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Picklist Match_Type__c {
+    apiName = "Dedupe_Scenario_Rule__c.Match_Type__c"
+    label = "Match Type"
+    valueSet = [
+      {
+        fullName = "Matches"
+        default = false
+        label = "Matches"
+      },
+      {
+        fullName = "Does not match"
+        default = false
+        label = "Does not match"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+}

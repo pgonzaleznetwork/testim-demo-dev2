@@ -1,0 +1,17 @@
+salesforce.ApexClass CustomSearchController {
+  apiVersion = 42
+  status = "Active"
+  fullName = "CustomSearchController"
+  content = file("salesforce/Records/ApexClass/CustomSearchController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

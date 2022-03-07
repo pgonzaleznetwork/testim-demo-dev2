@@ -1,0 +1,32 @@
+salesforce.ApexClass AmossTest_InstanceTest {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossTest_InstanceTest"
+  content = file("salesforce/Records/ApexClass/AmossTest_InstanceTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AmossTest_ClassToDouble
+    },
+    {
+      reference = salesforce.ApexClass.instance.AmossTest_InterfaceToDouble
+    },
+    {
+      reference = salesforce.ApexClass.instance.AmossTest_SingletonToDouble
+    },
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Asserts
+    },
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Instance
+    },
+    {
+      reference = salesforce.ApexClass.instance.Amoss_MethodHandler
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

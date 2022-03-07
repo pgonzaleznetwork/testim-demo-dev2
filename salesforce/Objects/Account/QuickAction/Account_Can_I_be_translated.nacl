@@ -1,0 +1,52 @@
+salesforce.QuickAction Account_Can_I_be_translated@vuuu {
+  fullName = "Account.Can_I_be_translated"
+  label = "Can I be translated"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Subject"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Account.field.Description
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "WhoId"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = true
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = true
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "WhatId"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  targetObject = salesforce.Task
+  targetParentField = "What"
+  type = "LogACall"
+  _parent = [
+    salesforce.Account,
+  ]
+}

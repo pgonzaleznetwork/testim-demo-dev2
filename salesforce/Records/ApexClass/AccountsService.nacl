@@ -1,0 +1,11 @@
+salesforce.ApexClass AccountsService {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountsService"
+  content = file("salesforce/Records/ApexClass/AccountsService.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

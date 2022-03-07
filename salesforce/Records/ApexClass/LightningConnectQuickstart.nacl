@@ -1,0 +1,14 @@
+salesforce.ApexClass LightningConnectQuickstart {
+  apiVersion = 32
+  status = "Active"
+  fullName = "LightningConnectQuickstart"
+  content = file("salesforce/Records/ApexClass/LightningConnectQuickstart.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Customer_ID__c
+    },
+  ]
+}

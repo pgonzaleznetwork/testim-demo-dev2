@@ -1,0 +1,18 @@
+salesforce.AuraDefinitionBundle TranslationsMerger {
+  apiVersion = 43
+  description = "A Lightning Component Bundle"
+  fullName = "TranslationsMerger"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/TranslationsMerger/TranslationsMerger.css")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/TranslationsMerger/TranslationsMergerController.js")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/TranslationsMerger/TranslationsMergerHelper.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/TranslationsMerger/TranslationsMerger.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TranslationsMerger_LEX_Controller
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.TranslationsMerger
+    },
+  ]
+}

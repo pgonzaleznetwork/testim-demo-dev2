@@ -1,0 +1,37 @@
+salesforce.Profile Customer_Portal_Manager_Standard@s {
+  recordTypeVisibilities = {
+    Account = {
+      Local = {
+        default = true
+        recordType = salesforce.RecordType.instance.Account_Local
+        visible = true
+      }
+    }
+    Case = {
+      Case_Time_Tracking = {
+        default = false
+        recordType = salesforce.RecordType.instance.Case_Case_Time_Tracking
+        visible = false
+      }
+    }
+    Contact = {
+      Child = {
+        default = false
+        recordType = salesforce.RecordType.instance.Contact_Child
+        visible = true
+      }
+      Parent = {
+        default = true
+        recordType = salesforce.RecordType.instance.Contact_Parent
+        visible = true
+      }
+    }
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = salesforce.RecordType.instance.Idea_InternalIdeasIdeaRecordType
+        visible = false
+      }
+    }
+  }
+}

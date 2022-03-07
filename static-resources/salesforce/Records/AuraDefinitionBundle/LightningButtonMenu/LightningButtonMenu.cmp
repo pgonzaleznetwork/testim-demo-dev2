@@ -1,0 +1,8 @@
+<aura:component >
+    <lightning:buttonMenu aura:id="menu" alternativeText="Show menu">
+        <lightning:menuItem value="MenuItemOne" label="Menu Item One" />
+        <lightning:menuItem value="MenuItemTwo" label="Menu Item Two" />
+        <lightning:menuItem value="MenuItemThree" label="Menu Item Three" disabled="true" />
+        <lightning:menuItem value="MenuItemFour" label="Menu Item Four" />
+    </lightning:buttonMenu>
+</aura:component>

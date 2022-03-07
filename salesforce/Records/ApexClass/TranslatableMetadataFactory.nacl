@@ -1,0 +1,14 @@
+salesforce.ApexClass TranslatableMetadataFactory {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslatableMetadataFactory"
+  content = file("salesforce/Records/ApexClass/TranslatableMetadataFactory.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SFMD
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslatableMetadata
+    },
+  ]
+}

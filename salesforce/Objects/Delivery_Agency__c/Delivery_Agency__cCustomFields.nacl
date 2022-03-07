@@ -1,0 +1,41 @@
+type salesforce.Delivery_Agency__c {
+  salesforce.Text Ward__c {
+    apiName = "Delivery_Agency__c.Ward__c"
+    label = "Ward"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text District__c {
+    apiName = "Delivery_Agency__c.District__c"
+    label = "District"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text Province__c {
+    apiName = "Delivery_Agency__c.Province__c"
+    label = "Province"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

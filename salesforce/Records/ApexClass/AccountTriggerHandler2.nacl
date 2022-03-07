@@ -1,0 +1,17 @@
+salesforce.ApexClass AccountTriggerHandler2 {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AccountTriggerHandler2"
+  content = file("salesforce/Records/ApexClass/AccountTriggerHandler2.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AccountTriggerActions
+    },
+    {
+      reference = salesforce.ApexClass.instance.ITriggerHandler
+    },
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle helloWorld {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "helloWorld"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/helloWorld/helloWorld.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/helloWorld/helloWorldController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/helloWorld/helloWorld.css")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/helloWorld/helloWorldHelper.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.helloWorld
+    },
+  ]
+}

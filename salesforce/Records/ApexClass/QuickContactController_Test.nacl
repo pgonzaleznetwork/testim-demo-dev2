@@ -1,0 +1,17 @@
+salesforce.ApexClass QuickContactController_Test {
+  apiVersion = 38
+  status = "Active"
+  fullName = "QuickContactController_Test"
+  content = file("salesforce/Records/ApexClass/QuickContactController_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.QuickContactController
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

@@ -1,0 +1,17 @@
+salesforce.ApexClass MainCaseTestClass {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MainCaseTestClass"
+  content = file("salesforce/Records/ApexClass/MainCaseTestClass.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CaseTestDataBuilderDirector
+    },
+    {
+      reference = salesforce.ApexClass.instance.CaseTestDataBuilderImpl
+    },
+    {
+      reference = salesforce.Case
+    },
+  ]
+}

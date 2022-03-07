@@ -1,0 +1,11 @@
+salesforce.ApexClass AsyncParkService {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AsyncParkService"
+  content = file("salesforce/Records/ApexClass/AsyncParkService.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ParkService
+    },
+  ]
+}

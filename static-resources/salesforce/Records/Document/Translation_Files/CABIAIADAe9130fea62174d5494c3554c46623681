@@ -1,0 +1,145 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+DETAIL_BUTTON	ButtonOrLink.Account.BhartiButton	Label N/A
+QUICK_ACTION	QuickAction.Account.NewCase	Label N/A
+PLATFORM_ACTION	QuickAction.Account.New_Energy_Audit	Label N/A
+PLATFORM_ACTION	QuickAction.Account.Can_I_be_translated	Label N/A
+PLATFORM_ACTION	QuickAction.Account.My_Test_Lightning_Action	Label N/A
+PLATFORM_ACTION	QuickAction.Account.Quick_Contact	Label N/A
+PLATFORM_ACTION	QuickAction.Account.New_Oppty	Label N/A
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account-Account Layout.Account Information	Account Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account-Account Layout.Address Information	Address Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account-Account Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account-Account Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account-Account Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Account.Account-Account Layout.Custom Links	Custom Links
+CUSTOM_FIELD_LABEL	CustomField.Account.Match_Billing_Address.FieldLabel	Match Billing Address
+CUSTOM_FIELD_LABEL	CustomField.Account.Number_of_Contacts.FieldLabel	Number of Contacts
+CUSTOM_FIELD_LABEL	CustomField.Account.RequiredField.FieldLabel	RequiredField
+CUSTOM_FIELD_LABEL	CustomField.Account.Location.FieldLabel	Location
+CUSTOM_FIELD_LABEL	CustomField.Account.Potential_Value.FieldLabel	Potential Value
+CUSTOM_FIELD_LABEL	CustomField.Account.Social_Sec_Number.FieldLabel	Social Sec Number
+CUSTOM_FIELD_LABEL	CustomField.Account.CustomerPriority.FieldLabel	Customer Priority
+CUSTOM_FIELD_LABEL	CustomField.Account.SLAExpirationDate.FieldLabel	SLA Expiration Date
+CUSTOM_FIELD_LABEL	CustomField.Account.NumberofLocations.FieldLabel	Number of Locations
+CUSTOM_FIELD_LABEL	CustomField.Account.Active.FieldLabel	Active
+CUSTOM_FIELD_LABEL	CustomField.Account.SLA.FieldLabel	SLA
+CUSTOM_FIELD_LABEL	CustomField.Account.SLASerialNumber.FieldLabel	SLA Serial Number
+CUSTOM_FIELD_LABEL	CustomField.Account.UpsellOpportunity.FieldLabel	Upsell Opportunity
+CUSTOM_FIELD_HELP_TEXT	CustomField.Account.Number_of_Contacts.HelpText	How many coontacts are available
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Account.AccountNumber.HelpText	This is a standard salesforce field that shows some number. No idea what for...
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Account.AccountSource.HelpText	account source help text
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.CustomerPriority.High	High
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.CustomerPriority.Low	Low
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.CustomerPriority.Medium	Medium
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.Active.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.Active.Yes	Yes
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.Active.Naman	Naman
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Gold	Gold
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Silver	Silver
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Platinum	Platinum
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.SLA.Bronze	Bronze
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.UpsellOpportunity.Maybe	Maybe
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.UpsellOpportunity.No	No
+CUSTOM_PICKLIST_VALUE	PicklistValue.Account.UpsellOpportunity.Yes	Yes
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Web	Web
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Prospect	Prospect
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Customer - Direct	Customer - Direct
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Customer - Channel	Customer - Channel
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Channel Partner / Reseller	Channel Partner / Reseller
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Installation Partner	Installation Partner
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Technology Partner	Technology Partner
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Customer	Customer
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountType.Pending	Pending
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Agriculture	Agriculture
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Apparel	Apparel
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Banking	Banking
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Biotechnology	Biotechnology
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Chemicals	Chemicals
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Communications	Communications
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Construction	Construction
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Consulting	Consulting
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Education	Education
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Electronics	Electronics
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Energy	Energy
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Engineering	Engineering
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Entertainment	Entertainment
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Environmental	Environmental
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Finance	Finance
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Food & Beverage	Food & Beverage
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Government	Government
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Healthcare	Healthcare
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Hospitality	Hospitality
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Insurance	Insurance
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Machinery	Machinery
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Manufacturing	Manufacturing
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Media	Media
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Not For Profit	Not For Profit
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Recreation	Recreation
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Retail	Retail
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Shipping	Shipping
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Technology	Technology
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Telecommunications	Telecommunications
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Transportation	Transportation
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Utilities	Utilities
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.industry.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountRating.Hot	Hot
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountRating.Warm	Warm
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountRating.Cold	Cold
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Public	Public
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Private	Private
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Subsidiary	Subsidiary
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.accountOwnership.Other	Other
+RELATED_LIST_BUTTON	ButtonOrLink.Contact.ContactButtonInRelatedList	Label N/A
+RELATED_LIST_BUTTON	ButtonOrLink.Opportunity.Close_all_my_oppts243	Label N/A
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Average_Annual_Electric_Cost.FieldLabel	Average Annual Electric Cost
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Annual_Energy_Usage_kWh.FieldLabel	Annual Energy Usage (kWh)
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Audit_Notes.FieldLabel	Audit Notes
+RELATED_LIST_FIELD	CustomField.Energy_Audit__c.Type_of_Installation.FieldLabel	Type of Installation
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Average_Annual_Electric_Cost.Average Annual Electric Cost	Average Annual Electric Cost
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Annual_Energy_Usage_kWh.Annual Energy Usage (kWh)	Annual Energy Usage (kWh)
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Audit_Notes.Audit Notes	Audit Notes
+RELATED_LIST_PICKLIST_VALUE	PicklistValue.Energy_Audit__c.Type_of_Installation.Type of Installation	Type of Installation
+PLATFORM_ACTION	QuickAction.Opportunity_Wizard	Label N/A
+PLATFORM_ACTION	QuickAction.Clone	Label N/A
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Opportunity Information	Opportunity Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Other Information	Other Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Additional Information	Additional Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.System Information	System Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Description Information	Description Information
+LAYOUT_SECTION_NAME	LayoutSection.Opportunity.Opportunity-Opportunity Layout.Custom Links	Custom Links
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+CUSTOM_FIELD_LABEL	CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+CUSTOM_FIELD_HELP_TEXT	CustomField.Opportunity.TrackingNumber.HelpText	This is the tracking number
+STANDARD_FIELD_HELP_TEXT	StandardFieldHelp.Opportunity.StageName.HelpText	Set this field depending on where the deal is.
+CUSTOM_PICKLIST_VALUE	PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+CUSTOM_PICKLIST_VALUE	PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+CUSTOM_PICKLIST_VALUE	PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.Existing Customer - Upgrade	Existing Customer - Upgrade
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.Existing Customer - Replacement	Existing Customer - Replacement
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.Existing Customer - Downgrade	Existing Customer - Downgrade
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityType.New Customer	New Customer
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Web	Web
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Phone Inquiry	Phone Inquiry
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Partner Referral	Partner Referral
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Purchased List	Purchased List
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Other	Other
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityLeadSource.Where is this shown?	Where is this shown?
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Prospecting	Prospecting
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Qualification	Qualification
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Needs Analysis	Needs Analysis
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Value Proposition	Value Proposition
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Id. Decision Makers	Id. Decision Makers
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Perception Analysis	Perception Analysis
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Proposal/Price Quote	Proposal/Price Quote
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Negotiation/Review	Negotiation/Review
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Closed Won	Closed Won
+STANDARD_PICKLIST_VALUE	PicklistValue.Standard.opportunityStage.Closed Lost	Closed Lost

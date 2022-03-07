@@ -1,0 +1,248 @@
+type salesforce.ProductRequest {
+  serviceid Id {
+    apiName = "ProductRequest.Id"
+    label = "Product Request ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ProductRequest.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ProductRequestNumber {
+    apiName = "ProductRequest.ProductRequestNumber"
+    label = "Product Request Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductRequest.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductRequest.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkOrderId {
+    apiName = "ProductRequest.WorkOrderId"
+    label = "Work Order ID"
+    referenceTo = [
+      salesforce.WorkOrder,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkOrder"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup WorkOrderLineItemId {
+    apiName = "ProductRequest.WorkOrderLineItemId"
+    label = "Line Item ID"
+    referenceTo = [
+      salesforce.WorkOrderLineItem,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkOrderLineItem"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.DateTime NeedByDate {
+    apiName = "ProductRequest.NeedByDate"
+    label = "Need By Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ProductRequest.Status"
+    label = "Status"
+    valueSet = [
+      {
+        fullName = "Draft"
+        default = true
+        label = "Draft"
+        isActive = true
+      },
+      {
+        fullName = "Submitted"
+        default = false
+        label = "Submitted"
+        isActive = true
+      },
+      {
+        fullName = "Received"
+        default = false
+        label = "Received"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist ShipmentType {
+    apiName = "ProductRequest.ShipmentType"
+    label = "Shipment Type"
+    valueSet = [
+      {
+        fullName = "Rush"
+        default = true
+        label = "Rush"
+        isActive = true
+      },
+      {
+        fullName = "Overnight"
+        default = false
+        label = "Overnight"
+        isActive = true
+      },
+      {
+        fullName = "Next Business Day"
+        default = false
+        label = "Next Business Day"
+        isActive = true
+      },
+      {
+        fullName = "Pick Up"
+        default = false
+        label = "Pick Up"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Address ShipToAddress {
+    apiName = "ProductRequest.ShipToAddress"
+    label = "Ship To Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ProductRequest.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Lookup DestinationLocationId {
+    apiName = "ProductRequest.DestinationLocationId"
+    label = "Destination Location ID"
+    referenceTo = [
+      salesforce.Location,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "DestinationLocation"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup SourceLocationId {
+    apiName = "ProductRequest.SourceLocationId"
+    label = "Source Location ID"
+    referenceTo = [
+      salesforce.Location,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "SourceLocation"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup CaseId {
+    apiName = "ProductRequest.CaseId"
+    label = "Case ID"
+    referenceTo = [
+      salesforce.Case,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Case"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup AccountId {
+    apiName = "ProductRequest.AccountId"
+    label = "Account ID"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Account"
+    queryable = true
+    trackHistory = false
+  }
+}

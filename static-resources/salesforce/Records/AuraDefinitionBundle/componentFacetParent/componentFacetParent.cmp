@@ -1,0 +1,7 @@
+<aura:component >
+    <c:componentFacetChild >
+        <aura:set attribute="displayText">
+            set via aura:set
+        </aura:set>
+    </c:componentFacetChild>
+</aura:component>

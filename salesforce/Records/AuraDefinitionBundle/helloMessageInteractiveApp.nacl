@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle helloMessageInteractiveApp {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "helloMessageInteractiveApp"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/helloMessageInteractiveApp/helloMessageInteractiveApp.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.helloMessageInteractive
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.helloMessageInteractiveApp
+    },
+  ]
+}

@@ -1,0 +1,29 @@
+salesforce.ConnectedApp Hello_World {
+  fullName = "Hello_World"
+  canvasConfig = {
+    accessMethod = "Post"
+    canvasUrl = "https://localhost:8443/examples/hello-world/index.jsp"
+    locations = [
+      "Chatter",
+      "Visualforce",
+    ]
+    samlInitiationMethod = "None"
+  }
+  contactEmail = "pablo.alvarez@websummit.com"
+  iconUrl = "https://localhost:8443/examples/hello-world/logo.pngv"
+  label = "Hello World"
+  logoUrl = "https://localhost:8443/images/salesforce.png"
+  oauthConfig = {
+    callbackUrl = "https://localhost:8443/sdk/callback.html"
+    consumerKey = "3MVG9I5UQ_0k_hTmZuUMosHPf.1mzIvjhMkehYOxaSBebnC.BO5HvC9bdxed06VNNmVvaxJIV276EXFnQp6_9"
+    isAdminApproved = true
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = "Basic"
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+  profileName = "System Administrator"
+}

@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="breadcrumbList" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    
+    
+    <lightning:breadcrumbs >
+        <aura:iteration items="{!v.breadcrumbList}" var="bd">
+            <lightning:breadcrumb label="{!bd.label}" onclick="{!c.navigateTo}" name="{!bd.name}"/>
+        </aura:iteration>
+    </lightning:breadcrumbs>
+    
+</aura:component>

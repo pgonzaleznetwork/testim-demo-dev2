@@ -1,0 +1,15 @@
+salesforce.WorkflowAlert Case_X1_hour_warning_before_milestone_expires@vuuuuu {
+  fullName = "Case.X1_hour_warning_before_milestone_expires"
+  description = "1 hour warning before milestone expires."
+  protected = false
+  recipients = [
+    {
+      type = "owner"
+    },
+  ]
+  senderType = "CurrentUser"
+  template = "unfiled$public/SupportCaseAssignmentNotification"
+  _parent = [
+    salesforce.Case,
+  ]
+}

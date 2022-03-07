@@ -1,0 +1,174 @@
+salesforce.LightningPage New_Opportunity_Page {
+  fullName = "New_Opportunity_Page"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+          }
+        },
+      ]
+      name = "facet-356c6cf1-1d47-41ab-8cdc-7f4c645d6481"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "CARD"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+          }
+        },
+      ]
+      name = "facet-6c54c353-f8b9-40d3-9ccc-b243a1a0b3bb"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+          }
+        },
+      ]
+      name = "facet-2a3760ba-b7c2-4c32-acdd-fa52fe14524a"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "body"
+                value = "facet-356c6cf1-1d47-41ab-8cdc-7f4c645d6481"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.activity"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "active"
+                value = "true"
+              },
+              {
+                name = "body"
+                value = "facet-6c54c353-f8b9-40d3-9ccc-b243a1a0b3bb"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.relatedLists"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "body"
+                value = "facet-2a3760ba-b7c2-4c32-acdd-fa52fe14524a"
+              },
+              {
+                name = "title"
+                value = "Standard.Tab.detail"
+              },
+            ]
+            componentName = "flexipage:tab"
+          }
+        },
+      ]
+      name = "facet-f709764f-68e0-4174-95a6-d26563ba56a8"
+      type = "Facet"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "tabs"
+                value = "facet-f709764f-68e0-4174-95a6-d26563ba56a8"
+              },
+            ]
+            componentName = "flexipage:tabset"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "hideUpdateButton"
+                value = "false"
+              },
+            ]
+            componentName = "runtime_sales_pathassistant:pathAssistant"
+          }
+        },
+      ]
+      name = "subheader"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "forceChatter:recordFeedContainer"
+          }
+        },
+      ]
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "New Opportunity Page"
+  sobjectType = "Opportunity"
+  template = {
+    name = "flexipage:recordHomeWithSubheaderTemplateDesktop"
+  }
+  type = "RecordPage"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

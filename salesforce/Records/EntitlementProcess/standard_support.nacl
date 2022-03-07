@@ -1,0 +1,54 @@
+salesforce.EntitlementProcess standard_support@s {
+  fullName = "standard support"
+  SObjectType = salesforce.Case
+  active = true
+  businessHours = "Default"
+  description = "The default support process for customers."
+  entryStartDateField = salesforce.Case.field.CreatedDate
+  exitCriteriaFilterItems = {
+    field = salesforce.Case.field.IsClosed
+    operation = "equals"
+    value = "true"
+  }
+  milestones = [
+    {
+      milestoneCriteriaFilterItems = {
+        field = salesforce.Case.field.Priority
+        operation = "equals"
+        value = "High"
+      }
+      milestoneName = "Resolution Time"
+      minutesToComplete = 240
+      timeTriggers = {
+        actions = {
+          name = "X1_hour_warning_before_milestone_expires"
+          type = "Alert"
+        }
+        timeLength = -1
+        workflowTimeTriggerUnit = "Hours"
+      }
+      useCriteriaStartTime = false
+    },
+    {
+      businessHours = "Germany Order Cut-Off"
+      milestoneCriteriaFilterItems = {
+        field = salesforce.Case.field.BusinessHoursId
+        operation = "equals"
+        value = "Germany Order Cut-Off"
+      }
+      milestoneName = "Resolution Time"
+      minutesToComplete = 4
+      useCriteriaStartTime = false
+    },
+    {
+      milestoneCriteriaFilterItems = {
+        field = salesforce.Case.field.Priority
+        operation = "equals"
+        value = "Medium, Low"
+      }
+      milestoneName = "Resolution Time"
+      minutesToComplete = 960
+      useCriteriaStartTime = false
+    },
+  ]
+}

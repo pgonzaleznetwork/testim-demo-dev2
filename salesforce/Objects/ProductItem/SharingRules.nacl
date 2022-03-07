@@ -1,0 +1,6 @@
+salesforce.SharingRules ProductItem {
+  fullName = "ProductItem"
+  _parent = [
+    salesforce.ProductItem,
+  ]
+}

@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle InputComponentLabels {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "InputComponentLabels"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/InputComponentLabels/InputComponentLabels.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.InputComponentLabels
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass OmniaCanvasController {
+  apiVersion = 44
+  status = "Active"
+  fullName = "OmniaCanvasController"
+  content = file("salesforce/Records/ApexClass/OmniaCanvasController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

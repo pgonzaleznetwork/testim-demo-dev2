@@ -1,0 +1,87 @@
+salesforce.CustomApplication standard__LightningSales {
+  fullName = "standard__LightningSales"
+  actionOverrides = [
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Contact_Classic_Style"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Contact"
+    },
+    {
+      actionName = "View"
+      comment = "Action override created by Lightning App Builder during activation."
+      content = "Lead_Record_Page1"
+      formFactor = "Large"
+      skipRecordTypeSelect = false
+      type = "Flexipage"
+      pageOrSobjectType = "Lead"
+    },
+  ]
+  formFactors = [
+    "Small",
+    "Medium",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Sales"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Sales_Home"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+    {
+      actionName = "View"
+      content = "New_Opportunity_Page"
+      formFactor = "Large"
+      pageOrSobjectType = "Opportunity"
+      type = "Flexipage"
+      profile = salesforce.Profile.instance.Admin
+    },
+  ]
+  tabs = [
+    "standard-home",
+    salesforce.CustomTab.instance.Translation_Manager,
+    salesforce.CustomTab.instance.Lightning_Components_Dictionary,
+    salesforce.CustomTab.instance.MyData,
+    salesforce.CustomTab.instance.Top_Accounts_and_Opportunities,
+    "standard-Opportunity",
+    "standard-Lead",
+    "standard-Task",
+    "standard-File",
+    "standard-Account",
+    "standard-Contact",
+    "standard-Campaign",
+    "standard-Dashboard",
+    "standard-report",
+    "standard-Feed",
+    "standard-CollaborationGroup",
+    "standard-Event",
+    "standard-OtherUserProfile",
+    "standard-Case",
+    "standard-Forecasting3",
+    salesforce.CustomTab.instance.Expense__c,
+    salesforce.CustomTab.instance.Camping_Item__c,
+    salesforce.CustomTab.instance.Session__c,
+    salesforce.CustomTab.instance.Energy_Audit__c,
+    salesforce.CustomTab.instance.ModifyCSS,
+    salesforce.CustomTab.instance.Ear_Plug__c,
+    salesforce.CustomTab.instance.Layout_Translation_Info__c,
+    salesforce.CustomTab.instance.Translation_Key__c,
+    salesforce.CustomTab.instance.Translation_Context__c,
+    salesforce.CustomTab.instance.Email_Routing_Rule__c,
+    salesforce.CustomTab.instance.Dedupe_Scenario__c,
+    salesforce.CustomTab.instance.Matching_Rule__c,
+    salesforce.CustomTab.instance.KPI_Target__c,
+    salesforce.CustomTab.instance.Delivery_Agency__c,
+  ]
+  uiType = "Lightning"
+}

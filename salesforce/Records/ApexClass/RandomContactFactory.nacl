@@ -1,0 +1,11 @@
+salesforce.ApexClass RandomContactFactory {
+  apiVersion = 41
+  status = "Active"
+  fullName = "RandomContactFactory"
+  content = file("salesforce/Records/ApexClass/RandomContactFactory.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

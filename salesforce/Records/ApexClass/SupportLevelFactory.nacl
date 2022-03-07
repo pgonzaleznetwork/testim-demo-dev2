@@ -1,0 +1,17 @@
+salesforce.ApexClass SupportLevelFactory {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SupportLevelFactory"
+  content = file("salesforce/Records/ApexClass/SupportLevelFactory.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.ISupportLevel
+    },
+    {
+      reference = salesforce.support_type__c
+    },
+    {
+      reference = salesforce.support_type__c.field.Class_Name__c
+    },
+  ]
+}

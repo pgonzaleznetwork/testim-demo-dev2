@@ -1,0 +1,8 @@
+salesforce.QueueRoutingConfig Germany_Advantage_Cases {
+  fullName = "Germany_Advantage_Cases"
+  capacityWeight = 1
+  isAttributeBased = false
+  label = "Germany Advantage Cases"
+  routingModel = "MOST_AVAILABLE"
+  routingPriority = 1
+}

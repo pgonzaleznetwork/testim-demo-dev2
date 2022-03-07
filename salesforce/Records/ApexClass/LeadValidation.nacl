@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadValidation {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadValidation"
+  content = file("salesforce/Records/ApexClass/LeadValidation.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

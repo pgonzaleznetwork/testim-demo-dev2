@@ -1,0 +1,12 @@
+salesforce.AuraDefinitionBundle componentMinVersionReqChild {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "componentMinVersionReqChild"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/componentMinVersionReqChild/componentMinVersionReqChild.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.componentMinVersionReqChild
+    },
+  ]
+}

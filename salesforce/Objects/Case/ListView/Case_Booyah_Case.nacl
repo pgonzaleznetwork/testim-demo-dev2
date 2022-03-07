@@ -1,0 +1,12 @@
+salesforce.ListView Case_Booyah_Case {
+  fullName = "Case.Booyah_Case"
+  filterScope = "Queue"
+  label = "Booyah"
+  queue = "Booyah"
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Case,
+  ]
+}

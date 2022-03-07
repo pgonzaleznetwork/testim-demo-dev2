@@ -1,0 +1,8 @@
+salesforce.ListView ProductItem_All_ProductItems {
+  fullName = "ProductItem.All_ProductItems"
+  filterScope = "Everything"
+  label = "All Product Items"
+  _parent = [
+    salesforce.ProductItem,
+  ]
+}

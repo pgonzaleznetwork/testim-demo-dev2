@@ -1,0 +1,13 @@
+salesforce.WorkflowFieldUpdate Account_Change_type_to_pending@vuuu {
+  fullName = "Account.Change_type_to_pending"
+  field = salesforce.Account.field.Type
+  literalValue = "Pending"
+  name = "Change type to pending"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Account,
+  ]
+}

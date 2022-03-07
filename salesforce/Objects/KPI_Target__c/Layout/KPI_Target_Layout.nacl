@@ -1,0 +1,86 @@
+salesforce.Layout KPI_Target__c_KPI_Target_Layout@uuubss {
+  fullName = "KPI_Target__c-KPI Target Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.KPI_Target__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.KPI_Target__c.field.User__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.KPI_Target__c.field.Target_Call_Rate__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.KPI_Target__c.field.Actual_Call_Rate__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.KPI_Target__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.KPI_Target__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.KPI_Target__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.KPI_Target__c,
+  ]
+}

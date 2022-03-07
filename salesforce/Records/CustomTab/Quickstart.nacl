@@ -1,0 +1,11 @@
+salesforce.CustomTab Quickstart {
+  fullName = "Quickstart"
+  label = "Quickstart"
+  motif = "Custom11: Star"
+  page = "LightningConnectQuickstart"
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.LightningConnectQuickstart
+    },
+  ]
+}

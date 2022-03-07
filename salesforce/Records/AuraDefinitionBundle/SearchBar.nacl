@@ -1,0 +1,17 @@
+salesforce.AuraDefinitionBundle SearchBar {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "SearchBar"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/SearchBar/SearchBarController.js")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/SearchBar/SearchBar.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/SearchBar/SearchBar.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.SearchBar
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ValueChange
+    },
+  ]
+}

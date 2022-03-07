@@ -1,0 +1,22 @@
+salesforce.LightningPage Security {
+  fullName = "Security"
+  flexiPageRegions = [
+    {
+      name = "region1"
+      type = "Region"
+    },
+    {
+      name = "region2"
+      type = "Region"
+    },
+    {
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Security"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar"
+  }
+  type = "AppPage"
+}

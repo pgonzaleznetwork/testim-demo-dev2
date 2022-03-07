@@ -1,0 +1,439 @@
+type salesforce.WarrantyTerm {
+  serviceid Id {
+    apiName = "WarrantyTerm.Id"
+    label = "Warranty Term ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "WarrantyTerm.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WarrantyTerm.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text WarrantyTermName {
+    apiName = "WarrantyTerm.WarrantyTermName"
+    label = "Warranty Term Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WarrantyTerm.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WarrantyTerm.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WarrantyTerm.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WarrantyTerm.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WarrantyTerm.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "WarrantyTerm.Pricebook2Id"
+    label = "Price Book ID"
+    referenceTo = [
+      salesforce.Pricebook2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Pricebook2"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Text Code {
+    apiName = "WarrantyTerm.Code"
+    label = "Code"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Picklist WarrantyType {
+    apiName = "WarrantyTerm.WarrantyType"
+    label = "Warranty Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Repair"
+        default = false
+        label = "Repair"
+        isActive = true
+      },
+      {
+        fullName = "Standard"
+        default = false
+        label = "Standard"
+        isActive = true
+      },
+      {
+        fullName = "Supplier"
+        default = false
+        label = "Supplier"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "WarrantyTerm.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "WarrantyTerm.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Number WarrantyDuration {
+    apiName = "WarrantyTerm.WarrantyDuration"
+    label = "Warranty Duration"
+    _required = true
+    precision = 4
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist WarrantyUnitOfTime {
+    apiName = "WarrantyTerm.WarrantyUnitOfTime"
+    label = "Warranty Unit Of Time"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Days"
+        default = false
+        label = "Days"
+        isActive = true
+      },
+      {
+        fullName = "Weeks"
+        default = false
+        label = "Weeks"
+        isActive = true
+      },
+      {
+        fullName = "Months"
+        default = false
+        label = "Months"
+        isActive = true
+      },
+      {
+        fullName = "Years"
+        default = false
+        label = "Years"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Exclusions {
+    apiName = "WarrantyTerm.Exclusions"
+    label = "Exclusions"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Picklist EffectiveStartDate {
+    apiName = "WarrantyTerm.EffectiveStartDate"
+    label = "Effective Start Date"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Install Date"
+        default = false
+        label = "Install Date"
+        isActive = true
+      },
+      {
+        fullName = "Manufacture Date"
+        default = false
+        label = "Manufacture Date"
+        isActive = true
+      },
+      {
+        fullName = "Purchase Date"
+        default = false
+        label = "Purchase Date"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Percent LaborCovered {
+    apiName = "WarrantyTerm.LaborCovered"
+    label = "Labor Covered"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Number LaborCoveredDuration {
+    apiName = "WarrantyTerm.LaborCoveredDuration"
+    label = "Labor Covered Duration"
+    precision = 4
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist LaborCoveredUnitOfTime {
+    apiName = "WarrantyTerm.LaborCoveredUnitOfTime"
+    label = "Labor Covered Unit of Time"
+    valueSet = [
+      {
+        fullName = "Days"
+        default = false
+        label = "Days"
+        isActive = true
+      },
+      {
+        fullName = "Weeks"
+        default = false
+        label = "Weeks"
+        isActive = true
+      },
+      {
+        fullName = "Months"
+        default = false
+        label = "Months"
+        isActive = true
+      },
+      {
+        fullName = "Years"
+        default = false
+        label = "Years"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent PartsCovered {
+    apiName = "WarrantyTerm.PartsCovered"
+    label = "Parts Covered"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Number PartsCoveredDuration {
+    apiName = "WarrantyTerm.PartsCoveredDuration"
+    label = "Parts Covered Duration"
+    precision = 4
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist PartsCoveredUnitOfTime {
+    apiName = "WarrantyTerm.PartsCoveredUnitOfTime"
+    label = "Parts Covered Unit of Time"
+    valueSet = [
+      {
+        fullName = "Days"
+        default = false
+        label = "Days"
+        isActive = true
+      },
+      {
+        fullName = "Weeks"
+        default = false
+        label = "Weeks"
+        isActive = true
+      },
+      {
+        fullName = "Months"
+        default = false
+        label = "Months"
+        isActive = true
+      },
+      {
+        fullName = "Years"
+        default = false
+        label = "Years"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent ExpensesCovered {
+    apiName = "WarrantyTerm.ExpensesCovered"
+    label = "Expenses Covered"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 5
+    queryable = true
+  }
+  salesforce.Number ExpensesCoveredDuration {
+    apiName = "WarrantyTerm.ExpensesCoveredDuration"
+    label = "Expenses Covered Duration"
+    precision = 4
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist ExpensesCoveredUnitOfTime {
+    apiName = "WarrantyTerm.ExpensesCoveredUnitOfTime"
+    label = "Expenses Covered Unit of Time"
+    valueSet = [
+      {
+        fullName = "Days"
+        default = false
+        label = "Days"
+        isActive = true
+      },
+      {
+        fullName = "Weeks"
+        default = false
+        label = "Weeks"
+        isActive = true
+      },
+      {
+        fullName = "Months"
+        default = false
+        label = "Months"
+        isActive = true
+      },
+      {
+        fullName = "Years"
+        default = false
+        label = "Years"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ExchangeType {
+    apiName = "WarrantyTerm.ExchangeType"
+    label = "Exchange Type"
+    valueSet = [
+      {
+        fullName = "Advance Exchange"
+        default = false
+        label = "Advance Exchange"
+        isActive = true
+      },
+      {
+        fullName = "Loaner"
+        default = false
+        label = "Loaner"
+        isActive = true
+      },
+      {
+        fullName = "Return Exchange"
+        default = false
+        label = "Return Exchange"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsTransferable {
+    apiName = "WarrantyTerm.IsTransferable"
+    label = "Transferable"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle AccountLoadOnly {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "AccountLoadOnly"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/AccountLoadOnly/AccountLoadOnlyController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/AccountLoadOnly/AccountLoadOnly.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AccountLoadOnly
+    },
+  ]
+}

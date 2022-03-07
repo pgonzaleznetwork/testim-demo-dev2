@@ -1,0 +1,11 @@
+salesforce.ApexClass LeadProcessor {
+  apiVersion = 41
+  status = "Active"
+  fullName = "LeadProcessor"
+  content = file("salesforce/Records/ApexClass/LeadProcessor.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

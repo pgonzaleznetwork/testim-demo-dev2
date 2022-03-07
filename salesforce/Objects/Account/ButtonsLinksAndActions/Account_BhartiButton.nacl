@@ -1,0 +1,22 @@
+salesforce.WebLink Account_BhartiButton {
+  fullName = "Account.BhartiButton"
+  availability = "online"
+  displayType = "button"
+  encodingKey = "UTF-8"
+  hasMenubar = false
+  hasScrollbars = true
+  hasToolbar = false
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "BhartiButton"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = false
+  showsStatus = false
+  url = "/flow/Flow_using_field"
+  _parent = [
+    salesforce.Account,
+  ]
+}

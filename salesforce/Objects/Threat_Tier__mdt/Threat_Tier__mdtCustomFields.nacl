@@ -1,0 +1,28 @@
+type salesforce.Threat_Tier__mdt {
+  salesforce.Text Account_Tier__c {
+    apiName = "Threat_Tier__mdt.Account_Tier__c"
+    label = "Account Tier"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+  salesforce.Text Vacation__c {
+    apiName = "Threat_Tier__mdt.Vacation__c"
+    label = "Vacation"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    _hidden_value = true
+  }
+}

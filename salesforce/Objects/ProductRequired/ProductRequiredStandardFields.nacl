@@ -1,0 +1,152 @@
+type salesforce.ProductRequired {
+  serviceid Id {
+    apiName = "ProductRequired.Id"
+    label = "Product Required ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductRequired.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ProductRequiredNumber {
+    apiName = "ProductRequired.ProductRequiredNumber"
+    label = "Product Required Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductRequired.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductRequired.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductRequired.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductRequired.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductRequired.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentRecordId {
+    apiName = "ProductRequired.ParentRecordId"
+    label = "Parent Record ID"
+    _required = true
+    referenceTo = [
+      salesforce.WorkOrder,
+      salesforce.WorkOrderLineItem,
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "ParentRecord"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Text ParentRecordType {
+    apiName = "ProductRequired.ParentRecordType"
+    label = "Parent Record Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "ProductRequired.Product2Id"
+    label = "Product ID"
+    _required = true
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Product2"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Text ProductName {
+    apiName = "ProductRequired.ProductName"
+    label = "Product Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number QuantityRequired {
+    apiName = "ProductRequired.QuantityRequired"
+    label = "Quantity Required"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Picklist QuantityUnitOfMeasure {
+    apiName = "ProductRequired.QuantityUnitOfMeasure"
+    label = "Quantity Unit Of Measure"
+    valueSet = [
+      {
+        fullName = "Each"
+        default = false
+        label = "Each"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+}

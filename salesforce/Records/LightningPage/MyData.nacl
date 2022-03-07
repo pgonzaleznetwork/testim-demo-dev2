@@ -1,0 +1,61 @@
+salesforce.LightningPage MyData {
+  fullName = "MyData"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "ContactsToday"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "LightningAccordion"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "entityNames"
+                valueList = {
+                  valueListItems = [
+                    {
+                      value = "Account"
+                    },
+                    {
+                      value = "Contact"
+                    },
+                    {
+                      value = "Lead"
+                    },
+                  ]
+                }
+              },
+              {
+                name = "maxRecords"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:recentItems"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+  ]
+  masterLabel = "MyData"
+  template = {
+    name = "flexipage:defaultAppHomeTemplate"
+  }
+  type = "AppPage"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ContactsToday
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningAccordion
+    },
+  ]
+}

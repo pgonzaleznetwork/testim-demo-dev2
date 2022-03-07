@@ -1,0 +1,8 @@
+salesforce.ListView Email_Routing_Rule__c_All {
+  fullName = "Email_Routing_Rule__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Email_Routing_Rule__c,
+  ]
+}

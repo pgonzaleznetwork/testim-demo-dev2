@@ -1,0 +1,33 @@
+type salesforce.Standard_Field_Label__c {
+  salesforce.Text Key__c {
+    apiName = "Standard_Field_Label__c.Key__c"
+    label = "Key"
+    defaultValueFormula = "\"Use_Rename_Tabs_And_Labels\""
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.MasterDetail Layout_Translation_Info__c {
+    apiName = "Standard_Field_Label__c.Layout_Translation_Info__c"
+    label = "Layout Translation Info"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Layout_Translation_Info__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Standard_Field_Labels"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Standard Field Labels"
+    trackTrending = false
+  }
+}

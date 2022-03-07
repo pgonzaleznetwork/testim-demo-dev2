@@ -1,0 +1,8 @@
+salesforce.AuraDefinitionBundle Rating {
+  apiVersion = 39
+  description = "A Lightning Component Bundle"
+  fullName = "Rating"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/Rating/Rating.cmp")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/Rating/Rating.css")
+}

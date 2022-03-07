@@ -1,0 +1,69 @@
+salesforce.Layout Layout_Section_Translation_Name__c_Layout_Section_Translation_Name_Layout@uuuuubssss {
+  fullName = "Layout_Section_Translation_Name__c-Layout Section Translation Name Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Layout_Section_Translation_Name__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Layout_Section_Translation_Name__c.field.Layout_Translation_Info__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Layout_Section_Translation_Name__c.field.Section_Key__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Layout_Section_Translation_Name__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Layout_Section_Translation_Name__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Layout_Section_Translation_Name__c,
+  ]
+}

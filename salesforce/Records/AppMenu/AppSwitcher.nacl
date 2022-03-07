@@ -1,0 +1,181 @@
+salesforce.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  appMenuItems = [
+    {
+      name = salesforce.CustomApplication.instance.standard__Platform
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Service
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Marketing
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__ServiceConsole
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__AppLauncher
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Community
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sites
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Chatter
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Content
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Insights
+      type = "CustomApplication"
+    },
+    {
+      name = "Trailhead"
+      type = "ConnectedApp"
+    },
+    {
+      name = "th_con_app__Trailhead_Playground"
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningSales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningSalesConsole
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningService
+      type = "CustomApplication"
+    },
+    {
+      name = "Dataloader_Bulk"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Dataloader_Partner"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Forcecom_IDE"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Forcecom_Migration_Tool"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Mobile_Dashboards"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_Touch"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Salesforce_for_Outlook"
+      type = "ConnectedApp"
+    },
+    {
+      name = "Workbench"
+      type = "ConnectedApp"
+    },
+    {
+      name = salesforce.CustomApplication.instance.External_Orders
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.DreamInvest
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Conference
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Energy_Consultations
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.Network.instance.CloudKicksTheme
+      type = "Network"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Omni_Channel_Console
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__LightningInstrumentation
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.Trailhead_Intro
+      type = "ConnectedApp"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Translation_Workbench_Assistant
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Dreamforce_App
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Classic_Console_By_Pablo
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Translation_Automation
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Dedupe_Manager
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.Dedupe_Manager_Lightning
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.Hello_World
+      type = "ConnectedApp"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__SalesforceCMS
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.ConnectedApp.instance.Salesforce_Dependency_Manager
+      type = "ConnectedApp"
+    },
+    {
+      name = "DEVHUB_xmfosmwvpuzpwllmc0d2"
+      type = "ConnectedApp"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__AllTabSet
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Commerce
+      type = "CustomApplication"
+    },
+  ]
+}

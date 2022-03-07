@@ -1,0 +1,12 @@
+salesforce.WorkflowFieldUpdate Apex_Log__c_field_update_custom_object@uuuvuuu {
+  fullName = "Apex_Log__c.field_update_custom_object"
+  field = salesforce.Apex_Log__c.field.Exception_Cause__c
+  name = "field update custom object"
+  notifyAssignee = false
+  operation = "Null"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Apex_Log__c,
+  ]
+}

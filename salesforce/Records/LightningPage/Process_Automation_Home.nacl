@@ -1,0 +1,84 @@
+salesforce.LightningPage Process_Automation_Home {
+  fullName = "Process_Automation_Home"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:heroChart"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "top"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:eventContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "home:recentRecordContainer"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "bottomLeft"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:todayTaskContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "home:topDealsContainer"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "bottomRight"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "home:assistant"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "flowLayout"
+                value = "oneColumn"
+              },
+              {
+                name = "flowName"
+                value = "New_Lead"
+              },
+            ]
+            componentName = "flowruntime:interview"
+          }
+        },
+      ]
+      mode = "Replace"
+      name = "sidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Process Automation Home"
+  parentFlexiPage = "home__desktopDefault"
+  template = {
+    name = "home:desktopTemplate"
+  }
+  type = "HomePage"
+}

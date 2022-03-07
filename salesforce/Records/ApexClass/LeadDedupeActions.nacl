@@ -1,0 +1,14 @@
+salesforce.ApexClass LeadDedupeActions {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadDedupeActions"
+  content = file("salesforce/Records/ApexClass/LeadDedupeActions.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.FieldValue
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.CustomTab Sector__c {
+  fullName = "Sector__c"
+  customObject = true
+  motif = "Custom57: Building Block"
+  _parent = [
+    salesforce.Sector__c,
+  ]
+}

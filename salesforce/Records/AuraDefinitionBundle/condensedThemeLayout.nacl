@@ -1,0 +1,20 @@
+salesforce.AuraDefinitionBundle condensedThemeLayout {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "condensedThemeLayout"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/condensedThemeLayout/condensedThemeLayout.cmp")
+  designContent = file("salesforce/Records/AuraDefinitionBundle/condensedThemeLayout/condensedThemeLayout.design")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/condensedThemeLayout/condensedThemeLayout.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.condensedThemeLayout
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.defaultTokens
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.verticalNav
+    },
+  ]
+}

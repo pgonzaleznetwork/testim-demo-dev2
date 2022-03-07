@@ -1,0 +1,11 @@
+salesforce.ApexClass LightningController {
+  apiVersion = 42
+  status = "Active"
+  fullName = "LightningController"
+  content = file("salesforce/Records/ApexClass/LightningController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

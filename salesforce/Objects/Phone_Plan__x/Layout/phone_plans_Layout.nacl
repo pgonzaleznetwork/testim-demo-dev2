@@ -1,0 +1,51 @@
+salesforce.Layout Phone_Plan__x_phone_plans_Layout@uuubus {
+  fullName = "Phone_Plan__x-phone_plans Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone_Plan__x.field.Cost__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone_Plan__x.field.Data_Limit__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone_Plan__x.field.Id__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone_Plan__x.field.Name__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Phone_Plan__x.field.Text_Limit__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Phone_Plan__x,
+  ]
+}

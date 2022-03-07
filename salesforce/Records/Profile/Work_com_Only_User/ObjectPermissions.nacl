@@ -1,0 +1,22 @@
+salesforce.Profile Work_2Ecom_Only_User@pss {
+  objectPermissions = {
+    Document = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Document"
+      viewAllRecords = true
+    }
+    PushTopic = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PushTopic"
+      viewAllRecords = true
+    }
+  }
+}

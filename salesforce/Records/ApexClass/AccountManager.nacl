@@ -1,0 +1,14 @@
+salesforce.ApexClass AccountManager {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AccountManager"
+  content = file("salesforce/Records/ApexClass/AccountManager.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

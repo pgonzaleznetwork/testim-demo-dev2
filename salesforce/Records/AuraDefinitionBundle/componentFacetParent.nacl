@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle componentFacetParent {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "componentFacetParent"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/componentFacetParent/componentFacetParent.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.componentFacetChild
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.componentFacetParent
+    },
+  ]
+}

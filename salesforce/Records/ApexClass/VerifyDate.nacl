@@ -1,0 +1,6 @@
+salesforce.ApexClass VerifyDate {
+  apiVersion = 41
+  status = "Active"
+  fullName = "VerifyDate"
+  content = file("salesforce/Records/ApexClass/VerifyDate.cls")
+}

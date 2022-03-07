@@ -1,0 +1,14 @@
+salesforce.PathAssistant Milestones {
+  fullName = "Milestones"
+  active = true
+  entityName = "Opportunity"
+  fieldName = "StageName"
+  masterLabel = "Milestones"
+  pathAssistantSteps = [
+    {
+      info = "<p>ge</p>"
+      picklistValueName = "Closed Won"
+    },
+  ]
+  recordTypeName = "__MASTER__"
+}

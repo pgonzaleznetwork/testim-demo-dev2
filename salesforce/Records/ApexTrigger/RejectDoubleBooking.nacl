@@ -1,0 +1,23 @@
+salesforce.ApexTrigger RejectDoubleBooking {
+  apiVersion = 41
+  status = "Active"
+  fullName = "RejectDoubleBooking"
+  content = file("salesforce/Records/ApexTrigger/RejectDoubleBooking.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Session_Speaker__c
+    },
+    {
+      reference = salesforce.Session_Speaker__c.field.Session__c
+    },
+    {
+      reference = salesforce.Session_Speaker__c.field.Speaker__c
+    },
+    {
+      reference = salesforce.Session__c
+    },
+    {
+      reference = salesforce.Session__c.field.Session_Date__c
+    },
+  ]
+}

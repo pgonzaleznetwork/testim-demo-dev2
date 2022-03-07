@@ -1,0 +1,11 @@
+salesforce.ApexClass TriggerActionsMock {
+  apiVersion = 44
+  status = "Active"
+  fullName = "TriggerActionsMock"
+  content = file("salesforce/Records/ApexClass/TriggerActionsMock.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.TriggerFramework
+    },
+  ]
+}

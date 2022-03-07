@@ -1,0 +1,13 @@
+salesforce.Profile Force_2Ecom___Free_User@psbss {
+  objectPermissions = {
+    Document = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Document"
+      viewAllRecords = true
+    }
+  }
+}

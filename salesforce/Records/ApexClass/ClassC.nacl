@@ -1,0 +1,17 @@
+salesforce.ApexClass ClassC {
+  apiVersion = 49
+  status = "Active"
+  fullName = "ClassC"
+  content = file("salesforce/Records/ApexClass/ClassC.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Active_Subscriptions__c
+    },
+    {
+      reference = salesforce.Account.field.Customer_ID__c
+    },
+  ]
+}

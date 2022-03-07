@@ -1,0 +1,80 @@
+type salesforce.Campaign {
+  salesforce.Picklist DB_Campaign_Tactic__c {
+    apiName = "Campaign.DB_Campaign_Tactic__c"
+    label = "DB Campaign Tactic"
+    valueSet = [
+      {
+        fullName = "Print Advertisement"
+        default = false
+        label = "Print Advertisement"
+      },
+      {
+        fullName = "Email"
+        default = false
+        label = "Email"
+      },
+      {
+        fullName = "Employment Seminars"
+        default = false
+        label = "Employment Seminars"
+      },
+      {
+        fullName = "Webinars"
+        default = false
+        label = "Webinars"
+      },
+      {
+        fullName = "Public Relations"
+        default = false
+        label = "Public Relations"
+      },
+      {
+        fullName = "Partners"
+        default = false
+        label = "Partners"
+      },
+      {
+        fullName = "Referral Program"
+        default = false
+        label = "Referral Program"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+      {
+        fullName = "Lunches"
+        default = false
+        label = "Lunches"
+      },
+      {
+        fullName = "Direct Mail"
+        default = false
+        label = "Direct Mail"
+      },
+      {
+        fullName = "Sales Call Down"
+        default = false
+        label = "Sales Call Down"
+      },
+      {
+        fullName = "Online Banners/Ads"
+        default = false
+        label = "Online Banners/Ads"
+      },
+      {
+        fullName = "Internal Website"
+        default = false
+        label = "Internal Website"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    sorted = false
+  }
+}

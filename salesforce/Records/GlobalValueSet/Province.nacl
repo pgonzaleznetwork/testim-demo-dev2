@@ -1,0 +1,27 @@
+salesforce.GlobalValueSet Province {
+  fullName = "Province"
+  customValue = [
+    {
+      fullName = "Province1"
+      default = false
+      label = "Province1"
+    },
+    {
+      fullName = "Province2"
+      default = false
+      label = "Province2"
+    },
+    {
+      fullName = "Province3"
+      default = false
+      label = "Province3"
+    },
+    {
+      fullName = "Province4"
+      default = false
+      label = "Province4"
+    },
+  ]
+  masterLabel = "Province"
+  sorted = false
+}

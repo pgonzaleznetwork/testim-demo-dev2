@@ -1,0 +1,82 @@
+salesforce.CustomMetadata Email_Rule_esupport2_1@uvu {
+  fullName = "Email_Rule.esupport2_1"
+  label = "esupport2_1"
+  protected = false
+  values = [
+    {
+      field = "Actions__c"
+      value = "Auto Close"
+      type = "xsd:string"
+    },
+    {
+      field = "Assignment_Category__c"
+    },
+    {
+      field = "Business_Channel__c"
+    },
+    {
+      field = "Business_Division__c"
+    },
+    {
+      field = "Business_Type__c"
+      value = "Contract"
+      type = "xsd:string"
+    },
+    {
+      field = "Country__c"
+    },
+    {
+      field = "Customer_Segmentation__c"
+    },
+    {
+      field = "Department__c"
+      value = "Esupport"
+      type = "xsd:string"
+    },
+    {
+      field = "Email_Address__c"
+      value = "esupport@officedepot.eu"
+      type = "xsd:string"
+    },
+    {
+      field = "From_Address_Operator__c"
+      value = "Contains"
+      type = "xsd:string"
+    },
+    {
+      field = "From_Address__c"
+      value = "mrewis@mail.usf.edu|ales03@dotcom-china|businessaccounts@printercartridgesplease|uk@deals.qype|sales@adpads|ambert.neil@poefg|sweetwheels50@larocheltd|order@ninci|postmaster@|mailer-daemon@|nonaddress@|bljipti@yahoo|noreply@qype|sales@samtow|ales@liquivault|anqtmaterial@niko.kiev.ua|evitro.shop@manoramaonline|gian.marco.bau@alice|ciolis.offer@infoway-it|qlspey@txyn|email.admin@princes-tru|marlon.hernandezgfy@kbronet|kwdtqddt@osq|mailer-daemon@messagelabs|postmaster@flowserve|mailer-daemon@nhs-pd1e-esg009|maidstone@office-angels|pclancy@primus|fytcqo754@3800|shfb10nfbv@toyota.com.au|b.floury@parks.lv|marcia_martin@bonnasabla|dj.bevan@ippv|cklyve@ispcorp|hootie@laserss|kim@enom455|doug@state|kenneth.uugo@yahoo|susan_poplau@dcf.state.fl.us|suuhk@yahoo|abrizio.cosciasvoljsak@burberry|xxzjn@tsmuwt|sales01@tjwanxie|yeaxa738@agrein|ppisani@thecct.org.uk|businessaccounts@officesuppliesplease|info@rblinews|suyvq@yahoo|eoduy@zxoslh|sinoltd@163|businessaccounts@officesuppliesplease|devnull@amon-sul.firstb2b.net|regina@sinoimex.com"
+      type = "xsd:string"
+    },
+    {
+      field = "Keywords_Operator__c"
+    },
+    {
+      field = "Keywords_Type__c"
+    },
+    {
+      field = "Keywords__c"
+    },
+    {
+      field = "Language__c"
+      value = "EN"
+      type = "xsd:string"
+    },
+    {
+      field = "Order__c"
+      value = "103"
+      type = "xsd:double"
+    },
+    {
+      field = "Origin__c"
+    },
+    {
+      field = "Process__c"
+    },
+    {
+      field = "Region__c"
+      value = "UKIR"
+      type = "xsd:string"
+    },
+  ]
+}

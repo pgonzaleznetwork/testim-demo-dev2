@@ -1,0 +1,6 @@
+salesforce.ApexClass AsyncCallBehaviour {
+  apiVersion = 43
+  status = "Active"
+  fullName = "AsyncCallBehaviour"
+  content = file("salesforce/Records/ApexClass/AsyncCallBehaviour.cls")
+}

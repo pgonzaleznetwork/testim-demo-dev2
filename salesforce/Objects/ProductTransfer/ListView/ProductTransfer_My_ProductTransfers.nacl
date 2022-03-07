@@ -1,0 +1,8 @@
+salesforce.ListView ProductTransfer_My_ProductTransfers {
+  fullName = "ProductTransfer.My_ProductTransfers"
+  filterScope = "Mine"
+  label = "My Product Transfers"
+  _parent = [
+    salesforce.ProductTransfer,
+  ]
+}

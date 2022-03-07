@@ -1,0 +1,74 @@
+type salesforce.Show__c {
+  salesforce.MasterDetail Host__c {
+    apiName = "Show__c.Host__c"
+    label = "Host"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = true
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    createable = true
+    updateable = true
+    relationshipOrder = 0
+    relationshipName = "Shows"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Shows"
+    trackTrending = false
+  }
+  salesforce.Number Active_Syndications__c {
+    apiName = "Show__c.Active_Syndications__c"
+    label = "Active Syndications"
+    defaultValueFormula = "ABS(0)"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Picklist Format__c {
+    apiName = "Show__c.Format__c"
+    label = "Format"
+    valueSet = [
+      {
+        fullName = "Radio"
+        default = false
+        label = "Radio"
+      },
+      {
+        fullName = "Podcast"
+        default = false
+        label = "Podcast"
+      },
+      {
+        fullName = "Vlog"
+        default = false
+        label = "Vlog"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Summary All_Syndications__c {
+    apiName = "Show__c.All_Syndications__c"
+    label = "All Syndications"
+    precision = 18
+    scale = 0
+    createable = false
+    updateable = false
+    queryable = true
+    externalId = false
+    summaryForeignKey = "Syndication__c.Show__c"
+    summaryOperation = "count"
+    trackTrending = false
+    _hidden_value = true
+  }
+}

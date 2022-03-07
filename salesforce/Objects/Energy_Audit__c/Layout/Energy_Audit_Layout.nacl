@@ -1,0 +1,89 @@
+salesforce.Layout Energy_Audit__c_Energy_Audit_Layout@uuubss {
+  fullName = "Energy_Audit__c-Energy Audit Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Energy_Audit__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Energy_Audit__c.field.Type_of_Installation__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Energy_Audit__c.field.Account__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Energy_Audit__c.field.Average_Annual_Electric_Cost__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Energy_Audit__c.field.Annual_Energy_Usage_kWh__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Energy_Audit__c.field.Audit_Notes__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Energy_Audit__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Energy_Audit__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Energy_Audit__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Energy_Audit__c,
+  ]
+}

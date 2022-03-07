@@ -1,0 +1,24 @@
+type salesforce.ApptBundleRestrictPolicy {
+  salesforce.MasterDetail BundlePolicyId {
+    apiName = "ApptBundleRestrictPolicy.BundlePolicyId"
+    _hidden_value = true
+  }
+  string DoesAllowEmpty {
+    _hidden_value = true
+  }
+  string DoesRestrictAutomaticMode {
+    _hidden_value = true
+  }
+  string DoesRestrictManualMode {
+    _hidden_value = true
+  }
+  string IsRestrictByDateOnly {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  string RestrictionFieldName {
+    _hidden_value = true
+  }
+}

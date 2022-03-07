@@ -1,0 +1,37 @@
+salesforce.CustomMetadata Indicator_Badge_Active_Subscriber@uvu {
+  fullName = "Indicator_Badge.Active_Subscriber"
+  label = "Active Subscriber"
+  protected = false
+  values = [
+    {
+      field = "Badge_Color__c"
+      value = "LimeGreen"
+      type = "xsd:string"
+    },
+    {
+      field = "Badge_Icon_Name__c"
+      value = "custom:custom17"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Type__c"
+      value = "Greater or Equal"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Value__c"
+      value = "1"
+      type = "xsd:string"
+    },
+    {
+      field = "Object__c"
+      value = "Account"
+      type = "xsd:string"
+    },
+    {
+      field = "Related_Field__c"
+      value = "Active_Subscriptions__c"
+      type = "xsd:string"
+    },
+  ]
+}

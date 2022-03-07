@@ -1,0 +1,21 @@
+type salesforce.ApptBundleSortPolicy {
+  salesforce.MasterDetail BundlePolicyId {
+    apiName = "ApptBundleSortPolicy.BundlePolicyId"
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  string SortDirection {
+    _hidden_value = true
+  }
+  string SortFieldName {
+    _hidden_value = true
+  }
+  string SortOrder {
+    _hidden_value = true
+  }
+  string SortType {
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,89 @@
+salesforce.AuraDefinitionBundle GridTest {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "GridTest"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/GridTest/GridTest.css")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/GridTest/GridTestController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/GridTest/GridTest.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.GridTest
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningAccordion
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningAvatar
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningBadge
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningBreadcrumb
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButton
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonGroup
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonIcon
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonMenu
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningButtonStateful
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningCard
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningDataTable
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningDualListBox
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningDynamicIcon
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningFields
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningHelpText
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningLayout
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningPill
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningProgressBar
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningProgressIndicator
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningSpinner
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTab
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTile
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTree
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningVerticalNavigation
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.UnscapedHTML
+    },
+  ]
+}

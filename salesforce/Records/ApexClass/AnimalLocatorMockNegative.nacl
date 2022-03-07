@@ -1,0 +1,6 @@
+salesforce.ApexClass AnimalLocatorMockNegative {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AnimalLocatorMockNegative"
+  content = file("salesforce/Records/ApexClass/AnimalLocatorMockNegative.cls")
+}

@@ -1,0 +1,19 @@
+<aura:component >
+	             <!-- Layout Start -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Path</h1>
+                    
+                    <div class="custom-box">
+                       <c:LightningPath /> 
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" class="layoutItemClass">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_small slds-text-align_center">Lightning Help Text</h1>
+                    <div class="custom-box">
+                        <c:LightningHelpText />
+                    </div>
+                </lightning:layoutItem>      
+            </lightning:layout> 
+            <!-- Layout End -->
+</aura:component>

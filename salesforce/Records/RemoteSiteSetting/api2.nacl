@@ -1,0 +1,6 @@
+salesforce.RemoteSiteSetting api2 {
+  fullName = "api2"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "http://resourceful-moose-448750-dev-ed.my.salesforce.com"
+}

@@ -1,0 +1,154 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Opportunity Information	Opportunity Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Other Information	Other Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.System Information	System Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Description Information	Description Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Custom Links	Custom Links
+Layout Section	LayoutSection.Account.Account Layout.Account Information	Account Information
+Layout Section	LayoutSection.Account.Account Layout.Address Information	Address Information
+Layout Section	LayoutSection.Account.Account Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Account.Account Layout.System Information	System Information
+Layout Section	LayoutSection.Account.Account Layout.Description Information	Description Information
+Layout Section	LayoutSection.Account.Account Layout.Custom Links	Custom Links
+Standard Field Label	Owner ID	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Private	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Name	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Opportunity Type	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Lead Source	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Amount	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Expected Amount	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Close Date	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Next Step	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Stage	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Probability (%)	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Campaign ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Created By ID	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Last Modified By ID	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Description	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Name	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Parent Account ID	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Number	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Site	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Source	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Type	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Industry	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Annual Revenue	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Rating	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Phone	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Fax	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Website	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Ticker Symbol	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Ownership	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	SIC Code	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Billing Address	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Shipping Address	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account Description	Account_Use_Rename_Tabs_And_Labels
+Standard Field Label	Employees	Account_Use_Rename_Tabs_And_Labels
+Custom Field Label	CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+Custom Field Label	CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+Custom Field Label	CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+Custom Field Label	CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+Custom Field Label	CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+Custom Field Label	CustomField.Account.Match_Billing_Address.FieldLabel	Match Billing Address
+Custom Field Label	CustomField.Account.Number_of_Contacts.FieldLabel	Number of Contacts
+Custom Field Label	CustomField.Account.RequiredField.FieldLabel	RequiredField
+Custom Field Label	CustomField.Account.Location.FieldLabel	Location
+Custom Field Label	CustomField.Account.Potential_Value.FieldLabel	Potential Value
+Custom Field Label	CustomField.Account.Social_Sec_Number.FieldLabel	Social Sec Number
+Custom Field Label	CustomField.Account.CustomerPriority.FieldLabel	Customer Priority
+Custom Field Label	CustomField.Account.SLAExpirationDate.FieldLabel	SLA Expiration Date
+Custom Field Label	CustomField.Account.NumberofLocations.FieldLabel	Number of Locations
+Custom Field Label	CustomField.Account.Active.FieldLabel	Active
+Custom Field Label	CustomField.Account.SLA.FieldLabel	SLA
+Custom Field Label	CustomField.Account.SLASerialNumber.FieldLabel	SLA Serial Number
+Custom Field Label	CustomField.Account.UpsellOpportunity.FieldLabel	Upsell Opportunity
+Standard Field Help Text	StandardFieldHelp.Opportunity.StageName.HelpText	Set this field depending on where the deal is.
+Standard Field Help Text	StandardFieldHelp.Account.AccountNumber.HelpText	This is a standard salesforce field that shows some number. No idea what for...
+Standard Field Help Text	StandardFieldHelp.Account.AccountSource.HelpText	account source help text
+Custom Field Help Text	CustomField.Opportunity.TrackingNumber.HelpText	This is the tracking number
+Custom Field Help Text	CustomField.Account.Number_of_Contacts.HelpText	How many coontacts are available
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Upgrade	Existing Customer - Upgrade
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Replacement	Existing Customer - Replacement
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Downgrade	Existing Customer - Downgrade
+Picklist Value	PicklistValue.Standard.opportunityType.New Customer	New Customer
+Picklist Value	PicklistValue.Standard.LeadSource.Web	Web
+Picklist Value	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+Picklist Value	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+Picklist Value	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+Picklist Value	PicklistValue.Standard.LeadSource.Other	Other
+Picklist Value	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+Picklist Value	PicklistValue.Standard.opportunityStage.Prospecting	Prospecting
+Picklist Value	PicklistValue.Standard.opportunityStage.Qualification	Qualification
+Picklist Value	PicklistValue.Standard.opportunityStage.Needs Analysis	Needs Analysis
+Picklist Value	PicklistValue.Standard.opportunityStage.Value Proposition	Value Proposition
+Picklist Value	PicklistValue.Standard.opportunityStage.Id. Decision Makers	 Decision Makers
+Picklist Value	PicklistValue.Standard.opportunityStage.Perception Analysis	Perception Analysis
+Picklist Value	PicklistValue.Standard.opportunityStage.Proposal/Price Quote	Proposal/Price Quote
+Picklist Value	PicklistValue.Standard.opportunityStage.Negotiation/Review	Negotiation/Review
+Picklist Value	PicklistValue.Standard.opportunityStage.Closed Won	Closed Won
+Picklist Value	PicklistValue.Standard.opportunityStage.Closed Lost	Closed Lost
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed
+Picklist Value	PicklistValue.Standard.accountType.Prospect	Prospect
+Picklist Value	PicklistValue.Standard.accountType.Customer - Direct	Customer - Direct
+Picklist Value	PicklistValue.Standard.accountType.Customer - Channel	Customer - Channel
+Picklist Value	PicklistValue.Standard.accountType.Channel Partner / Reseller	Channel Partner / Reseller
+Picklist Value	PicklistValue.Standard.accountType.Installation Partner	Installation Partner
+Picklist Value	PicklistValue.Standard.accountType.Technology Partner	Technology Partner
+Picklist Value	PicklistValue.Standard.accountType.Other	Other
+Picklist Value	PicklistValue.Standard.accountType.Customer	Customer
+Picklist Value	PicklistValue.Standard.accountType.Pending	Pending
+Picklist Value	PicklistValue.Standard.industry.Agriculture	Agriculture
+Picklist Value	PicklistValue.Standard.industry.Apparel	Apparel
+Picklist Value	PicklistValue.Standard.industry.Banking	Banking
+Picklist Value	PicklistValue.Standard.industry.Biotechnology	Biotechnology
+Picklist Value	PicklistValue.Standard.industry.Chemicals	Chemicals
+Picklist Value	PicklistValue.Standard.industry.Communications	Communications
+Picklist Value	PicklistValue.Standard.industry.Construction	Construction
+Picklist Value	PicklistValue.Standard.industry.Consulting	Consulting
+Picklist Value	PicklistValue.Standard.industry.Education	Education
+Picklist Value	PicklistValue.Standard.industry.Electronics	Electronics
+Picklist Value	PicklistValue.Standard.industry.Energy	Energy
+Picklist Value	PicklistValue.Standard.industry.Engineering	Engineering
+Picklist Value	PicklistValue.Standard.industry.Entertainment	Entertainment
+Picklist Value	PicklistValue.Standard.industry.Environmental	Environmental
+Picklist Value	PicklistValue.Standard.industry.Finance	Finance
+Picklist Value	PicklistValue.Standard.industry.Food & Beverage	Food & Beverage
+Picklist Value	PicklistValue.Standard.industry.Government	Government
+Picklist Value	PicklistValue.Standard.industry.Healthcare	Healthcare
+Picklist Value	PicklistValue.Standard.industry.Hospitality	Hospitality
+Picklist Value	PicklistValue.Standard.industry.Insurance	Insurance
+Picklist Value	PicklistValue.Standard.industry.Machinery	Machinery
+Picklist Value	PicklistValue.Standard.industry.Manufacturing	Manufacturing
+Picklist Value	PicklistValue.Standard.industry.Media	Media
+Picklist Value	PicklistValue.Standard.industry.Not For Profit	Not For Profit
+Picklist Value	PicklistValue.Standard.industry.Recreation	Recreation
+Picklist Value	PicklistValue.Standard.industry.Retail	Retail
+Picklist Value	PicklistValue.Standard.industry.Technology	Technology
+Picklist Value	PicklistValue.Standard.industry.Telecommunications	Telecommunications
+Picklist Value	PicklistValue.Standard.industry.Transportation	Transportation
+Picklist Value	PicklistValue.Standard.industry.Utilities	Utilities
+Picklist Value	PicklistValue.Standard.industry.Other	Other
+Picklist Value	PicklistValue.Standard.accountRating.Hot	Hot
+Picklist Value	PicklistValue.Standard.accountRating.Warm	Warm
+Picklist Value	PicklistValue.Standard.accountRating.Cold	Cold
+Picklist Value	PicklistValue.Standard.accountOwnership.Public	Public
+Picklist Value	PicklistValue.Standard.accountOwnership.Private	Private
+Picklist Value	PicklistValue.Standard.accountOwnership.Subsidiary	Subsidiary
+Picklist Value	PicklistValue.Standard.accountOwnership.Other	Other
+Picklist Value	PicklistValue.Account.CustomerPriority.High	High
+Picklist Value	PicklistValue.Account.CustomerPriority.Low	Low
+Picklist Value	PicklistValue.Account.CustomerPriority.Medium	Medium
+Picklist Value	PicklistValue.Account.Active.No	No
+Picklist Value	PicklistValue.Account.Active.Yes	Yes
+Picklist Value	PicklistValue.Account.SLA.Gold	Gold
+Picklist Value	PicklistValue.Account.SLA.Silver	Silver
+Picklist Value	PicklistValue.Account.SLA.Platinum	Platinum
+Picklist Value	PicklistValue.Account.SLA.Bronze	Bronze
+Picklist Value	PicklistValue.Account.UpsellOpportunity.Maybe	Maybe
+Picklist Value	PicklistValue.Account.UpsellOpportunity.No	No
+Picklist Value	PicklistValue.Standard.industry.Shipping	Shipping
+Picklist Value	PicklistValue.Account.UpsellOpportunity.Yes	Yes

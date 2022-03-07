@@ -1,0 +1,13 @@
+salesforce.WorkflowFieldUpdate Opportunity_Update_something@vu {
+  fullName = "Opportunity.Update_something"
+  field = salesforce.Opportunity.field.Amount
+  formula = "1423"
+  name = "Update something"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

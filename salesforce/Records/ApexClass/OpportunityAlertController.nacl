@@ -1,0 +1,14 @@
+salesforce.ApexClass OpportunityAlertController {
+  apiVersion = 33
+  status = "Active"
+  fullName = "OpportunityAlertController"
+  content = file("salesforce/Records/ApexClass/OpportunityAlertController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+}

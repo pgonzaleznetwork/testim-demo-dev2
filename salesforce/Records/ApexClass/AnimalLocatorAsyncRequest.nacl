@@ -1,0 +1,11 @@
+salesforce.ApexClass AnimalLocatorAsyncRequest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AnimalLocatorAsyncRequest"
+  content = file("salesforce/Records/ApexClass/AnimalLocatorAsyncRequest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AnimalLocator
+    },
+  ]
+}

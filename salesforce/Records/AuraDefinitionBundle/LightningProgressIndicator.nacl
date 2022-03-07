@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle LightningProgressIndicator {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "LightningProgressIndicator"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/LightningProgressIndicator/LightningProgressIndicatorController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/LightningProgressIndicator/LightningProgressIndicator.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningProgressIndicator
+    },
+  ]
+}

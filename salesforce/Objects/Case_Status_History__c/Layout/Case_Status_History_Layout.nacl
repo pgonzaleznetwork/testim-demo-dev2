@@ -1,0 +1,125 @@
+salesforce.Layout Case_Status_History__c_Case_Status_History_Layout@uuuubsss {
+  fullName = "Case_Status_History__c-Case Status History Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case_Status_History__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.CaseAge_Business_Hours__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.CaseAge_Calendar_Hours__c
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Case_Status_History__c.field.Case__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Changed_Field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Change_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Current_Time_Bucket__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.End_time__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.New_Status__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.New_Value__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Old_Status__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Owner_id__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Owner_name__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Owner_Type__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Start_time__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case_Status_History__c.field.Users_Primary_Queue__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Case_Status_History__c.field.Autonumber__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case_Status_History__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case_Status_History__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Case_Status_History__c,
+  ]
+}

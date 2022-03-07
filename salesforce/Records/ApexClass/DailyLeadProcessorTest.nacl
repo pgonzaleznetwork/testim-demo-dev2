@@ -1,0 +1,14 @@
+salesforce.ApexClass DailyLeadProcessorTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "DailyLeadProcessorTest"
+  content = file("salesforce/Records/ApexClass/DailyLeadProcessorTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.DailyLeadProcessor
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

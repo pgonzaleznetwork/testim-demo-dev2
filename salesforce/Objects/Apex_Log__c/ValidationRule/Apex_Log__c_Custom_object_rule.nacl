@@ -1,0 +1,9 @@
+salesforce.ValidationRule Apex_Log__c_Custom_object_rule {
+  fullName = "Apex_Log__c.Custom_object_rule"
+  active = true
+  errorConditionFormula = "true"
+  errorMessage = "true"
+  _parent = [
+    salesforce.Apex_Log__c,
+  ]
+}

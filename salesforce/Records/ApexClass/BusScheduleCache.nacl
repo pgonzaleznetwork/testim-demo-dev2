@@ -1,0 +1,6 @@
+salesforce.ApexClass BusScheduleCache {
+  apiVersion = 41
+  status = "Active"
+  fullName = "BusScheduleCache"
+  content = file("salesforce/Records/ApexClass/BusScheduleCache.cls")
+}

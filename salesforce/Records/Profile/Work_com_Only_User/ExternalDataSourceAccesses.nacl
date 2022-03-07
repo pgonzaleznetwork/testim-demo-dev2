@@ -1,0 +1,8 @@
+salesforce.Profile Work_2Ecom_Only_User@pss {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+salesforce.ApexClass SyndicationEventHandler_Test {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SyndicationEventHandler_Test"
+  content = file("salesforce/Records/ApexClass/SyndicationEventHandler_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Show__c
+    },
+    {
+      reference = salesforce.Show__c.field.Host__c
+    },
+    {
+      reference = salesforce.Syndication__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.End_Date__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.IsActive__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.Show__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.Start_Date__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.Subscriber_Station_Network__c
+    },
+  ]
+}

@@ -1,0 +1,54 @@
+salesforce.StandardValueSet CaseStatus {
+  fullName = "CaseStatus"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "New"
+      default = true
+      label = "New"
+      closed = false
+    },
+    {
+      fullName = "Working"
+      default = false
+      label = "Working"
+      closed = false
+    },
+    {
+      fullName = "Escalated"
+      default = false
+      label = "Escalated"
+      closed = false
+    },
+    {
+      fullName = "Closed"
+      default = false
+      label = "Closed"
+      closed = true
+    },
+    {
+      fullName = "In Progress"
+      default = false
+      label = "In Progress"
+      closed = false
+    },
+    {
+      fullName = "Pending Customer Response"
+      default = false
+      label = "Pending Customer Response"
+      closed = false
+    },
+    {
+      fullName = "Pending Advisor Response"
+      default = false
+      label = "Pending Advisor Response"
+      closed = false
+    },
+    {
+      fullName = "Pending External Response"
+      default = false
+      label = "Pending External Response"
+      closed = false
+    },
+  ]
+}

@@ -1,0 +1,13 @@
+salesforce.ApexPage LightningConnectQuickstart {
+  apiVersion = 32
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "LightningConnectQuickstart"
+  fullName = "LightningConnectQuickstart"
+  content = file("salesforce/Records/ApexPage/LightningConnectQuickstart.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LightningConnectQuickstart
+    },
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.ApexClass Amoss_Asserts {
+  apiVersion = 50
+  status = "Active"
+  fullName = "Amoss_Asserts"
+  content = file("salesforce/Records/ApexClass/Amoss_Asserts.cls")
+}

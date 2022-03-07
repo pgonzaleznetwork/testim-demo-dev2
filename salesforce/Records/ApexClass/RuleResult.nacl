@@ -1,0 +1,6 @@
+salesforce.ApexClass RuleResult {
+  apiVersion = 44
+  status = "Active"
+  fullName = "RuleResult"
+  content = file("salesforce/Records/ApexClass/RuleResult.cls")
+}

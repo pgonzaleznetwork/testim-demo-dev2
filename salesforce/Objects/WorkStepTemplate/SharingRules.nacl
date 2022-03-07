@@ -1,0 +1,6 @@
+salesforce.SharingRules WorkStepTemplate {
+  fullName = "WorkStepTemplate"
+  _parent = [
+    salesforce.WorkStepTemplate,
+  ]
+}

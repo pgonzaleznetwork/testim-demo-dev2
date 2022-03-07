@@ -1,0 +1,135 @@
+type salesforce.MaintenanceAsset {
+  serviceid Id {
+    apiName = "MaintenanceAsset.Id"
+    label = "Maintenance Asset ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "MaintenanceAsset.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber MaintenanceAssetNumber {
+    apiName = "MaintenanceAsset.MaintenanceAssetNumber"
+    label = "Maintenance Asset Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "MaintenanceAsset.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "MaintenanceAsset.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "MaintenanceAsset.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "MaintenanceAsset.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "MaintenanceAsset.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MaintenancePlanId {
+    apiName = "MaintenanceAsset.MaintenancePlanId"
+    label = "Maintenance Plan ID"
+    _required = true
+    referenceTo = [
+      salesforce.MaintenancePlan,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "MaintenancePlan"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup AssetId {
+    apiName = "MaintenanceAsset.AssetId"
+    label = "Asset ID"
+    _required = true
+    referenceTo = [
+      salesforce.Asset,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Asset"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "MaintenanceAsset.WorkTypeId"
+    label = "Work Type ID"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    inlineHelpText = "Set the work type that governs the duration, required skills and products, and linked articles inherited by generated work orders."
+    createable = true
+    updateable = true
+    relationshipName = "WorkType"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup ContractLineItemId {
+    apiName = "MaintenanceAsset.ContractLineItemId"
+    label = "Contract Line Item ID"
+    referenceTo = [
+      salesforce.ContractLineItem,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ContractLineItem"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Unknown NextSuggestedMaintenanceDate {
+    apiName = "MaintenanceAsset.NextSuggestedMaintenanceDate"
+    inlineHelpText = "The suggested date of service for the work order in the next batch generated for this maintenance asset. The value is updated after each batch is generated."
+    trackHistory = false
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

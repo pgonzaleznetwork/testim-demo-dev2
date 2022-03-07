@@ -1,0 +1,169 @@
+salesforce.Layout Location_Location_Layout@bs {
+  fullName = "Location-Location Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Location.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Location.field.LocationType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.IsInventoryLocation
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.ParentLocationId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.VisitorAddressId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.TimeZone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.DrivingDirections
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Location.field.CreatedById
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Location.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Location.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "AddressType",
+        "Description",
+      ]
+      relatedList = "Addresses"
+    },
+    {
+      fields = [
+        "Name",
+        "ParentRecord",
+        "Type",
+      ]
+      relatedList = "AssociatedLocations"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      fields = [
+        "Name",
+        "LocationType",
+        "CreatedBy",
+      ]
+      relatedList = "ChildLocations"
+    },
+    {
+      fields = [
+        "Name",
+        "Product2",
+        "QuantityOnHand",
+        "QuantityUnitOfMeasure",
+      ]
+      relatedList = "ProductItems"
+    },
+    {
+      fields = [
+        "Name",
+        "ServiceTerritory",
+        "Location",
+      ]
+      relatedList = "ServiceTerritoryLocations"
+    },
+    {
+      fields = [
+        "ASSET.NAME",
+        "ASSET.SERIAL_NUMBER",
+        "ASSET.INSTALL_DATE",
+        "ASSET.QUANTITY",
+        "ACCOUNT.NAME",
+        "CONTACT.NAME",
+        "ASSET.STATUS",
+      ]
+      relatedList = "RelatedAssetList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  relatedObjects = [
+    "ParentLocationId",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000iRHCJ"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Location,
+  ]
+}

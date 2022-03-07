@@ -1,0 +1,29 @@
+salesforce.ApexClass INDICATOR_Service {
+  apiVersion = 42
+  status = "Active"
+  fullName = "INDICATOR_Service"
+  content = file("salesforce/Records/ApexClass/INDICATOR_Service.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Indicator_Badge__mdt
+    },
+    {
+      reference = salesforce.Indicator_Badge__mdt.field.Badge_Color__c
+    },
+    {
+      reference = salesforce.Indicator_Badge__mdt.field.Badge_Icon_Name__c
+    },
+    {
+      reference = salesforce.Indicator_Badge__mdt.field.Comparison_Type__c
+    },
+    {
+      reference = salesforce.Indicator_Badge__mdt.field.Comparison_Value__c
+    },
+    {
+      reference = salesforce.Indicator_Badge__mdt.field.Object__c
+    },
+    {
+      reference = salesforce.Indicator_Badge__mdt.field.Related_Field__c
+    },
+  ]
+}

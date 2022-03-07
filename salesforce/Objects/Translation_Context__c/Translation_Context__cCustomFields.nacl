@@ -1,0 +1,45 @@
+type salesforce.Translation_Context__c {
+  salesforce.FormulaText Record_Link__c {
+    apiName = "Translation_Context__c.Record_Link__c"
+    label = "Record Link"
+    formula = "\"/\" & Id"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    trackTrending = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Context_Type__c {
+    apiName = "Translation_Context__c.Context_Type__c"
+    label = "Context Type"
+    valueSet = [
+      {
+        fullName = "Page Layout"
+        default = false
+        label = "Page Layout"
+      },
+      {
+        fullName = "Object Record Types"
+        default = false
+        label = "Object Record Types"
+      },
+      {
+        fullName = "Object Validation Rules"
+        default = false
+        label = "Object Validation Rules"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackTrending = false
+    sorted = false
+  }
+}

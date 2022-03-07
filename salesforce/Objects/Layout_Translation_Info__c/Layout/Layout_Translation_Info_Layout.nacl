@@ -1,0 +1,120 @@
+salesforce.Layout Layout_Translation_Info__c_Layout_Translation_Info_Layout@uuuubsss {
+  fullName = "Layout_Translation_Info__c-Layout Translation Info Layout"
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Layout_Translation_Info__c.field.Name
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "NAME",
+        "Key__c",
+        "Master_Label__c",
+      ]
+      relatedList = salesforce.Action_Button__c.field.Layout_Translation_Info__c
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "Section_Key__c",
+      ]
+      relatedList = salesforce.Layout_Section_Translation_Name__c.field.Layout_Translation_Info__c
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "Label_Key__c",
+        "Master_Label__c",
+      ]
+      relatedList = salesforce.Field_Translation_Name__c.field.Layout_Translation_Info__c
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "Help_Text_Key__c",
+        "Master_Help_Text__c",
+      ]
+      relatedList = salesforce.Custom_Field_Help_Text__c.field.Layout_Translation_Info__c
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "Help_Text_Key__c",
+        "Master_Help_Text__c",
+      ]
+      relatedList = salesforce.Standard_Field_Help__c.field.Layout_Translation_Info__c
+    },
+    {
+      excludeButtons = [
+        "New",
+      ]
+      fields = [
+        "NAME",
+        "Value_Key__c",
+      ]
+      relatedList = salesforce.Picklist_Value__c.field.Layout_Translation_Info__c
+    },
+    {
+      fields = [
+        "NAME",
+        "Key__c",
+        "Master_Label__c",
+      ]
+      relatedList = salesforce.Related_List_Item__c.field.Layout_Translation_Info__c
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h0O00000NIkVG"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  _parent = [
+    salesforce.Layout_Translation_Info__c,
+  ]
+}

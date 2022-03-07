@@ -1,0 +1,12 @@
+salesforce.CustomTab Top_Accounts_and_Opportunities {
+  fullName = "Top_Accounts_and_Opportunities"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Top_Accounts_and_Opportunities"
+  label = "Top Accounts and Opportunities"
+  motif = "Custom9: Lightning"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Top_Accounts_and_Opportunities
+    },
+  ]
+}

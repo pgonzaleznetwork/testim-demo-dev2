@@ -1,0 +1,14 @@
+salesforce.ApexClass ClosedOpportunityTriggerClass {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ClosedOpportunityTriggerClass"
+  content = file("salesforce/Records/ApexClass/ClosedOpportunityTriggerClass.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Opportunity
+    },
+    {
+      reference = salesforce.Task
+    },
+  ]
+}

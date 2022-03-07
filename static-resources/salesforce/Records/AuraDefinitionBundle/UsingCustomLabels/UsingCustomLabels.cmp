@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<p>Success Message: {!$Label.c.Lightning_Success_Message}</p>
+</aura:component>

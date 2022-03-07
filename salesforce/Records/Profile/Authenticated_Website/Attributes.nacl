@@ -1,0 +1,5 @@
+salesforce.Profile Authenticated_Website@s {
+  fullName = "Authenticated Website"
+  custom = false
+  userLicense = "Authenticated Website"
+}

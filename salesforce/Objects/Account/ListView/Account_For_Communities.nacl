@@ -1,0 +1,22 @@
+salesforce.ListView Account_For_Communities {
+  fullName = "Account.For_Communities"
+  columns = [
+    "ACCOUNT.NAME",
+    "ACCOUNT.SITE",
+    "ACCOUNT.ADDRESS1_STATE",
+    "ACCOUNT.PHONE1",
+    "ACCOUNT.TYPE",
+    "CORE.USERS.ALIAS",
+  ]
+  filterScope = "Everything"
+  label = "For Communities"
+  language = "en_US"
+  sharedTo = {
+    group = [
+      "Customer_and_Partner_Community_Users",
+    ]
+  }
+  _parent = [
+    salesforce.Account,
+  ]
+}

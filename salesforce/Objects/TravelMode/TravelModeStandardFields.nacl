@@ -1,0 +1,14 @@
+type salesforce.TravelMode {
+  string CanUseTollRoads {
+    _hidden_value = true
+  }
+  string IsTransportingHazmat {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  string TransportType {
+    _hidden_value = true
+  }
+}

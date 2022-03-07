@@ -1,0 +1,184 @@
+type salesforce.Dedupe_Branch__c {
+  salesforce.Lookup Matching_Rule_To_Evaluate__c {
+    apiName = "Dedupe_Branch__c.Matching_Rule_To_Evaluate__c"
+    label = "Do this check"
+    referenceTo = [
+      salesforce.Matching_Rule__c,
+    ]
+    inlineHelpText = "When a Lead enters this branch, this is the Matching Rule that they will be evaluated against."
+    createable = true
+    updateable = true
+    relationshipName = "Dedupe_Branches"
+    queryable = true
+    deleteConstraint = "SetNull"
+    description = "When a Lead enters this branch, this is the Matching Rule that they will be evaluated against."
+    externalId = false
+    relationshipLabel = "Dedupe Branches"
+    trackTrending = false
+  }
+  salesforce.Lookup If_True__c {
+    apiName = "Dedupe_Branch__c.If_True__c"
+    label = "If True"
+    referenceTo = [
+      salesforce.Matching_Rule__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Dedupe_Branches1"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Dedupe Branches (If True)"
+    trackTrending = false
+  }
+  salesforce.Lookup If_False__c {
+    apiName = "Dedupe_Branch__c.If_False__c"
+    label = "If False"
+    referenceTo = [
+      salesforce.Matching_Rule__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Dedupe_Branches2"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "Dedupe Branches (If False)"
+    trackTrending = false
+  }
+  salesforce.MasterDetail Dedupe_Scenario__c {
+    apiName = "Dedupe_Branch__c.Dedupe_Scenario__c"
+    label = "Dedupe Scenario"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Dedupe_Scenario__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Dedupe_Branches"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Dedupe Branches"
+    trackTrending = false
+  }
+  salesforce.Text True_Set_This_Field__c {
+    apiName = "Dedupe_Branch__c.True_Set_This_Field__c"
+    label = "Set This Field"
+    inlineHelpText = "If the Lead matches the Matching Rule criteria, specify the API name of the field to update."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    description = "If the Lead matches the Matching Rule criteria, specify the API name of the field to update."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text True_To_This_Value__c {
+    apiName = "Dedupe_Branch__c.True_To_This_Value__c"
+    label = "To This Value"
+    inlineHelpText = "If the Lead matches the Matching Rule criteria, specify the value to enter in the field specified in the \"Set This Field\" field."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    description = "If the Lead matches the Matching Rule criteria, specify the value to enter in the field specified in the \"Set This Field\" field."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text False_Set_This_Field__c {
+    apiName = "Dedupe_Branch__c.False_Set_This_Field__c"
+    label = "Set This Field"
+    inlineHelpText = "If the Lead doesn't match the Matching Rule criteria, specify the API name of a Field to update."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    description = "If the Lead doesn't match the Matching Rule criteria, specify the API name of a Field to update."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Text False_To_This_Value__c {
+    apiName = "Dedupe_Branch__c.False_To_This_Value__c"
+    label = "To This Value"
+    inlineHelpText = "If the Lead doesn't match the Matching Rule criteria, specify the value to enter in the field specified in the \"Set This Field\" field."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    description = "If the Lead doesn't match the Matching Rule criteria, specify the value to enter in the field specified in the \"Set This Field\" field."
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Lookup True_Next_Branch__c {
+    apiName = "Dedupe_Branch__c.True_Next_Branch__c"
+    label = "True - Next Branch"
+    referenceTo = [
+      salesforce.Dedupe_Branch__c,
+    ]
+    inlineHelpText = "If the Lead matches the Matching Rule criteria, specify the next branch that they should be processed through."
+    createable = true
+    updateable = true
+    relationshipName = "Dedupe_Branches"
+    queryable = true
+    deleteConstraint = "SetNull"
+    description = "If the Lead matches the Matching Rule criteria, specify the next branch that they should be processed through."
+    externalId = false
+    relationshipLabel = "Dedupe Branches"
+    trackTrending = false
+  }
+  salesforce.Lookup False_Next_Branch__c {
+    apiName = "Dedupe_Branch__c.False_Next_Branch__c"
+    label = "False - Next Branch"
+    referenceTo = [
+      salesforce.Dedupe_Branch__c,
+    ]
+    inlineHelpText = "If the Lead does not match the Matching Rule criteria, specify the next branch that they should be processed through."
+    createable = true
+    updateable = true
+    relationshipName = "Dedupe_Branches1"
+    queryable = true
+    deleteConstraint = "SetNull"
+    description = "If the Lead does not match the Matching Rule criteria, specify the next branch that they should be processed through."
+    externalId = false
+    relationshipLabel = "Dedupe Branches (False - Next Branch)"
+    trackTrending = false
+  }
+  salesforce.Checkbox Starting_Point__c {
+    apiName = "Dedupe_Branch__c.Starting_Point__c"
+    label = "Starting Point"
+    defaultValue = false
+    inlineHelpText = "Specifies that this is the first branch that should be evaluated for this scenario. Only one branch should be marked as the Starting Point."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Specifies that this is the first branch that should be evaluated for this scenario. Only one branch should be marked as the Starting Point."
+    externalId = false
+    trackTrending = false
+  }
+  salesforce.Checkbox Use_Context_from_Calling_Branch__c {
+    apiName = "Dedupe_Branch__c.Use_Context_from_Calling_Branch__c"
+    label = "Use Context from Calling Branch"
+    defaultValue = false
+    inlineHelpText = "If selected, this branch will only act on the matching records from the previous branch. For example, if the previous branch found 2 Contacts, this branch will only execute in the context of those 2 Contacts."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "If selected, this branch will only act on the matching records from the previous branch. For example, if the previous branch found 2 Contacts, this branch will only execute in the context of those 2 Contacts."
+    externalId = false
+    trackTrending = false
+  }
+}

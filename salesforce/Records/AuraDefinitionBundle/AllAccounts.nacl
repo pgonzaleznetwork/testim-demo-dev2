@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle AllAccounts {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "AllAccounts"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/AllAccounts/AllAccounts.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AccountList
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AllAccounts
+    },
+  ]
+}

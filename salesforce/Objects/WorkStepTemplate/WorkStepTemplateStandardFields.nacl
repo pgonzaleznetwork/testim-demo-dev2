@@ -1,0 +1,273 @@
+type salesforce.WorkStepTemplate {
+  serviceid Id {
+    apiName = "WorkStepTemplate.Id"
+    label = "Work Step Template ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "WorkStepTemplate.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WorkStepTemplate.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "WorkStepTemplate.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WorkStepTemplate.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WorkStepTemplate.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WorkStepTemplate.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WorkStepTemplate.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WorkStepTemplate.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "WorkStepTemplate.IsActive"
+    label = "Active"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "WorkStepTemplate.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 500
+    queryable = true
+  }
+  salesforce.Picklist ActionDefinition {
+    apiName = "WorkStepTemplate.ActionDefinition"
+    label = "Action Definition"
+    valueSet = [
+      {
+        fullName = "Flow_using_field"
+        default = false
+        label = "Flow using field"
+        isActive = true
+      },
+      {
+        fullName = "New_Lead"
+        default = false
+        label = "New Lead"
+        isActive = true
+      },
+      {
+        fullName = "Under_Maintenance"
+        default = false
+        label = "Under Maintenance"
+        isActive = true
+      },
+      {
+        fullName = "setup_service_experience__Create_Case"
+        default = false
+        label = "Create a Case"
+        isActive = true
+      },
+      {
+        fullName = "setup_service_experience__Reset_Pwd"
+        default = false
+        label = "Reset Password"
+        isActive = true
+      },
+      {
+        fullName = "setup_service_experience__Verify_Cust"
+        default = false
+        label = "Verify Identity"
+        isActive = true
+      },
+      {
+        fullName = "Devin_Email"
+        default = false
+        label = "Devin Email"
+        isActive = true
+      },
+      {
+        fullName = "SendEmail"
+        default = false
+        label = "Email"
+        isActive = true
+      },
+      {
+        fullName = "WorkOrder.SendEmail"
+        default = false
+        label = "Email"
+        isActive = true
+      },
+      {
+        fullName = "LogACall"
+        default = false
+        label = "Log a Call"
+        isActive = true
+      },
+      {
+        fullName = "NewAccount"
+        default = false
+        label = "New Account"
+        isActive = true
+      },
+      {
+        fullName = "New_Campaign"
+        default = false
+        label = "New Campaign"
+        isActive = true
+      },
+      {
+        fullName = "NewCase"
+        default = false
+        label = "New Case"
+        isActive = true
+      },
+      {
+        fullName = "NewContact"
+        default = false
+        label = "New Contact"
+        isActive = true
+      },
+      {
+        fullName = "_NewQuipDocument"
+        default = false
+        label = "New Document"
+        isActive = true
+      },
+      {
+        fullName = "NewEvent"
+        default = false
+        label = "New Event"
+        isActive = true
+      },
+      {
+        fullName = "NewGroup"
+        default = false
+        label = "New Group"
+        isActive = true
+      },
+      {
+        fullName = "NewLead"
+        default = false
+        label = "New Lead"
+        isActive = true
+      },
+      {
+        fullName = "NewNote"
+        default = false
+        label = "New Note"
+        isActive = true
+      },
+      {
+        fullName = "NewOpportunity"
+        default = false
+        label = "New Opportunity"
+        isActive = true
+      },
+      {
+        fullName = "NewTask"
+        default = false
+        label = "New Task"
+        isActive = true
+      },
+      {
+        fullName = "Opportunity_Wizard"
+        default = false
+        label = "Opportunity Wizard"
+        isActive = true
+      },
+    ]
+    restricted = true
+    inlineHelpText = "Find and select the associated global action, quick action, screen flow, or mobile flow."
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ActionType {
+    apiName = "WorkStepTemplate.ActionType"
+    label = "Action Type"
+    valueSet = [
+      {
+        fullName = "Flow"
+        default = false
+        label = "Flow"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction"
+        default = false
+        label = "Quick Action"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

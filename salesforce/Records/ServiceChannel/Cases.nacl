@@ -1,0 +1,6 @@
+salesforce.ServiceChannel Cases {
+  fullName = "Cases"
+  doesMinimizeWidgetOnAccept = false
+  label = "Cases"
+  relatedEntityType = "Case"
+}

@@ -1,0 +1,127 @@
+type salesforce.ChannelProgramMember {
+  serviceid Id {
+    apiName = "ChannelProgramMember.Id"
+    label = "Channel Program Member ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ChannelProgramMember.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ChannelProgramMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ChannelProgramMember.Name"
+    label = "Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ChannelProgramMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ChannelProgramMember.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ChannelProgramMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ChannelProgramMember.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ChannelProgramMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ProgramId {
+    apiName = "ChannelProgramMember.ProgramId"
+    label = "Channel Program ID"
+    _required = true
+    referenceTo = [
+      salesforce.ChannelProgram,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Program"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup LevelId {
+    apiName = "ChannelProgramMember.LevelId"
+    label = "Channel Program Level ID"
+    referenceTo = [
+      salesforce.ChannelProgramLevel,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Level"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup PartnerId {
+    apiName = "ChannelProgramMember.PartnerId"
+    label = "Account ID"
+    _required = true
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Partner"
+    queryable = true
+    trackHistory = false
+  }
+}

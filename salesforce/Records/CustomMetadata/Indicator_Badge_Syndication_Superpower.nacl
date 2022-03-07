@@ -1,0 +1,37 @@
+salesforce.CustomMetadata Indicator_Badge_Syndication_Superpower@uvu {
+  fullName = "Indicator_Badge.Syndication_Superpower"
+  label = "Syndication Superpower"
+  protected = false
+  values = [
+    {
+      field = "Badge_Color__c"
+      value = "DeepPink"
+      type = "xsd:string"
+    },
+    {
+      field = "Badge_Icon_Name__c"
+      value = "custom:custom49"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Type__c"
+      value = "Greater or Equal"
+      type = "xsd:string"
+    },
+    {
+      field = "Comparison_Value__c"
+      value = "3"
+      type = "xsd:string"
+    },
+    {
+      field = "Object__c"
+      value = "Account"
+      type = "xsd:string"
+    },
+    {
+      field = "Related_Field__c"
+      value = "Active_Syndications__c"
+      type = "xsd:string"
+    },
+  ]
+}

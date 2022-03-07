@@ -1,0 +1,10 @@
+<aura:component >
+    
+    <lightning:card title="Record Name"  footer="By Appirio" iconName="utility:edit_form" variant="narrow">
+        <p class="slds-p-horizontal_small">Add some details about the record.</p>
+        <aura:set attribute="actions">
+            <lightning:button label="Action Button"/>
+        </aura:set>
+    </lightning:card>
+    
+</aura:component>

@@ -1,0 +1,6 @@
+salesforce.SharingRules ProductServiceCampaign {
+  fullName = "ProductServiceCampaign"
+  _parent = [
+    salesforce.ProductServiceCampaign,
+  ]
+}

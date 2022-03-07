@@ -1,0 +1,12 @@
+type salesforce.Activity {
+  salesforce.FormulaText DB_Activity_Type__c {
+    apiName = "Activity.DB_Activity_Type__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formula = "IF(CONTAINS( Subject , \"Email\"), \"Email\", IF(CONTAINS( Subject , \"Cold Call\"), \"Cold Call\", IF(CONTAINS( Subject , \"Call\"), \"Call\", IF(CONTAINS( Subject , \"Meeting\"), \"Meeting\", IF(CONTAINS( Subject , \"On Site Visit\"), \"Site Visit\", IF(CONTAINS( Subject , \"Quote\"), \"Send Letter/Quote\", \"Other\"))))))"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "DB Activity Type"
+    unique = false
+    _hidden_value = true
+  }
+}

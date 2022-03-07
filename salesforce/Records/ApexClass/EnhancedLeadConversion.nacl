@@ -1,0 +1,11 @@
+salesforce.ApexClass EnhancedLeadConversion {
+  apiVersion = 50
+  status = "Active"
+  fullName = "EnhancedLeadConversion"
+  content = file("salesforce/Records/ApexClass/EnhancedLeadConversion.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LeadConversionConfig
+    },
+  ]
+}

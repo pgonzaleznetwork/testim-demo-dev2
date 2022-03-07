@@ -1,0 +1,13 @@
+salesforce.WorkflowFieldUpdate Account_Change_type_to_Customer@vuuu {
+  fullName = "Account.Change_type_to_Customer"
+  field = salesforce.Account.field.Type
+  literalValue = "Customer"
+  name = "Change type to Customer"
+  notifyAssignee = false
+  operation = "Literal"
+  protected = false
+  reevaluateOnChange = false
+  _parent = [
+    salesforce.Account,
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexClass AccountOwnerChange {
+  apiVersion = 43
+  status = "Active"
+  fullName = "AccountOwnerChange"
+  content = file("salesforce/Records/ApexClass/AccountOwnerChange.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

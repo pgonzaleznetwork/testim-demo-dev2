@@ -1,0 +1,10 @@
+salesforce.Role LegacyPortalUsersCustomerExecutive {
+  fullName = "LegacyPortalUsersCustomerExecutive"
+  caseAccessLevel = "None"
+  contactAccessLevel = "Edit"
+  description = "Legacy Portal Users Customer Executive"
+  mayForecastManagerShare = false
+  name = "Legacy Portal Users Customer Executive"
+  opportunityAccessLevel = "None"
+  parentRole = salesforce.Role.instance.CEO
+}

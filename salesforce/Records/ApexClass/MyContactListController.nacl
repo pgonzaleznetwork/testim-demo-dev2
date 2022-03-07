@@ -1,0 +1,11 @@
+salesforce.ApexClass MyContactListController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MyContactListController"
+  content = file("salesforce/Records/ApexClass/MyContactListController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

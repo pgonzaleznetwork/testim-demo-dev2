@@ -1,0 +1,38 @@
+salesforce.QuickAction Case_Escalate_to_Management@vuu {
+  fullName = "Case.Escalate_to_Management"
+  fieldOverrides = [
+    {
+      field = "Escalated_to_Management__c"
+      formula = "TRUE"
+    },
+  ]
+  label = "Escalate to Management"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Escalation_Owner__c
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Status
+            uiBehavior = "Required"
+          },
+        ]
+      },
+    ]
+  }
+  type = "Update"
+  _parent = [
+    salesforce.Case,
+  ]
+}

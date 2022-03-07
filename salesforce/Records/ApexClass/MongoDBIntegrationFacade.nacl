@@ -1,0 +1,17 @@
+salesforce.ApexClass MongoDBIntegrationFacade {
+  apiVersion = 41
+  status = "Active"
+  fullName = "MongoDBIntegrationFacade"
+  content = file("salesforce/Records/ApexClass/MongoDBIntegrationFacade.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.Deduplicator
+    },
+    {
+      reference = salesforce.ApexClass.instance.MDBIntegrationValidator
+    },
+    {
+      reference = salesforce.ApexClass.instance.MongoDBAPI
+    },
+  ]
+}

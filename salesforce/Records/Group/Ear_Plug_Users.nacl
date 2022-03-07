@@ -1,0 +1,5 @@
+salesforce.Group Ear_Plug_Users {
+  fullName = "Ear_Plug_Users"
+  doesIncludeBosses = false
+  name = "Ear Plug Users"
+}

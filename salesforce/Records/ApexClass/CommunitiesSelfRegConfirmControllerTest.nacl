@@ -1,0 +1,11 @@
+salesforce.ApexClass CommunitiesSelfRegConfirmControllerTest {
+  apiVersion = 42
+  status = "Active"
+  fullName = "CommunitiesSelfRegConfirmControllerTest"
+  content = file("salesforce/Records/ApexClass/CommunitiesSelfRegConfirmControllerTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CommunitiesSelfRegConfirmController
+    },
+  ]
+}

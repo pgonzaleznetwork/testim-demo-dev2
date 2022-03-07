@@ -1,0 +1,8 @@
+salesforce.Profile ContractManager {
+  externalDataSourceAccesses = {
+    Mobile_Devices = {
+      enabled = false
+      externalDataSource = "Mobile_Devices"
+    }
+  }
+}

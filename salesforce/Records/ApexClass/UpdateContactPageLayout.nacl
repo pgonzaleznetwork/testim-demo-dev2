@@ -1,0 +1,6 @@
+salesforce.ApexClass UpdateContactPageLayout {
+  apiVersion = 39
+  status = "Active"
+  fullName = "UpdateContactPageLayout"
+  content = file("salesforce/Records/ApexClass/UpdateContactPageLayout.cls")
+}

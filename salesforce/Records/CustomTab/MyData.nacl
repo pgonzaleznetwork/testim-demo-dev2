@@ -1,0 +1,12 @@
+salesforce.CustomTab MyData {
+  fullName = "MyData"
+  description = "Created by Lightning App Builder"
+  flexiPage = "MyData"
+  label = "MyData"
+  motif = "Custom86: Red Cross"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.MyData
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.ApexTrigger RestrictContactByName {
+  apiVersion = 41
+  status = "Active"
+  fullName = "RestrictContactByName"
+  content = file("salesforce/Records/ApexTrigger/RestrictContactByName.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

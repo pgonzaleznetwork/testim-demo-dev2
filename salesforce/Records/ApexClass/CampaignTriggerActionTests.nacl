@@ -1,0 +1,11 @@
+salesforce.ApexClass CampaignTriggerActionTests {
+  apiVersion = 44
+  status = "Active"
+  fullName = "CampaignTriggerActionTests"
+  content = file("salesforce/Records/ApexClass/CampaignTriggerActionTests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Campaign
+    },
+  ]
+}

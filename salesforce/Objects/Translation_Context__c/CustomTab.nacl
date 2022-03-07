@@ -1,0 +1,8 @@
+salesforce.CustomTab Translation_Context__c {
+  fullName = "Translation_Context__c"
+  customObject = true
+  motif = "Custom37: Bridge"
+  _parent = [
+    salesforce.Translation_Context__c,
+  ]
+}

@@ -1,0 +1,5 @@
+salesforce.Profile App_Subscription_Custom@s {
+  fullName = "App Subscription Custom"
+  custom = true
+  userLicense = "Force.com - App Subscription"
+}

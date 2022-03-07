@@ -1,0 +1,67 @@
+type salesforce.ModerationRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string action {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Block",
+        "Flag",
+        "FreezeAndNotify",
+        "Replace",
+        "Review",
+      ]
+    }
+  }
+  number actionLimit {
+  }
+  boolean active {
+  }
+  string description {
+  }
+  serviceid fullName {
+  }
+  string masterLabel {
+  }
+  number notifyLimit {
+  }
+  string timePeriod {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Medium",
+        "Short",
+      ]
+    }
+  }
+  string type {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Content",
+        "Rate",
+      ]
+    }
+  }
+  string userMessage {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "rule"
+  dirName = "moderation"
+  metadataType = "ModerationRule"
+}

@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle campingHeader {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "campingHeader"
+  type = "Component"
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/campingHeader/campingHeader.css")
+  markup = file("salesforce/Records/AuraDefinitionBundle/campingHeader/campingHeader.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.campingHeader
+    },
+  ]
+}

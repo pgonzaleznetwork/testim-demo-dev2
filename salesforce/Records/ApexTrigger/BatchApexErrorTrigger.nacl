@@ -1,0 +1,20 @@
+salesforce.ApexTrigger BatchApexErrorTrigger {
+  apiVersion = 47
+  status = "Active"
+  fullName = "BatchApexErrorTrigger"
+  content = file("salesforce/Records/ApexTrigger/BatchApexErrorTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.BatchLeadConvertErrors__c
+    },
+    {
+      reference = salesforce.BatchLeadConvertErrors__c.field.AsyncApexJobId__c
+    },
+    {
+      reference = salesforce.BatchLeadConvertErrors__c.field.Records__c
+    },
+    {
+      reference = salesforce.BatchLeadConvertErrors__c.field.StackTrace__c
+    },
+  ]
+}

@@ -1,0 +1,8 @@
+salesforce.ListView Dedupe_Scenario__c_All {
+  fullName = "Dedupe_Scenario__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Dedupe_Scenario__c,
+  ]
+}

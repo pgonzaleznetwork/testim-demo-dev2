@@ -1,0 +1,14 @@
+salesforce.ApexClass AddPrimaryContact {
+  apiVersion = 41
+  status = "Active"
+  fullName = "AddPrimaryContact"
+  content = file("salesforce/Records/ApexClass/AddPrimaryContact.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

@@ -1,0 +1,255 @@
+type salesforce.AccountTeamMember {
+  serviceid Id {
+    apiName = "AccountTeamMember.Id"
+    label = "Account Team Member ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup AccountId {
+    apiName = "AccountTeamMember.AccountId"
+    label = "Account ID"
+    _required = true
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Account"
+    queryable = true
+  }
+  salesforce.Lookup UserId {
+    apiName = "AccountTeamMember.UserId"
+    label = "User ID"
+    _required = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "User"
+    queryable = true
+  }
+  salesforce.Picklist TeamMemberRole {
+    apiName = "AccountTeamMember.TeamMemberRole"
+    label = "Team Role"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.SalesTeamRole
+  }
+  salesforce.Url PhotoUrl {
+    apiName = "AccountTeamMember.PhotoUrl"
+    label = "Url for thumbnail sized photo"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "AccountTeamMember.Title"
+    label = "Title"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AccountAccessLevel {
+    apiName = "AccountTeamMember.AccountAccessLevel"
+    label = "Account Access"
+    valueSet = [
+      {
+        fullName = "None"
+        default = false
+        label = "Private"
+        isActive = true
+      },
+      {
+        fullName = "Read"
+        default = false
+        label = "Read Only"
+        isActive = true
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Read/Write"
+        isActive = true
+      },
+      {
+        fullName = "All"
+        default = false
+        label = "Owner"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist OpportunityAccessLevel {
+    apiName = "AccountTeamMember.OpportunityAccessLevel"
+    label = "Opportunity Access"
+    valueSet = [
+      {
+        fullName = "None"
+        default = false
+        label = "Private"
+        isActive = true
+      },
+      {
+        fullName = "Read"
+        default = false
+        label = "Read Only"
+        isActive = true
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Read/Write"
+        isActive = true
+      },
+      {
+        fullName = "All"
+        default = false
+        label = "Owner"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist CaseAccessLevel {
+    apiName = "AccountTeamMember.CaseAccessLevel"
+    label = "Case Access"
+    valueSet = [
+      {
+        fullName = "None"
+        default = false
+        label = "Private"
+        isActive = true
+      },
+      {
+        fullName = "Read"
+        default = false
+        label = "Read Only"
+        isActive = true
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Read/Write"
+        isActive = true
+      },
+      {
+        fullName = "All"
+        default = false
+        label = "Owner"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist ContactAccessLevel {
+    apiName = "AccountTeamMember.ContactAccessLevel"
+    label = "Contact Access"
+    valueSet = [
+      {
+        fullName = "None"
+        default = false
+        label = "Private"
+        isActive = true
+      },
+      {
+        fullName = "Read"
+        default = false
+        label = "Read Only"
+        isActive = true
+      },
+      {
+        fullName = "Edit"
+        default = false
+        label = "Read/Write"
+        isActive = true
+      },
+      {
+        fullName = "ControlledByParent"
+        default = false
+        label = "Controlled By Parent"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AccountTeamMember.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AccountTeamMember.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AccountTeamMember.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AccountTeamMember.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AccountTeamMember.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AccountTeamMember.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

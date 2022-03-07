@@ -1,0 +1,84 @@
+salesforce.Profile Analytics_Cloud_Integration_User@s {
+  userPermissions = {
+    ActivitiesAccess = {
+      enabled = true
+      name = "ActivitiesAccess"
+    }
+    AllowViewKnowledge = {
+      enabled = true
+      name = "AllowViewKnowledge"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    CampaignInfluence2 = {
+      enabled = true
+      name = "CampaignInfluence2"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    InsightsAppAdmin = {
+      enabled = true
+      name = "InsightsAppAdmin"
+    }
+    InsightsAppUser = {
+      enabled = true
+      name = "InsightsAppUser"
+    }
+    PasswordNeverExpires = {
+      enabled = true
+      name = "PasswordNeverExpires"
+    }
+    QueryAllFiles = {
+      enabled = true
+      name = "QueryAllFiles"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewAllData = {
+      enabled = true
+      name = "ViewAllData"
+    }
+    ViewDataLeakageEvents = {
+      enabled = true
+      name = "ViewDataLeakageEvents"
+    }
+    ViewEventLogFiles = {
+      enabled = true
+      name = "ViewEventLogFiles"
+    }
+    ViewPlatformEvents = {
+      enabled = true
+      name = "ViewPlatformEvents"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+    WorkDotComUserPerm = {
+      enabled = true
+      name = "WorkDotComUserPerm"
+    }
+  }
+}

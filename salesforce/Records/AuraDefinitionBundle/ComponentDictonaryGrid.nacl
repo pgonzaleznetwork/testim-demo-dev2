@@ -1,0 +1,31 @@
+salesforce.AuraDefinitionBundle ComponentDictonaryGrid {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "ComponentDictonaryGrid"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/ComponentDictonaryGrid/ComponentDictonaryGrid.cmp")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/ComponentDictonaryGrid/ComponentDictonaryGrid.css")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.ComponentDictonaryGrid
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningAccordion
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningCard
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningLayout
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTab
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.LightningTile
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.UnscapedHTML
+    },
+  ]
+}

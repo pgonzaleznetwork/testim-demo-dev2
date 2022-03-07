@@ -1,0 +1,6 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.Information	Information
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.System Information	System Information
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.null	null
+Custom Field Label	CustomField.Session_Speaker__c.Session.FieldLabel	Session
+Custom Field Label	CustomField.Session_Speaker__c.Speaker.FieldLabel	Speaker

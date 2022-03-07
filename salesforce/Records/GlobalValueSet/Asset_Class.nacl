@@ -1,0 +1,42 @@
+salesforce.GlobalValueSet Asset_Class {
+  fullName = "Asset_Class"
+  customValue = [
+    {
+      fullName = "Bond"
+      default = false
+      label = "Bond"
+    },
+    {
+      fullName = "Commodity"
+      default = false
+      label = "Commodity"
+    },
+    {
+      fullName = "Currency"
+      default = false
+      label = "Currency"
+    },
+    {
+      fullName = "Equity"
+      default = false
+      label = "Equity"
+    },
+    {
+      fullName = "Fixed Income"
+      default = false
+      label = "Fixed Income"
+    },
+    {
+      fullName = "Multi-Asset"
+      default = false
+      label = "Multi-Asset"
+    },
+    {
+      fullName = "Volatility"
+      default = false
+      label = "Volatility"
+    },
+  ]
+  masterLabel = "Asset Class"
+  sorted = false
+}

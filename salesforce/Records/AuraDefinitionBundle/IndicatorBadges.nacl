@@ -1,0 +1,20 @@
+salesforce.AuraDefinitionBundle IndicatorBadges {
+  apiVersion = 42
+  description = "A Lightning Component Bundle"
+  fullName = "IndicatorBadges"
+  type = "Component"
+  markup = file("salesforce/Records/AuraDefinitionBundle/IndicatorBadges/IndicatorBadges.cmp")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/IndicatorBadges/IndicatorBadgesController.js")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/IndicatorBadges/IndicatorBadgesHelper.js")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.INDICATOR_Controller
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.IndicatorBadge
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.IndicatorBadges
+    },
+  ]
+}

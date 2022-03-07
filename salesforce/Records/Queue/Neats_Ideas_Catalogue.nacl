@@ -1,0 +1,16 @@
+salesforce.Queue Neats_Ideas_Catalogue {
+  fullName = "Neats_Ideas_Catalogue"
+  doesSendEmailToMembers = false
+  name = "Neats Ideas Catalogue"
+  queueMembers = {
+    users = {
+      user = [
+        "dreamforceattendee@sso.df.com",
+        "pgonzaleznetwork@resourceful-moose-448750.com",
+      ]
+    }
+  }
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

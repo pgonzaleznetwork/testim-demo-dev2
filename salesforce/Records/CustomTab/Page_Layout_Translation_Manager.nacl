@@ -1,0 +1,12 @@
+salesforce.CustomTab Page_Layout_Translation_Manager {
+  fullName = "Page_Layout_Translation_Manager"
+  description = "Created by Lightning App Builder"
+  flexiPage = "Page_Layout_Translation_Manager"
+  label = "Page Layout Translation Manager"
+  motif = "Custom40: Credit card"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Page_Layout_Translation_Manager
+    },
+  ]
+}

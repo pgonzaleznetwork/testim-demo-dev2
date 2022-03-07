@@ -1,0 +1,50 @@
+salesforce.ApexClass SyndicationEventHandler {
+  apiVersion = 41
+  status = "Active"
+  fullName = "SyndicationEventHandler"
+  content = file("salesforce/Records/ApexClass/SyndicationEventHandler.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.Account.field.Active_Subscriptions__c
+    },
+    {
+      reference = salesforce.Account.field.Active_Syndications__c
+    },
+    {
+      reference = salesforce.Contact
+    },
+    {
+      reference = salesforce.Show__c
+    },
+    {
+      reference = salesforce.Show__c.field.Active_Syndications__c
+    },
+    {
+      reference = salesforce.Show__c.field.Host__c
+    },
+    {
+      reference = salesforce.Syndication_Event__e
+    },
+    {
+      reference = salesforce.Syndication_Event__e.field.Show__c
+    },
+    {
+      reference = salesforce.Syndication_Event__e.field.Subscriber_Station_Network__c
+    },
+    {
+      reference = salesforce.Syndication__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.IsActive__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.Show__c
+    },
+    {
+      reference = salesforce.Syndication__c.field.Subscriber_Station_Network__c
+    },
+  ]
+}

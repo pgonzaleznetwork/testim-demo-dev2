@@ -1,0 +1,110 @@
+type salesforce.ProductWarrantyTerm {
+  serviceid Id {
+    apiName = "ProductWarrantyTerm.Id"
+    label = "Product Warranty Term ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductWarrantyTerm.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ProductWarrantyTermNumber {
+    apiName = "ProductWarrantyTerm.ProductWarrantyTermNumber"
+    label = "Product Warranty Term Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductWarrantyTerm.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductWarrantyTerm.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductWarrantyTerm.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductWarrantyTerm.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductWarrantyTerm.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WarrantyTermId {
+    apiName = "ProductWarrantyTerm.WarrantyTermId"
+    label = "Warranty Term ID"
+    _required = true
+    referenceTo = [
+      salesforce.WarrantyTerm,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "WarrantyTerm"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup CoveredProductId {
+    apiName = "ProductWarrantyTerm.CoveredProductId"
+    label = "Product ID"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "CoveredProduct"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist CoveredProductFamily {
+    apiName = "ProductWarrantyTerm.CoveredProductFamily"
+    label = "Covered Product Family"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.Product2Family
+  }
+}

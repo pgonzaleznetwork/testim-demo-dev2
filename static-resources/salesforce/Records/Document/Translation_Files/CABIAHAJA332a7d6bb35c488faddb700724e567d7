@@ -1,0 +1,94 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Opportunity Information	Opportunity Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Other Information	Other Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.System Information	System Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Description Information	Description Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Custom Links	Custom Links
+Layout Section	LayoutSection.Campaign.Campaign Layout.Campaign Information	Campaign Information
+Layout Section	LayoutSection.Campaign.Campaign Layout.Other Information	Other Information
+Layout Section	LayoutSection.Campaign.Campaign Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Campaign.Campaign Layout.System Information	System Information
+Layout Section	LayoutSection.Campaign.Campaign Layout.Description Information	Description Information
+Layout Section	LayoutSection.Campaign.Campaign Layout.Custom Links	Custom Links
+Standard Field Label	Owner ID	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Private	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Name	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Opportunity Type	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Lead Source	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Amount	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Expected Amount	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Close Date	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Next Step	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Stage	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Probability (%)	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Campaign ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Created By ID	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Last Modified By ID	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Description	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Active	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Type	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Status	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Start Date	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	End Date	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Expected Revenue in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Budgeted Cost in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Actual Cost in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Expected Response (%)	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Num Sent in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Parent Campaign ID	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Leads in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Converted Leads in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Contacts in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Responses in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Opportunities in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Won Opportunities in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Value Opportunities in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Standard Field Label	Value Won Opportunities in Campaign	Campaign_Use_Rename_Tabs_And_Labels
+Custom Field Label	CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+Custom Field Label	CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+Custom Field Label	CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+Custom Field Label	CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+Custom Field Label	CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+Standard Field Help Text	StandardFieldHelp.Opportunity.StageName.HelpText	Set this field depending on where the deal is.
+Custom Field Help Text	CustomField.Opportunity.TrackingNumber.HelpText	This is the tracking number
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Upgrade	Existing Customer - Upgrade
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Replacement	Existing Customer - Replacement
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Downgrade	Existing Customer - Downgrade
+Picklist Value	PicklistValue.Standard.opportunityType.New Customer	New Customer
+Picklist Value	PicklistValue.Standard.LeadSource.Web	Web
+Picklist Value	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+Picklist Value	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+Picklist Value	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+Picklist Value	PicklistValue.Standard.LeadSource.Other	Other
+Picklist Value	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+Picklist Value	PicklistValue.Standard.opportunityStage.Prospecting	Prospecting
+Picklist Value	PicklistValue.Standard.opportunityStage.Qualification	Qualification
+Picklist Value	PicklistValue.Standard.opportunityStage.Needs Analysis	Needs Analysis
+Picklist Value	PicklistValue.Standard.opportunityStage.Value Proposition	Value Proposition
+Picklist Value	PicklistValue.Standard.opportunityStage.Id. Decision Makers	 Decision Makers
+Picklist Value	PicklistValue.Standard.opportunityStage.Perception Analysis	Perception Analysis
+Picklist Value	PicklistValue.Standard.opportunityStage.Proposal/Price Quote	Proposal/Price Quote
+Picklist Value	PicklistValue.Standard.opportunityStage.Negotiation/Review	Negotiation/Review
+Picklist Value	PicklistValue.Standard.opportunityStage.Closed Won	Closed Won
+Picklist Value	PicklistValue.Standard.opportunityStage.Closed Lost	Closed Lost
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed
+Picklist Value	PicklistValue.Standard.campaignType.Conference	Conference
+Picklist Value	PicklistValue.Standard.campaignType.Webinar	Webinar
+Picklist Value	PicklistValue.Standard.campaignType.Trade Show	Trade Show
+Picklist Value	PicklistValue.Standard.campaignType.Public Relations	Public Relations
+Picklist Value	PicklistValue.Standard.campaignType.Partners	Partners
+Picklist Value	PicklistValue.Standard.campaignType.Referral Program	Referral Program
+Picklist Value	PicklistValue.Standard.campaignType.Advertisement	Advertisement
+Picklist Value	PicklistValue.Standard.campaignType.Banner Ads	Banner Ads
+Picklist Value	PicklistValue.Standard.campaignType.Direct Mail	Direct Mail
+Picklist Value	PicklistValue.Standard.campaignType.Email	Email
+Picklist Value	PicklistValue.Standard.campaignType.Telemarketing	Telemarketing
+Picklist Value	PicklistValue.Standard.campaignType.Other	Other
+Picklist Value	PicklistValue.Standard.campaignStatus.Planned	Planned
+Picklist Value	PicklistValue.Standard.campaignStatus.In Progress	In Progress
+Picklist Value	PicklistValue.Standard.campaignStatus.Completed	Completed
+Picklist Value	PicklistValue.Standard.campaignStatus.Aborted	Aborted

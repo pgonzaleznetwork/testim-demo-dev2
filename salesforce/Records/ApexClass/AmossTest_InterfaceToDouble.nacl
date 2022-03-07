@@ -1,0 +1,6 @@
+salesforce.ApexClass AmossTest_InterfaceToDouble {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossTest_InterfaceToDouble"
+  content = file("salesforce/Records/ApexClass/AmossTest_InterfaceToDouble.cls")
+}

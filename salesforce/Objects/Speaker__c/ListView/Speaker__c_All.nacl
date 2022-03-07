@@ -1,0 +1,8 @@
+salesforce.ListView Speaker__c_All {
+  fullName = "Speaker__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Speaker__c,
+  ]
+}

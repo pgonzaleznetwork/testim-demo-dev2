@@ -1,0 +1,212 @@
+type salesforce.TopicAssignment {
+  serviceid Id {
+    apiName = "TopicAssignment.Id"
+    label = "Topic Assignment ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "TopicAssignment.NetworkId"
+    label = "Network ID"
+    referenceTo = [
+      salesforce.Network,
+    ]
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup TopicId {
+    apiName = "TopicAssignment.TopicId"
+    label = "Topic ID"
+    _required = true
+    referenceTo = [
+      salesforce.Topic,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Topic"
+    queryable = true
+  }
+  salesforce.Lookup EntityId {
+    apiName = "TopicAssignment.EntityId"
+    label = "Entity ID"
+    _required = true
+    referenceTo = [
+      salesforce.Account,
+      salesforce.Action_Button__c,
+      salesforce.ApexLogSettings__c,
+      salesforce.Apex_Log__c,
+      salesforce.Asset,
+      salesforce.AssetWarranty,
+      salesforce.BatchLeadConvertErrors__c,
+      salesforce.Campaign,
+      salesforce.Camping_Item__c,
+      salesforce.Case,
+      salesforce.Case_Status_Bucket__c,
+      salesforce.Case_Status_History__c,
+      salesforce.Center__c,
+      salesforce.ChannelProgram,
+      salesforce.ChannelProgramLevel,
+      salesforce.Child__c,
+      salesforce.Contact,
+      "ContentDocument",
+      salesforce.Contract,
+      salesforce.Custom_Field_Help_Text__c,
+      salesforce.DMLSysException__c,
+      salesforce.Dedupe_Branch__c,
+      salesforce.Dedupe_Scenario_Rule__c,
+      salesforce.Dedupe_Scenario__c,
+      salesforce.Delivery_Agency__c,
+      salesforce.Ear_Plug__c,
+      salesforce.Email_Routing_Field_Mapping__c,
+      salesforce.Email_Routing_Rule_Filter__c,
+      salesforce.Email_Routing_Rule__c,
+      salesforce.Energy_Audit__c,
+      salesforce.Event,
+      salesforce.Expense,
+      salesforce.ExpenseReport,
+      salesforce.ExpenseReportEntry,
+      salesforce.Expense__c,
+      salesforce.FeedItem,
+      salesforce.Field_Translation_Name__c,
+      salesforce.Fund__c,
+      salesforce.Hotel__c,
+      salesforce.Internal_Request__c,
+      salesforce.JobProfile,
+      salesforce.KPI_Target__c,
+      salesforce.Knowledge__kav,
+      salesforce.Layout_Section_Translation_Name__c,
+      salesforce.Layout_Translation_Info__c,
+      salesforce.Lead,
+      salesforce.LinkedArticle,
+      salesforce.Login_Allowed__c,
+      salesforce.MaintenanceAsset,
+      salesforce.MaintenancePlan,
+      salesforce.Matching_Rule__c,
+      salesforce.Object_in_2nd_Env__c,
+      salesforce.Opportunity,
+      salesforce.Order,
+      salesforce.Parent__c,
+      salesforce.PartnerFundAllocation,
+      salesforce.PartnerFundClaim,
+      salesforce.PartnerFundRequest,
+      salesforce.PartnerMarketingBudget,
+      salesforce.Picklist_Value__c,
+      salesforce.ProductConsumed,
+      salesforce.ProductItem,
+      salesforce.ProductItemTransaction,
+      salesforce.ProductRequest,
+      salesforce.ProductRequestLineItem,
+      salesforce.ProductRequired,
+      salesforce.ProductServiceCampaign,
+      salesforce.ProductTransfer,
+      salesforce.Related_List_Item__c,
+      salesforce.ResourceAbsence,
+      salesforce.ResourcePreference,
+      salesforce.ReturnOrder,
+      salesforce.ReturnOrderLineItem,
+      salesforce.Sector__c,
+      salesforce.ServiceAppointment,
+      salesforce.ServiceCrew,
+      salesforce.ServiceCrewMember,
+      salesforce.ServiceResource,
+      salesforce.ServiceResourceCapacity,
+      salesforce.ServiceResourceSkill,
+      salesforce.ServiceTerritory,
+      salesforce.ServiceTerritoryMember,
+      salesforce.Session_Speaker__c,
+      salesforce.Session__c,
+      salesforce.Shift,
+      salesforce.Shipment,
+      salesforce.Show__c,
+      salesforce.Solution,
+      salesforce.Speaker__c,
+      salesforce.Standard_Field_Help__c,
+      salesforce.Standard_Field_Label__c,
+      salesforce.Syndication__c,
+      salesforce.Task,
+      salesforce.TimeSheet,
+      salesforce.TimeSheetEntry,
+      salesforce.Translation_Context__c,
+      salesforce.Translation_Key__c,
+      salesforce.TriggerSettings__c,
+      salesforce.TriggerStatus2__c,
+      salesforce.WarrantyTerm,
+      salesforce.WorkOrder,
+      salesforce.WorkOrderLineItem,
+      salesforce.WorkPlan,
+      salesforce.WorkPlanSelectionRule,
+      salesforce.WorkPlanTemplate,
+      salesforce.WorkPlanTemplateEntry,
+      salesforce.WorkStep,
+      salesforce.WorkStepTemplate,
+      salesforce.support_type__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Entity"
+    queryable = true
+  }
+  salesforce.Text EntityKeyPrefix {
+    apiName = "TopicAssignment.EntityKeyPrefix"
+    label = "Record Key Prefix"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 3
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text EntityType {
+    apiName = "TopicAssignment.EntityType"
+    label = "Object Type"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TopicAssignment.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TopicAssignment.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TopicAssignment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TopicAssignment.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

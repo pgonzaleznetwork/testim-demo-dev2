@@ -1,0 +1,17 @@
+salesforce.ApexClass TranslationsMergerApex_Test {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslationsMergerApex_Test"
+  content = file("salesforce/Records/ApexClass/TranslationsMergerApex_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SubmitPageLayoutInfo_LEX_Controller
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslationsMerger_LEX_Controller
+    },
+    {
+      reference = salesforce.Translation_Context__c
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.ApexClass ZBSLoadDataController_Test {
+  apiVersion = 41
+  status = "Active"
+  fullName = "ZBSLoadDataController_Test"
+  content = file("salesforce/Records/ApexClass/ZBSLoadDataController_Test.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.ZBSDataLoadController
+    },
+  ]
+}

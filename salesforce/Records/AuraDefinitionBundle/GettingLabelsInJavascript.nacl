@@ -1,0 +1,13 @@
+salesforce.AuraDefinitionBundle GettingLabelsInJavascript {
+  apiVersion = 41
+  description = "A Lightning Component Bundle"
+  fullName = "GettingLabelsInJavascript"
+  type = "Component"
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/GettingLabelsInJavascript/GettingLabelsInJavascriptController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/GettingLabelsInJavascript/GettingLabelsInJavascript.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.GettingLabelsInJavascript
+    },
+  ]
+}

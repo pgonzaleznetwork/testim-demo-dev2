@@ -1,0 +1,17 @@
+salesforce.Queue Germany_Advantage {
+  fullName = "Germany_Advantage"
+  doesSendEmailToMembers = false
+  name = "Germany Advantage"
+  queueMembers = {
+    users = {
+      user = [
+        "dreamforceattendee@sso.df.com",
+        "pgonzaleznetwork@resourceful-moose-448750.com",
+      ]
+    }
+  }
+  queueRoutingConfig = salesforce.QueueRoutingConfig.instance.Germany_Advantage_Cases
+  queueSobject = {
+    sobjectType = "Case"
+  }
+}

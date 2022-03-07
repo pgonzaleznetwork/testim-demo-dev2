@@ -1,0 +1,404 @@
+salesforce.Translations es_MX {
+  fullName = "es_MX"
+  customApplications = [
+    {
+      label = "Conferencia Global"
+      name = "Conference"
+    },
+    {
+      label = ""
+      name = "Dedupe_Manager"
+    },
+    {
+      label = ""
+      name = "Dedupe_Manager_Lightning"
+    },
+    {
+      label = ""
+      name = "DreamInvest"
+    },
+    {
+      label = ""
+      name = "Dreamforce_App"
+    },
+    {
+      label = ""
+      name = "Energy_Consultations"
+    },
+    {
+      label = ""
+      name = "External_Orders"
+    },
+    {
+      label = ""
+      name = "Trailhead_Playground"
+    },
+    {
+      label = ""
+      name = "Translation_Automation"
+    },
+    {
+      label = ""
+      name = "Translation_Workbench_Assistant"
+    },
+  ]
+  customLabels = [
+    {
+      label = ""
+      name = "LightningURL"
+    },
+    {
+      label = "Saved!"
+      name = "Lightning_Success_Message"
+    },
+    {
+      label = "Tell us your name"
+      name = "Tell_us_your_name"
+    },
+    {
+      label = ""
+      name = "Thank_you_for_the_feedback"
+    },
+  ]
+  customTabs = [
+    {
+      label = ""
+      name = "Account_Locator"
+    },
+    {
+      label = ""
+      name = "Custom_App_Page"
+    },
+    {
+      label = ""
+      name = "Fund_Explorer"
+    },
+    {
+      label = ""
+      name = "Lightning_Components_Dictionary"
+    },
+    {
+      label = ""
+      name = "Load_Data"
+    },
+    {
+      label = ""
+      name = "ModifyCSS"
+    },
+    {
+      label = ""
+      name = "MyData"
+    },
+    {
+      label = ""
+      name = "Page_Layout_Translation_Manager"
+    },
+    {
+      label = ""
+      name = "Quickstart"
+    },
+    {
+      label = ""
+      name = "Top_Accounts_and_Opportunities"
+    },
+    {
+      label = ""
+      name = "Translation_Manager"
+    },
+    {
+      label = ""
+      name = "Welcome"
+    },
+  ]
+  flowDefinitions = [
+    {
+      fullName = "Flow_using_field"
+    },
+    {
+      flows = {
+        screens = {
+          fields = [
+            {
+              name = "Company_Name"
+            },
+            {
+              name = "Instructions"
+            },
+            {
+              name = "Last_Name"
+            },
+          ]
+          name = "Lead_Info"
+        }
+      }
+      fullName = "New_Lead"
+    },
+    {
+      fullName = "New_Lead_C"
+    },
+    {
+      fullName = "Opportunity_Management"
+    },
+    {
+      fullName = "Process_using_field"
+    },
+    {
+      fullName = "Publish_Subscription_Event"
+    },
+    {
+      fullName = "Sample_Dedupe_Process"
+    },
+    {
+      flows = {
+        screens = {
+          fields = [
+            {
+              name = "MessageWarning"
+            },
+          ]
+          name = "Login_Not_Allowed_Message"
+        }
+      }
+      fullName = "Under_Maintenance"
+    },
+    {
+      fullName = "Update_contact_address"
+    },
+    {
+      fullName = "change_owner"
+    },
+  ]
+  prompts = [
+    {
+      name = "SalesHVSDialer"
+      promptVersions = [
+        {
+          name = "Sales HVS Dialer"
+        },
+      ]
+    },
+    {
+      name = "IAGFeatureAdoption"
+      promptVersions = [
+        {
+          name = "IAG Feature Adoption Step 1"
+          stepNumber = 1
+        },
+        {
+          name = "IAG Feature Adoption Step 2"
+          stepNumber = 2
+        },
+      ]
+    },
+    {
+      name = "tabletFullWidthGA"
+      promptVersions = [
+        {
+          name = "TabletFullWidthGA"
+        },
+      ]
+    },
+    {
+      name = "SalesCoreQuoteAdminCpq"
+      promptVersions = [
+        {
+          name = "Sales Core Quote Admin to CPQ"
+        },
+      ]
+    },
+  ]
+  quickActions = [
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.Devin_Email
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.LogACall
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewAccount
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewCase
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewContact
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewEvent
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewGroup
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewLead
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewNote
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewOpportunity
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.NewTask
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.New_Campaign
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.Opportunity_Wizard
+    },
+    {
+      label = ""
+      name = salesforce.QuickAction.instance.SendEmail
+    },
+  ]
+  reportTypes = [
+    {
+      description = ""
+      label = ""
+      name = "Accounts_with_Entitlements_with_Contacts"
+      sections = [
+        {
+          label = ""
+          name = "Accounts"
+        },
+        {
+          label = ""
+          name = "Contacts"
+        },
+        {
+          label = ""
+          name = "Entitlements"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Article_Search_Results"
+      sections = [
+        {
+          label = ""
+          name = "Knowledge Search Activity"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Case_Status_History"
+      sections = [
+        {
+          label = ""
+          name = "Case Status History"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Delivery_Agencies"
+      sections = [
+        {
+          label = ""
+          name = "Delivery Agencies"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Layout_Translation_Info"
+      sections = [
+        {
+          label = ""
+          name = "Layout Section Translation Names"
+        },
+        {
+          label = ""
+          name = "Layout Translation Infos"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Layout_Translation_Info_Fields"
+      sections = [
+        {
+          label = ""
+          name = "Layout Translation Infos"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Omni_Channel_Reports"
+      sections = [
+        {
+          label = ""
+          name = "Agent Work"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Service_Contracts_with_Contract_Line_Items"
+      sections = [
+        {
+          label = ""
+          name = "Contract Line Items"
+        },
+        {
+          label = ""
+          name = "Service Contracts"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "Service_Contracts_with_Entitlements"
+      sections = [
+        {
+          label = ""
+          name = "Entitlements"
+        },
+        {
+          label = ""
+          name = "Service Contracts"
+        },
+      ]
+    },
+    {
+      description = ""
+      label = ""
+      name = "screen_flows_prebuilt_crt"
+      sections = [
+        {
+          label = ""
+          name = "Flow Interview Log Entries"
+        },
+        {
+          label = ""
+          name = "Flow Interview Logs"
+        },
+      ]
+    },
+  ]
+}

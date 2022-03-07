@@ -1,0 +1,6 @@
+salesforce.ApexClass AmossTest_SingletonToDouble {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossTest_SingletonToDouble"
+  content = file("salesforce/Records/ApexClass/AmossTest_SingletonToDouble.cls")
+}

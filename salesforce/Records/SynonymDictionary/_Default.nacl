@@ -1,0 +1,13 @@
+salesforce.SynonymDictionary _Default {
+  fullName = "_Default"
+  groups = {
+    languages = "en_US"
+    terms = [
+      "HBase",
+      "Kafka",
+      "Orion",
+      "Tigger",
+    ]
+  }
+  label = "_Default"
+}

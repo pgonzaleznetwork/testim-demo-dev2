@@ -1,0 +1,16 @@
+type salesforce.Sector__c {
+  salesforce.Text Sector_Id__c {
+    apiName = "Sector__c.Sector_Id__c"
+    caseSensitive = false
+    encryptionScheme = "None"
+    externalId = true
+    label = "Sector Id"
+    length = 8
+    trackTrending = false
+    unique = true
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

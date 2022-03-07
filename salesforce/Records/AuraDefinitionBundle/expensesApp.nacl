@@ -1,0 +1,15 @@
+salesforce.AuraDefinitionBundle expensesApp {
+  apiVersion = 40
+  description = "A Lightning Component Bundle"
+  fullName = "expensesApp"
+  type = "Application"
+  markup = file("salesforce/Records/AuraDefinitionBundle/expensesApp/expensesApp.app")
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expenses
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.expensesApp
+    },
+  ]
+}

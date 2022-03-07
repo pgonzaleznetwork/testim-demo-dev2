@@ -1,0 +1,14 @@
+salesforce.ApexClass AllThree {
+  apiVersion = 49
+  status = "Active"
+  fullName = "AllThree"
+  content = file("salesforce/Records/ApexClass/AllThree.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Expense__c
+    },
+    {
+      reference = salesforce.Expense__c.field.Client__c
+    },
+  ]
+}

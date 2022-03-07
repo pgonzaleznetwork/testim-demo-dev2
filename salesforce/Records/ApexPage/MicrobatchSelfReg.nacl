@@ -1,0 +1,26 @@
+salesforce.ApexPage MicrobatchSelfReg {
+  apiVersion = 54
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Process self-registration requests in batches instead of individually"
+  label = "MicrobatchSelfReg"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = "sf_com_apps"
+    },
+    {
+      majorNumber = 1
+      minorNumber = 11
+      namespace = "th_con_app"
+    },
+  ]
+  fullName = "MicrobatchSelfReg"
+  content = file("salesforce/Records/ApexPage/MicrobatchSelfReg.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.MicrobatchSelfRegController
+    },
+  ]
+}

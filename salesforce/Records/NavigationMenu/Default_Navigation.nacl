@@ -1,0 +1,13 @@
+salesforce.NavigationMenu Default_Navigation {
+  fullName = "Default_Navigation"
+  container = "CloudKicksTheme"
+  containerType = "Network"
+  label = "Default Navigation"
+  navigationMenuItem = {
+    label = "Topics"
+    position = 0
+    publiclyAvailable = true
+    target = "ShowMoreTopics"
+    type = "NavigationalTopic"
+  }
+}

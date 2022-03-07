@@ -1,0 +1,38 @@
+salesforce.ApexClass SubmitPageLayoutInfo_LEX_Controller {
+  apiVersion = 43
+  status = "Active"
+  fullName = "SubmitPageLayoutInfo_LEX_Controller"
+  content = file("salesforce/Records/ApexClass/SubmitPageLayoutInfo_LEX_Controller.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.PageLayoutTranslatorFacade
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslationFileBuilder
+    },
+    {
+      reference = salesforce.ApexClass.instance.TranslationKey
+    },
+    {
+      reference = salesforce.Translation_Context__c
+    },
+    {
+      reference = salesforce.Translation_Context__c.field.Context_Type__c
+    },
+    {
+      reference = salesforce.Translation_Key__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Default_Label__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Key__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Translation_Context__c
+    },
+    {
+      reference = salesforce.Translation_Key__c.field.Type__c
+    },
+  ]
+}

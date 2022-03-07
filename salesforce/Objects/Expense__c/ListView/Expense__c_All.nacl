@@ -1,0 +1,8 @@
+salesforce.ListView Expense__c_All {
+  fullName = "Expense__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Expense__c,
+  ]
+}

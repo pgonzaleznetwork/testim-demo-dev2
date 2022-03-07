@@ -1,0 +1,9 @@
+salesforce.CustomFeedFilter Case_Customer_Interactions@vu {
+  fullName = "Case.Customer_Interactions"
+  criteria = {
+    feedItemType = "CaseCommentPost"
+    feedItemVisibility = "AllUsers"
+    relatedSObjectType = "CaseComment"
+  }
+  label = "Customer_Interactions"
+}

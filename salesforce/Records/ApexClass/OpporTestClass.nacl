@@ -1,0 +1,14 @@
+salesforce.ApexClass OpporTestClass {
+  apiVersion = 43
+  status = "Active"
+  fullName = "OpporTestClass"
+  content = file("salesforce/Records/ApexClass/OpporTestClass.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.OpportunityCreator
+    },
+  ]
+}

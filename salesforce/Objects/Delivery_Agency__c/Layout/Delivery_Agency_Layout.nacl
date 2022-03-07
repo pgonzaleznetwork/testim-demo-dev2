@@ -1,0 +1,92 @@
+salesforce.Layout Delivery_Agency__c_Delivery_Agency_Layout@uuubss {
+  fullName = "Delivery_Agency__c-Delivery Agency Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Delivery_Agency__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Delivery_Agency__c.field.Ward__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Delivery_Agency__c.field.District__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Delivery_Agency__c.field.Province__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Delivery_Agency__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Delivery_Agency__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Delivery_Agency__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "ORDERS.ORDER_NUMBER",
+        "SALES.ACCOUNT.NAME",
+        "ORDERS.STATUS",
+        "ORDERS.TOTAL_AMOUNT",
+      ]
+      relatedList = salesforce.Order.field.Delivery_Agency__c
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Delivery_Agency__c,
+  ]
+}

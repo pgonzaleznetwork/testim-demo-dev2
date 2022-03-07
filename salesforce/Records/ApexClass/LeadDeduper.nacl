@@ -1,0 +1,17 @@
+salesforce.ApexClass LeadDeduper {
+  apiVersion = 44
+  status = "Active"
+  fullName = "LeadDeduper"
+  content = file("salesforce/Records/ApexClass/LeadDeduper.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.DedupeBranchControllerSingle
+    },
+    {
+      reference = salesforce.ApexClass.instance.DedupeConfigurationCache
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

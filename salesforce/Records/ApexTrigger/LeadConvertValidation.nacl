@@ -1,0 +1,11 @@
+salesforce.ApexTrigger LeadConvertValidation {
+  apiVersion = 46
+  status = "Active"
+  fullName = "LeadConvertValidation"
+  content = file("salesforce/Records/ApexTrigger/LeadConvertValidation.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

@@ -1,0 +1,14 @@
+salesforce.ApexTrigger AccountAddressTrigger {
+  apiVersion = 41
+  status = "Inactive"
+  fullName = "AccountAddressTrigger"
+  content = file("salesforce/Records/ApexTrigger/AccountAddressTrigger.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountAddressTriggerClass
+    },
+  ]
+}

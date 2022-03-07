@@ -1,0 +1,14 @@
+salesforce.ApexClass LeadProcessorTest {
+  apiVersion = 41
+  status = "Active"
+  fullName = "LeadProcessorTest"
+  content = file("salesforce/Records/ApexClass/LeadProcessorTest.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.LeadProcessor
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

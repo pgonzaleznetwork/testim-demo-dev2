@@ -1,0 +1,17 @@
+salesforce.CustomMetadata VAT_Data_Germany@uv {
+  fullName = "VAT_Data.Germany"
+  label = "Germany"
+  protected = false
+  values = [
+    {
+      field = "Country_Name__c"
+      value = "Germany"
+      type = "xsd:string"
+    },
+    {
+      field = "VAT_Rate__c"
+      value = "19"
+      type = "xsd:double"
+    },
+  ]
+}

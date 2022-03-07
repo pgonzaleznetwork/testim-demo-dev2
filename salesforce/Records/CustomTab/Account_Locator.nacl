@@ -1,0 +1,11 @@
+salesforce.CustomTab Account_Locator {
+  fullName = "Account_Locator"
+  auraComponent = "AccountLocator"
+  label = "Account Locator"
+  motif = "Custom78: Map"
+  _generated_dependencies = [
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.AccountLocator
+    },
+  ]
+}

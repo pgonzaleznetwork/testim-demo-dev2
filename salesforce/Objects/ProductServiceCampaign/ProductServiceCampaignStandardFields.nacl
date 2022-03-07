@@ -1,0 +1,255 @@
+type salesforce.ProductServiceCampaign {
+  serviceid Id {
+    apiName = "ProductServiceCampaign.Id"
+    label = "Product Service Campaign ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ProductServiceCampaign.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductServiceCampaign.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ProductServiceCampaignName {
+    apiName = "ProductServiceCampaign.ProductServiceCampaignName"
+    label = "Product Service Campaign Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductServiceCampaign.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductServiceCampaign.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductServiceCampaign.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductServiceCampaign.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductServiceCampaign.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "ProductServiceCampaign.Product2Id"
+    label = "Product ID"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Product2"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ProductServiceCampaign.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Date StartDate {
+    apiName = "ProductServiceCampaign.StartDate"
+    label = "Start Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "ProductServiceCampaign.EndDate"
+    label = "End Date"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "ProductServiceCampaign.Type"
+    label = "Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Modification"
+        default = false
+        label = "Modification"
+        isActive = true
+      },
+      {
+        fullName = "Recall"
+        default = false
+        label = "Recall"
+        isActive = true
+      },
+      {
+        fullName = "Service"
+        default = false
+        label = "Service"
+        isActive = true
+      },
+      {
+        fullName = "Upgrade"
+        default = false
+        label = "Upgrade"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist Priority {
+    apiName = "ProductServiceCampaign.Priority"
+    label = "Priority"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.WorkOrderPriority
+  }
+  salesforce.Picklist Status {
+    apiName = "ProductServiceCampaign.Status"
+    label = "Status"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.WorkOrderStatus
+  }
+  salesforce.Picklist StatusCategory {
+    apiName = "ProductServiceCampaign.StatusCategory"
+    label = "Status Category"
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "InProgress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "OnHold"
+        default = false
+        label = "On Hold"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+      {
+        fullName = "None"
+        default = true
+        label = "None"
+        isActive = true
+      },
+      {
+        fullName = "CannotComplete"
+        default = false
+        label = "Cannot Complete"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "ProductServiceCampaign.WorkTypeId"
+    label = "Work Type ID"
+    referenceTo = [
+      salesforce.WorkType,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "WorkType"
+    queryable = true
+    trackHistory = false
+  }
+}

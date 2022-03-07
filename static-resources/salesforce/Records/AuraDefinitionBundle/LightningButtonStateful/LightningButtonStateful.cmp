@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="buttonstate" type="Boolean" default="false"/>
+    <lightning:buttonStateful state="{!v.buttonstate}"
+                              variant="text"
+                              labelWhenOff="Like"
+                              labelWhenOn="Liked"
+                              iconNameWhenOff="utility:like"
+                              iconNameWhenOn="utility:like"
+                              onclick="{!c.handleClick }"
+                              
+                              />
+</aura:component>

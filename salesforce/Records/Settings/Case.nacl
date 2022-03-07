@@ -1,0 +1,91 @@
+salesforce.CaseSettings {
+  fullName = "Case"
+  caseAssignNotificationTemplate = "unfiled$public/SupportCaseAssignmentNotification"
+  caseAutoProcUser = false
+  caseCreateNotificationTemplate = "unfiled$public/SupportCaseCreatedPhoneInquiries"
+  caseFeedItemSettings = {
+    characterLimit = 400
+    displayFormat = "Default"
+    feedItemType = "EmailMessageEvent"
+  }
+  caseFeedReadUnreadLtng = false
+  caseMergeInLightning = "false"
+  closeCaseThroughStatusChange = false
+  defaultCaseFeedLayoutOn = true
+  defaultCaseOwner = "pgonzaleznetwork@resourceful-moose-448750.com"
+  defaultCaseOwnerType = "User"
+  defaultCaseUser = "pgonzaleznetwork@resourceful-moose-448750.com"
+  emailToCase = {
+    enableE2CAttachmentAsFile = false
+    enableE2CSourceTracking = true
+    enableEmailToCase = true
+    enableHtmlEmail = false
+    enableOnDemandEmailToCase = true
+    enableThreadIDInBody = true
+    enableThreadIDInSubject = true
+    notifyOwnerOnNewCaseEmail = false
+    overEmailLimitAction = "Bounce"
+    preQuoteSignature = false
+    routingAddresses = [
+      {
+        addressType = "EmailToCase"
+        caseOrigin = "Email"
+        caseOwner = "pgonzaleznetwork@resourceful-moose-448750.com"
+        caseOwnerType = "User"
+        casePriority = "Medium"
+        createTask = false
+        emailAddress = "staplesappirio@benelux.com"
+        emailServicesAddress = "staplesappirio@2p6u33pod7qm78shxzz3o5vvylf3ezgwshw4j0bioi663eocbr.0o-z9abuak.eu9.case.salesforce.com"
+        isVerified = false
+        routingName = "BeneluxCases"
+        saveEmailHeaders = true
+      },
+      {
+        addressType = "EmailToCase"
+        caseOrigin = "Phone"
+        casePriority = "Medium"
+        createTask = false
+        emailAddress = "nicolas.dohm@appirio.com"
+        emailServicesAddress = "nicolas.dohm@309s7hpnme3oqvwdzgdugug3f8tbibwyxzcfdfa4rzw2pdivhm.0o-z9abuak.eu9.case.salesforce.com"
+        isVerified = true
+        routingName = "testingFriesland"
+        saveEmailHeaders = false
+      },
+    ]
+    unauthorizedSenderAction = "Discard"
+  }
+  enableCaseFeed = true
+  enableCollapseEmailThread = true
+  enableDraftEmails = false
+  enableEarlyEscalationRuleTriggers = false
+  enableEmailActionDefaultsHandler = false
+  enableEscalateQfiToCaseInternal = false
+  enableEscalateQfiToCaseNetworks = false
+  enableExtNetworksCaseFeedEnabled = false
+  enableMultiLangSolnSrchCSS = "false"
+  enableMultiLangSolnSrchPKB = "false"
+  enableMultiLangSolution = "false"
+  enableSolutionCategory = "false"
+  enableSolutionInlineCategory = "true"
+  enableSolutionShortSummary = "true"
+  enableSuggestedArticlesApplication = true
+  enableSuggestedArticlesCustomerPortal = false
+  enableSuggestedArticlesPartnerPortal = false
+  enableSuggestedSolutions = false
+  escalateCaseBefore = false
+  keepRecordTypeOnAssignmentRule = true
+  notifyContactOnCaseComment = false
+  notifyDefaultCaseOwner = false
+  notifyOwnerOnCaseComment = false
+  notifyOwnerOnCaseOwnerChange = false
+  showEmailAttachmentsInCaseAttachmentsRL = true
+  systemUserEmail = "automatedcase@00d0o000000z9abuak.ext"
+  useSystemEmailAddress = true
+  useSystemUserAsDefaultCaseUser = false
+  visibleInCssCheckbox = false
+  webToCase = {
+    caseOrigin = "Web"
+    defaultResponseTemplate = "unfiled$public/SupportCaseCreatedWebInquiries"
+    enableWebToCase = true
+  }
+}

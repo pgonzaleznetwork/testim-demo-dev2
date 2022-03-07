@@ -1,0 +1,49 @@
+salesforce.QuickAction Case_Change_Case_Status@vuu {
+  fullName = "Case.Change_Case_Status"
+  description = "Change the status of a case."
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Case.field.ContactId
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Status
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Subject
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Description
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Case.field.OwnerId
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "ChangeStatus"
+  successMessage = "Case updated."
+  type = "Update"
+  _parent = [
+    salesforce.Case,
+  ]
+}

@@ -1,0 +1,17 @@
+salesforce.ListView Syndication__c_All {
+  fullName = "Syndication__c.All"
+  columns = [
+    "NAME",
+    "Show__c",
+    "Subscriber_Station_Network__c",
+    "Start_Date__c",
+    "End_Date__c",
+    "IsActive__c",
+    "CREATED_DATE",
+  ]
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Syndication__c,
+  ]
+}

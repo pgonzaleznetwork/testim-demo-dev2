@@ -1,0 +1,8 @@
+salesforce.ListView Energy_Audit__c_All {
+  fullName = "Energy_Audit__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Energy_Audit__c,
+  ]
+}

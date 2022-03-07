@@ -1,0 +1,5 @@
+salesforce.Profile SU_Limited_Reports@s {
+  fullName = "SU Limited Reports"
+  custom = true
+  userLicense = "Salesforce"
+}

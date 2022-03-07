@@ -1,0 +1,77 @@
+salesforce.Layout Email_Routing_Rule_Filter__c_Email_Routing_Rule_Filter_Layout@uuuuubssss {
+  fullName = "Email_Routing_Rule_Filter__c-Email Routing Rule Filter Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.Email_Routing_Rule__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.Email_Attribute__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.Operator__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.Value__c
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Email_Routing_Rule_Filter__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Email_Routing_Rule_Filter__c,
+  ]
+}

@@ -1,0 +1,93 @@
+salesforce.Layout TriggerStatus__mdt_TriggerStatus_Layout@uubs {
+  fullName = "TriggerStatus__mdt-TriggerStatus Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.TriggerStatus__mdt.field.MasterLabel
+            },
+            {
+              behavior = "Required"
+              field = salesforce.TriggerStatus__mdt.field.DeveloperName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.TriggerStatus__mdt.field.Disabled__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.TriggerStatus__mdt.field.Profile__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.TriggerStatus__mdt.field.Account_Entity__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.TriggerStatus__mdt.field.Account_field_being_used__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "IsProtected"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.TriggerStatus__mdt.field.NamespacePrefix
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.TriggerStatus__mdt,
+  ]
+}

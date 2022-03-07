@@ -1,0 +1,14 @@
+salesforce.ApexClass NegativeRuleResult {
+  apiVersion = 44
+  status = "Active"
+  fullName = "NegativeRuleResult"
+  content = file("salesforce/Records/ApexClass/NegativeRuleResult.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.RuleResult
+    },
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

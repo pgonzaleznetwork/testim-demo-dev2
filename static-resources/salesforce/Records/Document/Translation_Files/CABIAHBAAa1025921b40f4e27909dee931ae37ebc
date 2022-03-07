@@ -1,0 +1,148 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Contact.Contact Layout.Contact Information	Contact Information
+Layout Section	LayoutSection.Contact.Contact Layout.Address Information	Address Information
+Layout Section	LayoutSection.Contact.Contact Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Contact.Contact Layout.System Information	System Information
+Layout Section	LayoutSection.Contact.Contact Layout.Description Information	Description Information
+Layout Section	LayoutSection.Contact.Contact Layout.null	null
+Layout Section	LayoutSection.Case.Case Layout.Case Information	Case Information
+Layout Section	LayoutSection.Case.Case Layout.Web Information	Web Information
+Layout Section	LayoutSection.Case.Case Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Case.Case Layout.System Information	System Information
+Layout Section	LayoutSection.Case.Case Layout.Description Information	Description Information
+Layout Section	LayoutSection.Case.Case Layout.Custom Links	Custom Links
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Opportunity Information	Opportunity Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Other Information	Other Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.System Information	System Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Description Information	Description Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Custom Links	Custom Links
+Standard Field Label	Owner ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Full Name	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Account ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Title	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Department	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Birthdate	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Reports To ID	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Lead Source	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Business Phone	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Home Phone	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Mobile Phone	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Other Phone	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Business Fax	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Email	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Assistant's Name	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Asst. Phone	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Mailing Address	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Other Address	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Created By ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Last Modified By ID	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Contact Description	Contact_Use_Rename_Tabs_And_Labels
+Standard Field Label	Case Number	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Contact ID	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Case Type	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Case Reason	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Contact Phone	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Contact Email	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Entitlement ID	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Case Origin	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Email Address	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Name	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Status	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Priority	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Created Date	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Company	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Phone	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Closed Date	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Subject	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Description	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Internal Comments	Case_Use_Rename_Tabs_And_Labels
+Standard Field Label	Private	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Opportunity Type	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Amount	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Expected Amount	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Close Date	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Next Step	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Stage	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Probability (%)	Opportunity_Use_Rename_Tabs_And_Labels
+Standard Field Label	Campaign ID	Opportunity_Use_Rename_Tabs_And_Labels
+Custom Field Label	CustomField.Contact.EU_Manager.FieldLabel	Manager
+Custom Field Label	CustomField.Contact.Languages.FieldLabel	Languages
+Custom Field Label	CustomField.Contact.Level.FieldLabel	Level
+Custom Field Label	CustomField.Case.Escalated_to_Management.FieldLabel	Escalated to Management
+Custom Field Label	CustomField.Case.Escalation_Owner.FieldLabel	Escalation Owner
+Custom Field Label	CustomField.Case.Days_Since_Last_Update.FieldLabel	Days Since Last Update
+Custom Field Label	CustomField.Case.Product.FieldLabel	Product
+Custom Field Label	CustomField.Case.PotentialLiability.FieldLabel	Potential Liability
+Custom Field Label	CustomField.Case.EngineeringReqNumber.FieldLabel	Engineering Req Number
+Custom Field Label	CustomField.Case.SLAViolation.FieldLabel	SLA Violation
+Custom Field Label	CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+Custom Field Label	CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+Custom Field Label	CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+Custom Field Label	CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+Custom Field Label	CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+Standard Field Help Text	StandardFieldHelp.Case.Status.HelpText	The status of this case in the support lifecycle.
+Standard Field Help Text	StandardFieldHelp.Opportunity.StageName.HelpText	Set this field depending on where the deal is.
+Custom Field Help Text	CustomField.Case.PotentialLiability.HelpText	Is this product liable?
+Custom Field Help Text	CustomField.Opportunity.TrackingNumber.HelpText	This is the tracking number
+Picklist Value	PicklistValue.Standard.LeadSource.Web	Web
+Picklist Value	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+Picklist Value	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+Picklist Value	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+Picklist Value	PicklistValue.Standard.LeadSource.Other	Other
+Picklist Value	PicklistValue.Standard.LeadSource.Where is this shown?	Where is this shown?
+Picklist Value	PicklistValue.Contact.Level.Secondary	Secondary
+Picklist Value	PicklistValue.Contact.Level.Tertiary	Tertiary
+Picklist Value	PicklistValue.Contact.Level.Primary	Primary
+Picklist Value	PicklistValue.Standard.caseType.Mechanical	Mechanical
+Picklist Value	PicklistValue.Standard.caseType.Electrical	Electrical
+Picklist Value	PicklistValue.Standard.caseType.Electronic	Electronic
+Picklist Value	PicklistValue.Standard.caseType.Structural	Structural
+Picklist Value	PicklistValue.Standard.caseType.Other	Other
+Picklist Value	PicklistValue.Standard.caseReason.Installation	Installation
+Picklist Value	PicklistValue.Standard.caseReason.Equipment Complexity	Equipment Complexity
+Picklist Value	PicklistValue.Standard.caseReason.Performance	Performance
+Picklist Value	PicklistValue.Standard.caseReason.Breakdown	Breakdown
+Picklist Value	PicklistValue.Standard.caseReason.Equipment Design	Equipment Design
+Picklist Value	PicklistValue.Standard.caseReason.Feedback	Feedback
+Picklist Value	PicklistValue.Standard.caseReason.Other	Other
+Picklist Value	PicklistValue.Standard.caseStatus.New	New
+Picklist Value	PicklistValue.Standard.caseStatus.Working	Working
+Picklist Value	PicklistValue.Standard.caseStatus.Escalated	Escalated
+Picklist Value	PicklistValue.Standard.caseStatus.Closed	Closed
+Picklist Value	PicklistValue.Standard.casePriority.High	High
+Picklist Value	PicklistValue.Standard.casePriority.Medium	Medium
+Picklist Value	PicklistValue.Standard.casePriority.Low	Low
+Picklist Value	PicklistValue.Standard.caseOrigin.Phone	Phone
+Picklist Value	PicklistValue.Standard.caseOrigin.Email	Email
+Picklist Value	PicklistValue.Standard.caseOrigin.Web	Web
+Picklist Value	PicklistValue.Case.Product.GC1040	GC1040
+Picklist Value	PicklistValue.Case.Product.GC1060	GC1060
+Picklist Value	PicklistValue.Case.Product.GC3020	GC3020
+Picklist Value	PicklistValue.Case.Product.GC3040	GC3040
+Picklist Value	PicklistValue.Case.Product.GC3060	GC3060
+Picklist Value	PicklistValue.Case.Product.GC5020	GC5020
+Picklist Value	PicklistValue.Case.Product.GC5040	GC5040
+Picklist Value	PicklistValue.Case.Product.GC5060	GC5060
+Picklist Value	PicklistValue.Case.Product.GC1020	GC1020
+Picklist Value	PicklistValue.Case.PotentialLiability.No	No
+Picklist Value	PicklistValue.Case.PotentialLiability.Yes	Yes
+Picklist Value	PicklistValue.Case.SLAViolation.No	No
+Picklist Value	PicklistValue.Case.SLAViolation.Yes	Yes
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Upgrade	Existing Customer - Upgrade
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Replacement	Existing Customer - Replacement
+Picklist Value	PicklistValue.Standard.opportunityType.Existing Customer - Downgrade	Existing Customer - Downgrade
+Picklist Value	PicklistValue.Standard.opportunityType.New Customer	New Customer
+Picklist Value	PicklistValue.Standard.opportunityStage.Prospecting	Prospecting
+Picklist Value	PicklistValue.Standard.opportunityStage.Qualification	Qualification
+Picklist Value	PicklistValue.Standard.opportunityStage.Needs Analysis	Needs Analysis
+Picklist Value	PicklistValue.Standard.opportunityStage.Value Proposition	Value Proposition
+Picklist Value	PicklistValue.Standard.opportunityStage.Id. Decision Makers	 Decision Makers
+Picklist Value	PicklistValue.Standard.opportunityStage.Perception Analysis	Perception Analysis
+Picklist Value	PicklistValue.Standard.opportunityStage.Proposal/Price Quote	Proposal/Price Quote
+Picklist Value	PicklistValue.Standard.opportunityStage.Negotiation/Review	Negotiation/Review
+Picklist Value	PicklistValue.Standard.opportunityStage.Closed Won	Closed Won
+Picklist Value	PicklistValue.Standard.opportunityStage.Closed Lost	Closed Lost
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed

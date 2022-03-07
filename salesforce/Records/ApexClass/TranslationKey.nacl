@@ -1,0 +1,11 @@
+salesforce.ApexClass TranslationKey {
+  apiVersion = 43
+  status = "Active"
+  fullName = "TranslationKey"
+  content = file("salesforce/Records/ApexClass/TranslationKey.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SFMD
+    },
+  ]
+}

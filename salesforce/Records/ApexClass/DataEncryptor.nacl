@@ -1,0 +1,11 @@
+salesforce.ApexClass DataEncryptor {
+  apiVersion = 43
+  status = "Active"
+  fullName = "DataEncryptor"
+  content = file("salesforce/Records/ApexClass/DataEncryptor.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

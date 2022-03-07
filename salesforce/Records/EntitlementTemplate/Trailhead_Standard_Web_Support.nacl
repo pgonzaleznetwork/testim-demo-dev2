@@ -1,0 +1,7 @@
+salesforce.EntitlementTemplate Trailhead_Standard_Web_Support@s {
+  fullName = "Trailhead Standard Web Support"
+  businessHours = "Default"
+  isPerIncident = false
+  term = 90
+  type = "Web Support"
+}

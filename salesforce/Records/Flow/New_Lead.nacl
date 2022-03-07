@@ -1,0 +1,67 @@
+salesforce.Flow New_Lead {
+  fullName = "New_Lead"
+  apiVersion = 49
+  interviewLabel = "New Lead {!$Flow.CurrentDateTime}"
+  label = "New Lead"
+  processType = "Flow"
+  recordCreates = [
+    {
+      name = "Create_Lead"
+      label = "Create Lead"
+      locationX = 123
+      locationY = 257
+      inputAssignments = [
+        {
+          field = salesforce.Lead.field.Company
+          value = {
+            elementReference = "Company_Name"
+          }
+        },
+        {
+          field = "LastName"
+          value = {
+            elementReference = "Last_Name"
+          }
+        },
+      ]
+      object = salesforce.Lead
+    },
+  ]
+  screens = {
+    name = "Lead_Info"
+    label = "Lead Info"
+    locationX = 67
+    locationY = 119
+    allowBack = true
+    allowFinish = true
+    allowPause = true
+    connector = {
+      targetReference = "Create_Lead"
+    }
+    fields = [
+      {
+        name = "Instructions"
+        fieldText = "Use this wizard to create a new lead!"
+        fieldType = "DisplayText"
+      },
+      {
+        name = "Last_Name"
+        dataType = "String"
+        fieldText = "Last Name"
+        fieldType = "InputField"
+        isRequired = true
+      },
+      {
+        name = "Company_Name"
+        dataType = "String"
+        fieldText = "Company Name"
+        fieldType = "InputField"
+        isRequired = true
+      },
+    ]
+    showFooter = true
+    showHeader = true
+  }
+  startElementReference = "Lead_Info"
+  status = "Active"
+}

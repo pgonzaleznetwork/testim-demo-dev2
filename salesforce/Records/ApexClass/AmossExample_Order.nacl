@@ -1,0 +1,11 @@
+salesforce.ApexClass AmossExample_Order {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossExample_Order"
+  content = file("salesforce/Records/ApexClass/AmossExample_Order.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AmossExample_DeliveryProvider
+    },
+  ]
+}

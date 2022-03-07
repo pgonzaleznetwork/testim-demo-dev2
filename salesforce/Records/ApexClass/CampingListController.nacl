@@ -1,0 +1,20 @@
+salesforce.ApexClass CampingListController {
+  apiVersion = 41
+  status = "Active"
+  fullName = "CampingListController"
+  content = file("salesforce/Records/ApexClass/CampingListController.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Camping_Item__c
+    },
+    {
+      reference = salesforce.Camping_Item__c.field.Packed__c
+    },
+    {
+      reference = salesforce.Camping_Item__c.field.Price__c
+    },
+    {
+      reference = salesforce.Camping_Item__c.field.Quantity__c
+    },
+  ]
+}

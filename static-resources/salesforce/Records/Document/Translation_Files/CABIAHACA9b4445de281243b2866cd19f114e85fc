@@ -1,0 +1,41 @@
+METADATA TYPE	KEY	DEFAULT LABEL
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.Information	Information
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.System Information	System Information
+Layout Section	LayoutSection.Session_Speaker__c.Session Speaker Layout.null	null
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Opportunity Information	Opportunity Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Other Information	Other Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Additional Information	Additional Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.System Information	System Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Description Information	Description Information
+Layout Section	LayoutSection.Opportunity.Opportunity Layout.Custom Links	Custom Links
+Custom Field Label	CustomField.Session_Speaker__c.Session.FieldLabel	Session
+Custom Field Label	CustomField.Session_Speaker__c.Speaker.FieldLabel	Speaker
+Custom Field Label	CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+Custom Field Label	CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+Custom Field Label	CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+Custom Field Label	CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+Custom Field Label	CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+Standard Field Help Text	StandardFieldHelp.Opportunity.StageName.HelpText	Set this field depending on where the deal is.
+Custom Field Help Text	CustomField.Opportunity.TrackingNumber.HelpText	This is the tracking number
+Picklist Value	PicklistValue.Standard.Type.Existing Customer - Upgrade	Existing Customer - Upgrade
+Picklist Value	PicklistValue.Standard.Type.Existing Customer - Replacement	Existing Customer - Replacement
+Picklist Value	PicklistValue.Standard.Type.Existing Customer - Downgrade	Existing Customer - Downgrade
+Picklist Value	PicklistValue.Standard.Type.New Customer	New Customer
+Picklist Value	PicklistValue.Standard.LeadSource.Web	Web
+Picklist Value	PicklistValue.Standard.LeadSource.Phone Inquiry	Phone Inquiry
+Picklist Value	PicklistValue.Standard.LeadSource.Partner Referral	Partner Referral
+Picklist Value	PicklistValue.Standard.LeadSource.Purchased List	Purchased List
+Picklist Value	PicklistValue.Standard.LeadSource.Other	Other
+Picklist Value	PicklistValue.Standard.StageName.Prospecting	Prospecting
+Picklist Value	PicklistValue.Standard.StageName.Qualification	Qualification
+Picklist Value	PicklistValue.Standard.StageName.Needs Analysis	Needs Analysis
+Picklist Value	PicklistValue.Standard.StageName.Value Proposition	Value Proposition
+Picklist Value	PicklistValue.Standard.StageName.Id. Decision Makers	 Decision Makers
+Picklist Value	PicklistValue.Standard.StageName.Perception Analysis	Perception Analysis
+Picklist Value	PicklistValue.Standard.StageName.Proposal/Price Quote	Proposal/Price Quote
+Picklist Value	PicklistValue.Standard.StageName.Negotiation/Review	Negotiation/Review
+Picklist Value	PicklistValue.Standard.StageName.Closed Won	Closed Won
+Picklist Value	PicklistValue.Standard.StageName.Closed Lost	Closed Lost
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+Picklist Value	PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed

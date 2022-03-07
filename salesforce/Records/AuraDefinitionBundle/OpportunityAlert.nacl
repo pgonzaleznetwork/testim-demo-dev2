@@ -1,0 +1,19 @@
+salesforce.AuraDefinitionBundle OpportunityAlert {
+  apiVersion = 40
+  description = "DESCRIPTION"
+  fullName = "OpportunityAlert"
+  type = "Component"
+  designContent = file("salesforce/Records/AuraDefinitionBundle/OpportunityAlert/OpportunityAlert.design")
+  styleContent = file("salesforce/Records/AuraDefinitionBundle/OpportunityAlert/OpportunityAlert.css")
+  helperContent = file("salesforce/Records/AuraDefinitionBundle/OpportunityAlert/OpportunityAlertHelper.js")
+  controllerContent = file("salesforce/Records/AuraDefinitionBundle/OpportunityAlert/OpportunityAlertController.js")
+  markup = file("salesforce/Records/AuraDefinitionBundle/OpportunityAlert/OpportunityAlert.cmp")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.OpportunityAlertController
+    },
+    {
+      reference = salesforce.AuraDefinitionBundle.instance.OpportunityAlert
+    },
+  ]
+}

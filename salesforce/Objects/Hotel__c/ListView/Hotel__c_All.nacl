@@ -1,0 +1,8 @@
+salesforce.ListView Hotel__c_All {
+  fullName = "Hotel__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Hotel__c,
+  ]
+}

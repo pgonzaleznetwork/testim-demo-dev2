@@ -1,0 +1,20 @@
+salesforce.ApexClass AmossTest_Asserts {
+  apiVersion = 50
+  status = "Active"
+  fullName = "AmossTest_Asserts"
+  content = file("salesforce/Records/ApexClass/AmossTest_Asserts.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.AmossTest_ClassToDouble
+    },
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Asserts
+    },
+    {
+      reference = salesforce.ApexClass.instance.Amoss_Instance
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

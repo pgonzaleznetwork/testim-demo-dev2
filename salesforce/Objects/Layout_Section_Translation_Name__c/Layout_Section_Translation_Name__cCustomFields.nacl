@@ -1,0 +1,32 @@
+type salesforce.Layout_Section_Translation_Name__c {
+  salesforce.MasterDetail Layout_Translation_Info__c {
+    apiName = "Layout_Section_Translation_Name__c.Layout_Translation_Info__c"
+    label = "Layout Translation Info"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Layout_Translation_Info__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Layout_Section_Translation_Names"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Layout Section Translation Names"
+    trackTrending = false
+  }
+  salesforce.Text Section_Key__c {
+    apiName = "Layout_Section_Translation_Name__c.Section_Key__c"
+    label = "Section Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}

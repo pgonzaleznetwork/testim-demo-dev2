@@ -1,0 +1,25 @@
+type salesforce.ProductServiceCampaignItem {
+  salesforce.Lookup AssetId {
+    apiName = "ProductServiceCampaignItem.AssetId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "ProductServiceCampaignItem.Product2Id"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ProductServiceCampaignId {
+    apiName = "ProductServiceCampaignItem.ProductServiceCampaignId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ProductServiceCampaignItem.Status"
+    trackHistory = false
+    _hidden_value = true
+  }
+  string StatusCategory {
+    _hidden_value = true
+  }
+}

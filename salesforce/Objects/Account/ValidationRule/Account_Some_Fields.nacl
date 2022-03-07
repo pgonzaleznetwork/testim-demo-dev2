@@ -1,0 +1,9 @@
+salesforce.ValidationRule Account_Some_Fields {
+  fullName = "Account.Some_Fields"
+  active = false
+  errorConditionFormula = "$Profile.Name  = \"System Administrator\"  && NOT(( ISCHANGED(Site) || ISCHANGED( AccountNumber ) ))"
+  errorMessage = "Users can't change the Account Site OR Account Number"
+  _parent = [
+    salesforce.Account,
+  ]
+}

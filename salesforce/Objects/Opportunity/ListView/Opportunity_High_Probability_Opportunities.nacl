@@ -1,0 +1,28 @@
+salesforce.ListView Opportunity_High_Probability_Opportunities {
+  fullName = "Opportunity.High_Probability_Opportunities"
+  columns = [
+    "OPPORTUNITY.NAME",
+    "ACCOUNT.NAME",
+    "OPPORTUNITY.STAGE_NAME",
+    "OPPORTUNITY.CLOSE_DATE",
+    "OPPORTUNITY.AMOUNT",
+    "CORE.USERS.ALIAS",
+  ]
+  filterScope = "Mine"
+  filters = [
+    {
+      field = "OPPORTUNITY.STAGE_NAME"
+      operation = "equals"
+      value = "Proposal/Price Quote,Negotiation/Review"
+    },
+    {
+      field = "OPPORTUNITY.PROBABILITY"
+      operation = "greaterOrEqual"
+      value = "50"
+    },
+  ]
+  label = "High Probability Opportunities"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

@@ -1,0 +1,17 @@
+salesforce.ApexClass AccountServiceTests {
+  apiVersion = 44
+  status = "Active"
+  fullName = "AccountServiceTests"
+  content = file("salesforce/Records/ApexClass/AccountServiceTests.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+    {
+      reference = salesforce.ApexClass.instance.AccountService
+    },
+    {
+      reference = salesforce.Contact
+    },
+  ]
+}

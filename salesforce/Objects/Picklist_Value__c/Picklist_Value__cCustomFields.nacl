@@ -1,0 +1,32 @@
+type salesforce.Picklist_Value__c {
+  salesforce.MasterDetail Layout_Translation_Info__c {
+    apiName = "Picklist_Value__c.Layout_Translation_Info__c"
+    label = "Layout Translation Info"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Layout_Translation_Info__c,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Picklist_Values"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Picklist Values"
+    trackTrending = false
+  }
+  salesforce.Text Value_Key__c {
+    apiName = "Picklist_Value__c.Value_Key__c"
+    label = "Value Key"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 250
+    queryable = true
+    encryptionScheme = "None"
+    externalId = false
+    trackTrending = false
+  }
+}
