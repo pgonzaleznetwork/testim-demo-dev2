@@ -1,7 +1,7 @@
 salesforce.ValidationRule Lead_Status_Validation {
   fullName = "Lead.Status_Validation"
   active = true
-  errorConditionFormula = "FALSE"
+  errorConditionFormula = "FALSE || FALSE"
   errorMessage = "This status is invalid"
   _parent = [
     salesforce.Lead,
