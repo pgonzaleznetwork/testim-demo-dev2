@@ -136,6 +136,8 @@ salesforce.Layout Account_Customer_Account_Layout@bss {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -263,6 +265,10 @@ salesforce.Layout Account_Customer_Account_Layout@bss {
               customLink = salesforce.WebLink.instance.Account_Billing
             },
           ]
+        },
+        {
+        },
+        {
         },
       ]
       style = "CustomLinks"

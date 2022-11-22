@@ -42,6 +42,8 @@ salesforce.Layout Account_Workbench_Layout@bs {
             },
           ]
         },
+        {
+        },
       ]
       style = "TwoColumnsLeftToRight"
     },
@@ -66,6 +68,8 @@ salesforce.Layout Account_Workbench_Layout@bs {
               field = salesforce.Account.field.Social_Sec_Number__c
             },
           ]
+        },
+        {
         },
       ]
       style = "TwoColumnsLeftToRight"

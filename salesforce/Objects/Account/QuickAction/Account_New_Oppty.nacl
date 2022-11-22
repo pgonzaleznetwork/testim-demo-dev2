@@ -45,6 +45,8 @@ salesforce.QuickAction Account_New_Oppty@vu {
           },
         ]
       },
+      {
+      },
     ]
   }
   successMessage = "Done!"

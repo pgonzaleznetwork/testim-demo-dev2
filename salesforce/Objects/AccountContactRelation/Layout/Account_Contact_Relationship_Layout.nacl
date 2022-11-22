@@ -60,6 +60,10 @@ salesforce.Layout AccountContactRelation_Account_Contact_Relationship_Layout@bss
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false

@@ -31,10 +31,10 @@ type salesforce.AccountContactRelation {
     relationshipName = "Contact"
     queryable = true
   }
-  salesforce.MultiselectPicklist Roles {
+  salesforce.Picklist Roles {
     apiName = "AccountContactRelation.Roles"
-    label = "Roles"
     restricted = false
+    label = "Roles"
     visibleLines = 0
     createable = true
     updateable = true

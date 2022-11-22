@@ -255,6 +255,10 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },

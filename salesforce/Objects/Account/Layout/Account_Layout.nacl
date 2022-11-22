@@ -258,6 +258,10 @@ salesforce.Layout Account_Account_Layout@bs {
             },
           ]
         },
+        {
+        },
+        {
+        },
       ]
       style = "CustomLinks"
     },

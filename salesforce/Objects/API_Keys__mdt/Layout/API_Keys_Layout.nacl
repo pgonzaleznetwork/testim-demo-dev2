@@ -64,6 +64,10 @@ salesforce.Layout API_Keys__mdt_API_Keys_Layout@uuubss {
       detailHeading = false
       editHeading = false
       style = "CustomLinks"
+      layoutColumns = [
+        {
+        },
+      ]
     },
   ]
   showEmailCheckbox = false
